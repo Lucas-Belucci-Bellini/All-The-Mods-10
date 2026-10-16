@@ -1,7 +1,7 @@
 type = last_world
 
 last_world {
-  is_server = false
-  world = C:/Users/SpartanGamerBR/curseforge/minecraft/Instances/All-The-Mods-10/saves/Gustavo farms aura + ego
+  is_server = true
+  world = 26.78.195.69:1234
 }
 
