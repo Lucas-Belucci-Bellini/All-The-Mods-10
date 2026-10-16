@@ -5716,3 +5716,16 @@ WARNING: You are running with unsupported Java 21. To make full use of the Vecto
 
 [STDOUT] [23:31:48] [modloading-sync-worker/INFO] [STDOUT/]: [com.mamailes.herbsandharvest.block.dessert.EdibleCakeBlock:<init>:34]: CAKE BLOCK CONSTRUCTOR LOADED
 
+[STDOUT] [23:32:06] [modloading-sync-worker/INFO] [Living Things/]: Loaded NeoForgePlatformHelper for service IPlatformHelper
+
+[STDOUT] [23:32:07] [modloading-sync-worker/INFO] [KubeJS/]: Added bindings for script type STARTUP from mod 'almostunified': [AlmostUnified]
+[23:32:07] [modloading-sync-worker/INFO] [KubeJS Startup/]: Loaded Java class 'java.lang.Integer'
+
+[STDOUT] [23:32:08] [modloading-sync-worker/WARN] [supermartijn642corelib/]: Could not find value 'formations:template_editor' in registry 'minecraft:item' for @RegistryEntryAcceptor!
+
+[STDOUT] [23:32:08] [modloading-sync-worker/INFO] [evilcraft/]: 2205 possible Broom base combinations are ready for flying!
+
+[STDOUT] [23:32:08] [modloading-sync-worker/INFO] [Moonlight/]: Initialized block sets in 269ms
+
+[STDOUT] [23:32:08] [modloading-sync-worker/INFO] [BotanyPots/]: Loaded 2 botany pots plugins!
+

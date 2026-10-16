@@ -1,0 +1,19 @@
+[upgrade]
+	# Default: 4
+	# Range: 0 ~ 9223372036854775807
+	insertUpgradeEnergyUsage = 4
+	# Default: 4
+	# Range: 0 ~ 9223372036854775807
+	exportUpgradeEnergyUsage = 4
+	# Default: 4
+	# Range: 0 ~ 9223372036854775807
+	blockPickerUpgradeEnergyUsage = 4
+	# Default: 4
+	# Range: 0 ~ 9223372036854775807
+	magnetUpgradeEnergyUsage = 4
+	# Default: 6.0
+	# Range: 1.0 ~ 32.0
+	magnetUpgradeRange = 6.0
+	# Default: 1000
+	# Range: 0 ~ 9223372036854775807
+	energyCapacityUpgradeCapacity = 1000
