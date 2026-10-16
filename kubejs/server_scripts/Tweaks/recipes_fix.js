@@ -1,0 +1,358 @@
+let $Stopwatch = Java.loadClass("com.google.common.base.Stopwatch")
+
+KubeJSTweaks.beforeRecipes(event => {
+  let timer = $Stopwatch.createStarted();
+
+  event.dumpErroringRecipes()
+
+  // Upgrade from forge to neoforge conditions
+  event.fixCondition([
+    "irons_spellbooks:patchouli_book",
+    "apotheosis:book",
+    "treetap:id_menril",
+    "treetap:id_menril_tfc",
+    /^silentgear:woodcutting\//,
+    "silentgear:sapling/netherwood"
+  ])
+
+  // Fix "item" -> "id"
+  event.fixItemAtKey([/^create:crushing\/gloomslate_/, /^create:crushing\/sculk_stone_/, /^create:cutting\/.*echo_/], "results")
+
+  event.fixItemAtKey("treetap:id_menril", "result")
+
+  // Fix farmer delight tool type that was renamed on 1.21.1
+  // sound changed
+  // and their result is now an array of a custom codec that have now "item" as a key
+  event.getEntry([/^farmersdelight:cutting\/echo_/, "farmersdelight:integration/silentgear/cutting/netherwood"])
+    .forEach(entry => {
+      entry.replaceValueAtKey("tool", "type", "farmersdelight:tool_action", "farmersdelight:item_ability")
+
+      entry.fromPath("sound").ifPresent(result => {
+        result.first.add("sound", { sound_id: result.second })
+      })
+      if (entry.id() == "farmersdelight:integration/silentgear/cutting/netherwood") {
+        let resultArray = entry.json().get("result")
+        if (resultArray == null) return
+        for (let item of resultArray) {
+          if (!item.has("item")) continue
+          item.add("item", {
+            "id": item.get("item")
+          })
+        }
+      }
+    })
+
+  // Simple key renaming to match current changes
+  event.getEntry(/^createaddition:compat\/immersiveengineering\/rolling\//)
+    .forEach(entry => {
+      entry.renameKey("result", "results", true)
+      entry.renameKey("input", "ingredients", true)
+    })
+
+  // Simple key renaming to match current changes
+  event.getEntry("createaddition:compat/ae2/charged_certus_quartz")
+    .forEach(entry => {
+      entry.renameKey("result", "results", true)
+      entry.renameKey("ingredient", "ingredients", true)
+    })
+
+  // this is the way now with biome_predicates
+  event.getEntry("createaddition:compat/immersiveengineering/sphalerite")
+    .forEach(entry => {
+      entry.json().add("biome_predicates", [
+        ["minecraft:is_overworld"]
+      ])
+    })
+
+  // Scans items on result and add them back as conditions, izi fix
+  event.getEntry(/^farmingforblockheads:market\//)
+    .forEach(entry => {
+      entry.addConditionsFromKey("result")
+    })
+
+  // Scans items/tags on ingredients and add them back as conditions
+  event.getEntry("create:crafting/tree_fertilizer")
+    .forEach(entry => {
+      entry.addConditionsFromKey("ingredients")
+    })
+
+  event.getEntry(["merrymaking:aged_pine_mantel", "merrymaking:exposed_pine_mantel", "merrymaking:pine_mantel", "merrymaking:weathered_pine_mantel"])
+    .forEach(entry => {
+      entry.addConditionsFromKey("key")
+    })
+
+
+  // Fix a typo, they missed a `s`
+  event.getEntry([
+    "mekanism:compat/biomeswevegone/enriching/dacite/conversion_dacite_tile",
+    "mekanism:compat/biomeswevegone/crushing/dacite/conversion_dacite_cobblestone",
+    "mekanism:compat/biomeswevegone/enriching/dacite/conversion_dacite_bricks",
+    "mekanism:compat/biomeswevegone/crushing/dacite/conversion_dacite_tile"
+  ]).forEach(entry => {
+    entry.replaceValueAtKey("input", "item", "biomeswevegone:dacite_tile", "biomeswevegone:dacite_tiles")
+    entry.replaceValueAtKey("output", "id", "biomeswevegone:dacite_tile", "biomeswevegone:dacite_tiles")
+  })
+
+  // Another typo, a wild `'` at the name of the item
+  event.getEntry("mekmm:compat/ars_nouveau/planting/magebloom").forEach(entry => {
+    entry.fromPath("secondary_output.id").ifPresent(result => {
+      result.first.add("id", result.second.getAsString().replace("'", ""))
+    })
+  })
+
+  // RIP Jonn, forgot `s`
+  event.getEntry(/^dyenamicsandfriends:.*_hammock$/).forEach(entry => {
+    entry.fixCondition()
+    entry.replaceValueAtKey("key", "tag", "c:string", "c:strings")
+  })
+
+  // RIP Jonn2, forgot another `s`
+  event.getEntry("productivetrees:crates/coffee_bean_crate").forEach(entry => {
+    entry.replaceValueAtKey("key", "tag", "c:coffee_bean", "c:coffee_beans")
+  })
+
+  // RIP Jonn2, looks like it was changed to `_blocks` now
+  event.getEntry("productivetrees:time_traveller_display").forEach(entry => {
+    entry.replaceValueAtKey("key", "tag", "c:glass/colorless", "c:glass_blocks/colorless")
+  })
+
+  // Ignore warnings because silent gear ingredients
+  // that contains "silentgear:material" are not ready
+  // yet, but are valid in a later stage
+  event.getEntry("@silentgear")
+    .forEach(entry => {
+      let ings = entry.json().get("ingredients")
+      let keys = entry.json().get("key")
+
+      if (ings != null) {
+        for (let ing of ings) {
+          let type = ing.get("type")
+          if (type != null) {
+            if (type.getAsString() == "silentgear:material") {
+              entry.ignoreWarning()
+            }
+          }
+        }
+      }
+
+      if (keys != null) {
+        for (let key of keys.asMap().values()) {
+          let type = key.get("type")
+          if (type != null) {
+            if (type.getAsString() == "silentgear:material") {
+              entry.ignoreWarning()
+            }
+          }
+        }
+      }
+    })
+
+  // Ignore warnings because while this recipe
+  // is not really valid, it still works
+  event.getEntry(/^deeperdarker:.*_smithing$/)
+    .forEach(entry => {
+      entry.fromPath("template", "[]").ifPresent(result => entry.ignoreWarning())
+    })
+
+  // Adds mod condition check
+  event.getEntry("productivebees:elementalcraft/pureinfusion/pure_crystal_bee")
+    .forEach(entry => entry.addModConditionFromType())
+
+  // old recipe
+  event.disable("factory_blocks:mason_table_old")
+
+  event.disable("supplementaries:botany_flax")
+
+  event.getEntry(["mekmm:compat/immersiveengineering/lathe/aluminum_stick", "mekmm:compat/immersiveengineering/lathe/steel_stick"])
+    .forEach(entry => {
+      entry.renameKey("main_input", "input", false)
+    })
+
+  event.getEntry(/^create:.*\/compat\/(biomeswevegone|silentgems)\//)
+    .forEach(entry => {
+      entry.addConditionsFromKey("ingredients")
+    })
+
+  event.getEntry("farmersdelight:integration/create/filling/chocolate_pie")
+    .forEach(entry => {
+      entry.replaceValueAtKey("ingredients", "fluid_tag", "c:chocolates", "c:chocolate")
+    })
+
+  event.getEntry("mekmm:compat/mysticalagradditions/planting/awakened_draconium")
+    .forEach(entry => {
+      entry.fixItemAtKey("main_output")
+      let ci = entry.json().get("chemical_input")
+      if (ci.has("gas")) {
+        ci.add("chemical", ci.remove("gas"))
+      }
+    })
+
+  event.getEntry("botanypots:allthemodium/crop/ancient_soulberries")
+    .forEach(entry => {
+      entry.addConditionsFromKey("input")
+    })
+
+  event.getEntry("bellsandwhistles:metro/metro_window").forEach(entry => {
+    entry.replaceValueAtKey("ingredients", "tag", "c:glass", "c:glass_blocks/colorless")
+  })
+
+  event.getEntry("regions_unexplored:prismaglass").forEach(entry => {
+    entry.replaceValueAtKey("key", "tag", "c:glass", "c:glass_blocks/colorless")
+  })
+
+  event.getEntry(/^regions_unexplored:.*_snowbelle$/)
+    .forEach(entry => {
+      let ings = entry.json().get("ingredients")
+      if (ings != null) {
+        for (let ing of ings) {
+          let tag = ing.get("tag")
+          if (tag != null) {
+            if (tag.getAsString().endsWith("_dyes")) {
+              let color = tag.getAsString().replace("c:", "").replace("_dyes", "")
+              ing["addProperty(java.lang.String,java.lang.String)"]("tag", "c:dyes/" + color)
+            }
+          }
+        }
+      }
+    })
+
+  event.getEntry(/^regions_unexplored:.*_painted_planks$/)
+    .forEach(entry => {
+      let keys = entry.json().get("key")
+      if (keys != null) {
+        for (let key of keys.asMap().values()) {
+          let tag = key.get("tag")
+          if (tag != null) {
+            if (tag.getAsString().endsWith("_dyes")) {
+              let color = tag.getAsString().replace("c:", "").replace("_dyes", "")
+              key["addProperty(java.lang.String,java.lang.String)"]("tag", "c:dyes/" + color)
+            }
+          }
+        }
+      }
+    })
+
+  event.getEntry(["pneumaticcraft:block_heat_properties/createlowheated/basic_burner_empowered", "pneumaticcraft:block_heat_properties/createlowheated/basic_burner_lit"])
+    .forEach(entry => {
+      entry.json().add("neoforge:conditions", [{ "type": "neoforge:mod_loaded", "modid": "createlowheated" }])
+    })
+
+  if (!Platform.isLoaded("aeronautics")) {
+    event.disable(["create_dragons_plus:crafting/fragile_fluid_tank", "create_dragons_plus:crafting/levitite_fragile_fluid_tank"])
+  }
+
+  event.getEntry("justenoughbreeding:breeding/iceandfire/lightning_dragon").forEach(entry => {
+    entry.replaceValueAtKey("outputs", "item", "iceandfire:dragonegg_amythest", "iceandfire:dragonegg_amethyst")
+  })
+
+  event.getEntry(["apotheosis:pinnacle_spawner_upgrade_rune", "apotheosis:raven_enchanting_table"]).forEach(entry => entry.ignoreWarning())
+
+  event.fixItemAtKey(["create:cutting/aeronos_caps", "create:cutting/glacian_log", "create:cutting/stripped_glacian_log", "create:cutting/strophar_caps", "create:milling/venus_sandstone", "create:pressing/calorite_ingot", "create:pressing/desh_ingot", "create:pressing/ostrum_ingot", "create:pressing/steel_ingot"], "results")
+
+  event.fixItemAtKey(["create:crushing/deepslate_calorite_ore", "create:crushing/deepslate_desh_ore", "create:crushing/deepslate_ice_shard_ore", "create:crushing/deepslate_ostrum_ore", "create:crushing/glacio_coal_ore", "create:crushing/glacio_copper_ore", "create:crushing/glacio_ice_shard_ore", "create:crushing/glacio_iron_ore", "create:crushing/glacio_lapis_ore", "create:crushing/mars_diamond_ore", "create:crushing/mars_ice_shard_ore", "create:crushing/mars_iron_ore", "create:crushing/mars_ostrum_ore", "create:crushing/mercury_iron_ore", "create:crushing/moon_cheese_ore", "create:crushing/moon_desh_ore", "create:crushing/moon_ice_shard_ore", "create:crushing/moon_iron_ore", "create:crushing/venus_calorite_ore", "create:crushing/venus_coal_ore", "create:crushing/venus_diamond_ore", "create:crushing/venus_gold_ore"], "results"),
+
+    event.fixItemAtKey(["mekanism:crushing/venus_sandstone_to_venus_sand", "mekanism:enriching/ice_shard_or_to_ice_shards"], "output")
+
+  event.getEntry(["mekanism:sawing/door/aeronos", "mekanism:sawing/door/glacian", "mekanism:sawing/door/strophar", "mekanism:sawing/fence_gate/aeronos", "mekanism:sawing/fence_gate/glacian", "mekanism:sawing/fence_gate/strophar", "mekanism:sawing/log/aeronos", "mekanism:sawing/log/glacian", "mekanism:sawing/log/strophar", "mekanism:sawing/pressure_plate/glacian", "mekanism:sawing/trapdoor/aeronos", "mekanism:sawing/trapdoor/glacian", "mekanism:sawing/trapdoor/strophar"])
+    .forEach(entry => {
+      entry.fixItemAtKey("mainOutput")
+      entry.fixItemAtKey("secondaryOutput")
+      entry.renameKey("mainOutput", "main_output", false)
+      entry.renameKey("secondaryOutput", "secondary_output", false)
+      entry.renameKey("secondaryChance", "secondary_chance", false)
+      let ing = entry.json().get("input").remove("ingredient")
+      if (ing == null) return
+      entry.json().add("input", ing)
+    })
+
+  event.getEntry(["mekanism:crushing/venus_sandstone_to_venus_sand", "mekanism:enriching/ice_shard_or_to_ice_shards"])
+    .forEach(entry => {
+      let ing = entry.json().get("input").remove("ingredient")
+      if (ing == null) return
+      entry.json().add("input", ing)
+      let input = entry.json().get("input")
+      if (input == null) return
+      let tag = input.get("tag")
+      if (tag != null) {
+        if (tag.getAsString().startsWith("forge:")) {
+          let newTag = tag.getAsString().replace("forge:", "c:")
+          input["addProperty(java.lang.String,java.lang.String)"]("tag", newTag)
+        }
+      }
+    })
+
+  event.getEntry(["immersiveengineering:crafting/plate_calorite_hammering", "immersiveengineering:crafting/plate_desh_hammering", "immersiveengineering:crafting/plate_ostrum_hammering"])
+    .forEach(entry => {
+      entry.fixItemAtKey("result")
+      let ings = entry.json().get("ingredients")
+      ings.forEach(ing => {
+        let tag = ing.get("tag")
+        if (tag != null) {
+          if (tag.getAsString().startsWith("forge:")) {
+            let newTag = tag.getAsString().replace("forge:", "c:")
+            ing["addProperty(java.lang.String,java.lang.String)"]("tag", newTag)
+          }
+        }
+      })
+    })
+
+  event.getEntry("ad_astra:astrodux").forEach(entry => {
+    entry.json()["addProperty(java.lang.String,java.lang.String)"]("type", "minecraft:crafting_shaped")
+    entry.json().add("result", {
+      "type": "component",
+      "id": "patchouli:guide_book",
+      "components": {
+        "patchouli:book": "ad_astra:astrodux"
+      }
+    })
+  })
+
+  event.getEntry(["immersiveengineering:crusher/ice_shard", "immersiveengineering:crusher/venus_sandstone"])
+    .forEach(entry => {
+      entry.fixItemAtKey("result")
+      let input = entry.json().get("input")
+      let tag = input.get("tag")
+      if (tag != null) {
+        if (tag.getAsString().startsWith("forge:")) {
+          let newTag = tag.getAsString().replace("forge:", "c:")
+          input["addProperty(java.lang.String,java.lang.String)"]("tag", newTag)
+        }
+      }
+      let secs = entry.json().get("secondaries")
+      secs.forEach(sec => {
+        let output = sec.get("output")
+        if (output != null) {
+          tag = output.get("tag")
+          if (tag != null) {
+            if (tag.getAsString().startsWith("forge:")) {
+              let newTag = tag.getAsString().replace("forge:", "c:")
+              output["addProperty(java.lang.String,java.lang.String)"]("tag", newTag)
+            }
+          }
+        }
+      })
+    })
+
+  event.getEntry(["immersiveengineering:metalpress/plate_calorite", "immersiveengineering:metalpress/plate_desh", "immersiveengineering:metalpress/plate_ostrum"])
+    .forEach(entry => {
+      entry.fixItemAtKey("result")
+      let input = entry.json().get("input")
+      let tag = input.get("tag")
+      if (tag != null) {
+        if (tag.getAsString().startsWith("forge:")) {
+          let newTag = tag.getAsString().replace("forge:", "c:")
+          input["addProperty(java.lang.String,java.lang.String)"]("tag", newTag)
+        }
+      }
+      let result = entry.json().get("result")
+      tag = result.get("tag")
+      if (tag != null) {
+        if (tag.getAsString().startsWith("forge:")) {
+          let newTag = tag.getAsString().replace("forge:", "c:")
+          result["addProperty(java.lang.String,java.lang.String)"]("tag", newTag)
+        }
+      }
+    })
+
+  console.log(`Fixing recipes took ${timer.stop().elapsed("milliseconds")} ms...`)
+})
