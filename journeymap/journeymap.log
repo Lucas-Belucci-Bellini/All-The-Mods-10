@@ -149,3 +149,11 @@ CoreProperties{state=Valid, file=journeymap.core.config, configVersion=6.0.9, ma
 [15:25:32] [Render thread/INFO] [JourneymapClient] Mapping halted in C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\data\mp\offline\minecraft:overworld
 [15:25:32] [Render thread/INFO] [JourneymapClient] Mapping halted in C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\data\mp\offline\minecraft:overworld
 [15:25:32] [Render thread/INFO] [WaypointHandler] WaypointBackend selected: Client (was=Server, shouldBeRemote=false, isJMServer=false, serverManagedWP=false, isServerManagedWaypointConnection=false, hasSingleplayerServer=false)
+[17:32:45] [Render thread/INFO] [PlayerConnectHandler] onDisconnect: world is null
+[17:34:24] [Render thread/INFO] [PlayerConnectHandler] onDisconnect: world is null
+[17:38:07] [Render thread/INFO] [PlayerConnectHandler] onDisconnect: world is null
+[17:39:40] [Render thread/INFO] [PlayerConnectHandler] onDisconnect: world is null
+[17:40:24] [Render thread/INFO] [PlayerConnectHandler] onDisconnect: world is null
+[17:42:04] [Render thread/INFO] [PlayerConnectHandler] onDisconnect: world is null
+[17:42:13] [Render thread/INFO] [PlayerConnectHandler] onDisconnect: world is null
+[17:43:19] [Render thread/INFO] [PlayerConnectHandler] onDisconnect: world is null

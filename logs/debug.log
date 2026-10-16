@@ -135054,3 +135054,322 @@ Caused by: java.net.ConnectException: Connection timed out: getsockopt
 [16Oct2026 17:35:41.437] [AllTheTweaks-DiscordRpc/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.command.CommandExecutor/]: Sending command: SET_ACTIVITY (nonce: 136)
 [16Oct2026 17:35:41.440] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Received frame: op=FRAME, data={"cmd":"SET_ACTIVITY","data":{"type":0,"state":"569 Mods","details":"Getting coffee","timestamps":{"start":1792174623000},"assets":{"large_image":"1252861204045500466","large_text":"All The Mods 10"},...
 [16Oct2026 17:35:41.441] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Frame handled by command executor: true
+[16Oct2026 17:36:41.892] [AllTheTweaks-DiscordRpc/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.command.CommandExecutor/]: Sending command: SET_ACTIVITY (nonce: 137)
+[16Oct2026 17:36:41.935] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Received frame: op=FRAME, data={"cmd":"SET_ACTIVITY","data":{"type":0,"state":"569 Mods","details":"Looking for the right button","timestamps":{"start":1792174623000},"assets":{"large_image":"1252861204045500466","large_text":"All ...
+[16Oct2026 17:36:41.938] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Frame handled by command executor: true
+[16Oct2026 17:37:41.896] [AllTheTweaks-DiscordRpc/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.command.CommandExecutor/]: Sending command: SET_ACTIVITY (nonce: 138)
+[16Oct2026 17:37:41.906] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Received frame: op=FRAME, data={"cmd":"SET_ACTIVITY","data":{"type":0,"state":"569 Mods","details":"Getting coffee","timestamps":{"start":1792174623000},"assets":{"large_image":"1252861204045500466","large_text":"All The Mods 10"},...
+[16Oct2026 17:37:41.906] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Frame handled by command executor: true
+[16Oct2026 17:37:52.333] [Render thread/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.1.05.hex, loading
+[16Oct2026 17:37:56.257] [Render thread/ERROR] [Essential Logger/]: Error occurred in method: null
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.ArrayList$Itr.checkForComodification(Unknown Source) ~[?:?]
+	at java.base/java.util.ArrayList$ListItr.previous(Unknown Source) ~[?:?]
+	at LAYER PLUGIN/kotlin.stdlib/kotlin.collections.ReversedList$listIterator$1.next(ReversedViews.kt:48) ~[kotlin-stdlib-2.4.0.jar%231535!/:2.4.0-release-281]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.overlay.OverlayManagerImpl.handleMouseRelease(OverlayManagerImpl.kt:331) ~[Essential%20(neoforge_1.21.1).jar%231556!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.overlay.OverlayManagerImpl.access$handleMouseRelease(OverlayManagerImpl.kt:70) ~[Essential%20(neoforge_1.21.1).jar%231556!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.overlay.OverlayManagerImpl$Events.mouseRelease(OverlayManagerImpl.kt:697) ~[Essential%20(neoforge_1.21.1).jar%231556!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.lib.kbrewster.eventbus.EventBus$Subscriber.invoke(eventbus.kt:29) ~[Essential%20(neoforge_1.21.1).jar%231556!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.util.EventBus.post(eventbus.kt:131) ~[Essential%20(neoforge_1.21.1).jar%231556!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.MouseHandler.handler$mcb000$essential$onMouseReleased(MouseHandler.java:8539) ~[client-1.21.1-20240808.144430-srg.jar%23719!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.MouseHandler.lambda$onPress$1(MouseHandler.java) ~[client-1.21.1-20240808.144430-srg.jar%23719!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.gui.screens.Screen.wrapScreenError(Screen.java:451) ~[client-1.21.1-20240808.144430-srg.jar%23719!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.MouseHandler.onPress(MouseHandler.java:103) ~[client-1.21.1-20240808.144430-srg.jar%23719!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.MouseHandler.lambda$setup$4(MouseHandler.java:202) ~[client-1.21.1-20240808.144430-srg.jar%23719!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:98) ~[client-1.21.1-20240808.144430-srg.jar%23719!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:202) ~[client-1.21.1-20240808.144430-srg.jar%23719!/:?]
+	at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.3.jar%23173!/:build 5]
+	at MC-BOOTSTRAP/org.lwjgl@3.3.3+5/org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.3.jar%23185!/:build 5]
+	at MC-BOOTSTRAP/org.lwjgl.glfw@3.3.3+5/org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3438) ~[lwjgl-glfw-3.3.3.jar%23173!/:build 5]
+	at TRANSFORMER/minecraft@1.21.1/com.mojang.blaze3d.systems.RenderSystem.pollEvents(RenderSystem.java:134) ~[client-1.21.1-20240808.144430-srg.jar%23719!/:?]
+	at TRANSFORMER/minecraft@1.21.1/com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:147) ~[client-1.21.1-20240808.144430-srg.jar%23719!/:?]
+	at TRANSFORMER/minecraft@1.21.1/com.mojang.blaze3d.platform.Window.updateDisplay(Window.java:292) ~[client-1.21.1-20240808.144430-srg.jar%23719!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.runTick(Minecraft.java:1217) ~[client-1.21.1-20240808.144430-srg.jar%23719!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.run(Minecraft.java:807) ~[client-1.21.1-20240808.144430-srg.jar%23719!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.main.Main.main(Main.java:230) ~[client-1.21.1-20240808.144430-srg.jar%23719!/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at MC-BOOTSTRAP/fml_loader@4.0.45/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136) ~[loader-4.0.45.jar%23107!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.45/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124) ~[loader-4.0.45.jar%23107!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.45/net.neoforged.fml.loading.targets.CommonClientLaunchHandler.runService(CommonClientLaunchHandler.java:32) ~[loader-4.0.45.jar%23107!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.45/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118) ~[loader-4.0.45.jar%23107!/:4.0]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-11.0.5.jar%23112!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-11.0.5.jar%23112!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-11.0.5.jar%23112!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.run(Launcher.java:103) [modlauncher-11.0.5.jar%23112!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.main(Launcher.java:74) [modlauncher-11.0.5.jar%23112!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-11.0.5.jar%23112!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-11.0.5.jar%23112!/:?]
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210) [bootstraplauncher-2.0.2.jar:?]
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69) [bootstraplauncher-2.0.2.jar:?]
+[16Oct2026 17:37:58.554] [Render thread/INFO] [de.keksuccino.fancymenu.customization.layer.ScreenCustomizationLayerHandler/]: [FANCYMENU] ScreenCustomizationLayer registered: gg.essential.gui.friends.SocialMenu
+[16Oct2026 17:38:04.472] [Render thread/INFO] [com.mrbysco.neoauth.NeoAuth/]: Adding auth button to the multiplayer screen
+[16Oct2026 17:38:04.490] [ForkJoinPool.commonPool-worker-36/INFO] [com.mrbysco.neoauth.NeoAuth/]: Verifying Minecraft session...
+[16Oct2026 17:38:04.634] [Render thread/INFO] [com.mrbysco.neoauth.NeoAuth/]: Adding auth button to the multiplayer screen
+[16Oct2026 17:38:04.634] [ForkJoinPool.commonPool-worker-40/INFO] [com.mrbysco.neoauth.NeoAuth/]: Verifying Minecraft session...
+[16Oct2026 17:38:04.643] [Render thread/INFO] [com.mrbysco.neoauth.NeoAuth/]: Adding auth button to the multiplayer screen
+[16Oct2026 17:38:04.644] [ForkJoinPool.commonPool-worker-38/INFO] [com.mrbysco.neoauth.NeoAuth/]: Verifying Minecraft session...
+[16Oct2026 17:38:04.819] [Server Pinger #1/INFO] [dev.ryanhcode.sable.Sable/]: Starting remote client UDP channel future
+[16Oct2026 17:38:04.819] [Server Pinger #4/INFO] [dev.ryanhcode.sable.Sable/]: Starting remote client UDP channel future
+[16Oct2026 17:38:04.825] [Server Pinger #3/INFO] [dev.ryanhcode.sable.Sable/]: Starting remote client UDP channel future
+[16Oct2026 17:38:04.829] [Server Pinger #0/INFO] [dev.ryanhcode.sable.Sable/]: Starting remote client UDP channel future
+[16Oct2026 17:38:04.831] [Essential Ping Proxy Server #21/DEBUG] [gg.essential.network.connectionmanager.ice.netty.CloseAfterFirstMessage/]: Got [id: 0xc69e8fb3, L:local:E:b1f87242 ! R:local:E:e3230289], closing [id: 0xef05d99d, L:local:E:b1f87242]
+[16Oct2026 17:38:04.831] [Essential Ping Proxy Server #20/DEBUG] [gg.essential.network.connectionmanager.ice.netty.CloseAfterFirstMessage/]: Got [id: 0xe8597559, L:local:E:212bcb86 ! R:local:E:5e40edf3], closing [id: 0x82a000c4, L:local:E:212bcb86]
+[16Oct2026 17:38:04.833] [Server Pinger #2/INFO] [dev.ryanhcode.sable.Sable/]: Starting remote client UDP channel future
+[16Oct2026 17:38:04.833] [Netty Client IO #15/INFO] [dev.ryanhcode.sable.Sable/]: Client UDP channel active
+[16Oct2026 17:38:04.839] [Essential Ping Proxy Server #23/DEBUG] [gg.essential.network.connectionmanager.ice.netty.CloseAfterFirstMessage/]: Got [id: 0xc51481ed, L:local:E:77c55f5b ! R:local:E:0bc8d3fb], closing [id: 0xff509236, L:local:E:77c55f5b]
+[16Oct2026 17:38:04.839] [Netty Client IO #14/INFO] [dev.ryanhcode.sable.Sable/]: Client UDP channel active
+[16Oct2026 17:38:04.843] [Essential Ping Proxy Server #22/DEBUG] [gg.essential.network.connectionmanager.ice.netty.CloseAfterFirstMessage/]: Got [id: 0x2f3ef5e7, L:local:E:5987bd3d ! R:local:E:afbc68e2], closing [id: 0x4855a6f5, L:local:E:5987bd3d]
+[16Oct2026 17:38:04.845] [Netty Client IO #16/INFO] [dev.ryanhcode.sable.Sable/]: Client UDP channel active
+[16Oct2026 17:38:04.847] [Essential Ping Proxy Server #3/DEBUG] [gg.essential.network.connectionmanager.ice.netty.CloseAfterFirstMessage/]: Got [id: 0xafeb3d3b, L:local:E:c490f1a6 ! R:local:E:064ff8e8], closing [id: 0xc78c018f, L:local:E:c490f1a6]
+[16Oct2026 17:38:04.847] [Netty Client IO #17/INFO] [dev.ryanhcode.sable.Sable/]: Client UDP channel active
+[16Oct2026 17:38:04.848] [Netty Client IO #18/INFO] [dev.ryanhcode.sable.Sable/]: Client UDP channel active
+[16Oct2026 17:38:04.890] [Server Pinger #0/INFO] [dev.ryanhcode.sable.Sable/]: Starting remote client UDP channel future
+[16Oct2026 17:38:04.937] [Essential Ping Proxy Server #7/DEBUG] [gg.essential.network.connectionmanager.ice.netty.CloseAfterFirstMessage/]: Got [id: 0xc3bbcfec, L:local:E:95a46fc3 ! R:local:E:d2fea650], closing [id: 0xc00cee22, L:local:E:95a46fc3]
+[16Oct2026 17:38:04.937] [Server Pinger #4/INFO] [dev.ryanhcode.sable.Sable/]: Starting remote client UDP channel future
+[16Oct2026 17:38:04.941] [Netty Client IO #19/INFO] [dev.ryanhcode.sable.Sable/]: Client UDP channel active
+[16Oct2026 17:38:04.943] [Server Pinger #3/INFO] [dev.ryanhcode.sable.Sable/]: Starting remote client UDP channel future
+[16Oct2026 17:38:04.944] [Server Pinger #1/INFO] [dev.ryanhcode.sable.Sable/]: Starting remote client UDP channel future
+[16Oct2026 17:38:04.947] [Essential Ping Proxy Server #8/DEBUG] [gg.essential.network.connectionmanager.ice.netty.CloseAfterFirstMessage/]: Got [id: 0xfca8939c, L:local:E:f7b48e5b ! R:local:E:9ffa40e7], closing [id: 0xb48f85ba, L:local:E:f7b48e5b]
+[16Oct2026 17:38:04.950] [Essential Ping Proxy Server #6/DEBUG] [gg.essential.network.connectionmanager.ice.netty.CloseAfterFirstMessage/]: Got [id: 0xbbfbf31d, L:local:E:77216889 ! R:local:E:104aa7c6], closing [id: 0xf0afcd58, L:local:E:77216889]
+[16Oct2026 17:38:04.951] [Netty Client IO #20/INFO] [dev.ryanhcode.sable.Sable/]: Client UDP channel active
+[16Oct2026 17:38:04.954] [Essential Ping Proxy Server #10/DEBUG] [gg.essential.network.connectionmanager.ice.netty.CloseAfterFirstMessage/]: Got [id: 0xff97272c, L:local:E:d20dacc4 ! R:local:E:ab775f93], closing [id: 0x44d2c4bc, L:local:E:d20dacc4]
+[16Oct2026 17:38:04.954] [Netty Client IO #21/INFO] [dev.ryanhcode.sable.Sable/]: Client UDP channel active
+[16Oct2026 17:38:04.956] [Netty Client IO #22/INFO] [dev.ryanhcode.sable.Sable/]: Client UDP channel active
+[16Oct2026 17:38:05.033] [Netty Client IO #17/INFO] [dev.ryanhcode.sable.Sable/]: Client UDP channel inactive
+[16Oct2026 17:38:05.033] [Netty Client IO #15/INFO] [dev.ryanhcode.sable.Sable/]: Client UDP channel inactive
+[16Oct2026 17:38:05.033] [Netty Client IO #16/INFO] [dev.ryanhcode.sable.Sable/]: Client UDP channel inactive
+[16Oct2026 17:38:05.033] [Netty Client IO #14/INFO] [dev.ryanhcode.sable.Sable/]: Client UDP channel inactive
+[16Oct2026 17:38:05.033] [Netty Client IO #18/INFO] [dev.ryanhcode.sable.Sable/]: Client UDP channel inactive
+[16Oct2026 17:38:05.035] [Netty Client IO #17/INFO] [dev.ryanhcode.sable.Sable/]: Closed UDP channel!
+[16Oct2026 17:38:05.035] [Netty Client IO #15/INFO] [dev.ryanhcode.sable.Sable/]: Closed UDP channel!
+[16Oct2026 17:38:05.035] [Netty Client IO #16/INFO] [dev.ryanhcode.sable.Sable/]: Closed UDP channel!
+[16Oct2026 17:38:05.035] [Netty Client IO #14/INFO] [dev.ryanhcode.sable.Sable/]: Closed UDP channel!
+[16Oct2026 17:38:05.035] [Netty Client IO #18/INFO] [dev.ryanhcode.sable.Sable/]: Closed UDP channel!
+[16Oct2026 17:38:05.100] [ForkJoinPool.commonPool-worker-38/WARN] [com.mrbysco.neoauth.NeoAuth/]: The Minecraft session is invalid!
+[16Oct2026 17:38:05.117] [Netty Client IO #22/INFO] [dev.ryanhcode.sable.Sable/]: Client UDP channel inactive
+[16Oct2026 17:38:05.117] [Netty Client IO #20/INFO] [dev.ryanhcode.sable.Sable/]: Client UDP channel inactive
+[16Oct2026 17:38:05.117] [Netty Client IO #19/INFO] [dev.ryanhcode.sable.Sable/]: Client UDP channel inactive
+[16Oct2026 17:38:05.117] [Netty Client IO #22/INFO] [dev.ryanhcode.sable.Sable/]: Closed UDP channel!
+[16Oct2026 17:38:05.117] [Netty Client IO #20/INFO] [dev.ryanhcode.sable.Sable/]: Closed UDP channel!
+[16Oct2026 17:38:05.117] [Netty Client IO #19/INFO] [dev.ryanhcode.sable.Sable/]: Closed UDP channel!
+[16Oct2026 17:38:05.122] [Netty Client IO #21/INFO] [dev.ryanhcode.sable.Sable/]: Client UDP channel inactive
+[16Oct2026 17:38:05.122] [Netty Client IO #21/INFO] [dev.ryanhcode.sable.Sable/]: Closed UDP channel!
+[16Oct2026 17:38:05.124] [ForkJoinPool.commonPool-worker-40/INFO] [com.mrbysco.neoauth.NeoAuth/]: The Minecraft session is valid
+[16Oct2026 17:38:05.184] [ForkJoinPool.commonPool-worker-36/WARN] [com.mrbysco.neoauth.NeoAuth/]: The Minecraft session is invalid!
+[16Oct2026 17:38:05.329] [Server Pinger #2/INFO] [dev.ryanhcode.sable.Sable/]: Starting remote client UDP channel future
+[16Oct2026 17:38:05.332] [Essential Ping Proxy Server #14/DEBUG] [gg.essential.network.connectionmanager.ice.netty.CloseAfterFirstMessage/]: Got [id: 0x1385a724, L:local:E:451060ab ! R:local:E:97faa1e5], closing [id: 0xb14f8b18, L:local:E:451060ab]
+[16Oct2026 17:38:05.332] [Netty Client IO #23/INFO] [dev.ryanhcode.sable.Sable/]: Client UDP channel active
+[16Oct2026 17:38:05.492] [Netty Client IO #23/INFO] [dev.ryanhcode.sable.Sable/]: Client UDP channel inactive
+[16Oct2026 17:38:05.492] [Netty Client IO #23/INFO] [dev.ryanhcode.sable.Sable/]: Closed UDP channel!
+[16Oct2026 17:38:06.921] [Render thread/INFO] [minecolonies/]: Removed all colony views
+[16Oct2026 17:38:06.921] [Render thread/INFO] [FluxNetworks/]: Released client Flux Networks cache
+[16Oct2026 17:38:06.921] [Render thread/DEBUG] [net.permutated.pylons.Pylons/]: Clearing recipe cache after logging out
+[16Oct2026 17:38:06.923] [Render thread/DEBUG] [io.redspace.ironsspellbooks.IronsSpellbooks/]: ClientPlayerNetworkEvent onPlayerLogOut
+[16Oct2026 17:38:06.988] [Render thread/DEBUG] [SpectreLib/CONFIG]: Unloading server configs
+[16Oct2026 17:38:07.043] [Render thread/INFO] [net.minecraft.client.gui.screens.ConnectScreen/]: Connecting to 26.78.195.69, 1234
+[16Oct2026 17:38:12.038] [Server Connector #3/DEBUG] [net.neoforged.neoforge.network.DualStackUtils/]: Detected IPv4 address: "26.78.195.69"
+[16Oct2026 17:38:12.039] [Server Connector #3/INFO] [dev.ryanhcode.sable.Sable/]: Starting remote client UDP channel future
+[16Oct2026 17:38:12.040] [Netty Client IO #0/INFO] [dev.ryanhcode.sable.Sable/]: Client UDP channel active
+[16Oct2026 17:38:33.072] [Server Connector #3/ERROR] [net.minecraft.client.gui.screens.ConnectScreen/]: Couldn't connect to server
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: getsockopt: 26.78.195.69/26.78.195.69:1234
+Caused by: java.net.ConnectException: Connection timed out: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Unknown Source) ~[?:?]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source) ~[?:?]
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.97.Final.jar%23162!/:4.1.97.Final]
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.97.Final.jar%23162!/:4.1.97.Final]
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) ~[netty-transport-4.1.97.Final.jar%23162!/:4.1.97.Final]
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.97.Final.jar%23162!/:4.1.97.Final]
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.97.Final.jar%23162!/:4.1.97.Final]
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.97.Final.jar%23162!/:4.1.97.Final]
+	at MC-BOOTSTRAP/io.netty.common@4.1.97.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.97.Final.jar%23157!/:4.1.97.Final]
+	at MC-BOOTSTRAP/io.netty.common@4.1.97.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.97.Final.jar%23157!/:4.1.97.Final]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[?:?]
+[16Oct2026 17:38:34.162] [Render thread/INFO] [com.mrbysco.neoauth.NeoAuth/]: Adding auth button to the multiplayer screen
+[16Oct2026 17:38:34.165] [Render thread/INFO] [com.mrbysco.neoauth.NeoAuth/]: Adding auth button to the multiplayer screen
+[16Oct2026 17:38:34.168] [Render thread/INFO] [com.mrbysco.neoauth.NeoAuth/]: Adding auth button to the multiplayer screen
+[16Oct2026 17:38:42.744] [AllTheTweaks-DiscordRpc/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.command.CommandExecutor/]: Sending command: SET_ACTIVITY (nonce: 139)
+[16Oct2026 17:38:42.757] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Received frame: op=FRAME, data={"cmd":"SET_ACTIVITY","data":{"type":0,"state":"569 Mods","details":"Looking for the right button","timestamps":{"start":1792174623000},"assets":{"large_image":"1252861204045500466","large_text":"All ...
+[16Oct2026 17:38:42.757] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Frame handled by command executor: true
+[16Oct2026 17:39:33.364] [ComputerCraft-Network-3/DEBUG] [io.netty.handler.traffic.TrafficCounter/]: Acct schedule not ok: 4675 > 2*1000 from GlobalTC
+[16Oct2026 17:39:33.369] [Render thread/INFO] [com.mrbysco.neoauth.NeoAuth/]: Adding auth button to the multiplayer screen
+[16Oct2026 17:39:33.369] [ForkJoinPool.commonPool-worker-37/INFO] [com.mrbysco.neoauth.NeoAuth/]: Verifying Minecraft session...
+[16Oct2026 17:39:33.392] [Render thread/INFO] [com.mrbysco.neoauth.NeoAuth/]: Adding auth button to the multiplayer screen
+[16Oct2026 17:39:33.392] [ForkJoinPool.commonPool-worker-36/INFO] [com.mrbysco.neoauth.NeoAuth/]: Verifying Minecraft session...
+[16Oct2026 17:39:33.397] [Render thread/INFO] [com.mrbysco.neoauth.NeoAuth/]: Adding auth button to the multiplayer screen
+[16Oct2026 17:39:33.397] [ForkJoinPool.commonPool-worker-40/INFO] [com.mrbysco.neoauth.NeoAuth/]: Verifying Minecraft session...
+[16Oct2026 17:39:33.751] [ForkJoinPool.commonPool-worker-36/WARN] [com.mrbysco.neoauth.NeoAuth/]: The Minecraft session is invalid!
+[16Oct2026 17:39:33.777] [ForkJoinPool.commonPool-worker-37/INFO] [com.mrbysco.neoauth.NeoAuth/]: The Minecraft session is valid
+[16Oct2026 17:39:33.808] [ForkJoinPool.commonPool-worker-40/WARN] [com.mrbysco.neoauth.NeoAuth/]: The Minecraft session is invalid!
+[16Oct2026 17:39:40.955] [Render thread/INFO] [minecolonies/]: Removed all colony views
+[16Oct2026 17:39:40.955] [Render thread/INFO] [FluxNetworks/]: Released client Flux Networks cache
+[16Oct2026 17:39:40.955] [Render thread/DEBUG] [net.permutated.pylons.Pylons/]: Clearing recipe cache after logging out
+[16Oct2026 17:39:40.956] [Render thread/DEBUG] [io.redspace.ironsspellbooks.IronsSpellbooks/]: ClientPlayerNetworkEvent onPlayerLogOut
+[16Oct2026 17:39:40.959] [Render thread/DEBUG] [SpectreLib/CONFIG]: Unloading server configs
+[16Oct2026 17:39:40.975] [Render thread/INFO] [net.minecraft.client.gui.screens.ConnectScreen/]: Connecting to 26.78.195.69, 1234
+[16Oct2026 17:39:43.692] [AllTheTweaks-DiscordRpc/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.command.CommandExecutor/]: Sending command: SET_ACTIVITY (nonce: 140)
+[16Oct2026 17:39:43.697] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Received frame: op=FRAME, data={"cmd":"SET_ACTIVITY","data":{"type":0,"state":"569 Mods","details":"Reading the changelog","timestamps":{"start":1792174623000},"assets":{"large_image":"1252861204045500466","large_text":"All The Mod...
+[16Oct2026 17:39:43.697] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Frame handled by command executor: true
+[16Oct2026 17:39:46.139] [Server Connector #4/DEBUG] [net.neoforged.neoforge.network.DualStackUtils/]: Detected IPv4 address: "26.78.195.69"
+[16Oct2026 17:39:46.140] [Server Connector #4/INFO] [dev.ryanhcode.sable.Sable/]: Starting remote client UDP channel future
+[16Oct2026 17:39:46.141] [Netty Client IO #2/INFO] [dev.ryanhcode.sable.Sable/]: Client UDP channel active
+[16Oct2026 17:40:07.232] [Server Connector #4/ERROR] [net.minecraft.client.gui.screens.ConnectScreen/]: Couldn't connect to server
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: getsockopt: 26.78.195.69/26.78.195.69:1234
+Caused by: java.net.ConnectException: Connection timed out: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Unknown Source) ~[?:?]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source) ~[?:?]
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.97.Final.jar%23162!/:4.1.97.Final]
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.97.Final.jar%23162!/:4.1.97.Final]
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) ~[netty-transport-4.1.97.Final.jar%23162!/:4.1.97.Final]
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.97.Final.jar%23162!/:4.1.97.Final]
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.97.Final.jar%23162!/:4.1.97.Final]
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.97.Final.jar%23162!/:4.1.97.Final]
+	at MC-BOOTSTRAP/io.netty.common@4.1.97.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.97.Final.jar%23157!/:4.1.97.Final]
+	at MC-BOOTSTRAP/io.netty.common@4.1.97.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.97.Final.jar%23157!/:4.1.97.Final]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[?:?]
+[16Oct2026 17:40:21.707] [Render thread/INFO] [com.mrbysco.neoauth.NeoAuth/]: Adding auth button to the multiplayer screen
+[16Oct2026 17:40:21.712] [Render thread/INFO] [com.mrbysco.neoauth.NeoAuth/]: Adding auth button to the multiplayer screen
+[16Oct2026 17:40:21.714] [Render thread/INFO] [com.mrbysco.neoauth.NeoAuth/]: Adding auth button to the multiplayer screen
+[16Oct2026 17:40:24.964] [Render thread/INFO] [minecolonies/]: Removed all colony views
+[16Oct2026 17:40:24.965] [Render thread/INFO] [FluxNetworks/]: Released client Flux Networks cache
+[16Oct2026 17:40:24.965] [Render thread/DEBUG] [net.permutated.pylons.Pylons/]: Clearing recipe cache after logging out
+[16Oct2026 17:40:24.965] [Render thread/DEBUG] [io.redspace.ironsspellbooks.IronsSpellbooks/]: ClientPlayerNetworkEvent onPlayerLogOut
+[16Oct2026 17:40:24.965] [Render thread/DEBUG] [SpectreLib/CONFIG]: Unloading server configs
+[16Oct2026 17:40:24.977] [Render thread/INFO] [net.minecraft.client.gui.screens.ConnectScreen/]: Connecting to 26.78.195.69, 1234
+[16Oct2026 17:40:26.918] [Server Connector #5/DEBUG] [net.neoforged.neoforge.network.DualStackUtils/]: Detected IPv4 address: "26.78.195.69"
+[16Oct2026 17:40:26.919] [Server Connector #5/INFO] [dev.ryanhcode.sable.Sable/]: Starting remote client UDP channel future
+[16Oct2026 17:40:26.920] [Netty Client IO #5/INFO] [dev.ryanhcode.sable.Sable/]: Client UDP channel active
+[16Oct2026 17:40:43.693] [AllTheTweaks-DiscordRpc/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.command.CommandExecutor/]: Sending command: SET_ACTIVITY (nonce: 141)
+[16Oct2026 17:40:43.700] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Received frame: op=FRAME, data={"cmd":"SET_ACTIVITY","data":{"type":0,"state":"569 Mods","details":"Making a sandwich","timestamps":{"start":1792174623000},"assets":{"large_image":"1252861204045500466","large_text":"All The Mods 10...
+[16Oct2026 17:40:43.700] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Frame handled by command executor: true
+[16Oct2026 17:40:47.945] [Server Connector #5/ERROR] [net.minecraft.client.gui.screens.ConnectScreen/]: Couldn't connect to server
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: getsockopt: 26.78.195.69/26.78.195.69:1234
+Caused by: java.net.ConnectException: Connection timed out: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Unknown Source) ~[?:?]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source) ~[?:?]
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.97.Final.jar%23162!/:4.1.97.Final]
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.97.Final.jar%23162!/:4.1.97.Final]
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) ~[netty-transport-4.1.97.Final.jar%23162!/:4.1.97.Final]
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.97.Final.jar%23162!/:4.1.97.Final]
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.97.Final.jar%23162!/:4.1.97.Final]
+	at MC-BOOTSTRAP/io.netty.transport@4.1.97.Final/io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.97.Final.jar%23162!/:4.1.97.Final]
+	at MC-BOOTSTRAP/io.netty.common@4.1.97.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.97.Final.jar%23157!/:4.1.97.Final]
+	at MC-BOOTSTRAP/io.netty.common@4.1.97.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.97.Final.jar%23157!/:4.1.97.Final]
+	at java.base/java.lang.Thread.run(Unknown Source) ~[?:?]
+[16Oct2026 17:40:48.947] [Render thread/INFO] [com.mrbysco.neoauth.NeoAuth/]: Adding auth button to the multiplayer screen
+[16Oct2026 17:40:48.947] [ForkJoinPool.commonPool-worker-40/INFO] [com.mrbysco.neoauth.NeoAuth/]: Verifying Minecraft session...
+[16Oct2026 17:40:48.949] [Render thread/INFO] [com.mrbysco.neoauth.NeoAuth/]: Adding auth button to the multiplayer screen
+[16Oct2026 17:40:48.949] [ForkJoinPool.commonPool-worker-37/INFO] [com.mrbysco.neoauth.NeoAuth/]: Verifying Minecraft session...
+[16Oct2026 17:40:48.950] [Render thread/INFO] [com.mrbysco.neoauth.NeoAuth/]: Adding auth button to the multiplayer screen
+[16Oct2026 17:40:48.950] [ForkJoinPool.commonPool-worker-36/INFO] [com.mrbysco.neoauth.NeoAuth/]: Verifying Minecraft session...
+[16Oct2026 17:40:49.322] [ForkJoinPool.commonPool-worker-37/WARN] [com.mrbysco.neoauth.NeoAuth/]: The Minecraft session is invalid!
+[16Oct2026 17:40:49.323] [ForkJoinPool.commonPool-worker-40/WARN] [com.mrbysco.neoauth.NeoAuth/]: The Minecraft session is invalid!
+[16Oct2026 17:40:49.371] [ForkJoinPool.commonPool-worker-36/INFO] [com.mrbysco.neoauth.NeoAuth/]: The Minecraft session is valid
+[16Oct2026 17:41:44.686] [AllTheTweaks-DiscordRpc/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.command.CommandExecutor/]: Sending command: SET_ACTIVITY (nonce: 142)
+[16Oct2026 17:41:44.689] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Received frame: op=FRAME, data={"cmd":"SET_ACTIVITY","data":{"type":0,"state":"569 Mods","details":"Doomscrolling","timestamps":{"start":1792174623000},"assets":{"large_image":"1252861204045500466","large_text":"All The Mods 10"},"...
+[16Oct2026 17:41:44.690] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Frame handled by command executor: true
+[16Oct2026 17:42:04.607] [Render thread/INFO] [minecolonies/]: Removed all colony views
+[16Oct2026 17:42:04.607] [Render thread/INFO] [FluxNetworks/]: Released client Flux Networks cache
+[16Oct2026 17:42:04.607] [Render thread/DEBUG] [net.permutated.pylons.Pylons/]: Clearing recipe cache after logging out
+[16Oct2026 17:42:04.607] [Render thread/DEBUG] [io.redspace.ironsspellbooks.IronsSpellbooks/]: ClientPlayerNetworkEvent onPlayerLogOut
+[16Oct2026 17:42:04.607] [Render thread/DEBUG] [SpectreLib/CONFIG]: Unloading server configs
+[16Oct2026 17:42:04.618] [Render thread/INFO] [net.minecraft.client.gui.screens.ConnectScreen/]: Connecting to 26.78.195.69, 1234
+[16Oct2026 17:42:06.565] [Server Connector #6/DEBUG] [net.neoforged.neoforge.network.DualStackUtils/]: Detected IPv4 address: "26.78.195.69"
+[16Oct2026 17:42:06.566] [Server Connector #6/INFO] [dev.ryanhcode.sable.Sable/]: Starting remote client UDP channel future
+[16Oct2026 17:42:06.567] [Netty Client IO #7/INFO] [dev.ryanhcode.sable.Sable/]: Client UDP channel active
+[16Oct2026 17:42:07.318] [Netty Client IO #6/DEBUG] [mixin/]: Mixing CompressionDecoderMixin from connectivity.mixins.json into net.minecraft.network.CompressionDecoder
+[16Oct2026 17:42:07.328] [Netty Client IO #6/DEBUG] [mixin/]: connectivity.mixins.json:CompressionDecoderMixin from mod connectivity->@Inject::disabledLimit(Lio/netty/channel/ChannelHandlerContext;Lio/netty/buffer/ByteBuf;Ljava/util/List;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V doesn't use it's CallbackInfo
+[16Oct2026 17:42:07.328] [Netty Client IO #6/DEBUG] [mixin/]: connectivity.mixins.json:CompressionDecoderMixin from mod connectivity->@Inject::disabledLimit(Lio/netty/channel/ChannelHandlerContext;Lio/netty/buffer/ByteBuf;Ljava/util/List;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V has 0 override(s) in child classes
+[16Oct2026 17:42:07.328] [Netty Client IO #6/DEBUG] [mixin/]: connectivity.mixins.json:CompressionDecoderMixin from mod connectivity->@Inject::disabledLimit(Lio/netty/channel/ChannelHandlerContext;Lio/netty/buffer/ByteBuf;Ljava/util/List;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V won't be passed a CallbackInfo as a result
+[16Oct2026 17:42:07.328] [Netty Client IO #6/DEBUG] [mixin/]: connectivity.mixins.json:CompressionDecoderMixin from mod connectivity->@Inject::restoreLimit(Lio/netty/channel/ChannelHandlerContext;Lio/netty/buffer/ByteBuf;Ljava/util/List;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V doesn't use it's CallbackInfo
+[16Oct2026 17:42:07.328] [Netty Client IO #6/DEBUG] [mixin/]: connectivity.mixins.json:CompressionDecoderMixin from mod connectivity->@Inject::restoreLimit(Lio/netty/channel/ChannelHandlerContext;Lio/netty/buffer/ByteBuf;Ljava/util/List;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V has 0 override(s) in child classes
+[16Oct2026 17:42:07.328] [Netty Client IO #6/DEBUG] [mixin/]: connectivity.mixins.json:CompressionDecoderMixin from mod connectivity->@Inject::restoreLimit(Lio/netty/channel/ChannelHandlerContext;Lio/netty/buffer/ByteBuf;Ljava/util/List;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V won't be passed a CallbackInfo as a result
+[16Oct2026 17:42:07.328] [Netty Client IO #6/DEBUG] [mixin/]: connectivity.mixins.json:CompressionDecoderMixin from mod connectivity->@Inject::restoreLimit(Lio/netty/channel/ChannelHandlerContext;Lio/netty/buffer/ByteBuf;Ljava/util/List;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V doesn't use it's CallbackInfo
+[16Oct2026 17:42:07.328] [Netty Client IO #6/DEBUG] [mixin/]: connectivity.mixins.json:CompressionDecoderMixin from mod connectivity->@Inject::restoreLimit(Lio/netty/channel/ChannelHandlerContext;Lio/netty/buffer/ByteBuf;Ljava/util/List;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V has 0 override(s) in child classes
+[16Oct2026 17:42:07.328] [Netty Client IO #6/DEBUG] [mixin/]: connectivity.mixins.json:CompressionDecoderMixin from mod connectivity->@Inject::restoreLimit(Lio/netty/channel/ChannelHandlerContext;Lio/netty/buffer/ByteBuf;Ljava/util/List;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V won't be passed a CallbackInfo as a result
+[16Oct2026 17:42:07.329] [Netty Client IO #6/DEBUG] [mixin/]: connectivity.mixins.json:CompressionDecoderMixin from mod connectivity->@Inject::restoreLimit(Lio/netty/channel/ChannelHandlerContext;Lio/netty/buffer/ByteBuf;Ljava/util/List;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V doesn't use it's CallbackInfo
+[16Oct2026 17:42:07.329] [Netty Client IO #6/DEBUG] [mixin/]: connectivity.mixins.json:CompressionDecoderMixin from mod connectivity->@Inject::restoreLimit(Lio/netty/channel/ChannelHandlerContext;Lio/netty/buffer/ByteBuf;Ljava/util/List;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V has 0 override(s) in child classes
+[16Oct2026 17:42:07.329] [Netty Client IO #6/DEBUG] [mixin/]: connectivity.mixins.json:CompressionDecoderMixin from mod connectivity->@Inject::restoreLimit(Lio/netty/channel/ChannelHandlerContext;Lio/netty/buffer/ByteBuf;Ljava/util/List;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V won't be passed a CallbackInfo as a result
+[16Oct2026 17:42:07.329] [Netty Client IO #6/DEBUG] [mixin/]: connectivity.mixins.json:CompressionDecoderMixin from mod connectivity->@Inject::onError(Lio/netty/channel/ChannelHandlerContext;Lio/netty/buffer/ByteBuf;Ljava/util/List;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V doesn't use it's CallbackInfo
+[16Oct2026 17:42:07.329] [Netty Client IO #6/DEBUG] [mixin/]: connectivity.mixins.json:CompressionDecoderMixin from mod connectivity->@Inject::onError(Lio/netty/channel/ChannelHandlerContext;Lio/netty/buffer/ByteBuf;Ljava/util/List;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V has 0 override(s) in child classes
+[16Oct2026 17:42:07.329] [Netty Client IO #6/DEBUG] [mixin/]: connectivity.mixins.json:CompressionDecoderMixin from mod connectivity->@Inject::onError(Lio/netty/channel/ChannelHandlerContext;Lio/netty/buffer/ByteBuf;Ljava/util/List;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V won't be passed a CallbackInfo as a result
+[16Oct2026 17:42:07.329] [Netty Client IO #6/DEBUG] [mixin/]: connectivity.mixins.json:CompressionDecoderMixin from mod connectivity->@Inject::onError(Lio/netty/channel/ChannelHandlerContext;Lio/netty/buffer/ByteBuf;Ljava/util/List;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V doesn't use it's CallbackInfo
+[16Oct2026 17:42:07.329] [Netty Client IO #6/DEBUG] [mixin/]: connectivity.mixins.json:CompressionDecoderMixin from mod connectivity->@Inject::onError(Lio/netty/channel/ChannelHandlerContext;Lio/netty/buffer/ByteBuf;Ljava/util/List;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V has 0 override(s) in child classes
+[16Oct2026 17:42:07.329] [Netty Client IO #6/DEBUG] [mixin/]: connectivity.mixins.json:CompressionDecoderMixin from mod connectivity->@Inject::onError(Lio/netty/channel/ChannelHandlerContext;Lio/netty/buffer/ByteBuf;Ljava/util/List;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V won't be passed a CallbackInfo as a result
+[16Oct2026 17:42:07.337] [Netty Client IO #6/DEBUG] [mixin/]: Mixing CompressionEncoderMixin from connectivity.mixins.json into net.minecraft.network.CompressionEncoder
+[16Oct2026 17:42:07.339] [Netty Client IO #6/DEBUG] [mixin/]: connectivity.mixins.json:CompressionEncoderMixin from mod connectivity->@Inject::onEncodeCheckLimit(Lio/netty/channel/ChannelHandlerContext;Lio/netty/buffer/ByteBuf;Lio/netty/buffer/ByteBuf;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V doesn't use it's CallbackInfo
+[16Oct2026 17:42:07.339] [Netty Client IO #6/DEBUG] [mixin/]: connectivity.mixins.json:CompressionEncoderMixin from mod connectivity->@Inject::onEncodeCheckLimit(Lio/netty/channel/ChannelHandlerContext;Lio/netty/buffer/ByteBuf;Lio/netty/buffer/ByteBuf;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V has 0 override(s) in child classes
+[16Oct2026 17:42:07.339] [Netty Client IO #6/DEBUG] [mixin/]: connectivity.mixins.json:CompressionEncoderMixin from mod connectivity->@Inject::onEncodeCheckLimit(Lio/netty/channel/ChannelHandlerContext;Lio/netty/buffer/ByteBuf;Lio/netty/buffer/ByteBuf;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V won't be passed a CallbackInfo as a result
+[16Oct2026 17:42:07.982] [Netty Client IO #6/DEBUG] [net.neoforged.neoforge.network.filters.NetworkFilters/]: Injected net.neoforged.neoforge.network.filters.GenericPacketSplitter@65f5544e into net.minecraft.network.Connection@24123c30
+[16Oct2026 17:42:10.298] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]: Registering material pack for SERVER_DATA
+[16Oct2026 17:42:10.307] [Render thread/DEBUG] [io.redspace.ironsspellbooks.IronsSpellbooks/]: addPackFinders
+[16Oct2026 17:42:10.310] [Render thread/INFO] [potionsmaster/]: === Registering Dynamic Recipe Pack ===
+[16Oct2026 17:42:12.152] [Render thread/INFO] [com.simibubi.create.Create/]: Created 3134 recipes which will be injected into the game
+[16Oct2026 17:42:12.165] [Render thread/INFO] [com.simibubi.create.Create/]: Created 388 tags which will be injected into the game
+[16Oct2026 17:42:12.172] [Render thread/INFO] [plus.dragons.createdragonsplus.data.runtime.RuntimePackResources/]: Starting provider [plus.dragons.createdragonsplus.data.internal.CDPRuntimeRecipeProvider@20968d4a] for runtime resource [create_dragons_plus:runtime]
+[16Oct2026 17:42:12.199] [Render thread/INFO] [plus.dragons.createdragonsplus.data.runtime.RuntimePackResources/]: plus.dragons.createdragonsplus.data.internal.CDPRuntimeRecipeProvider@20968d4a finished after 27 ms
+[16Oct2026 17:42:12.681] [Render thread/INFO] [Open Loader/]: Scan started for SERVER_DATA.
+[16Oct2026 17:42:12.717] [Render thread/INFO] [Open Loader/]: Located 1 packs. Took 33.92ms.
+[16Oct2026 17:42:12.720] [Render thread/INFO] [potionsmaster/]: DynamicRecipeProvider.location() called
+[16Oct2026 17:42:12.720] [Render thread/INFO] [potionsmaster/]: Successfully registered dynamic recipe pack!
+[16Oct2026 17:42:12.720] [Render thread/INFO] [potionsmaster/]: BlockStore has 22 ore(s). Will provide 44 recipes (blasting + crafting for each)
+[16Oct2026 17:42:12.721] [Render thread/DEBUG] [potionsmaster/]:   - coal
+[16Oct2026 17:42:12.721] [Render thread/DEBUG] [potionsmaster/]:   - aluminum
+[16Oct2026 17:42:12.721] [Render thread/DEBUG] [potionsmaster/]:   - redstone
+[16Oct2026 17:42:12.721] [Render thread/DEBUG] [potionsmaster/]:   - platinum
+[16Oct2026 17:42:12.721] [Render thread/DEBUG] [potionsmaster/]:   - silver
+[16Oct2026 17:42:12.721] [Render thread/DEBUG] [potionsmaster/]:   - lead
+[16Oct2026 17:42:12.721] [Render thread/DEBUG] [potionsmaster/]:   - gold
+[16Oct2026 17:42:12.721] [Render thread/DEBUG] [potionsmaster/]:   - iron
+[16Oct2026 17:42:12.721] [Render thread/DEBUG] [potionsmaster/]:   - copper
+[16Oct2026 17:42:12.721] [Render thread/DEBUG] [potionsmaster/]:   - lapis
+[16Oct2026 17:42:12.721] [Render thread/DEBUG] [potionsmaster/]:   - nickel
+[16Oct2026 17:42:12.721] [Render thread/DEBUG] [potionsmaster/]:   - allthemodium
+[16Oct2026 17:42:12.721] [Render thread/DEBUG] [potionsmaster/]:   - quartz
+[16Oct2026 17:42:12.721] [Render thread/DEBUG] [potionsmaster/]:   - netherite_scrap
+[16Oct2026 17:42:12.721] [Render thread/DEBUG] [potionsmaster/]:   - unobtainium
+[16Oct2026 17:42:12.721] [Render thread/DEBUG] [potionsmaster/]:   - tin
+[16Oct2026 17:42:12.721] [Render thread/DEBUG] [potionsmaster/]:   - uranium
+[16Oct2026 17:42:12.721] [Render thread/DEBUG] [potionsmaster/]:   - emerald
+[16Oct2026 17:42:12.721] [Render thread/DEBUG] [potionsmaster/]:   - diamond
+[16Oct2026 17:42:12.721] [Render thread/DEBUG] [potionsmaster/]:   - zinc
+[16Oct2026 17:42:12.721] [Render thread/DEBUG] [potionsmaster/]:   - vibranium
+[16Oct2026 17:42:12.721] [Render thread/DEBUG] [potionsmaster/]:   - osmium
+[16Oct2026 17:42:13.184] [Netty Client IO #7/INFO] [dev.ryanhcode.sable.Sable/]: Client UDP channel inactive
+[16Oct2026 17:42:13.185] [Netty Client IO #7/INFO] [dev.ryanhcode.sable.Sable/]: Closed UDP channel!
+[16Oct2026 17:42:13.194] [Render thread/INFO] [minecolonies/]: Removed all colony views
+[16Oct2026 17:42:13.194] [Render thread/INFO] [FluxNetworks/]: Released client Flux Networks cache
+[16Oct2026 17:42:13.194] [Render thread/DEBUG] [net.permutated.pylons.Pylons/]: Clearing recipe cache after logging out
+[16Oct2026 17:42:13.194] [Render thread/DEBUG] [io.redspace.ironsspellbooks.IronsSpellbooks/]: ClientPlayerNetworkEvent onPlayerLogOut
+[16Oct2026 17:42:13.195] [Render thread/DEBUG] [SpectreLib/CONFIG]: Unloading server configs
+[16Oct2026 17:42:13.201] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientCommonPacketListenerImpl/]: Client disconnected with reason: Internal Exception: io.netty.handler.codec.EncoderException: Packet too large: size 2218367 is over 8
+[16Oct2026 17:42:45.138] [AllTheTweaks-DiscordRpc/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.command.CommandExecutor/]: Sending command: SET_ACTIVITY (nonce: 143)
+[16Oct2026 17:42:45.141] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Received frame: op=FRAME, data={"cmd":"SET_ACTIVITY","data":{"type":0,"state":"569 Mods","details":"Looking for the right button","timestamps":{"start":1792174623000},"assets":{"large_image":"1252861204045500466","large_text":"All ...
+[16Oct2026 17:42:45.141] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Frame handled by command executor: true
+[16Oct2026 17:43:17.819] [Render thread/INFO] [com.mrbysco.neoauth.NeoAuth/]: Adding auth button to the multiplayer screen
+[16Oct2026 17:43:17.819] [ForkJoinPool.commonPool-worker-37/INFO] [com.mrbysco.neoauth.NeoAuth/]: Verifying Minecraft session...
+[16Oct2026 17:43:17.823] [Render thread/INFO] [com.mrbysco.neoauth.NeoAuth/]: Adding auth button to the multiplayer screen
+[16Oct2026 17:43:17.824] [ForkJoinPool.commonPool-worker-38/INFO] [com.mrbysco.neoauth.NeoAuth/]: Verifying Minecraft session...
+[16Oct2026 17:43:17.826] [Render thread/INFO] [com.mrbysco.neoauth.NeoAuth/]: Adding auth button to the multiplayer screen
+[16Oct2026 17:43:17.827] [ForkJoinPool.commonPool-worker-39/INFO] [com.mrbysco.neoauth.NeoAuth/]: Verifying Minecraft session...
+[16Oct2026 17:43:18.218] [ForkJoinPool.commonPool-worker-37/WARN] [com.mrbysco.neoauth.NeoAuth/]: The Minecraft session is invalid!
+[16Oct2026 17:43:18.310] [ForkJoinPool.commonPool-worker-38/WARN] [com.mrbysco.neoauth.NeoAuth/]: The Minecraft session is invalid!
+[16Oct2026 17:43:18.550] [ForkJoinPool.commonPool-worker-39/INFO] [com.mrbysco.neoauth.NeoAuth/]: The Minecraft session is valid
+[16Oct2026 17:43:19.640] [Render thread/DEBUG] [Framework/]: Stopping config watcher
+[16Oct2026 17:43:19.756] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[16Oct2026 17:43:19.778] [Render thread/INFO] [minecolonies/]: Removed all colony views
+[16Oct2026 17:43:19.778] [Render thread/INFO] [FluxNetworks/]: Released client Flux Networks cache
+[16Oct2026 17:43:19.778] [Render thread/DEBUG] [net.permutated.pylons.Pylons/]: Clearing recipe cache after logging out
+[16Oct2026 17:43:19.778] [Render thread/DEBUG] [io.redspace.ironsspellbooks.IronsSpellbooks/]: ClientPlayerNetworkEvent onPlayerLogOut
+[16Oct2026 17:43:19.779] [Render thread/DEBUG] [SpectreLib/CONFIG]: Unloading server configs
+[16Oct2026 17:43:20.114] [Render thread/INFO] [de.keksuccino.fancymenu.util.rendering.ui.cursor.CursorHandler/]: [FANCYMENU] Releasing FancyMenu-owned GLFW cursors during client shutdown..
+[16Oct2026 17:43:20.917] [Render thread/INFO] [FTB Chunks/]: Shutting down map thread
+[16Oct2026 17:43:22.281] [AllTheTweaks-DiscordRpcShutdown/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.command.CommandExecutor/]: Sending command: SET_ACTIVITY (nonce: 144)
+[16Oct2026 17:43:22.294] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Received frame: op=FRAME, data={"cmd":"SET_ACTIVITY","data":null,"evt":null,"nonce":"144"}
+[16Oct2026 17:43:22.294] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Frame handled by command executor: true
+[16Oct2026 17:43:22.313] [AllTheTweaks-DiscordRpcShutdown/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.WindowsConnection/]: Windows connection closed
+[16Oct2026 17:43:22.346] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Read loop ended for generation 1
+[16Oct2026 17:43:22.358] [AllTheTweaks-DiscordRpcShutdown/INFO] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Shut down Discord IPC

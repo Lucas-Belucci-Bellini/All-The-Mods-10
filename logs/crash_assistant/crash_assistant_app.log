@@ -149,3 +149,28 @@ C:\Users\<USER>\curseforge\minecraft\Install\versions\neoforge-21.1.259\neoforge
 
 
 [2026-10-16 15:14:32.090] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: CrashAssistantApp started successfully. Waiting for PID 4204 to stop.
+[2026-10-16 15:16:49.391] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Minecraft is running on renderer:
+AMD Radeon RX 6650 XT
+[2026-10-16 17:43:23.998] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: PID "4204" is not alive or reused by another process. Minecraft JVM appears to have stopped.
+[2026-10-16 17:43:24.505] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: System used RAM after Minecraft process finish moment: 14.0g
+[2026-10-16 17:43:25.280] [INFO] [dev.kostromdan.mods.crash_assistant.common_config.lang.LanguageProvider]: Crash Assistant interface language: pt_br
+[2026-10-16 17:43:25.917] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: System used Swap Space after Minecraft process finish moment: 5.2g
+[2026-10-16 17:43:25.920] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: System free Disk (C:\) Space after Minecraft process finish moment: 131.8g
+[2026-10-16 17:43:25.933] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Adding latest.log from C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\logs\latest.log
+[2026-10-16 17:43:25.936] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Adding debug.log from C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\logs\debug.log
+[2026-10-16 17:43:25.939] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: stderr_stream.log size: 2976 bytes
+[2026-10-16 17:43:26.121] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Adding CurseForge: stdout-logs.txt from C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\logs\stdout-logs.txt
+[2026-10-16 17:43:26.126] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Adding KubeJS: client.log from C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\logs\kubejs\client.log
+[2026-10-16 17:43:26.127] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Adding KubeJS: server.log from C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\logs\kubejs\server.log
+[2026-10-16 17:43:26.129] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Adding KubeJS: startup.log from C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\logs\kubejs\startup.log
+[2026-10-16 17:43:26.131] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Adding crash_assistant_app.log from C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\logs\crash_assistant\crash_assistant_app.log
+[2026-10-16 17:43:26.131] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Reached first tick of TitleScreen: true
+[2026-10-16 17:43:26.132] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Joined world successfully: true
+[2026-10-16 17:43:26.132] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Prevent Crash Assistant Window: false
+[2026-10-16 17:43:26.132] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: stop() function of Minecraft fired: true
+[2026-10-16 17:43:26.133] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: close() function of Minecraft failed: false
+[2026-10-16 17:43:26.133] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: emergencySave() function of Minecraft fired: false
+[2026-10-16 17:43:26.159] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: isModpackCreator: false
+[2026-10-16 17:43:26.159] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: isHelpLinkDefault: false
+[2026-10-16 17:43:26.160] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: helpLink: https://discord.gg/allthemods
+[2026-10-16 17:43:26.162] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Seems like Minecraft finished normally. Trying to locate terminated processes and Exiting Crash Assistant app.
