@@ -44,3 +44,5 @@
 [15:03:30] [INFO] Loaded script startup_scripts:update_checker.js in 0.003 s
 [15:03:30] [INFO] Loaded script startup_scripts:Xycraft/Compatibility.js in 0.0 s
 [15:03:30] [INFO] Loaded 19/19 KubeJS startup scripts in 2.808 s with 0 errors and 0 warnings
+[15:03:35] [INFO] Validated 1761 files in kubejs/assets/ in 4961ms
+[15:03:38] [INFO] Validated 337 files in kubejs/data/ in 2304ms
