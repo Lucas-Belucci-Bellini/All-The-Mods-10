@@ -176,3 +176,24 @@ AMD Radeon RX 6650 XT
 [2026-10-16 15:13:26.949] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: helpLink: https://discord.gg/allthemods
 [2026-10-16 15:13:26.953] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Seems like Minecraft crashed without any crash report. Starting Crash Assistant app.
 [2026-10-16 15:13:28.161] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: UUID(85ee4012cb4e41679ebb79c9a444d6d4) verification result: LICENSED
+[2026-10-16 15:13:29.755] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: CrashAssistantGUI took to start: 3.593 seconds.
+[2026-10-16 15:13:29.762] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Adding modlist.txt from C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\logs\modlist.txt
+[2026-10-16 15:13:30.856] [INFO] [dev.kostromdan.mods.crash_assistant.common_config.mod_list.ModListUtils]: Parsed 520 mod(s) metadata in 1089 ms
+[2026-10-16 15:13:31.290] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Showing too many changes warning
+[2026-10-16 15:13:32.146] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Time to locate terminated process: 5196
+[2026-10-16 15:13:32.148] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Adding win_event1792174411966.txt from C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\win_event1792174411966.txt
+[2026-10-16 15:13:32.344] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Too many changes warning dialog closed
+[2026-10-16 15:13:32.659] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Reading finished in 289 ms
+[2026-10-16 15:13:32.945] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Analysis finished in 598 ms
+[2026-10-16 15:13:32.955] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Showing KnownCrashReason: WasClosedByWindows
+
+ 
+Se este crash aconteceu ao carregar ou fechar o jogo ou um nível, provavelmente foi causado por pressionar teclas ou clicar no mouse.
+O erro 'O programa javaw.exe versão ... parou de interagir com o Windows e foi fechado'
+em **win_event1792174411966.txt** significa que o jogo congelou.
+Para evitar isso, tente deixar o jogo carregar/fechar completamente: **NÃO CLIQUE EM NADA**, **NÃO PRESSIONE NENHUMA TECLA**, **NÃO CLIQUE EM FINALIZAR PROCESSO**.
+Se o crash ocorreu durante o jogo, apenas pressione OK e ignore esta mensagem.
+ 
+
+[2026-10-16 15:13:44.056] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Shown KnownCrashReason: WasClosedByWindows (Seen warning for 10.996s)
+[2026-10-16 15:13:44.941] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Crash Assistant closed.
