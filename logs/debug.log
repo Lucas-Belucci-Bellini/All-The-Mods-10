@@ -129944,3 +129944,4 @@ java.io.FileNotFoundException: actuallyadditions:textures/entity/zombie_villager
 [16Oct2026 10:11:21.490] [AllTheTweaks-DiscordRpc/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.command.CommandExecutor/]: Sending command: SET_ACTIVITY (nonce: 8)
 [16Oct2026 10:11:21.499] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Received frame: op=FRAME, data={"cmd":"SET_ACTIVITY","data":{"type":0,"state":"561 Mods","details":"Main Menu","timestamps":{"start":1792155859000},"assets":{"large_image":"1252861204045500466","large_text":"All The Mods 10"},"butt...
 [16Oct2026 10:11:21.499] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Frame handled by command executor: true
+[16Oct2026 10:11:41.340] [Worker-ResourceReload-2/DEBUG] [ModernFix/]: Worker-ResourceReload-2 shutdown
