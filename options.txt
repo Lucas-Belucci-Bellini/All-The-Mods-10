@@ -75,7 +75,7 @@ tutorialStep:punch_tree
 mouseWheelSensitivity:1.0
 rawMouseInput:true
 glDebugVerbosity:1
-skipMultiplayerWarning:false
+skipMultiplayerWarning:true
 hideMatchedNames:true
 joinedFirstServer:false
 hideBundleTutorial:false
@@ -468,9 +468,9 @@ key_simulated.keyinfo.scroll_up:key.keyboard.unknown
 key_simulated.keyinfo.scroll_down:key.keyboard.unknown
 key_key.relics.research_relic:key.keyboard.left.shift
 key_key.relics.active_abilities_list:key.keyboard.left.alt
-key_key.twilightforest.item_display_map_cycle:key.keyboard.c
 key_key.twilightforest.red_thread_vision:key.keyboard.unknown
 key_key.twilightforest.swap_hotbar:key.keyboard.v
+key_key.twilightforest.item_display_map_cycle:key.keyboard.c
 key_key.twilightforest.zoom:key.keyboard.z
 key_crashutils.openscreen:key.keyboard.u:CONTROL
 key_crashutils.copycontainer:key.keyboard.unknown
@@ -616,10 +616,10 @@ key_key.advanced_ae.quantum_night_vision_upgrade:key.keyboard.unknown
 key_key.modern_industrialization.toggle_flight:key.keyboard.v
 key_key.modern_industrialization.toggle_3x3:key.keyboard.y
 key_key.little_big_redstone.open_note_board:key.keyboard.unknown
-key_key.extended_industrialization.toggle_chestplate_ability:key.keyboard.unknown
-key_key.extended_industrialization.toggle_main_hand_ability:key.keyboard.unknown
 key_key.extended_industrialization.toggle_helmet_ability:key.keyboard.unknown
 key_key.extended_industrialization.toggle_leggings_ability:key.keyboard.unknown
+key_key.extended_industrialization.toggle_main_hand_ability:key.keyboard.unknown
+key_key.extended_industrialization.toggle_chestplate_ability:key.keyboard.unknown
 key_key.extended_industrialization.toggle_boots_ability:key.keyboard.unknown
 key_key.industrialization_overdrive.terminal_mode_switch:key.keyboard.v
 key_key.theurgy.change_item_mode:key.keyboard.unknown
