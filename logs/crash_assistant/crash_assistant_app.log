@@ -174,3 +174,4 @@ AMD Radeon RX 6650 XT
 [2026-10-16 17:43:26.159] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: isHelpLinkDefault: false
 [2026-10-16 17:43:26.160] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: helpLink: https://discord.gg/allthemods
 [2026-10-16 17:43:26.162] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Seems like Minecraft finished normally. Trying to locate terminated processes and Exiting Crash Assistant app.
+[2026-10-16 17:43:28.456] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: UUID(85ee4012cb4e41679ebb79c9a444d6d4) verification result: LICENSED

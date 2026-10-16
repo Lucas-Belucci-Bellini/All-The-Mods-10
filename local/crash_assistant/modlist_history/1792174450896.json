@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "timestamp": 1792174450896,
   "modsCount": 541,
-  "status": "JOINED",
+  "status": "CLOSED_WITHOUT_CRASH_AFTER_JOIN",
   "mods": [
     {
       "jarName": "neoforge-21.1.259 (modloader)",
