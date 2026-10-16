@@ -40,3 +40,4 @@
 [23:31:31] [INFO] Loaded script client_scripts:server_sync_banlist.js in 0.023 s
 [23:31:31] [INFO] Loaded script client_scripts:tooltips.js in 0.006 s
 [23:31:31] [INFO] Loaded 16/16 KubeJS client scripts in 0.817 s with 0 errors and 0 warnings
+[23:32:36] [INFO] Client resource reload complete!

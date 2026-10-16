@@ -5729,3 +5729,1187 @@ WARNING: You are running with unsupported Java 21. To make full use of the Vecto
 
 [STDOUT] [23:32:08] [modloading-sync-worker/INFO] [BotanyPots/]: Loaded 2 botany pots plugins!
 
+[STDOUT] [23:32:15] [modloading-sync-worker/WARN] [Living Things/]: No config 'livingthings.json' was found, created a new one.
+
+[STDOUT] [23:32:15] [modloading-sync-worker/WARN] [Living Things/]: No config 'penguin.json' was found, created a new one.
+
+[STDOUT] [23:32:15] [modloading-sync-worker/WARN] [Living Things/]: No config 'elephant.json' was found, created a new one.
+
+[STDOUT] [23:32:15] [modloading-sync-worker/WARN] [Living Things/]: No config 'giraffe.json' was found, created a new one.
+
+[STDOUT] [23:32:15] [modloading-sync-worker/WARN] [Living Things/]: No config 'lion.json' was found, created a new one.
+
+[STDOUT] [23:32:15] [modloading-sync-worker/WARN] [Living Things/]: No config 'shark.json' was found, created a new one.
+
+[STDOUT] [23:32:15] [modloading-sync-worker/WARN] [Living Things/]: No config 'ostrich.json' was found, created a new one.
+
+[STDOUT] [23:32:15] [modloading-sync-worker/WARN] [Living Things/]: No config 'flamingo.json' was found, created a new one.
+
+[STDOUT] [23:32:15] [modloading-sync-worker/WARN] [Living Things/]: No config 'crab.json' was found, created a new one.
+
+[STDOUT] [23:32:15] [modloading-sync-worker/WARN] [Living Things/]: No config 'mantaray.json' was found, created a new one.
+
+[STDOUT] [23:32:15] [modloading-sync-worker/WARN] [Living Things/]: No config 'raccoon.json' was found, created a new one.
+
+[STDOUT] [23:32:15] [modloading-sync-worker/WARN] [Living Things/]: No config 'owl.json' was found, created a new one.
+
+[STDOUT] [23:32:15] [modloading-sync-worker/WARN] [Living Things/]: No config 'ancient_blaze.json' was found, created a new one.
+
+[STDOUT] [23:32:15] [modloading-sync-worker/WARN] [Living Things/]: No config 'koala.json' was found, created a new one.
+
+[STDOUT] [23:32:15] [modloading-sync-worker/WARN] [Living Things/]: No config 'snail.json' was found, created a new one.
+
+[STDOUT] [23:32:15] [modloading-sync-worker/WARN] [Living Things/]: No config 'monkey.json' was found, created a new one.
+
+[STDOUT] [23:32:15] [modloading-sync-worker/WARN] [Living Things/]: No config 'nether_knight.json' was found, created a new one.
+
+[STDOUT] [23:32:15] [modloading-sync-worker/WARN] [Living Things/]: No config 'shroomie.json' was found, created a new one.
+
+[STDOUT] [23:32:15] [modloading-sync-worker/WARN] [Living Things/]: No config 'seahorse.json' was found, created a new one.
+
+[STDOUT] [23:32:15] [modloading-sync-worker/WARN] [Living Things/]: No config 'baby_ender_dragon.json' was found, created a new one.
+
+[STDOUT] [23:32:15] [modloading-sync-worker/WARN] [Living Things/]: No config 'peacock.json' was found, created a new one.
+
+[STDOUT] [23:32:15] [modloading-sync-worker/INFO] [Living Things/]: Registering MobAttributes
+
+[STDOUT] [23:32:16] [modloading-sync-worker/INFO] [Living Things/]: Registering SpawnPlacements
+
+[STDOUT] [23:32:17] [modloading-sync-worker/WARN] [supermartijn642corelib/]: Could not find value 'formations:template_editor' in registry 'minecraft:item' for @RegistryEntryAcceptor!
+
+[STDOUT] [23:32:17] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\railcraft-client.toml is not correct. Correcting
+
+[STDOUT] [23:32:17] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\tombstone-client.toml is not correct. Correcting
+
+[STDOUT] [23:32:17] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\the_bumblezone\client.toml is not correct. Correcting
+
+[STDOUT] [23:32:17] [modloading-sync-worker/INFO] [PluginManager/]: Executing phase CONFIG_LOAD for plugin class PatchouliPlugin
+[23:32:17] [modloading-sync-worker/INFO] [PluginManager/]: Executing phase CONFIG_LOAD for plugin class FTBChunksPlugin
+
+[STDOUT] [23:32:17] [modloading-sync-worker/INFO] [PluginManager/]: Executing phase CONFIG_LOAD for plugin class CuriosPlugin
+
+[STDOUT] [23:32:17] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\cosmeticarmorreworked-client.toml is not correct. Correcting
+
+[STDOUT] [23:32:17] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\keybindbundles-client.toml is not correct. Correcting
+
+[STDOUT] [23:32:17] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\securitycraft-client.toml is not correct. Correcting
+
+[STDOUT] [23:32:17] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\darkmodeeverywhere-client.toml is not correct. Correcting
+
+[STDOUT] [23:32:17] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\curios-client.toml is not correct. Correcting
+
+[STDOUT] [23:32:18] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\invtweaks-client.toml is not correct. Correcting
+
+[STDOUT] [23:32:18] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\Mekanism\client.toml is not correct. Correcting
+
+[STDOUT] [23:32:18] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\immersiveengineering-client.toml is not correct. Correcting
+
+[STDOUT] [23:32:18] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\aether-client.toml is not correct. Correcting
+
+[STDOUT] [23:32:18] [modloading-sync-worker/INFO] [Colorful Hearts/]: Loading colorfulhearts.toml config file
+
+[STDOUT] [23:32:18] [modloading-sync-worker/INFO] [Colorful Hearts/]: Registering custom hearts for virulence from mod undergarden
+
+[STDOUT] [23:32:18] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\ars_nouveau-client.toml is not correct. Correcting
+
+[STDOUT] [23:32:18] [modloading-sync-worker/WARN] [ne.ne.ne.co.ModConfigSpec/CORE]: Configuration LoadedConfig[config=SynchronizedConfig{DataHolder:{storage=SynchronizedConfig{DataHolder:{groupBackground=-1123021, groupForeground=-16777216, autofocusSearch=false, clearSearchOnOpen=true}}, storagescanner=SynchronizedConfig{DataHolder:{hilightTime=5, hilightStarredOnGuiOpen=true}}}}, path=C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\rftoolsstorage-client.toml, modConfig=net.neoforged.fml.config.ModConfig@623a2b5e] is not correct. Correcting
+
+[STDOUT] [23:32:18] [modloading-sync-worker/WARN] [ne.ne.ne.co.ModConfigSpec/CORE]: Incorrect key storage.groupBackground was corrected from -1123021 to its default, 0. 
+
+[STDOUT] [23:32:18] [modloading-sync-worker/WARN] [ne.ne.ne.co.ModConfigSpec/CORE]: Incorrect key storage.groupForeground was corrected from -16777216 to its default, 0. 
+
+[STDOUT] [23:32:18] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\framedblocks-client.toml is not correct. Correcting
+
+[STDOUT] [23:32:18] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\modern_industrialization-client.toml is not correct. Correcting
+
+[STDOUT] [23:32:18] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\integratedterminals-common.toml is not correct. Correcting
+
+[STDOUT] [23:32:18] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\bcc-common.toml is not correct. Correcting
+
+[STDOUT] [23:32:18] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\refinedstorage-common.toml is not correct. Correcting
+
+[STDOUT] [23:32:18] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\tombstone-common.toml is not correct. Correcting
+
+[STDOUT] [23:32:18] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\evilcraft-common.toml is not correct. Correcting
+
+[STDOUT] [23:32:19] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\the_bumblezone\general.toml is not correct. Correcting
+
+[STDOUT] [23:32:19] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\the_bumblezone\worldgen.toml is not correct. Correcting
+
+[STDOUT] [23:32:19] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\the_bumblezone\bee_aggression.toml is not correct. Correcting
+
+[STDOUT] [23:32:19] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\the_bumblezone\mod_compatibility.toml is not correct. Correcting
+
+[STDOUT] [23:32:19] [modloading-sync-worker/INFO] [PluginManager/]: Executing phase CONFIG_LOAD for plugin class PatchouliPlugin
+[23:32:19] [modloading-sync-worker/INFO] [PluginManager/]: Executing phase CONFIG_LOAD for plugin class FTBChunksPlugin
+[23:32:19] [modloading-sync-worker/INFO] [PluginManager/]: Executing phase CONFIG_LOAD for plugin class CuriosPlugin
+
+[STDOUT] [23:32:19] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\industrialforegoing\machine-misc.toml is not correct. Correcting
+
+[STDOUT] [23:32:19] [modloading-sync-worker/INFO] [PluginManager/]: Executing phase CONFIG_LOAD for plugin class PatchouliPlugin
+[23:32:19] [modloading-sync-worker/INFO] [PluginManager/]: Executing phase CONFIG_LOAD for plugin class FTBChunksPlugin
+
+[STDOUT] [23:32:19] [modloading-sync-worker/INFO] [PluginManager/]: Executing phase CONFIG_LOAD for plugin class CuriosPlugin
+
+[STDOUT] [23:32:19] [modloading-sync-worker/INFO] [PluginManager/]: Executing phase CONFIG_LOAD for plugin class PatchouliPlugin
+[23:32:19] [modloading-sync-worker/INFO] [PluginManager/]: Executing phase CONFIG_LOAD for plugin class FTBChunksPlugin
+
+[STDOUT] [23:32:19] [modloading-sync-worker/INFO] [PluginManager/]: Executing phase CONFIG_LOAD for plugin class CuriosPlugin
+
+[STDOUT] [23:32:19] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\industrialforegoing\machine-resource-production.toml is not correct. Correcting
+
+[STDOUT] [23:32:19] [modloading-sync-worker/INFO] [PluginManager/]: Executing phase CONFIG_LOAD for plugin class PatchouliPlugin
+[23:32:19] [modloading-sync-worker/INFO] [PluginManager/]: Executing phase CONFIG_LOAD for plugin class FTBChunksPlugin
+[23:32:19] [modloading-sync-worker/INFO] [PluginManager/]: Executing phase CONFIG_LOAD for plugin class CuriosPlugin
+
+[STDOUT] [23:32:19] [modloading-sync-worker/INFO] [PluginManager/]: Executing phase CONFIG_LOAD for plugin class PatchouliPlugin
+[23:32:19] [modloading-sync-worker/INFO] [PluginManager/]: Executing phase CONFIG_LOAD for plugin class FTBChunksPlugin
+
+[STDOUT] [23:32:19] [modloading-sync-worker/INFO] [PluginManager/]: Executing phase CONFIG_LOAD for plugin class CuriosPlugin
+
+[STDOUT] [23:32:19] [modloading-sync-worker/INFO] [PluginManager/]: Executing phase CONFIG_LOAD for plugin class PatchouliPlugin
+[23:32:19] [modloading-sync-worker/INFO] [PluginManager/]: Executing phase CONFIG_LOAD for plugin class FTBChunksPlugin
+
+[STDOUT] [23:32:19] [modloading-sync-worker/INFO] [PluginManager/]: Executing phase CONFIG_LOAD for plugin class CuriosPlugin
+
+[STDOUT] [23:32:19] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\integratedcrafting-common.toml is not correct. Correcting
+
+[STDOUT] [23:32:19] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\explorerscompass-common.toml is not correct. Correcting
+
+[STDOUT] [23:32:19] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\reliquary-common.toml is not correct. Correcting
+
+[STDOUT] [23:32:19] [modloading-sync-worker/WARN] [ne.ne.ne.co.ModConfigSpec/CORE]: Configuration LoadedConfig[config=SynchronizedConfig{DataHolder:{tieredImporters=SynchronizedConfig{DataHolder:{eliteEnergyUsage=4, ultraEnergyUsage=8, megaEnergyUsage=16, eliteSpeed=2, ultraSpeed=5, megaSpeed=8, creativeSpeed=15000, eliteStackUpgradeIntegrated=false, ultraStackUpgradeIntegrated=true, megaStackUpgradeIntegrated=true}}, tieredExporters=SynchronizedConfig{DataHolder:{eliteEnergyUsage=4, ultraEnergyUsage=8, megaEnergyUsage=16, eliteSpeed=2, ultraSpeed=5, megaSpeed=8, creativeSpeed=15000, eliteStackUpgradeIntegrated=false, ultraStackUpgradeIntegrated=true, megaStackUpgradeIntegrated=true}}, tieredDestructors=SynchronizedConfig{DataHolder:{eliteEnergyUsage=5, ultraEnergyUsage=9, megaEnergyUsage=17, eliteSpeed=2, ultraSpeed=5, megaSpeed=8, creativeSpeed=15000}}, tieredConstructors=SynchronizedConfig{DataHolder:{eliteEnergyUsage=5, ultraEnergyUsage=9, megaEnergyUsage=17, eliteSpeed=2, ultraSpeed=5, megaSpeed=8, creativeSpeed=15000, eliteStackUpgradeIntegrated=false, ultraStackUpgradeIntegrated=true, megaStackUpgradeIntegrated=true}}, tieredDiskInterface=SynchronizedConfig{DataHolder:{eliteEnergyUsage=7, ultraEnergyUsage=11, megaEnergyUsage=19, eliteSpeed=0, ultraSpeed=0, megaSpeed=0, creativeSpeed=0, eliteStackUpgradeIntegrated=false, ultraStackUpgradeIntegrated=true, megaStackUpgradeIntegrated=true}}, tieredAutocrafters=SynchronizedConfig{DataHolder:{eliteEnergyUsage=5, ultraEnergyUsage=9, megaEnergyUsage=17, eliteSpeed=2, ultraSpeed=5, megaSpeed=8, creativeSpeed=100}}, tieredInterfaces=SynchronizedConfig{DataHolder:{eliteEnergyUsage=5, ultraEnergyUsage=9, megaEnergyUsage=17, eliteTransferQuotaMultiplier=50, ultraTransferQuotaMultiplier=100, megaTransferQuotaMultiplier=200, creativeTransferQuotaMultiplier=9223372036854775807}}}}, path=C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\cabletiers-common.toml, modConfig=net.neoforged.fml.config.ModConfig@3a7f6450] is not correct. Correcting
+
+[STDOUT] [23:32:19] [modloading-sync-worker/WARN] [ne.ne.ne.co.ModConfigSpec/CORE]: Incorrect key tieredDiskInterface.eliteSpeed was corrected from 0 to its default, 1. 
+
+[STDOUT] [23:32:19] [modloading-sync-worker/WARN] [ne.ne.ne.co.ModConfigSpec/CORE]: Incorrect key tieredDiskInterface.ultraSpeed was corrected from 0 to its default, 1. 
+[23:32:19] [modloading-sync-worker/WARN] [ne.ne.ne.co.ModConfigSpec/CORE]: Incorrect key tieredDiskInterface.megaSpeed was corrected from 0 to its default, 1. 
+[23:32:19] [modloading-sync-worker/WARN] [ne.ne.ne.co.ModConfigSpec/CORE]: Incorrect key tieredDiskInterface.creativeSpeed was corrected from 0 to its default, 1. 
+
+[STDOUT] [23:32:19] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\ironfurnaces-common.toml is not correct. Correcting
+
+[STDOUT] [23:32:19] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\naturescompass-common.toml is not correct. Correcting
+
+[STDOUT] [23:32:19] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\pneumaticcraft-common.toml is not correct. Correcting
+
+[STDOUT] [23:32:19] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\Mekanism\common.toml is not correct. Correcting
+
+[STDOUT] [23:32:20] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\extremereactors\common.toml is not correct. Correcting
+
+[STDOUT] [23:32:20] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\integrateddynamics-common.toml is not correct. Correcting
+
+[STDOUT] [23:32:20] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\aether-common.toml is not correct. Correcting
+
+[STDOUT] [23:32:20] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\integrateddynamicscompat-common.toml is not correct. Correcting
+
+[STDOUT] [23:32:20] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\actuallyadditions-common.toml is not correct. Correcting
+
+[STDOUT] [23:32:20] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\integratedtunnels-common.toml is not correct. Correcting
+
+[STDOUT] [23:32:20] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\ars_nouveau-common.toml is not correct. Correcting
+
+[STDOUT] [23:32:20] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\waystones-common.toml is not correct. Correcting
+
+[STDOUT] [23:32:20] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\Advancedperipherals\world.toml is not correct. Correcting
+
+[STDOUT] [23:32:20] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\ae2-common.toml is not correct. Correcting
+
+[STDOUT] [23:32:20] [modloading-sync-worker/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\advanced_ae-common.toml is not correct. Correcting
+
+[STDOUT] [23:32:20] [Render thread/INFO] [co.br.ne.NeoVitae/]: Registering material pack for CLIENT_RESOURCES
+
+[STDOUT] [23:32:20] [Render thread/INFO] [Open Loader/]: Created packs folder a 'C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\openloader\packs'
+
+[STDOUT] [23:32:21] [Render thread/INFO] [Moonlight/]: Merging 3 images using mode MIN_AREA_NO_UPSCALE
+
+[STDOUT] [23:32:21] [Render thread/INFO] [Open Loader/]: Scan started for CLIENT_RESOURCES.
+
+[STDOUT] [23:32:21] [Render thread/INFO] [Open Loader/]: Located 0 packs. Took 12.93ms.
+
+[STDOUT] [23:32:21] [Render thread/WARN] [Essential - Connection/]: Connection closed unexpectedly (CloseInfo(code=4500, reason=SERVER_KEEP_ALIVE_TIMEOUT, remote=false, knownReason=null)) after 1m 25.485195800s
+
+[STDOUT] [23:32:21] [Render thread/INFO] [Essential - Connection/]: Authenticating to Mojang as Spartan_Gamer_BR (85ee4012-cb4e-4167-9ebb-79c9a444d6d4)
+
+[STDOUT] [23:32:21] [DefaultDispatcher-worker-2/INFO] [Essential - Connection/]: Connecting to Essential Connection Manager...
+
+[STDOUT] [23:32:22] [Render thread/INFO] [Sodium/]: Block securitycraft:reinforced_dispenser had its color provider replaced with net.geforcemods.securitycraft.ClientHandler$$Lambda/0x000001dfc8d01460@782d2e29 and will not use per-vertex coloring
+[23:32:22] [Render thread/INFO] [Sodium/]: Block securitycraft:reinforced_dropper had its color provider replaced with net.geforcemods.securitycraft.ClientHandler$$Lambda/0x000001dfc8d01460@782d2e29 and will not use per-vertex coloring
+
+[STDOUT] [23:32:22] [Render thread/INFO] [Sodium/]: Block securitycraft:reinforced_hopper had its color provider replaced with net.geforcemods.securitycraft.ClientHandler$$Lambda/0x000001dfc8d01460@782d2e29 and will not use per-vertex coloring
+[23:32:22] [Render thread/INFO] [Sodium/]: Block securitycraft:reinforced_observer had its color provider replaced with net.geforcemods.securitycraft.ClientHandler$$Lambda/0x000001dfc8d01460@782d2e29 and will not use per-vertex coloring
+
+[STDOUT] [23:32:22] [Render thread/INFO] [Sodium/]: Block securitycraft:reinforced_grass_block had its color provider replaced with net.geforcemods.securitycraft.ClientHandler$$Lambda/0x000001dfc8d01680@26c19dca and will not use per-vertex coloring
+
+[STDOUT] [23:32:22] [Render thread/INFO] [Sodium/]: Block securitycraft:reinforced_water_cauldron had its color provider replaced with net.geforcemods.securitycraft.ClientHandler$$Lambda/0x000001dfc8d018a0@23d526d4 and will not use per-vertex coloring
+
+[STDOUT] [23:32:22] [Render thread/INFO] [co.kl.oc.Occultism/]: Block color registration complete.
+
+[STDOUT] [23:32:22] [Render thread/INFO] [Sodium/]: Block minecraft:water_cauldron had its color provider replaced with com.ldtteam.blockui.mod.ClientLifecycleSubscriber$$Lambda/0x000001dfc8d0bb80@100b3bf3 and will not use per-vertex coloring
+
+[STDOUT] [23:32:22] [Render thread/INFO] [Sodium/]: Block undergarden:gloomgourd_stem had its color provider replaced with quek.undergarden.event.UndergardenClientEvents$$Lambda/0x000001dfc8d0c648@320c71c4 and will not use per-vertex coloring
+[23:32:22] [Render thread/INFO] [Sodium/]: Block undergarden:gloomgourd_stem_attached had its color provider replaced with quek.undergarden.event.UndergardenClientEvents$$Lambda/0x000001dfc8d0c648@320c71c4 and will not use per-vertex coloring
+
+[STDOUT] [23:32:22] [Render thread/INFO] [Sodium/]: Block mekanism:basic_logistical_transporter had its color provider replaced with mekanism.client.ClientRegistration$$Lambda/0x000001dfc8d10c48@6f22c8e0 and will not use per-vertex coloring
+[23:32:22] [Render thread/INFO] [Sodium/]: Block mekanism:advanced_logistical_transporter had its color provider replaced with mekanism.client.ClientRegistration$$Lambda/0x000001dfc8d10c48@6f22c8e0 and will not use per-vertex coloring
+[23:32:22] [Render thread/INFO] [Sodium/]: Block mekanism:elite_logistical_transporter had its color provider replaced with mekanism.client.ClientRegistration$$Lambda/0x000001dfc8d10c48@6f22c8e0 and will not use per-vertex coloring
+[23:32:22] [Render thread/INFO] [Sodium/]: Block mekanism:ultimate_logistical_transporter had its color provider replaced with mekanism.client.ClientRegistration$$Lambda/0x000001dfc8d10c48@6f22c8e0 and will not use per-vertex coloring
+
+[STDOUT] [23:32:22] [Render thread/INFO] [Sodium/]: Block mekanism_extras:absolute_logistical_transporter had its color provider replaced with com.jerry.mekextras.client.events.ClientRegistration$$Lambda/0x000001dfc8d18cc0@30094d11 and will not use per-vertex coloring
+[23:32:22] [Render thread/INFO] [Sodium/]: Block mekanism_extras:supreme_logistical_transporter had its color provider replaced with com.jerry.mekextras.client.events.ClientRegistration$$Lambda/0x000001dfc8d18cc0@30094d11 and will not use per-vertex coloring
+[23:32:22] [Render thread/INFO] [Sodium/]: Block mekanism_extras:cosmic_logistical_transporter had its color provider replaced with com.jerry.mekextras.client.events.ClientRegistration$$Lambda/0x000001dfc8d18cc0@30094d11 and will not use per-vertex coloring
+
+[STDOUT] [23:32:22] [Render thread/INFO] [Sodium/]: Block mekanism_extras:infinite_logistical_transporter had its color provider replaced with com.jerry.mekextras.client.events.ClientRegistration$$Lambda/0x000001dfc8d18cc0@30094d11 and will not use per-vertex coloring
+
+[STDOUT] [23:32:22] [Render thread/INFO] [Sodium/]: Block minecraft:short_grass had its color provider replaced with com.aetherteam.aether.client.AetherColorResolvers$$Lambda/0x000001dfc8d1eee0@1362243d and will not use per-vertex coloring
+[23:32:22] [Render thread/INFO] [Sodium/]: Block minecraft:fern had its color provider replaced with com.aetherteam.aether.client.AetherColorResolvers$$Lambda/0x000001dfc8d1eee0@3079281d and will not use per-vertex coloring
+[23:32:22] [Render thread/INFO] [Sodium/]: Block minecraft:tall_grass had its color provider replaced with com.aetherteam.aether.client.AetherColorResolvers$$Lambda/0x000001dfc8d1eee0@16982b77 and will not use per-vertex coloring
+
+[STDOUT] [23:32:22] [Render thread/INFO] [Sodium/]: Block minecraft:large_fern had its color provider replaced with com.aetherteam.aether.client.AetherColorResolvers$$Lambda/0x000001dfc8d1eee0@61f342aa and will not use per-vertex coloring
+
+[STDOUT] [23:32:22] [Render thread/INFO] [Sodium/]: Block minecraft:water_cauldron had its color provider replaced with net.mehvahdjukaar.amendments.AmendmentsClient$$Lambda/0x000001dfc8d25778@518d91a8 and will not use per-vertex coloring
+
+[STDOUT] [23:32:22] [Render thread/INFO] [co.kl.oc.Occultism/]: Item color registration complete.
+
+[STDOUT] [23:32:22] [Render thread/INFO] [potionsmaster/]: === Starting Color Handler Registration ===
+
+[STDOUT] [23:32:22] [Render thread/INFO] [potionsmaster/]: Total BlockData entries: 22
+
+[STDOUT] [23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for nickel_oresight_powder with color: -5658236 (hex: 0xFFA9A984)
+
+[STDOUT] [23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for iron_oresight_powder with color: -1785686 (hex: 0xFFE4C0AA)
+[23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for uranium_oresight_powder with color: -8460424 (hex: 0xFF7EE778)
+[23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for vibranium_oresight_powder with color: -14229880 (hex: 0xFF26DE88)
+
+[STDOUT] [23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for platinum_oresight_powder with color: -4868609 (hex: 0xFFB5B5FF)
+[23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for netherite_scrap_oresight_powder with color: -23296 (hex: 0xFFFFA500)
+[23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for copper_oresight_powder with color: -4755398 (hex: 0xFFB7703A)
+
+[STDOUT] [23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for redstone_oresight_powder with color: -65536 (hex: 0xFFFF0000)
+[23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for unobtainium_oresight_powder with color: -3058973 (hex: 0xFFD152E3)
+[23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for lapis_oresight_powder with color: -16776961 (hex: 0xFF0000FF)
+
+[STDOUT] [23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for lead_oresight_powder with color: -8614714 (hex: 0xFF7C8CC6)
+[23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for allthemodium_oresight_powder with color: -75430 (hex: 0xFFFED95A)
+
+[STDOUT] [23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for emerald_oresight_powder with color: -16711936 (hex: 0xFF00FF00)
+[23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for gold_oresight_powder with color: -2838729 (hex: 0xFFD4AF37)
+[23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for zinc_oresight_powder with color: -4868747 (hex: 0xFFB5B575)
+
+[STDOUT] [23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for tin_oresight_powder with color: -888205 (hex: 0xFFF27273)
+[23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for silver_oresight_powder with color: -5971737 (hex: 0xFFA4E0E7)
+[23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for aluminum_oresight_powder with color: -1842205 (hex: 0xFFE3E3E3)
+
+[STDOUT] [23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for coal_oresight_powder with color: -14671840 (hex: 0xFF202020)
+[23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for diamond_oresight_powder with color: -12723229 (hex: 0xFF3DDBE3)
+[23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for osmium_oresight_powder with color: -16777012 (hex: 0xFF0000CC)
+[23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for quartz_oresight_powder with color: -1 (hex: 0xFFFFFFFF)
+
+[STDOUT] [23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for calcinated_nickel_oresight_powder with color: -5658236 (hex: 0xFFA9A984)
+[23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for calcinated_iron_oresight_powder with color: -1785686 (hex: 0xFFE4C0AA)
+
+[STDOUT] [23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for calcinated_uranium_oresight_powder with color: -8460424 (hex: 0xFF7EE778)
+[23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for calcinated_vibranium_oresight_powder with color: -14229880 (hex: 0xFF26DE88)
+[23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for calcinated_platinum_oresight_powder with color: -4868609 (hex: 0xFFB5B5FF)
+[23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for calcinated_netherite_scrap_oresight_powder with color: -23296 (hex: 0xFFFFA500)
+
+[STDOUT] [23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for calcinated_copper_oresight_powder with color: -4755398 (hex: 0xFFB7703A)
+[23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for calcinated_redstone_oresight_powder with color: -65536 (hex: 0xFFFF0000)
+[23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for calcinated_unobtainium_oresight_powder with color: -3058973 (hex: 0xFFD152E3)
+
+[STDOUT] [23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for calcinated_lapis_oresight_powder with color: -16776961 (hex: 0xFF0000FF)
+[23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for calcinated_lead_oresight_powder with color: -8614714 (hex: 0xFF7C8CC6)
+[23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for calcinated_allthemodium_oresight_powder with color: -75430 (hex: 0xFFFED95A)
+
+[STDOUT] [23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for calcinated_emerald_oresight_powder with color: -16711936 (hex: 0xFF00FF00)
+[23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for calcinated_gold_oresight_powder with color: -2838729 (hex: 0xFFD4AF37)
+[23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for calcinated_zinc_oresight_powder with color: -4868747 (hex: 0xFFB5B575)
+[23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for calcinated_tin_oresight_powder with color: -888205 (hex: 0xFFF27273)
+[23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for calcinated_silver_oresight_powder with color: -5971737 (hex: 0xFFA4E0E7)
+
+[STDOUT] [23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for calcinated_aluminum_oresight_powder with color: -1842205 (hex: 0xFFE3E3E3)
+[23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for calcinated_coal_oresight_powder with color: -14671840 (hex: 0xFF202020)
+
+[STDOUT] [23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for calcinated_diamond_oresight_powder with color: -12723229 (hex: 0xFF3DDBE3)
+[23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for calcinated_osmium_oresight_powder with color: -16777012 (hex: 0xFF0000CC)
+[23:32:22] [Render thread/INFO] [potionsmaster/]: Registered color handler for calcinated_quartz_oresight_powder with color: -1 (hex: 0xFFFFFFFF)
+
+[STDOUT] [23:32:22] [Render thread/INFO] [potionsmaster/]: === Color Handler Registration Complete ===
+
+[STDOUT] [23:32:22] [WebSocketConnectReadThread-218/INFO] [Essential - Connection/]: Connected to Essential Connection Manager.
+
+[STDOUT] [23:32:22] [Render thread/INFO] [co.kl.oc.Occultism/]: Registered Particle Factories
+
+[STDOUT] [23:32:23] [Render thread/INFO] [Iris/]: Hardware information:
+
+[STDOUT] [23:32:23] [Render thread/INFO] [Iris/]: CPU: 12x AMD Ryzen 5 5500 
+
+[STDOUT] [23:32:23] [Render thread/INFO] [Iris/]: GPU: AMD Radeon RX 6650 XT (Supports OpenGL 4.6.0 Core Profile Context 26.8.1.260806)
+[23:32:23] [Render thread/INFO] [Iris/]: OS: Windows 11 (10.0)
+
+[STDOUT] [23:32:23] [Render thread/INFO] [potionsmaster/]: === Registering Sprite Source Types ===
+
+[STDOUT] [23:32:23] [Render thread/INFO] [potionsmaster/]: === Sprite Source Types Registration Complete ===
+
+[STDOUT] [23:32:23] [Render thread/WARN] [mixin/]: Method overwrite conflict for containerTick in moonlight-common.mixins.json:CartographyTableScreenMixin from mod moonlight, previously written by net.mehvahdjukaar.supplementaries.mixins.CartographyTableScreenMixin. Skipping method.
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Shogun
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Rebel_Base
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Nile
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Byzantine_for_1.20
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Jungle Treehouse
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Pagoda
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Stalactite Caves
+[23:32:25] [Render thread/INFO] [de.ke.fa.FancyMenuNeoForgeClientEvents/]: [FANCYMENU] Registered FancyMenu's resource reload listener via NeoForge API.
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Fortress
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Colonial
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Medieval Spruce
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Lost Mesa City
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Medieval Dark Oak
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Urban Birch
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Medieval Birch
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Shire
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Incan
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Ancient Athens
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Medieval Oak
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Urban Savanna
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Desert Oasis
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Minecolonies Original
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Cavern
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Dark Oak Treehouse
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Nordic Spruce
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Space Wars
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Caledonia
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Warped Netherlands
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/WARN] [structurize/]: Missing Mod: quark for Pack: FairyTale
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Steampunk
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Tropical
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Functional Fantasy
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Antique
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: High Magic
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Aquatica
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Crimson Keep
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Farthest Frontier
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Hive
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/WARN] [structurize/]: Missing Mod: byg for Pack: Corrupted
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Underwater Base
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Frontier
+
+[STDOUT] [23:32:25] [Render thread/INFO] [potionsmaster/]: === Registering Language Reload Listener ===
+
+[STDOUT] [23:32:25] [Render thread/INFO] [potionsmaster/]: === Language Reload Listener Registered ===
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/INFO] [structurize/]: Registered structure pack: Spartan_Gamer_BR
+
+[STDOUT] [23:32:25] [Structurize IO Worker #0/WARN] [structurize/]: Finished discovering Client Structure packs
+
+[STDOUT] [23:32:28] [Render thread/INFO] [oritech/]: Registering oritech renderers
+
+[STDOUT] [23:32:28] [Render thread/INFO] [oritech/]: Registering Entities Renderers for oritech
+
+[STDOUT] [23:32:29] [Render thread/INFO] [evilcraft/]: Registered key bindings
+
+[STDOUT] [23:32:30] [Render thread/INFO] [mixin/]: fancymenu.mixins.json:client.IMixinRealmsNotificationsScreen from mod fancymenu->@Accessor[FIELD_GETTER]::get_trialAvailable_FancyMenu()Z should be static as its target is
+[23:32:30] [Render thread/INFO] [mixin/]: fancymenu.mixins.json:client.IMixinRealmsNotificationsScreen from mod fancymenu->@Accessor[FIELD_GETTER]::get_hasUnreadNews_FancyMenu()Z should be static as its target is
+[23:32:30] [Render thread/INFO] [mixin/]: fancymenu.mixins.json:client.IMixinRealmsNotificationsScreen from mod fancymenu->@Accessor[FIELD_GETTER]::get_hasUnseenNotifications()Z should be static as its target is
+
+[STDOUT] [23:32:32] [Render thread/INFO] [minecraft/ReloadableResourceManager]: Reloading ResourceManager: modularbees:dynamic_assets, vanilla, KubeJS Virtual Resource Pack [Before Mods, assets], mod_resources, mod/sodium, mod/betterdungeons, mod/disenchanting_table, mod/simplemagnets, mod/integratedterminals,integratedterminalscompat, mod/apollib, mod/projecte, mod/mffs, mod/ad_astra_giselle_addon, mod/endercore, mod/neoforge, mod/stepcrafter, mod/modernfix, mod/fabric_block_view_api_v2, mod/evilcraft,evilcraftcompat, mod/yungsapi, mod/mcwstairs, mod/gateways, mod/iris, mod/universalgrid, mod/keybindspurger, mod/betterfortresses, mod/cloth_config, mod/sawmill, mod/supplementaries, mod/refinedstorage, mod/industrialforegoing, mod/handcrafted, mod/repurposed_structures, mod/bcc, mod/jupiter, mod/camol, mod/heyberryshutup, mod/auroral, mod/integratedscripting, mod/spark, mod/yungsextras, mod/omegaconfig, mod/tombstone, mod/extrastorage, mod/accessories, mod/cumulus_menus, mod/naturesaura, mod/mcwroofs, mod/observerlib, mod/transition, mod/betterendisland, mod/fabric_rendering_data_attachment_v1, mod/nitrogen_internals, mod/the_bumblezone, mod/mixinloadconditions, mod/journeymap_api, mod/enchantinginfuser, mod/sfm, mod/transfer_labels, mod/mcwlights, mod/essential, mod/betterjungletemples, mod/byzantine, mod/smartbrainlib, mod/borderlesswindow, mod/bellsandwhistles, mod/rechiseled, mod/irons_lib, mod/attributefix, mod/caelus, mod/allthecompressed, mod/mcwholidays, mod/laserbridges, mod/compactmachines, mod/utilityvest, mod/botanypots, mod/farmingforblockheads, mod/rechiseledcreate, mod/additional_lights, mod/projecteintegration, mod/fusion, mod/extradisks, mod/edivadlib, mod/sophisticatedbackpackscreateintegration, mod/integratedcrafting, mod/dungeons_arise, mod/inzhefopcore, mod/refinedtypes, mod/common_storage_lib, mod/terrablender, mod/livingthings, mod/pamhc2crops, mod/justenoughbreeding, mod/alltheleaks, mod/cleanswing, mod/corgilib, mod/sushigocrafting, mod/domum_ornamentum, mod/notenoughanimations, mod/sablecompanion, mod/luminax, mod/experiencelib, mod/bhc, mod/neovitae, mod/justenoughprofessions, mod/securitycraft, mod/almostunified, mod/wits, mod/immediatelyfast, mod/lambdynlights_api, mod/structory_towers, mod/appleskin, mod/lootr, mod/occultism, mod/refinedstorage_curios_integration, mod/extremesoundmuffler, mod/cosmeticarmorreworked, mod/euphoria_patcher, mod/colorwheel_patcher, mod/morered, mod/keybindbundles, mod/ad_astra, mod/kuma_api, mod/fabric_renderer_api_v1, mod/codecui, mod/towntalk, mod/fireproofboats, mod/betteroceanmonuments, mod/projectexpansion, mod/sophisticatedcore, mod/glassential, mod/prism, mod/placebo, mod/wstweaks, mod/fastfurnace, mod/cobweb, mod/bookshelf, mod/sophisticatedbackpacks, mod/immeng, mod/mcwdoors, mod/overlapless, mod/moreredxcctcompat, mod/utilitarian, mod/melody, mod/fzzy_config, mod/integration, mod/konkrete, mod/chipped, mod/rechiseled_chipped, mod/mcwbridges, mod/tempad, mod/hostilenetworks, mod/jearchaeology, mod/olympus, mod/fuelgoeshere, mod/simplylight, mod/industrialforegoingsouls, mod/lionfishapi, mod/memorysettings, mod/cataclysm, mod/blockui, mod/structurize, mod/tiab, mod/smithingtemplateviewer, mod/mysticalcustomization, mod/elevatorid, mod/create_hypertube, mod/bridgingmod, mod/hardenedarmadillos, mod/aiimprovements, mod/moreoverlays, mod/cupboard, mod/ars_ocultas, mod/undergarden, mod/monolib, mod/framework, mod/bwncr, mod/observable, mod/atlas_api, mod/common_storage_lib_lookup, mod/darkmodeeverywhere, mod/betteradvancements, mod/pamhc2trees, mod/redstonepen, mod/copycats, mod/dyenamics, mod/commonnetworking, mod/illagerwarship, mod/resourcefullibkt, mod/clumps, mod/artifacts, mod/explorerscompass, mod/toastcontrol, mod/mininggadgets, mod/theurgy_kubejs, mod/trophymanager, mod/akashictome, mod/xycraft_core, mod/repeatable_trial_vaults, mod/mysticalagriculture, mod/craftingtweaks, mod/endermanoverhaul, mod/apothic_spawners, mod/appliede, mod/ftbjeiextras, mod/enderio, mod/easy_villagers, mod/autoemc, mod/reliquary, mod/mes, mod/polyeng, mod/fastbench, mod/fluxnetworks, mod/irons_spellbooks, mod/buildinggadgets2, mod/fancymenu, mod/minecolonies, mod/pylons, mod/ferritecore, mod/functionalstorage, mod/modularrouters, mod/justzoom, mod/silentgems, mod/overloadedarmorbar, mod/openloader, mod/flickerfix, mod/productivetrees, mod/createaddition, mod/supermartijn642configlib, mod/quarryplus, mod/sodium_extra, mod/additionalentityattributes, mod/underground_villages, mod/variantsandventures, mod/playeranimator, mod/mcwwindows, mod/ironjetpacks, mod/ctm, mod/everythingcopper, mod/powah, mod/cabletiers, mod/rangedpumps, mod/balm, mod/prickle, mod/moderndynamics, mod/crash_assistant, mod/mysticalagradditions, mod/ctov, mod/eternal_starlight, mod/athena, mod/stylecolonies, mod/novillagerdm, mod/lmft, mod/alltheores, mod/glodium, mod/torchmaster, mod/sussysniffers, mod/botanytrees, mod/explorify, mod/ironfurnaces, mod/mcwtrpdoors, mod/silentgear, mod/supermartijn642corelib, mod/apothic_attributes, mod/resourcefulconfig, mod/curios, mod/ae2importexportcard, mod/searchables, mod/measurements, mod/deimos, mod/mcwfurnitures, mod/conditional_mixin, mod/apothic_enchanting, mod/apotheosis, mod/apotheosis_emc, mod/mekanisticrouters, mod/infiniverse, mod/codechickenlib, mod/cb_multipart,cb_microblock,cb_multipart_minecraft, mod/brandonscore, mod/bettermineshafts, mod/mezz_config, mod/crafting_on_a_stick, mod/ae2jeiintegration, mod/mekanismcovers, mod/kubejstweaks, mod/formationsnether, mod/jei, mod/multipiston, mod/lithostitched, mod/mekanism, mod/laserio, mod/mekmm, mod/mekanismgenerators, mod/gmut, mod/mekanism_extras, mod/extrautilitiesreborn, mod/invtweaks, mod/naturescompass, mod/jumpboat, mod/catjammies, mod/glitchcore, mod/biomesoplenty, mod/pneumaticcraft, mod/iceandfire, mod/formations, mod/crystalix, mod/mcwpaths, mod/drippyloadingscreen, mod/zerocore, mod/formationsoverworld, mod/simplebackups, mod/fabric_api_base, mod/mousetweaks, mod/immersiveengineering, mod/nochatreports, mod/allthemodium, mod/ohthetreesyoullgrow, mod/spectrelib, mod/create_aquatic_ambitions, mod/kotlinforforge, mod/pipez, mod/integrateddynamics,integrateddynamicscompat, mod/pamhc2foodcore, mod/itemcollectors, mod/imfast, mod/polymorph, mod/railcraft, mod/connectedglass, mod/constructionstick, mod/simple_weather, mod/puzzleslib, mod/aquaculture, mod/refinedstorage_jei_integration, mod/mns, mod/refinedfluidsubstitution, mod/cristellib, mod/reliquified_artifacts, mod/cyclopscore, mod/astralsorcery, mod/refinedstorage_quartz_arsenal, mod/betterwitchhuts, mod/netherportalfix, mod/geckolib, mod/biomeswevegone, mod/creeperoverhaul, mod/ars_nouveau, mod/sauce, mod/ars_polymorphia, mod/ars_technica, mod/ars_additions, mod/aether, mod/auroras, mod/enderdrives, mod/pocketstorage, mod/connectivity, mod/backpack_allthemodium_upgrade, mod/cookingforblockheads, mod/controlling, mod/potionsmaster, mod/storagedelight, mod/relics, mod/starbunclemania, mod/generatorgalore, mod/nuggets, mod/herbsandharvest, mod/grandpower, mod/refinedstorage_mekanism_integration, mod/botanypotsmystical, mod/dummmmmmy, mod/twilightforest, mod/mob_grinding_utils, mod/common_storage_lib_data, mod/arseng, mod/farmersdelight, mod/entangled, mod/commoncapabilities, mod/crashutilities, mod/getittogetherdrops, mod/mcwfences, mod/xycraft_world, mod/xycraft_machines, mod/colorfulhearts, mod/enderio_modded_conduits, mod/wirelesschargers, mod/pamhc2foodextended, mod/modelfix, mod/dysoncubeproject, mod/actuallyadditions, mod/patchouli, mod/allthearcanistgear, mod/ars_controle, mod/sophisticatedstoragecreateintegration, mod/integratedtunnels,integratedtunnelscompat, mod/ftbultimine, mod/betterstrongholds, mod/mifa, mod/resourcefullib, mod/chromacarvings, mod/mekanismtools, mod/deeperdarker, mod/architectury, mod/mostructures, mod/hellish_trials, mod/accelerateddecay, mod/uranus, mod/ftblibrary, mod/ftbfiltersystem, mod/ftbteams, mod/ftbranks, mod/ftbessentials, mod/ftbchunks, mod/oracle_index, mod/oritech, mod/ftbquests, mod/computercraft, mod/draconicevolution, mod/advancedperipherals, mod/bigreactors, mod/refurbished_furniture, mod/productivebees, mod/modularbees, mod/productivemetalworks, mod/sgearmetalworks, mod/dyenamicsandfriends, mod/iris_search, mod/trashcans, mod/moogs_structures, mod/justdirethings, mod/modder_name_lib, mod/rebind_narrator, mod/polylib, mod/shrink, mod/t_and_t, mod/merrymaking, mod/yeetusexperimentus, mod/irons_jewelry, mod/easy_mob_farm, mod/ftbquestslangsplitter, mod/villagesandpillages, mod/rhino, mod/kubejs, mod/ftbxmodcompat, mod/betteradvancedtooltips, mod/occultism_kubejs, mod/incontrol, mod/rootsclassic, mod/owo, mod/neo_auth, mod/cucumber, mod/trashslot, mod/amendments, mod/blueflame, mod/sophisticatedstorage, mod/storage_allthemodium_upgrade, mod/octolib, mod/mss, mod/allthewizardgear, mod/productivelib, mod/trender, mod/ponderjs, mod/waystones, mod/structory, mod/fastsuite, mod/journeymap, mod/comforts, mod/atmcompat, mod/dimstorage, mod/dungeoncrawl, mod/charginggadgets, mod/cobblegengalore, mod/xycraft_override, mod/mcjtylib, mod/rftoolsbase, mod/rftoolspower, mod/rftoolsbuilder, mod/restrictions, mod/xnet, mod/rftoolsstorage, mod/betterdeserttemples, mod/guideme, mod/energymeter, mod/mahoutsukai, mod/enderstorage, mod/factory_blocks, mod/interdimensionalwirelesstransmitter, mod/rftoolsutility, mod/enchdesc, mod/moonlight, mod/cloudglass, mod/toolbelt, mod/titanium, mod/regions_unexplored, mod/bibliobiomes, mod/silentlib, mod/jade, mod/ae2, mod/soulplied_energistics, mod/aeinfinitybooster, mod/allthetweaks, mod/ae2ct, mod/ae2netanalyser, mod/ae2wtlib, mod/extendedae, mod/megacells, mod/expandedae, mod/ae2addonlib, mod/advanced_ae, mod/ae2wtlib_api, mod/merequester, mod/modern_industrialization, mod/tesseract_api, mod/little_big_redstone, mod/appflux, mod/extended_industrialization, mod/industrialization_overdrive, mod/forbidden_arcanus, mod/valhelsia_core, mod/bibliowoods, mod/bibliocraft, mod/theurgy, mod/stevescarts, mod/iceberg, mod/treetap, mod/nullscape, mod/jei_mekanism_multiblocks, mod/modonomicon, mod/cryonicconfig, mod/rsinsertexportupgrade, mod/mvs, mod/chisel, mod/yet_another_config_lib_v3, mod/common_storage_lib_resources, mod/solcarrot, mod/moredragoneggs, mod/jeistuff, mod/colorwheel, mod/flywheel, mod/ponder, mod/create, mod/ars_creo, mod/create_dragons_plus, mod/ars_elemental, mod/ars_elemancy, mod/not_enough_glyphs, mod/ars_unification, mod/create_enchantment_industry, mod/invasiveopts, mod/framedblocks, mod/logisticsnetworks, mod/appmek, mod/ae2extras, mod/expandability, mod/xtonesreworked, mod/shiny, mod/translocators, mod/sophisticatedstorageinmotion, add_xycraft_overrides_stone, add_xycraft_overrides_metal, add_xycraft_overrides_glass, moonlight:merged_pack, neovitae_materials, mod/towntalk:respack, mod/eternal_starlight:resourcepacks/starlight_3d_mace, builtin/aether_ctm_fix, mod/dyenamicsandfriends:compat_packs/productivemetalworks/, mod/dyenamicsandfriends:compat_packs/connectedglass/, mod/dyenamicsandfriends:compat_packs/luminax/, mod/dyenamicsandfriends:compat_packs/cookingforblockheads/, mod/dyenamicsandfriends:compat_packs/botanypots/, mod/dyenamicsandfriends:compat_packs/chromacarvings/, mi_generated_pack, Essential Assets, KubeJS Virtual Resource Pack [Internal, assets], KubeJS Virtual Resource Pack [After Mods, assets], KubeJS File Resource Pack [assets], essential, KubeJS Virtual Resource Pack [Last, assets]
+
+[STDOUT] [23:32:32] [Render thread/INFO] [de.ke.fa.cu.ScreenCustomization/]: [FANCYMENU] Initializing screen customization engine! Addons should NOT REGISTER TO REGISTRIES anymore now!
+
+[STDOUT] [23:32:32] [Worker-ResourceReload-0/INFO] [Moonlight/]: Resource cache state for CLIENT_RESOURCES: needs regeneration
+
+[STDOUT] [23:32:32] [Worker-ResourceReload-0/INFO] [Moonlight/]: Cleared cache pack resources at C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\dynamic-resource-pack-cache\supplementaries-generated_pack in 1.169 ms
+
+[STDOUT] [23:32:32] [Worker-ResourceReload-0/INFO] [Moonlight/]: Cleared cache pack resources at C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\dynamic-resource-pack-cache\amendments-generated_pack in 131.6 ?s
+
+[STDOUT] [23:32:32] [Worker-ResourceReload-0/INFO] [Moonlight/]: Starting runtime resource generation for pack type CLIENT_RESOURCES with generators [supplementaries:generated_pack, amendments:generated_pack, moonlight:dynamic_resources]
+
+[STDOUT] [23:32:32] [Worker-ResourceReload-0/INFO] [Moonlight/]: Regenerating Dynamic CLIENT_RESOURCES Resources Provider [supplementaries:generated_pack], requested by strategy CACHED_FOLDER
+
+[STDOUT] [23:32:33] [Render thread/INFO] [minecraft/LoadingOverlay]: [DRIPPY LOADING SCREEN] Initializing fonts for text rendering..
+
+[STDOUT] [23:32:33] [Render thread/INFO] [de.ke.fa.cu.la.ScreenCustomizationLayerHandler/]: [FANCYMENU] ScreenCustomizationLayer registered: drippy_loading_overlay
+
+[STDOUT] [23:32:35] [Render thread/INFO] [de.ke.fa.FancyMenu/]: [FANCYMENU] Starting late client initialization phase..
+
+[STDOUT] [23:32:35] [Worker-ResourceReload-0/INFO] [Moonlight/]: Generated runtime CLIENT_RESOURCES for pack supplementaries:generated_pack in 3.418 s
+
+[STDOUT] [23:32:35] [Worker-ResourceReload-0/INFO] [Moonlight/]: Populated search tree for pack at C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\dynamic-resource-pack-cache\supplementaries-generated_pack in 88.29 ms
+
+[STDOUT] [23:32:35] [Worker-ResourceReload-0/INFO] [Moonlight/]: Regenerating Dynamic CLIENT_RESOURCES Resources Provider [amendments:generated_pack], requested by strategy CACHED_FOLDER
+
+[STDOUT] [23:32:35] [Render thread/INFO] [de.ke.ko.Konkrete/]: [KONKRETE] Client-side modules initialized and ready to use!
+
+[STDOUT] [23:32:36] [Render thread/INFO] [KubeJS/]: Added bindings for script type CLIENT from mod 'almostunified': [AlmostUnified]
+
+[STDOUT] [23:32:36] [Render thread/INFO] [KubeJS Client/]: Client resource reload complete!
+
+[STDOUT] [23:32:37] [DefaultDispatcher-worker-6/INFO] [Essential Logger/]: Connected to Discord as spartangamerbr6298
+
+[STDOUT] [23:32:40] [Render thread/INFO] [Iris/]: Shaders are disabled because no valid shaderpack is selected
+
+[STDOUT] [23:32:40] [Render thread/INFO] [de.ke.fa.cu.ScreenCustomizationEvents/]: [FANCYMENU] Setting default GUI scale..
+
+[STDOUT] [23:32:40] [Render thread/INFO] [de.ke.fa.cu.la.ScreenCustomizationLayerHandler/]: [FANCYMENU] ScreenCustomizationLayer registered: generic_dirt_message_screen
+
+[STDOUT] [23:32:42] [Worker-Main-9/INFO] [minecraft/UnihexProvider]: Found unifont_all_no_pua-15.1.05.hex, loading
+
+[STDOUT] [23:32:42] [Worker-Main-10/INFO] [minecraft/UnihexProvider]: Found unifont_jp_patch-15.1.05.hex, loading
+
+[STDOUT] [23:32:44] [Render thread/ERROR] [gg.es.sp.LocalResourcePackIndex/]: Error while indexing resource packs
+java.lang.UnsupportedOperationException: null
+	at cpw.mods.securejarhandler/cpw.mods.niofs.union.UnionFileSystemProvider.delete(UnionFileSystemProvider.java:189) ~[securejarhandler-3.0.8.jar:?] {}
+	at java.base/java.nio.file.spi.FileSystemProvider.deleteIfExists(Unknown Source) ~[?:?] {}
+	at java.base/java.nio.file.Files.deleteIfExists(Unknown Source) ~[?:?] {}
+	at TRANSFORMER/essential@1.5.0.1/gg.essential.util.FilesIndexTracker.currentFileSystemTimeMillis(FilesIndexTracker.kt:144) ~[Essential%20(neoforge_1.21.1).jar%231530!/:?] {re:classloading}
+	at TRANSFORMER/essential@1.5.0.1/gg.essential.util.FilesIndexTracker.access$currentFileSystemTimeMillis(FilesIndexTracker.kt:52) ~[Essential%20(neoforge_1.21.1).jar%231530!/:?] {re:classloading}
+	at TRANSFORMER/essential@1.5.0.1/gg.essential.util.FilesIndexTracker$IsInThePast.invoke(FilesIndexTracker.kt:167) ~[Essential%20(neoforge_1.21.1).jar%231530!/:?] {re:classloading}
+	at TRANSFORMER/essential@1.5.0.1/gg.essential.util.FilesIndexTracker.checkEntry(FilesIndexTracker.kt:101) ~[Essential%20(neoforge_1.21.1).jar%231530!/:?] {re:classloading}
+	at TRANSFORMER/essential@1.5.0.1/gg.essential.util.FilesIndexTracker.update(FilesIndexTracker.kt:81) ~[Essential%20(neoforge_1.21.1).jar%231530!/:?] {re:classloading}
+	at TRANSFORMER/essential@1.5.0.1/gg.essential.util.FilesIndexTracker.update(FilesIndexTracker.kt:80) ~[Essential%20(neoforge_1.21.1).jar%231530!/:?] {re:classloading}
+	at TRANSFORMER/essential@1.5.0.1/gg.essential.util.FilesIndexTracker.update(FilesIndexTracker.kt:74) ~[Essential%20(neoforge_1.21.1).jar%231530!/:?] {re:classloading}
+	at TRANSFORMER/essential@1.5.0.1/gg.essential.util.FilesIndexTracker.update$default(FilesIndexTracker.kt:72) ~[Essential%20(neoforge_1.21.1).jar%231530!/:?] {re:classloading}
+	at TRANSFORMER/essential@1.5.0.1/gg.essential.sps.LocalResourcePackIndex.getShaViaTracker(LocalResourcePackIndex.kt:170) ~[Essential%20(neoforge_1.21.1).jar%231530!/:?] {re:classloading}
+	at TRANSFORMER/essential@1.5.0.1/gg.essential.sps.LocalResourcePackIndex.access$getShaViaTracker(LocalResourcePackIndex.kt:48) ~[Essential%20(neoforge_1.21.1).jar%231530!/:?] {re:classloading}
+	at TRANSFORMER/essential@1.5.0.1/gg.essential.sps.LocalResourcePackIndex$updateFolderPacks$folderPackSha$1.invokeSuspend(LocalResourcePackIndex.kt:153) ~[Essential%20(neoforge_1.21.1).jar%231530!/:?] {re:classloading}
+	at LAYER PLUGIN/kotlin.stdlib/kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34) ~[kotlin-stdlib-2.4.0.jar%231508!/:2.4.0-release-281] {}
+	at LAYER PLUGIN/kotlinx.coroutines.core/kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100) ~[kotlinx-coroutines-core-jvm-1.11.0.jar%231419!/:1.11.0] {}
+	at LAYER PLUGIN/kotlinx.coroutines.core/kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:124) ~[kotlinx-coroutines-core-jvm-1.11.0.jar%231419!/:1.11.0] {}
+	at LAYER PLUGIN/kotlinx.coroutines.core/kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89) ~[kotlinx-coroutines-core-jvm-1.11.0.jar%231419!/:1.11.0] {}
+	at LAYER PLUGIN/kotlinx.coroutines.core/kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:586) ~[kotlinx-coroutines-core-jvm-1.11.0.jar%231419!/:1.11.0] {}
+	at LAYER PLUGIN/kotlinx.coroutines.core/kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:798) ~[kotlinx-coroutines-core-jvm-1.11.0.jar%231419!/:1.11.0] {}
+	at LAYER PLUGIN/kotlinx.coroutines.core/kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:717) ~[kotlinx-coroutines-core-jvm-1.11.0.jar%231419!/:1.11.0] {}
+	at LAYER PLUGIN/kotlinx.coroutines.core/kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704) ~[kotlinx-coroutines-core-jvm-1.11.0.jar%231419!/:1.11.0] {}
+
+[STDOUT] [23:32:46] [Worker-ResourceReload-0/INFO] [Moonlight/]: Generated runtime CLIENT_RESOURCES for pack amendments:generated_pack in 11.03 s
+
+[STDOUT] [23:32:46] [Worker-ResourceReload-0/INFO] [Moonlight/]: Populated search tree for pack at C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\dynamic-resource-pack-cache\amendments-generated_pack in 68.94 ms
+[23:32:46] [Worker-ResourceReload-0/INFO] [Moonlight/]: Regenerating Dynamic CLIENT_RESOURCES Resources Provider [moonlight:dynamic_resources], requested by strategy REGEN_ON_EVERY_RELOAD
+
+[STDOUT] [23:32:46] [Worker-ResourceReload-0/INFO] [Moonlight/]: Generated runtime CLIENT_RESOURCES for pack moonlight:dynamic_resources in 1.256 ms
+
+[STDOUT] [23:32:46] [Worker-ResourceReload-0/INFO] [Moonlight/]: Finished runtime resources generation for 3 packs in a total of 14.69 s 
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/ERROR] [de.ft.mo.ft.ic.EntityIconLoader/]: Entity iceandfire:stone_statue is using legacy invisible texture, please update it to use the new system!
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-9/INFO] [minecraft/UnihexProvider]: Found unifont_all_no_pua-15.1.05.hex, loading
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-10/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/agronomic_sourcelink_animation.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/ERROR] [de.ft.mo.ft.ic.EntityIconLoader/]: Entity undergarden:gwibling is using legacy invisible texture, please update it to use the new system!
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/ERROR] [de.ft.mo.ft.ic.EntityIconLoader/]: Entity artifacts:mimic is using legacy invisible texture, please update it to use the new system!
+
+[STDOUT] [23:32:47] [NeoForge Version Check/INFO] [ne.ne.fm.VersionChecker/]: Global NeoForge version check system disabled, no further processing.
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-6/INFO] [integrateddynamics/]: Registered packet handler.
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-9/INFO] [minecraft/UnihexProvider]: Found unifont_jp_patch-15.1.05.hex, loading
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-7/INFO] [PluginManager/]: Executing phase COMMON_SETUP for plugin class PatchouliPlugin
+[23:32:47] [Worker-ResourceReload-7/INFO] [PluginManager/]: Executing phase COMMON_SETUP for plugin class FTBChunksPlugin
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-7/INFO] [PluginManager/]: Executing phase COMMON_SETUP for plugin class CuriosPlugin
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-10/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/alchemical_sourcelink_animation.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-10/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/alteration_apparatus_animations.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-7/INFO] [de.wu.bc.BetterCompatibilityChecker/]: Better Compatibility Checker setup
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-7/INFO] [de.wu.bc.ne.BetterCompatibilityCheckerNeoForge/]: Loaded BetterCompatibilityChecker - Modpack: All the Mods 10 | Version: 8.3
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-5/WARN] [minecraft/SoundManager]: File neovitae:sounds/blood_siphon2.ogg does not exist, cannot add it to event neovitae:blood_siphon
+[23:32:47] [Worker-ResourceReload-5/WARN] [minecraft/SoundManager]: File neovitae:sounds/blood_siphon3.ogg does not exist, cannot add it to event neovitae:blood_siphon
+[23:32:47] [Worker-ResourceReload-5/WARN] [minecraft/SoundManager]: File neovitae:sounds/blood_siphon4.ogg does not exist, cannot add it to event neovitae:blood_siphon
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-6/INFO] [evilcraft/]: Registered packet handler.
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-3/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/amethyst_golem_animations.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-3/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/animated_block_animations.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-3/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_technica:animations/animations_arcane_fusion.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-10/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_technica:animations/animations_arcane_hammer.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-3/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_technica:animations/animations_arcane_polish.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-3/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_technica:animations/animations_arcane_press.json'
+[23:32:47] [Worker-ResourceReload-3/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_technica:animations/animations_whirl.json'
+[23:32:47] [Worker-ResourceReload-3/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/arcane_core_animations.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-3/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/arcane_pedestal_animations.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-3/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/basic_spell_turret_animations.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-9/INFO] [Nature's Aura/]: Loading compat module for mod patchouli
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-9/INFO] [Nature's Aura/]: Loading compat module for mod curios
+[23:32:47] [Worker-ResourceReload-10/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/book_wyrm_animation.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-10/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/book_wyrm_lectern_animations.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-10/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'irons_spellbooks:animations/casting_animations.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-8/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/decor_blossom_animations.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-2/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'allthewizardgear:animations/default_armor.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-2/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/drygmy_animations.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-2/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/empty.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-3/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/enchanting_apparatus_animations.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/ERROR] [GeckoLib/]: Unable to parse animation: animation.calcination_oven.start
+	-> Failed to parse expression 'easeinoutquint'
+		-> Unable to parse compiled symbols from expression: [Left[easeinoutquint]]
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: Geckolib.CompoundException: Unable to parse animation: animation.calcination_oven.start
+	-> Failed to parse expression 'easeinoutquint'
+		-> Unable to parse compiled symbols from expression: [Left[easeinoutquint]]
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.math.MathParser.parseSymbols(MathParser.java:427)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.math.MathParser.compileExpression(MathParser.java:234)
+[23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.math.MathParser.compileMolang(MathParser.java:226)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.math.MathParser.parseJson(MathParser.java:171)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.json.typeadapter.BakedAnimationsAdapter.buildKeyframeStack(BakedAnimationsAdapter.java:202)
+[23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.json.typeadapter.BakedAnimationsAdapter.bakeBoneAnimations(BakedAnimationsAdapter.java:77)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.json.typeadapter.BakedAnimationsAdapter.bakeAnimation(BakedAnimationsAdapter.java:61)
+[23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.json.typeadapter.BakedAnimationsAdapter.deserialize(BakedAnimationsAdapter.java:41)
+[23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.json.typeadapter.BakedAnimationsAdapter.deserialize(BakedAnimationsAdapter.java:31)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76)
+[23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.Gson.fromJson(Gson.java:1227)
+[23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.Gson.fromJson(Gson.java:1329)
+[23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.Gson.fromJson(Gson.java:1271)
+[23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.FileLoader.loadAnimationsFile(FileLoader.java:36)
+[23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.cache.GeckoLibCache.lambda$loadAnimations$2(GeckoLibCache.java:79)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.cache.GeckoLibCache.lambda$loadResources$8(GeckoLibCache.java:121)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+[23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+[23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/ERROR] [GeckoLib/]: Unable to parse animation: animation.calcination_oven.stop
+	-> Failed to parse expression 'easeinoutquint'
+		-> Unable to parse compiled symbols from expression: [Left[easeinoutquint]]
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: Geckolib.CompoundException: Unable to parse animation: animation.calcination_oven.stop
+	-> Failed to parse expression 'easeinoutquint'
+		-> Unable to parse compiled symbols from expression: [Left[easeinoutquint]]
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.math.MathParser.parseSymbols(MathParser.java:427)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.math.MathParser.compileExpression(MathParser.java:234)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.math.MathParser.compileMolang(MathParser.java:226)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.math.MathParser.parseJson(MathParser.java:171)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.json.typeadapter.BakedAnimationsAdapter.buildKeyframeStack(BakedAnimationsAdapter.java:202)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.json.typeadapter.BakedAnimationsAdapter.bakeBoneAnimations(BakedAnimationsAdapter.java:77)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.json.typeadapter.BakedAnimationsAdapter.bakeAnimation(BakedAnimationsAdapter.java:61)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.json.typeadapter.BakedAnimationsAdapter.deserialize(BakedAnimationsAdapter.java:41)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.json.typeadapter.BakedAnimationsAdapter.deserialize(BakedAnimationsAdapter.java:31)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.Gson.fromJson(Gson.java:1227)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.Gson.fromJson(Gson.java:1329)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.Gson.fromJson(Gson.java:1271)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.FileLoader.loadAnimationsFile(FileLoader.java:36)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.cache.GeckoLibCache.lambda$loadAnimations$2(GeckoLibCache.java:79)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.cache.GeckoLibCache.lambda$loadResources$8(GeckoLibCache.java:121)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+[23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+[23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+[23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+[23:32:47] [Worker-ResourceReload-4/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-2/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/fluid_sourcelink_animations.json'
+[23:32:47] [Worker-ResourceReload-2/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'irons_spellbooks:animations/ice_block_animations.json'
+[23:32:47] [Worker-ResourceReload-3/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/imbuement_chamber_animations.json'
+[23:32:47] [Worker-ResourceReload-2/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/lily_animations.json'
+[23:32:47] [Worker-ResourceReload-8/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/mana_relay_animation.json'
+[23:32:47] [Worker-ResourceReload-8/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/mana_splitter_animation.json'
+[23:32:47] [Worker-ResourceReload-8/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/nook_animation.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-2/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/potion_melder_animation.json'
+[23:32:47] [Worker-ResourceReload-2/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/press_animations.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-2/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/redstone_relay_animations.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-10/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/ritual.json'
+[23:32:47] [Worker-ResourceReload-2/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'irons_spellbooks:animations/root_animations.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-8/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/rune.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/scribes_table_animations.json'
+[23:32:47] [Worker-ResourceReload-10/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/scryers_eye_animation.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-8/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/source_collector_animations.json'
+[23:32:47] [Worker-ResourceReload-10/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/source_condenser_animations.json'
+[23:32:47] [Worker-ResourceReload-2/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/source_deposit_animations.json'
+[23:32:47] [Worker-ResourceReload-8/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/source_relay_animations.json'
+[23:32:47] [Worker-ResourceReload-10/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/source_splitter_animations.json'
+[23:32:47] [Worker-ResourceReload-2/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/source_warp_animations.json'
+[23:32:47] [Worker-ResourceReload-8/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'irons_spellbooks:animations/spectral_hammer.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-10/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/spell_turret_animations.json'
+[23:32:47] [Worker-ResourceReload-8/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/spell_turret_timer_animations.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-10/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/spike_animations.json'
+[23:32:47] [Worker-ResourceReload-2/ERROR] [GeckoLib/]: Unable to parse animation: adjust_size
+	-> Failed to parse expression 'aoe'
+		-> Unable to parse compiled symbols from expression: [Left[aoe]]
+[23:32:47] [Worker-ResourceReload-8/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/star_balloon_animations.json'
+[23:32:47] [Worker-ResourceReload-10/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/starbuncle_animations.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-8/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_creo:animations/starbuncle_wheel_animation.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-2/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: Geckolib.CompoundException: Unable to parse animation: adjust_size
+	-> Failed to parse expression 'aoe'
+		-> Unable to parse compiled symbols from expression: [Left[aoe]]
+[23:32:47] [Worker-ResourceReload-2/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.math.MathParser.parseSymbols(MathParser.java:427)
+[23:32:47] [Worker-ResourceReload-2/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.math.MathParser.compileExpression(MathParser.java:234)
+[23:32:47] [Worker-ResourceReload-2/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.math.MathParser.compileMolang(MathParser.java:226)
+[23:32:47] [Worker-ResourceReload-2/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.math.MathParser.parseJson(MathParser.java:171)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-2/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.json.typeadapter.BakedAnimationsAdapter.buildKeyframeStack(BakedAnimationsAdapter.java:202)
+[23:32:47] [Worker-ResourceReload-2/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.json.typeadapter.BakedAnimationsAdapter.bakeBoneAnimations(BakedAnimationsAdapter.java:76)
+[23:32:47] [Worker-ResourceReload-2/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.json.typeadapter.BakedAnimationsAdapter.bakeAnimation(BakedAnimationsAdapter.java:61)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-10/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/storage_catalog_animations.json'
+[23:32:47] [Worker-ResourceReload-2/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.json.typeadapter.BakedAnimationsAdapter.deserialize(BakedAnimationsAdapter.java:41)
+[23:32:47] [Worker-ResourceReload-2/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.json.typeadapter.BakedAnimationsAdapter.deserialize(BakedAnimationsAdapter.java:31)
+[23:32:47] [Worker-ResourceReload-10/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'irons_spellbooks:animations/summoned_weapon_animations.json'
+[23:32:47] [Worker-ResourceReload-2/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76)
+[23:32:47] [Worker-ResourceReload-2/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.Gson.fromJson(Gson.java:1227)
+[23:32:47] [Worker-ResourceReload-10/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/vitalic_sourcelink_animation.json'
+[23:32:47] [Worker-ResourceReload-8/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'irons_spellbooks:animations/void_tentacle_animations.json'
+[23:32:47] [Worker-ResourceReload-10/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/volcanic_sourcelink_animations.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-10/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/wand_animation.json'
+[23:32:47] [Worker-ResourceReload-10/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_additions:animations/warp_nexus_animations.json'
+[23:32:47] [Worker-ResourceReload-10/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/weald_waddler_animations.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-10/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/whirlisprig_animations.json'
+[23:32:47] [Worker-ResourceReload-8/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/weald_walker_animations.json'
+[23:32:47] [Worker-ResourceReload-10/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/whirlisprig_blossom_animations.json'
+[23:32:47] [Worker-ResourceReload-8/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/wilden_chimera_animations.json'
+[23:32:47] [Worker-ResourceReload-10/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/wilden_defender_animations.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-10/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/wilden_hunter_animations.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-10/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/wilden_stalker_animations.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-2/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.Gson.fromJson(Gson.java:1329)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-10/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'ars_nouveau:animations/wixie_animations.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-2/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.Gson.fromJson(Gson.java:1271)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-10/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'irons_lib:animations/wizard_armor_animation.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-10/WARN] [GeckoLib/]: Found animation file with improper file name format; animation files should end in .animation.json: 'irons_spellbooks:animations/wizard_armor_animation.json'
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-2/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.FileLoader.loadAnimationsFile(FileLoader.java:36)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-2/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.cache.GeckoLibCache.lambda$loadAnimations$2(GeckoLibCache.java:79)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-2/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.cache.GeckoLibCache.lambda$loadResources$8(GeckoLibCache.java:121)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-2/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-2/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-2/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-2/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-2/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-2/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-2/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-8/ERROR] [GeckoLib/]: Unable to parse animation: swim_charge
+	-> Failed to parse expression 'math.cos(query.anim_time*swimcharge-25)*8'
+		-> Unable to parse compiled symbols from expression: [Left[swimcharge]]
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: Geckolib.CompoundException: Unable to parse animation: swim_charge
+	-> Failed to parse expression 'math.cos(query.anim_time*swimcharge-25)*8'
+		-> Unable to parse compiled symbols from expression: [Left[swimcharge]]
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.math.MathParser.parseSymbols(MathParser.java:427)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-4/INFO] [PluginManager/]: Executing phase COMMON_SETUP for plugin class PatchouliPlugin
+[23:32:47] [Worker-ResourceReload-8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.math.MathParser.compileCalculation(MathParser.java:546)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.math.MathParser.compileValue(MathParser.java:451)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.math.MathParser.parseSymbols(MathParser.java:422)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.math.MathParser.compileSymbols(MathParser.java:381)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.math.MathParser.compileExpression(MathParser.java:234)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.math.MathParser.compileMolang(MathParser.java:226)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.math.MathParser.parseJson(MathParser.java:171)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.json.typeadapter.BakedAnimationsAdapter.buildKeyframeStack(BakedAnimationsAdapter.java:202)
+[23:32:47] [Worker-ResourceReload-8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.json.typeadapter.BakedAnimationsAdapter.bakeBoneAnimations(BakedAnimationsAdapter.java:78)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.json.typeadapter.BakedAnimationsAdapter.bakeAnimation(BakedAnimationsAdapter.java:61)
+[23:32:47] [Worker-ResourceReload-8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.json.typeadapter.BakedAnimationsAdapter.deserialize(BakedAnimationsAdapter.java:41)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.json.typeadapter.BakedAnimationsAdapter.deserialize(BakedAnimationsAdapter.java:31)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:76)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.Gson.fromJson(Gson.java:1227)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.Gson.fromJson(Gson.java:1329)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at MC-BOOTSTRAP/com.google.gson@2.10.1/com.google.gson.Gson.fromJson(Gson.java:1271)
+[23:32:47] [Worker-ResourceReload-8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.loading.FileLoader.loadAnimationsFile(FileLoader.java:36)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.cache.GeckoLibCache.lambda$loadAnimations$2(GeckoLibCache.java:79)
+[23:32:47] [Worker-ResourceReload-8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.cache.GeckoLibCache.lambda$loadResources$8(GeckoLibCache.java:121)
+[23:32:47] [Worker-ResourceReload-8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+[23:32:47] [Worker-ResourceReload-8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+[23:32:47] [Worker-ResourceReload-8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]: No user config.json found
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-10/INFO] [co.kl.oc.Occultism/]: Common setup complete.
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]: Available patches: 6
+[23:32:47] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]:  - EuphoriaPatches [1.6.3, 1.6.4, 1.6.5, 1.6.6, 1.6.7, 1.6.8] (jar)
+[23:32:47] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]:  - Complementary [5.6, 5.6.1] (jar)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]:  - rethinking-voxels [0.1-beta9] (jar)
+[23:32:47] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]:  - BSL [10.1] (jar)
+[23:32:47] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]:  - Bliss [2.1.1, 2.1.2] (jar)
+[23:32:47] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]:  - photon [1.3a] (jar)
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]: Existing base shaders: 6
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]:  - BSL_v10.1.1.zip []
+[23:32:47] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]:  - ComplementaryReimagined_r5.9.3 + EuphoriaPatches_1.10.5 []
+[23:32:47] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]:  - ComplementaryUnbound_r5.9.3 + EuphoriaPatches_1.10.5 []
+[23:32:47] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]:  - MakeUp-UltraFast-9.5g.zip []
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]:  - ComplementaryUnbound_r5.9.3.zip []
+[23:32:47] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]:  - ComplementaryReimagined_r5.9.3.zip []
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]: Found patch 'BSL' for BSL_v10.1.1.zip
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-5/WARN] [minecraft/SoundManager]: File everythingcopper:sounds/block/chime.ogg does not exist, cannot add it to event everythingcopper:block.copper_chime.chime
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-7/INFO] [Modular Routers/]: Modular Routers is loading!
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-5/INFO] [Mystical Agriculture/]: Loaded 154 crops
+[23:32:47] [Worker-ResourceReload-5/INFO] [Mystical Agriculture/]: Loaded 8 crop tiers
+[23:32:47] [Worker-ResourceReload-5/INFO] [Mystical Agriculture/]: Loaded 2 crop types
+[23:32:47] [Worker-ResourceReload-5/INFO] [Mystical Agriculture/]: Loaded 55 augments
+[23:32:47] [Worker-ResourceReload-5/INFO] [Mystical Agriculture/]: Loaded 23 mob soul types
+[23:32:47] [Worker-ResourceReload-5/INFO] [me.co.Mekanism/]: Version 10.7.19 initializing...
+
+[STDOUT] [23:32:47] [Worker-ResourceReload-2/INFO] [pneumaticcraft/]: PneumaticCraft: Repressurized is loading!
+
+[STDOUT] [23:32:48] [Immersive Engineering Contributors Thread/INFO] [immersiveengineering/]: Attempting to download special revolvers from GitHub
+
+[STDOUT] [23:32:48] [Worker-ResourceReload-3/INFO] [ne.ne.co.Co.apothic_enchanting/COREMODLOG]: Replaced 1 calls to Enchantment#getMaxLevel() in net/minecraft/world/entity/npc/VillagerTrades$EnchantBookForEmeralds
+
+[STDOUT] [23:32:48] [Worker-ResourceReload-9/INFO] [Nature's Aura/]: -- Nature's Aura Fake Player Information --
+[23:32:48] [Worker-ResourceReload-9/INFO] [Nature's Aura/]: Name: [NaturesAura]
+[23:32:48] [Worker-ResourceReload-9/INFO] [Nature's Aura/]: UUID: 4ce3b06b-e254-4992-8a5a-d1e56d24601f
+[23:32:48] [Worker-ResourceReload-9/INFO] [Nature's Aura/]: -------------------------------------------
+
+[STDOUT] [23:32:48] [Worker-ResourceReload-9/INFO] [co.co.Connectivity/]: Connectivity initialized
+[23:32:48] [Worker-ResourceReload-9/INFO] [or.mo.ba.Backpack_allthemodium_upgrade/]: HELLO FROM COMMON SETUP
+
+[STDOUT] [23:32:48] [Worker-ResourceReload-4/INFO] [co.ma.he.HerbsAndHarvest/]: HELLO FROM COMMON SETUP
+
+[STDOUT] [23:32:48] [Worker-ResourceReload-3/INFO] [co.ma.me.MerryMaking/]: HELLO FROM COMMON SETUP
+
+[STDOUT] [23:32:48] [Worker-ResourceReload-3/INFO] [incontrol/]: Enabling support for KubeJS
+
+[STDOUT] [23:32:48] [Worker-ResourceReload-7/INFO] [journeymap/]: Loaded null for service interface journeymap.api.services.WebMapService
+
+[STDOUT] [23:32:48] [Worker-ResourceReload-4/INFO] [FTB Library/]: Setting game stages provider implementation to: KubeJS Stages
+[23:32:48] [Worker-ResourceReload-4/INFO] [FTB XMod Compat/]: Chose [KubeJS Stages] as the active game stages implementation
+
+[STDOUT] [23:32:48] [Worker-ResourceReload-7/INFO] [journeymap/]: Loaded journeymap.common.helpers.NeoForgeClientHooks@701b5d16 for service interface journeymap.api.services.ClientPlatformService
+
+[STDOUT] [23:32:48] [Worker-ResourceReload-4/INFO] [FTB Library/]: Setting permissions provider implementation to: FTB Ranks
+[23:32:48] [Worker-ResourceReload-4/INFO] [FTB XMod Compat/]: Chose [FTB Ranks] as the active permissions implementation
+
+[STDOUT] [23:32:48] [Worker-ResourceReload-7/INFO] [journeymap/]: Loaded journeymap.common.helpers.NeoForgeHooks@26a1e0dc for service interface journeymap.api.services.CommonPlatformService
+
+[STDOUT] [23:32:48] [Worker-ResourceReload-4/INFO] [FTB Library/]: Setting permissions currency implementation to: <NONE>
+[23:32:48] [Worker-ResourceReload-4/INFO] [FTB XMod Compat/]: Chose [<NONE>] as the active currency implementation
+
+[STDOUT] [23:32:49] [Worker-ResourceReload-4/INFO] [FTB XMod Compat/]: [FTB Quests] recipe helper provider is [JEI]
+[23:32:49] [Worker-ResourceReload-4/INFO] [FTB XMod Compat/]: [FTB Quests] Enabled FTB Filter System integration
+[23:32:49] [Worker-ResourceReload-4/INFO] [FTB XMod Compat/]: [FTB Chunks] FTB Ranks detected, listening for ranks events
+[23:32:49] [Worker-ResourceReload-4/INFO] [FTB XMod Compat/]: [FTB Chunks] Enabled Waystones integration
+
+[STDOUT] [23:32:49] [Worker-ResourceReload-3/INFO] [Tesseract API/NativeMaterialItemSanityCheck/]: Starting validation process...
+
+[STDOUT] [23:32:49] [Worker-ResourceReload-3/INFO] [Tesseract API/NativeMaterialItemSanityCheck/]: Successfully validated 570 item ids.
+
+[STDOUT] [23:32:49] [Worker-ResourceReload-2/INFO] [mcjtylib/]: RFTools Storage Detected XNet: enabling support
+
+[STDOUT] [23:32:49] [Worker-ResourceReload-8/INFO] [integrateddynamics/]: Registered packet handler.
+
+[STDOUT] [23:32:49] [Worker-ResourceReload-8/INFO] [integrateddynamicscompat/]: Registered packet handler.
+
+[STDOUT] [23:32:49] [Worker-ResourceReload-7/INFO] [journeymap/]: Found @JourneyMapPlugin: com.minecolonies.core.compatibility.journeymap.JourneymapPlugin
+[23:32:49] [Worker-ResourceReload-7/WARN] [journeymap/]: The mod minecolonies for plugin com.minecolonies.core.compatibility.journeymap.JourneymapPlugin is using a deprecated annotation, please inform the plugin mod dev they need to update.
+
+[STDOUT] [23:32:49] [Worker-ResourceReload-7/INFO] [journeymap/]: Found @JourneyMapPlugin: net.blay09.mods.waystones.compat.JourneyMapIntegration
+[23:32:49] [Worker-ResourceReload-7/WARN] [journeymap/]: The mod waystones for plugin net.blay09.mods.waystones.compat.JourneyMapIntegration is using a deprecated annotation, please inform the plugin mod dev they need to update.
+[23:32:49] [Worker-ResourceReload-7/INFO] [journeymap/]: Skipping dev-only plugin (set -Djourneymap.dev_plugins=true to enable): journeymap.api.plugins.OverlayLifecycleProfilingPlugin
+[23:32:49] [Worker-ResourceReload-7/INFO] [journeymap/]: Skipping dev-only plugin (set -Djourneymap.dev_plugins=true to enable): journeymap.api.plugins.DebugVerificationPlugin
+[23:32:49] [Worker-ResourceReload-7/INFO] [journeymap/]: Found @JourneyMapPlugin: com.simibubi.create.compat.trainmap.JourneyTrainMap
+[23:32:49] [Worker-ResourceReload-7/WARN] [journeymap/]: The mod create for plugin com.simibubi.create.compat.trainmap.JourneyTrainMap is using a deprecated annotation, please inform the plugin mod dev they need to update.
+
+[STDOUT] [23:32:49] [Worker-ResourceReload-0/INFO] [co.kl.th.Theurgy/]: Common setup complete.
+
+[STDOUT] [23:32:49] [Worker-ResourceReload-5/INFO] [me.co.Mekanism/]: Initialized HolidayManager.
+
+[STDOUT] [23:32:49] [Worker-ResourceReload-5/INFO] [me.co.Mekanism/]: Fake player readout: UUID = 46e82cd0-d480-3d48-800a-77431ede078e, name = [Mekanism]
+[23:32:49] [Worker-ResourceReload-5/INFO] [me.co.Mekanism/]: Mod loaded.
+
+[STDOUT] [23:32:49] [Worker-ResourceReload-5/INFO] [me.co.Mekanism/]: Loaded 'Mekanism: Tools' module.
+
+[STDOUT] [23:32:49] [Worker-ResourceReload-5/INFO] [me.co.Mekanism/]: Loaded 'Mekanism: Generators' module.
+[23:32:49] [Worker-ResourceReload-5/INFO] [MekanismMoreMachine/]: Version 1.4.1 initializing...
+
+[STDOUT] [23:32:50] [Worker-ResourceReload-8/WARN] [minecraft/SpriteLoader]: Texture astralsorcery:aion with size 8x8 limits mip level from 4 to 3
+
+[STDOUT] [23:32:50] [Worker-ResourceReload-8/INFO] [potionsmaster/]: === Running Dynamic Effect Sprite Source ===
+[23:32:50] [Worker-ResourceReload-8/INFO] [potionsmaster/]: Loaded base effect texture: 18x18
+
+[STDOUT] [23:32:50] [Worker-ResourceReload-8/INFO] [potionsmaster/]: Generated dynamic sprite for effect: nickel_sight with color 0xffa9a984
+[23:32:50] [Worker-ResourceReload-8/INFO] [potionsmaster/]: Generated dynamic sprite for effect: iron_sight with color 0xffe4c0aa
+
+[STDOUT] [23:32:50] [Worker-ResourceReload-8/INFO] [potionsmaster/]: Generated dynamic sprite for effect: uranium_sight with color 0xff7ee778
+[23:32:50] [Worker-ResourceReload-8/INFO] [potionsmaster/]: Generated dynamic sprite for effect: vibranium_sight with color 0xff26de88
+[23:32:50] [Worker-ResourceReload-8/INFO] [potionsmaster/]: Generated dynamic sprite for effect: platinum_sight with color 0xffb5b5ff
+[23:32:50] [Worker-ResourceReload-8/INFO] [potionsmaster/]: Generated dynamic sprite for effect: netherite_scrap_sight with color 0xffffa500
+[23:32:50] [Worker-ResourceReload-8/INFO] [potionsmaster/]: Generated dynamic sprite for effect: copper_sight with color 0xffb7703a
+[23:32:50] [Worker-ResourceReload-8/INFO] [potionsmaster/]: Generated dynamic sprite for effect: redstone_sight with color 0xffff0000
+[23:32:50] [Worker-ResourceReload-8/INFO] [potionsmaster/]: Generated dynamic sprite for effect: unobtainium_sight with color 0xffd152e3
+[23:32:50] [Worker-ResourceReload-8/INFO] [potionsmaster/]: Generated dynamic sprite for effect: lapis_sight with color 0xff0000ff
+[23:32:50] [Worker-ResourceReload-8/INFO] [potionsmaster/]: Generated dynamic sprite for effect: lead_sight with color 0xff7c8cc6
+[23:32:50] [Worker-ResourceReload-8/INFO] [potionsmaster/]: Generated dynamic sprite for effect: allthemodium_sight with color 0xfffed95a
+[23:32:50] [Worker-ResourceReload-8/INFO] [potionsmaster/]: Generated dynamic sprite for effect: emerald_sight with color 0xff00ff00
+[23:32:50] [Worker-ResourceReload-8/INFO] [potionsmaster/]: Generated dynamic sprite for effect: gold_sight with color 0xffd4af37
+[23:32:50] [Worker-ResourceReload-8/INFO] [potionsmaster/]: Generated dynamic sprite for effect: zinc_sight with color 0xffb5b575
+[23:32:50] [Worker-ResourceReload-8/INFO] [potionsmaster/]: Generated dynamic sprite for effect: tin_sight with color 0xfff27273
+[23:32:50] [Worker-ResourceReload-8/INFO] [potionsmaster/]: Generated dynamic sprite for effect: silver_sight with color 0xffa4e0e7
+[23:32:50] [Worker-ResourceReload-8/INFO] [potionsmaster/]: Generated dynamic sprite for effect: aluminum_sight with color 0xffe3e3e3
+[23:32:50] [Worker-ResourceReload-8/INFO] [potionsmaster/]: Generated dynamic sprite for effect: coal_sight with color 0xff202020
+[23:32:50] [Worker-ResourceReload-8/INFO] [potionsmaster/]: Generated dynamic sprite for effect: diamond_sight with color 0xff3ddbe3
+[23:32:50] [Worker-ResourceReload-8/INFO] [potionsmaster/]: Generated dynamic sprite for effect: osmium_sight with color 0xff0000cc
+[23:32:50] [Worker-ResourceReload-8/INFO] [potionsmaster/]: Generated dynamic sprite for effect: quartz_sight with color 0xffffffff
+[23:32:50] [Worker-ResourceReload-8/INFO] [potionsmaster/]: === Dynamic Effect Sprite Source Complete - Generated 22 effect icons ===
+
+[STDOUT] [23:32:50] [Worker-ResourceReload-7/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite corgilib:alert frame 2: 2
+
+[STDOUT] [23:32:50] [Worker-ResourceReload-4/INFO] [Mystical Agriculture/]: Loaded 0 essence vessel colors in 6 ms
+
+[STDOUT] [23:32:50] [Astral Sorcery Patreon Data Loader/INFO] [Astral Sorcery/]: Finished loading patreon effects.
+
+[STDOUT] [23:32:51] [Worker-ResourceReload-9/WARN] [minecraft/SingleFile]: Missing sprite: reliquary:textures/entity/equipment/humanoid/mob_charm_belt.png
+[23:32:51] [Worker-ResourceReload-9/WARN] [minecraft/SingleFile]: Missing sprite: minecraft:textures/map/map_icons.png
+
+[STDOUT] [23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: zerocore:GUI Theme file.md, ignoring
+
+[STDOUT] [23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/yogurtitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/vinegaritem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/veggiepotpieitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/vegetablenoodlesoupitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/trailmixitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/toastitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/sweetberryyogurtitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/sweetberrysmoothieitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/sweetberrypopsicleitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/sweetberrypieitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/sweetberrymuffinitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/sweetberryjuiceitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/sweetberryjellytoastitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/sweetberryjellyitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/sweetberrydonutitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/sunflowerseedsitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/stockitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/stewitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/sprinklesdonutitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/softpretzelitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/smoresitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/skilletitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/scrambledeggitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/saucepanitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/saltitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/rolleritem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/roastedsunflowerseedsitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/rabbitpotpieitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/rabbitnoodlesoupitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/rabbitjerkyitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/pumpkinyogurtitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/pumpkinsoupitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/pumpkinmuffinitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/pumpkindonutitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/pumpkincheesecakeitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/pumpkinbreaditem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/powdereddonutitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/potroastitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/potitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/potatosoupitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/potatochipsitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/porkpotpieitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/porknoodlesoupitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/porkjerkyitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/plaindonutitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/pickledbeetsitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/pastaitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/p8juiceitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/noodlesoupitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/noodlesitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/muttonpotpieitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/muttonnoodlesoupitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/muttonjerkyitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/mixingbowlitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/melonyogurtitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/melonsmoothieitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/melonpopsicleitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/melonpieitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/melonmuffinitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/melonjuiceitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/melonjellytoastitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/melonjellyitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/melondonutitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/meatloafitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/mayonaiseitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/mashedpotatoesitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/marshmellowsitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/macncheeseitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/juiceritem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/jellybeansitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/icecreamitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/hotdogitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/hotchocolateitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/honeypieitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/honeymuffinitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/honeyglazeddonutitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/gummycreepersitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/groundrabbititem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/groundporkitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/groundmuttonitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/groundfishitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/groundchickenitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/groundbeefitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/grinderitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/grilledveggieskeweritem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/grilledrabbitskeweritem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/grilledporkskeweritem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/grilledmuttonskeweritem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/grilledfishskeweritem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/grilledchickenskeweritem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/grilledcheeseitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/grilledcheeseandhamitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/grilledbeefskeweritem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/glowberryyogurtitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/glowberrysmoothieitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/glowberrypopsicleitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/glowberrypieitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/glowberrymuffinitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/glowberryjuiceitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/glowberryjellytoastitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/glowberryjellyitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/glowberrydonutitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/glazedcarrotsitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/fudgesicleitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/fruitsaladitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/fruitpunchitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/friesitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/friedeggitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/friedchickenitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/freshwateritem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/freshmilkitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/flouritem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/fishsticksitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/fishpotpieitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/fishnoodlesoupitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/fishjerkyitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/fishandchipsitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/epicbaconitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/doughitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/cuttingboarditem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/creamitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/crackersandcheeseitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/crackeritem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/cottoncandyitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/cookingoilitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/cookiesandmilkitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/cookedgroundrabbititem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/cookedgroundporkitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/cookedgroundmuttonitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/cookedgroundfishitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/cookedgroundchickenitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/cookedgroundbeefitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/cocoapowderitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/chorusyogurtitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/chorussmoothieitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/choruspopsicleitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/choruspieitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/chorusmuffinitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/chorusjuiceitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/chorusjellytoastitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/chorusjellyitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/chorusdonutitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/chocolateyogurtitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/chocolaterollitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/chocolatepieitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/chocolatemuffinitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/chocolatemilkshakeitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/chocolatemilkitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/chocolateicecreamitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/chocolatedonutitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/chocolatecaramelfudgeitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/chocolatecakeitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/chocolatebaritem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/chocolatebaconitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/chickenpotpieitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/chickennuggetitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/chickennoodlesoupitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/chickenjerkyitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/chickendinneritem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/cheeseitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/cheesecakeitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/carrotsoupitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/carrotpieitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/carrotmuffinitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/carrotjuiceitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/carrotdonutitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/carrotcakeitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/carrotbreaditem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/caramelyogurtitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/caramelpieitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/caramelmuffinitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/caramelitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/caramelicecreamitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/carameldonutitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/caramelappleitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/butteritem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/butteredbakedpotatoitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/boiledeggitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/beefpotpieitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/beefnoodlesoupitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/beefjerkyitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/batteritem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/basicveggieburgeritem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/basicrabbitsandwichitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/basicporksandwichitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/basicmuttonsandwichitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/basichamburgeritem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/basicfishsandwichitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/basicchickensandwichitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/basiccheeseburgeritem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/bakewareitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/bakedvegetablemedlyitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/baconcheeseburgeritem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/baconandeggsitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/appleyogurtitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/applesmoothieitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/applesauceitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/applepopsicleitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/applepieitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/applemuffinitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/applejuiceitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/applejellytoastitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/applejellyitem.png, ignoring
+[23:32:52] [Worker-ResourceReload-4/ERROR] [minecraft/Util]: Invalid path in pack: pamhc2foodcore:textures/item - old icons/appledonutitem.png, ignoring
+
+[STDOUT] [23:32:53] [Worker-ResourceReload-3/WARN] [minecraft/SpriteContents]: Unused frames in sprite justdirethings:item/creaturecatcher_top_animation: [8]
+

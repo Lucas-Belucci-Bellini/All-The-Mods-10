@@ -1,0 +1,9 @@
+{
+	"loader": "amendments:wall_lantern",
+	"support": {
+		"parent": "amendments:block/ars_additions/wall_polished_sourcestone_lantern_5_template",
+		"textures": {
+			"1": "amendments:block/wall_lanterns/ars_additions/polished_sourcestone_lantern"
+		}
+	}
+}

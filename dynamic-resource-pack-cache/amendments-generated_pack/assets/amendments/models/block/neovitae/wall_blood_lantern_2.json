@@ -1,0 +1,9 @@
+{
+	"loader": "amendments:wall_lantern",
+	"support": {
+		"parent": "amendments:block/neovitae/wall_blood_lantern_2_template",
+		"textures": {
+			"1": "amendments:block/wall_lanterns/neovitae/blood_lantern"
+		}
+	}
+}

@@ -1,0 +1,1 @@
+{"format_version":"1.12.0","minecraft:geometry":[{"description":{"identifier":"geometry.falling_flowers","texture_width":54,"texture_height":9,"visible_bounds_width":3.0,"visible_bounds_height":3.5,"visible_bounds_offset":[0.0,1.25,0.0]},"bones":[{"name":"root"}]}]}

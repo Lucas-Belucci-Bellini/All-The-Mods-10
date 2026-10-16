@@ -1,0 +1,1 @@
+{"sound_definitions":{"mukbang_munch_start":{"category":"neutral","max_distance":32.0,"sounds":[{"name":"sounds/mukbang_munch_start","interruptible":true}]},"mukbang_munch_loop":{"category":"neutral","max_distance":32.0,"sounds":[{"name":"sounds/mukbang_munch_loop","interruptible":true}]}}}

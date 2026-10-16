@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "supplementaries:item/way_signs/eternal_starlight/way_sign_torreya"
+  }
+}

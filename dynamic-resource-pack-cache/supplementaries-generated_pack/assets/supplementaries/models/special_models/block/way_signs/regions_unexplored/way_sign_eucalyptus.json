@@ -1,0 +1,8 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "supplementaries:block/way_signs/template",
+	"textures": {
+		"particle": "supplementaries:block/way_signs/regions_unexplored/way_sign_eucalyptus",
+		"sign": "supplementaries:block/way_signs/regions_unexplored/way_sign_eucalyptus"
+	}
+}
