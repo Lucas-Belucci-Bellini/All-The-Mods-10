@@ -245,21 +245,9 @@
     },
     "done": true
   },
-  "lootr:1chest": {
-    "criteria": {
-      "opened_chest": "2026-10-16 10:10:00 -0300"
-    },
-    "done": true
-  },
   "biomesoplenty:biomesoplenty/all_biomes": {
     "criteria": {
       "prairie": "2026-10-16 10:09:17 -0300"
-    },
-    "done": false
-  },
-  "lootr:social": {
-    "criteria": {
-      "opened_chest": "2026-10-16 10:10:00 -0300"
     },
     "done": false
   },
@@ -274,6 +262,30 @@
       "minecraft:cherry_grove": "2026-10-16 10:09:39 -0300"
     },
     "done": false
+  },
+  "lootr:1chest": {
+    "criteria": {
+      "opened_chest": "2026-10-16 10:10:00 -0300"
+    },
+    "done": true
+  },
+  "lootr:social": {
+    "criteria": {
+      "opened_chest": "2026-10-16 10:10:00 -0300"
+    },
+    "done": false
+  },
+  "simulated:root": {
+    "criteria": {
+      "0": "2026-10-16 15:20:30 -0300"
+    },
+    "done": true
+  },
+  "aeronautics:root": {
+    "criteria": {
+      "0": "2026-10-16 15:20:30 -0300"
+    },
+    "done": true
   },
   "DataVersion": 3955
 }
