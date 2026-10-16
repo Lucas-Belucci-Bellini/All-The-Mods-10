@@ -19726,3 +19726,333 @@ java.lang.UnsupportedOperationException: null
 [15Oct2026 23:32:55.052] [Worker-ResourceReload-2/DEBUG] [Framework/]: Registering standalone model: refurbished_furniture:extra/cherry_dark_ceiling_fan_blade#standalone
 [15Oct2026 23:32:55.052] [Worker-ResourceReload-2/DEBUG] [Framework/]: Registering standalone model: refurbished_furniture:extra/crimson_dark_ceiling_fan_blade#standalone
 [15Oct2026 23:32:55.052] [Worker-ResourceReload-2/DEBUG] [Framework/]: Registering standalone model: refurbished_furniture:extra/warped_dark_ceiling_fan_blade#standalone
+[15Oct2026 23:32:57.175] [Worker-ResourceReload-2/INFO] [potionsmaster/]: === Registering Additional Models ===
+[15Oct2026 23:32:57.175] [Worker-ResourceReload-2/INFO] [potionsmaster/]: Registered base_powder model for loading
+[15Oct2026 23:32:57.175] [Worker-ResourceReload-2/INFO] [potionsmaster/]: Registered calcinated_base model for loading
+[15Oct2026 23:32:57.175] [Worker-ResourceReload-2/INFO] [potionsmaster/]: === Additional Models Registration Complete ===
+[15Oct2026 23:32:57.757] [Worker-ResourceReload-10/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 0: 1
+[15Oct2026 23:32:57.757] [Worker-ResourceReload-10/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 1: 2
+[15Oct2026 23:32:57.757] [Worker-ResourceReload-10/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 2: 1
+[15Oct2026 23:32:57.757] [Worker-ResourceReload-10/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 3: 3
+[15Oct2026 23:32:57.757] [Worker-ResourceReload-10/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 5: 3
+[15Oct2026 23:32:57.757] [Worker-ResourceReload-10/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 6: 1
+[15Oct2026 23:32:57.757] [Worker-ResourceReload-10/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 8: 4
+[15Oct2026 23:32:57.757] [Worker-ResourceReload-10/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 9: 1
+[15Oct2026 23:32:57.757] [Worker-ResourceReload-10/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 11: 4
+[15Oct2026 23:32:57.757] [Worker-ResourceReload-10/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 12: 2
+[15Oct2026 23:32:57.757] [Worker-ResourceReload-10/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 13: 4
+[15Oct2026 23:32:57.757] [Worker-ResourceReload-10/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 15: 1
+[15Oct2026 23:32:57.757] [Worker-ResourceReload-10/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 16: 4
+[15Oct2026 23:32:57.757] [Worker-ResourceReload-10/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 17: 2
+[15Oct2026 23:32:57.757] [Worker-ResourceReload-10/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 18: 3
+[15Oct2026 23:32:57.757] [Worker-ResourceReload-10/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 20: 1
+[15Oct2026 23:32:57.757] [Worker-ResourceReload-10/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 22: 1
+[15Oct2026 23:32:57.757] [Worker-ResourceReload-10/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 23: 4
+[15Oct2026 23:32:57.757] [Worker-ResourceReload-10/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 24: 1
+[15Oct2026 23:32:57.757] [Worker-ResourceReload-10/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 25: 4
+[15Oct2026 23:32:57.758] [Worker-ResourceReload-10/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 26: 2
+[15Oct2026 23:32:57.758] [Worker-ResourceReload-10/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 27: 4
+[15Oct2026 23:32:57.758] [Worker-ResourceReload-10/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 28: 2
+[15Oct2026 23:32:58.422] [Worker-ResourceReload-3/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite powah:item/ender_core frame 40: 3
+[15Oct2026 23:32:58.422] [Worker-ResourceReload-3/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite powah:item/ender_core frame 43: 3
+[15Oct2026 23:32:58.422] [Worker-ResourceReload-3/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite powah:item/ender_core frame 90: 5
+[15Oct2026 23:32:58.422] [Worker-ResourceReload-3/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite powah:item/ender_core frame 91: 5
+[15Oct2026 23:32:58.422] [Worker-ResourceReload-3/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite powah:item/ender_core frame 92: 5
+[15Oct2026 23:32:58.422] [Worker-ResourceReload-3/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite powah:item/ender_core frame 93: 5
+[15Oct2026 23:32:58.422] [Worker-ResourceReload-3/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite powah:item/ender_core frame 94: 6
+[15Oct2026 23:32:58.422] [Worker-ResourceReload-3/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite powah:item/ender_core frame 95: 6
+[15Oct2026 23:32:58.422] [Worker-ResourceReload-3/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite powah:item/ender_core frame 96: 6
+[15Oct2026 23:32:58.422] [Worker-ResourceReload-3/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite powah:item/ender_core frame 97: 6
+[15Oct2026 23:32:58.422] [Worker-ResourceReload-3/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite powah:item/ender_core frame 98: 6
+[15Oct2026 23:32:58.422] [Worker-ResourceReload-3/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite powah:item/ender_core frame 99: 5
+[15Oct2026 23:32:58.422] [Worker-ResourceReload-3/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite powah:item/ender_core frame 100: 5
+[15Oct2026 23:32:58.422] [Worker-ResourceReload-3/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite powah:item/ender_core frame 101: 5
+[15Oct2026 23:32:58.422] [Worker-ResourceReload-3/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite powah:item/ender_core frame 102: 5
+[15Oct2026 23:32:58.422] [Worker-ResourceReload-3/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite powah:item/ender_core frame 146: 8
+[15Oct2026 23:32:58.422] [Worker-ResourceReload-3/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite powah:item/ender_core frame 147: 8
+[15Oct2026 23:32:58.422] [Worker-ResourceReload-3/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite powah:item/ender_core frame 148: 8
+[15Oct2026 23:32:58.422] [Worker-ResourceReload-3/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite powah:item/ender_core frame 149: 8
+[15Oct2026 23:32:58.422] [Worker-ResourceReload-3/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite powah:item/ender_core frame 150: 8
+[15Oct2026 23:32:58.422] [Worker-ResourceReload-3/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite powah:item/ender_core frame 151: 8
+[15Oct2026 23:32:58.422] [Worker-ResourceReload-3/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite powah:item/ender_core frame 152: 8
+[15Oct2026 23:32:58.422] [Worker-ResourceReload-3/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite powah:item/ender_core frame 153: 8
+[15Oct2026 23:32:58.423] [Worker-ResourceReload-3/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite powah:item/ender_core frame 172: 5
+[15Oct2026 23:32:58.423] [Worker-ResourceReload-3/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite powah:item/ender_core frame 173: 5
+[15Oct2026 23:32:58.423] [Worker-ResourceReload-3/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite powah:item/ender_core frame 174: 5
+[15Oct2026 23:32:58.423] [Worker-ResourceReload-3/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite powah:item/ender_core frame 175: 5
+[15Oct2026 23:32:58.423] [Worker-ResourceReload-3/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite powah:item/ender_core frame 192: 8
+[15Oct2026 23:32:58.423] [Worker-ResourceReload-3/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite powah:item/ender_core frame 193: 8
+[15Oct2026 23:32:58.423] [Worker-ResourceReload-3/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite powah:item/ender_core frame 194: 8
+[15Oct2026 23:32:58.423] [Worker-ResourceReload-3/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite powah:item/ender_core frame 195: 8
+[15Oct2026 23:32:59.140] [Worker-ResourceReload-8/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Unused frames in sprite industrialforegoing:block/fluids/sludge_still: [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38]
+[15Oct2026 23:33:01.794] [Worker-ResourceReload-0/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite ars_additions:item/undying_charm frame 1: 1
+[15Oct2026 23:33:01.794] [Worker-ResourceReload-0/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite ars_additions:item/undying_charm frame 2: 2
+[15Oct2026 23:33:01.794] [Worker-ResourceReload-0/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite ars_additions:item/undying_charm frame 3: 3
+[15Oct2026 23:33:01.794] [Worker-ResourceReload-0/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite ars_additions:item/undying_charm frame 4: 4
+[15Oct2026 23:33:01.794] [Worker-ResourceReload-0/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite ars_additions:item/undying_charm frame 5: 5
+[15Oct2026 23:33:01.816] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]: Could not find option file for BSL_v10.1.1.zip
+[15Oct2026 23:33:01.816] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]: Found patch 'EuphoriaPatches' for ComplementaryReimagined_r5.9.3 + EuphoriaPatches_1.10.5
+[15Oct2026 23:33:01.816] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]: 'ComplementaryReimagined_r5.9.3 + EuphoriaPatches_1.10.5' version is unknown or unsupported
+[15Oct2026 23:33:01.816] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]: Found patch 'EuphoriaPatches' for ComplementaryUnbound_r5.9.3 + EuphoriaPatches_1.10.5
+[15Oct2026 23:33:01.816] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]: 'ComplementaryUnbound_r5.9.3 + EuphoriaPatches_1.10.5' version is unknown or unsupported
+[15Oct2026 23:33:01.816] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]: Could not find patch for MakeUp-UltraFast-9.5g.zip
+[15Oct2026 23:33:01.816] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]: Found patch 'Complementary' for ComplementaryUnbound_r5.9.3.zip
+[15Oct2026 23:33:01.816] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]: 'ComplementaryUnbound_r5.9.3.zip' version is unknown or unsupported
+[15Oct2026 23:33:01.816] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]: Found patch 'Complementary' for ComplementaryReimagined_r5.9.3.zip
+[15Oct2026 23:33:01.816] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]: 'ComplementaryReimagined_r5.9.3.zip' version is unknown or unsupported
+[15Oct2026 23:33:01.822] [Render thread/DEBUG] [net.neoforged.fml.DeferredWorkQueue/LOADING]: Dispatching synchronous work for work queue Common setup: 158 jobs
+[15Oct2026 23:33:01.925] [Render thread/INFO] [Supplementaries/]: Finished mod setup in: [65, 3, 20, 3, 1, 2] ms
+[15Oct2026 23:33:02.236] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]: Registered 13 anointments
+[15Oct2026 23:33:02.243] [Render thread/INFO] [com.breakinblocks.neovitae.structures.ModRoomPools/]: Initializing dungeon room pools and rooms...
+[15Oct2026 23:33:02.290] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon pool: neovitae:room_pools/connective_corridors with 4 entries and total weight 11
+[15Oct2026 23:33:02.290] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded room pool: neovitae:room_pools/connective_corridors with 4 entries
+[15Oct2026 23:33:02.290] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon pool: neovitae:room_pools/entrances/mini_dungeon_entrances with 1 entries and total weight 1
+[15Oct2026 23:33:02.290] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded room pool: neovitae:room_pools/entrances/mini_dungeon_entrances with 1 entries
+[15Oct2026 23:33:02.290] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon pool: neovitae:room_pools/entrances/standard_dungeon_entrances with 1 entries and total weight 1
+[15Oct2026 23:33:02.290] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded room pool: neovitae:room_pools/entrances/standard_dungeon_entrances with 1 entries
+[15Oct2026 23:33:02.290] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon pool: neovitae:room_pools/tier1/mini_dungeon with 5 entries and total weight 5
+[15Oct2026 23:33:02.290] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded room pool: neovitae:room_pools/tier1/mini_dungeon with 5 entries
+[15Oct2026 23:33:02.290] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon pool: neovitae:room_pools/standard/standard_rooms with 11 entries and total weight 27
+[15Oct2026 23:33:02.290] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded room pool: neovitae:room_pools/standard/standard_rooms with 11 entries
+[15Oct2026 23:33:02.291] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon pool: neovitae:room_pools/special/mine_entrances with 1 entries and total weight 1
+[15Oct2026 23:33:02.291] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded room pool: neovitae:room_pools/special/mine_entrances with 1 entries
+[15Oct2026 23:33:02.291] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon pool: neovitae:room_pools/mines/mine_rooms with 10 entries and total weight 22
+[15Oct2026 23:33:02.291] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded room pool: neovitae:room_pools/mines/mine_rooms with 10 entries
+[15Oct2026 23:33:02.291] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon pool: neovitae:room_pools/mines/mine_corridors with 3 entries and total weight 12
+[15Oct2026 23:33:02.291] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded room pool: neovitae:room_pools/mines/mine_corridors with 3 entries
+[15Oct2026 23:33:02.291] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon pool: neovitae:room_pools/standard/mine_key with 1 entries and total weight 1
+[15Oct2026 23:33:02.291] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded room pool: neovitae:room_pools/standard/mine_key with 1 entries
+[15Oct2026 23:33:02.291] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon pool: neovitae:room_pools/standard/standard_deadend with 1 entries and total weight 1
+[15Oct2026 23:33:02.291] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded room pool: neovitae:room_pools/standard/standard_deadend with 1 entries
+[15Oct2026 23:33:02.291] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon pool: neovitae:room_pools/mines/mine_deadend with 1 entries and total weight 1
+[15Oct2026 23:33:02.291] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded room pool: neovitae:room_pools/mines/mine_deadend with 1 entries
+[15Oct2026 23:33:02.291] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:t_corridor
+[15Oct2026 23:33:02.299] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:t_corridor with weight 1
+[15Oct2026 23:33:02.299] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:t_corridor
+[15Oct2026 23:33:02.299] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:four_way_corridor_loot
+[15Oct2026 23:33:02.299] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:four_way_corridor_loot with weight 1
+[15Oct2026 23:33:02.299] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:four_way_corridor_loot
+[15Oct2026 23:33:02.299] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:four_way_corridor
+[15Oct2026 23:33:02.300] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:four_way_corridor with weight 1
+[15Oct2026 23:33:02.300] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:four_way_corridor
+[15Oct2026 23:33:02.300] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:standard/ore_hold_1
+[15Oct2026 23:33:02.300] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:standard/ore_hold_1 with weight 1
+[15Oct2026 23:33:02.300] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:standard/ore_hold_1
+[15Oct2026 23:33:02.300] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:straight_corridor
+[15Oct2026 23:33:02.300] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:straight_corridor with weight 1
+[15Oct2026 23:33:02.300] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:straight_corridor
+[15Oct2026 23:33:02.300] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:overlapped_corridor
+[15Oct2026 23:33:02.300] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:overlapped_corridor with weight 1
+[15Oct2026 23:33:02.300] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:overlapped_corridor
+[15Oct2026 23:33:02.300] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:spiral_staircase
+[15Oct2026 23:33:02.301] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:spiral_staircase with weight 4
+[15Oct2026 23:33:02.301] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:spiral_staircase
+[15Oct2026 23:33:02.301] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:standard/water_way
+[15Oct2026 23:33:02.301] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:standard/water_way with weight 1
+[15Oct2026 23:33:02.301] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:standard/water_way
+[15Oct2026 23:33:02.301] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:standard/mine_entrance
+[15Oct2026 23:33:02.301] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:standard/mine_entrance with weight 1
+[15Oct2026 23:33:02.301] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:standard/mine_entrance
+[15Oct2026 23:33:02.301] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:mines/mine_key
+[15Oct2026 23:33:02.301] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:mines/mine_key with weight 1
+[15Oct2026 23:33:02.301] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:mines/mine_key
+[15Oct2026 23:33:02.301] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:mines/pit
+[15Oct2026 23:33:02.301] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:mines/pit with weight 1
+[15Oct2026 23:33:02.301] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:mines/pit
+[15Oct2026 23:33:02.301] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:mines/corner_zombie_trap
+[15Oct2026 23:33:02.303] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:mines/corner_zombie_trap with weight 1
+[15Oct2026 23:33:02.303] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:mines/corner_zombie_trap
+[15Oct2026 23:33:02.303] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:mines/split_road
+[15Oct2026 23:33:02.303] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:mines/split_road with weight 1
+[15Oct2026 23:33:02.303] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:mines/split_road
+[15Oct2026 23:33:02.303] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:mines/station
+[15Oct2026 23:33:02.303] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:mines/station with weight 1
+[15Oct2026 23:33:02.311] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:mines/station
+[15Oct2026 23:33:02.311] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:mines/downward_tunnel
+[15Oct2026 23:33:02.311] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:mines/downward_tunnel with weight 1
+[15Oct2026 23:33:02.311] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:mines/downward_tunnel
+[15Oct2026 23:33:02.311] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:mines/junction_station
+[15Oct2026 23:33:02.311] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:mines/junction_station with weight 1
+[15Oct2026 23:33:02.311] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:mines/junction_station
+[15Oct2026 23:33:02.311] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:mines/downward_shaft
+[15Oct2026 23:33:02.312] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:mines/downward_shaft with weight 1
+[15Oct2026 23:33:02.312] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:mines/downward_shaft
+[15Oct2026 23:33:02.312] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:mines/nature_crossroad
+[15Oct2026 23:33:02.312] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:mines/nature_crossroad with weight 1
+[15Oct2026 23:33:02.312] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:mines/nature_crossroad
+[15Oct2026 23:33:02.312] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:mines/wolf_den
+[15Oct2026 23:33:02.312] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:mines/wolf_den with weight 1
+[15Oct2026 23:33:02.312] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:mines/wolf_den
+[15Oct2026 23:33:02.312] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:mines/ore_cavern
+[15Oct2026 23:33:02.312] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:mines/ore_cavern with weight 1
+[15Oct2026 23:33:02.312] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:mines/ore_cavern
+[15Oct2026 23:33:02.312] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:mines/straight_corridor
+[15Oct2026 23:33:02.312] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:mines/straight_corridor with weight 1
+[15Oct2026 23:33:02.312] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:mines/straight_corridor
+[15Oct2026 23:33:02.312] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:mines/bent_corridor
+[15Oct2026 23:33:02.312] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:mines/bent_corridor with weight 1
+[15Oct2026 23:33:02.312] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:mines/bent_corridor
+[15Oct2026 23:33:02.312] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:mines/fourway_corridor
+[15Oct2026 23:33:02.312] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:mines/fourway_corridor with weight 1
+[15Oct2026 23:33:02.312] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:mines/fourway_corridor
+[15Oct2026 23:33:02.312] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:mini_dungeon/library
+[15Oct2026 23:33:02.313] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:mini_dungeon/library with weight 1
+[15Oct2026 23:33:02.313] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:mini_dungeon/library
+[15Oct2026 23:33:02.313] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:mini_dungeon/armoury
+[15Oct2026 23:33:02.313] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:mini_dungeon/armoury with weight 1
+[15Oct2026 23:33:02.313] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:mini_dungeon/armoury
+[15Oct2026 23:33:02.313] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:mini_dungeon/farm
+[15Oct2026 23:33:02.313] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:mini_dungeon/farm with weight 1
+[15Oct2026 23:33:02.313] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:mini_dungeon/farm
+[15Oct2026 23:33:02.313] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:mini_dungeon/portal_nether
+[15Oct2026 23:33:02.313] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:mini_dungeon/portal_nether with weight 1
+[15Oct2026 23:33:02.313] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:mini_dungeon/portal_nether
+[15Oct2026 23:33:02.313] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:mini_dungeon/crypt
+[15Oct2026 23:33:02.313] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:mini_dungeon/crypt with weight 1
+[15Oct2026 23:33:02.313] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:mini_dungeon/crypt
+[15Oct2026 23:33:02.313] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:standard/challenge_tower
+[15Oct2026 23:33:02.313] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:standard/challenge_tower with weight 1
+[15Oct2026 23:33:02.313] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:standard/challenge_tower
+[15Oct2026 23:33:02.314] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:standard/big_library
+[15Oct2026 23:33:02.314] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:standard/big_library with weight 1
+[15Oct2026 23:33:02.314] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:standard/big_library
+[15Oct2026 23:33:02.314] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:standard/small_crane
+[15Oct2026 23:33:02.314] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:standard/small_crane with weight 1
+[15Oct2026 23:33:02.314] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:standard/small_crane
+[15Oct2026 23:33:02.314] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:standard/small_library
+[15Oct2026 23:33:02.314] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:standard/small_library with weight 1
+[15Oct2026 23:33:02.314] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:standard/small_library
+[15Oct2026 23:33:02.314] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:standard/small_smithy
+[15Oct2026 23:33:02.314] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:standard/small_smithy with weight 1
+[15Oct2026 23:33:02.314] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:standard/small_smithy
+[15Oct2026 23:33:02.314] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:standard/tall_spiral
+[15Oct2026 23:33:02.314] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:standard/tall_spiral with weight 1
+[15Oct2026 23:33:02.314] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:standard/tall_spiral
+[15Oct2026 23:33:02.314] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:standard/small_arena
+[15Oct2026 23:33:02.315] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:standard/small_arena with weight 1
+[15Oct2026 23:33:02.315] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:standard/small_arena
+[15Oct2026 23:33:02.315] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:standard/antechamber
+[15Oct2026 23:33:02.315] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:standard/antechamber with weight 1
+[15Oct2026 23:33:02.315] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:standard/antechamber
+[15Oct2026 23:33:02.315] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:standard/destroyed_end_portal
+[15Oct2026 23:33:02.315] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:standard/destroyed_end_portal with weight 1
+[15Oct2026 23:33:02.315] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:standard/destroyed_end_portal
+[15Oct2026 23:33:02.315] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:standard/four_way_corridor_loot
+[15Oct2026 23:33:02.315] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:standard/four_way_corridor_loot with weight 1
+[15Oct2026 23:33:02.315] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:standard/four_way_corridor_loot
+[15Oct2026 23:33:02.315] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:t3_entrance
+[15Oct2026 23:33:02.315] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:t3_entrance with weight 1
+[15Oct2026 23:33:02.315] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:t3_entrance
+[15Oct2026 23:33:02.315] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:standard_entrance
+[15Oct2026 23:33:02.315] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:standard_entrance with weight 1
+[15Oct2026 23:33:02.315] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:standard_entrance
+[15Oct2026 23:33:02.315] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:default_deadend
+[15Oct2026 23:33:02.315] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:default_deadend with weight 1
+[15Oct2026 23:33:02.315] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:default_deadend
+[15Oct2026 23:33:02.315] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loading schematic: neovitae:mines/deadend
+[15Oct2026 23:33:02.315] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomRegistry/]: Registered dungeon room: neovitae:mines/deadend with weight 1
+[15Oct2026 23:33:02.315] [Render thread/DEBUG] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded dungeon room: neovitae:mines/deadend
+[15Oct2026 23:33:02.315] [Render thread/INFO] [com.breakinblocks.neovitae.structures.DungeonRoomLoader/]: Loaded 42 dungeon schematics
+[15Oct2026 23:33:02.316] [Render thread/INFO] [com.breakinblocks.neovitae.structures.ModRoomPools/]: Dungeon initialization complete. Loaded 42 rooms and 11 pools.
+[15Oct2026 23:33:02.326] [Render thread/DEBUG] [com.breakinblocks.neovitae.NeoVitae/]: Registered 10 built-in altar rune types
+[15Oct2026 23:33:02.326] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]: Registering built-in altar rune blocks...
+[15Oct2026 23:33:02.327] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]: Registered block Block{neovitae:rune_speed} (hash=1587399853) as rune neovitae:speed with amount 1
+[15Oct2026 23:33:02.327] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]: Registered block Block{neovitae:rune_sacrifice} (hash=1054144850) as rune neovitae:sacrifice with amount 1
+[15Oct2026 23:33:02.327] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]: Registered block Block{neovitae:rune_sacrifice_self} (hash=474219628) as rune neovitae:self_sacrifice with amount 1
+[15Oct2026 23:33:02.327] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]: Registered block Block{neovitae:rune_dislocation} (hash=1207335173) as rune neovitae:displacement with amount 1
+[15Oct2026 23:33:02.327] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]: Registered block Block{neovitae:rune_capacity} (hash=1885594028) as rune neovitae:capacity with amount 1
+[15Oct2026 23:33:02.327] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]: Registered block Block{neovitae:rune_capacity_augmented} (hash=2076289966) as rune neovitae:augmented_capacity with amount 1
+[15Oct2026 23:33:02.327] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]: Registered block Block{neovitae:rune_orb} (hash=335217581) as rune neovitae:orb with amount 1
+[15Oct2026 23:33:02.327] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]: Registered block Block{neovitae:rune_acceleration} (hash=823928915) as rune neovitae:acceleration with amount 1
+[15Oct2026 23:33:02.327] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]: Registered block Block{neovitae:rune_charging} (hash=1648808941) as rune neovitae:charging with amount 1
+[15Oct2026 23:33:02.327] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]: Registered block Block{neovitae:rune_efficiency} (hash=598957531) as rune neovitae:efficiency with amount 1
+[15Oct2026 23:33:02.327] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]: Registered block Block{neovitae:rune_2_speed} (hash=1381643017) as rune neovitae:speed with amount 2
+[15Oct2026 23:33:02.327] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]: Registered block Block{neovitae:rune_2_sacrifice} (hash=1941808974) as rune neovitae:sacrifice with amount 2
+[15Oct2026 23:33:02.327] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]: Registered block Block{neovitae:rune_2_sacrifice_self} (hash=133682797) as rune neovitae:self_sacrifice with amount 2
+[15Oct2026 23:33:02.327] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]: Registered block Block{neovitae:rune_2_dislocation} (hash=1303327734) as rune neovitae:displacement with amount 2
+[15Oct2026 23:33:02.327] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]: Registered block Block{neovitae:rune_2_capacity} (hash=1289374549) as rune neovitae:capacity with amount 2
+[15Oct2026 23:33:02.327] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]: Registered block Block{neovitae:rune_2_capacity_augmented} (hash=1975425680) as rune neovitae:augmented_capacity with amount 2
+[15Oct2026 23:33:02.327] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]: Registered block Block{neovitae:rune_2_orb} (hash=418909385) as rune neovitae:orb with amount 2
+[15Oct2026 23:33:02.327] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]: Registered block Block{neovitae:rune_2_acceleration} (hash=1279548148) as rune neovitae:acceleration with amount 2
+[15Oct2026 23:33:02.327] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]: Registered block Block{neovitae:rune_2_charging} (hash=1797768382) as rune neovitae:charging with amount 2
+[15Oct2026 23:33:02.328] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]: Registered block Block{neovitae:rune_2_efficiency} (hash=465155748) as rune neovitae:efficiency with amount 2
+[15Oct2026 23:33:02.328] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]: Registered 20 built-in altar rune blocks
+[15Oct2026 23:33:02.328] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]: Rune registry state: 20 block associations registered
+[15Oct2026 23:33:02.328] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]:   - Block{neovitae:rune_sacrifice} (hash=1054144850) -> [SACRIFICE]
+[15Oct2026 23:33:02.328] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]:   - Block{neovitae:rune_sacrifice_self} (hash=474219628) -> [SELF_SACRIFICE]
+[15Oct2026 23:33:02.328] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]:   - Block{neovitae:rune_efficiency} (hash=598957531) -> [EFFICIENCY]
+[15Oct2026 23:33:02.328] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]:   - Block{neovitae:rune_charging} (hash=1648808941) -> [CHARGING]
+[15Oct2026 23:33:02.328] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]:   - Block{neovitae:rune_2_capacity_augmented} (hash=1975425680) -> [AUGMENTED_CAPACITY]
+[15Oct2026 23:33:02.328] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]:   ... and 15 more
+[15Oct2026 23:33:02.332] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]: Armed FTB Ultimine suppression for ritual block operations
+[15Oct2026 23:33:02.335] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]: FTB Chunks found, claim permissions will be checked before block edits
+[15Oct2026 23:33:02.336] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]: Applied Energistics 2 found, terminals can be bound with the Sigil of Bound Treasures
+[15Oct2026 23:33:02.337] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]: Refined Storage found, grids can be bound with the Sigil of Bound Treasures
+[15Oct2026 23:33:02.337] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]: Ars Nouveau found, enabling storage lectern and containment jar support
+[15Oct2026 23:33:02.344] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]: Occultism found, storage actuators can be bound with the Sigil of Bound Treasures
+[15Oct2026 23:33:02.344] [Render thread/INFO] [com.breakinblocks.neovitae.NeoVitae/]: Apotheosis found, ritual kills will use the ritual owner's world tier
+[15Oct2026 23:33:02.458] [Worker-ResourceReload-7/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Unused frames in sprite irons_spellbooks:item/upgrade_orb_ender: [1, 5, 6, 7]
+[15Oct2026 23:33:02.543] [Worker-ResourceReload-0/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Unused frames in sprite apotheosis:items/gems/molten_breach: [11, 12, 13]
+[15Oct2026 23:33:02.555] [Render thread/INFO] [terrablender/]: Registered region minecraft:overworld to index 0 for type OVERWORLD
+[15Oct2026 23:33:02.555] [Render thread/INFO] [terrablender/]: Registered region minecraft:nether to index 0 for type NETHER
+[15Oct2026 23:33:02.555] [Render thread/INFO] [terrablender/]: Registered region biomesoplenty:overworld_primary to index 1 for type OVERWORLD
+[15Oct2026 23:33:02.555] [Render thread/INFO] [terrablender/]: Registered region biomesoplenty:overworld_secondary to index 2 for type OVERWORLD
+[15Oct2026 23:33:02.555] [Render thread/INFO] [terrablender/]: Registered region biomesoplenty:overworld_rare to index 3 for type OVERWORLD
+[15Oct2026 23:33:02.555] [Render thread/INFO] [terrablender/]: Registered region biomesoplenty:nether_common to index 1 for type NETHER
+[15Oct2026 23:33:02.555] [Render thread/INFO] [terrablender/]: Registered region biomesoplenty:nether_rare to index 2 for type NETHER
+[15Oct2026 23:33:02.588] [Worker-ResourceReload-6/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite allthetweaks:item/pulsating_black_hole frame 1: 1
+[15Oct2026 23:33:02.588] [Worker-ResourceReload-6/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite allthetweaks:item/pulsating_black_hole frame 2: 2
+[15Oct2026 23:33:02.588] [Worker-ResourceReload-6/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite allthetweaks:item/pulsating_black_hole frame 3: 3
+[15Oct2026 23:33:02.588] [Worker-ResourceReload-6/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite allthetweaks:item/pulsating_black_hole frame 4: 4
+[15Oct2026 23:33:02.588] [Worker-ResourceReload-6/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite allthetweaks:item/pulsating_black_hole frame 5: 3
+[15Oct2026 23:33:02.588] [Worker-ResourceReload-6/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite allthetweaks:item/pulsating_black_hole frame 6: 2
+[15Oct2026 23:33:02.588] [Worker-ResourceReload-6/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite allthetweaks:item/pulsating_black_hole frame 7: 1
+[15Oct2026 23:33:02.621] [Worker-ResourceReload-9/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Unused frames in sprite evilcraft:block/poison_still: [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+[15Oct2026 23:33:02.689] [Render thread/DEBUG] [mixin/]: Mixing accessors.HeroGiftsTaskAccess from immersiveengineering.mixins.json into net.minecraft.world.entity.ai.behavior.GiveGiftToHero
+[15Oct2026 23:33:02.693] [Render thread/DEBUG] [mixin/]: immersiveengineering.mixins.json:accessors.HeroGiftsTaskAccess from mod immersiveengineering: Class version 65 required is higher than the class version supported by the current version of Mixin (JAVA_17 supports class version 61)
+[15Oct2026 23:33:02.702] [Worker-ResourceReload-6/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Unused frames in sprite justdirethings:item/creaturecatcher_side_animation: [8]
+[15Oct2026 23:33:02.777] [Render thread/INFO] [terrablender/]: Registered region ars_nouveau:overworld to index 4 for type OVERWORLD
+[15Oct2026 23:33:02.832] [Worker-ResourceReload-5/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite allthetweaks:item/nexium_emitter frame 1: 1
+[15Oct2026 23:33:02.833] [Worker-ResourceReload-5/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite allthetweaks:item/nexium_emitter frame 2: 2
+[15Oct2026 23:33:02.833] [Worker-ResourceReload-5/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite allthetweaks:item/nexium_emitter frame 3: 1
+[15Oct2026 23:33:02.900] [Render thread/INFO] [net.potionstudios.biomeswevegone.BiomesWeveGone/]: Creating and Registering BWG Biome Modifiers for Vanilla Biomes
+[15Oct2026 23:33:02.902] [Render thread/INFO] [net.potionstudios.biomeswevegone.BiomesWeveGone/]: Will add Green/Cyan/Magenta/Purple/Yellow Tulips, Rose, Orange Daisy, Flower and Clover Patches to 
+[15Oct2026 23:33:02.903] [Render thread/INFO] [net.potionstudios.biomeswevegone.BiomesWeveGone/]: Will add Flower Patch, Clover Patch, White Anemone, Pink Anemone, Orange Daisy, Horseweed and rose to 
+[15Oct2026 23:33:02.903] [Render thread/INFO] [net.potionstudios.biomeswevegone.BiomesWeveGone/]: Will add Flower Patch, Clover Patch, Blue Rose Bush and Blue Berry Bushes to 
+[15Oct2026 23:33:02.903] [Render thread/INFO] [net.potionstudios.biomeswevegone.BiomesWeveGone/]: Will add Palm Trees to 
+[15Oct2026 23:33:02.903] [Render thread/INFO] [net.potionstudios.biomeswevegone.BiomesWeveGone/]: Will add Flower Patch, Clover Patch, White Anemone, Pink Anemone, Orange Daisy, Horseweed and rose to 
+[15Oct2026 23:33:02.935] [Render thread/INFO] [terrablender/]: Registered region biomeswevegone:region_0 to index 5 for type OVERWORLD
+[15Oct2026 23:33:02.935] [Render thread/INFO] [terrablender/]: Registered region biomeswevegone:region_1 to index 6 for type OVERWORLD
+[15Oct2026 23:33:02.935] [Render thread/INFO] [terrablender/]: Registered region biomeswevegone:region_2 to index 7 for type OVERWORLD
+[15Oct2026 23:33:02.970] [Worker-ResourceReload-6/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Unused frames in sprite relics:item/springy_boot_flawless: [21, 22, 23, 24, 25]
+[15Oct2026 23:33:03.087] [Render thread/INFO] [Advanced Peripherals/]: Loading integration for create
+[15Oct2026 23:33:03.103] [Render thread/INFO] [Advanced Peripherals/]: Loading integration for curios
+[15Oct2026 23:33:03.112] [Render thread/INFO] [Advanced Peripherals/]: Loading integration for dimstorage
+[15Oct2026 23:33:03.113] [Render thread/INFO] [Advanced Peripherals/]: Loading integration for mekanism
+[15Oct2026 23:33:03.118] [Worker-ResourceReload-4/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Unused frames in sprite irons_spellbooks:item/energized_core_energy: [11]
+[15Oct2026 23:33:03.119] [Render thread/INFO] [Advanced Peripherals/]: Loading integration for powah
+[15Oct2026 23:33:03.151] [Worker-ResourceReload-6/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Unused frames in sprite evilcraft:block/blood_still: [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+[15Oct2026 23:33:03.154] [Worker-ResourceReload-8/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Unused frames in sprite enderio:block/alloy_smelter_front_active: [4, 5]
+[15Oct2026 23:33:03.193] [Worker-ResourceReload-3/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Unused frames in sprite industrialforegoing:block/fluids/ether_gas_still: [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48]
+[15Oct2026 23:33:03.241] [Worker-ResourceReload-4/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Unused frames in sprite powah:item/charged_snowball: [1, 2, 3, 4, 16, 17, 18, 19]
+[15Oct2026 23:33:03.292] [Render thread/INFO] [Framework/SYNCED_ENTITY_DATA]: Registered synced data key refurbished_furniture:lock_yaw for refurbished_furniture:seat
+[15Oct2026 23:33:03.317] [Render thread/INFO] [Easy Mob Farm/]: Easy Mob Farm Mob Capture Data Component easy_mob_farm:mob_capture_data ...
+[15Oct2026 23:33:03.317] [Render thread/INFO] [Easy Mob Farm/]: Easy Mob Farm Mob Farm Data Component easy_mob_farm:mob_farm_data ...
+[15Oct2026 23:33:03.364] [Worker-ResourceReload-5/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Unused frames in sprite ars_technica:item/glyph_fuse: [13, 14, 15]
+[15Oct2026 23:33:03.382] [Worker-ResourceReload-7/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite allthetweaks:item/dimensional_seed frame 1: 1
+[15Oct2026 23:33:03.382] [Worker-ResourceReload-7/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite allthetweaks:item/dimensional_seed frame 2: 2
+[15Oct2026 23:33:03.850] [Render thread/INFO] [Moonlight/]: Initialized color sets in 479ms
+[15Oct2026 23:33:03.867] [Render thread/INFO] [terrablender/]: Registered region regions_unexplored:primary to index 8 for type OVERWORLD
+[15Oct2026 23:33:03.868] [Render thread/INFO] [terrablender/]: Registered region regions_unexplored:secondary to index 9 for type OVERWORLD
+[15Oct2026 23:33:03.868] [Render thread/INFO] [terrablender/]: Registered region regions_unexplored:nether to index 3 for type NETHER
+[15Oct2026 23:33:03.992] [Render thread/INFO] [Extended Industrialization/]: Discovered 3796 block states for BushBlockHarvestable
+[15Oct2026 23:33:03.997] [Render thread/INFO] [terrablender/]: Registered region integrateddynamics:overworld to index 10 for type OVERWORLD
+[15Oct2026 23:33:04.084] [Worker-ResourceReload-0/WARN] [net.minecraft.client.renderer.texture.SpriteLoader/]: Texture iceandfire:item/dragonsteel_lightning_sword with size 36x36 limits mip level from 4 to 2
+[15Oct2026 23:33:04.087] [Worker-ResourceReload-0/WARN] [net.minecraft.client.renderer.texture.SpriteLoader/]: Texture mahoutsukai:block/runes with size 199x16 limits mip level from 2 to 0
+[15Oct2026 23:33:04.175] [Worker-ResourceReload-2/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'silentgear:item/trident_icon' referenced from: silentgear:item/trident_icon: java.io.FileNotFoundException: silentgear:models/item/trident_icon.json
+[15Oct2026 23:33:04.178] [Render thread/DEBUG] [mixin/]: Mixing placebo.streamless_hashing.CachedObjectMixin from invasiveopts.mixins.json into dev.shadowsoffire.placebo.util.CachedObject
+[15Oct2026 23:33:04.179] [Render thread/DEBUG] [mixin/]: Renaming synthetic method lambda$streamlessHashing$0([Lnet/minecraft/core/component/DataComponentType;Lnet/minecraft/world/item/ItemStack;)I to mda12fca$invasiveopts$lambda$streamlessHashing$0$0 in invasiveopts.mixins.json:placebo.streamless_hashing.CachedObjectMixin from mod invasiveopts
+[15Oct2026 23:33:04.190] [Render thread/DEBUG] [mixin/]: Mixing apotheosis.AffixHelperMixin from create_enchantment_industry.apotheosis.mixins.json into dev.shadowsoffire.apotheosis.affix.AffixHelper
+[15Oct2026 23:33:04.190] [Render thread/DEBUG] [mixin/]: create_enchantment_industry.apotheosis.mixins.json:apotheosis.AffixHelperMixin from mod create_enchantment_industry: Class version 65 required is higher than the class version supported by the current version of Mixin (JAVA_16 supports class version 60)
+[15Oct2026 23:33:04.192] [Render thread/DEBUG] [mixin/]: create_enchantment_industry.apotheosis.mixins.json:apotheosis.AffixHelperMixin from mod create_enchantment_industry->@Inject::getAffixes$applyOverlimitLevels(Lnet/minecraft/world/item/ItemStack;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V does use it's CallbackInfoReturnable
+[15Oct2026 23:33:04.192] [Render thread/DEBUG] [mixin/]: create_enchantment_industry.apotheosis.mixins.json:apotheosis.AffixHelperMixin from mod create_enchantment_industry->@Inject::getAffixes$applyOverlimitLevels(Lnet/minecraft/world/item/ItemStack;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V does use it's CallbackInfoReturnable

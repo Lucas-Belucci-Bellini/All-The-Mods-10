@@ -6913,3 +6913,237 @@ java.lang.UnsupportedOperationException: null
 
 [STDOUT] [23:32:53] [Worker-ResourceReload-3/WARN] [minecraft/SpriteContents]: Unused frames in sprite justdirethings:item/creaturecatcher_top_animation: [8]
 
+[STDOUT] [23:32:57] [Worker-ResourceReload-2/INFO] [potionsmaster/]: === Registering Additional Models ===
+[23:32:57] [Worker-ResourceReload-2/INFO] [potionsmaster/]: Registered base_powder model for loading
+[23:32:57] [Worker-ResourceReload-2/INFO] [potionsmaster/]: Registered calcinated_base model for loading
+[23:32:57] [Worker-ResourceReload-2/INFO] [potionsmaster/]: === Additional Models Registration Complete ===
+[23:32:57] [Worker-ResourceReload-10/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 0: 1
+[23:32:57] [Worker-ResourceReload-10/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 1: 2
+[23:32:57] [Worker-ResourceReload-10/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 2: 1
+[23:32:57] [Worker-ResourceReload-10/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 3: 3
+[23:32:57] [Worker-ResourceReload-10/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 5: 3
+[23:32:57] [Worker-ResourceReload-10/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 6: 1
+[23:32:57] [Worker-ResourceReload-10/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 8: 4
+[23:32:57] [Worker-ResourceReload-10/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 9: 1
+[23:32:57] [Worker-ResourceReload-10/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 11: 4
+[23:32:57] [Worker-ResourceReload-10/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 12: 2
+[23:32:57] [Worker-ResourceReload-10/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 13: 4
+[23:32:57] [Worker-ResourceReload-10/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 15: 1
+[23:32:57] [Worker-ResourceReload-10/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 16: 4
+[23:32:57] [Worker-ResourceReload-10/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 17: 2
+[23:32:57] [Worker-ResourceReload-10/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 18: 3
+[23:32:57] [Worker-ResourceReload-10/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 20: 1
+[23:32:57] [Worker-ResourceReload-10/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 22: 1
+[23:32:57] [Worker-ResourceReload-10/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 23: 4
+[23:32:57] [Worker-ResourceReload-10/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 24: 1
+[23:32:57] [Worker-ResourceReload-10/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 25: 4
+[23:32:57] [Worker-ResourceReload-10/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 26: 2
+[23:32:57] [Worker-ResourceReload-10/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 27: 4
+[23:32:57] [Worker-ResourceReload-10/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite allthetweaks:item/improbable_probability_device frame 28: 2
+[23:32:58] [Worker-ResourceReload-3/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite powah:item/ender_core frame 40: 3
+[23:32:58] [Worker-ResourceReload-3/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite powah:item/ender_core frame 43: 3
+[23:32:58] [Worker-ResourceReload-3/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite powah:item/ender_core frame 90: 5
+[23:32:58] [Worker-ResourceReload-3/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite powah:item/ender_core frame 91: 5
+[23:32:58] [Worker-ResourceReload-3/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite powah:item/ender_core frame 92: 5
+[23:32:58] [Worker-ResourceReload-3/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite powah:item/ender_core frame 93: 5
+[23:32:58] [Worker-ResourceReload-3/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite powah:item/ender_core frame 94: 6
+[23:32:58] [Worker-ResourceReload-3/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite powah:item/ender_core frame 95: 6
+[23:32:58] [Worker-ResourceReload-3/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite powah:item/ender_core frame 96: 6
+[23:32:58] [Worker-ResourceReload-3/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite powah:item/ender_core frame 97: 6
+[23:32:58] [Worker-ResourceReload-3/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite powah:item/ender_core frame 98: 6
+[23:32:58] [Worker-ResourceReload-3/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite powah:item/ender_core frame 99: 5
+[23:32:58] [Worker-ResourceReload-3/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite powah:item/ender_core frame 100: 5
+[23:32:58] [Worker-ResourceReload-3/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite powah:item/ender_core frame 101: 5
+[23:32:58] [Worker-ResourceReload-3/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite powah:item/ender_core frame 102: 5
+[23:32:58] [Worker-ResourceReload-3/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite powah:item/ender_core frame 146: 8
+[23:32:58] [Worker-ResourceReload-3/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite powah:item/ender_core frame 147: 8
+[23:32:58] [Worker-ResourceReload-3/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite powah:item/ender_core frame 148: 8
+[23:32:58] [Worker-ResourceReload-3/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite powah:item/ender_core frame 149: 8
+[23:32:58] [Worker-ResourceReload-3/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite powah:item/ender_core frame 150: 8
+[23:32:58] [Worker-ResourceReload-3/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite powah:item/ender_core frame 151: 8
+[23:32:58] [Worker-ResourceReload-3/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite powah:item/ender_core frame 152: 8
+[23:32:58] [Worker-ResourceReload-3/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite powah:item/ender_core frame 153: 8
+[23:32:58] [Worker-ResourceReload-3/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite powah:item/ender_core frame 172: 5
+[23:32:58] [Worker-ResourceReload-3/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite powah:item/ender_core frame 173: 5
+[23:32:58] [Worker-ResourceReload-3/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite powah:item/ender_core frame 174: 5
+[23:32:58] [Worker-ResourceReload-3/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite powah:item/ender_core frame 175: 5
+[23:32:58] [Worker-ResourceReload-3/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite powah:item/ender_core frame 192: 8
+[23:32:58] [Worker-ResourceReload-3/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite powah:item/ender_core frame 193: 8
+[23:32:58] [Worker-ResourceReload-3/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite powah:item/ender_core frame 194: 8
+[23:32:58] [Worker-ResourceReload-3/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite powah:item/ender_core frame 195: 8
+[23:32:59] [Worker-ResourceReload-8/WARN] [minecraft/SpriteContents]: Unused frames in sprite industrialforegoing:block/fluids/sludge_still: [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38]
+[23:33:01] [Worker-ResourceReload-0/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite ars_additions:item/undying_charm frame 1: 1
+[23:33:01] [Worker-ResourceReload-0/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite ars_additions:item/undying_charm frame 2: 2
+[23:33:01] [Worker-ResourceReload-0/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite ars_additions:item/undying_charm frame 3: 3
+[23:33:01] [Worker-ResourceReload-0/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite ars_additions:item/undying_charm frame 4: 4
+[23:33:01] [Worker-ResourceReload-0/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite ars_additions:item/undying_charm frame 5: 5
+
+[STDOUT] [23:33:01] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]: Could not find option file for BSL_v10.1.1.zip
+
+[STDOUT] [23:33:01] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]: Found patch 'EuphoriaPatches' for ComplementaryReimagined_r5.9.3 + EuphoriaPatches_1.10.5
+[23:33:01] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]: 'ComplementaryReimagined_r5.9.3 + EuphoriaPatches_1.10.5' version is unknown or unsupported
+[23:33:01] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]: Found patch 'EuphoriaPatches' for ComplementaryUnbound_r5.9.3 + EuphoriaPatches_1.10.5
+[23:33:01] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]: 'ComplementaryUnbound_r5.9.3 + EuphoriaPatches_1.10.5' version is unknown or unsupported
+[23:33:01] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]: Could not find patch for MakeUp-UltraFast-9.5g.zip
+
+[STDOUT] [23:33:01] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]: Found patch 'Complementary' for ComplementaryUnbound_r5.9.3.zip
+[23:33:01] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]: 'ComplementaryUnbound_r5.9.3.zip' version is unknown or unsupported
+[23:33:01] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]: Found patch 'Complementary' for ComplementaryReimagined_r5.9.3.zip
+[23:33:01] [Worker-ResourceReload-6/INFO] [colorwheel_patcher/]: 'ComplementaryReimagined_r5.9.3.zip' version is unknown or unsupported
+
+[STDOUT] [23:33:01] [Render thread/INFO] [Supplementaries/]: Finished mod setup in: [65, 3, 20, 3, 1, 2] ms
+
+[STDOUT] [23:33:02] [Render thread/INFO] [AlmostUnified/]: Loaded plugins: almostunified:neoforge, almostunified:common, extended_industrialization:almost_unified, industrialization_overdrive:almost_unified, modern_industrialization:almost_unified, integrateddynamicscompat:main
+
+[STDOUT] [23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]: Registered 13 anointments
+
+[STDOUT] [23:33:02] [Render thread/INFO] [co.br.ne.st.ModRoomPools/]: Initializing dungeon room pools and rooms...
+
+[STDOUT] [23:33:02] [Render thread/INFO] [co.br.ne.st.DungeonRoomLoader/]: Loaded 42 dungeon schematics
+[23:33:02] [Render thread/INFO] [co.br.ne.st.ModRoomPools/]: Dungeon initialization complete. Loaded 42 rooms and 11 pools.
+
+[STDOUT] [23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]: Registering built-in altar rune blocks...
+
+[STDOUT] [23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]: Registered block Block{neovitae:rune_speed} (hash=1587399853) as rune neovitae:speed with amount 1
+[23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]: Registered block Block{neovitae:rune_sacrifice} (hash=1054144850) as rune neovitae:sacrifice with amount 1
+[23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]: Registered block Block{neovitae:rune_sacrifice_self} (hash=474219628) as rune neovitae:self_sacrifice with amount 1
+
+[STDOUT] [23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]: Registered block Block{neovitae:rune_dislocation} (hash=1207335173) as rune neovitae:displacement with amount 1
+[23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]: Registered block Block{neovitae:rune_capacity} (hash=1885594028) as rune neovitae:capacity with amount 1
+[23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]: Registered block Block{neovitae:rune_capacity_augmented} (hash=2076289966) as rune neovitae:augmented_capacity with amount 1
+[23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]: Registered block Block{neovitae:rune_orb} (hash=335217581) as rune neovitae:orb with amount 1
+[23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]: Registered block Block{neovitae:rune_acceleration} (hash=823928915) as rune neovitae:acceleration with amount 1
+
+[STDOUT] [23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]: Registered block Block{neovitae:rune_charging} (hash=1648808941) as rune neovitae:charging with amount 1
+[23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]: Registered block Block{neovitae:rune_efficiency} (hash=598957531) as rune neovitae:efficiency with amount 1
+[23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]: Registered block Block{neovitae:rune_2_speed} (hash=1381643017) as rune neovitae:speed with amount 2
+[23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]: Registered block Block{neovitae:rune_2_sacrifice} (hash=1941808974) as rune neovitae:sacrifice with amount 2
+
+[STDOUT] [23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]: Registered block Block{neovitae:rune_2_sacrifice_self} (hash=133682797) as rune neovitae:self_sacrifice with amount 2
+[23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]: Registered block Block{neovitae:rune_2_dislocation} (hash=1303327734) as rune neovitae:displacement with amount 2
+[23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]: Registered block Block{neovitae:rune_2_capacity} (hash=1289374549) as rune neovitae:capacity with amount 2
+[23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]: Registered block Block{neovitae:rune_2_capacity_augmented} (hash=1975425680) as rune neovitae:augmented_capacity with amount 2
+
+[STDOUT] [23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]: Registered block Block{neovitae:rune_2_orb} (hash=418909385) as rune neovitae:orb with amount 2
+[23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]: Registered block Block{neovitae:rune_2_acceleration} (hash=1279548148) as rune neovitae:acceleration with amount 2
+[23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]: Registered block Block{neovitae:rune_2_charging} (hash=1797768382) as rune neovitae:charging with amount 2
+[23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]: Registered block Block{neovitae:rune_2_efficiency} (hash=465155748) as rune neovitae:efficiency with amount 2
+
+[STDOUT] [23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]: Registered 20 built-in altar rune blocks
+
+[STDOUT] [23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]: Rune registry state: 20 block associations registered
+
+[STDOUT] [23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]:   - Block{neovitae:rune_sacrifice} (hash=1054144850) -> [SACRIFICE]
+[23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]:   - Block{neovitae:rune_sacrifice_self} (hash=474219628) -> [SELF_SACRIFICE]
+[23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]:   - Block{neovitae:rune_efficiency} (hash=598957531) -> [EFFICIENCY]
+
+[STDOUT] [23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]:   - Block{neovitae:rune_charging} (hash=1648808941) -> [CHARGING]
+[23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]:   - Block{neovitae:rune_2_capacity_augmented} (hash=1975425680) -> [AUGMENTED_CAPACITY]
+[23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]:   ... and 15 more
+
+[STDOUT] [23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]: Armed FTB Ultimine suppression for ritual block operations
+
+[STDOUT] [23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]: FTB Chunks found, claim permissions will be checked before block edits
+
+[STDOUT] [23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]: Applied Energistics 2 found, terminals can be bound with the Sigil of Bound Treasures
+
+[STDOUT] [23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]: Refined Storage found, grids can be bound with the Sigil of Bound Treasures
+
+[STDOUT] [23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]: Ars Nouveau found, enabling storage lectern and containment jar support
+
+[STDOUT] [23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]: Occultism found, storage actuators can be bound with the Sigil of Bound Treasures
+
+[STDOUT] [23:33:02] [Render thread/INFO] [co.br.ne.NeoVitae/]: Apotheosis found, ritual kills will use the ritual owner's world tier
+
+[STDOUT] [23:33:02] [Worker-ResourceReload-7/WARN] [minecraft/SpriteContents]: Unused frames in sprite irons_spellbooks:item/upgrade_orb_ender: [1, 5, 6, 7]
+
+[STDOUT] [23:33:02] [Worker-ResourceReload-0/WARN] [minecraft/SpriteContents]: Unused frames in sprite apotheosis:items/gems/molten_breach: [11, 12, 13]
+
+[STDOUT] [23:33:02] [Render thread/INFO] [terrablender/]: Registered region minecraft:overworld to index 0 for type OVERWORLD
+
+[STDOUT] [23:33:02] [Render thread/INFO] [terrablender/]: Registered region minecraft:nether to index 0 for type NETHER
+[23:33:02] [Render thread/INFO] [terrablender/]: Registered region biomesoplenty:overworld_primary to index 1 for type OVERWORLD
+[23:33:02] [Render thread/INFO] [terrablender/]: Registered region biomesoplenty:overworld_secondary to index 2 for type OVERWORLD
+
+[STDOUT] [23:33:02] [Render thread/INFO] [terrablender/]: Registered region biomesoplenty:overworld_rare to index 3 for type OVERWORLD
+
+[STDOUT] [23:33:02] [Render thread/INFO] [terrablender/]: Registered region biomesoplenty:nether_common to index 1 for type NETHER
+[23:33:02] [Render thread/INFO] [terrablender/]: Registered region biomesoplenty:nether_rare to index 2 for type NETHER
+
+[STDOUT] [23:33:02] [Worker-ResourceReload-6/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite allthetweaks:item/pulsating_black_hole frame 1: 1
+[23:33:02] [Worker-ResourceReload-6/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite allthetweaks:item/pulsating_black_hole frame 2: 2
+[23:33:02] [Worker-ResourceReload-6/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite allthetweaks:item/pulsating_black_hole frame 3: 3
+
+[STDOUT] [23:33:02] [Worker-ResourceReload-6/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite allthetweaks:item/pulsating_black_hole frame 4: 4
+[23:33:02] [Worker-ResourceReload-6/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite allthetweaks:item/pulsating_black_hole frame 5: 3
+[23:33:02] [Worker-ResourceReload-6/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite allthetweaks:item/pulsating_black_hole frame 6: 2
+[23:33:02] [Worker-ResourceReload-6/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite allthetweaks:item/pulsating_black_hole frame 7: 1
+
+[STDOUT] [23:33:02] [Worker-ResourceReload-9/WARN] [minecraft/SpriteContents]: Unused frames in sprite evilcraft:block/poison_still: [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+
+[STDOUT] [23:33:02] [Worker-ResourceReload-6/WARN] [minecraft/SpriteContents]: Unused frames in sprite justdirethings:item/creaturecatcher_side_animation: [8]
+
+[STDOUT] [23:33:02] [Render thread/INFO] [terrablender/]: Registered region ars_nouveau:overworld to index 4 for type OVERWORLD
+
+[STDOUT] [23:33:02] [Worker-ResourceReload-5/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite allthetweaks:item/nexium_emitter frame 1: 1
+[23:33:02] [Worker-ResourceReload-5/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite allthetweaks:item/nexium_emitter frame 2: 2
+[23:33:02] [Worker-ResourceReload-5/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite allthetweaks:item/nexium_emitter frame 3: 1
+
+[STDOUT] [23:33:02] [Render thread/INFO] [ne.po.bi.BiomesWeveGone/]: Creating and Registering BWG Biome Modifiers for Vanilla Biomes
+[23:33:02] [Render thread/INFO] [ne.po.bi.BiomesWeveGone/]: Will add Green/Cyan/Magenta/Purple/Yellow Tulips, Rose, Orange Daisy, Flower and Clover Patches to 
+[23:33:02] [Render thread/INFO] [ne.po.bi.BiomesWeveGone/]: Will add Flower Patch, Clover Patch, White Anemone, Pink Anemone, Orange Daisy, Horseweed and rose to 
+[23:33:02] [Render thread/INFO] [ne.po.bi.BiomesWeveGone/]: Will add Flower Patch, Clover Patch, Blue Rose Bush and Blue Berry Bushes to 
+[23:33:02] [Render thread/INFO] [ne.po.bi.BiomesWeveGone/]: Will add Palm Trees to 
+[23:33:02] [Render thread/INFO] [ne.po.bi.BiomesWeveGone/]: Will add Flower Patch, Clover Patch, White Anemone, Pink Anemone, Orange Daisy, Horseweed and rose to 
+
+[STDOUT] [23:33:02] [Render thread/INFO] [terrablender/]: Registered region biomeswevegone:region_0 to index 5 for type OVERWORLD
+[23:33:02] [Render thread/INFO] [terrablender/]: Registered region biomeswevegone:region_1 to index 6 for type OVERWORLD
+[23:33:02] [Render thread/INFO] [terrablender/]: Registered region biomeswevegone:region_2 to index 7 for type OVERWORLD
+
+[STDOUT] [23:33:02] [Worker-ResourceReload-6/WARN] [minecraft/SpriteContents]: Unused frames in sprite relics:item/springy_boot_flawless: [21, 22, 23, 24, 25]
+
+[STDOUT] [23:33:03] [Render thread/INFO] [Advanced Peripherals/]: Loading integration for create
+
+[STDOUT] [23:33:03] [Render thread/INFO] [Advanced Peripherals/]: Loading integration for curios
+
+[STDOUT] [23:33:03] [Render thread/INFO] [Advanced Peripherals/]: Loading integration for dimstorage
+
+[STDOUT] [23:33:03] [Render thread/INFO] [Advanced Peripherals/]: Loading integration for mekanism
+
+[STDOUT] [23:33:03] [Worker-ResourceReload-4/WARN] [minecraft/SpriteContents]: Unused frames in sprite irons_spellbooks:item/energized_core_energy: [11]
+[23:33:03] [Render thread/INFO] [Advanced Peripherals/]: Loading integration for powah
+
+[STDOUT] [23:33:03] [Worker-ResourceReload-6/WARN] [minecraft/SpriteContents]: Unused frames in sprite evilcraft:block/blood_still: [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+[23:33:03] [Worker-ResourceReload-8/WARN] [minecraft/SpriteContents]: Unused frames in sprite enderio:block/alloy_smelter_front_active: [4, 5]
+
+[STDOUT] [23:33:03] [Worker-ResourceReload-3/WARN] [minecraft/SpriteContents]: Unused frames in sprite industrialforegoing:block/fluids/ether_gas_still: [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48]
+
+[STDOUT] [23:33:03] [Worker-ResourceReload-4/WARN] [minecraft/SpriteContents]: Unused frames in sprite powah:item/charged_snowball: [1, 2, 3, 4, 16, 17, 18, 19]
+
+[STDOUT] [23:33:03] [Render thread/INFO] [Framework/SYNCED_ENTITY_DATA]: Registered synced data key refurbished_furniture:lock_yaw for refurbished_furniture:seat
+
+[STDOUT] [23:33:03] [Render thread/INFO] [Easy Mob Farm/]: Easy Mob Farm Mob Capture Data Component easy_mob_farm:mob_capture_data ...
+[23:33:03] [Render thread/INFO] [Easy Mob Farm/]: Easy Mob Farm Mob Farm Data Component easy_mob_farm:mob_farm_data ...
+
+[STDOUT] [23:33:03] [Worker-ResourceReload-5/WARN] [minecraft/SpriteContents]: Unused frames in sprite ars_technica:item/glyph_fuse: [13, 14, 15]
+
+[STDOUT] [23:33:03] [Worker-ResourceReload-7/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite allthetweaks:item/dimensional_seed frame 1: 1
+[23:33:03] [Worker-ResourceReload-7/WARN] [minecraft/SpriteContents]: Invalid frame index on sprite allthetweaks:item/dimensional_seed frame 2: 2
+
+[STDOUT] [23:33:03] [Render thread/INFO] [Moonlight/]: Initialized color sets in 479ms
+
+[STDOUT] [23:33:03] [Render thread/INFO] [terrablender/]: Registered region regions_unexplored:primary to index 8 for type OVERWORLD
+
+[STDOUT] [23:33:03] [Render thread/INFO] [terrablender/]: Registered region regions_unexplored:secondary to index 9 for type OVERWORLD
+[23:33:03] [Render thread/INFO] [terrablender/]: Registered region regions_unexplored:nether to index 3 for type NETHER
+
+[STDOUT] [23:33:03] [Render thread/INFO] [Extended Industrialization/]: Discovered 3796 block states for BushBlockHarvestable
+
+[STDOUT] [23:33:03] [Render thread/INFO] [terrablender/]: Registered region integrateddynamics:overworld to index 10 for type OVERWORLD
+
+[STDOUT] [23:33:04] [Worker-ResourceReload-0/WARN] [minecraft/SpriteLoader]: Texture iceandfire:item/dragonsteel_lightning_sword with size 36x36 limits mip level from 4 to 2
+
+[STDOUT] [23:33:04] [Worker-ResourceReload-0/WARN] [minecraft/SpriteLoader]: Texture mahoutsukai:block/runes with size 199x16 limits mip level from 2 to 0
+
+[STDOUT] [23:33:04] [Worker-ResourceReload-2/WARN] [minecraft/ModelBakery]: Unable to load model: 'silentgear:item/trident_icon' referenced from: silentgear:item/trident_icon: java.io.FileNotFoundException: silentgear:models/item/trident_icon.json
+
