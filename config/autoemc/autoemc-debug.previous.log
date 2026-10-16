@@ -1,7 +1,8 @@
-2026-10-15 23:43:22.431 [INFO] ============================================================
-2026-10-15 23:43:22.431 [INFO] AutoEMC dedicated debug log
-2026-10-15 23:43:22.432 [INFO] Server started — solver version 30
-2026-10-15 23:43:22.432 [INFO] Current log: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\autoemc\autoemc-debug.log
-2026-10-15 23:43:22.433 [INFO] Previous session: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\autoemc\autoemc-debug.previous.log
-2026-10-15 23:43:22.434 [INFO] ============================================================
-2026-10-15 23:43:22.434 [INFO] [AutoEMC] Waiting for ProjectE to finish loading its EMC mappings.
+2026-10-16 10:06:16.274 [INFO] ============================================================
+2026-10-16 10:06:16.275 [INFO] AutoEMC dedicated debug log
+2026-10-16 10:06:16.276 [INFO] Server started — solver version 30
+2026-10-16 10:06:16.276 [INFO] Current log: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\autoemc\autoemc-debug.log
+2026-10-16 10:06:16.277 [INFO] Previous session: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\autoemc\autoemc-debug.previous.log
+2026-10-16 10:06:16.277 [INFO] ============================================================
+2026-10-16 10:06:16.278 [INFO] [AutoEMC] Waiting for ProjectE to finish loading its EMC mappings.
+2026-10-16 10:09:35.454 [WARN] [AutoEMC] Skipped: ProjectE's EMC mappings never became ready. No EMC files were changed; check the ProjectE startup log.

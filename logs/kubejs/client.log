@@ -41,3 +41,5 @@
 [15:03:30] [INFO] Loaded script client_scripts:tooltips.js in 0.004 s
 [15:03:30] [INFO] Loaded 16/16 KubeJS client scripts in 0.508 s with 0 errors and 0 warnings
 [15:04:44] [INFO] Client resource reload complete!
+[15:09:27] [INFO] Logged in: LocalPlayer['Spartan_Gamer_BR'/1956, l='ClientLevel', x=8.50, y=65.00, z=8.50]
+[15:09:27] [INFO] Loaded Java class 'net.minecraft.core.registries.Registries'
