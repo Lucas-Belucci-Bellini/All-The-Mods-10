@@ -242,3 +242,4 @@
 [23:35:24] [INFO] tag= c:ores/xychorium_blue and item= xycraft_world:xychorium_ore_deepslate_blue
 [23:35:24] [INFO] tag= c:ores/xychorium_blue and item= xycraft_world:xychorium_ore_kivi_blue
 [23:35:24] [INFO] [minecraft:item] Found 6663 tags, added 1141 objects, removed 116 objects
+[23:35:31] [INFO] server_scripts:Tweaks/recipes_fix.js#357: Fixing recipes took 412 ms...
