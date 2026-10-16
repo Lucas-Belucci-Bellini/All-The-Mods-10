@@ -5658,3 +5658,61 @@ WARNING: You are running with unsupported Java 21. To make full use of the Vecto
 
 [STDOUT] [23:31:33] [modloading-worker-0/INFO] [logisticsnetworks/]: Config file not found, generating default at C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\logistics-network\upgrades.json
 
+[STDOUT] [23:31:36] [modloading-worker-0/INFO] [KubeJS Startup/]: Validated 1761 files in kubejs/assets/ in 5110ms
+
+[STDOUT] [23:31:38] [modloading-worker-0/INFO] [KubeJS Startup/]: Validated 337 files in kubejs/data/ in 1979ms
+
+[STDOUT] [23:31:39] [modloading-worker-0/INFO] [Tesseract API/MIMixinPlugin/]: Starting MI hook entrypoint loader
+
+[STDOUT] [23:31:39] [modloading-worker-0/INFO] [FTB Library/]: registered docs provider mod: guideme
+
+[STDOUT] [23:31:39] [modloading-worker-0/INFO] [FTB Library/]: registered docs provider mod: patchouli
+
+[STDOUT] [23:31:39] [modloading-worker-0/INFO] [Tesseract API/MIMixinPlugin/]: Registered entrypoint for mod tesseract_api: net.swedz.tesseract.neoforge.compat.mi.hook.builtin.TesseractMIHookListener
+
+[STDOUT] [23:31:39] [modloading-worker-0/INFO] [Tesseract API/MIMixinPlugin/]: Registered entrypoint for mod extended_industrialization: net.swedz.extended_industrialization.compat.mi.EIMIHookRegistry
+
+[STDOUT] [23:31:39] [modloading-worker-0/INFO] [Tesseract API/MIMixinPlugin/]: Registered entrypoint for mod extended_industrialization: net.swedz.extended_industrialization.compat.mi.EIMIHookListener
+
+[STDOUT] [23:31:39] [modloading-worker-0/INFO] [Tesseract API/MIMixinPlugin/]: Registered entrypoint for mod industrialization_overdrive: dev.wp.industrialization_overdrive.compat.mi.IOMIHookRegistry
+
+[STDOUT] [23:31:39] [modloading-worker-0/INFO] [Tesseract API/MIMixinPlugin/]: Registered entrypoint for mod industrialization_overdrive: dev.wp.industrialization_overdrive.compat.mi.IOMIHookListener
+
+[STDOUT] [23:31:39] [modloading-worker-0/INFO] [Tesseract API/MIMixinPlugin/]: Done MI hook entrypoint loader
+
+[STDOUT] [23:31:39] [modloading-worker-0/WARN] [ne.ne.fm.co.ConfigTracker/CONFIG]: Configuration file C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\modern_industrialization-startup.toml is not correct. Correcting
+
+[STDOUT] [23:31:39] [modloading-worker-0/INFO] [Modern Industrialization/]: Modern Industrialization setup done!
+
+[STDOUT] [23:31:39] [modloading-worker-0/INFO] [Modern Industrialization/]: Modern Industrialization client setup done!
+
+[STDOUT] [23:31:39] [modloading-worker-0/INFO] [Tesseract API/Proxies/]: Starting proxy manager entrypoint loader
+
+[STDOUT] [23:31:39] [modloading-worker-0/INFO] [Tesseract API/Proxies/]: Loaded proxy entrypoint net.swedz.tesseract.neoforge.proxy.builtin.TesseractProxy (TesseractClientProxy)
+[23:31:39] [modloading-worker-0/INFO] [Tesseract API/Proxies/]: Loaded proxy entrypoint net.swedz.little_big_redstone.proxy.LBRProxy (LBRClientProxy)
+[23:31:39] [modloading-worker-0/INFO] [Tesseract API/Proxies/]: Loaded proxy entrypoint net.swedz.extended_industrialization.proxy.modslot.curios.EIModSlotCuriosProxy (EIModSlotCuriosPresentProxy)
+
+[STDOUT] [23:31:39] [modloading-worker-0/INFO] [Tesseract API/Proxies/]: Loaded proxy entrypoint net.swedz.tesseract.neoforge.compat.mi.proxy.TesseractMIProxy (TesseractMILoadedProxy)
+[23:31:39] [modloading-worker-0/INFO] [Tesseract API/Proxies/]: Loaded proxy entrypoint net.swedz.little_big_redstone.compat.grandpower.GrandPowerProxy (GrandPowerLoadedProxy)
+[23:31:39] [modloading-worker-0/INFO] [Tesseract API/Proxies/]: Loaded proxy entrypoint net.swedz.extended_industrialization.proxy.EIProxy (EIClientProxy)
+[23:31:39] [modloading-worker-0/INFO] [Tesseract API/Proxies/]: Loaded proxy entrypoint net.swedz.extended_industrialization.proxy.modslot.accessories.EIModSlotAccessoriesProxy (EIModSlotAccessoriesPresentProxy)
+[23:31:39] [modloading-worker-0/INFO] [Tesseract API/Proxies/]: Done proxy manager entrypoint loader
+
+[STDOUT] [23:31:39] [modloading-worker-0/INFO] [Tesseract API/]: Tesseract API has completed initialization!
+
+[STDOUT] [23:31:40] [modloading-sync-worker/INFO] [Tesseract API/]: Executing enqueued MI hook tasks for tesseract_api
+
+[STDOUT] [23:31:40] [modloading-sync-worker/INFO] [Tesseract API/]: Executing enqueued MI hook tasks for extended_industrialization
+
+[STDOUT] [23:31:40] [modloading-sync-worker/INFO] [Tesseract API/]: Executing enqueued MI hook tasks for industrialization_overdrive
+
+[STDOUT] [23:31:40] [modloading-sync-worker/INFO] [pneumaticcraft/]: Third party integration activated for [immersiveengineering,computercraft,jei,fusion,mekanism,ftbteams,curios,patchouli,create,ftbfiltersystem]
+
+[STDOUT] [23:31:40] [modloading-sync-worker/INFO] [AlmostUnified/]: Loading config 'startup.json'.
+
+[STDOUT] [23:31:40] [modloading-sync-worker/WARN] [AlmostUnified/]: Config 'startup.json' not found. Creating default config.
+
+[STDOUT] [23:31:45] [modloading-sync-worker/INFO] [Mystical Customization/]: Created /config/mysticalcustomization/types/ directory
+
+[STDOUT] [23:31:48] [modloading-sync-worker/INFO] [STDOUT/]: [com.mamailes.herbsandharvest.block.dessert.EdibleCakeBlock:<init>:34]: CAKE BLOCK CONSTRUCTOR LOADED
+
