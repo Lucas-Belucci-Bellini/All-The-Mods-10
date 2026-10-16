@@ -1,0 +1,24 @@
+[STDOUT]   <log4j:Event logger="cpw.mods.modlauncher.Launcher" timestamp="1792173727246" level="INFO" thread="main">
+    <log4j:Message><![CDATA[ModLauncher running: args [--username, Spartan_Gamer_BR, --version, neoforge-21.1.259, --gameDir, C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10, --assetsDir, C:\Users\SpartanGamerBR\curseforge\minecraft\Install\assets, --assetIndex, 17, --uuid, 85ee4012cb4e41679ebb79c9a444d6d4, --accessToken, ❄❄❄❄❄❄❄❄, --clientId, a25945-f52ecb-876043-5dfd32-ce46f5, --xuid, 2535448650411648, --userType, msa, --versionType, release, --width, 1920, --height, 1080, --quickPlayPath, C:\Users\SpartanGamerBR\curseforge\minecraft\Quickplay\f727d3a0-1259-456d-b324-df33601e4beb.json, , , , --fml.neoForgeVersion, 21.1.259, --fml.fmlVersion, 4.0.45, --fml.mcVersion, 1.21.1, --fml.neoFormVersion, 20240808.144430, --launchTarget, forgeclient]]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="cpw.mods.modlauncher.Launcher" timestamp="1792173727251" level="INFO" thread="main">
+    <log4j:Message><![CDATA[JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.12.1+1-LTS]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="cpw.mods.modlauncher.Launcher" timestamp="1792173727254" level="INFO" thread="main">
+    <log4j:Message><![CDATA[ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.12.1 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.neoforged.fml.loading.FMLConfig" timestamp="1792173727433" level="WARN" thread="main">
+    <log4j:Message><![CDATA[****************************** Found dependency overrides ******************************]]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.neoforged.fml.loading.FMLConfig" timestamp="1792173727434" level="WARN" thread="main">
+    <log4j:Message><![CDATA[Dependency overrides for mod 'allthetweaks': adding explicit AFTER ordering against 'bcc']]></log4j:Message>
+  </log4j:Event>
+
+[STDOUT]   <log4j:Event logger="net.neoforged.fml.loading.FMLConfig" timestamp="1792173727434" level="WARN" thread="main">
+    <log4j:Message><![CDATA[****************************************************************************************]]></log4j:Message>
+  </log4j:Event>
+
