@@ -1,0 +1,244 @@
+[23:35:13] [INIT] KubeJS 2101.7.2-build.374; MC 2101 NeoForge
+[23:35:13] [INIT] Loaded plugins:
+[23:35:13] [INIT] - dev.latvian.mods.kubejs.plugin.builtin.BuiltinKubeJSPlugin
+[23:35:13] [INIT] - dev.latvian.mods.kubejs.plugin.builtin.BuiltinKubeJSClientPlugin
+[23:35:13] [INIT] - dev.latvian.mods.kubejs.integration.architectury.ArchitecturyIntegration
+[23:35:13] [INIT] - com.breakinblocks.neovitae.compat.kubejs.NVKubeJSPlugin
+[23:35:13] [INIT] - com.klikli_dev.theurgykubejs.kubejs.TheurgyKubeJSPlugin
+[23:35:13] [INIT] - dev.uncandango.kubejstweaks.kubejs.kjs71.plugin.KJSTPlugin
+[23:35:13] [INIT] - dev.uncandango.kubejstweaks.kubejs.kjs72.plugin.KJSTPlugin
+[23:35:13] [INIT] - net.davio.aquaticambitions.compat.KubeJS.CAAKubeJSPlugin
+[23:35:13] [INIT] - dev.ftb.mods.ftbxmodcompat.neoforge.ftbquests.kubejs.FTBQuestsKubeJSPlugin
+[23:35:13] [INIT] - dev.ftb.mods.ftbxmodcompat.neoforge.ftbchunks.kubejs.FTBChunksKubeJSPlugin
+[23:35:13] [INIT] - dev.ftb.mods.ftbxmodcompat.neoforge.ftbteams.kubejs.FTBTeamsKubeJSPlugin
+[23:35:13] [INIT] - dev.ftb.mods.ftbxmodcompat.neoforge.ftbfiltersystem.kubejs.FFSKubeJSPlugin
+[23:35:13] [INIT] - com.klikli_dev.occultism_kubejs.KubeJSOccultismPlugin
+[23:35:13] [INIT] - com.almostreliable.ponderjs.KubePlugin
+[23:35:13] [INIT] - com.glodblock.github.extendedae.xmod.kjs.KJSPlugin
+[23:35:13] [INIT] - aztech.modern_industrialization.compat.kubejs.MIKubeJSPlugin
+[23:35:15] [INFO] server_scripts:banlist_script.js#9: Loaded Java class 'java.util.HashSet'
+[23:35:15] [INFO] server_scripts:banlist_script.js#10: Loaded Java class 'java.util.ArrayList'
+[23:35:15] [INFO] server_scripts:banlist_script.js#102: Loaded Java class 'net.minecraft.world.level.chunk.LevelChunk'
+[23:35:15] [INFO] server_scripts:banlist_script.js#104: Loaded Java class 'java.util.concurrent.ConcurrentLinkedQueue'
+[23:35:15] [INFO] server_scripts:banlist_script.js#105: Loaded Java class 'net.minecraft.world.level.block.entity.BlockEntityType'
+[23:35:15] [INFO] Loaded script server_scripts:banlist_script.js in 0.099 s
+[23:35:15] [INFO] Loaded script server_scripts:Tweaks/remove_recipes_from_banlist.js in 0.001 s
+[23:35:15] [INFO] server_scripts:announcements/announcements.js#1: Loaded Java class 'java.util.TreeMap'
+[23:35:15] [INFO] server_scripts:announcements/announcements.js#3: Loaded Java class 'org.apache.maven.artifact.versioning.DefaultArtifactVersion'
+[23:35:15] [INFO] Loaded script server_scripts:announcements/announcements.js in 0.006 s
+[23:35:15] [INFO] Loaded script server_scripts:debug/freeze_server.js in 0.0 s
+[23:35:15] [INFO] Loaded script server_scripts:modpack/atm_alloy_tools.js in 0.001 s
+[23:35:15] [INFO] Loaded script server_scripts:modpack/atm_alloys.js in 0.003 s
+[23:35:15] [INFO] Loaded script server_scripts:modpack/atm_star.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:modpack/atm_star_creative.js in 0.003 s
+[23:35:16] [INFO] Loaded script server_scripts:modpack/att_items.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:modpack/mini_portals.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:modpack/miningDim.js in 0.006 s
+[23:35:16] [INFO] Loaded script server_scripts:modpack/runic_multis/controllers.js in 0.004 s
+[23:35:16] [INFO] Loaded script server_scripts:modpack/runic_multis/recipes/auto_forge.js in 0.002 s
+[23:35:16] [INFO] Loaded script server_scripts:modpack/runic_multis/recipes/runic_crucible.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:modpack/runic_multis/recipes/runic_enchanter.js in 0.012 s
+[23:35:16] [INFO] Loaded script server_scripts:modpack/runic_multis/recipes/star_altar.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Actually Additions/Crusher.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Actually Additions/Fluid_Fuels.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Actually Additions/Recipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Ad Astra/tags.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Additional Lights/Recipes.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/AdditionalEnchantedMiner/Recipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Adorned/Tags.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/AdvancedAE/Recipes.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Allthemodium/Recipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/AllTheOres/Recipes.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/AllTheOres/Tags.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/AllTheTweaks/Recipes.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Apotheosis/adventure.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Applied Energistics/Recipes.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Aquaculture_2/tags.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Bibliocraft/Recipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Biomes Weve Gone/tags.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Building Gadgets/Recipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Building Gadgets/tags.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Bumblezone/Recipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Bumblezone/tags.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Create Enchantment Industry/recipes.js in 0.002 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Create/recipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Draconic Evolution/draconic_evo.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Dyenamics/recipes.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/dysoncubeproject/recipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/EnderIO/Recipes.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/EnderIO/sagMill.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/enderman overhaul/recipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Entangled/Recipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Eternal Starlight/Datapacks.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Eternal Starlight/Recipes.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Evilcraft/tags.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Explorer's Compass/Recipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/ExtendedAE/InfinityCellRecipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Extra Disks/Recipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/ExtremeReactors/Recipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Farmer's Delight/Compatibility.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Farmer's Delight/tags.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/ForbiddenArcanus/Hephaestus_Forge.js in 0.002 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/ForbiddenArcanus/Recipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Functional Storage/compacting_recipe.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Handcrafted/Recipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Hostile Neural Networks/Recipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Hyperbox/hyperbox.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Hyperbox/Recipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Ice and Fire/Recipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Ice and Fire/tags.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Immersive Engineering/Compatibility.js in 0.002 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Immersive Engineering/Crusher.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Indusrial Foregoing/Dissolution Chamber.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Indusrial Foregoing/Laser Drill.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/industrialforegoingsouls/recipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Integrated Dynamics/Basin.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Integrated Dynamics/Squeezer.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Irons Spells Spellbooks/Recipes.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Irons Spells Spellbooks/Tags.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/JustDireThings/Recipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Laser Bridges & Doors/Recipes.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Mega Cells/Recipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Mekanism/Compatibility.js in 0.002 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Mekanism/Evilcraft.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Mekanism/ore_processing.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Mekanism/Rebalance/Gear.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Mekanism/Rebalance/Items.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Mekanism/Rebalance/Units.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Mekanism/Recipes.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/mekmm/recipes.js in 0.002 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/mifa/recipes.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Minecolonies/Recipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Minecolonies/tags.js in 0.002 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/minecraft/recipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/minecraft/tags.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Mining Gadgets/Recipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Modern Industrialization/AE_Compat.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Modern Industrialization/Aluminum.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Modern Industrialization/Cobble_Gen.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Modern Industrialization/distillation.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Modern Industrialization/Electric_Blast_Furnace.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Modern Industrialization/Quarry.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Modern Industrialization/Replicator.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Modern Industrialization/Vacuum Freezer.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/modular_machinery/multiblocks/atm/auto_hephaestus_forge.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/modular_machinery/multiblocks/atm/runic_crucible.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/modular_machinery/multiblocks/atm/runic_enchanter.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/modular_machinery/multiblocks/atm/runic_star_altar.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/modular_machinery/multiblocks/mekanism/chemical_crystallizer.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/modular_machinery/multiblocks/mekanism/chemical_dissolution_chamber.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/modular_machinery/multiblocks/mekanism/chemical_infuser.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/modular_machinery/multiblocks/mekanism/chemical_oxidizer.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/modular_machinery/multiblocks/mekanism/chemical_washer.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/modular_machinery/multiblocks/mekanism/electrolytic_seperator.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/modular_machinery/multiblocks/mekanism/isotopic_centrifuge.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/modular_machinery/multiblocks/mekanism/pressurized_reaction_chamber.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/modular_machinery/multiblocks/mekanism/solar_neutron_activator.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/modular_machinery/recipes/atm/auto_hephaestus_forge.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/modular_machinery/recipes/atm/general.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/modular_machinery/recipes/atm/multiblock_parts.js in 0.002 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/modular_machinery/recipes/atm/runic_crucible.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/modular_machinery/recipes/atm/runic_enchanter.js in 0.002 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/modular_machinery/recipes/mekanism/chemical_crystallizer.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/modular_machinery/recipes/mekanism/chemical_dissolution_chamber.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/modular_machinery/recipes/mekanism/chemical_infuser.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/modular_machinery/recipes/mekanism/chemical_oxidizer.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/modular_machinery/recipes/mekanism/chemical_washer.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/modular_machinery/recipes/mekanism/controllers.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/modular_machinery/recipes/mekanism/electrolytic_seperator.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/modular_machinery/recipes/mekanism/isotopic_centrifuge.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/modular_machinery/recipes/mekanism/pressurized_reaction_chamber.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/modular_machinery/recipes/mekanism/solar_neutron_activator.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/modularbees/recipes.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/ModularForceFieldSystem/recipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/MysticalAgriculture/AwakenedEssenceCrafting.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/MysticalAgriculture/Compatibility.js in 0.001 s
+[23:35:16] [INFO] server_scripts:mods/MysticalAgriculture/Crops.js#4: Loaded Java class 'com.blakebr0.mysticalagriculture.registry.CropRegistry'
+[23:35:16] [INFO] server_scripts:mods/MysticalAgriculture/Crops.js#5: Loaded Java class 'java.util.Objects'
+[23:35:16] [INFO] Loaded script server_scripts:mods/MysticalAgriculture/Crops.js in 0.004 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/MysticalAgriculture/FusionCrafting.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/MysticalAgriculture/Recipes.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/MysticalAgriculture/Tags.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Oritech/recipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Oritech/tags.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Pams Harvestcraft/salt.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Pneumaticcraft/recipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Pneumaticcraft/tags.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Powah/Energizing.js in 0.002 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Powah/tags.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Productive Bees/Recipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Productive Bees/Tags.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Quarryplus/Recipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Railcraft Reborn/tags.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Regions Unexplored/Recipes.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Reliquary/Recipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/rftools/Recipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Silent Gear/Recipes.js in 0.002 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Supplementaries/recipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/SushiGoCrafting/tags.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/The Bumblezone/Tags.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Theurgy/liquefaction.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Theurgy/tags.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Time In A Bottle/Recipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Utilitarian/Recipes.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Xycraft/Extractor.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Xycraft/Recipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:mods/Xycraft/tags.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:Tweaks/clearing_recipes.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:Tweaks/disable_biome_modifier.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:Tweaks/disable_loot_table.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:Tweaks/fix_death_bug.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:Tweaks/recipes.js in 0.0 s
+[23:35:16] [INFO] server_scripts:Tweaks/recipes_fix.js#1: Loaded Java class 'com.google.common.base.Stopwatch'
+[23:35:16] [INFO] Loaded script server_scripts:Tweaks/recipes_fix.js in 0.002 s
+[23:35:16] [INFO] Loaded script server_scripts:Tweaks/registry_fix.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:Tweaks/tags.js in 0.002 s
+[23:35:16] [INFO] Loaded script server_scripts:Unification/coke.js in 0.0 s
+[23:35:16] [INFO] server_scripts:Unification/creosote.js#111: Loaded Java class 'dev.latvian.mods.kubejs.util.Tags'
+[23:35:16] [INFO] server_scripts:Unification/creosote.js#112: Loaded Java class 'aztech.modern_industrialization.api.datamaps.FluidFuel'
+[23:35:16] [INFO] Loaded script server_scripts:Unification/creosote.js in 0.002 s
+[23:35:16] [INFO] Loaded script server_scripts:Unification/crops.js in 0.003 s
+[23:35:16] [INFO] Loaded script server_scripts:Unification/gears.js in 0.0 s
+[23:35:16] [INFO] Loaded script server_scripts:Unification/ingots.js in 0.0 s
+[23:35:16] [INFO] server_scripts:Unification/sawing.js#53: Loaded Java class 'java.util.stream.Collectors'
+[23:35:16] [INFO] Loaded script server_scripts:Unification/sawing.js in 0.001 s
+[23:35:16] [INFO] Loaded script server_scripts:Unification/tools.js in 0.001 s
+[23:35:16] [INFO] Loaded 174/174 KubeJS server scripts in 2.574 s with 0 errors and 0 warnings
+[23:35:16] [INFO] server_scripts:mods/Xycraft/tags.js#17: tag= c:ores/xychorium_light and item= xycraft_world:xychorium_ore_stone_light
+[23:35:16] [INFO] server_scripts:mods/Xycraft/tags.js#17: tag= c:ores/xychorium_light and item= xycraft_world:xychorium_ore_deepslate_light
+[23:35:16] [INFO] server_scripts:mods/Xycraft/tags.js#17: tag= c:ores/xychorium_light and item= xycraft_world:xychorium_ore_kivi_light
+[23:35:16] [INFO] server_scripts:mods/Xycraft/tags.js#17: tag= c:ores/xychorium_dark and item= xycraft_world:xychorium_ore_stone_dark
+[23:35:16] [INFO] server_scripts:mods/Xycraft/tags.js#17: tag= c:ores/xychorium_dark and item= xycraft_world:xychorium_ore_deepslate_dark
+[23:35:16] [INFO] server_scripts:mods/Xycraft/tags.js#17: tag= c:ores/xychorium_dark and item= xycraft_world:xychorium_ore_kivi_dark
+[23:35:16] [INFO] server_scripts:mods/Xycraft/tags.js#17: tag= c:ores/xychorium_red and item= xycraft_world:xychorium_ore_stone_red
+[23:35:16] [INFO] server_scripts:mods/Xycraft/tags.js#17: tag= c:ores/xychorium_red and item= xycraft_world:xychorium_ore_deepslate_red
+[23:35:16] [INFO] server_scripts:mods/Xycraft/tags.js#17: tag= c:ores/xychorium_red and item= xycraft_world:xychorium_ore_kivi_red
+[23:35:16] [INFO] server_scripts:mods/Xycraft/tags.js#17: tag= c:ores/xychorium_green and item= xycraft_world:xychorium_ore_stone_green
+[23:35:16] [INFO] server_scripts:mods/Xycraft/tags.js#17: tag= c:ores/xychorium_green and item= xycraft_world:xychorium_ore_deepslate_green
+[23:35:16] [INFO] server_scripts:mods/Xycraft/tags.js#17: tag= c:ores/xychorium_green and item= xycraft_world:xychorium_ore_kivi_green
+[23:35:16] [INFO] server_scripts:mods/Xycraft/tags.js#17: tag= c:ores/xychorium_blue and item= xycraft_world:xychorium_ore_stone_blue
+[23:35:16] [INFO] server_scripts:mods/Xycraft/tags.js#17: tag= c:ores/xychorium_blue and item= xycraft_world:xychorium_ore_deepslate_blue
+[23:35:16] [INFO] server_scripts:mods/Xycraft/tags.js#17: tag= c:ores/xychorium_blue and item= xycraft_world:xychorium_ore_kivi_blue
+[23:35:23] [INFO] [minecraft:mob_effect] Found 18 tags, added 1 objects, removed 0 objects
+[23:35:23] [INFO] [minecraft:fluid] Found 348 tags, added 8 objects, removed 0 objects
+[23:35:23] [INFO] [minecraft:entity_type] Found 431 tags, added 269 objects, removed 0 objects
+[23:35:23] [INFO] [minecraft:worldgen/structure] Found 216 tags, added 1 objects, removed 0 objects
+[23:35:23] [INFO] [minecraft:enchantment] Found 73 tags, added 0 objects, removed 1 objects
+[23:35:23] [INFO] [minecraft:worldgen/biome] Found 1020 tags, added 4 objects, removed 0 objects
+[23:35:24] [INFO] [minecraft:block] Found 3258 tags, added 344 objects, removed 162 objects
+[23:35:24] [INFO] tag= c:ores/xychorium_light and item= xycraft_world:xychorium_ore_stone_light
+[23:35:24] [INFO] tag= c:ores/xychorium_light and item= xycraft_world:xychorium_ore_deepslate_light
+[23:35:24] [INFO] tag= c:ores/xychorium_light and item= xycraft_world:xychorium_ore_kivi_light
+[23:35:24] [INFO] tag= c:ores/xychorium_dark and item= xycraft_world:xychorium_ore_stone_dark
+[23:35:24] [INFO] tag= c:ores/xychorium_dark and item= xycraft_world:xychorium_ore_deepslate_dark
+[23:35:24] [INFO] tag= c:ores/xychorium_dark and item= xycraft_world:xychorium_ore_kivi_dark
+[23:35:24] [INFO] tag= c:ores/xychorium_red and item= xycraft_world:xychorium_ore_stone_red
+[23:35:24] [INFO] tag= c:ores/xychorium_red and item= xycraft_world:xychorium_ore_deepslate_red
+[23:35:24] [INFO] tag= c:ores/xychorium_red and item= xycraft_world:xychorium_ore_kivi_red
+[23:35:24] [INFO] tag= c:ores/xychorium_green and item= xycraft_world:xychorium_ore_stone_green
+[23:35:24] [INFO] tag= c:ores/xychorium_green and item= xycraft_world:xychorium_ore_deepslate_green
+[23:35:24] [INFO] tag= c:ores/xychorium_green and item= xycraft_world:xychorium_ore_kivi_green
+[23:35:24] [INFO] tag= c:ores/xychorium_blue and item= xycraft_world:xychorium_ore_stone_blue
+[23:35:24] [INFO] tag= c:ores/xychorium_blue and item= xycraft_world:xychorium_ore_deepslate_blue
+[23:35:24] [INFO] tag= c:ores/xychorium_blue and item= xycraft_world:xychorium_ore_kivi_blue
+[23:35:24] [INFO] [minecraft:item] Found 6663 tags, added 1141 objects, removed 116 objects
