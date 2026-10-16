@@ -47,3 +47,9 @@
 [10:03:13] [INFO] Validated 1761 files in kubejs/assets/ in 3545ms
 [10:03:15] [INFO] Validated 337 files in kubejs/data/ in 1487ms
 [10:03:36] [INFO] Loaded Java class 'java.lang.Integer'
+[10:04:32] [INFO] Loaded Java class 'blusunrize.immersiveengineering.api.tool.ChemthrowerHandler'
+[10:04:32] [INFO] Loaded Java class 'blusunrize.immersiveengineering.api.tool.ChemthrowerHandler$ChemthrowerEffect_Extinguish'
+[10:04:32] [INFO] Loaded Java class 'dev.wuffs.bcc.BetterCompatibilityChecker'
+[10:04:34] [INFO] Pack Version is: 8.3
+[10:04:34] [INFO] CF Version is: 8.3
+[10:04:34] [INFO] Pack is up to date!

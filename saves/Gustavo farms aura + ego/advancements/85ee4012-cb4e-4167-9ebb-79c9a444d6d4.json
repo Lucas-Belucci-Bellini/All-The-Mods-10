@@ -1,4 +1,10 @@
 {
+  "mffs:grant_book_on_first_join": {
+    "criteria": {
+      "guidebook": "2026-10-15 23:43:55 -0300"
+    },
+    "done": true
+  },
   "ae2wtlib:recipe/magnet_card": {
     "criteria": {
       "has_wct": "2026-10-15 23:43:56 -0300"
@@ -19,28 +25,96 @@
     },
     "done": true
   },
-  "biomeswevegone:biomeswevegone/root": {
-    "criteria": {
-      "tick": "2026-10-15 23:45:44 -0300"
-    },
-    "done": true
-  },
   "ae2wtlib:recipe/wireless_universal_terminal/upgrade_pattern_access": {
     "criteria": {
       "has_wit": "2026-10-15 23:43:56 -0300"
     },
     "done": true
   },
-  "the_bumblezone:structures/enter_all_structures": {
-    "criteria": {
-      "in_goliath_honey_fountain": "2026-10-15 23:45:55 -0300",
-      "in_mite_fortress": "2026-10-15 23:45:55 -0300"
-    },
-    "done": false
-  },
   "create:root": {
     "criteria": {
       "0": "2026-10-15 23:43:56 -0300"
+    },
+    "done": true
+  },
+  "astralsorcery:root": {
+    "criteria": {
+      "has_tome": "2026-10-15 23:43:56 -0300"
+    },
+    "done": true
+  },
+  "mekanism:root": {
+    "criteria": {
+      "automatic": "2026-10-15 23:43:56 -0300"
+    },
+    "done": true
+  },
+  "modern_industrialization:guidebook": {
+    "criteria": {
+      "logged_in": "2026-10-15 23:43:56 -0300"
+    },
+    "done": true
+  },
+  "ae2wtlib:recipe/wireless_universal_terminal/ae": {
+    "criteria": {
+      "has_wit": "2026-10-15 23:43:56 -0300",
+      "has_wpt": "2026-10-15 23:43:56 -0300"
+    },
+    "done": true
+  },
+  "ae2wtlib:recipe/wireless_pattern_access_terminal": {
+    "criteria": {
+      "has_wt": "2026-10-15 23:43:56 -0300"
+    },
+    "done": true
+  },
+  "ae2wtlib:recipe/wireless_pattern_encoding_terminal": {
+    "criteria": {
+      "has_wt": "2026-10-15 23:43:56 -0300"
+    },
+    "done": true
+  },
+  "ae2wtlib:recipe/wireless_universal_terminal/upgrade_crafting": {
+    "criteria": {
+      "has_wct": "2026-10-15 23:43:56 -0300"
+    },
+    "done": true
+  },
+  "create_enchantment_industry:root": {
+    "criteria": {
+      "0": "2026-10-15 23:43:56 -0300"
+    },
+    "done": true
+  },
+  "ae2wtlib:recipe/wireless_universal_terminal/upgrade_pattern_encoding": {
+    "criteria": {
+      "has_wpt": "2026-10-15 23:43:56 -0300"
+    },
+    "done": true
+  },
+  "ae2wtlib:recipe/quantum_bridge_card": {
+    "criteria": {
+      "has_wit": "2026-10-15 23:43:56 -0300",
+      "has_wpt": "2026-10-15 23:43:56 -0300",
+      "has_wct": "2026-10-15 23:43:56 -0300"
+    },
+    "done": true
+  },
+  "farmersdelight:main/root": {
+    "criteria": {
+      "seeds": "2026-10-15 23:43:56 -0300"
+    },
+    "done": true
+  },
+  "dysoncubeproject:main/root": {
+    "criteria": {
+      "railejector": "2026-10-15 23:43:56 -0300"
+    },
+    "done": true
+  },
+  "biomeswevegone:biomeswevegone/root": {
+    "criteria": {
+      "tick": "2026-10-15 23:45:44 -0300"
     },
     "done": true
   },
@@ -68,24 +142,6 @@
     },
     "done": true
   },
-  "astralsorcery:root": {
-    "criteria": {
-      "has_tome": "2026-10-15 23:43:56 -0300"
-    },
-    "done": true
-  },
-  "biomeswevegone:biomeswevegone/adventure/oh_the_biomes_weve_gone": {
-    "criteria": {
-      "biomeswevegone:sakura_grove": "2026-10-15 23:45:55 -0300"
-    },
-    "done": false
-  },
-  "mekanism:root": {
-    "criteria": {
-      "automatic": "2026-10-15 23:43:56 -0300"
-    },
-    "done": true
-  },
   "lootr:root": {
     "criteria": {
       "always_true": "2026-10-15 23:45:44 -0300"
@@ -95,19 +151,6 @@
   "merrymaking:grant_book_on_first_join": {
     "criteria": {
       "tick": "2026-10-15 23:45:44 -0300"
-    },
-    "done": true
-  },
-  "modern_industrialization:guidebook": {
-    "criteria": {
-      "logged_in": "2026-10-15 23:43:56 -0300"
-    },
-    "done": true
-  },
-  "ae2wtlib:recipe/wireless_universal_terminal/ae": {
-    "criteria": {
-      "has_wit": "2026-10-15 23:43:56 -0300",
-      "has_wpt": "2026-10-15 23:43:56 -0300"
     },
     "done": true
   },
@@ -123,12 +166,6 @@
     },
     "done": true
   },
-  "ae2wtlib:recipe/wireless_pattern_access_terminal": {
-    "criteria": {
-      "has_wt": "2026-10-15 23:43:56 -0300"
-    },
-    "done": true
-  },
   "herbsandharvest:grant_book_on_first_join": {
     "criteria": {
       "tick": "2026-10-15 23:45:44 -0300"
@@ -141,53 +178,9 @@
     },
     "done": true
   },
-  "ae2wtlib:recipe/wireless_pattern_encoding_terminal": {
-    "criteria": {
-      "has_wt": "2026-10-15 23:43:56 -0300"
-    },
-    "done": true
-  },
-  "ae2wtlib:recipe/wireless_universal_terminal/upgrade_crafting": {
-    "criteria": {
-      "has_wct": "2026-10-15 23:43:56 -0300"
-    },
-    "done": true
-  },
-  "create_enchantment_industry:root": {
-    "criteria": {
-      "0": "2026-10-15 23:43:56 -0300"
-    },
-    "done": true
-  },
   "dungeons_arise:wda_root": {
     "criteria": {
       "WDA": "2026-10-15 23:45:44 -0300"
-    },
-    "done": true
-  },
-  "mffs:grant_book_on_first_join": {
-    "criteria": {
-      "guidebook": "2026-10-15 23:43:55 -0300"
-    },
-    "done": true
-  },
-  "ae2wtlib:recipe/wireless_universal_terminal/upgrade_pattern_encoding": {
-    "criteria": {
-      "has_wpt": "2026-10-15 23:43:56 -0300"
-    },
-    "done": true
-  },
-  "ae2wtlib:recipe/quantum_bridge_card": {
-    "criteria": {
-      "has_wit": "2026-10-15 23:43:56 -0300",
-      "has_wpt": "2026-10-15 23:43:56 -0300",
-      "has_wct": "2026-10-15 23:43:56 -0300"
-    },
-    "done": true
-  },
-  "farmersdelight:main/root": {
-    "criteria": {
-      "seeds": "2026-10-15 23:43:56 -0300"
     },
     "done": true
   },
@@ -203,6 +196,31 @@
     },
     "done": true
   },
+  "betterdungeons:root": {
+    "criteria": {
+      "always": "2026-10-15 23:45:44 -0300"
+    },
+    "done": true
+  },
+  "occultism:occultism/root": {
+    "criteria": {
+      "occultism_present": "2026-10-15 23:45:44 -0300"
+    },
+    "done": true
+  },
+  "the_bumblezone:structures/enter_all_structures": {
+    "criteria": {
+      "in_goliath_honey_fountain": "2026-10-15 23:45:55 -0300",
+      "in_mite_fortress": "2026-10-15 23:45:55 -0300"
+    },
+    "done": false
+  },
+  "biomeswevegone:biomeswevegone/adventure/oh_the_biomes_weve_gone": {
+    "criteria": {
+      "biomeswevegone:sakura_grove": "2026-10-15 23:45:55 -0300"
+    },
+    "done": false
+  },
   "auroral:root": {
     "criteria": {
       "in_cold_biome": "2026-10-15 23:45:55 -0300"
@@ -212,24 +230,6 @@
   "biomeswevegone:biomeswevegone/adventure/root": {
     "criteria": {
       "biomeswevegone:sakura_grove": "2026-10-15 23:45:55 -0300"
-    },
-    "done": true
-  },
-  "betterdungeons:root": {
-    "criteria": {
-      "always": "2026-10-15 23:45:44 -0300"
-    },
-    "done": true
-  },
-  "dysoncubeproject:main/root": {
-    "criteria": {
-      "railejector": "2026-10-15 23:43:56 -0300"
-    },
-    "done": true
-  },
-  "occultism:occultism/root": {
-    "criteria": {
-      "occultism_present": "2026-10-15 23:45:44 -0300"
     },
     "done": true
   },
@@ -244,6 +244,36 @@
       "load_in_world": "2026-10-15 23:45:55 -0300"
     },
     "done": true
+  },
+  "lootr:1chest": {
+    "criteria": {
+      "opened_chest": "2026-10-16 10:10:00 -0300"
+    },
+    "done": true
+  },
+  "biomesoplenty:biomesoplenty/all_biomes": {
+    "criteria": {
+      "prairie": "2026-10-16 10:09:17 -0300"
+    },
+    "done": false
+  },
+  "lootr:social": {
+    "criteria": {
+      "opened_chest": "2026-10-16 10:10:00 -0300"
+    },
+    "done": false
+  },
+  "biomesoplenty:biomesoplenty/root": {
+    "criteria": {
+      "prairie": "2026-10-16 10:09:17 -0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:cherry_grove": "2026-10-16 10:09:39 -0300"
+    },
+    "done": false
   },
   "DataVersion": 3955
 }

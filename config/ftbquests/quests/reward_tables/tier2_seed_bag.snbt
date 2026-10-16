@@ -1,7 +1,7 @@
 {
-	id: "21B1896C13F84C09"
+	id: "0F6A92639D89170E"
 	loot_size: 1
-	order_index: 24
+	order_index: 26
 	rewards: [
 		{ id: "3DDD22FA68A052BF", item: { count: 1, id: "mysticalagriculture:nether_seeds" } }
 		{ id: "7B5DF9EFF33AA3A2", item: { count: 1, id: "mysticalagriculture:nature_seeds" } }

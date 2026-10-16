@@ -1,7 +1,7 @@
 {
 	id: "79C7738D7CEDABD4"
 	loot_size: 1
-	order_index: 32
+	order_index: 34
 	rewards: [
 		{ id: "0A0B1BA016527974", item: { count: 1, id: "mysticalagriculture:iridium_seeds" } }
 		{ id: "64033DA41DA19EE7", item: { count: 1, id: "mysticalagriculture:platinum_seeds" } }

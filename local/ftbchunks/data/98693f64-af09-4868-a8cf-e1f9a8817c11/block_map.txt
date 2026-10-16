@@ -37,6 +37,7 @@
 #A725A7 alltheores:deepslate_uranium_ore
 #BED665 minecraft:diorite
 #80497A minecraft:dirt
+#4FA7D0 minecraft:dirt_path
 #3B0AD1 minecraft:dripstone_block
 #788BE1 astralsorcery:flare_light
 #C56419 biomeswevegone:flowering_orchard_leaves
@@ -62,6 +63,7 @@
 #6194E8 astralsorcery:marble_pillar
 #B80AA2 astralsorcery:marble_raw
 #161808 astralsorcery:marble_stairs
+#618FD5 integrateddynamics:menril_leaves
 #A4FC4B minecraft:mossy_cobblestone
 #F093B4 minecraft:mossy_cobblestone_slab
 #2F738D minecraft:mossy_stone_brick_slab
@@ -96,6 +98,7 @@
 #FC3698 alltheores:salt_ore
 #57E28B railcraft:saltpeter_ore
 #86FC77 minecraft:sand
+#3A9287 minecraft:smooth_stone
 #64F88A minecraft:spruce_slab
 #D9135A minecraft:spruce_stairs
 #B1D22B minecraft:spruce_trapdoor
@@ -119,6 +122,7 @@
 #201B6E biomesoplenty:webbing
 #7A0020 biomeswevegone:white_allium_petal_block
 #522ECF biomeswevegone:white_sakura_leaves
+#17E15D biomeswevegone:wood_blewit_mushroom_block
 #3F1726 xycraft_world:xychorium_ore_stone_blue
 #3FD642 xycraft_world:xychorium_ore_stone_dark
 #B68866 xycraft_world:xychorium_ore_stone_light
