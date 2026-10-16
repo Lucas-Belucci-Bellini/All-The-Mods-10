@@ -30910,3 +30910,4 @@ java.io.FileNotFoundException: ccl__brandonscore:shaders/core/shaders/core/contr
 [16Oct2026 15:06:16.151] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader relics:reveal_panel could not find uniform named ColorModulator in the specified shader program.
 [16Oct2026 15:06:16.151] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader relics:reveal_panel could not find uniform named color in the specified shader program.
 [16Oct2026 15:06:16.229] [Render thread/INFO] [Veil/]: Finished uploading vanilla shaders
+[16Oct2026 15:06:46.073] [Worker-ResourceReload-2/DEBUG] [ModernFix/]: Worker-ResourceReload-2 shutdown
