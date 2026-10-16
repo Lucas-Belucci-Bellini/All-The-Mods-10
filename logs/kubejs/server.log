@@ -9499,3 +9499,4 @@
 [23:35:57] [INFO] server_scripts:Unification/sawing.js#98: Ingredient is not a log tag: {"item":"allthecompressed:cherry_planks_1x"}
 [23:35:58] [INFO] Posted recipe events in 14.454 s
 [23:35:58] [INFO] KubeJS modifications to recipe manager finished in 118.2 ms
+[23:36:02] [INFO] Added 1749 recipes, removed 632 recipes, modified 192 recipes, with 0 failed recipes taking 25.027 s in total
