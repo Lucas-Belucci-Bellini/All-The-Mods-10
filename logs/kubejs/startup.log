@@ -46,3 +46,4 @@
 [15:03:30] [INFO] Loaded 19/19 KubeJS startup scripts in 2.808 s with 0 errors and 0 warnings
 [15:03:35] [INFO] Validated 1761 files in kubejs/assets/ in 4961ms
 [15:03:38] [INFO] Validated 337 files in kubejs/data/ in 2304ms
+[15:04:14] [INFO] Loaded Java class 'java.lang.Integer'
