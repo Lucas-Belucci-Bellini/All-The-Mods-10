@@ -9,8 +9,9 @@
 	id: "5B00676D79306EA2"
 	images: [
 		{
-			corner: true
+			corner: 1b
 			height: 5.0d
+			id: "51EDFD892AE5ADC7"
 			image: "atm:textures/logo.png"
 			rotation: 8.0d
 			width: 5.0d
@@ -18,9 +19,9 @@
 			y: -4.5d
 		}
 		{
-			click: "https://discord.gg/allthemods"
+			click_action: "open_uri:https://discord.gg/allthemods"
 			height: 1.0d
-			hover: ["Join the Discord!"]
+			id: "545BEB32D3AE6CD2"
 			image: "ftbchunks:textures/waypoint_default.png"
 			rotation: 180.0d
 			width: 1.0d
@@ -140,9 +141,9 @@
 		}
 		{
 			id: "49EDAA2F57D3BF1D"
-			tags: ["arr"]
 			invisible: true
 			optional: true
+			tags: ["arr"]
 			tasks: [
 				{
 					id: "2C816285392535F0"

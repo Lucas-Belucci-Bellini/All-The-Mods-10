@@ -9,6 +9,7 @@
 	id: "18A429E7F56AF5A9"
 	images: [{
 		height: 3.0d
+		id: "6629B04AC0A62E01"
 		image: "atm:textures/questpics/bounty.png"
 		rotation: 0.0d
 		width: 12.0d
@@ -1258,9 +1259,9 @@
 		}
 		{
 			id: "08B60D8A25008CCC"
-			tags: ["arr"]
 			invisible: true
 			optional: true
+			tags: ["arr"]
 			tasks: [
 				{
 					id: "00CBF98DE4E9CC90"

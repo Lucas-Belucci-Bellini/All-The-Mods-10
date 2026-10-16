@@ -11,6 +11,7 @@
 	images: [
 		{
 			height: 3.0d
+			id: "237AD79A5A70D1FF"
 			image: "atm:textures/questpics/cataclysm/cataclysm_title.png"
 			rotation: 0.0d
 			width: 9.354545454545455d
@@ -19,6 +20,7 @@
 		}
 		{
 			height: 1.0d
+			id: "27D7AD2236BF6350"
 			image: "atm:textures/questpics/cataclysm/cataclysm_title_guardian.png"
 			rotation: 45.0d
 			width: 5.593406593406593d
@@ -27,6 +29,7 @@
 		}
 		{
 			height: 0.7d
+			id: "1523A8F0E3B39F06"
 			image: "atm:textures/questpics/cataclysm/cataclysm_bar_guardian2.png"
 			order: 1
 			rotation: 45.0d
@@ -36,6 +39,7 @@
 		}
 		{
 			height: 1.0d
+			id: "4B46AF71F051505F"
 			image: "atm:textures/questpics/cataclysm/cataclysm_title_ignis.png"
 			rotation: 90.0d
 			width: 1.6272727272727272d
@@ -44,6 +48,7 @@
 		}
 		{
 			height: 0.4375d
+			id: "3AE291D97305273B"
 			image: "atm:textures/questpics/cataclysm/cataclysm_bar_ignis2.png"
 			rotation: 90.0d
 			width: 7.0d
@@ -52,6 +57,7 @@
 		}
 		{
 			height: 1.0d
+			id: "0919EF7228834B14"
 			image: "atm:textures/questpics/cataclysm/cataclysm_title_monstrosity.png"
 			rotation: -45.0d
 			width: 6.990909090909091d
@@ -60,6 +66,7 @@
 		}
 		{
 			height: 0.7d
+			id: "662F7D5F2F0D2423"
 			image: "atm:textures/questpics/cataclysm/cataclysm_bar_monstrosity2.png"
 			rotation: -45.0d
 			width: 11.0d
@@ -68,6 +75,7 @@
 		}
 		{
 			height: 1.0d
+			id: "05D06453994DA7E1"
 			image: "atm:textures/questpics/cataclysm/cataclysm_title_habinger.png"
 			rotation: 0.0d
 			width: 4.290909090909091d
@@ -76,6 +84,7 @@
 		}
 		{
 			height: 1.0d
+			id: "6C800DCC24A62F7A"
 			image: "atm:textures/questpics/cataclysm/cataclysm_bar_harbinger2.png"
 			rotation: 0.0d
 			width: 7.0d
@@ -84,6 +93,7 @@
 		}
 		{
 			height: 1.0d
+			id: "621F70609EC43473"
 			image: "atm:textures/questpics/cataclysm/cataclysm_title_remnant.png"
 			rotation: 45.0d
 			width: 6.208791208791209d
@@ -92,6 +102,7 @@
 		}
 		{
 			height: 1.0d
+			id: "23638A8B77873523"
 			image: "atm:textures/questpics/cataclysm/cataclysm_bar_remnant2.png"
 			rotation: 45.0d
 			width: 9.0d
@@ -100,6 +111,7 @@
 		}
 		{
 			height: 1.0d
+			id: "64B341764D93B033"
 			image: "atm:textures/questpics/cataclysm/cataclysm_title_maledictus.png"
 			rotation: -90.0d
 			width: 3.978021978021978d
@@ -108,6 +120,7 @@
 		}
 		{
 			height: 0.875d
+			id: "0C7E449F5BEB356A"
 			image: "atm:textures/questpics/cataclysm/cataclysm_bar_maledictus2.png"
 			rotation: -90.0d
 			width: 7.0d
@@ -116,6 +129,7 @@
 		}
 		{
 			height: 1.0d
+			id: "2A77DC6EE3E080D0"
 			image: "atm:textures/questpics/cataclysm/cataclysm_title_leviathan.png"
 			rotation: -45.0d
 			width: 5.186813186813187d
@@ -124,6 +138,7 @@
 		}
 		{
 			height: 0.5d
+			id: "4CE5B51DF34A3050"
 			image: "atm:textures/questpics/cataclysm/cataclysm_bar_leviathan2.png"
 			rotation: -45.0d
 			width: 8.0d
@@ -132,6 +147,7 @@
 		}
 		{
 			height: 1.0d
+			id: "32611B24084CB56F"
 			image: "atm:textures/questpics/cataclysm/cataclysm_title_items.png"
 			rotation: 0.0d
 			width: 7.010989010989011d
@@ -140,6 +156,7 @@
 		}
 		{
 			height: 2.0d
+			id: "188ED0BBD721E120"
 			image: "atm:textures/questpics/cataclysm/cataclysm_guardiuan.png"
 			rotation: 0.0d
 			width: 2.0068846815834767d
@@ -148,6 +165,7 @@
 		}
 		{
 			height: 2.0d
+			id: "0D0DFD3190928EC3"
 			image: "atm:textures/questpics/cataclysm/cataclysm_ignis.png"
 			rotation: 0.0d
 			width: 2.1993865030674846d
@@ -156,6 +174,7 @@
 		}
 		{
 			height: 2.0d
+			id: "1968A2FB7E8E8A5D"
 			image: "atm:textures/questpics/cataclysm/cataclysm_monstrosity.png"
 			rotation: 0.0d
 			width: 1.9820359281437125d
@@ -164,6 +183,7 @@
 		}
 		{
 			height: 2.0d
+			id: "37274C8972B999E2"
 			image: "atm:textures/questpics/cataclysm/cataclysm_harbinger.png"
 			rotation: 0.0d
 			width: 2.0965517241379312d
@@ -172,6 +192,7 @@
 		}
 		{
 			height: 2.0d
+			id: "09EC0877AFD6DD27"
 			image: "atm:textures/questpics/cataclysm/cataclysm_remnant.png"
 			rotation: 0.0d
 			width: 2.0128205128205128d
@@ -180,6 +201,7 @@
 		}
 		{
 			height: 2.0d
+			id: "56FFFBB5FD30F0A1"
 			image: "atm:textures/questpics/cataclysm/cataclysm_maledictus.png"
 			rotation: 0.0d
 			width: 2.6625766871165646d
@@ -188,6 +210,7 @@
 		}
 		{
 			height: 2.0d
+			id: "6E92E60DE6CB358A"
 			image: "atm:textures/questpics/cataclysm/cataclysm_leviathan.png"
 			rotation: 0.0d
 			width: 2.380859375d
@@ -196,6 +219,7 @@
 		}
 		{
 			height: 2.0d
+			id: "73D3FF1E44F11379"
 			image: "atm:textures/questpics/cataclysm/cataclysm_citadel.png"
 			rotation: 0.0d
 			width: 4.01673640167364d
@@ -204,6 +228,7 @@
 		}
 		{
 			height: 2.0d
+			id: "01C4B97027A73939"
 			image: "atm:textures/questpics/cataclysm/cataclysm_arena.png"
 			rotation: 0.0d
 			width: 4.0021097046413505d
@@ -212,6 +237,7 @@
 		}
 		{
 			height: 2.0d
+			id: "5C41D307E6ADD974"
 			image: "atm:textures/questpics/cataclysm/cataclysm_factory.png"
 			rotation: 0.0d
 			width: 3.983402489626556d
@@ -220,6 +246,7 @@
 		}
 		{
 			height: 2.0d
+			id: "0FCC9325E496563D"
 			image: "atm:textures/questpics/cataclysm/cataclysm_blacksmith.png"
 			rotation: 0.0d
 			width: 4.01673640167364d
@@ -228,6 +255,7 @@
 		}
 		{
 			height: 2.0d
+			id: "6B09FCA8E4A71F6D"
 			image: "atm:textures/questpics/cataclysm/cataclysm_pyramid.png"
 			rotation: 0.0d
 			width: 4.0d
@@ -236,6 +264,7 @@
 		}
 		{
 			height: 2.0d
+			id: "572DFCA71E73C9E9"
 			image: "atm:textures/questpics/cataclysm/cataclysm_prison.png"
 			rotation: 0.0d
 			width: 4.01673640167364d
@@ -244,6 +273,7 @@
 		}
 		{
 			height: 2.0d
+			id: "5803335E8E7C8E7A"
 			image: "atm:textures/questpics/cataclysm/cataclysm_city.png"
 			rotation: 0.0d
 			width: 3.871244635193133d
@@ -252,6 +282,7 @@
 		}
 		{
 			height: 2.5d
+			id: "78A012BA5F32FF65"
 			image: "atm:textures/questpics/cataclysm/cataclysm_frame.png"
 			rotation: 0.0d
 			width: 4.7d
@@ -260,6 +291,7 @@
 		}
 		{
 			height: 2.5d
+			id: "2D8AB8758EE91025"
 			image: "atm:textures/questpics/cataclysm/cataclysm_frame.png"
 			rotation: 0.0d
 			width: 4.75d
@@ -268,6 +300,7 @@
 		}
 		{
 			height: 2.5d
+			id: "31946F9F14B6B6B7"
 			image: "atm:textures/questpics/cataclysm/cataclysm_frame.png"
 			rotation: 0.0d
 			width: 4.75d
@@ -276,6 +309,7 @@
 		}
 		{
 			height: 2.5d
+			id: "7DA7F35172645D5C"
 			image: "atm:textures/questpics/cataclysm/cataclysm_frame.png"
 			rotation: 0.0d
 			width: 4.7d
@@ -284,6 +318,7 @@
 		}
 		{
 			height: 2.5d
+			id: "26A69215B93F1D97"
 			image: "atm:textures/questpics/cataclysm/cataclysm_frame.png"
 			rotation: 0.0d
 			width: 4.5d
@@ -292,6 +327,7 @@
 		}
 		{
 			height: 2.5d
+			id: "7513792D058AB6E8"
 			image: "atm:textures/questpics/cataclysm/cataclysm_frame.png"
 			rotation: 0.0d
 			width: 4.75d
@@ -300,6 +336,7 @@
 		}
 		{
 			height: 2.5d
+			id: "7A52C95681849CEB"
 			image: "atm:textures/questpics/cataclysm/cataclysm_frame.png"
 			rotation: 0.0d
 			width: 4.75d
@@ -308,6 +345,7 @@
 		}
 		{
 			height: 2.5d
+			id: "237A9C34BD82CD72"
 			image: "atm:textures/questpics/cataclysm/cataclysm_frame.png"
 			rotation: 0.0d
 			width: 2.8d
@@ -316,6 +354,7 @@
 		}
 		{
 			height: 2.5d
+			id: "7DD31B9AED552710"
 			image: "atm:textures/questpics/cataclysm/cataclysm_frame.png"
 			rotation: 0.0d
 			width: 2.9d
@@ -324,6 +363,7 @@
 		}
 		{
 			height: 2.5d
+			id: "32624C4F3266A3BC"
 			image: "atm:textures/questpics/cataclysm/cataclysm_frame.png"
 			rotation: 0.0d
 			width: 2.35d
@@ -332,6 +372,7 @@
 		}
 		{
 			height: 2.5d
+			id: "7E5BD1B8CDB971EA"
 			image: "atm:textures/questpics/cataclysm/cataclysm_frame.png"
 			rotation: 0.0d
 			width: 2.35d
@@ -340,6 +381,7 @@
 		}
 		{
 			height: 2.5d
+			id: "7AE491DFFBD5EE01"
 			image: "atm:textures/questpics/cataclysm/cataclysm_frame.png"
 			rotation: 0.0d
 			width: 2.35d
@@ -348,6 +390,7 @@
 		}
 		{
 			height: 2.5d
+			id: "025DAB1545D84481"
 			image: "atm:textures/questpics/cataclysm/cataclysm_frame.png"
 			rotation: 0.0d
 			width: 2.5d
@@ -356,6 +399,7 @@
 		}
 		{
 			height: 2.5d
+			id: "2C94CCE44609C1BC"
 			image: "atm:textures/questpics/cataclysm/cataclysm_frame.png"
 			rotation: 0.0d
 			width: 2.4d
@@ -364,6 +408,7 @@
 		}
 		{
 			height: 1.0d
+			id: "67163471C4610C44"
 			image: "cataclysm:textures/gui/boss_bar/scylla_bar_overlay.png"
 			rotation: 0.0d
 			width: 8.0d
@@ -372,6 +417,7 @@
 		}
 		{
 			height: 1.0d
+			id: "22E10C070C4C2E90"
 			image: "atm:textures/questpics/cataclysm/cataclysm_title_scylla.png"
 			rotation: 0.0d
 			width: 2.0d
@@ -380,6 +426,7 @@
 		}
 		{
 			height: 2.0d
+			id: "2814A5A687F5B732"
 			image: "atm:textures/questpics/cataclysm/cataclysm_acropolis.png"
 			rotation: 0.0d
 			width: 4.0d
@@ -388,6 +435,7 @@
 		}
 		{
 			height: 2.0d
+			id: "1F397AA3BB890623"
 			image: "atm:textures/questpics/cataclysm/cataclysm_scylla.png"
 			rotation: 0.0d
 			width: 2.0d
@@ -396,6 +444,7 @@
 		}
 		{
 			height: 2.5d
+			id: "43B4F3E2FD45C05C"
 			image: "atm:textures/questpics/cataclysm/cataclysm_frame.png"
 			rotation: 0.0d
 			width: 2.4d
@@ -404,6 +453,7 @@
 		}
 		{
 			height: 2.5d
+			id: "3D600A7B1A228F7D"
 			image: "atm:textures/questpics/cataclysm/cataclysm_frame.png"
 			rotation: 0.0d
 			width: 4.5d
@@ -411,7 +461,7 @@
 			y: -11.0d
 		}
 	]
-	order_index: 2
+	order_index: 3
 	progression_mode: "flexible"
 	quest_links: [ ]
 	quests: [
@@ -2655,10 +2705,10 @@
 		}
 		{
 			id: "00307A898A639191"
-			tags: ["arr"]
 			invisible: true
 			optional: true
 			shape: "circle"
+			tags: ["arr"]
 			tasks: [
 				{
 					id: "0303CDB18BBD9575"

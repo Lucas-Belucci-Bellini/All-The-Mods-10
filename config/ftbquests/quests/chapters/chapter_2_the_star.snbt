@@ -3809,10 +3809,10 @@
 		}
 		{
 			id: "31B0267C47DB9D98"
-			tags: ["arr"]
 			invisible: true
 			optional: true
 			shape: "circle"
+			tags: ["arr"]
 			tasks: [
 				{
 					id: "662F6B4EF078E3A2"

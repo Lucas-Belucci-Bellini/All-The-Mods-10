@@ -1,0 +1,9 @@
+#7E7 biomeswevegone:allium_shrubland
+#460 minecraft:cherry_grove
+#0BC biomeswevegone:orchard
+#4FE biomesoplenty:prairie
+#015 biomeswevegone:prairie
+#5FF minecraft:river
+#1AC biomeswevegone:sakura_grove
+#14C biomesoplenty:spider_nest
+#536 biomeswevegone:temperate_grove

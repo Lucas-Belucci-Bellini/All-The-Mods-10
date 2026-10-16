@@ -11,6 +11,7 @@
 	images: [
 		{
 			height: 2.0d
+			id: "30A15FA708217305"
 			image: "atm:textures/questpics/mek/mek_title_reactor.png"
 			rotation: 0.0d
 			width: 11.0d
@@ -19,6 +20,7 @@
 		}
 		{
 			height: 1.0d
+			id: "631286DB43FA3243"
 			image: "atm:textures/questpics/mek/mek_title_qio.png"
 			rotation: 0.0d
 			width: 1.5d
@@ -27,6 +29,7 @@
 		}
 		{
 			height: 1.0d
+			id: "7CE2B69C6F261DD3"
 			image: "atm:textures/questpics/mek/mek_title_matrix.png"
 			rotation: 0.0d
 			width: 6.0d
@@ -35,6 +38,7 @@
 		}
 		{
 			height: 1.5d
+			id: "553B011DF8769769"
 			image: "atm:textures/questpics/mek/mek_title_fission.png"
 			rotation: 0.0d
 			width: 9.0d
@@ -43,6 +47,7 @@
 		}
 		{
 			height: 1.0d
+			id: "4C629D9B820026F8"
 			image: "atm:textures/questpics/mek/mek_title_turbine.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -51,6 +56,7 @@
 		}
 		{
 			height: 1.0d
+			id: "3AC5B0755562325C"
 			image: "atm:textures/questpics/mek/mek_title_boiler.png"
 			rotation: 0.0d
 			width: 7.0d
@@ -59,6 +65,7 @@
 		}
 		{
 			height: 2.0d
+			id: "4B5ABAC96E014A77"
 			image: "atm:textures/questpics/mek/mek_title_sps.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -67,6 +74,7 @@
 		}
 		{
 			height: 1.0d
+			id: "26516540DC6A5BEF"
 			image: "atm:textures/questpics/mek/mek_title_fusion.png"
 			rotation: 0.0d
 			width: 7.0d
@@ -75,6 +83,7 @@
 		}
 		{
 			height: 1.0d
+			id: "51F487CAEBEADB2D"
 			image: "atm:textures/questpics/mek/mek_title_module.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -83,6 +92,7 @@
 		}
 		{
 			height: 1.0d
+			id: "37A7E744ECCADE2B"
 			image: "atm:textures/questpics/mek/mek_title_suit.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -91,6 +101,7 @@
 		}
 		{
 			height: 3.5d
+			id: "2B9AE6EBD94D73C1"
 			image: "atm:textures/questpics/mek/mek_fission4.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -99,6 +110,7 @@
 		}
 		{
 			height: 4.0d
+			id: "61622C9612E721A0"
 			image: "atm:textures/questpics/mek/mek_turbine7.png"
 			rotation: 0.0d
 			width: 3.5d
@@ -107,6 +119,7 @@
 		}
 		{
 			height: 3.0d
+			id: "3DD04E3857252E1F"
 			image: "atm:textures/questpics/mek/mek_boiler4.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -115,6 +128,7 @@
 		}
 		{
 			height: 3.0d
+			id: "69EEC4817E3E8875"
 			image: "atm:textures/questpics/mek/mek_fusion5.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -123,6 +137,7 @@
 		}
 		{
 			height: 4.0d
+			id: "3262EB1F7FC8A724"
 			image: "atm:textures/questpics/mek/mek_sps7.png"
 			rotation: 0.0d
 			width: 4.0d
@@ -131,6 +146,7 @@
 		}
 		{
 			height: 1.0d
+			id: "46267354881D1940"
 			image: "atm:textures/questpics/mek/mek_matrix4.png"
 			rotation: 0.0d
 			width: 1.0d
@@ -139,6 +155,7 @@
 		}
 		{
 			height: 1.0d
+			id: "2F095BCFFB1FCF27"
 			image: "atm:textures/questpics/mek/mek_qio.png"
 			rotation: 0.0d
 			width: 1.0d
@@ -147,6 +164,7 @@
 		}
 		{
 			height: 1.5d
+			id: "7708EB880E9253E9"
 			image: "atm:textures/questpics/mek/mek_title_antimatter.png"
 			rotation: 0.0d
 			width: 7.0d
@@ -154,7 +172,7 @@
 			y: -23.0d
 		}
 	]
-	order_index: 6
+	order_index: 7
 	progression_mode: "flexible"
 	quest_links: [ ]
 	quests: [
@@ -193,7 +211,7 @@
 				{
 					count: 2L
 					id: "63A070075644110C"
-					item: { count: 2, id: "minecraft:repeater" }
+					item: { count: 1, id: "minecraft:repeater" }
 					type: "item"
 				}
 			]
@@ -202,10 +220,10 @@
 		}
 		{
 			id: "066F78936C8F943B"
-			tags: ["arr"]
 			invisible: true
 			optional: true
 			shape: "circle"
+			tags: ["arr"]
 			tasks: [
 				{
 					id: "59F0226D83026397"
@@ -538,7 +556,7 @@
 				{
 					count: 4L
 					id: "3917421D27C651E4"
-					item: { count: 4, id: "mekanismgenerators:fission_reactor_port" }
+					item: { count: 1, id: "mekanismgenerators:fission_reactor_port" }
 					type: "item"
 				}
 				{
@@ -647,7 +665,7 @@
 				{
 					count: 33L
 					id: "0BE623827F600CC7"
-					item: { count: 33, id: "mekanism:thermal_evaporation_block" }
+					item: { count: 1, id: "mekanism:thermal_evaporation_block" }
 					type: "item"
 				}
 				{
@@ -1385,13 +1403,13 @@
 				{
 					count: 32L
 					id: "517FC41DE11BB012"
-					item: { count: 32, id: "mekanism:induction_casing" }
+					item: { count: 1, id: "mekanism:induction_casing" }
 					type: "item"
 				}
 				{
 					count: 2L
 					id: "5CD030B6B8A747B6"
-					item: { count: 2, id: "mekanism:induction_port" }
+					item: { count: 1, id: "mekanism:induction_port" }
 					type: "item"
 				}
 			]
@@ -1528,25 +1546,25 @@
 				{
 					count: 64L
 					id: "35D437CE90158B46"
-					item: { count: 64, id: "mekanism:structural_glass" }
+					item: { count: 1, id: "mekanism:structural_glass" }
 					type: "item"
 				}
 				{
 					count: 58L
 					id: "7A7018026E464DF3"
-					item: { count: 58, id: "mekanism:structural_glass" }
+					item: { count: 1, id: "mekanism:structural_glass" }
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "7D8EB15A3DB21BFC"
-					item: { count: 4, id: "mekanism:sps_port" }
+					item: { count: 1, id: "mekanism:sps_port" }
 					type: "item"
 				}
 				{
 					count: 2L
 					id: "21E33C57C5913965"
-					item: { count: 2, id: "mekanism:supercharged_coil" }
+					item: { count: 1, id: "mekanism:supercharged_coil" }
 					type: "item"
 				}
 			]
@@ -1859,7 +1877,7 @@
 				{
 					count: 33L
 					id: "555D6EE9775EC7FA"
-					item: { count: 33, id: "mekanism:thermal_evaporation_block" }
+					item: { count: 1, id: "mekanism:thermal_evaporation_block" }
 					type: "item"
 				}
 				{
@@ -2058,7 +2076,7 @@
 				{
 					count: 3L
 					id: "36956376F56A076A"
-					item: { count: 2, id: "mekanismgenerators:fusion_reactor_port" }
+					item: { count: 1, id: "mekanismgenerators:fusion_reactor_port" }
 					type: "item"
 				}
 			]
@@ -2094,7 +2112,7 @@
 				{
 					count: 2L
 					id: "4ADBCE26247048B5"
-					item: { count: 2, id: "mekanismgenerators:turbine_valve" }
+					item: { count: 1, id: "mekanismgenerators:turbine_valve" }
 					type: "item"
 				}
 				{
@@ -2135,13 +2153,13 @@
 				{
 					count: 2L
 					id: "3C99BB935A826521"
-					item: { count: 2, id: "mekanismgenerators:turbine_rotor" }
+					item: { count: 1, id: "mekanismgenerators:turbine_rotor" }
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "095CA8A85AA2C79A"
-					item: { count: 4, id: "mekanismgenerators:turbine_blade" }
+					item: { count: 1, id: "mekanismgenerators:turbine_blade" }
 					type: "item"
 				}
 				{
@@ -2314,7 +2332,7 @@
 				{
 					count: 12L
 					id: "79CC7DCAAD8B6141"
-					item: { count: 12, id: "mekanismgenerators:turbine_vent" }
+					item: { count: 1, id: "mekanismgenerators:turbine_vent" }
 					type: "item"
 				}
 			]
@@ -2414,13 +2432,13 @@
 				{
 					count: 6L
 					id: "492B866023128B7B"
-					item: { count: 6, id: "mekanism:structural_glass" }
+					item: { count: 1, id: "mekanism:structural_glass" }
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "15E1D36E2CE6FA0D"
-					item: { count: 4, id: "mekanism:boiler_valve" }
+					item: { count: 1, id: "mekanism:boiler_valve" }
 					type: "item"
 				}
 				{
@@ -2454,7 +2472,7 @@
 			tasks: [{
 				count: 4L
 				id: "2D6A5B51E7B9DD9F"
-				item: { count: 2, id: "mekanism:boiler_valve" }
+				item: { count: 1, id: "mekanism:boiler_valve" }
 				type: "item"
 			}]
 			x: 15.0d

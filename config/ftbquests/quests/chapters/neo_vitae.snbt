@@ -880,7 +880,7 @@
 				}
 				{
 					id: "18411D93F2A1EFAD"
-					item: { count: 1, id: "neovitae:ritual_diviner_dusk" }
+					item: { count: 1, id: "neovitae:ritual_diviner_tenebrae" }
 					type: "item"
 				}
 			]
@@ -1725,10 +1725,10 @@
 		}
 		{
 			id: "538E28637FF76912"
-			tags: ["arr"]
 			invisible: true
 			optional: true
 			shape: "circle"
+			tags: ["arr"]
 			tasks: [
 				{
 					id: "6D5BE02E9FAED45C"

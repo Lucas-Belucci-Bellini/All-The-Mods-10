@@ -1,0 +1,46 @@
+Detected that Windows reported recent critical or error events in the Application log,
+which can indicate that a process (including the Minecraft JVM) terminated unexpectedly.
+Scope: Application log; Levels: Error & Critical; Window: last ~15 seconds.
+
+If no java.exe (or related JVM processes) are listed below, you can disregard this message.
+To inspect these events manually:
+  1) Press Win+R, type "eventvwr.msc", press Enter.
+  2) Open "Windows Logs" → "Application".
+  3) Sort by Date and look for entries with Level = Error or Critical near the crash time.
+
+-----------------------
+Time: 2026-10-15 23:46:45.450 BRT
+Source: Application Error
+Event ID: 1000
+Level: Error
+
+Message:
+  Nome do aplicativo com falha: javaw.exe, versão: 21.0.12.1, carimbo de data/hora: 0x9c5f62de
+  Nome do módulo com falha: lwjgl.dll, versão: 0.0.0.0, carimbo de data/hora: 0x6505b09b
+  Código de exceção: 0xc0000005
+  Deslocamento de falha: 0x00000000000010c5
+  ID do processo com falha: 0x3B54
+  Hora de início do aplicativo com falha: 0x1DD5D1620EAC735
+  Caminho do aplicativo com falha: C:\Users\SpartanGamerBR\curseforge\minecraft\Install\java\java-runtime-delta\bin\javaw.exe
+  Caminho do módulo com falha: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\essential\lwjgl3-natives\3.3.3+5\x64\lwjgl.dll
+  ID do relatório: 45f48073-e546-40e7-ac85-b48fab878690
+  Nome completo do pacote com falha: 
+  ID do aplicativo relativo ao pacote com falha:
+
+
+Details:
+  - AppName: javaw.exe
+  - AppVersion: 21.0.12.1
+  - AppTimeStamp: 9c5f62de
+  - ModuleName: lwjgl.dll
+  - ModuleVersion: 0.0.0.0
+  - ModuleTimeStamp: 6505b09b
+  - ExceptionCode: c0000005
+  - FaultingOffset: 00000000000010c5
+  - Process ID: 15188 [0x3b54]
+  - ProcessCreationTime: 0x1dd5d1620eac735
+  - AppPath: C:\Users\SpartanGamerBR\curseforge\minecraft\Install\java\java-runtime-delta\bin\javaw.exe
+  - ModulePath: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\essential\lwjgl3-natives\3.3.3+5\x64\lwjgl.dll
+  - IntegratorReportId: 45f48073-e546-40e7-ac85-b48fab878690
+-----------------------
+

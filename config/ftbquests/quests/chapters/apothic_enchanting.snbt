@@ -1935,10 +1935,10 @@
 		}
 		{
 			id: "77D3C3CA4EE2FBD1"
-			tags: ["arr"]
 			invisible: true
 			optional: true
 			shape: "circle"
+			tags: ["arr"]
 			tasks: [
 				{
 					id: "78DE1D8A390257E4"

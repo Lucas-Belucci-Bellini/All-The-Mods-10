@@ -83,3 +83,133 @@ java.lang.NullPointerException: Cannot invoke "com.google.gson.JsonElement.getAs
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[?:?]
 	at java.base/java.lang.Thread.run(Unknown Source) [?:?]
 [23:33:39] [Render thread/INFO] [ColorPalette] Color palette file generated for 0 blockstates in 0ms for: Default Palette
+[23:42:41] [Render thread/INFO] [PlayerConnectHandler] onDisconnect: world is null
+[23:42:43] [Server thread/INFO] [NeoForgeConfig] Loading JourneyMap Forge Configs
+[23:43:11] [Server thread/INFO] [PluginHelper] Found @JourneyMapPlugin: journeymap.api.plugins.LoadedChunkOverlayPlugin
+[23:43:30] [Server thread/INFO] [PluginHelper] Initialized IJourneyMapPlugin as:journeymap.api.plugins.LoadedChunkOverlayPlugin: for:journeymap_chunk_overlay
+[23:43:30] [Server thread/INFO] [PropertiesBase] global (FirstLoaded) Setting config file to version "6.0.9": journeymap.server.global.config
+[23:43:30] [Server thread/INFO] [PropertiesBase] global (Valid) Creating config file: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\server\6.0\journeymap.server.global.config
+[23:43:30] [Server thread/INFO] [PropertiesBase] default (FirstLoaded) Setting config file to version "6.0.9": journeymap.server.default.config
+[23:43:30] [Server thread/INFO] [PropertiesBase] default (Valid) Creating config file: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\server\6.0\journeymap.server.default.config
+[23:43:30] [Server thread/INFO] [PropertiesBase] minecraft~overworld (Valid) Creating config file: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\server\6.0\journeymap.server.minecraft~overworld.config
+[23:43:30] [Server thread/INFO] [PropertiesBase] ad_astra~mars (Valid) Creating config file: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\server\6.0\journeymap.server.ad_astra~mars.config
+[23:43:30] [Server thread/INFO] [PropertiesBase] the_bumblezone~the_bumblezone (Valid) Creating config file: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\server\6.0\journeymap.server.the_bumblezone~the_bumblezone.config
+[23:43:30] [Server thread/INFO] [PropertiesBase] ad_astra~venus_orbit (Valid) Creating config file: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\server\6.0\journeymap.server.ad_astra~venus_orbit.config
+[23:43:30] [Server thread/INFO] [PropertiesBase] twilightforest~twilight_forest (Valid) Creating config file: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\server\6.0\journeymap.server.twilightforest~twilight_forest.config
+[23:43:30] [Server thread/INFO] [PropertiesBase] irons_spellbooks~pocket_dimension (Valid) Creating config file: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\server\6.0\journeymap.server.irons_spellbooks~pocket_dimension.config
+[23:43:30] [Server thread/INFO] [PropertiesBase] ad_astra~moon_orbit (Valid) Creating config file: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\server\6.0\journeymap.server.ad_astra~moon_orbit.config
+[23:43:30] [Server thread/INFO] [PropertiesBase] iceandfire~dread_land (Valid) Creating config file: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\server\6.0\journeymap.server.iceandfire~dread_land.config
+[23:43:31] [Server thread/INFO] [PropertiesBase] allthemodium~mining (Valid) Creating config file: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\server\6.0\journeymap.server.allthemodium~mining.config
+[23:43:31] [Server thread/INFO] [PropertiesBase] aether~the_aether (Valid) Creating config file: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\server\6.0\journeymap.server.aether~the_aether.config
+[23:43:31] [Server thread/INFO] [PropertiesBase] ad_astra~glacio_orbit (Valid) Creating config file: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\server\6.0\journeymap.server.ad_astra~glacio_orbit.config
+[23:43:31] [Server thread/INFO] [PropertiesBase] allthemodium~the_other (Valid) Creating config file: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\server\6.0\journeymap.server.allthemodium~the_other.config
+[23:43:31] [Server thread/INFO] [PropertiesBase] ad_astra~glacio (Valid) Creating config file: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\server\6.0\journeymap.server.ad_astra~glacio.config
+[23:43:31] [Server thread/INFO] [PropertiesBase] ad_astra~mercury_orbit (Valid) Creating config file: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\server\6.0\journeymap.server.ad_astra~mercury_orbit.config
+[23:43:31] [Server thread/INFO] [PropertiesBase] neovitae~dungeon (Valid) Creating config file: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\server\6.0\journeymap.server.neovitae~dungeon.config
+[23:43:31] [Server thread/INFO] [PropertiesBase] ad_astra~mercury (Valid) Creating config file: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\server\6.0\journeymap.server.ad_astra~mercury.config
+[23:43:31] [Server thread/INFO] [PropertiesBase] ad_astra~moon (Valid) Creating config file: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\server\6.0\journeymap.server.ad_astra~moon.config
+[23:43:31] [Server thread/INFO] [PropertiesBase] compactmachines~compact_world (Valid) Creating config file: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\server\6.0\journeymap.server.compactmachines~compact_world.config
+[23:43:31] [Server thread/INFO] [PropertiesBase] ad_astra~mars_orbit (Valid) Creating config file: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\server\6.0\journeymap.server.ad_astra~mars_orbit.config
+[23:43:31] [Server thread/INFO] [PropertiesBase] eternal_starlight~starlight (Valid) Creating config file: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\server\6.0\journeymap.server.eternal_starlight~starlight.config
+[23:43:31] [Server thread/INFO] [PropertiesBase] minecraft~the_nether (Valid) Creating config file: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\server\6.0\journeymap.server.minecraft~the_nether.config
+[23:43:31] [Server thread/INFO] [PropertiesBase] minecraft~the_end (Valid) Creating config file: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\server\6.0\journeymap.server.minecraft~the_end.config
+[23:43:31] [Server thread/INFO] [PropertiesBase] deeperdarker~otherside (Valid) Creating config file: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\server\6.0\journeymap.server.deeperdarker~otherside.config
+[23:43:31] [Server thread/INFO] [PropertiesBase] allthemodium~the_beyond (Valid) Creating config file: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\server\6.0\journeymap.server.allthemodium~the_beyond.config
+[23:43:31] [Server thread/INFO] [PropertiesBase] mahoutsukai~reality_marble (Valid) Creating config file: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\server\6.0\journeymap.server.mahoutsukai~reality_marble.config
+[23:43:31] [Server thread/INFO] [PropertiesBase] undergarden~undergarden (Valid) Creating config file: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\server\6.0\journeymap.server.undergarden~undergarden.config
+[23:43:31] [Server thread/INFO] [PropertiesBase] ad_astra~venus (Valid) Creating config file: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\server\6.0\journeymap.server.ad_astra~venus.config
+[23:43:31] [Server thread/INFO] [PropertiesBase] ad_astra~earth_orbit (Valid) Creating config file: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\server\6.0\journeymap.server.ad_astra~earth_orbit.config
+[23:43:31] [Server thread/INFO] [PropertiesBase] ae2~spatial_storage (Valid) Creating config file: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\server\6.0\journeymap.server.ae2~spatial_storage.config
+[23:43:44] [Render thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): optionsManagerViewed=null
+[23:43:44] [Render thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): splashViewed=null
+[23:43:44] [Render thread/INFO] [WaypointGroupStore] Loaded 0 waypoint groups from disk.
+[23:43:44] [Render thread/INFO] [WaypointStore] Loaded 0 waypoints from disk.
+[23:43:44] [Render thread/INFO] [LegacyWaypointFileMigrator] 0 Legacy waypoints found that need to be migrated and backed up.
+[23:43:44] [Render thread/INFO] [ColorPalette] Color palette file generated for 0 blockstates in 0ms for: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\colorpalette.json
+[23:43:44] [Render thread/INFO] [ColorPalette] Color palette file generated for 0 blockstates in 0ms for: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\data\sp\Gustavo farms aura + ego\colorpalette.json
+[23:43:44] [Render thread/INFO] [JourneymapClient] Mapping started in C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\data\sp\Gustavo farms aura + ego\overworld. Memory: 7088MB total, 2949MB free 
+[23:43:44] [Render thread/INFO] [JMChunkCache] JMChunkCache: opened at C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\data\sp\Gustavo farms aura + ego\overworld\chunk_cache
+[23:43:44] [Render thread/INFO] [WaypointHandler] WaypointBackend selected: Client (was=null, shouldBeRemote=false, isJMServer=false, serverManagedWP=false, isServerManagedWaypointConnection=false, hasSingleplayerServer=true)
+[23:43:56] [Server thread/INFO] [HandshakePacket] JourneyMap client version for Spartan_Gamer_BR: 6.0.9 (server version: 6.0.9)
+[23:45:33] [Render thread/INFO] [InternalStateHandler] Connection initiated with Journeymap Server: true
+[23:45:33] [Render thread/INFO] [WaypointHandler] WaypointBackend selected: Server (was=Client, shouldBeRemote=true, isJMServer=true, serverManagedWP=true, isServerManagedWaypointConnection=true, hasSingleplayerServer=true)
+[23:45:33] [Render thread/INFO] [WaypointGroupStore] Loaded 0 waypoint groups from disk.
+[23:45:33] [Render thread/INFO] [LegacyWaypointFileMigrator] 0 Legacy waypoints found that need to be migrated and backed up.
+[23:45:33] [Render thread/INFO] [WaypointHandler] WaypointBackend selected: Server (was=null, shouldBeRemote=true, isJMServer=true, serverManagedWP=true, isServerManagedWaypointConnection=true, hasSingleplayerServer=true)
+[23:45:33] [Render thread/INFO] [InternalStateHandler] Teleport Enabled: false
+[23:45:33] [Render thread/INFO] [InternalStateHandler] Server set waypointTeleportOnly: false
+[23:45:33] [Render thread/INFO] [InternalStateHandler] Server set globalWaypointTeleportOnly: false
+[23:45:33] [Render thread/INFO] [InternalStateHandler] Expanded Radar Enabled: true
+[23:45:33] [Render thread/INFO] [InternalStateHandler] Server Admin Enabled: false
+[23:45:33] [Render thread/INFO] [InternalStateHandler] Server set show in-game beacons: true
+[23:45:33] [Render thread/INFO] [InternalStateHandler] Server set waypoints allowed: true
+[23:45:33] [Render thread/INFO] [InternalStateHandler] Server set Server Admin read only mode: true
+[23:45:33] [Render thread/INFO] [InternalStateHandler] Server set maxSurfaceRenderDistance to: 0
+[23:45:33] [Render thread/INFO] [InternalStateHandler] Server setmaxCaveRenderDistance to: 0
+[23:45:33] [Render thread/INFO] [InternalStateHandler] Server set allow mutliplayer options: true
+[23:45:33] [Render thread/INFO] [InternalStateHandler] Server set globalWaypointsOnly: false
+[23:45:33] [Render thread/INFO] [InternalStateHandler] Server set allow radarLateralDistance options: 512
+[23:45:33] [Render thread/INFO] [InternalStateHandler] Server set allow radarVerticalDistance options: 320
+[23:45:33] [Render thread/INFO] [InternalStateHandler] Server set allow maxAnimalsData options: 128
+[23:45:33] [Render thread/INFO] [InternalStateHandler] Server set allow maxAmbientCreaturesData options: 128
+[23:45:33] [Render thread/INFO] [InternalStateHandler] Server set allow maxMobsData options: 128
+[23:45:33] [Render thread/INFO] [InternalStateHandler] Server set allow maxPlayersData options: 128
+[23:45:33] [Render thread/INFO] [InternalStateHandler] Server set allow maxVillagersData options: 128
+[23:45:33] [Render thread/INFO] [InternalStateHandler] Server set allow playerRadarNamesEnabled options: true
+[23:45:33] [Render thread/INFO] [InternalStateHandler] Server set allow minimapEnabled options: true
+[23:45:33] [Render thread/INFO] [InternalStateHandler] Server set allow hideCoordinates options: false
+[23:45:36] [Render thread/INFO] [HandshakePacket] JourneyMap server version: 6.0.9 (client version: 6.0.9)
+[23:45:36] [Render thread/INFO] [InternalStateHandler] Connection initiated with Journeymap Server: true
+[23:45:36] [Render thread/INFO] [InternalStateHandler] Teleport Enabled: false
+[23:45:36] [Render thread/INFO] [InternalStateHandler] Server set waypointTeleportOnly: false
+[23:45:36] [Render thread/INFO] [InternalStateHandler] Server set globalWaypointTeleportOnly: false
+[23:45:36] [Render thread/INFO] [InternalStateHandler] Expanded Radar Enabled: true
+[23:45:36] [Render thread/INFO] [InternalStateHandler] Server Admin Enabled: false
+[23:45:36] [Render thread/INFO] [InternalStateHandler] Server set show in-game beacons: true
+[23:45:36] [Render thread/INFO] [InternalStateHandler] Server set waypoints allowed: true
+[23:45:36] [Render thread/INFO] [InternalStateHandler] Server set Server Admin read only mode: true
+[23:45:36] [Render thread/INFO] [InternalStateHandler] Server set maxSurfaceRenderDistance to: 0
+[23:45:36] [Render thread/INFO] [InternalStateHandler] Server setmaxCaveRenderDistance to: 0
+[23:45:36] [Render thread/INFO] [InternalStateHandler] Server set allow mutliplayer options: true
+[23:45:36] [Render thread/INFO] [InternalStateHandler] Server set globalWaypointsOnly: false
+[23:45:36] [Render thread/INFO] [InternalStateHandler] Server set allow radarLateralDistance options: 512
+[23:45:36] [Render thread/INFO] [InternalStateHandler] Server set allow radarVerticalDistance options: 320
+[23:45:36] [Render thread/INFO] [InternalStateHandler] Server set allow maxAnimalsData options: 128
+[23:45:36] [Render thread/INFO] [InternalStateHandler] Server set allow maxAmbientCreaturesData options: 128
+[23:45:36] [Render thread/INFO] [InternalStateHandler] Server set allow maxMobsData options: 128
+[23:45:36] [Render thread/INFO] [InternalStateHandler] Server set allow maxPlayersData options: 128
+[23:45:36] [Render thread/INFO] [InternalStateHandler] Server set allow maxVillagersData options: 128
+[23:45:36] [Render thread/INFO] [InternalStateHandler] Server set allow playerRadarNamesEnabled options: true
+[23:45:36] [Render thread/INFO] [InternalStateHandler] Server set allow minimapEnabled options: true
+[23:45:36] [Render thread/INFO] [InternalStateHandler] Server set allow hideCoordinates options: false
+[23:45:44] [Render thread/INFO] [HandshakePacket] JourneyMap server version: 6.0.9 (client version: 6.0.9)
+[23:45:44] [Render thread/INFO] [InternalStateHandler] Connection initiated with Journeymap Server: true
+[23:45:44] [Render thread/INFO] [InternalStateHandler] Teleport Enabled: false
+[23:45:44] [Render thread/INFO] [InternalStateHandler] Server set waypointTeleportOnly: false
+[23:45:44] [Render thread/INFO] [InternalStateHandler] Server set globalWaypointTeleportOnly: false
+[23:45:44] [Render thread/INFO] [InternalStateHandler] Expanded Radar Enabled: true
+[23:45:44] [Render thread/INFO] [InternalStateHandler] Server Admin Enabled: false
+[23:45:44] [Render thread/INFO] [InternalStateHandler] Server set show in-game beacons: true
+[23:45:44] [Render thread/INFO] [InternalStateHandler] Server set waypoints allowed: true
+[23:45:44] [Render thread/INFO] [InternalStateHandler] Server set Server Admin read only mode: true
+[23:45:44] [Render thread/INFO] [InternalStateHandler] Server set maxSurfaceRenderDistance to: 0
+[23:45:44] [Render thread/INFO] [InternalStateHandler] Server setmaxCaveRenderDistance to: 0
+[23:45:44] [Render thread/INFO] [InternalStateHandler] Server set allow mutliplayer options: true
+[23:45:44] [Render thread/INFO] [InternalStateHandler] Server set globalWaypointsOnly: false
+[23:45:44] [Render thread/INFO] [InternalStateHandler] Server set allow radarLateralDistance options: 512
+[23:45:44] [Render thread/INFO] [InternalStateHandler] Server set allow radarVerticalDistance options: 320
+[23:45:44] [Render thread/INFO] [InternalStateHandler] Server set allow maxAnimalsData options: 128
+[23:45:44] [Render thread/INFO] [InternalStateHandler] Server set allow maxAmbientCreaturesData options: 128
+[23:45:44] [Render thread/INFO] [InternalStateHandler] Server set allow maxMobsData options: 128
+[23:45:44] [Render thread/INFO] [InternalStateHandler] Server set allow maxPlayersData options: 128
+[23:45:44] [Render thread/INFO] [InternalStateHandler] Server set allow maxVillagersData options: 128
+[23:45:44] [Render thread/INFO] [InternalStateHandler] Server set allow playerRadarNamesEnabled options: true
+[23:45:44] [Render thread/INFO] [InternalStateHandler] Server set allow minimapEnabled options: true
+[23:45:44] [Render thread/INFO] [InternalStateHandler] Server set allow hideCoordinates options: false
+[23:45:58] [Render thread/INFO] [ModBlockDelegate] Custom modded block handling enabled for create
+[23:45:58] [Render thread/ERROR] [ModPropertyEnum] Error reflecting PropertyEnum on %s.%s: %s
+[23:45:58] [Render thread/ERROR] [ModPropertyEnum] Error reflecting PropertyEnum on %s.%s: %s
+[23:45:58] [Render thread/INFO] [ModBlockDelegate] Custom modded block handling enabled for bibliocraft
+[23:45:58] [Render thread/INFO] [ModBlockDelegate] Custom modded block handling enabled for biomesoplenty
+[23:45:59] [Render thread/INFO] [ChatLog] JourneyMap: Press [J]
+[23:46:45] [Render thread/WARN] [JMLogger] Image is null: productivebees:textures/entity_icon/bee/bumble/bee.png

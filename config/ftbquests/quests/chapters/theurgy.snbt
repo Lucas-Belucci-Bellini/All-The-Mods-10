@@ -10,6 +10,7 @@
 	images: [
 		{
 			height: 2.0d
+			id: "464D63FAC34E2124"
 			image: "atm:textures/questpics/theurgy/theurgy.png"
 			rotation: 0.0d
 			width: 8.717391304347826d
@@ -18,6 +19,7 @@
 		}
 		{
 			height: 3.0d
+			id: "6B183CD2F8B27D1F"
 			image: "atm:textures/questpics/theurgy/theurgy_sal_side.png"
 			rotation: 0.0d
 			width: 2.0597014925373136d
@@ -26,6 +28,7 @@
 		}
 		{
 			height: 2.0d
+			id: "00DF1A7E4A3001D1"
 			image: "atm:textures/questpics/theurgy/theurgy_lique.png"
 			rotation: 0.0d
 			width: 1.8285714285714285d
@@ -34,6 +37,7 @@
 		}
 		{
 			height: 3.0d
+			id: "0C77A59F51867655"
 			image: "atm:textures/questpics/theurgy/theurgy_incubator.png"
 			rotation: 0.0d
 			width: 3.329113924050633d
@@ -42,6 +46,7 @@
 		}
 		{
 			height: 2.0d
+			id: "305E994D28F88C5C"
 			image: "atm:textures/questpics/theurgy/theurgy_reform_full.png"
 			rotation: 0.0d
 			width: 9.919642857142858d
@@ -50,6 +55,7 @@
 		}
 		{
 			height: 2.0d
+			id: "7045CA132CE2BBD6"
 			image: "atm:textures/questpics/theurgy/theurgy_brazier.png"
 			rotation: 0.0d
 			width: 2.128099173553719d
@@ -58,6 +64,7 @@
 		}
 		{
 			height: 2.0d
+			id: "3E45DCB35B72A14C"
 			image: "atm:textures/questpics/theurgy/theurgy_ferment.png"
 			rotation: 0.0d
 			width: 1.9858156028368794d
@@ -66,6 +73,7 @@
 		}
 		{
 			height: 2.5d
+			id: "7B3FF1E43B4E234A"
 			image: "atm:textures/questpics/theurgy/theurgy_digest.png"
 			rotation: 0.0d
 			width: 2.186813186813187d
@@ -74,6 +82,7 @@
 		}
 		{
 			height: 2.0d
+			id: "11BE76466FA84E19"
 			image: "atm:textures/questpics/theurgy/theurgy_oven.png"
 			rotation: 0.0d
 			width: 1.5678391959798994d
@@ -82,6 +91,7 @@
 		}
 		{
 			height: 2.0d
+			id: "0B12324944DB9C35"
 			image: "atm:textures/questpics/theurgy/theurgy_mercuryflux.png"
 			rotation: 0.0d
 			width: 1.91644908616188d
@@ -1098,10 +1108,10 @@
 		}
 		{
 			id: "41ABC09C798CA8BE"
-			tags: ["arr"]
 			invisible: true
 			optional: true
 			shape: "circle"
+			tags: ["arr"]
 			tasks: [
 				{
 					id: "6D9221A533926A7B"

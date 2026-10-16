@@ -41,3 +41,6 @@
 [23:31:31] [INFO] Loaded script client_scripts:tooltips.js in 0.006 s
 [23:31:31] [INFO] Loaded 16/16 KubeJS client scripts in 0.817 s with 0 errors and 0 warnings
 [23:32:36] [INFO] Client resource reload complete!
+[23:43:41] [INFO] Logged in: LocalPlayer['Spartan_Gamer_BR'/1904, l='ClientLevel', x=8.50, y=65.00, z=8.50]
+[23:43:41] [INFO] Loaded Java class 'net.minecraft.core.registries.Registries'
+[23:45:33] [INFO] Loaded Java class 'net.minecraft.world.item.DyeColor'

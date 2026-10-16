@@ -9,9 +9,9 @@
 	id: "1FAAEF0B9FD05CB9"
 	images: [
 		{
-			click: "https://youtu.be/5kKjlCsmfcc?si=I_jZPW6TzqHpb8OD"
+			click_action: "open_uri:https://youtu.be/5kKjlCsmfcc?si=I_jZPW6TzqHpb8OD"
 			height: 1.0d
-			hover: ["Pilpoh's Productive Trees Guide"]
+			id: "7FC5104CDEC53043"
 			image: "minecraft:textures/gui/sprites/toast/tree.png"
 			rotation: 0.0d
 			width: 1.0d
@@ -20,6 +20,7 @@
 		}
 		{
 			height: 0.3d
+			id: "60B85DD95D4861E4"
 			image: "allthetweaks:item/atm_star"
 			rotation: 0.0d
 			width: 0.3d
@@ -4195,10 +4196,10 @@
 		}
 		{
 			id: "25D8BE0280B6E7F1"
-			tags: ["arr"]
 			invisible: true
 			optional: true
 			shape: "circle"
+			tags: ["arr"]
 			tasks: [
 				{
 					id: "3D3F0DB8237E5856"
