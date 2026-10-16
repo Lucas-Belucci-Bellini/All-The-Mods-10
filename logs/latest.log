@@ -23674,3 +23674,329 @@ java.io.FileNotFoundException: actuallyadditions:textures/entity/zombie_villager
 	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-11.0.5.jar%23112!/:?]
 	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210) [bootstraplauncher-2.0.2.jar:?]
 	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69) [bootstraplauncher-2.0.2.jar:?]
+[16Oct2026 15:24:51.042] [Server thread/INFO] [Easy Mob Farm/]: Pre-calculating loot preview for 79 mob(s) in the background ...
+[16Oct2026 15:24:53.438] [Chunk Render Task Executor #3/WARN] [Sodium-VertexConsumerTracker/]: Class net.mehvahdjukaar.moonlight.api.client.model.platform.BakedQuadBuilderImpl does not support optimized vertex writing code paths, which may cause reduced rendering performance
+[16Oct2026 15:25:00.422] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 6216ms or 124 ticks behind
+[16Oct2026 15:25:01.394] [Server thread/ERROR] [com.iafenvoy.iceandfire.IceAndFire/]: Not a list: null
+[16Oct2026 15:25:05.656] [Essential Thread 7/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: java.io.FileNotFoundException: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\screenshots\2026-10-16_15.25.05.png (O arquivo já está sendo usado por outro processo)
+[16Oct2026 15:25:05.657] [Essential Thread 7/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.io.FileInputStream.open0(Native Method)
+[16Oct2026 15:25:05.658] [Essential Thread 7/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.io.FileInputStream.open(Unknown Source)
+[16Oct2026 15:25:05.658] [Essential Thread 7/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+[16Oct2026 15:25:05.658] [Essential Thread 7/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at LAYER PLUGIN/kotlin.stdlib/kotlin.io.FilesKt__FileReadWriteKt.readBytes(FileReadWrite.kt:73)
+[16Oct2026 15:25:05.658] [Essential Thread 7/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.handler.ScreenshotChecksumManager.readFileChecksum(ScreenshotChecksumManager.kt:134)
+[16Oct2026 15:25:05.658] [Essential Thread 7/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.handler.ScreenshotChecksumManager.get(ScreenshotChecksumManager.kt:82)
+[16Oct2026 15:25:05.658] [Essential Thread 7/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/essential@1.5.1/gg.essential.network.connectionmanager.media.ScreenshotManager.getChecksum(ScreenshotManager.java:390)
+[16Oct2026 15:25:05.658] [Essential Thread 7/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Screenshot.md5ec71f$essential$lambda$essential$captureNewScreenshot$0$3(Screenshot.java:1063)
+[16Oct2026 15:25:05.658] [Essential Thread 7/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+[16Oct2026 15:25:05.658] [Essential Thread 7/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+[16Oct2026 15:25:05.658] [Essential Thread 7/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.lang.Thread.run(Unknown Source)
+[16Oct2026 15:25:06.043] [Render thread/INFO] [de.keksuccino.fancymenu.customization.layer.ScreenCustomizationLayerHandler/]: [FANCYMENU] ScreenCustomizationLayer registered: inventory_screen
+[16Oct2026 15:25:15.910] [Essential Thread 5/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: java.io.FileNotFoundException: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\screenshots\2026-10-16_15.25.15.png (O arquivo já está sendo usado por outro processo)
+[16Oct2026 15:25:15.910] [Essential Thread 5/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.io.FileInputStream.open0(Native Method)
+[16Oct2026 15:25:15.911] [Essential Thread 5/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.io.FileInputStream.open(Unknown Source)
+[16Oct2026 15:25:15.911] [Essential Thread 5/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+[16Oct2026 15:25:15.911] [Essential Thread 5/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at LAYER PLUGIN/kotlin.stdlib/kotlin.io.FilesKt__FileReadWriteKt.readBytes(FileReadWrite.kt:73)
+[16Oct2026 15:25:15.911] [Essential Thread 5/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.handler.ScreenshotChecksumManager.readFileChecksum(ScreenshotChecksumManager.kt:134)
+[16Oct2026 15:25:15.911] [Essential Thread 5/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.handler.ScreenshotChecksumManager.get(ScreenshotChecksumManager.kt:82)
+[16Oct2026 15:25:15.911] [Essential Thread 5/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/essential@1.5.1/gg.essential.network.connectionmanager.media.ScreenshotManager.getChecksum(ScreenshotManager.java:390)
+[16Oct2026 15:25:15.911] [Essential Thread 5/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Screenshot.md5ec71f$essential$lambda$essential$captureNewScreenshot$0$3(Screenshot.java:1063)
+[16Oct2026 15:25:15.911] [Essential Thread 5/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+[16Oct2026 15:25:15.911] [Essential Thread 5/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+[16Oct2026 15:25:15.911] [Essential Thread 5/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.lang.Thread.run(Unknown Source)
+[16Oct2026 15:25:16.436] [Server thread/ERROR] [com.iafenvoy.iceandfire.IceAndFire/]: Not a list: null
+[16Oct2026 15:25:18.660] [Essential Thread 8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: java.io.FileNotFoundException: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\screenshots\2026-10-16_15.25.18.png (O arquivo já está sendo usado por outro processo)
+[16Oct2026 15:25:18.660] [Essential Thread 8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.io.FileInputStream.open0(Native Method)
+[16Oct2026 15:25:18.660] [Essential Thread 8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.io.FileInputStream.open(Unknown Source)
+[16Oct2026 15:25:18.660] [Essential Thread 8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+[16Oct2026 15:25:18.661] [Essential Thread 8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at LAYER PLUGIN/kotlin.stdlib/kotlin.io.FilesKt__FileReadWriteKt.readBytes(FileReadWrite.kt:73)
+[16Oct2026 15:25:18.661] [Essential Thread 8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.handler.ScreenshotChecksumManager.readFileChecksum(ScreenshotChecksumManager.kt:134)
+[16Oct2026 15:25:18.661] [Essential Thread 8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.handler.ScreenshotChecksumManager.get(ScreenshotChecksumManager.kt:82)
+[16Oct2026 15:25:18.661] [Essential Thread 8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/essential@1.5.1/gg.essential.network.connectionmanager.media.ScreenshotManager.getChecksum(ScreenshotManager.java:390)
+[16Oct2026 15:25:18.661] [Essential Thread 8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Screenshot.md5ec71f$essential$lambda$essential$captureNewScreenshot$0$3(Screenshot.java:1063)
+[16Oct2026 15:25:18.661] [Essential Thread 8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+[16Oct2026 15:25:18.661] [Essential Thread 8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+[16Oct2026 15:25:18.661] [Essential Thread 8/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.lang.Thread.run(Unknown Source)
+[16Oct2026 15:25:20.145] [Render thread/ERROR] [com.mojang.blaze3d.platform.Window/]: ########## GL ERROR ##########
+[16Oct2026 15:25:20.146] [Render thread/ERROR] [com.mojang.blaze3d.platform.Window/]: @ Render
+[16Oct2026 15:25:20.146] [Render thread/ERROR] [com.mojang.blaze3d.platform.Window/]: 65540: Invalid window size 0x0
+[16Oct2026 15:25:20.146] [Render thread/INFO] [de.nekeras.borderless.common.FullscreenDisplayModeHolder/]: Refreshing fullscreen mode from config to de.nekeras.borderless.common.mode.BorderlessFullscreenDisplay@5c5d940a
+[16Oct2026 15:25:20.147] [Render thread/INFO] [de.nekeras.borderless.common.FullscreenDisplayModeHolder/]: Detected fullscreen mode change from de.nekeras.borderless.common.mode.BorderlessFullscreenDisplay@5c5d940a to de.nekeras.borderless.common.mode.BorderlessFullscreenDisplay@5c5d940a
+[16Oct2026 15:25:20.147] [Render thread/INFO] [de.nekeras.borderless.common.glfw.GlfwUtils/]: Resetting window attributes
+[16Oct2026 15:25:20.147] [Render thread/INFO] [de.nekeras.borderless.common.glfw.GlfwUtils/]: Enable window attribute DECORATED
+[16Oct2026 15:25:20.185] [Render thread/INFO] [de.nekeras.borderless.common.glfw.GlfwUtils/]: Enable window attribute AUTO_ICONIFY
+[16Oct2026 15:25:20.185] [Render thread/INFO] [de.nekeras.borderless.common.glfw.GlfwUtils/]: Done resetting window attributes
+[16Oct2026 15:25:20.185] [Render thread/INFO] [de.nekeras.borderless.common.FullscreenDisplayModeHolder/]: Refreshing de.nekeras.borderless.common.mode.BorderlessFullscreenDisplay@5c5d940a
+[16Oct2026 15:25:20.185] [Render thread/INFO] [de.nekeras.borderless.common.glfw.GlfwUtils/]: Resetting window attributes
+[16Oct2026 15:25:20.185] [Render thread/INFO] [de.nekeras.borderless.common.glfw.GlfwUtils/]: Enable window attribute DECORATED
+[16Oct2026 15:25:20.187] [Render thread/INFO] [de.nekeras.borderless.common.glfw.GlfwUtils/]: Enable window attribute AUTO_ICONIFY
+[16Oct2026 15:25:20.187] [Render thread/INFO] [de.nekeras.borderless.common.glfw.GlfwUtils/]: Done resetting window attributes
+[16Oct2026 15:25:20.187] [Render thread/INFO] [de.nekeras.borderless.common.glfw.GlfwUtils/]: Checking window input mode
+[16Oct2026 15:25:20.187] [Render thread/INFO] [de.nekeras.borderless.common.glfw.GlfwUtils/]: Detected disabled cursor mode
+[16Oct2026 15:25:20.187] [Render thread/INFO] [de.nekeras.borderless.common.glfw.GlfwUtils/]: Done checking window input mode
+[16Oct2026 15:25:20.188] [Render thread/INFO] [de.nekeras.borderless.common.glfw.GlfwUtils/]: Cursor is at 1001x767 (inside window: true)
+[16Oct2026 15:25:20.188] [Render thread/INFO] [de.nekeras.borderless.common.glfw.GlfwUtils/]: Done checking cursor position
+[16Oct2026 15:25:20.967] [Render thread/INFO] [de.nekeras.borderless.common.FullscreenDisplayModeHolder/]: Refreshing fullscreen mode from config to de.nekeras.borderless.common.mode.BorderlessFullscreenDisplay@5c5d940a
+[16Oct2026 15:25:20.967] [Render thread/INFO] [de.nekeras.borderless.common.FullscreenDisplayModeHolder/]: Detected fullscreen mode change from de.nekeras.borderless.common.mode.BorderlessFullscreenDisplay@5c5d940a to de.nekeras.borderless.common.mode.BorderlessFullscreenDisplay@5c5d940a
+[16Oct2026 15:25:20.967] [Render thread/INFO] [de.nekeras.borderless.common.glfw.GlfwUtils/]: Resetting window attributes
+[16Oct2026 15:25:20.967] [Render thread/INFO] [de.nekeras.borderless.common.glfw.GlfwUtils/]: Enable window attribute DECORATED
+[16Oct2026 15:25:20.967] [Render thread/INFO] [de.nekeras.borderless.common.glfw.GlfwUtils/]: Enable window attribute AUTO_ICONIFY
+[16Oct2026 15:25:20.967] [Render thread/INFO] [de.nekeras.borderless.common.glfw.GlfwUtils/]: Done resetting window attributes
+[16Oct2026 15:25:20.968] [Render thread/INFO] [de.nekeras.borderless.common.mode.BorderlessFullscreenDisplay/]: Reset on monitor Generic PnP Monitor at size (1920 x 1080)
+[16Oct2026 15:25:20.969] [Render thread/INFO] [de.nekeras.borderless.common.FullscreenDisplayModeHolder/]: Refreshing de.nekeras.borderless.common.mode.BorderlessFullscreenDisplay@5c5d940a
+[16Oct2026 15:25:20.969] [Render thread/INFO] [de.nekeras.borderless.common.glfw.GlfwUtils/]: Resetting window attributes
+[16Oct2026 15:25:20.969] [Render thread/INFO] [de.nekeras.borderless.common.glfw.GlfwUtils/]: Enable window attribute DECORATED
+[16Oct2026 15:25:20.969] [Render thread/INFO] [de.nekeras.borderless.common.glfw.GlfwUtils/]: Enable window attribute AUTO_ICONIFY
+[16Oct2026 15:25:20.969] [Render thread/INFO] [de.nekeras.borderless.common.glfw.GlfwUtils/]: Done resetting window attributes
+[16Oct2026 15:25:20.970] [Render thread/INFO] [de.nekeras.borderless.common.mode.BorderlessFullscreenDisplay/]: Apply on monitor Generic PnP Monitor at (0|0) size (1920 x 1080)
+[16Oct2026 15:25:20.970] [Render thread/INFO] [de.nekeras.borderless.common.glfw.GlfwUtils/]: Disable window attribute DECORATED
+[16Oct2026 15:25:20.972] [Render thread/INFO] [de.nekeras.borderless.common.glfw.GlfwUtils/]: Checking window input mode
+[16Oct2026 15:25:20.972] [Render thread/INFO] [de.nekeras.borderless.common.glfw.GlfwUtils/]: Detected disabled cursor mode
+[16Oct2026 15:25:20.972] [Render thread/INFO] [de.nekeras.borderless.common.glfw.GlfwUtils/]: Done checking window input mode
+[16Oct2026 15:25:20.972] [Render thread/INFO] [de.nekeras.borderless.common.glfw.GlfwUtils/]: Cursor is at 999x763 (inside window: true)
+[16Oct2026 15:25:20.972] [Render thread/INFO] [de.nekeras.borderless.common.glfw.GlfwUtils/]: Done checking cursor position
+[16Oct2026 15:25:24.903] [Essential Thread 11/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: java.io.FileNotFoundException: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\screenshots\2026-10-16_15.25.24.png (O arquivo já está sendo usado por outro processo)
+[16Oct2026 15:25:24.905] [Essential Thread 11/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.io.FileInputStream.open0(Native Method)
+[16Oct2026 15:25:24.905] [Essential Thread 11/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.io.FileInputStream.open(Unknown Source)
+[16Oct2026 15:25:24.905] [Essential Thread 11/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+[16Oct2026 15:25:24.905] [Essential Thread 11/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at LAYER PLUGIN/kotlin.stdlib/kotlin.io.FilesKt__FileReadWriteKt.readBytes(FileReadWrite.kt:73)
+[16Oct2026 15:25:24.905] [Essential Thread 11/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.handler.ScreenshotChecksumManager.readFileChecksum(ScreenshotChecksumManager.kt:134)
+[16Oct2026 15:25:24.905] [Essential Thread 11/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.handler.ScreenshotChecksumManager.get(ScreenshotChecksumManager.kt:82)
+[16Oct2026 15:25:24.905] [Essential Thread 11/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/essential@1.5.1/gg.essential.network.connectionmanager.media.ScreenshotManager.getChecksum(ScreenshotManager.java:390)
+[16Oct2026 15:25:24.905] [Essential Thread 11/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Screenshot.md5ec71f$essential$lambda$essential$captureNewScreenshot$0$3(Screenshot.java:1063)
+[16Oct2026 15:25:24.905] [Essential Thread 11/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+[16Oct2026 15:25:24.905] [Essential Thread 11/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+[16Oct2026 15:25:24.905] [Essential Thread 11/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.lang.Thread.run(Unknown Source)
+[16Oct2026 15:25:26.970] [Essential Thread 1/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: java.io.FileNotFoundException: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\screenshots\2026-10-16_15.25.26.png (O arquivo já está sendo usado por outro processo)
+[16Oct2026 15:25:26.971] [Essential Thread 1/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.io.FileInputStream.open0(Native Method)
+[16Oct2026 15:25:26.971] [Essential Thread 1/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.io.FileInputStream.open(Unknown Source)
+[16Oct2026 15:25:26.971] [Essential Thread 1/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+[16Oct2026 15:25:26.971] [Essential Thread 1/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at LAYER PLUGIN/kotlin.stdlib/kotlin.io.FilesKt__FileReadWriteKt.readBytes(FileReadWrite.kt:73)
+[16Oct2026 15:25:26.971] [Essential Thread 1/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.handler.ScreenshotChecksumManager.readFileChecksum(ScreenshotChecksumManager.kt:134)
+[16Oct2026 15:25:26.971] [Essential Thread 1/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.handler.ScreenshotChecksumManager.get(ScreenshotChecksumManager.kt:82)
+[16Oct2026 15:25:26.971] [Essential Thread 1/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/essential@1.5.1/gg.essential.network.connectionmanager.media.ScreenshotManager.getChecksum(ScreenshotManager.java:390)
+[16Oct2026 15:25:26.971] [Essential Thread 1/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Screenshot.md5ec71f$essential$lambda$essential$captureNewScreenshot$0$3(Screenshot.java:1063)
+[16Oct2026 15:25:26.971] [Essential Thread 1/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+[16Oct2026 15:25:26.971] [Essential Thread 1/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+[16Oct2026 15:25:26.971] [Essential Thread 1/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.lang.Thread.run(Unknown Source)
+[16Oct2026 15:25:29.442] [Essential Thread 10/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: java.io.FileNotFoundException: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\screenshots\2026-10-16_15.25.29.png (O arquivo já está sendo usado por outro processo)
+[16Oct2026 15:25:29.442] [Essential Thread 10/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.io.FileInputStream.open0(Native Method)
+[16Oct2026 15:25:29.442] [Essential Thread 10/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.io.FileInputStream.open(Unknown Source)
+[16Oct2026 15:25:29.442] [Essential Thread 10/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+[16Oct2026 15:25:29.443] [Essential Thread 10/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at LAYER PLUGIN/kotlin.stdlib/kotlin.io.FilesKt__FileReadWriteKt.readBytes(FileReadWrite.kt:73)
+[16Oct2026 15:25:29.443] [Essential Thread 10/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.handler.ScreenshotChecksumManager.readFileChecksum(ScreenshotChecksumManager.kt:134)
+[16Oct2026 15:25:29.443] [Essential Thread 10/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.handler.ScreenshotChecksumManager.get(ScreenshotChecksumManager.kt:82)
+[16Oct2026 15:25:29.443] [Essential Thread 10/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/essential@1.5.1/gg.essential.network.connectionmanager.media.ScreenshotManager.getChecksum(ScreenshotManager.java:390)
+[16Oct2026 15:25:29.443] [Essential Thread 10/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Screenshot.md5ec71f$essential$lambda$essential$captureNewScreenshot$0$3(Screenshot.java:1063)
+[16Oct2026 15:25:29.443] [Essential Thread 10/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+[16Oct2026 15:25:29.443] [Essential Thread 10/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+[16Oct2026 15:25:29.443] [Essential Thread 10/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:-1]: 	at java.base/java.lang.Thread.run(Unknown Source)
+[16Oct2026 15:25:30.706] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[16Oct2026 15:25:30.733] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:overworld
+[16Oct2026 15:25:30.733] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:overworld
+[16Oct2026 15:25:30.792] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:the_end
+[16Oct2026 15:25:30.792] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:the_end
+[16Oct2026 15:25:30.793] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:glacio_orbit
+[16Oct2026 15:25:30.793] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:glacio_orbit
+[16Oct2026 15:25:30.793] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/eternal_starlight:starlight
+[16Oct2026 15:25:30.794] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/eternal_starlight:starlight
+[16Oct2026 15:25:30.794] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mercury
+[16Oct2026 15:25:30.794] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mercury
+[16Oct2026 15:25:30.794] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:venus
+[16Oct2026 15:25:30.794] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:venus
+[16Oct2026 15:25:30.801] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mars_orbit
+[16Oct2026 15:25:30.801] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mars_orbit
+[16Oct2026 15:25:30.802] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/neovitae:dungeon
+[16Oct2026 15:25:30.803] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/neovitae:dungeon
+[16Oct2026 15:25:30.803] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:earth_orbit
+[16Oct2026 15:25:30.803] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:earth_orbit
+[16Oct2026 15:25:30.804] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:the_other
+[16Oct2026 15:25:30.804] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:the_other
+[16Oct2026 15:25:30.804] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:venus_orbit
+[16Oct2026 15:25:30.804] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:venus_orbit
+[16Oct2026 15:25:30.805] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mars
+[16Oct2026 15:25:30.805] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mars
+[16Oct2026 15:25:30.806] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:moon_orbit
+[16Oct2026 15:25:30.806] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:moon_orbit
+[16Oct2026 15:25:30.806] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/undergarden:undergarden
+[16Oct2026 15:25:30.806] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/undergarden:undergarden
+[16Oct2026 15:25:30.807] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/twilightforest:twilight_forest
+[16Oct2026 15:25:30.807] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/twilightforest:twilight_forest
+[16Oct2026 15:25:30.807] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/deeperdarker:otherside
+[16Oct2026 15:25:30.808] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/deeperdarker:otherside
+[16Oct2026 15:25:30.808] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/compactmachines:compact_world
+[16Oct2026 15:25:30.808] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/compactmachines:compact_world
+[16Oct2026 15:25:30.824] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:the_beyond
+[16Oct2026 15:25:30.825] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:the_beyond
+[16Oct2026 15:25:30.826] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:moon
+[16Oct2026 15:25:30.826] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:moon
+[16Oct2026 15:25:30.827] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/irons_spellbooks:pocket_dimension
+[16Oct2026 15:25:30.828] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/irons_spellbooks:pocket_dimension
+[16Oct2026 15:25:30.829] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mercury_orbit
+[16Oct2026 15:25:30.829] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mercury_orbit
+[16Oct2026 15:25:30.830] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/the_bumblezone:the_bumblezone
+[16Oct2026 15:25:30.830] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/the_bumblezone:the_bumblezone
+[16Oct2026 15:25:30.831] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:the_nether
+[16Oct2026 15:25:30.831] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:the_nether
+[16Oct2026 15:25:30.832] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/iceandfire:dread_land
+[16Oct2026 15:25:30.832] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/iceandfire:dread_land
+[16Oct2026 15:25:30.833] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:mining
+[16Oct2026 15:25:30.833] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:mining
+[16Oct2026 15:25:30.833] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:glacio
+[16Oct2026 15:25:30.833] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:glacio
+[16Oct2026 15:25:30.834] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/aether:the_aether
+[16Oct2026 15:25:30.834] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/aether:the_aether
+[16Oct2026 15:25:30.837] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/mahoutsukai:reality_marble
+[16Oct2026 15:25:30.837] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/mahoutsukai:reality_marble
+[16Oct2026 15:25:30.838] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ae2:spatial_storage
+[16Oct2026 15:25:30.838] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ae2:spatial_storage
+[16Oct2026 15:25:32.082] [Netty Local Client IO #1/INFO] [dev.ryanhcode.sable.Sable/]: Client UDP channel inactive
+[16Oct2026 15:25:32.082] [Netty Local Client IO #1/INFO] [dev.ryanhcode.sable.Sable/]: Closed UDP channel!
+[16Oct2026 15:25:32.215] [Render thread/INFO] [minecolonies/]: Removed all colony views
+[16Oct2026 15:25:32.215] [Render thread/INFO] [FluxNetworks/]: Released client Flux Networks cache
+[16Oct2026 15:25:32.222] [Render thread/INFO] [mezz.jei.library.startup.JeiStarter/]: Stopping JEI
+[16Oct2026 15:25:32.224] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable...
+[16Oct2026 15:25:32.250] [Render thread/INFO] [mezz.jei.neoforge.plugins.neoforge.NeoForgeGuiPlugin/]: Stopping JEI GUI
+[16Oct2026 15:25:32.287] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable took 61.06 milliseconds
+[16Oct2026 15:25:32.784] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Spartan_Gamer_BR lost connection: Disconnected
+[16Oct2026 15:25:32.784] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Spartan_Gamer_BR left the game
+[16Oct2026 15:25:32.839] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
+[16Oct2026 15:25:34.421] [Server thread/INFO] [com.github.jarva.arsadditions.ArsAdditions/]: Shutting down locating executor service
+[16Oct2026 15:25:34.480] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[16Oct2026 15:25:34.481] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[16Oct2026 15:25:34.481] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[16Oct2026 15:25:34.634] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:overworld
+[16Oct2026 15:25:34.634] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:overworld
+[16Oct2026 15:25:35.045] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:the_end
+[16Oct2026 15:25:35.045] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:the_end
+[16Oct2026 15:25:35.089] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:glacio_orbit
+[16Oct2026 15:25:35.089] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:glacio_orbit
+[16Oct2026 15:25:35.126] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/eternal_starlight:starlight
+[16Oct2026 15:25:35.126] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/eternal_starlight:starlight
+[16Oct2026 15:25:35.168] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mercury
+[16Oct2026 15:25:35.169] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mercury
+[16Oct2026 15:25:35.199] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:venus
+[16Oct2026 15:25:35.199] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:venus
+[16Oct2026 15:25:35.240] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mars_orbit
+[16Oct2026 15:25:35.240] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mars_orbit
+[16Oct2026 15:25:35.280] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/neovitae:dungeon
+[16Oct2026 15:25:35.280] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/neovitae:dungeon
+[16Oct2026 15:25:35.321] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:earth_orbit
+[16Oct2026 15:25:35.321] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:earth_orbit
+[16Oct2026 15:25:35.367] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:the_other
+[16Oct2026 15:25:35.368] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:the_other
+[16Oct2026 15:25:35.409] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:venus_orbit
+[16Oct2026 15:25:35.409] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:venus_orbit
+[16Oct2026 15:25:35.439] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mars
+[16Oct2026 15:25:35.440] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mars
+[16Oct2026 15:25:35.473] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:moon_orbit
+[16Oct2026 15:25:35.473] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:moon_orbit
+[16Oct2026 15:25:35.512] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/undergarden:undergarden
+[16Oct2026 15:25:35.512] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/undergarden:undergarden
+[16Oct2026 15:25:35.543] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/twilightforest:twilight_forest
+[16Oct2026 15:25:35.543] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/twilightforest:twilight_forest
+[16Oct2026 15:25:35.570] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/deeperdarker:otherside
+[16Oct2026 15:25:35.571] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/deeperdarker:otherside
+[16Oct2026 15:25:35.598] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/compactmachines:compact_world
+[16Oct2026 15:25:35.598] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/compactmachines:compact_world
+[16Oct2026 15:25:35.627] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:the_beyond
+[16Oct2026 15:25:35.628] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:the_beyond
+[16Oct2026 15:25:35.653] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:moon
+[16Oct2026 15:25:35.653] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:moon
+[16Oct2026 15:25:35.675] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/irons_spellbooks:pocket_dimension
+[16Oct2026 15:25:35.676] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/irons_spellbooks:pocket_dimension
+[16Oct2026 15:25:35.695] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mercury_orbit
+[16Oct2026 15:25:35.696] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mercury_orbit
+[16Oct2026 15:25:35.716] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/the_bumblezone:the_bumblezone
+[16Oct2026 15:25:35.716] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/the_bumblezone:the_bumblezone
+[16Oct2026 15:25:35.740] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:the_nether
+[16Oct2026 15:25:35.740] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:the_nether
+[16Oct2026 15:25:35.765] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/iceandfire:dread_land
+[16Oct2026 15:25:35.765] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/iceandfire:dread_land
+[16Oct2026 15:25:35.787] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:mining
+[16Oct2026 15:25:35.787] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:mining
+[16Oct2026 15:25:35.809] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:glacio
+[16Oct2026 15:25:35.809] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:glacio
+[16Oct2026 15:25:35.831] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/aether:the_aether
+[16Oct2026 15:25:35.831] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/aether:the_aether
+[16Oct2026 15:25:35.854] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/mahoutsukai:reality_marble
+[16Oct2026 15:25:35.854] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/mahoutsukai:reality_marble
+[16Oct2026 15:25:35.877] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ae2:spatial_storage
+[16Oct2026 15:25:35.877] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ae2:spatial_storage
+[16Oct2026 15:25:36.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (Gustavo farms aura + ego): All chunks are saved
+[16Oct2026 15:25:36.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[16Oct2026 15:25:36.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (glacio_orbit): All chunks are saved
+[16Oct2026 15:25:36.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (starlight): All chunks are saved
+[16Oct2026 15:25:36.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (mercury): All chunks are saved
+[16Oct2026 15:25:36.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (venus): All chunks are saved
+[16Oct2026 15:25:36.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (mars_orbit): All chunks are saved
+[16Oct2026 15:25:36.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (dungeon): All chunks are saved
+[16Oct2026 15:25:36.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (earth_orbit): All chunks are saved
+[16Oct2026 15:25:36.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (the_other): All chunks are saved
+[16Oct2026 15:25:36.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (venus_orbit): All chunks are saved
+[16Oct2026 15:25:36.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (mars): All chunks are saved
+[16Oct2026 15:25:36.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (moon_orbit): All chunks are saved
+[16Oct2026 15:25:36.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (undergarden): All chunks are saved
+[16Oct2026 15:25:36.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (twilight_forest): All chunks are saved
+[16Oct2026 15:25:36.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (otherside): All chunks are saved
+[16Oct2026 15:25:36.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (compact_world): All chunks are saved
+[16Oct2026 15:25:36.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (the_beyond): All chunks are saved
+[16Oct2026 15:25:36.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (moon): All chunks are saved
+[16Oct2026 15:25:36.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (pocket_dimension): All chunks are saved
+[16Oct2026 15:25:36.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (mercury_orbit): All chunks are saved
+[16Oct2026 15:25:36.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (the_bumblezone): All chunks are saved
+[16Oct2026 15:25:36.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[16Oct2026 15:25:36.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (dread_land): All chunks are saved
+[16Oct2026 15:25:36.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (mining): All chunks are saved
+[16Oct2026 15:25:36.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (glacio): All chunks are saved
+[16Oct2026 15:25:36.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (the_aether): All chunks are saved
+[16Oct2026 15:25:36.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (reality_marble): All chunks are saved
+[16Oct2026 15:25:36.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (spatial_storage): All chunks are saved
+[16Oct2026 15:25:36.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[16Oct2026 15:25:39.982] [Server thread/INFO] [Framework/]: Unloading server configs...
+[16Oct2026 15:25:39.991] [Server thread/INFO] [Framework/]: Sending config unload event for refurbished_furniture.server.toml
+[16Oct2026 15:25:39.993] [Server thread/INFO] [Framework/]: Finished unloading server configs
+[16Oct2026 15:25:40.198] [Server thread/INFO] [Puzzles Lib/]: Dispatching unloading event for config enchantinginfuser-server.toml
+[16Oct2026 15:25:40.406] [Render thread/INFO] [ChunkBuilder/]: Stopping worker threads
+[16Oct2026 15:25:41.424] [Render thread/WARN] [structurize/]: Client logged off. Resetting Pack Meta and Reloading State
+[16Oct2026 15:25:41.434] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Shogun
+[16Oct2026 15:25:41.434] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Rebel_Base
+[16Oct2026 15:25:41.435] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Nile
+[16Oct2026 15:25:41.436] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Byzantine_for_1.20
+[16Oct2026 15:25:41.439] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Jungle Treehouse
+[16Oct2026 15:25:41.440] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Pagoda
+[16Oct2026 15:25:41.440] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Stalactite Caves
+[16Oct2026 15:25:41.441] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Fortress
+[16Oct2026 15:25:41.441] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Colonial
+[16Oct2026 15:25:41.441] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Medieval Spruce
+[16Oct2026 15:25:41.441] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Lost Mesa City
+[16Oct2026 15:25:41.443] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Medieval Dark Oak
+[16Oct2026 15:25:41.444] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Urban Birch
+[16Oct2026 15:25:41.444] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Medieval Birch
+[16Oct2026 15:25:41.444] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Shire
+[16Oct2026 15:25:41.445] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Incan
+[16Oct2026 15:25:41.445] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Ancient Athens
+[16Oct2026 15:25:41.446] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Medieval Oak
+[16Oct2026 15:25:41.446] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Urban Savanna
+[16Oct2026 15:25:41.446] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Desert Oasis
+[16Oct2026 15:25:41.447] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Minecolonies Original
+[16Oct2026 15:25:41.447] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Cavern
+[16Oct2026 15:25:41.448] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Dark Oak Treehouse
+[16Oct2026 15:25:41.448] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Nordic Spruce
+[16Oct2026 15:25:41.448] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Space Wars
+[16Oct2026 15:25:41.449] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Caledonia
+[16Oct2026 15:25:41.449] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Warped Netherlands
+[16Oct2026 15:25:41.450] [Structurize IO Worker #1/WARN] [structurize/]: Missing Mod: quark for Pack: FairyTale
+[16Oct2026 15:25:41.451] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Steampunk
+[16Oct2026 15:25:41.451] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Tropical
+[16Oct2026 15:25:41.452] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Functional Fantasy
+[16Oct2026 15:25:41.452] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Antique
+[16Oct2026 15:25:41.453] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: High Magic
+[16Oct2026 15:25:41.453] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Aquatica
+[16Oct2026 15:25:41.454] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Crimson Keep
+[16Oct2026 15:25:41.454] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Farthest Frontier
+[16Oct2026 15:25:41.454] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Hive
+[16Oct2026 15:25:41.454] [Structurize IO Worker #1/WARN] [structurize/]: Missing Mod: byg for Pack: Corrupted
+[16Oct2026 15:25:41.456] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Underwater Base
+[16Oct2026 15:25:41.456] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Frontier
+[16Oct2026 15:25:41.463] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Spartan_Gamer_BR
+[16Oct2026 15:25:41.463] [Structurize IO Worker #1/WARN] [structurize/]: Finished discovering Client Structure packs

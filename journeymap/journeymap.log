@@ -133,3 +133,19 @@ CoreProperties{state=Valid, file=journeymap.core.config, configVersion=6.0.9, ma
 [15:24:05] [Render thread/INFO] [InternalStateHandler] Server set allow playerRadarNamesEnabled options: true
 [15:24:05] [Render thread/INFO] [InternalStateHandler] Server set allow minimapEnabled options: true
 [15:24:05] [Render thread/INFO] [InternalStateHandler] Server set allow hideCoordinates options: false
+[15:24:35] [Render thread/INFO] [ModBlockDelegate] Custom modded block handling enabled for create
+[15:24:35] [Render thread/ERROR] [ModPropertyEnum] Error reflecting PropertyEnum on %s.%s: %s
+[15:24:35] [Render thread/ERROR] [ModPropertyEnum] Error reflecting PropertyEnum on %s.%s: %s
+[15:24:35] [Render thread/INFO] [ModBlockDelegate] Custom modded block handling enabled for bibliocraft
+[15:24:35] [Render thread/INFO] [ModBlockDelegate] Custom modded block handling enabled for biomesoplenty
+[15:24:41] [Render thread/INFO] [ChatLog] JourneyMap: Press [J]
+[15:25:32] [Render thread/INFO] [TextureCache] [JourneyMap]: Purging Theme Images
+[15:25:32] [Render thread/INFO] [TextureCache] [JourneyMap]: Purging Region Images
+[15:25:32] [Render thread/INFO] [TextureCache] [JourneyMap]: Purging Mob Icon Images
+[15:25:32] [Render thread/INFO] [WaypointGroupStore] Loaded 0 waypoint groups from disk.
+[15:25:32] [Render thread/INFO] [WaypointStore] Loaded 0 waypoints from disk.
+[15:25:32] [Render thread/INFO] [LegacyWaypointFileMigrator] 0 Legacy waypoints found that need to be migrated and backed up.
+[15:25:32] [Render thread/INFO] [WaypointHandler] WaypointBackend selected: Server (was=null, shouldBeRemote=true, isJMServer=true, serverManagedWP=true, isServerManagedWaypointConnection=true, hasSingleplayerServer=false)
+[15:25:32] [Render thread/INFO] [JourneymapClient] Mapping halted in C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\data\mp\offline\minecraft:overworld
+[15:25:32] [Render thread/INFO] [JourneymapClient] Mapping halted in C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\data\mp\offline\minecraft:overworld
+[15:25:32] [Render thread/INFO] [WaypointHandler] WaypointBackend selected: Client (was=Server, shouldBeRemote=false, isJMServer=false, serverManagedWP=false, isServerManagedWaypointConnection=false, hasSingleplayerServer=false)
