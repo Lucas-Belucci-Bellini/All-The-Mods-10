@@ -129945,3 +129945,188 @@ java.io.FileNotFoundException: actuallyadditions:textures/entity/zombie_villager
 [16Oct2026 10:11:21.499] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Received frame: op=FRAME, data={"cmd":"SET_ACTIVITY","data":{"type":0,"state":"561 Mods","details":"Main Menu","timestamps":{"start":1792155859000},"assets":{"large_image":"1252861204045500466","large_text":"All The Mods 10"},"butt...
 [16Oct2026 10:11:21.499] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Frame handled by command executor: true
 [16Oct2026 10:11:41.340] [Worker-ResourceReload-2/DEBUG] [ModernFix/]: Worker-ResourceReload-2 shutdown
+[16Oct2026 10:12:21.491] [AllTheTweaks-DiscordRpc/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.command.CommandExecutor/]: Sending command: SET_ACTIVITY (nonce: 9)
+[16Oct2026 10:12:21.534] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Received frame: op=FRAME, data={"cmd":"SET_ACTIVITY","data":{"type":0,"state":"561 Mods","details":"Getting coffee","timestamps":{"start":1792155859000},"assets":{"large_image":"1252861204045500466","large_text":"All The Mods 10"},...
+[16Oct2026 10:12:21.534] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Frame handled by command executor: true
+[16Oct2026 10:12:31.801] [Essential Thread 28/DEBUG] [gg.essential.util.HelpersKt/]: Failed to convert "jar:file:/C:/Users/SpartanGamerBR/curseforge/minecraft/Instances/All-The-Mods-10/mods/kotlinforforge-5.12.0-all.jar!/META-INF/jarjar/kotlin-stdlib-2.4.0.jar" to local file, using copy instead.
+java.nio.file.FileSystemNotFoundException: null
+	at jdk.zipfs@21.0.12.1/jdk.nio.zipfs.ZipFileSystemProvider.getFileSystem(Unknown Source) ~[jdk.zipfs:?]
+	at jdk.zipfs@21.0.12.1/jdk.nio.zipfs.ZipFileSystemProvider.getPath(Unknown Source) ~[jdk.zipfs:?]
+	at java.base/java.nio.file.Path.of(Unknown Source) ~[?:?]
+	at java.base/java.nio.file.Paths.get(Unknown Source) ~[?:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.util.HelpersKt.findCodeSource(helpers.kt:164) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.util.GuiEssentialPlatformImpl.findCodeSource(GuiEssentialPlatformImpl.kt:413) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.util.ForkedJvm$Companion.defaultClassPath(ForkedJvm.kt:90) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.image.ForkedImageClipboard$Companion.classpath(ForkedImageClipboard.kt:58) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.image.ForkedImageClipboard$Companion.access$classpath(ForkedImageClipboard.kt:44) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.image.ForkedImageClipboard.<init>(ForkedImageClipboard.kt:27) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.UtilsKt.copyScreenshotToClipboard(utils.kt:174) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.ScreenshotPreviewToast$getManageActionForSlot$1$1.run(ScreenshotOverlay.kt:327) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[?:?]
+	at java.base/java.lang.Thread.run(Unknown Source) [?:?]
+[16Oct2026 10:12:31.832] [Essential Thread 28/DEBUG] [gg.essential.util.HelpersKt/]: Failed to convert "jar:file:/C:/Users/SpartanGamerBR/curseforge/minecraft/Instances/All-The-Mods-10/mods/kotlinforforge-5.12.0-all.jar!/META-INF/jarjar/kotlin-stdlib-2.4.0.jar" to local file, using copy instead.
+java.nio.file.FileSystemNotFoundException: null
+	at jdk.zipfs@21.0.12.1/jdk.nio.zipfs.ZipFileSystemProvider.getFileSystem(Unknown Source) ~[jdk.zipfs:?]
+	at jdk.zipfs@21.0.12.1/jdk.nio.zipfs.ZipFileSystemProvider.getPath(Unknown Source) ~[jdk.zipfs:?]
+	at java.base/java.nio.file.Path.of(Unknown Source) ~[?:?]
+	at java.base/java.nio.file.Paths.get(Unknown Source) ~[?:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.util.HelpersKt.findCodeSource(helpers.kt:164) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.util.GuiEssentialPlatformImpl.findCodeSource(GuiEssentialPlatformImpl.kt:413) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.util.ForkedJvm$Companion.defaultClassPath(ForkedJvm.kt:90) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.image.ForkedImageClipboard$Companion.classpath(ForkedImageClipboard.kt:58) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.image.ForkedImageClipboard$Companion.access$classpath(ForkedImageClipboard.kt:44) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.image.ForkedImageClipboard.<init>(ForkedImageClipboard.kt:27) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.UtilsKt.copyScreenshotToClipboard(utils.kt:174) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.ScreenshotPreviewToast$getManageActionForSlot$1$1.run(ScreenshotOverlay.kt:327) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[?:?]
+	at java.base/java.lang.Thread.run(Unknown Source) [?:?]
+[16Oct2026 10:12:31.834] [Essential Thread 28/DEBUG] [gg.essential.util.HelpersKt/]: Failed to convert "jar:file:/C:/Users/SpartanGamerBR/curseforge/minecraft/Instances/All-The-Mods-10/mods/kotlinforforge-5.12.0-all.jar!/META-INF/jarjar/kotlin-stdlib-2.4.0.jar" to local file, using copy instead.
+java.nio.file.FileSystemNotFoundException: null
+	at jdk.zipfs@21.0.12.1/jdk.nio.zipfs.ZipFileSystemProvider.getFileSystem(Unknown Source) ~[jdk.zipfs:?]
+	at jdk.zipfs@21.0.12.1/jdk.nio.zipfs.ZipFileSystemProvider.getPath(Unknown Source) ~[jdk.zipfs:?]
+	at java.base/java.nio.file.Path.of(Unknown Source) ~[?:?]
+	at java.base/java.nio.file.Paths.get(Unknown Source) ~[?:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.util.HelpersKt.findCodeSource(helpers.kt:164) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.util.GuiEssentialPlatformImpl.findCodeSource(GuiEssentialPlatformImpl.kt:413) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.util.ForkedJvm$Companion.defaultClassPath(ForkedJvm.kt:90) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.image.ForkedImageClipboard$Companion.classpath(ForkedImageClipboard.kt:58) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.image.ForkedImageClipboard$Companion.access$classpath(ForkedImageClipboard.kt:44) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.image.ForkedImageClipboard.<init>(ForkedImageClipboard.kt:27) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.UtilsKt.copyScreenshotToClipboard(utils.kt:174) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.ScreenshotPreviewToast$getManageActionForSlot$1$1.run(ScreenshotOverlay.kt:327) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[?:?]
+	at java.base/java.lang.Thread.run(Unknown Source) [?:?]
+[16Oct2026 10:12:31.836] [Essential Thread 28/DEBUG] [gg.essential.util.HelpersKt/]: Failed to convert "jar:file:/C:/Users/SpartanGamerBR/curseforge/minecraft/Instances/All-The-Mods-10/mods/kotlinforforge-5.12.0-all.jar!/META-INF/jarjar/kotlin-reflect-2.4.0.jar" to local file, using copy instead.
+java.nio.file.FileSystemNotFoundException: null
+	at jdk.zipfs@21.0.12.1/jdk.nio.zipfs.ZipFileSystemProvider.getFileSystem(Unknown Source) ~[jdk.zipfs:?]
+	at jdk.zipfs@21.0.12.1/jdk.nio.zipfs.ZipFileSystemProvider.getPath(Unknown Source) ~[jdk.zipfs:?]
+	at java.base/java.nio.file.Path.of(Unknown Source) ~[?:?]
+	at java.base/java.nio.file.Paths.get(Unknown Source) ~[?:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.util.HelpersKt.findCodeSource(helpers.kt:164) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.util.GuiEssentialPlatformImpl.findCodeSource(GuiEssentialPlatformImpl.kt:413) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.util.ForkedJvm$Companion.defaultClassPath(ForkedJvm.kt:90) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.image.ForkedImageClipboard$Companion.classpath(ForkedImageClipboard.kt:58) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.image.ForkedImageClipboard$Companion.access$classpath(ForkedImageClipboard.kt:44) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.image.ForkedImageClipboard.<init>(ForkedImageClipboard.kt:27) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.UtilsKt.copyScreenshotToClipboard(utils.kt:174) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.ScreenshotPreviewToast$getManageActionForSlot$1$1.run(ScreenshotOverlay.kt:327) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[?:?]
+	at java.base/java.lang.Thread.run(Unknown Source) [?:?]
+[16Oct2026 10:12:31.864] [Essential Thread 28/DEBUG] [gg.essential.util.HelpersKt/]: Failed to convert "jar:file:/C:/Users/SpartanGamerBR/curseforge/minecraft/Instances/All-The-Mods-10/mods/kotlinforforge-5.12.0-all.jar!/META-INF/jarjar/kotlin-stdlib-2.4.0.jar" to local file, using copy instead.
+java.nio.file.FileSystemNotFoundException: null
+	at jdk.zipfs@21.0.12.1/jdk.nio.zipfs.ZipFileSystemProvider.getFileSystem(Unknown Source) ~[jdk.zipfs:?]
+	at jdk.zipfs@21.0.12.1/jdk.nio.zipfs.ZipFileSystemProvider.getPath(Unknown Source) ~[jdk.zipfs:?]
+	at java.base/java.nio.file.Path.of(Unknown Source) ~[?:?]
+	at java.base/java.nio.file.Paths.get(Unknown Source) ~[?:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.util.HelpersKt.findCodeSource(helpers.kt:164) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.util.GuiEssentialPlatformImpl.findCodeSource(GuiEssentialPlatformImpl.kt:413) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.util.ForkedJvm$Companion.defaultClassPath(ForkedJvm.kt:90) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.image.ForkedImageClipboard$Companion.classpath(ForkedImageClipboard.kt:58) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.image.ForkedImageClipboard$Companion.access$classpath(ForkedImageClipboard.kt:44) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.image.ForkedImageClipboard.<init>(ForkedImageClipboard.kt:27) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.UtilsKt.copyScreenshotToClipboard(utils.kt:174) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.ScreenshotPreviewToast$getManageActionForSlot$1$1.run(ScreenshotOverlay.kt:327) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[?:?]
+	at java.base/java.lang.Thread.run(Unknown Source) [?:?]
+[16Oct2026 10:12:31.867] [Essential Thread 28/DEBUG] [gg.essential.util.HelpersKt/]: Failed to convert "jar:file:/C:/Users/SpartanGamerBR/curseforge/minecraft/Instances/All-The-Mods-10/mods/kotlinforforge-5.12.0-all.jar!/META-INF/jarjar/kotlinx-serialization-core-jvm-1.11.0.jar" to local file, using copy instead.
+java.nio.file.FileSystemNotFoundException: null
+	at jdk.zipfs@21.0.12.1/jdk.nio.zipfs.ZipFileSystemProvider.getFileSystem(Unknown Source) ~[jdk.zipfs:?]
+	at jdk.zipfs@21.0.12.1/jdk.nio.zipfs.ZipFileSystemProvider.getPath(Unknown Source) ~[jdk.zipfs:?]
+	at java.base/java.nio.file.Path.of(Unknown Source) ~[?:?]
+	at java.base/java.nio.file.Paths.get(Unknown Source) ~[?:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.util.HelpersKt.findCodeSource(helpers.kt:164) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.util.GuiEssentialPlatformImpl.findCodeSource(GuiEssentialPlatformImpl.kt:413) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.util.ForkedJvm$Companion.defaultClassPath(ForkedJvm.kt:90) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.image.ForkedImageClipboard$Companion.classpath(ForkedImageClipboard.kt:58) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.image.ForkedImageClipboard$Companion.access$classpath(ForkedImageClipboard.kt:44) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.image.ForkedImageClipboard.<init>(ForkedImageClipboard.kt:27) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.UtilsKt.copyScreenshotToClipboard(utils.kt:174) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.ScreenshotPreviewToast$getManageActionForSlot$1$1.run(ScreenshotOverlay.kt:327) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[?:?]
+	at java.base/java.lang.Thread.run(Unknown Source) [?:?]
+[16Oct2026 10:12:31.875] [Essential Thread 28/DEBUG] [gg.essential.util.HelpersKt/]: Failed to convert "jar:file:/C:/Users/SpartanGamerBR/curseforge/minecraft/Instances/All-The-Mods-10/mods/kotlinforforge-5.12.0-all.jar!/META-INF/jarjar/kotlinx-serialization-json-jvm-1.11.0.jar" to local file, using copy instead.
+java.nio.file.FileSystemNotFoundException: null
+	at jdk.zipfs@21.0.12.1/jdk.nio.zipfs.ZipFileSystemProvider.getFileSystem(Unknown Source) ~[jdk.zipfs:?]
+	at jdk.zipfs@21.0.12.1/jdk.nio.zipfs.ZipFileSystemProvider.getPath(Unknown Source) ~[jdk.zipfs:?]
+	at java.base/java.nio.file.Path.of(Unknown Source) ~[?:?]
+	at java.base/java.nio.file.Paths.get(Unknown Source) ~[?:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.util.HelpersKt.findCodeSource(helpers.kt:164) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.util.GuiEssentialPlatformImpl.findCodeSource(GuiEssentialPlatformImpl.kt:413) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.util.ForkedJvm$Companion.defaultClassPath(ForkedJvm.kt:90) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.image.ForkedImageClipboard$Companion.classpath(ForkedImageClipboard.kt:58) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.image.ForkedImageClipboard$Companion.access$classpath(ForkedImageClipboard.kt:44) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.image.ForkedImageClipboard.<init>(ForkedImageClipboard.kt:27) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.UtilsKt.copyScreenshotToClipboard(utils.kt:174) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at TRANSFORMER/essential@1.5.1/gg.essential.gui.screenshot.ScreenshotPreviewToast$getManageActionForSlot$1$1.run(ScreenshotOverlay.kt:327) ~[Essential%20(neoforge_1.21.1).jar%231532!/:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[?:?]
+	at java.base/java.lang.Thread.run(Unknown Source) [?:?]
+[16Oct2026 10:12:31.884] [Essential Thread 28/DEBUG] [gg.essential.util.ForkedJvm/]: Starting forked JVM: C:\Users\SpartanGamerBR\curseforge\minecraft\Install\java\java-runtime-delta\bin\java -cp C:\Users\SPARTA~1\AppData\Local\Temp\essential-clipboard7502913758985073230.jar;C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\essential\Essential (neoforge_1.21.1).jar;C:\Users\SPARTA~1\AppData\Local\Temp\essential6814271786972355662.jar;C:\Users\SPARTA~1\AppData\Local\Temp\essential15212258853191176440.jar;C:\Users\SPARTA~1\AppData\Local\Temp\essential14732153452493101667.jar;C:\Users\SPARTA~1\AppData\Local\Temp\essential15682247964636008016.jar gg.essential.gui.screenshot.image.ForkedImageClipboard
+[16Oct2026 10:12:34.286] [Render thread/DEBUG] [gg.essential.gui.screenshot.components.ScreenshotProviderManager/]: Updating provider to target resolution (200, 200)
+[16Oct2026 10:12:34.740] [Render thread/INFO] [de.keksuccino.fancymenu.customization.layer.ScreenCustomizationLayerHandler/]: [FANCYMENU] ScreenCustomizationLayer registered: gg.essential.gui.screenshot.components.ScreenshotBrowser
+[16Oct2026 10:12:34.766] [Render thread/DEBUG] [Essential Logger/]: Trying current window hints
+[16Oct2026 10:12:36.909] [Render thread/DEBUG] [gg.essential.gui.screenshot.components.ScreenshotProviderManager/]: Updating provider to target resolution (571, 260)
+[16Oct2026 10:12:41.342] [Worker-ResourceReload-3/DEBUG] [ModernFix/]: Worker-ResourceReload-3 shutdown
+[16Oct2026 10:13:21.841] [AllTheTweaks-DiscordRpc/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.command.CommandExecutor/]: Sending command: SET_ACTIVITY (nonce: 10)
+[16Oct2026 10:13:21.850] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Received frame: op=FRAME, data={"cmd":"SET_ACTIVITY","data":{"type":0,"state":"561 Mods","details":"Doomscrolling","timestamps":{"start":1792155859000},"assets":{"large_image":"1252861204045500466","large_text":"All The Mods 10"},"...
+[16Oct2026 10:13:21.850] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Frame handled by command executor: true
+[16Oct2026 10:13:41.343] [Worker-ResourceReload-6/DEBUG] [ModernFix/]: Worker-ResourceReload-6 shutdown
+[16Oct2026 10:14:22.840] [AllTheTweaks-DiscordRpc/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.command.CommandExecutor/]: Sending command: SET_ACTIVITY (nonce: 11)
+[16Oct2026 10:14:22.847] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Received frame: op=FRAME, data={"cmd":"SET_ACTIVITY","data":{"type":0,"state":"561 Mods","details":"Looking for the right button","timestamps":{"start":1792155859000},"assets":{"large_image":"1252861204045500466","large_text":"All ...
+[16Oct2026 10:14:22.847] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Frame handled by command executor: true
+[16Oct2026 10:14:41.345] [Worker-ResourceReload-0/DEBUG] [ModernFix/]: Worker-ResourceReload-0 shutdown
+[16Oct2026 10:15:22.844] [AllTheTweaks-DiscordRpc/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.command.CommandExecutor/]: Sending command: SET_ACTIVITY (nonce: 12)
+[16Oct2026 10:15:22.886] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Received frame: op=FRAME, data={"cmd":"SET_ACTIVITY","data":{"type":0,"state":"561 Mods","details":"Doomscrolling","timestamps":{"start":1792155859000},"assets":{"large_image":"1252861204045500466","large_text":"All The Mods 10"},"...
+[16Oct2026 10:15:22.886] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Frame handled by command executor: true
+[16Oct2026 10:15:41.345] [Worker-ResourceReload-8/DEBUG] [ModernFix/]: Worker-ResourceReload-8 shutdown
+[16Oct2026 10:16:23.842] [AllTheTweaks-DiscordRpc/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.command.CommandExecutor/]: Sending command: SET_ACTIVITY (nonce: 13)
+[16Oct2026 10:16:23.856] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Received frame: op=FRAME, data={"cmd":"SET_ACTIVITY","data":{"type":0,"state":"561 Mods","details":"Making a sandwich","timestamps":{"start":1792155859000},"assets":{"large_image":"1252861204045500466","large_text":"All The Mods 10...
+[16Oct2026 10:16:23.857] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Frame handled by command executor: true
+[16Oct2026 10:16:41.345] [Worker-ResourceReload-10/DEBUG] [ModernFix/]: Worker-ResourceReload-10 shutdown
+[16Oct2026 10:17:23.842] [AllTheTweaks-DiscordRpc/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.command.CommandExecutor/]: Sending command: SET_ACTIVITY (nonce: 14)
+[16Oct2026 10:17:23.848] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Received frame: op=FRAME, data={"cmd":"SET_ACTIVITY","data":{"type":0,"state":"561 Mods","details":"Looking for the right button","timestamps":{"start":1792155859000},"assets":{"large_image":"1252861204045500466","large_text":"All ...
+[16Oct2026 10:17:23.848] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Frame handled by command executor: true
+[16Oct2026 10:17:48.848] [Render thread/INFO] [AllTheLeaks/]: Listing events...
+[16Oct2026 10:17:48.850] [Render thread/INFO] [AllTheLeaks/]: World join: 1
+[16Oct2026 10:17:48.850] [Render thread/INFO] [AllTheLeaks/]:   Singleplayer: 1
+[16Oct2026 10:17:48.850] [Render thread/INFO] [AllTheLeaks/]:   Multiplayer: 0
+[16Oct2026 10:17:48.850] [Render thread/INFO] [AllTheLeaks/]: Client Level Updates: 3
+[16Oct2026 10:17:48.850] [Render thread/INFO] [AllTheLeaks/]: Client Player Logout: 2
+[16Oct2026 10:17:48.850] [Render thread/INFO] [AllTheLeaks/]: Server Player Logout: 1
+[16Oct2026 10:17:48.850] [Render thread/INFO] [AllTheLeaks/]: Server Stopped: 1
+[16Oct2026 10:17:48.851] [Render thread/INFO] [AllTheLeaks/]: Listing memory leaks so far...
+[16Oct2026 10:17:48.851] [Render thread/INFO] [AllTheLeaks/]: B: 5365MB / C: 5383MB / Diff: +18MB
+[16Oct2026 10:17:48.851] [Render thread/INFO] [AllTheLeaks/]: Memory Leaks detected: (/atl force_refresh to update)
+[16Oct2026 10:17:48.851] [Render thread/INFO] [AllTheLeaks/]: | Level:
+[16Oct2026 10:17:48.851] [Render thread/INFO] [AllTheLeaks/]: |- ServerLevel (minecraft): 29
+[16Oct2026 10:17:48.851] [Render thread/INFO] [AllTheLeaks/]: |- ClientLevel (minecraft): 1
+[16Oct2026 10:17:48.851] [Render thread/INFO] [AllTheLeaks/]: | Player:
+[16Oct2026 10:17:48.851] [Render thread/INFO] [AllTheLeaks/]: |- ServerPlayer (minecraft): 1
+[16Oct2026 10:17:48.851] [Render thread/INFO] [AllTheLeaks/]: |- LocalPlayer (minecraft): 1
+[16Oct2026 10:17:48.851] [Render thread/INFO] [AllTheLeaks/]: | MinecraftServer:
+[16Oct2026 10:17:48.851] [Render thread/INFO] [AllTheLeaks/]: |- IntegratedServer (minecraft): 1
+[16Oct2026 10:17:50.542] [Render thread/INFO] [de.keksuccino.fancymenu.customization.layer.ScreenCustomizationLayerHandler/]: [FANCYMENU] ScreenCustomizationLayer registered: options_screen
+[16Oct2026 10:17:51.913] [Render thread/INFO] [de.keksuccino.fancymenu.customization.layer.ScreenCustomizationLayerHandler/]: [FANCYMENU] ScreenCustomizationLayer registered: sound_options_screen
+[16Oct2026 10:18:24.841] [AllTheTweaks-DiscordRpc/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.command.CommandExecutor/]: Sending command: SET_ACTIVITY (nonce: 15)
+[16Oct2026 10:18:24.850] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Received frame: op=FRAME, data={"cmd":"SET_ACTIVITY","data":{"type":0,"state":"561 Mods","details":"Reading the changelog","timestamps":{"start":1792155859000},"assets":{"large_image":"1252861204045500466","large_text":"All The Mod...
+[16Oct2026 10:18:24.850] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Frame handled by command executor: true
+[16Oct2026 10:18:42.588] [Render thread/DEBUG] [Framework/]: Stopping config watcher
+[16Oct2026 10:18:42.664] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[16Oct2026 10:18:42.716] [Render thread/INFO] [minecolonies/]: Removed all colony views
+[16Oct2026 10:18:42.717] [Render thread/INFO] [FluxNetworks/]: Released client Flux Networks cache
+[16Oct2026 10:18:42.717] [Render thread/DEBUG] [net.permutated.pylons.Pylons/]: Clearing recipe cache after logging out
+[16Oct2026 10:18:42.720] [Render thread/DEBUG] [io.redspace.ironsspellbooks.IronsSpellbooks/]: ClientPlayerNetworkEvent onPlayerLogOut
+[16Oct2026 10:18:42.732] [Render thread/DEBUG] [SpectreLib/CONFIG]: Unloading server configs
+[16Oct2026 10:18:42.899] [Render thread/INFO] [de.keksuccino.fancymenu.util.rendering.ui.cursor.CursorHandler/]: [FANCYMENU] Releasing FancyMenu-owned GLFW cursors during client shutdown..
+[16Oct2026 10:18:43.197] [Render thread/INFO] [FTB Chunks/]: Shutting down map thread
+[16Oct2026 10:18:43.561] [AllTheTweaks-DiscordRpcShutdown/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.command.CommandExecutor/]: Sending command: SET_ACTIVITY (nonce: 16)
+[16Oct2026 10:18:43.572] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Received frame: op=FRAME, data={"cmd":"SET_ACTIVITY","data":null,"evt":null,"nonce":"16"}
+[16Oct2026 10:18:43.572] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Frame handled by command executor: true
+[16Oct2026 10:18:43.576] [AllTheTweaks-DiscordRpcShutdown/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.WindowsConnection/]: Windows connection closed
+[16Oct2026 10:18:43.577] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Read loop ended for generation 1

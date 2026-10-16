@@ -39078,3 +39078,48 @@ java.io.FileNotFoundException: actuallyadditions:textures/entity/zombie_villager
 
 [STDOUT] [10:11:21] [Structurize IO Worker #1/WARN] [structurize/]: Finished discovering Client Structure packs
 
+[STDOUT] [10:12:34] [Render thread/INFO] [de.ke.fa.cu.la.ScreenCustomizationLayerHandler/]: [FANCYMENU] ScreenCustomizationLayer registered: gg.essential.gui.screenshot.components.ScreenshotBrowser
+
+[STDOUT] [10:17:48] [Render thread/INFO] [AllTheLeaks/]: Listing events...
+
+[STDOUT] [10:17:48] [Render thread/INFO] [AllTheLeaks/]: World join: 1
+[10:17:48] [Render thread/INFO] [AllTheLeaks/]:   Singleplayer: 1
+
+[STDOUT] [10:17:48] [Render thread/INFO] [AllTheLeaks/]:   Multiplayer: 0
+[10:17:48] [Render thread/INFO] [AllTheLeaks/]: Client Level Updates: 3
+[10:17:48] [Render thread/INFO] [AllTheLeaks/]: Client Player Logout: 2
+[10:17:48] [Render thread/INFO] [AllTheLeaks/]: Server Player Logout: 1
+
+[STDOUT] [10:17:48] [Render thread/INFO] [AllTheLeaks/]: Server Stopped: 1
+
+[STDOUT] [10:17:48] [Render thread/INFO] [AllTheLeaks/]: Listing memory leaks so far...
+
+[STDOUT] [10:17:48] [Render thread/INFO] [AllTheLeaks/]: B: 5365MB / C: 5383MB / Diff: +18MB
+
+[STDOUT] [10:17:48] [Render thread/INFO] [AllTheLeaks/]: Memory Leaks detected: (/atl force_refresh to update)
+[10:17:48] [Render thread/INFO] [AllTheLeaks/]: | Level:
+
+[STDOUT] [10:17:48] [Render thread/INFO] [AllTheLeaks/]: |- ServerLevel (minecraft): 29
+[10:17:48] [Render thread/INFO] [AllTheLeaks/]: |- ClientLevel (minecraft): 1
+[10:17:48] [Render thread/INFO] [AllTheLeaks/]: | Player:
+[10:17:48] [Render thread/INFO] [AllTheLeaks/]: |- ServerPlayer (minecraft): 1
+
+[STDOUT] [10:17:48] [Render thread/INFO] [AllTheLeaks/]: |- LocalPlayer (minecraft): 1
+[10:17:48] [Render thread/INFO] [AllTheLeaks/]: | MinecraftServer:
+[10:17:48] [Render thread/INFO] [AllTheLeaks/]: |- IntegratedServer (minecraft): 1
+
+[STDOUT] [10:17:50] [Render thread/INFO] [de.ke.fa.cu.la.ScreenCustomizationLayerHandler/]: [FANCYMENU] ScreenCustomizationLayer registered: options_screen
+
+[STDOUT] [10:17:51] [Render thread/INFO] [de.ke.fa.cu.la.ScreenCustomizationLayerHandler/]: [FANCYMENU] ScreenCustomizationLayer registered: sound_options_screen
+
+[STDOUT] [10:18:42] [Render thread/INFO] [minecraft/Minecraft]: Stopping!
+
+[STDOUT] [10:18:42] [Render thread/INFO] [minecolonies/]: Removed all colony views
+
+[STDOUT] [10:18:42] [Render thread/INFO] [FluxNetworks/]: Released client Flux Networks cache
+
+[STDOUT] [10:18:42] [Render thread/INFO] [de.ke.fa.ut.re.ui.cu.CursorHandler/]: [FANCYMENU] Releasing FancyMenu-owned GLFW cursors during client shutdown..
+
+[STDOUT] [10:18:43] [Render thread/INFO] [FTB Chunks/]: Shutting down map thread
+
+[EXIT] code=0, terminatedByApp=false

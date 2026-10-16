@@ -23123,3 +23123,30 @@ java.io.FileNotFoundException: actuallyadditions:textures/entity/zombie_villager
 [16Oct2026 10:11:21.114] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Frontier
 [16Oct2026 10:11:21.118] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Spartan_Gamer_BR
 [16Oct2026 10:11:21.118] [Structurize IO Worker #1/WARN] [structurize/]: Finished discovering Client Structure packs
+[16Oct2026 10:12:34.740] [Render thread/INFO] [de.keksuccino.fancymenu.customization.layer.ScreenCustomizationLayerHandler/]: [FANCYMENU] ScreenCustomizationLayer registered: gg.essential.gui.screenshot.components.ScreenshotBrowser
+[16Oct2026 10:17:48.848] [Render thread/INFO] [AllTheLeaks/]: Listing events...
+[16Oct2026 10:17:48.850] [Render thread/INFO] [AllTheLeaks/]: World join: 1
+[16Oct2026 10:17:48.850] [Render thread/INFO] [AllTheLeaks/]:   Singleplayer: 1
+[16Oct2026 10:17:48.850] [Render thread/INFO] [AllTheLeaks/]:   Multiplayer: 0
+[16Oct2026 10:17:48.850] [Render thread/INFO] [AllTheLeaks/]: Client Level Updates: 3
+[16Oct2026 10:17:48.850] [Render thread/INFO] [AllTheLeaks/]: Client Player Logout: 2
+[16Oct2026 10:17:48.850] [Render thread/INFO] [AllTheLeaks/]: Server Player Logout: 1
+[16Oct2026 10:17:48.850] [Render thread/INFO] [AllTheLeaks/]: Server Stopped: 1
+[16Oct2026 10:17:48.851] [Render thread/INFO] [AllTheLeaks/]: Listing memory leaks so far...
+[16Oct2026 10:17:48.851] [Render thread/INFO] [AllTheLeaks/]: B: 5365MB / C: 5383MB / Diff: +18MB
+[16Oct2026 10:17:48.851] [Render thread/INFO] [AllTheLeaks/]: Memory Leaks detected: (/atl force_refresh to update)
+[16Oct2026 10:17:48.851] [Render thread/INFO] [AllTheLeaks/]: | Level:
+[16Oct2026 10:17:48.851] [Render thread/INFO] [AllTheLeaks/]: |- ServerLevel (minecraft): 29
+[16Oct2026 10:17:48.851] [Render thread/INFO] [AllTheLeaks/]: |- ClientLevel (minecraft): 1
+[16Oct2026 10:17:48.851] [Render thread/INFO] [AllTheLeaks/]: | Player:
+[16Oct2026 10:17:48.851] [Render thread/INFO] [AllTheLeaks/]: |- ServerPlayer (minecraft): 1
+[16Oct2026 10:17:48.851] [Render thread/INFO] [AllTheLeaks/]: |- LocalPlayer (minecraft): 1
+[16Oct2026 10:17:48.851] [Render thread/INFO] [AllTheLeaks/]: | MinecraftServer:
+[16Oct2026 10:17:48.851] [Render thread/INFO] [AllTheLeaks/]: |- IntegratedServer (minecraft): 1
+[16Oct2026 10:17:50.542] [Render thread/INFO] [de.keksuccino.fancymenu.customization.layer.ScreenCustomizationLayerHandler/]: [FANCYMENU] ScreenCustomizationLayer registered: options_screen
+[16Oct2026 10:17:51.913] [Render thread/INFO] [de.keksuccino.fancymenu.customization.layer.ScreenCustomizationLayerHandler/]: [FANCYMENU] ScreenCustomizationLayer registered: sound_options_screen
+[16Oct2026 10:18:42.664] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[16Oct2026 10:18:42.716] [Render thread/INFO] [minecolonies/]: Removed all colony views
+[16Oct2026 10:18:42.717] [Render thread/INFO] [FluxNetworks/]: Released client Flux Networks cache
+[16Oct2026 10:18:42.899] [Render thread/INFO] [de.keksuccino.fancymenu.util.rendering.ui.cursor.CursorHandler/]: [FANCYMENU] Releasing FancyMenu-owned GLFW cursors during client shutdown..
+[16Oct2026 10:18:43.197] [Render thread/INFO] [FTB Chunks/]: Shutting down map thread
