@@ -9465,3 +9465,37 @@
 [23:35:48] [INFO] server_scripts:mods/AllTheOres/Recipes.js#38: Adding dust recipe: silentgear:crimson_steel_dust with resource: crimson_steel
 [23:35:48] [INFO] server_scripts:mods/AllTheOres/Recipes.js#38: Adding dust recipe: neovitae:hellforged_dust with resource: hellforged
 [23:35:48] [INFO] server_scripts:mods/AllTheOres/Recipes.js#38: Adding dust recipe: allthemodium:vibranium_dust with resource: vibranium
+[23:35:49] [INFO] server_scripts:mods/AllTheOres/Recipes.js#38: Adding dust recipe: oritech:energite_dust with resource: energite
+[23:35:49] [INFO] server_scripts:mods/AllTheOres/Recipes.js#38: Adding dust recipe: allthemodium:unobtainium_dust with resource: unobtainium
+[23:35:49] [INFO] server_scripts:mods/AllTheOres/Recipes.js#38: Adding dust recipe: silentgear:azure_silver_dust with resource: azure_silver
+[23:35:49] [INFO] server_scripts:mods/AllTheOres/Recipes.js#38: Adding dust recipe: allthemodium:vibranium_allthemodium_alloy_dust with resource: vibranium_allthemodium_alloy
+[23:35:49] [INFO] server_scripts:mods/AllTheOres/Recipes.js#38: Adding dust recipe: oritech:duratium_dust with resource: duratium
+[23:35:49] [INFO] server_scripts:mods/AllTheOres/Recipes.js#38: Adding dust recipe: mekanism_extras:dust_naquadah with resource: naquadah
+[23:35:49] [INFO] server_scripts:mods/AllTheOres/Recipes.js#38: Adding dust recipe: silentgear:blaze_gold_dust with resource: blaze_gold
+[23:35:50] [INFO] server_scripts:mods/AllTheOres/Recipes.js#38: Adding dust recipe: silentgear:crimson_iron_dust with resource: crimson_iron
+[23:35:50] [INFO] server_scripts:mods/AllTheOres/Recipes.js#38: Adding dust recipe: draconicevolution:awakened_draconium_dust with resource: draconium_awakened
+[23:35:50] [INFO] server_scripts:mods/AllTheOres/Recipes.js#38: Adding dust recipe: allthemodium:unobtainium_allthemodium_alloy_dust with resource: unobtainium_allthemodium_alloy
+[23:35:50] [INFO] server_scripts:mods/AllTheOres/Recipes.js#38: Adding dust recipe: occultism:iesnium_dust with resource: iesnium
+[23:35:50] [INFO] server_scripts:mods/AllTheOres/Recipes.js#38: Adding dust recipe: allthemodium:allthemodium_dust with resource: allthemodium
+[23:35:50] [INFO] server_scripts:mods/AllTheOres/Recipes.js#38: Adding dust recipe: oritech:adamant_dust with resource: adamant
+[23:35:50] [INFO] server_scripts:mods/AllTheOres/Recipes.js#38: Adding dust recipe: silentgear:tyrian_steel_dust with resource: tyrian_steel
+[23:35:50] [INFO] server_scripts:mods/AllTheOres/Recipes.js#38: Adding dust recipe: allthemodium:unobtainium_vibranium_alloy_dust with resource: unobtainium_vibranium_alloy
+[23:35:50] [INFO] server_scripts:mods/AllTheOres/Recipes.js#38: Adding dust recipe: silentgear:azure_electrum_dust with resource: azure_electrum
+[23:35:50] [INFO] server_scripts:mods/AllTheOres/Recipes.js#38: Adding dust recipe: draconicevolution:draconium_dust with resource: draconium
+[23:35:50] [INFO] server_scripts:mods/AllTheOres/Recipes.js#38: Adding dust recipe: immersiveengineering:dust_hop_graphite with resource: hop_graphite
+[23:35:50] [INFO] server_scripts:mods/AllTheOres/Recipes.js#38: Adding dust recipe: oritech:biosteel_dust with resource: biosteel
+[23:35:57] [INFO] server_scripts:Unification/sawing.js#98: Ingredient is not a log tag: {"item":"cataclysm:chorus_stem"}
+[23:35:57] [INFO] server_scripts:Unification/sawing.js#98: Ingredient is not a log tag: {"item":"allthecompressed:acacia_planks_1x"}
+[23:35:57] [INFO] server_scripts:Unification/sawing.js#98: Ingredient is not a log tag: {"item":"allthecompressed:oak_planks_1x"}
+[23:35:57] [INFO] server_scripts:Unification/sawing.js#98: Ingredient is not a log tag: {"tag":"ad_astra:strophar_caps"}
+[23:35:57] [INFO] server_scripts:Unification/sawing.js#98: Ingredient is not a log tag: {"item":"allthecompressed:mangrove_planks_1x"}
+[23:35:57] [INFO] server_scripts:Unification/sawing.js#98: Ingredient is not a log tag: {"item":"allthecompressed:spruce_planks_1x"}
+[23:35:57] [INFO] server_scripts:Unification/sawing.js#98: Ingredient is not a log tag: {"item":"allthecompressed:dark_oak_planks_1x"}
+[23:35:57] [INFO] server_scripts:Unification/sawing.js#98: Ingredient is not a log tag: {"tag":"ad_astra:aeronos_caps"}
+[23:35:57] [INFO] server_scripts:Unification/sawing.js#98: Ingredient is not a log tag: {"tag":"regions_unexplored:bamboo_logs"}
+[23:35:57] [INFO] server_scripts:Unification/sawing.js#98: Ingredient is not a log tag: {"item":"allthecompressed:birch_planks_1x"}
+[23:35:57] [INFO] server_scripts:Unification/sawing.js#98: Ingredient is not a log tag: {"item":"twilightforest:towerwood"}
+[23:35:57] [INFO] server_scripts:Unification/sawing.js#98: Ingredient is not a log tag: {"item":"allthecompressed:jungle_planks_1x"}
+[23:35:57] [INFO] server_scripts:Unification/sawing.js#98: Ingredient is not a log tag: {"item":"allthecompressed:cherry_planks_1x"}
+[23:35:58] [INFO] Posted recipe events in 14.454 s
+[23:35:58] [INFO] KubeJS modifications to recipe manager finished in 118.2 ms
