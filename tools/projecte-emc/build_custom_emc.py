@@ -49,7 +49,8 @@ def _validate_selector(entry: dict[str, Any], index: int) -> tuple[str, str]:
 def validate_policy(policy: Any) -> list[dict[str, Any]]:
     if not isinstance(policy, dict):
         raise PolicyError("Policy root must be a JSON object.")
-    if policy.get("schemaVersion") != 1:
+    schema_version = policy.get("schemaVersion")
+    if isinstance(schema_version, bool) or schema_version != 1:
         raise PolicyError("schemaVersion must be the integer 1.")
     raw_entries = policy.get("entries")
     if not isinstance(raw_entries, list):
@@ -78,7 +79,7 @@ def validate_policy(policy: Any) -> list[dict[str, Any]]:
             )
 
         status = entry.get("status")
-        if status not in VALID_STATUSES:
+        if not isinstance(status, str) or status not in VALID_STATUSES:
             raise PolicyError(
                 f"entries[{index}].status must be 'draft' or 'approved'."
             )
