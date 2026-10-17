@@ -164,9 +164,22 @@ O repositório contém muitos arquivos. Aguarde o terminal terminar e mantenha e
 
 ## 8. Balanceamento do ProjectE
 
-O trabalho de EMC está sendo desenvolvido separadamente, sem depender de AutoEMC ou ProjectE Integration. O plano é deixar o ProjectE fazer os cálculos nativos de receitas que ele já suporta e cadastrar manualmente apenas exceções, valores de referência e conversões que precisem de controle.
+O trabalho de EMC está sendo desenvolvido sem depender de AutoEMC ou ProjectE Integration. O plano é deixar o ProjectE fazer os cálculos nativos das receitas que ele já suporta e cadastrar manualmente apenas exceções revisadas.
 
-Veja o [plano de implementação do EMC](docs/projecte-emc/IMPLEMENTATION_PLAN.md) e a [exportação das receitas em JSON](docs/projecte-emc/RECIPE_EXPORT.md). As alterações em desenvolvimento ficam na branch `work/projecte-emc-balancing` até serem testadas e revisadas.
+Veja o [plano de implementação do EMC](docs/projecte-emc/IMPLEMENTATION_PLAN.md) e a [exportação das receitas em JSON](docs/projecte-emc/RECIPE_EXPORT.md). A tabela antiga de custom EMC foi arquivada na branch de trabalho para referência, e a configuração ativa começa vazia; ela não será tratada como fonte confiável nem será restaurada automaticamente.
+
+### Ferramentas para desenvolvedores
+
+Com Python 3.10+ instalado, na raiz do repositório:
+
+```powershell
+python tools/projecte-emc/build_custom_emc.py
+python -m unittest discover -s tools/projecte-emc -p "test_*.py"
+```
+
+O primeiro comando cria uma **configuração candidata** em `build/projecte-emc/custom_emc.json`; não sobrescreve a configuração de jogo automaticamente. O segundo executa os testes do gerador. A política começa vazia de propósito: os valores devem ser adicionados somente depois de testar os mapeadores nativos e justificar cada exceção.
+
+As alterações de desenvolvimento ficam na branch `work/projecte-emc-balancing` até serem testadas e revisadas.
 
 ---
 
