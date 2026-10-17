@@ -1,3 +1,5 @@
+> **Documento histórico.** Esta revisão registra as issues e os sintomas observados durante a investigação original. Ela não é a arquitetura atual. Para implementar e testar EMC sem AutoEMC nem ProjectE Integration, siga [IMPLEMENTATION_PLAN.md](../IMPLEMENTATION_PLAN.md).
+
 # ProjectE EMC — revisão das issues e diagnóstico inicial
 
 **Branch de trabalho:** `work/projecte-emc-balancing`  
