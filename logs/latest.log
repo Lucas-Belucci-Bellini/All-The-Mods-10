@@ -1,0 +1,6 @@
+[14:41:28] [main/INFO]: ModLauncher running: args [--username, Spartan_Gamer_BR, --version, neoforge-21.1.259, --gameDir, C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10, --assetsDir, C:\Users\SpartanGamerBR\curseforge\minecraft\Install\assets, --assetIndex, 17, --uuid, 85ee4012cb4e41679ebb79c9a444d6d4, --accessToken, ❄❄❄❄❄❄❄❄, --clientId, 598904-dd2296-3bc290-7432ae-e5a878, --xuid, 2535448650411648, --userType, msa, --versionType, release, --width, 1920, --height, 1080, --quickPlayPath, C:\Users\SpartanGamerBR\curseforge\minecraft\Quickplay\f727d3a0-1259-456d-b324-df33601e4beb.json, , , , --fml.neoForgeVersion, 21.1.259, --fml.fmlVersion, 4.0.45, --fml.mcVersion, 1.21.1, --fml.neoFormVersion, 20240808.144430, --launchTarget, forgeclient]
+[14:41:28] [main/INFO]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.12.1+1-LTS
+[14:41:28] [main/INFO]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.12.1 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[14:41:28] [main/WARN]: ****************************** Found dependency overrides ******************************
+[14:41:28] [main/WARN]: Dependency overrides for mod 'allthetweaks': adding explicit AFTER ordering against 'bcc'
+[14:41:28] [main/WARN]: ****************************************************************************************
