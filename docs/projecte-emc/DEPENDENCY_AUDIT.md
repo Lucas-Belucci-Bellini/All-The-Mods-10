@@ -19,6 +19,12 @@ Até aqui, **não encontrei evidência de que os mods de conteúdo do ATM10 prec
 4. O log efetivo da instância resolve a dúvida sobre o JAR instalado: NeoForge lista `projecteintegration` como dependência obrigatória requisitada pelo `autoemc` com versão mínima 8.3.1. A falha aparece em `logs/latest.log` e no relatório de crash citado acima.
 5. Em `config/autoemc-common.toml`, a configuração da instância usa `useBundledProjectEMappingConversions = true` e `useProjectEIntegrationBaselines = true`; os comentários indicam que parte das conversões e dos valores-base está incorporada no próprio AutoEMC. Isso sugere que ele possui dados embutidos, mas não prova a ausência de uma dependência declarada no metadata do JAR.
 
+## Estado após a última alteração registrada no repositório
+
+No snapshot atual de `main`, a pasta `mods/` contém `ProjectE-1.21.1-PE1.1.0.jar` e `projectexpansion-1.21.1-1.0.6.jar`, mas não contém ProjectE Integration nem AutoEMC. Isso corresponde ao teste básico que você iniciou.
+
+**Atenção à defasagem dos logs:** `logs/latest.log` e `logs/modlist.txt` ainda refletem a execução anterior, quando AutoEMC estava presente e falhou pela ausência de ProjectE Integration. Eles não comprovam o resultado da execução após remover os dois addons. Para confirmar se o EMC básico do ProjectE voltou, é necessário versionar os arquivos de log gerados após o teste atual e verificar pedra, terra, diamante e a Transmutation Table no mundo.
+
 ## Conclusão operacional
 
 - **Mods de conteúdo do ATM10:** não há evidência encontrada de dependência obrigatória do ProjectE Integration.
