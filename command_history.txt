@@ -1,0 +1,15 @@
+/kill
+/tp Spartan_Gamer_BR
+/tp dannax4547
+/loçç
+/kill
+/gamemode spectator
+/tp Spartan_Gamer_BR
+/tp dannax4547
+/emsg
+/autoemc rescan
+/tp dannax4547
+/gamemode spectator
+/gamemode survival
+/tp dannax4547
+/kill

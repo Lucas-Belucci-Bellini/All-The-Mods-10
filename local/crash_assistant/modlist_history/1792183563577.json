@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "timestamp": 1792183563577,
   "modsCount": 542,
-  "status": "STARTED",
+  "status": "TITLE_SCREEN",
   "mods": [
     {
       "jarName": "neoforge-21.1.259 (modloader)",

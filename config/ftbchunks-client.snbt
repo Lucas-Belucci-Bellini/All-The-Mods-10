@@ -137,7 +137,26 @@
 		# Show entity heads on minimap
 		# Default: true
 		entity_heads: true
-		entity_icon: { }
+		entity_icon: {
+			"minecraft:sheep": true
+			"minecraft:pig": true
+			"minecraft:villager": true
+			"artifacts:mimic": true
+			"minecraft:bat": true
+			"productivebees:bumble_bee": true
+			"aquaculture:minnow": false
+			"aquaculture:muskellunge": false
+			"ars_nouveau:whirlisprig": true
+			"aquaculture:carp": false
+			"aquaculture:bluegill": false
+			"minecraft:chicken": true
+			"minecraft:squid": true
+			"minecraft:llama": true
+			"aquaculture:perch": false
+			"aquaculture:brown_trout": false
+			"minecraft:glow_squid": true
+			"aquaculture:smallmouth_bass": false
+		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)
 		# Default: 0.5

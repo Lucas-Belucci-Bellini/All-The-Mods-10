@@ -1,1 +1,4 @@
 minecraft:overworld
+twilightforest:twilight_forest
+minecraft:the_nether
+allthemodium:mining
