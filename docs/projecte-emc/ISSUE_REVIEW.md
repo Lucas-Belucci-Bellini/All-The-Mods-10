@@ -27,7 +27,7 @@ A issue registra:
 - `config/ProjectE/custom_emc.json` está vazio no snapshot consultado.
 - A hipótese mais forte documentada é o conflito entre ProjectE Integration e Ice and Fire CE; Immersive Engineering é uma hipótese secundária.
 - Novo log de 17/10/2026: uma tentativa de iniciar sem ProjectE Integration falhou porque AutoEMC 2.1.1 declara `projecteintegration >= 8.3.1` como dependência obrigatória.
-- `logs/instance_audit.txt` registra que nessa tentativa foram removidos tanto ProjectE Integration quanto ProjectE. Portanto, ela não permite concluir se os EMCs do ProjectE funcionam sem o Integration.
+- `logs/instance_audit.txt` registra eventos de remoção dos dois mods, mas o `logs/latest.log` da inicialização das 02:29 lista ProjectE 1.1.0 e Project Expansion 1.0.6 como encontrados. A evidência direta dessa execução mostra ProjectE presente e ProjectE Integration ausente; o carregamento foi abortado pela dependência obrigatória do AutoEMC.
 
 **Interpretação:** resolver o carregamento do ProjectE vem antes de ajustar os preços.
 
@@ -78,7 +78,7 @@ A presença desses valores no TOML **não prova que eles estão ativos no Projec
 4. Em cada teste, guardar o `latest.log` e o log de debug e verificar pedra, terra, diamante e a Transmutation Table.
 5. Se o segundo teste funcionar e o primeiro não, a presença do Integration fica fortemente implicada. Se ambos falharem, examinar o erro original do ProjectE e isolar a hipótese de Immersive Engineering.
 
-Para a verificação atualizada da dependência, consulte [`DEPENDENCY_AUDIT.md`](DEPENDENCY_AUDIT.md).
+Para a verificação atualizada da dependência e a diferença entre o histórico de auditoria e o log da execução, consulte [`DEPENDENCY_AUDIT.md`](DEPENDENCY_AUDIT.md).
 6. Somente depois de o ProjectE ficar estável, gerar e auditar os EMCs.
 
 ## Critérios para o balanceamento posterior
