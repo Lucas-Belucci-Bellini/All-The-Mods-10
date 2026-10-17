@@ -1,4 +1,4 @@
-> **Documento histórico.** Este relatório registra a investigação anterior com AutoEMC e ProjectE Integration. A arquitetura atual não depende desses mods. Para o plano vigente, use [IMPLEMENTATION_PLAN.md](../IMPLEMENTATION_PLAN.md); configurações antigas foram movidas para `archive/` e não devem ser restauradas automaticamente.
+> **Documento histórico.** Este relatório registra a investigação anterior com AutoEMC e ProjectE Integration. A arquitetura atual não depende desses mods. Para o plano vigente, use [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md); configurações antigas foram movidas para `archive/` e não devem ser restauradas automaticamente.
 
 # ProjectE Integration — auditoria de dependências
 
