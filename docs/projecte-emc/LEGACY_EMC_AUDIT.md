@@ -83,3 +83,25 @@ Essa contagem coincide com as 67.531 entradas da tabela. A evidência é compat�
 - Os valores citados são os valores existentes no arquivo, não os valores finais recomendados.
 - Ainda não foi feito um recálculo completo das receitas nem análise de todos os ciclos possíveis.
 - Nenhuma alteração de EMC foi feita neste relatório.
+
+
+## Contexto do backup original e da Issue #8
+
+A branch `backup-do-modpack` é, conforme esclarecido pelo proprietário do repositório, o snapshot do ATM10 base baixado antes de começar as adições documentadas na [Issue #8 — mods](https://github.com/Lucas-Belucci-Bellini/All-The-Mods-10/issues/8). Portanto, **a ausência dos mods personalizados e da configuração de ProjectE nessa branch é esperada**; não deve ser tratada como defeito do backup.
+
+A comparação do backup com a linha de desenvolvimento mostra 81 commits à frente da branch original e inclui a adição de `config/ProjectE/custom_emc.json` (270.129 linhas no diff) e `config/ProjectE/mapping.toml`, além de vários mods e configurações customizadas.
+
+Entre os mods registrados como adicionados na Issue #8 estão:
+- AutoEMC 2.1.1
+- ProjectE 1.1.0
+- ProjectE Integration 8.4.0
+- Project Expansion 1.0.6
+- Apotheosis EMC e outros addons listados na issue
+
+A leitura correta do histórico é:
+1. Usar `backup-do-modpack` como **baseline limpa do ATM10 original**, não como a versão que deveria conter os addons da Issue #8.
+2. Usar a versão customizada atual como fonte para investigar os efeitos das adições posteriores.
+3. Comparar individualmente arquivos relevantes introduzidos depois, sobretudo a tabela de EMC, configurações do ProjectE e os mods de integração.
+4. Manter a branch `safety/pre-manual-emc-balancing-2026-10-17` para proteger a configuração customizada e fazer a auditoria em `work/manual-emc-balancing`.
+
+Essa separação permite determinar quais diferenças foram introduzidas pelas modificações posteriores sem perder a configuração atual do modpack. Não implica restaurar ou mesclar o backup sobre a versão customizada.
