@@ -71,10 +71,12 @@ A presença desses valores no TOML **não prova que eles estão ativos no Projec
 ## Plano de diagnóstico seguro
 
 1. Fazer backup da instância e do mundo; fechar o jogo.
-2. Em uma **cópia** da instância, desativar somente `ProjectE_Integration-1.21.1-8.4.0.jar`. Não apagar classes internas de JARs e não alterar a instância principal durante o teste.
-3. Manter ProjectE, Project Expansion, AutoEMC e Ice and Fire CE. Entrar em um mundo de teste e verificar se pedra, terra e diamante exibem EMC e podem ser aprendidos na Transmutation Table.
-4. Guardar o novo `latest.log` e `config/autoemc/autoemc-debug.log`.
-5. Se o EMC voltar, o addon desativado está envolvido no conflito; avaliar uma versão corrigida/remoção da integração redundante. Se não voltar, examinar a exceção do ProjectE no `latest.log` e isolar a hipótese de Immersive Engineering.
+2. Em uma **cópia** da instância, desativar temporariamente ProjectE Integration e AutoEMC juntos, mantendo ProjectE, Project Expansion e Ice and Fire CE. Fazer isso porque a documentação pública do AutoEMC é ambígua sobre a dependência obrigatória desta versão específica.
+3. Abrir um mundo de teste e verificar se pedra, terra e diamante exibem EMC e podem ser aprendidos na Transmutation Table.
+4. Guardar o novo `latest.log` e o log de debug.
+5. Se o EMC voltar, a presença de ProjectE Integration está envolvida no conflito. Depois, testar AutoEMC 2.1.1 sem ProjectE Integration numa segunda cópia, para confirmar se o jogo aceita essa combinação. Se EMC não voltar mesmo sem os dois addons, examinar a exceção do ProjectE no `latest.log` e isolar a hipótese de Immersive Engineering.
+
+Para a verificação de dependências e a ressalva sobre AutoEMC, consulte também [`DEPENDENCY_AUDIT.md`](DEPENDENCY_AUDIT.md).
 6. Somente depois de o ProjectE ficar estável, gerar e auditar os EMCs.
 
 ## Critérios para o balanceamento posterior
