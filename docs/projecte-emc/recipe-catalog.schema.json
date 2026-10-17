@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Lucas-Belucci-Bellini/All-The-Mods-10/blob/main/docs/projecte-emc/recipe-catalog.schema.json",
+  "title": "ATM10 Recipe Catalog Export",
+  "description": "KubeJS runtime export of recipe JSON visible during ServerEvents.recipes for the ATM10 instance.",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "status",
+    "generatedAt",
+    "gameVersion",
+    "modLoader",
+    "exportMethod",
+    "coverage",
+    "summary",
+    "recipes"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "status": {
+      "type": "string",
+      "const": "generated"
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "gameVersion": {
+      "type": "string"
+    },
+    "modLoader": {
+      "type": "string"
+    },
+    "exportMethod": {
+      "type": "string"
+    },
+    "coverage": {
+      "type": "object",
+      "required": [
+        "includesLoadedRecipeJson",
+        "includesKubeJSRecipesAlreadyRegisteredAtExportTime",
+        "includesRecipesRemovedByPackScripts",
+        "guaranteesJavaCodeOnlyRecipes",
+        "note"
+      ],
+      "properties": {
+        "includesLoadedRecipeJson": {
+          "type": "boolean"
+        },
+        "includesKubeJSRecipesAlreadyRegisteredAtExportTime": {
+          "type": "boolean"
+        },
+        "includesRecipesRemovedByPackScripts": {
+          "type": "boolean"
+        },
+        "guaranteesJavaCodeOnlyRecipes": {
+          "type": "boolean"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "summary": {
+      "type": "object",
+      "required": [
+        "totalRecipes",
+        "skippedBecauseOfSerializationErrors",
+        "removedRecipesEncountered",
+        "byType",
+        "byNamespace"
+      ],
+      "properties": {
+        "totalRecipes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "skippedBecauseOfSerializationErrors": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "removedRecipesEncountered": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "byType": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "byNamespace": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "recipes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "type",
+          "source",
+          "data"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9_.-]+:[a-z0-9_./-]+$"
+          },
+          "type": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string",
+            "enum": [
+              "loaded_recipe_json",
+              "modified_original",
+              "kubejs_added"
+            ]
+          },
+          "data": {
+            "type": "object"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
