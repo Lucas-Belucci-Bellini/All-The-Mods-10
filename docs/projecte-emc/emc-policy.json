@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "description": "Fonte de verdade para overrides EMC manuais revisados. Valores normais de receitas ficam a cargo dos mapeadores nativos do ProjectE.",
+  "rules": [
+    "Não reimplementar cálculo nativo de receitas que ProjectE já reconhece.",
+    "Somente entradas approved são exportadas.",
+    "Cada valor deve possuir uma justificativa revisável."
+  ],
+  "entries": []
+}
