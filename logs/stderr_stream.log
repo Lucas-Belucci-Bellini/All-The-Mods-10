@@ -1,26 +1,24 @@
 -----------------------------------------------------------------------------------
-DateTime: 16.10.2026 17:46:10:146 -03:00; PID: 30260
+DateTime: 17.10.2026 00:43:01:781 -03:00; PID: 32204
 This file contains the stderr stream of the Minecraft process logged to a file.
 It does not include stdout or log (log4j) messages to avoid performance impact.
 -----------------------------------------------------------------------------------
-[17:46:55:481] [STDERR]: [To redirect Truffle log output to a file use one of the following options:
-[17:46:55:481] [STDERR]: * '--log.file=<path>' if the option is passed using a guest language launcher.
-[17:46:55:481] [STDERR]: * '-Dpolyglot.log.file=<path>' if the option is passed using the host Java launcher.
-[17:46:55:481] [STDERR]: * Configure logging using the polyglot embedding API.]
-[17:46:55:481] [STDERR]: [engine] WARNING: The polyglot engine uses a fallback runtime that does not support runtime compilation to native code.
-[17:46:55:481] [STDERR]: Execution without runtime compilation will negatively impact the guest application performance.
-[17:46:55:481] [STDERR]: The following cause was found: Version check failed.
-[17:46:55:481] [STDERR]: Your Java runtime '21.0.12.1+1-LTS' is incompatible with optimized Truffle runtime version '25.2.4'.
-[17:46:55:481] [STDERR]: The Java runtime version must be greater or equal to JDK '25' and smaller than JDK '26'.
-[17:46:55:481] [STDERR]: In order to use the optimizing runtime:
-[17:46:55:481] [STDERR]: - Update your Java runtime to resolve this. See https://www.graalvm.org/latest/reference-manual/embed-languages/#runtime-optimization-support for optimizing runtime compatibility.
-[17:46:55:481] [STDERR]: - Switch to polyglot isolates to run the guest language as a native image. See https://www.graalvm.org/latest/reference-manual/embed-languages/#polyglot-isolates for instructions.
-[17:46:55:481] [STDERR]: To disable this version check the '-Dpolyglotimpl.DisableVersionChecks=true' system property can be used.
-[17:46:55:481] [STDERR]: It is not recommended to disable version checks.
-[17:46:55:481] [STDERR]: 
-[17:46:55:481] [STDERR]: For more information see: https://www.graalvm.org/latest/reference-manual/embed-languages/#runtime-optimization-support.
-[17:46:55:481] [STDERR]: To disable this warning use the '--engine.WarnInterpreterOnly=false' option or the '-Dpolyglot.engine.WarnInterpreterOnly=false' system property.
-[17:47:04:759] [STDERR]: Oct 16, 2026 5:47:04 PM guideme.internal.shaded.lucene.internal.vectorization.VectorizationProvider lookup
-[17:47:04:759] [STDERR]: WARNING: You are running with unsupported Java 21. To make full use of the Vector API, please update Apache Lucene.
-[17:55:05:173] [STDERR]: Oct 16, 2026 5:55:05 PM org.apache.lucene.ars_nouveau.internal.vectorization.VectorizationProvider lookup
-[17:55:05:173] [STDERR]: WARNING: Java vector incubator module is not readable. For optimal vector performance, pass '--add-modules jdk.incubator.vector' to enable Vector API.
+[00:44:02:234] [STDERR]: [To redirect Truffle log output to a file use one of the following options:
+[00:44:02:234] [STDERR]: * '--log.file=<path>' if the option is passed using a guest language launcher.
+[00:44:02:234] [STDERR]: * '-Dpolyglot.log.file=<path>' if the option is passed using the host Java launcher.
+[00:44:02:234] [STDERR]: * Configure logging using the polyglot embedding API.]
+[00:44:02:234] [STDERR]: [engine] WARNING: The polyglot engine uses a fallback runtime that does not support runtime compilation to native code.
+[00:44:02:234] [STDERR]: Execution without runtime compilation will negatively impact the guest application performance.
+[00:44:02:234] [STDERR]: The following cause was found: Version check failed.
+[00:44:02:234] [STDERR]: Your Java runtime '21.0.12.1+1-LTS' is incompatible with optimized Truffle runtime version '25.2.4'.
+[00:44:02:234] [STDERR]: The Java runtime version must be greater or equal to JDK '25' and smaller than JDK '26'.
+[00:44:02:234] [STDERR]: In order to use the optimizing runtime:
+[00:44:02:234] [STDERR]: - Update your Java runtime to resolve this. See https://www.graalvm.org/latest/reference-manual/embed-languages/#runtime-optimization-support for optimizing runtime compatibility.
+[00:44:02:234] [STDERR]: - Switch to polyglot isolates to run the guest language as a native image. See https://www.graalvm.org/latest/reference-manual/embed-languages/#polyglot-isolates for instructions.
+[00:44:02:234] [STDERR]: To disable this version check the '-Dpolyglotimpl.DisableVersionChecks=true' system property can be used.
+[00:44:02:234] [STDERR]: It is not recommended to disable version checks.
+[00:44:02:234] [STDERR]: 
+[00:44:02:234] [STDERR]: For more information see: https://www.graalvm.org/latest/reference-manual/embed-languages/#runtime-optimization-support.
+[00:44:02:234] [STDERR]: To disable this warning use the '--engine.WarnInterpreterOnly=false' option or the '-Dpolyglot.engine.WarnInterpreterOnly=false' system property.
+[00:44:26:319] [STDERR]: Oct 17, 2026 12:44:26 AM guideme.internal.shaded.lucene.internal.vectorization.VectorizationProvider lookup
+[00:44:26:319] [STDERR]: WARNING: You are running with unsupported Java 21. To make full use of the Vector API, please update Apache Lucene.

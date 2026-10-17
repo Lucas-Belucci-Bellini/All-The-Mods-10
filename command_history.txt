@@ -13,3 +13,5 @@
 /gamemode survival
 /tp dannax4547
 /kill
+/autoemc
+/autoemc rescan

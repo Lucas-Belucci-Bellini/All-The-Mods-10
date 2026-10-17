@@ -1,7 +1,1126 @@
-2026-10-16 15:19:49.638 [INFO] ============================================================
-2026-10-16 15:19:49.641 [INFO] AutoEMC dedicated debug log
-2026-10-16 15:19:49.643 [INFO] Server started — solver version 30
-2026-10-16 15:19:49.644 [INFO] Current log: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\autoemc\autoemc-debug.log
-2026-10-16 15:19:49.644 [INFO] Previous session: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\autoemc\autoemc-debug.previous.log
-2026-10-16 15:19:49.646 [INFO] ============================================================
-2026-10-16 15:19:49.648 [INFO] [AutoEMC] Waiting for ProjectE to finish loading its EMC mappings.
+2026-10-17 00:56:04.361 [INFO] ============================================================
+2026-10-17 00:56:04.363 [INFO] AutoEMC dedicated debug log
+2026-10-17 00:56:04.363 [INFO] Manual rescan requested - solver version 30
+2026-10-17 00:56:04.364 [INFO] Current log: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\autoemc\autoemc-debug.log
+2026-10-17 00:56:04.365 [INFO] Previous session: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\config\autoemc\autoemc-debug.previous.log
+2026-10-17 00:56:04.365 [INFO] ============================================================
+2026-10-17 00:56:04.493 [INFO] [AutoEMC] Starting AutoEMC scan — manual /autoemc rescan. Step 1 of 6: checking existing ProjectE EMC for 67531 items.
+2026-10-17 00:56:04.534 [INFO] [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 0% (500/67531 items, 67031 remaining).
+2026-10-17 00:56:04.751 [INFO] [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 5% (3500/67531 items, 64031 remaining).
+2026-10-17 00:56:05.026 [INFO] [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 10% (7000/67531 items, 60531 remaining).
+2026-10-17 00:56:05.288 [INFO] [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 15% (10500/67531 items, 57031 remaining).
+2026-10-17 00:56:05.560 [INFO] [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 20% (14000/67531 items, 53531 remaining).
+2026-10-17 00:56:06.359 [INFO] [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 25% (17000/67531 items, 50531 remaining).
+2026-10-17 00:56:06.851 [INFO] [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 30% (20500/67531 items, 47031 remaining).
+2026-10-17 00:56:07.223 [INFO] [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 35% (23939/67531 items, 43592 remaining).
+2026-10-17 00:56:07.691 [INFO] [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 40% (27339/67531 items, 40192 remaining).
+2026-10-17 00:56:07.952 [INFO] [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 45% (30839/67531 items, 36692 remaining).
+2026-10-17 00:56:08.309 [INFO] [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 50% (33839/67531 items, 33692 remaining).
+2026-10-17 00:56:08.622 [INFO] [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 55% (37278/67531 items, 30253 remaining).
+2026-10-17 00:56:08.890 [INFO] [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 60% (40778/67531 items, 26753 remaining).
+2026-10-17 00:56:09.134 [INFO] [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 65% (44278/67531 items, 23253 remaining).
+2026-10-17 00:56:09.374 [INFO] [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 70% (47278/67531 items, 20253 remaining).
+2026-10-17 00:56:09.634 [INFO] [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 75% (50778/67531 items, 16753 remaining).
+2026-10-17 00:56:09.862 [INFO] [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 80% (54278/67531 items, 13253 remaining).
+2026-10-17 00:56:10.133 [INFO] [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 85% (57778/67531 items, 9753 remaining).
+2026-10-17 00:56:10.344 [INFO] [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 90% (60778/67531 items, 6753 remaining).
+2026-10-17 00:56:10.598 [INFO] [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 95% (64278/67531 items, 3253 remaining).
+2026-10-17 00:56:10.949 [INFO] [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 100% (67531/67531 items, 0 remaining).
+2026-10-17 00:56:10.951 [INFO] [AutoEMC] Step 1/6 complete — 0 items already have ProjectE EMC; 67531 still need a value.
+2026-10-17 00:56:10.953 [INFO] [AutoEMC] Step 2/6 — Reading loaded recipes.
+2026-10-17 00:56:10.998 [SMITHING-RECIPE] output=create_enchantment_industry:blaze_enchanter | inputs=[create_dragons_plus:blaze_upgrade_smithing_template] + [create:blaze_burner] + [minecraft:enchanting_table]
+2026-10-17 00:56:11.012 [SMITHING-RECIPE] output=cataclysm:ignitium_helmet | inputs=[cataclysm:ignitium_upgrade_smithing_template] + [minecraft:netherite_helmet] + [cataclysm:ignitium_ingot]
+2026-10-17 00:56:11.028 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:11.065 [SMITHING-RECIPE] output=irons_spellbooks:netherite_mage_leggings | inputs=[minecraft:netherite_upgrade_smithing_template] + [irons_spellbooks:wizard_leggings] + [minecraft:netherite_ingot]
+2026-10-17 00:56:11.067 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:11.112 [SMITHING-RECIPE] output=create:netherite_backtank | inputs=[minecraft:netherite_upgrade_smithing_template] + [minecraft:netherite_chestplate] + [create:copper_backtank]
+2026-10-17 00:56:11.115 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:11.127 [SMITHING-RECIPE] output=auroral:shimmersteel_bow | inputs=[auroral:shimmersteel_upgrade_smithing_template] + [minecraft:bow] + [auroral:shimmersteel_ingot]
+2026-10-17 00:56:11.178 [SMITHING-RECIPE] output=create_enchantment_industry:blaze_forger | inputs=[create_dragons_plus:blaze_upgrade_smithing_template] + [create:blaze_burner] + [minecraft:anvil]
+2026-10-17 00:56:11.178 [SMITHING-RECIPE] output=deeperdarker:warden_shovel | inputs=[deeperdarker:warden_upgrade_smithing_template] + [minecraft:netherite_shovel] + [deeperdarker:reinforced_echo_shard]
+2026-10-17 00:56:11.200 [SMITHING-RECIPE] output=aether:netherite_gloves | inputs=[minecraft:netherite_upgrade_smithing_template] + [aether:diamond_gloves] + [minecraft:netherite_ingot]
+2026-10-17 00:56:11.207 [SMITHING-RECIPE] output=allthearcanistgear:vibranium_boots | inputs=[allthemodium:vibranium_upgrade_smithing_template] + [allthearcanistgear:allthemodium_boots] + [allthemodium:vibranium_ingot]
+2026-10-17 00:56:11.221 [SMITHING-RECIPE] output=minecraft:netherite_boots | inputs=[minecraft:netherite_upgrade_smithing_template] + [minecraft:diamond_boots] + [minecraft:netherite_ingot]
+2026-10-17 00:56:11.221 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:11.226 [SMITHING-RECIPE] output=auroral:shimmersteel_hoe | inputs=[auroral:shimmersteel_upgrade_smithing_template] + [minecraft:iron_hoe] + [auroral:shimmersteel_ingot]
+2026-10-17 00:56:11.271 [SMITHING-RECIPE] output=allthearcanistgear:vibranium_hat | inputs=[allthemodium:vibranium_upgrade_smithing_template] + [allthearcanistgear:allthemodium_hat] + [allthemodium:vibranium_ingot]
+2026-10-17 00:56:11.299 [SMITHING-RECIPE] output=allthemodium:allthemodium_mace | inputs=[allthemodium:allthemodium_upgrade_smithing_template] + [minecraft:mace] + [allthemodium:allthemodium_block]
+2026-10-17 00:56:11.299 [SMITHING-RECIPE] output=irons_spellbooks:netherite_mage_chestplate | inputs=[minecraft:netherite_upgrade_smithing_template] + [irons_spellbooks:wizard_chestplate] + [minecraft:netherite_ingot]
+2026-10-17 00:56:11.301 [SMITHING-RECIPE] output=deeperdarker:warden_leggings | inputs=[deeperdarker:warden_upgrade_smithing_template] + [minecraft:netherite_leggings] + [deeperdarker:reinforced_echo_shard]
+2026-10-17 00:56:11.309 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:11.310 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:11.313 [SMITHING-RECIPE] output=generatorgalore:diamond_to_netherite_upgrade | inputs=[minecraft:netherite_upgrade_smithing_template] + [generatorgalore:gold_to_diamond_upgrade] + [minecraft:netherite_ingot]
+2026-10-17 00:56:11.334 [SMITHING-RECIPE] output=justdirethings:eclipsealloy_leggings | inputs=[justdirethings:template_eclipsealloy] + [justdirethings:celestigem_leggings] + [justdirethings:eclipsealloy_ingot]
+2026-10-17 00:56:11.355 [SMITHING-RECIPE] output=bhc:soul_heart_canister | inputs=[bhc:red_heart OR bhc:yellow_heart OR bhc:green_heart OR bhc:blue_heart] + [bhc:blue_heart_canister] + [minecraft:totem_of_undying]
+2026-10-17 00:56:11.356 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:11.357 [SMITHING-RECIPE] output=undergarden:forgotten_hoe | inputs=[undergarden:forgotten_upgrade_smithing_template] + [undergarden:cloggrum_hoe] + [undergarden:forgotten_ingot]
+2026-10-17 00:56:11.359 [SMITHING-RECIPE] output=merrymaking:red_santa_hat_iron | inputs=[merrymaking:iron_upgrade_smithing_template] + [merrymaking:red_santa_hat_leather] + [minecraft:iron_helmet]
+2026-10-17 00:56:11.361 [SMITHING-RECIPE] output=auroral:shimmersteel_axe | inputs=[auroral:shimmersteel_upgrade_smithing_template] + [minecraft:iron_axe] + [auroral:shimmersteel_ingot]
+2026-10-17 00:56:11.363 [SMITHING-RECIPE] output=allthemodium:allthemodium_pickaxe | inputs=[allthemodium:allthemodium_upgrade_smithing_template] + [minecraft:netherite_pickaxe] + [allthemodium:allthemodium_ingot]
+2026-10-17 00:56:11.365 [SMITHING-RECIPE] output=allthearcanistgear:allthemodium_robes | inputs=[allthemodium:allthemodium_upgrade_smithing_template] + [ars_technica:technomancer_chestplate OR ars_technica:artificer_tunic OR ars_technica:machinaguard_chestplate OR ars_elemental:air_robes OR ars_elemental:earth_robes OR ars_elemental:fire_robes OR ars_elemental:aqua_robes OR ars_elemental:air_tunic OR ars_elemental:fire_tunic OR ars_elemental:earth_tunic OR ars_elemental:aqua_tunic OR ars_elemental:air_chestplate OR ars_elemental:fire_chestplate OR ars_elemental:earth_chestplate OR ars_elemental:aqua_chestplate] + [allthemodium:allthemodium_ingot]
+2026-10-17 00:56:11.366 [SMITHING-RECIPE] output=allthemodium:allthemodium_axe | inputs=[allthemodium:allthemodium_upgrade_smithing_template] + [minecraft:netherite_axe] + [allthemodium:allthemodium_ingot]
+2026-10-17 00:56:11.373 [SMITHING-RECIPE] output=deeperdarker:warden_boots | inputs=[deeperdarker:warden_upgrade_smithing_template] + [minecraft:netherite_boots] + [deeperdarker:reinforced_echo_shard]
+2026-10-17 00:56:11.431 [SMITHING-RECIPE] output=justdirethings:bow_blazegold | inputs=[justdirethings:template_blazegold] + [justdirethings:bow_ferricore] + [justdirethings:blazegold_ingot]
+2026-10-17 00:56:11.439 [SMITHING-RECIPE] output=allthearcanistgear:unobtainium_spell_book | inputs=[allthemodium:unobtainium_upgrade_smithing_template] + [allthearcanistgear:vibranium_spell_book] + [allthemodium:unobtainium_ingot]
+2026-10-17 00:56:11.451 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:11.455 [SMITHING-RECIPE] output=irons_spellbooks:cultist_helmet | inputs=[irons_spellbooks:blood_rune] + [irons_spellbooks:wizard_helmet OR irons_spellbooks:wizard_hat] + [irons_spellbooks:arcane_essence]
+2026-10-17 00:56:11.462 [SMITHING-RECIPE] output=irons_spellbooks:electromancer_leggings | inputs=[irons_spellbooks:lightning_rune] + [irons_spellbooks:wizard_leggings] + [irons_spellbooks:arcane_essence]
+2026-10-17 00:56:11.465 [SMITHING-RECIPE] output=eternal_starlight:flowglaze_sword | inputs=[eternal_starlight:flowglaze_upgrade_smithing_template] + [eternal_starlight:glacite_sword] + [eternal_starlight:flowglaze]
+2026-10-17 00:56:11.467 [SMITHING-RECIPE] output=irons_spellbooks:shadowwalker_leggings | inputs=[irons_spellbooks:ender_rune] + [irons_spellbooks:wizard_leggings] + [irons_spellbooks:arcane_essence]
+2026-10-17 00:56:11.471 [SMITHING-RECIPE] output=justdirethings:blazegold_sword | inputs=[justdirethings:template_blazegold] + [justdirethings:ferricore_sword] + [justdirethings:blazegold_ingot]
+2026-10-17 00:56:11.481 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:11.483 [SMITHING-RECIPE] output=irons_spellbooks:archevoker_helmet | inputs=[irons_spellbooks:evocation_rune] + [irons_spellbooks:wizard_helmet OR irons_spellbooks:wizard_hat] + [irons_spellbooks:arcane_essence]
+2026-10-17 00:56:11.484 [SMITHING-RECIPE] output=deeperdarker:resonarium_pickaxe | inputs=[deeperdarker:resonarium_upgrade_smithing_template] + [minecraft:diamond_pickaxe] + [deeperdarker:resonarium_plate]
+2026-10-17 00:56:11.524 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:11.527 [SMITHING-RECIPE] output=irons_spellbooks:cryomancer_leggings | inputs=[irons_spellbooks:ice_rune] + [irons_spellbooks:wizard_leggings] + [irons_spellbooks:arcane_essence]
+2026-10-17 00:56:11.528 [SMITHING-RECIPE] output=justdirethings:eclipsealloy_helmet | inputs=[justdirethings:template_eclipsealloy] + [justdirethings:celestigem_helmet] + [justdirethings:eclipsealloy_ingot]
+2026-10-17 00:56:11.530 [SMITHING-RECIPE] output=eternal_starlight:pungency_fruit_axe | inputs=[eternal_starlight:pungency_fruit_upgrade_smithing_template] + [eternal_starlight:malarite_axe] + [eternal_starlight:pungency_fruit]
+2026-10-17 00:56:11.531 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:11.551 [SMITHING-RECIPE] output=merrymaking:reindeer_ears_iron | inputs=[merrymaking:iron_upgrade_smithing_template] + [merrymaking:reindeer_ears_leather] + [minecraft:iron_helmet]
+2026-10-17 00:56:11.551 [SMITHING-RECIPE] output=alltheores:netherite_gear | inputs=[minecraft:netherite_upgrade_smithing_template] + [industrialforegoing:diamond_gear OR alltheores:diamond_gear] + [minecraft:netherite_ingot]
+2026-10-17 00:56:11.555 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:11.573 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:11.591 [SMITHING-RECIPE] output=allthewizardgear:allthemodium_mage_chestplate | inputs=[allthemodium:allthemodium_upgrade_smithing_template] + [irons_spellbooks:netherite_mage_chestplate OR irons_spellbooks:archevoker_chestplate OR irons_spellbooks:cryomancer_chestplate OR irons_spellbooks:cultist_chestplate OR irons_spellbooks:plagued_chestplate OR irons_spellbooks:priest_chestplate OR irons_spellbooks:electromancer_chestplate OR irons_spellbooks:pyromancer_chestplate OR irons_spellbooks:shadowwalker_chestplate] + [allthemodium:allthemodium_ingot]
+2026-10-17 00:56:11.604 [SMITHING-RECIPE] output=merrymaking:striped_pajama_pants_iron | inputs=[merrymaking:iron_upgrade_smithing_template] + [merrymaking:striped_pajama_pants_leather] + [minecraft:iron_leggings]
+2026-10-17 00:56:11.614 [SMITHING-RECIPE] output=ae2:fluix_pickaxe | inputs=[ae2:fluix_upgrade_smithing_template] + [ae2:certus_quartz_pickaxe OR ae2:nether_quartz_pickaxe] + [ae2:fluix_block]
+2026-10-17 00:56:11.626 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:11.646 [SMITHING-RECIPE] output=justdirethings:blazegold_pickaxe | inputs=[justdirethings:template_blazegold] + [justdirethings:ferricore_pickaxe] + [justdirethings:blazegold_ingot]
+2026-10-17 00:56:11.646 [SMITHING-RECIPE] output=modularbees:electrode_netherite | inputs=[minecraft:netherite_upgrade_smithing_template] + [modularbees:electrode_gold] + [minecraft:netherite_block]
+2026-10-17 00:56:11.647 [SMITHING-RECIPE] output=eternal_starlight:flowglaze_shovel | inputs=[eternal_starlight:flowglaze_upgrade_smithing_template] + [eternal_starlight:glacite_shovel] + [eternal_starlight:flowglaze]
+2026-10-17 00:56:11.648 [SMITHING-RECIPE] output=cataclysm:cursium_chestplate | inputs=[cataclysm:cursium_upgrade_smithing_template] + [minecraft:netherite_chestplate] + [cataclysm:cursium_ingot]
+2026-10-17 00:56:11.655 [SMITHING-RECIPE] output=minecraft:netherite_axe | inputs=[minecraft:netherite_upgrade_smithing_template] + [minecraft:diamond_axe] + [minecraft:netherite_ingot]
+2026-10-17 00:56:11.664 [SMITHING-RECIPE] output=iceandfire:dragonarmor_netherite_body | inputs=[minecraft:netherite_upgrade_smithing_template] + [iceandfire:dragonarmor_diamond_body] + [minecraft:netherite_block]
+2026-10-17 00:56:11.665 [SMITHING-RECIPE] output=create_enchantment_industry:blaze_composer | inputs=[create_dragons_plus:blaze_upgrade_smithing_template] + [create:blaze_burner] + [create_enchantment_industry:affix_augmentor]
+2026-10-17 00:56:11.673 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:11.677 [SMITHING-RECIPE] output=allthemodium:vibranium_mace | inputs=[allthemodium:vibranium_upgrade_smithing_template] + [allthemodium:allthemodium_mace] + [allthemodium:vibranium_block]
+2026-10-17 00:56:11.741 [SMITHING-RECIPE] output=allthemodium:unobtainium_helmet | inputs=[allthemodium:unobtainium_upgrade_smithing_template] + [allthemodium:vibranium_helmet] + [allthemodium:unobtainium_ingot]
+2026-10-17 00:56:11.744 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:11.746 [SMITHING-RECIPE] output=justdirethings:blazegold_leggings | inputs=[justdirethings:template_blazegold] + [justdirethings:ferricore_leggings] + [justdirethings:blazegold_ingot]
+2026-10-17 00:56:11.746 [SMITHING-RECIPE] output=justdirethings:eclipsealloy_shovel | inputs=[justdirethings:template_eclipsealloy] + [justdirethings:celestigem_shovel] + [justdirethings:eclipsealloy_ingot]
+2026-10-17 00:56:11.750 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:11.773 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:11.820 [SMITHING-RECIPE] output=allthearcanistgear:unobtainium_hat | inputs=[allthemodium:unobtainium_upgrade_smithing_template] + [allthearcanistgear:vibranium_hat] + [allthemodium:unobtainium_ingot]
+2026-10-17 00:56:11.821 [SMITHING-RECIPE] output=allthearcanistgear:unobtainium_leggings | inputs=[allthemodium:unobtainium_upgrade_smithing_template] + [allthearcanistgear:vibranium_leggings] + [allthemodium:unobtainium_ingot]
+2026-10-17 00:56:11.822 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:11.858 [SMITHING-RECIPE] output=eternal_starlight:starfire_pickaxe | inputs=[eternal_starlight:starfire_upgrade_smithing_template] + [eternal_starlight:thermal_springstone_pickaxe] + [eternal_starlight:starfire]
+2026-10-17 00:56:11.877 [SMITHING-RECIPE] output=kubejs:silent_allthemodium_plate | inputs=[allthemodium:allthemodium_plate] + [allthemodium:allthemodium_upgrade_smithing_template] + [minecraft:netherite_ingot]
+2026-10-17 00:56:11.896 [SMITHING-RECIPE] output=justdirethings:celestigem_paxel | inputs=[justdirethings:celestigem_pickaxe] + [justdirethings:celestigem_axe] + [justdirethings:celestigem_shovel]
+2026-10-17 00:56:11.897 [SMITHING-RECIPE] output=justdirethings:eclipsealloy_axe | inputs=[justdirethings:template_eclipsealloy] + [justdirethings:celestigem_axe] + [justdirethings:eclipsealloy_ingot]
+2026-10-17 00:56:11.903 [SMITHING-RECIPE] output=allthemodium:unobtainium_pickaxe | inputs=[allthemodium:unobtainium_upgrade_smithing_template] + [allthemodium:vibranium_pickaxe] + [allthemodium:unobtainium_ingot]
+2026-10-17 00:56:11.915 [SMITHING-RECIPE] output=kubejs:silent_vibranium_plate | inputs=[allthemodium:vibranium_plate] + [allthemodium:vibranium_upgrade_smithing_template] + [allthemodium:allthemodium_ingot]
+2026-10-17 00:56:11.916 [SMITHING-RECIPE] output=justdirethings:celestigem_sword | inputs=[justdirethings:template_celestigem] + [justdirethings:blazegold_sword] + [justdirethings:celestigem]
+2026-10-17 00:56:11.917 [SMITHING-RECIPE] output=irons_spellbooks:shadowwalker_helmet | inputs=[irons_spellbooks:ender_rune] + [irons_spellbooks:wizard_helmet OR irons_spellbooks:wizard_hat] + [irons_spellbooks:arcane_essence]
+2026-10-17 00:56:11.931 [SMITHING-RECIPE] output=iceandfire:dragonarmor_netherite_neck | inputs=[minecraft:netherite_upgrade_smithing_template] + [iceandfire:dragonarmor_diamond_neck] + [minecraft:netherite_block]
+2026-10-17 00:56:11.935 [SMITHING-RECIPE] output=ae2:fluix_sword | inputs=[ae2:fluix_upgrade_smithing_template] + [ae2:certus_quartz_sword OR ae2:nether_quartz_sword] + [ae2:fluix_block]
+2026-10-17 00:56:11.937 [SMITHING-RECIPE] output=merrymaking:reinforced_red_ugly_christmas_sweater | inputs=[minecraft:netherite_upgrade_smithing_template] + [merrymaking:red_ugly_christmas_sweater] + [minecraft:netherite_ingot]
+2026-10-17 00:56:11.951 [SMITHING-RECIPE] output=merrymaking:reindeer_ears | inputs=[merrymaking:diamond_upgrade_smithing_template] + [merrymaking:reindeer_ears_iron] + [minecraft:diamond_helmet]
+2026-10-17 00:56:11.961 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:11.969 [SMITHING-RECIPE] output=merrymaking:striped_pajama_pants | inputs=[merrymaking:diamond_upgrade_smithing_template] + [merrymaking:striped_pajama_pants_iron] + [minecraft:diamond_leggings]
+2026-10-17 00:56:11.973 [SMITHING-RECIPE] output=auroral:shimmerweave_tunic | inputs=[auroral:shimmersteel_upgrade_smithing_template] + [minecraft:iron_chestplate] + [auroral:shimmerweave_fabric]
+2026-10-17 00:56:11.974 [SMITHING-RECIPE] output=modern_industrialization:netherite_hammer | inputs=[minecraft:netherite_upgrade_smithing_template] + [modern_industrialization:diamond_hammer] + [minecraft:netherite_ingot]
+2026-10-17 00:56:11.985 [SMITHING-RECIPE] output=allthewizardgear:unobtainium_mage_helmet | inputs=[allthemodium:unobtainium_upgrade_smithing_template] + [allthewizardgear:vibranium_mage_helmet] + [allthemodium:unobtainium_ingot]
+2026-10-17 00:56:11.996 [SMITHING-RECIPE] output=irons_spellbooks:archevoker_chestplate | inputs=[irons_spellbooks:evocation_rune] + [irons_spellbooks:wizard_chestplate] + [irons_spellbooks:arcane_essence]
+2026-10-17 00:56:11.997 [SMITHING-RECIPE] output=allthewizardgear:vibranium_spell_book | inputs=[allthemodium:vibranium_upgrade_smithing_template] + [allthewizardgear:allthemodium_spell_book] + [allthemodium:vibranium_ingot]
+2026-10-17 00:56:12.000 [SMITHING-RECIPE] output=deeperdarker:resonarium_shovel | inputs=[deeperdarker:resonarium_upgrade_smithing_template] + [minecraft:diamond_shovel] + [deeperdarker:resonarium_plate]
+2026-10-17 00:56:12.001 [SMITHING-RECIPE] output=merrymaking:reindeer_slippers_iron | inputs=[merrymaking:iron_upgrade_smithing_template] + [merrymaking:reindeer_slippers_leather] + [minecraft:iron_boots]
+2026-10-17 00:56:12.002 [SMITHING-RECIPE] output=allthearcanistgear:vibranium_robes | inputs=[allthemodium:vibranium_upgrade_smithing_template] + [allthearcanistgear:allthemodium_robes] + [allthemodium:vibranium_ingot]
+2026-10-17 00:56:12.012 [SMITHING-RECIPE] output=ae2:fluix_axe | inputs=[ae2:fluix_upgrade_smithing_template] + [ae2:certus_quartz_axe OR ae2:nether_quartz_axe] + [ae2:fluix_block]
+2026-10-17 00:56:12.021 [SMITHING-RECIPE] output=deeperdarker:resonarium_hoe | inputs=[deeperdarker:resonarium_upgrade_smithing_template] + [minecraft:diamond_hoe] + [deeperdarker:resonarium_plate]
+2026-10-17 00:56:12.025 [SMITHING-RECIPE] output=deeperdarker:warden_axe | inputs=[deeperdarker:warden_upgrade_smithing_template] + [minecraft:netherite_axe] + [deeperdarker:reinforced_echo_shard]
+2026-10-17 00:56:12.029 [SMITHING-RECIPE] output=merrymaking:plaid_pajama_pants | inputs=[merrymaking:diamond_upgrade_smithing_template] + [merrymaking:plaid_pajama_pants_iron] + [minecraft:diamond_leggings]
+2026-10-17 00:56:12.074 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:12.085 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:12.086 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:12.148 [SMITHING-RECIPE] output=justdirethings:celestigem_pickaxe | inputs=[justdirethings:template_celestigem] + [justdirethings:blazegold_pickaxe] + [justdirethings:celestigem]
+2026-10-17 00:56:12.157 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:12.175 [SMITHING-RECIPE] output=advancedperipherals:smart_glasses_netherite | inputs=[minecraft:netherite_upgrade_smithing_template] + [advancedperipherals:smart_glasses] + [minecraft:netherite_ingot]
+2026-10-17 00:56:12.203 [SMITHING-RECIPE] output=allthearcanistgear:allthemodium_boots | inputs=[allthemodium:allthemodium_upgrade_smithing_template] + [ars_technica:technomancer_boots OR ars_technica:artificer_shoes OR ars_technica:machinaguard_boots OR ars_elemental:air_boots OR ars_elemental:earth_boots OR ars_elemental:fire_boots OR ars_elemental:aqua_boots OR ars_elemental:air_shoes OR ars_elemental:fire_shoes OR ars_elemental:earth_shoes OR ars_elemental:aqua_shoes OR ars_elemental:air_boots_heavy OR ars_elemental:fire_boots_heavy OR ars_elemental:earth_boots_heavy OR ars_elemental:aqua_boots_heavy] + [allthemodium:allthemodium_ingot]
+2026-10-17 00:56:12.208 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:12.219 [SMITHING-RECIPE] output=merrymaking:reinforced_reindeer_slippers | inputs=[minecraft:netherite_upgrade_smithing_template] + [merrymaking:reindeer_slippers] + [minecraft:netherite_ingot]
+2026-10-17 00:56:12.220 [SMITHING-RECIPE] output=allthewizardgear:allthemodium_mage_leggings | inputs=[allthemodium:allthemodium_upgrade_smithing_template] + [irons_spellbooks:netherite_mage_leggings OR irons_spellbooks:archevoker_leggings OR irons_spellbooks:cryomancer_leggings OR irons_spellbooks:cultist_leggings OR irons_spellbooks:plagued_leggings OR irons_spellbooks:priest_leggings OR irons_spellbooks:electromancer_leggings OR irons_spellbooks:pyromancer_leggings OR irons_spellbooks:shadowwalker_leggings] + [allthemodium:allthemodium_ingot]
+2026-10-17 00:56:12.234 [SMITHING-RECIPE] output=allthemodium:vibranium_pickaxe | inputs=[allthemodium:vibranium_upgrade_smithing_template] + [allthemodium:allthemodium_pickaxe] + [allthemodium:vibranium_ingot]
+2026-10-17 00:56:12.235 [SMITHING-RECIPE] output=allthewizardgear:unobtainium_mage_chestplate | inputs=[allthemodium:unobtainium_upgrade_smithing_template] + [allthewizardgear:vibranium_mage_chestplate] + [allthemodium:unobtainium_ingot]
+2026-10-17 00:56:12.237 [SMITHING-RECIPE] output=justdirethings:celestigem_shovel | inputs=[justdirethings:template_celestigem] + [justdirethings:blazegold_shovel] + [justdirethings:celestigem]
+2026-10-17 00:56:12.237 [SMITHING-RECIPE] output=undergarden:forgotten_shovel | inputs=[undergarden:forgotten_upgrade_smithing_template] + [undergarden:cloggrum_shovel] + [undergarden:forgotten_ingot]
+2026-10-17 00:56:12.238 [SMITHING-RECIPE] output=allthewizardgear:unobtainium_mage_leggings | inputs=[allthemodium:unobtainium_upgrade_smithing_template] + [allthewizardgear:vibranium_mage_leggings] + [allthemodium:unobtainium_ingot]
+2026-10-17 00:56:12.256 [SMITHING-RECIPE] output=merrymaking:reinforced_plaid_pajama_pants | inputs=[minecraft:netherite_upgrade_smithing_template] + [merrymaking:plaid_pajama_pants] + [minecraft:netherite_ingot]
+2026-10-17 00:56:12.281 [SMITHING-RECIPE] output=allthemodium:unobtainium_chestplate | inputs=[allthemodium:unobtainium_upgrade_smithing_template] + [allthemodium:vibranium_chestplate] + [allthemodium:unobtainium_ingot]
+2026-10-17 00:56:12.283 [SMITHING-RECIPE] output=iceandfire:dragonarmor_netherite_tail | inputs=[minecraft:netherite_upgrade_smithing_template] + [iceandfire:dragonarmor_diamond_tail] + [minecraft:netherite_block]
+2026-10-17 00:56:12.295 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:12.303 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:12.307 [SMITHING-RECIPE] output=irons_spellbooks:cryomancer_chestplate | inputs=[irons_spellbooks:ice_rune] + [irons_spellbooks:wizard_chestplate] + [irons_spellbooks:arcane_essence]
+2026-10-17 00:56:12.313 [SMITHING-RECIPE] output=allthemodium:unobtainium_leggings | inputs=[allthemodium:unobtainium_upgrade_smithing_template] + [allthemodium:vibranium_leggings] + [allthemodium:unobtainium_ingot]
+2026-10-17 00:56:12.334 [SMITHING-RECIPE] output=minecraft:netherite_pickaxe | inputs=[minecraft:netherite_upgrade_smithing_template] + [minecraft:diamond_pickaxe] + [minecraft:netherite_ingot]
+2026-10-17 00:56:12.351 [SMITHING-RECIPE] output=irons_spellbooks:pyromancer_chestplate | inputs=[irons_spellbooks:fire_rune] + [irons_spellbooks:wizard_chestplate] + [irons_spellbooks:arcane_essence]
+2026-10-17 00:56:12.352 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:12.355 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:12.357 [SMITHING-RECIPE] output=irons_spellbooks:legionnaire_flamberge | inputs=[irons_spellbooks:timeless_slurry] + [irons_spellbooks:keeper_flamberge] + [irons_spellbooks:pyrium_ingot]
+2026-10-17 00:56:12.357 [SMITHING-RECIPE] output=allthearcanistgear:allthemodium_leggings | inputs=[allthemodium:allthemodium_upgrade_smithing_template] + [ars_technica:technomancer_leggings OR ars_technica:artificer_pants OR ars_technica:machinaguard_leggings OR ars_elemental:air_leggings OR ars_elemental:earth_leggings OR ars_elemental:fire_leggings OR ars_elemental:aqua_leggings OR ars_elemental:air_pants OR ars_elemental:fire_pants OR ars_elemental:earth_pants OR ars_elemental:aqua_pants OR ars_elemental:air_leggings_heavy OR ars_elemental:fire_leggings_heavy OR ars_elemental:earth_leggings_heavy OR ars_elemental:aqua_leggings_heavy] + [allthemodium:allthemodium_ingot]
+2026-10-17 00:56:12.361 [SMITHING-RECIPE] output=deeperdarker:warden_hoe | inputs=[deeperdarker:warden_upgrade_smithing_template] + [minecraft:netherite_hoe] + [deeperdarker:reinforced_echo_shard]
+2026-10-17 00:56:12.366 [SMITHING-RECIPE] output=ae2:fluix_shovel | inputs=[ae2:fluix_upgrade_smithing_template] + [ae2:certus_quartz_shovel OR ae2:nether_quartz_shovel] + [ae2:fluix_block]
+2026-10-17 00:56:12.368 [SMITHING-RECIPE] output=allthearcanistgear:allthemodium_hat | inputs=[allthemodium:allthemodium_upgrade_smithing_template] + [ars_technica:technomancer_helmet OR ars_technica:artificer_cap OR ars_technica:machinaguard_helmet OR ars_elemental:air_hat OR ars_elemental:earth_hat OR ars_elemental:fire_hat OR ars_elemental:aqua_hat OR ars_elemental:air_hood OR ars_elemental:fire_hood OR ars_elemental:earth_hood OR ars_elemental:aqua_hood OR ars_elemental:air_helmet OR ars_elemental:fire_helmet OR ars_elemental:earth_helmet OR ars_elemental:aqua_helmet] + [allthemodium:allthemodium_ingot]
+2026-10-17 00:56:12.369 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:12.371 [SMITHING-RECIPE] output=minecraft:netherite_shovel | inputs=[minecraft:netherite_upgrade_smithing_template] + [minecraft:diamond_shovel] + [minecraft:netherite_ingot]
+2026-10-17 00:56:12.372 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:12.373 [SMITHING-RECIPE] output=allthemodium:vibranium_helmet | inputs=[allthemodium:vibranium_upgrade_smithing_template] + [allthemodium:allthemodium_helmet] + [allthemodium:vibranium_ingot]
+2026-10-17 00:56:12.377 [SMITHING-RECIPE] output=justdirethings:blazegold_helmet | inputs=[justdirethings:template_blazegold] + [justdirethings:ferricore_helmet] + [justdirethings:blazegold_ingot]
+2026-10-17 00:56:12.399 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:12.400 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:12.403 [SMITHING-RECIPE] output=allthemodium:unobtainium_axe | inputs=[allthemodium:unobtainium_upgrade_smithing_template] + [allthemodium:vibranium_axe] + [allthemodium:unobtainium_ingot]
+2026-10-17 00:56:12.414 [SMITHING-RECIPE] output=allthemodium:allthemodium_chestplate | inputs=[allthemodium:allthemodium_upgrade_smithing_template] + [minecraft:netherite_chestplate] + [allthemodium:allthemodium_ingot]
+2026-10-17 00:56:12.439 [SMITHING-RECIPE] output=iceandfire:netherite_hippogryph_armor | inputs=[minecraft:netherite_upgrade_smithing_template] + [iceandfire:diamond_hippogryph_armor] + [minecraft:netherite_ingot]
+2026-10-17 00:56:12.451 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:12.455 [SMITHING-RECIPE] output=allthemodium:allthemodium_hoe | inputs=[allthemodium:allthemodium_upgrade_smithing_template] + [minecraft:netherite_hoe] + [allthemodium:allthemodium_ingot]
+2026-10-17 00:56:12.457 [SMITHING-RECIPE] output=irons_spellbooks:archevoker_leggings | inputs=[irons_spellbooks:evocation_rune] + [irons_spellbooks:wizard_leggings] + [irons_spellbooks:arcane_essence]
+2026-10-17 00:56:12.457 [SMITHING-RECIPE] output=merrymaking:red_santa_hat | inputs=[merrymaking:diamond_upgrade_smithing_template] + [merrymaking:red_santa_hat_iron] + [minecraft:diamond_helmet]
+2026-10-17 00:56:12.460 [SMITHING-RECIPE] output=allthemodium:unobtainium_shovel | inputs=[allthemodium:unobtainium_upgrade_smithing_template] + [allthemodium:vibranium_shovel] + [allthemodium:unobtainium_ingot]
+2026-10-17 00:56:12.476 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:12.512 [SMITHING-RECIPE] output=justdirethings:celestigem_helmet | inputs=[justdirethings:template_celestigem] + [justdirethings:blazegold_helmet] + [justdirethings:celestigem]
+2026-10-17 00:56:12.513 [SMITHING-RECIPE] output=eternal_starlight:starfire_hammer | inputs=[eternal_starlight:starfire_upgrade_smithing_template] + [eternal_starlight:thermal_springstone_hammer] + [eternal_starlight:starfire]
+2026-10-17 00:56:12.517 [SMITHING-RECIPE] output=deeperdarker:warden_chestplate | inputs=[deeperdarker:warden_upgrade_smithing_template] + [minecraft:netherite_chestplate] + [deeperdarker:reinforced_echo_shard]
+2026-10-17 00:56:12.526 [SMITHING-RECIPE] output=allthemodium:allthemodium_helmet | inputs=[allthemodium:allthemodium_upgrade_smithing_template] + [minecraft:netherite_helmet] + [allthemodium:allthemodium_ingot]
+2026-10-17 00:56:12.531 [SMITHING-RECIPE] output=undergarden:forgotten_battleaxe | inputs=[undergarden:forgotten_upgrade_smithing_template] + [undergarden:cloggrum_battleaxe] + [undergarden:forgotten_ingot]
+2026-10-17 00:56:12.547 [SMITHING-RECIPE] output=irons_spellbooks:pyromancer_helmet | inputs=[irons_spellbooks:fire_rune] + [irons_spellbooks:wizard_helmet OR irons_spellbooks:wizard_hat] + [irons_spellbooks:arcane_essence]
+2026-10-17 00:56:12.570 [SMITHING-RECIPE] output=irons_spellbooks:plagued_boots | inputs=[irons_spellbooks:nature_rune] + [irons_spellbooks:wizard_boots] + [irons_spellbooks:arcane_essence]
+2026-10-17 00:56:12.606 [SMITHING-RECIPE] output=allthearcanistgear:vibranium_leggings | inputs=[allthemodium:vibranium_upgrade_smithing_template] + [allthearcanistgear:allthemodium_leggings] + [allthemodium:vibranium_ingot]
+2026-10-17 00:56:12.616 [SMITHING-RECIPE] output=allthewizardgear:vibranium_mage_helmet | inputs=[allthemodium:vibranium_upgrade_smithing_template] + [allthewizardgear:allthemodium_mage_helmet] + [allthemodium:vibranium_ingot]
+2026-10-17 00:56:12.617 [SMITHING-RECIPE] output=auroral:shimmerweave_goggles | inputs=[auroral:shimmersteel_upgrade_smithing_template] + [minecraft:iron_helmet] + [auroral:shimmerweave_fabric]
+2026-10-17 00:56:12.630 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:12.635 [SMITHING-RECIPE] output=merrymaking:reinforced_green_ugly_christmas_sweater | inputs=[minecraft:netherite_upgrade_smithing_template] + [merrymaking:green_ugly_christmas_sweater] + [minecraft:netherite_ingot]
+2026-10-17 00:56:12.637 [SMITHING-RECIPE] output=deeperdarker:resonarium_sword | inputs=[deeperdarker:resonarium_upgrade_smithing_template] + [minecraft:diamond_sword] + [deeperdarker:resonarium_plate]
+2026-10-17 00:56:12.638 [SMITHING-RECIPE] output=justdirethings:celestigem_hoe | inputs=[justdirethings:template_celestigem] + [justdirethings:blazegold_hoe] + [justdirethings:celestigem]
+2026-10-17 00:56:12.639 [SMITHING-RECIPE] output=irons_spellbooks:pyromancer_leggings | inputs=[irons_spellbooks:fire_rune] + [irons_spellbooks:wizard_leggings] + [irons_spellbooks:arcane_essence]
+2026-10-17 00:56:12.659 [SMITHING-RECIPE] output=irons_spellbooks:priest_boots | inputs=[irons_spellbooks:holy_rune] + [irons_spellbooks:wizard_boots] + [irons_spellbooks:arcane_essence]
+2026-10-17 00:56:12.661 [SMITHING-RECIPE] output=allthewizardgear:allthemodium_spell_book | inputs=[allthemodium:allthemodium_upgrade_smithing_template] + [irons_spellbooks:netherite_spell_book] + [allthemodium:allthemodium_ingot]
+2026-10-17 00:56:12.665 [SMITHING-RECIPE] output=merrymaking:red_ugly_christmas_sweater | inputs=[merrymaking:diamond_upgrade_smithing_template] + [merrymaking:red_ugly_christmas_sweater_iron] + [minecraft:diamond_chestplate]
+2026-10-17 00:56:12.672 [SMITHING-RECIPE] output=create:netherite_diving_boots | inputs=[minecraft:netherite_upgrade_smithing_template] + [minecraft:netherite_boots] + [create:copper_diving_boots]
+2026-10-17 00:56:12.727 [SMITHING-RECIPE] output=merrymaking:plaid_pajama_pants_iron | inputs=[merrymaking:iron_upgrade_smithing_template] + [merrymaking:plaid_pajama_pants_leather] + [minecraft:iron_leggings]
+2026-10-17 00:56:12.735 [SMITHING-RECIPE] output=irons_spellbooks:electromancer_chestplate | inputs=[irons_spellbooks:lightning_rune] + [irons_spellbooks:wizard_chestplate] + [irons_spellbooks:arcane_essence]
+2026-10-17 00:56:12.761 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:12.767 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:12.782 [SMITHING-RECIPE] output=minecraft:netherite_hoe | inputs=[minecraft:netherite_upgrade_smithing_template] + [minecraft:diamond_hoe] + [minecraft:netherite_ingot]
+2026-10-17 00:56:12.815 [SMITHING-RECIPE] output=allthearcanistgear:vibranium_spell_book | inputs=[allthemodium:vibranium_upgrade_smithing_template] + [allthearcanistgear:allthemodium_spell_book] + [allthemodium:vibranium_ingot]
+2026-10-17 00:56:12.868 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:12.869 [SMITHING-RECIPE] output=irons_spellbooks:cryomancer_helmet | inputs=[irons_spellbooks:ice_rune] + [irons_spellbooks:wizard_helmet OR irons_spellbooks:wizard_hat] + [irons_spellbooks:arcane_essence]
+2026-10-17 00:56:12.911 [SMITHING-RECIPE] output=bhc:green_heartpulse_belt | inputs=[bhc:yellow_heartpulse_belt] + [bhc:yellow_heart_canister] + [bhc:green_heart_canister]
+2026-10-17 00:56:12.913 [SMITHING-RECIPE] output=allthemodium:unobtainium_boots | inputs=[allthemodium:unobtainium_upgrade_smithing_template] + [allthemodium:vibranium_boots] + [allthemodium:unobtainium_ingot]
+2026-10-17 00:56:12.914 [SMITHING-RECIPE] output=irons_spellbooks:hellrazor | inputs=[irons_spellbooks:timeless_slurry] + [irons_spellbooks:decrepit_scythe] + [irons_spellbooks:pyrium_ingot]
+2026-10-17 00:56:12.940 [SMITHING-RECIPE] output=generatorgalore:netherite_generator | inputs=[minecraft:netherite_upgrade_smithing_template] + [generatorgalore:diamond_generator] + [minecraft:netherite_ingot]
+2026-10-17 00:56:12.958 [SMITHING-RECIPE] output=farmersdelight:netherite_knife | inputs=[minecraft:netherite_upgrade_smithing_template] + [farmersdelight:diamond_knife] + [minecraft:netherite_ingot]
+2026-10-17 00:56:12.964 [SMITHING-RECIPE] output=merrymaking:reinforced_red_santa_hat | inputs=[minecraft:netherite_upgrade_smithing_template] + [merrymaking:red_santa_hat] + [minecraft:netherite_ingot]
+2026-10-17 00:56:12.966 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:12.987 [SMITHING-RECIPE] output=minecraft:netherite_chestplate | inputs=[minecraft:netherite_upgrade_smithing_template] + [minecraft:diamond_chestplate] + [minecraft:netherite_ingot]
+2026-10-17 00:56:12.994 [SMITHING-RECIPE] output=justdirethings:blazegold_shovel | inputs=[justdirethings:template_blazegold] + [justdirethings:ferricore_shovel] + [justdirethings:blazegold_ingot]
+2026-10-17 00:56:13.000 [SMITHING-RECIPE] output=allthewizardgear:allthemodium_mage_boots | inputs=[allthemodium:allthemodium_upgrade_smithing_template] + [irons_spellbooks:netherite_mage_boots OR irons_spellbooks:archevoker_boots OR irons_spellbooks:cryomancer_boots OR irons_spellbooks:cultist_boots OR irons_spellbooks:plagued_boots OR irons_spellbooks:priest_boots OR irons_spellbooks:electromancer_boots OR irons_spellbooks:pyromancer_boots OR irons_spellbooks:shadowwalker_boots] + [allthemodium:allthemodium_ingot]
+2026-10-17 00:56:13.001 [SMITHING-RECIPE] output=eternal_starlight:flowglaze_scythe | inputs=[eternal_starlight:flowglaze_upgrade_smithing_template] + [eternal_starlight:glacite_scythe] + [eternal_starlight:flowglaze]
+2026-10-17 00:56:13.024 [SMITHING-RECIPE] output=allthewizardgear:allthemodium_mage_helmet | inputs=[allthemodium:allthemodium_upgrade_smithing_template] + [irons_spellbooks:netherite_mage_helmet OR irons_spellbooks:archevoker_helmet OR irons_spellbooks:cryomancer_helmet OR irons_spellbooks:cultist_helmet OR irons_spellbooks:plagued_helmet OR irons_spellbooks:priest_helmet OR irons_spellbooks:electromancer_helmet OR irons_spellbooks:pyromancer_helmet OR irons_spellbooks:shadowwalker_helmet] + [allthemodium:allthemodium_ingot]
+2026-10-17 00:56:13.024 [SMITHING-RECIPE] output=justdirethings:blazegold_chestplate | inputs=[justdirethings:template_blazegold] + [justdirethings:ferricore_chestplate] + [justdirethings:blazegold_ingot]
+2026-10-17 00:56:13.034 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:13.054 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:13.075 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:13.113 [SMITHING-RECIPE] output=allthemodium:unobtainium_mace | inputs=[allthemodium:unobtainium_upgrade_smithing_template] + [allthemodium:vibranium_mace] + [allthemodium:unobtainium_block]
+2026-10-17 00:56:13.124 [SMITHING-RECIPE] output=deeperdarker:resonarium_helmet | inputs=[deeperdarker:resonarium_upgrade_smithing_template] + [minecraft:diamond_helmet] + [deeperdarker:resonarium_plate]
+2026-10-17 00:56:13.135 [SMITHING-RECIPE] output=eternal_starlight:starfire_axe | inputs=[eternal_starlight:starfire_upgrade_smithing_template] + [eternal_starlight:thermal_springstone_axe] + [eternal_starlight:starfire]
+2026-10-17 00:56:13.137 [SMITHING-RECIPE] output=mekanismtools:netherite_paxel | inputs=[minecraft:netherite_upgrade_smithing_template] + [mekanismtools:diamond_paxel] + [minecraft:netherite_ingot]
+2026-10-17 00:56:13.150 [SMITHING-RECIPE] output=allthemodium:vibranium_sword | inputs=[allthemodium:vibranium_upgrade_smithing_template] + [allthemodium:allthemodium_sword] + [allthemodium:vibranium_ingot]
+2026-10-17 00:56:13.151 [SMITHING-RECIPE] output=allthemodium:allthemodium_sword | inputs=[allthemodium:allthemodium_upgrade_smithing_template] + [minecraft:netherite_sword] + [allthemodium:allthemodium_ingot]
+2026-10-17 00:56:13.153 [SMITHING-RECIPE] output=justdirethings:bow_celestigem | inputs=[justdirethings:template_celestigem] + [justdirethings:bow_blazegold] + [justdirethings:celestigem]
+2026-10-17 00:56:13.166 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:13.175 [SMITHING-RECIPE] output=irons_spellbooks:pyromancer_boots | inputs=[irons_spellbooks:fire_rune] + [irons_spellbooks:wizard_boots] + [irons_spellbooks:arcane_essence]
+2026-10-17 00:56:13.177 [SMITHING-RECIPE] output=merrymaking:red_ugly_christmas_sweater_iron | inputs=[merrymaking:iron_upgrade_smithing_template] + [merrymaking:red_ugly_christmas_sweater_leather] + [minecraft:iron_chestplate]
+2026-10-17 00:56:13.186 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:13.193 [SMITHING-RECIPE] output=irons_spellbooks:archevoker_boots | inputs=[irons_spellbooks:evocation_rune] + [irons_spellbooks:wizard_boots] + [irons_spellbooks:arcane_essence]
+2026-10-17 00:56:13.193 [SMITHING-RECIPE] output=auroral:shimmersteel_sword | inputs=[auroral:shimmersteel_upgrade_smithing_template] + [minecraft:iron_sword] + [auroral:shimmersteel_ingot]
+2026-10-17 00:56:13.221 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:13.226 [SMITHING-RECIPE] output=deeperdarker:resonarium_boots | inputs=[deeperdarker:resonarium_upgrade_smithing_template] + [minecraft:diamond_boots] + [deeperdarker:resonarium_plate]
+2026-10-17 00:56:13.238 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:13.248 [SMITHING-RECIPE] output=allthemodium:vibranium_axe | inputs=[allthemodium:vibranium_upgrade_smithing_template] + [allthemodium:allthemodium_axe] + [allthemodium:vibranium_ingot]
+2026-10-17 00:56:13.267 [SMITHING-RECIPE] output=irons_spellbooks:electromancer_helmet | inputs=[irons_spellbooks:lightning_rune] + [irons_spellbooks:wizard_helmet OR irons_spellbooks:wizard_hat] + [irons_spellbooks:arcane_essence]
+2026-10-17 00:56:13.279 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:13.281 [SMITHING-RECIPE] output=irons_spellbooks:netherite_mage_boots | inputs=[minecraft:netherite_upgrade_smithing_template] + [irons_spellbooks:wizard_boots] + [minecraft:netherite_ingot]
+2026-10-17 00:56:13.316 [SMITHING-RECIPE] output=ae2:fluix_hoe | inputs=[ae2:fluix_upgrade_smithing_template] + [ae2:certus_quartz_hoe OR ae2:nether_quartz_hoe] + [ae2:fluix_block]
+2026-10-17 00:56:13.317 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:13.331 [SMITHING-RECIPE] output=iceandfire:epic_dragon_seeker | inputs=[minecraft:netherite_upgrade_smithing_template] + [iceandfire:dragon_seeker] + [minecraft:nether_star]
+2026-10-17 00:56:13.355 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:13.357 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:13.368 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:13.369 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:13.372 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:13.380 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:13.381 [SMITHING-RECIPE] output=justdirethings:eclipsealloy_boots | inputs=[justdirethings:template_eclipsealloy] + [justdirethings:celestigem_boots] + [justdirethings:eclipsealloy_ingot]
+2026-10-17 00:56:13.399 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:13.403 [SMITHING-RECIPE] output=minecraft:netherite_leggings | inputs=[minecraft:netherite_upgrade_smithing_template] + [minecraft:diamond_leggings] + [minecraft:netherite_ingot]
+2026-10-17 00:56:13.404 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:13.405 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:13.465 [SMITHING-RECIPE] output=irons_spellbooks:cultist_boots | inputs=[irons_spellbooks:blood_rune] + [irons_spellbooks:wizard_boots] + [irons_spellbooks:arcane_essence]
+2026-10-17 00:56:13.468 [SMITHING-RECIPE] output=cataclysm:cursium_boots | inputs=[cataclysm:cursium_upgrade_smithing_template] + [minecraft:netherite_boots] + [cataclysm:cursium_ingot]
+2026-10-17 00:56:13.469 [SMITHING-RECIPE] output=irons_spellbooks:electromancer_boots | inputs=[irons_spellbooks:lightning_rune] + [irons_spellbooks:wizard_boots] + [irons_spellbooks:arcane_essence]
+2026-10-17 00:56:13.510 [SMITHING-RECIPE] output=allthewizardgear:unobtainium_mage_boots | inputs=[allthemodium:unobtainium_upgrade_smithing_template] + [allthewizardgear:vibranium_mage_boots] + [allthemodium:unobtainium_ingot]
+2026-10-17 00:56:13.553 [SMITHING-RECIPE] output=allthewizardgear:vibranium_mage_leggings | inputs=[allthemodium:vibranium_upgrade_smithing_template] + [allthewizardgear:allthemodium_mage_leggings] + [allthemodium:vibranium_ingot]
+2026-10-17 00:56:13.575 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:13.576 [SMITHING-RECIPE] output=deeperdarker:warden_pickaxe | inputs=[deeperdarker:warden_upgrade_smithing_template] + [minecraft:netherite_pickaxe] + [deeperdarker:reinforced_echo_shard]
+2026-10-17 00:56:13.597 [SMITHING-RECIPE] output=irons_spellbooks:priest_helmet | inputs=[irons_spellbooks:holy_rune] + [irons_spellbooks:wizard_helmet OR irons_spellbooks:wizard_hat] + [irons_spellbooks:arcane_essence]
+2026-10-17 00:56:13.599 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:13.635 [SMITHING-RECIPE] output=justdirethings:celestigem_axe | inputs=[justdirethings:template_celestigem] + [justdirethings:blazegold_axe] + [justdirethings:celestigem]
+2026-10-17 00:56:13.659 [SMITHING-RECIPE] output=justdirethings:eclipsealloy_chestplate | inputs=[justdirethings:template_eclipsealloy] + [justdirethings:celestigem_chestplate] + [justdirethings:eclipsealloy_ingot]
+2026-10-17 00:56:13.678 [SMITHING-RECIPE] output=merrymaking:santa_slippers | inputs=[merrymaking:diamond_upgrade_smithing_template] + [merrymaking:santa_slippers_iron] + [minecraft:diamond_boots]
+2026-10-17 00:56:13.691 [SMITHING-RECIPE] output=justdirethings:blazegold_axe | inputs=[justdirethings:template_blazegold] + [justdirethings:ferricore_axe] + [justdirethings:blazegold_ingot]
+2026-10-17 00:56:13.692 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:13.711 [SMITHING-RECIPE] output=undergarden:forgotten_pickaxe | inputs=[undergarden:forgotten_upgrade_smithing_template] + [undergarden:cloggrum_pickaxe] + [undergarden:forgotten_ingot]
+2026-10-17 00:56:13.716 [SMITHING-RECIPE] output=eternal_starlight:flowglaze_shield | inputs=[eternal_starlight:flowglaze_upgrade_smithing_template] + [eternal_starlight:glacite_shield] + [eternal_starlight:flowglaze]
+2026-10-17 00:56:13.717 [SMITHING-RECIPE] output=allthemodium:vibranium_chestplate | inputs=[allthemodium:vibranium_upgrade_smithing_template] + [allthemodium:allthemodium_chestplate] + [allthemodium:vibranium_ingot]
+2026-10-17 00:56:13.719 [SMITHING-RECIPE] output=functionalstorage:netherite_upgrade | inputs=[minecraft:netherite_upgrade_smithing_template] + [functionalstorage:diamond_upgrade] + [minecraft:netherite_ingot]
+2026-10-17 00:56:13.740 [SMITHING-RECIPE] output=allthemodium:vibranium_shovel | inputs=[allthemodium:vibranium_upgrade_smithing_template] + [allthemodium:allthemodium_shovel] + [allthemodium:vibranium_ingot]
+2026-10-17 00:56:13.777 [SMITHING-RECIPE] output=irons_spellbooks:cultist_chestplate | inputs=[irons_spellbooks:blood_rune] + [irons_spellbooks:wizard_chestplate] + [irons_spellbooks:arcane_essence]
+2026-10-17 00:56:13.796 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:13.825 [SMITHING-RECIPE] output=allthemodium:unobtainium_hoe | inputs=[allthemodium:unobtainium_upgrade_smithing_template] + [allthemodium:vibranium_hoe] + [allthemodium:unobtainium_ingot]
+2026-10-17 00:56:13.831 [SMITHING-RECIPE] output=eternal_starlight:starfire_shovel | inputs=[eternal_starlight:starfire_upgrade_smithing_template] + [eternal_starlight:thermal_springstone_shovel] + [eternal_starlight:starfire]
+2026-10-17 00:56:13.834 [SMITHING-RECIPE] output=undergarden:forgotten_sword | inputs=[undergarden:forgotten_upgrade_smithing_template] + [undergarden:cloggrum_sword] + [undergarden:forgotten_ingot]
+2026-10-17 00:56:13.838 [SMITHING-RECIPE] output=eternal_starlight:flowglaze_pickaxe | inputs=[eternal_starlight:flowglaze_upgrade_smithing_template] + [eternal_starlight:glacite_pickaxe] + [eternal_starlight:flowglaze]
+2026-10-17 00:56:13.839 [SMITHING-RECIPE] output=auroral:shimmerweave_skates | inputs=[auroral:shimmersteel_upgrade_smithing_template] + [minecraft:iron_boots] + [auroral:shimmerweave_fabric]
+2026-10-17 00:56:13.898 [SMITHING-RECIPE] output=justdirethings:blazegold_hoe | inputs=[justdirethings:template_blazegold] + [justdirethings:ferricore_hoe] + [justdirethings:blazegold_ingot]
+2026-10-17 00:56:13.907 [SMITHING-RECIPE] output=justdirethings:celestigem_leggings | inputs=[justdirethings:template_celestigem] + [justdirethings:blazegold_leggings] + [justdirethings:celestigem]
+2026-10-17 00:56:13.910 [SMITHING-RECIPE] output=create:netherite_backtank | inputs=[minecraft:netherite_upgrade_smithing_template] + [create:copper_backtank] + [minecraft:netherite_ingot]
+2026-10-17 00:56:13.912 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:13.965 [SMITHING-RECIPE] output=merrymaking:green_ugly_christmas_sweater | inputs=[merrymaking:diamond_upgrade_smithing_template] + [merrymaking:green_ugly_christmas_sweater_iron] + [minecraft:diamond_chestplate]
+2026-10-17 00:56:13.967 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:13.982 [SMITHING-RECIPE] output=allthearcanistgear:allthemodium_spell_book | inputs=[allthemodium:allthemodium_upgrade_smithing_template] + [ars_nouveau:archmage_spell_book] + [allthemodium:allthemodium_ingot]
+2026-10-17 00:56:13.994 [SMITHING-RECIPE] output=allthemodium:vibranium_hoe | inputs=[allthemodium:vibranium_upgrade_smithing_template] + [allthemodium:allthemodium_hoe] + [allthemodium:vibranium_ingot]
+2026-10-17 00:56:13.995 [SMITHING-RECIPE] output=bhc:blue_heartpulse_belt | inputs=[bhc:green_heartpulse_belt] + [bhc:green_heart_canister] + [bhc:blue_heart_canister]
+2026-10-17 00:56:13.996 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:14.005 [SMITHING-RECIPE] output=justdirethings:eclipsealloy_sword | inputs=[justdirethings:template_eclipsealloy] + [justdirethings:celestigem_sword] + [justdirethings:eclipsealloy_ingot]
+2026-10-17 00:56:14.014 [SMITHING-RECIPE] output=justdirethings:bow_eclipsealloy | inputs=[justdirethings:template_eclipsealloy] + [justdirethings:bow_celestigem] + [justdirethings:eclipsealloy_ingot]
+2026-10-17 00:56:14.015 [SMITHING-RECIPE] output=auroral:shimmersteel_pickaxe | inputs=[auroral:shimmersteel_upgrade_smithing_template] + [minecraft:iron_pickaxe] + [auroral:shimmersteel_ingot]
+2026-10-17 00:56:14.033 [SMITHING-RECIPE] output=xycraft_machines:gauntlet_perfected | inputs=[minecraft:netherite_upgrade_smithing_template] + [xycraft_machines:gauntlet_improved] + [minecraft:netherite_ingot]
+2026-10-17 00:56:14.040 [SMITHING-RECIPE] output=eternal_starlight:flowglaze_hoe | inputs=[eternal_starlight:flowglaze_upgrade_smithing_template] + [eternal_starlight:glacite_hoe] + [eternal_starlight:flowglaze]
+2026-10-17 00:56:14.064 [SMITHING-RECIPE] output=irons_spellbooks:plagued_chestplate | inputs=[irons_spellbooks:nature_rune] + [irons_spellbooks:wizard_chestplate] + [irons_spellbooks:arcane_essence]
+2026-10-17 00:56:14.066 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:14.067 [SMITHING-RECIPE] output=undergarden:forgotten_axe | inputs=[undergarden:forgotten_upgrade_smithing_template] + [undergarden:cloggrum_axe] + [undergarden:forgotten_ingot]
+2026-10-17 00:56:14.073 [SMITHING-RECIPE] output=irons_spellbooks:cryomancer_boots | inputs=[irons_spellbooks:ice_rune] + [irons_spellbooks:wizard_boots] + [irons_spellbooks:arcane_essence]
+2026-10-17 00:56:14.080 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:14.086 [SMITHING-RECIPE] output=merrymaking:reinforced_santa_slippers | inputs=[minecraft:netherite_upgrade_smithing_template] + [merrymaking:santa_slippers] + [minecraft:netherite_ingot]
+2026-10-17 00:56:14.106 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:14.108 [SMITHING-RECIPE] output=eternal_starlight:flowglaze_bow | inputs=[eternal_starlight:flowglaze_upgrade_smithing_template] + [minecraft:bow] + [eternal_starlight:flowglaze]
+2026-10-17 00:56:14.108 [SMITHING-RECIPE] output=allthewizardgear:vibranium_mage_boots | inputs=[allthemodium:vibranium_upgrade_smithing_template] + [allthewizardgear:allthemodium_mage_boots] + [allthemodium:vibranium_ingot]
+2026-10-17 00:56:14.138 [SMITHING-RECIPE] output=minecraft:netherite_helmet | inputs=[minecraft:netherite_upgrade_smithing_template] + [minecraft:diamond_helmet] + [minecraft:netherite_ingot]
+2026-10-17 00:56:14.143 [SMITHING-RECIPE] output=cataclysm:ignitium_chestplate | inputs=[cataclysm:ignitium_upgrade_smithing_template] + [minecraft:netherite_chestplate] + [cataclysm:ignitium_ingot]
+2026-10-17 00:56:14.148 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:14.154 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:14.159 [SMITHING-RECIPE] output=deeperdarker:warden_sword | inputs=[deeperdarker:warden_upgrade_smithing_template] + [minecraft:netherite_sword] + [deeperdarker:reinforced_echo_shard]
+2026-10-17 00:56:14.160 [SMITHING-RECIPE] output=eternal_starlight:flowglaze_axe | inputs=[eternal_starlight:flowglaze_upgrade_smithing_template] + [eternal_starlight:glacite_axe] + [eternal_starlight:flowglaze]
+2026-10-17 00:56:14.176 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:14.178 [SMITHING-RECIPE] output=irons_spellbooks:shadowwalker_chestplate | inputs=[irons_spellbooks:ender_rune] + [irons_spellbooks:wizard_chestplate] + [irons_spellbooks:arcane_essence]
+2026-10-17 00:56:14.180 [SMITHING-RECIPE] output=deeperdarker:resonarium_axe | inputs=[deeperdarker:resonarium_upgrade_smithing_template] + [minecraft:diamond_axe] + [deeperdarker:resonarium_plate]
+2026-10-17 00:56:14.187 [SMITHING-RECIPE] output=irons_spellbooks:cultist_leggings | inputs=[irons_spellbooks:blood_rune] + [irons_spellbooks:wizard_leggings] + [irons_spellbooks:arcane_essence]
+2026-10-17 00:56:14.188 [SMITHING-RECIPE] output=deeperdarker:resonarium_chestplate | inputs=[deeperdarker:resonarium_upgrade_smithing_template] + [minecraft:diamond_chestplate] + [deeperdarker:resonarium_plate]
+2026-10-17 00:56:14.192 [SMITHING-RECIPE] output=kubejs:silent_unobtainium_plate | inputs=[allthemodium:unobtainium_plate] + [allthemodium:unobtainium_upgrade_smithing_template] + [allthemodium:vibranium_ingot]
+2026-10-17 00:56:14.195 [SMITHING-RECIPE] output=allthearcanistgear:unobtainium_robes | inputs=[allthemodium:unobtainium_upgrade_smithing_template] + [allthearcanistgear:vibranium_robes] + [allthemodium:unobtainium_ingot]
+2026-10-17 00:56:14.196 [SMITHING-RECIPE] output=irons_spellbooks:shadowwalker_boots | inputs=[irons_spellbooks:ender_rune] + [irons_spellbooks:wizard_boots] + [irons_spellbooks:arcane_essence]
+2026-10-17 00:56:14.231 [SMITHING-RECIPE] output=merrymaking:green_ugly_christmas_sweater_iron | inputs=[merrymaking:iron_upgrade_smithing_template] + [merrymaking:green_ugly_christmas_sweater_leather] + [minecraft:iron_chestplate]
+2026-10-17 00:56:14.253 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:14.254 [SMITHING-RECIPE] output=minecraft:netherite_sword | inputs=[minecraft:netherite_upgrade_smithing_template] + [minecraft:diamond_sword] + [minecraft:netherite_ingot]
+2026-10-17 00:56:14.261 [SMITHING-RECIPE] output=cataclysm:monstrous_helm | inputs=[minecraft:netherite_upgrade_smithing_template] + [minecraft:netherite_helmet] + [cataclysm:monstrous_horn]
+2026-10-17 00:56:14.286 [SMITHING-RECIPE] output=cataclysm:ignitium_boots | inputs=[cataclysm:ignitium_upgrade_smithing_template] + [minecraft:netherite_boots] + [cataclysm:ignitium_ingot]
+2026-10-17 00:56:14.291 [SMITHING-RECIPE] output=eternal_starlight:starfire_crossbow | inputs=[eternal_starlight:starfire_upgrade_smithing_template] + [minecraft:crossbow] + [eternal_starlight:starfire]
+2026-10-17 00:56:14.319 [SMITHING-RECIPE] output=justdirethings:celestigem_chestplate | inputs=[justdirethings:template_celestigem] + [justdirethings:blazegold_chestplate] + [justdirethings:celestigem]
+2026-10-17 00:56:14.321 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:14.323 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:14.328 [SMITHING-RECIPE] output=irons_spellbooks:priest_leggings | inputs=[irons_spellbooks:holy_rune] + [irons_spellbooks:wizard_leggings] + [irons_spellbooks:arcane_essence]
+2026-10-17 00:56:14.348 [SMITHING-RECIPE] output=allthemodium:allthemodium_shovel | inputs=[allthemodium:allthemodium_upgrade_smithing_template] + [minecraft:netherite_shovel] + [allthemodium:allthemodium_ingot]
+2026-10-17 00:56:14.351 [SMITHING-RECIPE] output=merrymaking:reinforced_reindeer_ears | inputs=[minecraft:netherite_upgrade_smithing_template] + [merrymaking:reindeer_ears] + [minecraft:netherite_ingot]
+2026-10-17 00:56:14.353 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:14.363 [SMITHING-RECIPE] output=merrymaking:reinforced_striped_pajama_pants | inputs=[minecraft:netherite_upgrade_smithing_template] + [merrymaking:striped_pajama_pants] + [minecraft:netherite_ingot]
+2026-10-17 00:56:14.379 [SMITHING-RECIPE] output=eternal_starlight:starfire_hoe | inputs=[eternal_starlight:starfire_upgrade_smithing_template] + [eternal_starlight:thermal_springstone_hoe] + [eternal_starlight:starfire]
+2026-10-17 00:56:14.386 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:14.387 [SMITHING-RECIPE] output=create:netherite_diving_boots | inputs=[minecraft:netherite_upgrade_smithing_template] + [create:copper_diving_boots] + [minecraft:netherite_ingot]
+2026-10-17 00:56:14.404 [SMITHING-RECIPE] output=allthewizardgear:vibranium_mage_chestplate | inputs=[allthemodium:vibranium_upgrade_smithing_template] + [allthewizardgear:allthemodium_mage_chestplate] + [allthemodium:vibranium_ingot]
+2026-10-17 00:56:14.405 [SMITHING-RECIPE] output=eternal_starlight:pungency_fruit_spear | inputs=[eternal_starlight:pungency_fruit_upgrade_smithing_template] + [eternal_starlight:malarite_spear] + [eternal_starlight:pungency_fruit]
+2026-10-17 00:56:14.406 [SMITHING-RECIPE] output=irons_spellbooks:priest_chestplate | inputs=[irons_spellbooks:holy_rune] + [irons_spellbooks:wizard_chestplate] + [irons_spellbooks:arcane_essence]
+2026-10-17 00:56:14.407 [SMITHING-RECIPE] output=merrymaking:reindeer_slippers | inputs=[merrymaking:diamond_upgrade_smithing_template] + [merrymaking:reindeer_slippers_iron] + [minecraft:diamond_boots]
+2026-10-17 00:56:14.408 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:14.411 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:14.421 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:14.427 [SMITHING-RECIPE] output=stevescarts:module_netherite_wood_cutter | inputs=[minecraft:netherite_upgrade_smithing_template] + [stevescarts:module_basic_wood_cutter] + [minecraft:netherite_ingot]
+2026-10-17 00:56:14.431 [SMITHING-RECIPE] output=irons_spellbooks:plagued_helmet | inputs=[irons_spellbooks:nature_rune] + [irons_spellbooks:wizard_helmet OR irons_spellbooks:wizard_hat] + [irons_spellbooks:arcane_essence]
+2026-10-17 00:56:14.444 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:14.445 [SMITHING-RECIPE] output=justdirethings:eclipsealloy_pickaxe | inputs=[justdirethings:template_eclipsealloy] + [justdirethings:celestigem_pickaxe] + [justdirethings:eclipsealloy_ingot]
+2026-10-17 00:56:14.453 [SMITHING-RECIPE] output=merrymaking:santa_slippers_iron | inputs=[merrymaking:iron_upgrade_smithing_template] + [merrymaking:santa_slippers_leather] + [minecraft:iron_boots]
+2026-10-17 00:56:14.470 [SMITHING-RECIPE] output=allthemodium:vibranium_boots | inputs=[allthemodium:vibranium_upgrade_smithing_template] + [allthemodium:allthemodium_boots] + [allthemodium:vibranium_ingot]
+2026-10-17 00:56:14.480 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:14.491 [SMITHING-RECIPE] output=create:netherite_diving_helmet | inputs=[minecraft:netherite_upgrade_smithing_template] + [minecraft:netherite_helmet] + [create:copper_diving_helmet]
+2026-10-17 00:56:14.495 [SMITHING-RECIPE] output=auroral:shimmerweave_leggings | inputs=[auroral:shimmersteel_upgrade_smithing_template] + [minecraft:iron_leggings] + [auroral:shimmerweave_fabric]
+2026-10-17 00:56:14.504 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:14.509 [SMITHING-RECIPE] output=justdirethings:eclipsealloy_hoe | inputs=[justdirethings:template_eclipsealloy] + [justdirethings:celestigem_hoe] + [justdirethings:eclipsealloy_ingot]
+2026-10-17 00:56:14.520 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:14.534 [SMITHING-RECIPE] output=allthemodium:allthemodium_boots | inputs=[allthemodium:allthemodium_upgrade_smithing_template] + [minecraft:netherite_boots] + [allthemodium:allthemodium_ingot]
+2026-10-17 00:56:14.541 [SMITHING-RECIPE] output=allthearcanistgear:unobtainium_boots | inputs=[allthemodium:unobtainium_upgrade_smithing_template] + [allthearcanistgear:vibranium_boots] + [allthemodium:unobtainium_ingot]
+2026-10-17 00:56:14.542 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:14.551 [SMITHING-RECIPE] output=justdirethings:eclipsealloy_paxel | inputs=[justdirethings:template_eclipsealloy] + [justdirethings:celestigem_paxel] + [justdirethings:eclipsealloy_ingot]
+2026-10-17 00:56:14.559 [SMITHING-RECIPE] output=cataclysm:cursium_leggings | inputs=[cataclysm:cursium_upgrade_smithing_template] + [minecraft:netherite_leggings] + [cataclysm:cursium_ingot]
+2026-10-17 00:56:14.564 [SMITHING-RECIPE] output=irons_spellbooks:netherite_mage_helmet | inputs=[minecraft:netherite_upgrade_smithing_template] + [irons_spellbooks:wizard_helmet OR irons_spellbooks:wizard_hat] + [minecraft:netherite_ingot]
+2026-10-17 00:56:14.575 [SMITHING-RECIPE] output=forbidden_arcanus:netherite_blacksmith_gavel | inputs=[minecraft:netherite_upgrade_smithing_template] + [forbidden_arcanus:diamond_blacksmith_gavel] + [minecraft:netherite_ingot]
+2026-10-17 00:56:14.576 [SMITHING-RECIPE] output=eternal_starlight:starfire_sword | inputs=[eternal_starlight:starfire_upgrade_smithing_template] + [eternal_starlight:thermal_springstone_sword] + [eternal_starlight:starfire]
+2026-10-17 00:56:14.579 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:14.582 [SMITHING-RECIPE] output=irons_spellbooks:plagued_leggings | inputs=[irons_spellbooks:nature_rune] + [irons_spellbooks:wizard_leggings] + [irons_spellbooks:arcane_essence]
+2026-10-17 00:56:14.583 [SMITHING-RECIPE] output=auroral:shimmersteel_shovel | inputs=[auroral:shimmersteel_upgrade_smithing_template] + [minecraft:iron_shovel] + [auroral:shimmersteel_ingot]
+2026-10-17 00:56:14.604 [SMITHING-RECIPE] output=cataclysm:ignitium_leggings | inputs=[cataclysm:ignitium_upgrade_smithing_template] + [minecraft:netherite_leggings] + [cataclysm:ignitium_ingot]
+2026-10-17 00:56:14.614 [SMITHING-RECIPE] output=cataclysm:cursium_helmet | inputs=[cataclysm:cursium_upgrade_smithing_template] + [minecraft:netherite_helmet] + [cataclysm:cursium_ingot]
+2026-10-17 00:56:14.616 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:14.644 [SMITHING-RECIPE] output=eternal_starlight:starfire_scythe | inputs=[eternal_starlight:starfire_upgrade_smithing_template] + [eternal_starlight:thermal_springstone_scythe] + [eternal_starlight:starfire]
+2026-10-17 00:56:14.647 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:14.650 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:14.676 [SMITHING-RECIPE] output=deeperdarker:warden_helmet | inputs=[deeperdarker:warden_upgrade_smithing_template] + [minecraft:netherite_helmet] + [deeperdarker:reinforced_echo_shard]
+2026-10-17 00:56:14.686 [SMITHING-RECIPE] output=justdirethings:blazegold_boots | inputs=[justdirethings:template_blazegold] + [justdirethings:ferricore_boots] + [justdirethings:blazegold_ingot]
+2026-10-17 00:56:14.687 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:14.698 [SMITHING-RECIPE] output=create:netherite_diving_helmet | inputs=[minecraft:netherite_upgrade_smithing_template] + [create:copper_diving_helmet] + [minecraft:netherite_ingot]
+2026-10-17 00:56:14.701 [SMITHING-RECIPE] output=allthewizardgear:unobtainium_spell_book | inputs=[allthemodium:unobtainium_upgrade_smithing_template] + [allthewizardgear:vibranium_spell_book] + [allthemodium:unobtainium_ingot]
+2026-10-17 00:56:14.708 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:14.709 [SMITHING-RECIPE] output=allthemodium:vibranium_leggings | inputs=[allthemodium:vibranium_upgrade_smithing_template] + [allthemodium:allthemodium_leggings] + [allthemodium:vibranium_ingot]
+2026-10-17 00:56:14.711 [SMITHING-RECIPE] output=allthemodium:allthemodium_leggings | inputs=[allthemodium:allthemodium_upgrade_smithing_template] + [minecraft:netherite_leggings] + [allthemodium:allthemodium_ingot]
+2026-10-17 00:56:14.733 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:14.735 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:14.735 [SMITHING-RECIPE] output=deeperdarker:resonarium_leggings | inputs=[deeperdarker:resonarium_upgrade_smithing_template] + [minecraft:diamond_leggings] + [deeperdarker:resonarium_plate]
+2026-10-17 00:56:14.746 [SMITHING-RECIPE] output=justdirethings:celestigem_boots | inputs=[justdirethings:template_celestigem] + [justdirethings:blazegold_boots] + [justdirethings:celestigem]
+2026-10-17 00:56:14.748 [SMITHING-RECIPE] output=bhc:yellow_heartpulse_belt | inputs=[bhc:red_heartpulse_belt] + [bhc:red_heart_canister] + [bhc:yellow_heart_canister]
+2026-10-17 00:56:14.749 [SMITHING-RECIPE] output=iceandfire:dragonarmor_netherite_head | inputs=[minecraft:netherite_upgrade_smithing_template] + [iceandfire:dragonarmor_diamond_head] + [minecraft:netherite_block]
+2026-10-17 00:56:14.759 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:14.764 [WARN] Skipped a Smithing Table recipe: fewer than three usable inputs were found.
+2026-10-17 00:56:14.767 [SMITHING-RECIPE] output=allthemodium:unobtainium_sword | inputs=[allthemodium:unobtainium_upgrade_smithing_template] + [allthemodium:vibranium_sword] + [allthemodium:unobtainium_ingot]
+2026-10-17 00:56:14.816 [INFO] [AutoEMC] Mapper projecte_mappingdump collected 4424 conversion(s).
+2026-10-17 00:56:18.267 [INFO] [AutoEMC] Added 3614 bundled mapper conversion(s) to recipe solving.
+2026-10-17 00:56:19.406 [INFO] [AutoEMC] Step 2/6 complete — 58610 usable recipes loaded, including 264 Smithing Table recipes with both base and addition inputs.
+2026-10-17 00:56:19.408 [INFO] [AutoEMC] Step 2/6 — Recipe solving from ProjectE values: pass 1/25 started.
+2026-10-17 00:56:19.557 [INFO] [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 0% (250/58610 recipes, 58360 remaining).
+2026-10-17 00:56:21.400 [INFO] [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 5% (2939/58610 recipes, 55671 remaining).
+2026-10-17 00:56:21.703 [INFO] [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 10% (5939/58610 recipes, 52671 remaining).
+2026-10-17 00:56:22.003 [INFO] [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 15% (8939/58610 recipes, 49671 remaining).
+2026-10-17 00:56:22.236 [INFO] [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 20% (11939/58610 recipes, 46671 remaining).
+2026-10-17 00:56:23.610 [INFO] [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 25% (14939/58610 recipes, 43671 remaining).
+2026-10-17 00:56:23.911 [INFO] [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 30% (17939/58610 recipes, 40671 remaining).
+2026-10-17 00:56:24.203 [INFO] [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 35% (20939/58610 recipes, 37671 remaining).
+2026-10-17 00:56:24.522 [INFO] [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 40% (23939/58610 recipes, 34671 remaining).
+2026-10-17 00:56:24.686 [INFO] [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 45% (26439/58610 recipes, 32171 remaining).
+2026-10-17 00:56:24.893 [INFO] [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 50% (29439/58610 recipes, 29171 remaining).
+2026-10-17 00:56:25.063 [INFO] [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 55% (32439/58610 recipes, 26171 remaining).
+2026-10-17 00:56:25.242 [INFO] [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 60% (35439/58610 recipes, 23171 remaining).
+2026-10-17 00:56:25.451 [INFO] [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 65% (38439/58610 recipes, 20171 remaining).
+2026-10-17 00:56:25.690 [INFO] [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 70% (41439/58610 recipes, 17171 remaining).
+2026-10-17 00:56:25.936 [INFO] [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 75% (44439/58610 recipes, 14171 remaining).
+2026-10-17 00:56:26.156 [INFO] [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 80% (46939/58610 recipes, 11671 remaining).
+2026-10-17 00:56:26.376 [INFO] [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 85% (49939/58610 recipes, 8671 remaining).
+2026-10-17 00:56:26.571 [INFO] [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 90% (52939/58610 recipes, 5671 remaining).
+2026-10-17 00:56:26.775 [INFO] [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 95% (55939/58610 recipes, 2671 remaining).
+2026-10-17 00:56:26.996 [INFO] [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 100% (58610/58610 recipes, 0 remaining).
+2026-10-17 00:56:27.017 [INFO] [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 complete — 0 new item values found.
+2026-10-17 00:56:27.018 [INFO] [AutoEMC] Step 3/6 — Finding source materials with no recipe output.
+2026-10-17 00:56:27.089 [INFO] [AutoEMC] Step 3/6 — Seeding raw/source materials — 0% (250/67531 items, 67281 remaining).
+2026-10-17 00:56:27.445 [INFO] [AutoEMC] Step 3/6 — Seeding raw/source materials — 5% (3622/67531 items, 63909 remaining).
+2026-10-17 00:56:27.846 [INFO] [AutoEMC] Step 3/6 — Seeding raw/source materials — 10% (7122/67531 items, 60409 remaining).
+2026-10-17 00:56:28.127 [INFO] [AutoEMC] Step 3/6 — Seeding raw/source materials — 15% (10622/67531 items, 56909 remaining).
+2026-10-17 00:56:28.385 [INFO] [AutoEMC] Step 3/6 — Seeding raw/source materials — 20% (13622/67531 items, 53909 remaining).
+2026-10-17 00:56:28.676 [INFO] [AutoEMC] Step 3/6 — Seeding raw/source materials — 25% (17122/67531 items, 50409 remaining).
+2026-10-17 00:56:28.947 [INFO] [AutoEMC] Step 3/6 — Seeding raw/source materials — 30% (20622/67531 items, 46909 remaining).
+2026-10-17 00:56:29.185 [INFO] [AutoEMC] Step 3/6 — Seeding raw/source materials — 35% (24122/67531 items, 43409 remaining).
+2026-10-17 00:56:29.363 [INFO] [AutoEMC] Step 3/6 — Seeding raw/source materials — 40% (27122/67531 items, 40409 remaining).
+2026-10-17 00:56:29.571 [INFO] [AutoEMC] Step 3/6 — Seeding raw/source materials — 45% (30622/67531 items, 36909 remaining).
+2026-10-17 00:56:29.765 [INFO] [AutoEMC] Step 3/6 — Seeding raw/source materials — 50% (34122/67531 items, 33409 remaining).
+2026-10-17 00:56:29.971 [INFO] [AutoEMC] Step 3/6 — Seeding raw/source materials — 55% (37622/67531 items, 29909 remaining).
+2026-10-17 00:56:30.165 [INFO] [AutoEMC] Step 3/6 — Seeding raw/source materials — 60% (40622/67531 items, 26909 remaining).
+2026-10-17 00:56:30.361 [INFO] [AutoEMC] Step 3/6 — Seeding raw/source materials — 65% (44122/67531 items, 23409 remaining).
+2026-10-17 00:56:30.551 [INFO] [AutoEMC] Step 3/6 — Seeding raw/source materials — 70% (47622/67531 items, 19909 remaining).
+2026-10-17 00:56:30.824 [INFO] [AutoEMC] Step 3/6 — Seeding raw/source materials — 75% (51122/67531 items, 16409 remaining).
+2026-10-17 00:56:31.439 [INFO] [AutoEMC] Step 3/6 — Seeding raw/source materials — 80% (54122/67531 items, 13409 remaining).
+2026-10-17 00:56:31.897 [INFO] [AutoEMC] Step 3/6 — Seeding raw/source materials — 85% (57622/67531 items, 9909 remaining).
+2026-10-17 00:56:32.183 [INFO] [AutoEMC] Step 3/6 — Seeding raw/source materials — 90% (61122/67531 items, 6409 remaining).
+2026-10-17 00:56:33.583 [INFO] [AutoEMC] Step 3/6 — Seeding raw/source materials — 95% (64622/67531 items, 2909 remaining).
+2026-10-17 00:56:34.261 [INFO] [AutoEMC] Step 3/6 — Seeding raw/source materials — 100% (67531/67531 items, 0 remaining).
+2026-10-17 00:56:34.261 [INFO] [AutoEMC] Step 3/6 complete — source materials received fallback EMC once.
+2026-10-17 00:56:34.263 [INFO] [AutoEMC] Step 4/6 — Re-solving recipes using those source values.
+2026-10-17 00:56:34.316 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 0% (500/58610 recipes, 58110 remaining).
+2026-10-17 00:56:34.835 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 5% (3000/58610 recipes, 55610 remaining).
+2026-10-17 00:56:36.183 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 10% (6000/58610 recipes, 52610 remaining).
+2026-10-17 00:56:36.783 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 15% (9000/58610 recipes, 49610 remaining).
+2026-10-17 00:56:37.541 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 20% (12000/58610 recipes, 46610 remaining).
+2026-10-17 00:56:37.985 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 25% (15000/58610 recipes, 43610 remaining).
+2026-10-17 00:56:38.467 [SMITHING-SOLVED] stage=recipe solve | output=irons_spellbooks:legionnaire_flamberge | emc=1078 | inputs=[irons_spellbooks:timeless_slurry] + [irons_spellbooks:keeper_flamberge] + [irons_spellbooks:pyrium_ingot]
+2026-10-17 00:56:38.657 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 30% (17952/58610 recipes, 40658 remaining).
+2026-10-17 00:56:39.134 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 35% (20939/58610 recipes, 37671 remaining).
+2026-10-17 00:56:39.617 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 40% (23939/58610 recipes, 34671 remaining).
+2026-10-17 00:56:39.788 [SMITHING-SOLVED] stage=recipe solve | output=irons_spellbooks:hellrazor | emc=1078 | inputs=[irons_spellbooks:timeless_slurry] + [irons_spellbooks:decrepit_scythe] + [irons_spellbooks:pyrium_ingot]
+2026-10-17 00:56:39.919 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 45% (26439/58610 recipes, 32171 remaining).
+2026-10-17 00:56:40.221 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 50% (29439/58610 recipes, 29171 remaining).
+2026-10-17 00:56:40.516 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 55% (32439/58610 recipes, 26171 remaining).
+2026-10-17 00:56:40.774 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 60% (35439/58610 recipes, 23171 remaining).
+2026-10-17 00:56:41.063 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 65% (38439/58610 recipes, 20171 remaining).
+2026-10-17 00:56:41.336 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 70% (41439/58610 recipes, 17171 remaining).
+2026-10-17 00:56:41.623 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 75% (44439/58610 recipes, 14171 remaining).
+2026-10-17 00:56:41.846 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 80% (46939/58610 recipes, 11671 remaining).
+2026-10-17 00:56:42.344 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 85% (49939/58610 recipes, 8671 remaining).
+2026-10-17 00:56:42.652 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 90% (52939/58610 recipes, 5671 remaining).
+2026-10-17 00:56:42.889 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 95% (55939/58610 recipes, 2671 remaining).
+2026-10-17 00:56:43.155 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 100% (58610/58610 recipes, 0 remaining).
+2026-10-17 00:56:43.155 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 complete — 9509 new item values found.
+2026-10-17 00:56:43.162 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 started.
+2026-10-17 00:56:43.205 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 0% (500/58610 recipes, 58110 remaining).
+2026-10-17 00:56:43.426 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 5% (3000/58610 recipes, 55610 remaining).
+2026-10-17 00:56:43.669 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 10% (6000/58610 recipes, 52610 remaining).
+2026-10-17 00:56:43.911 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 15% (9000/58610 recipes, 49610 remaining).
+2026-10-17 00:56:44.173 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 20% (12000/58610 recipes, 46610 remaining).
+2026-10-17 00:56:44.378 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 25% (15000/58610 recipes, 43610 remaining).
+2026-10-17 00:56:44.695 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 30% (18000/58610 recipes, 40610 remaining).
+2026-10-17 00:56:45.009 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 35% (21000/58610 recipes, 37610 remaining).
+2026-10-17 00:56:45.226 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 40% (23500/58610 recipes, 35110 remaining).
+2026-10-17 00:56:45.581 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 45% (26439/58610 recipes, 32171 remaining).
+2026-10-17 00:56:45.845 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 50% (29439/58610 recipes, 29171 remaining).
+2026-10-17 00:56:46.145 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 55% (32439/58610 recipes, 26171 remaining).
+2026-10-17 00:56:46.452 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 60% (35439/58610 recipes, 23171 remaining).
+2026-10-17 00:56:46.731 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 65% (38439/58610 recipes, 20171 remaining).
+2026-10-17 00:56:47.028 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 70% (41439/58610 recipes, 17171 remaining).
+2026-10-17 00:56:47.326 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 75% (44439/58610 recipes, 14171 remaining).
+2026-10-17 00:56:47.582 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 80% (46939/58610 recipes, 11671 remaining).
+2026-10-17 00:56:47.877 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 85% (49939/58610 recipes, 8671 remaining).
+2026-10-17 00:56:48.179 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 90% (52939/58610 recipes, 5671 remaining).
+2026-10-17 00:56:48.476 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 95% (55939/58610 recipes, 2671 remaining).
+2026-10-17 00:56:48.777 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 100% (58610/58610 recipes, 0 remaining).
+2026-10-17 00:56:48.778 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 complete — 19033 new item values found.
+2026-10-17 00:56:48.779 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 started.
+2026-10-17 00:56:48.887 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 0% (500/58610 recipes, 58110 remaining).
+2026-10-17 00:56:54.372 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 5% (3000/58610 recipes, 55610 remaining).
+2026-10-17 00:56:54.671 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 10% (6000/58610 recipes, 52610 remaining).
+2026-10-17 00:56:54.972 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 15% (9000/58610 recipes, 49610 remaining).
+2026-10-17 00:56:55.224 [SMITHING-SOLVED] stage=recipe solve | output=auroral:shimmerweave_tunic | emc=9944 | inputs=[auroral:shimmersteel_upgrade_smithing_template] + [minecraft:iron_chestplate] + [auroral:shimmerweave_fabric]
+2026-10-17 00:56:55.275 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 20% (12000/58610 recipes, 46610 remaining).
+2026-10-17 00:56:55.583 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 25% (15000/58610 recipes, 43610 remaining).
+2026-10-17 00:56:55.882 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 30% (18000/58610 recipes, 40610 remaining).
+2026-10-17 00:56:56.176 [SMITHING-SOLVED] stage=recipe solve | output=auroral:shimmerweave_goggles | emc=9920 | inputs=[auroral:shimmersteel_upgrade_smithing_template] + [minecraft:iron_helmet] + [auroral:shimmerweave_fabric]
+2026-10-17 00:56:56.177 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 35% (21000/58610 recipes, 37610 remaining).
+2026-10-17 00:56:56.427 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 40% (23500/58610 recipes, 35110 remaining).
+2026-10-17 00:56:56.730 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 45% (26500/58610 recipes, 32110 remaining).
+2026-10-17 00:56:57.042 [SMITHING-SOLVED] stage=recipe solve | output=auroral:shimmersteel_sword | emc=1009896 | inputs=[auroral:shimmersteel_upgrade_smithing_template] + [minecraft:iron_sword] + [auroral:shimmersteel_ingot]
+2026-10-17 00:56:57.044 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 50% (29500/58610 recipes, 29110 remaining).
+2026-10-17 00:56:57.350 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 55% (32500/58610 recipes, 26110 remaining).
+2026-10-17 00:56:57.751 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 60% (35500/58610 recipes, 23110 remaining).
+2026-10-17 00:56:58.115 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 65% (38500/58610 recipes, 20110 remaining).
+2026-10-17 00:56:58.167 [SMITHING-SOLVED] stage=recipe solve | output=auroral:shimmerweave_skates | emc=9912 | inputs=[auroral:shimmersteel_upgrade_smithing_template] + [minecraft:iron_boots] + [auroral:shimmerweave_fabric]
+2026-10-17 00:56:58.628 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 70% (41500/58610 recipes, 17110 remaining).
+2026-10-17 00:56:58.735 [SMITHING-SOLVED] stage=recipe solve | output=auroral:shimmersteel_pickaxe | emc=9912 | inputs=[auroral:shimmersteel_upgrade_smithing_template] + [minecraft:iron_pickaxe] + [auroral:shimmersteel_ingot]
+2026-10-17 00:56:58.983 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 75% (44000/58610 recipes, 14610 remaining).
+2026-10-17 00:56:59.352 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 80% (47000/58610 recipes, 11610 remaining).
+2026-10-17 00:56:59.593 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 85% (50000/58610 recipes, 8610 remaining).
+2026-10-17 00:56:59.624 [SMITHING-SOLVED] stage=recipe solve | output=auroral:shimmerweave_leggings | emc=9936 | inputs=[auroral:shimmersteel_upgrade_smithing_template] + [minecraft:iron_leggings] + [auroral:shimmerweave_fabric]
+2026-10-17 00:56:59.754 [SMITHING-SOLVED] stage=recipe solve | output=auroral:shimmersteel_shovel | emc=2009888 | inputs=[auroral:shimmersteel_upgrade_smithing_template] + [minecraft:iron_shovel] + [auroral:shimmersteel_ingot]
+2026-10-17 00:56:59.789 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 90% (53000/58610 recipes, 5610 remaining).
+2026-10-17 00:57:00.060 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 95% (56000/58610 recipes, 2610 remaining).
+2026-10-17 00:57:00.255 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 100% (58610/58610 recipes, 0 remaining).
+2026-10-17 00:57:00.255 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 complete — 7129 new item values found.
+2026-10-17 00:57:00.256 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 started.
+2026-10-17 00:57:00.286 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 0% (500/58610 recipes, 58110 remaining).
+2026-10-17 00:57:00.346 [SMITHING-SOLVED] stage=recipe solve | output=auroral:shimmersteel_bow | emc=3009883 | inputs=[auroral:shimmersteel_upgrade_smithing_template] + [minecraft:bow] + [auroral:shimmersteel_ingot]
+2026-10-17 00:57:00.383 [SMITHING-SOLVED] stage=recipe solve | output=auroral:shimmersteel_hoe | emc=2009896 | inputs=[auroral:shimmersteel_upgrade_smithing_template] + [minecraft:iron_hoe] + [auroral:shimmersteel_ingot]
+2026-10-17 00:57:00.462 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 5% (3000/58610 recipes, 55610 remaining).
+2026-10-17 00:57:00.498 [SMITHING-SOLVED] stage=recipe solve | output=auroral:shimmersteel_axe | emc=2009904 | inputs=[auroral:shimmersteel_upgrade_smithing_template] + [minecraft:iron_axe] + [auroral:shimmersteel_ingot]
+2026-10-17 00:57:00.677 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 10% (6000/58610 recipes, 52610 remaining).
+2026-10-17 00:57:00.888 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 15% (9000/58610 recipes, 49610 remaining).
+2026-10-17 00:57:01.188 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 20% (12000/58610 recipes, 46610 remaining).
+2026-10-17 00:57:01.492 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 25% (15000/58610 recipes, 43610 remaining).
+2026-10-17 00:57:01.846 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 30% (18000/58610 recipes, 40610 remaining).
+2026-10-17 00:57:02.192 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 35% (21000/58610 recipes, 37610 remaining).
+2026-10-17 00:57:02.442 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 40% (23500/58610 recipes, 35110 remaining).
+2026-10-17 00:57:03.682 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 45% (26500/58610 recipes, 32110 remaining).
+2026-10-17 00:57:03.889 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 50% (29500/58610 recipes, 29110 remaining).
+2026-10-17 00:57:04.074 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 55% (32500/58610 recipes, 26110 remaining).
+2026-10-17 00:57:04.265 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 60% (35500/58610 recipes, 23110 remaining).
+2026-10-17 00:57:04.435 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 65% (38500/58610 recipes, 20110 remaining).
+2026-10-17 00:57:04.616 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 70% (41500/58610 recipes, 17110 remaining).
+2026-10-17 00:57:09.070 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 75% (44000/58610 recipes, 14610 remaining).
+2026-10-17 00:57:09.706 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 80% (47000/58610 recipes, 11610 remaining).
+2026-10-17 00:57:10.111 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 85% (50000/58610 recipes, 8610 remaining).
+2026-10-17 00:57:10.679 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 90% (53000/58610 recipes, 5610 remaining).
+2026-10-17 00:57:11.049 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 95% (56000/58610 recipes, 2610 remaining).
+2026-10-17 00:57:11.311 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 100% (58610/58610 recipes, 0 remaining).
+2026-10-17 00:57:11.312 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 complete — 1486 new item values found.
+2026-10-17 00:57:11.314 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 started.
+2026-10-17 00:57:11.367 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 0% (500/58610 recipes, 58110 remaining).
+2026-10-17 00:57:11.659 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 5% (3000/58610 recipes, 55610 remaining).
+2026-10-17 00:57:12.028 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 10% (6000/58610 recipes, 52610 remaining).
+2026-10-17 00:57:12.263 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 15% (9000/58610 recipes, 49610 remaining).
+2026-10-17 00:57:12.476 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 20% (12000/58610 recipes, 46610 remaining).
+2026-10-17 00:57:12.732 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 25% (15000/58610 recipes, 43610 remaining).
+2026-10-17 00:57:12.986 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 30% (18000/58610 recipes, 40610 remaining).
+2026-10-17 00:57:13.293 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 35% (21000/58610 recipes, 37610 remaining).
+2026-10-17 00:57:13.551 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 40% (23500/58610 recipes, 35110 remaining).
+2026-10-17 00:57:13.820 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 45% (26500/58610 recipes, 32110 remaining).
+2026-10-17 00:57:14.050 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 50% (29500/58610 recipes, 29110 remaining).
+2026-10-17 00:57:14.545 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 55% (32500/58610 recipes, 26110 remaining).
+2026-10-17 00:57:14.844 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 60% (35500/58610 recipes, 23110 remaining).
+2026-10-17 00:57:15.155 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 65% (38500/58610 recipes, 20110 remaining).
+2026-10-17 00:57:15.450 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 70% (41500/58610 recipes, 17110 remaining).
+2026-10-17 00:57:15.693 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 75% (44000/58610 recipes, 14610 remaining).
+2026-10-17 00:57:15.953 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 80% (47000/58610 recipes, 11610 remaining).
+2026-10-17 00:57:16.205 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 85% (50000/58610 recipes, 8610 remaining).
+2026-10-17 00:57:16.454 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 90% (53000/58610 recipes, 5610 remaining).
+2026-10-17 00:57:16.721 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 95% (56000/58610 recipes, 2610 remaining).
+2026-10-17 00:57:17.015 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 100% (58610/58610 recipes, 0 remaining).
+2026-10-17 00:57:17.016 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 complete — 467 new item values found.
+2026-10-17 00:57:17.017 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 started.
+2026-10-17 00:57:17.064 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 0% (500/58610 recipes, 58110 remaining).
+2026-10-17 00:57:17.225 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 5% (3000/58610 recipes, 55610 remaining).
+2026-10-17 00:57:17.414 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 10% (6000/58610 recipes, 52610 remaining).
+2026-10-17 00:57:17.602 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 15% (9000/58610 recipes, 49610 remaining).
+2026-10-17 00:57:17.790 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 20% (12000/58610 recipes, 46610 remaining).
+2026-10-17 00:57:17.961 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 25% (15000/58610 recipes, 43610 remaining).
+2026-10-17 00:57:18.247 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 30% (18000/58610 recipes, 40610 remaining).
+2026-10-17 00:57:18.525 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 35% (21000/58610 recipes, 37610 remaining).
+2026-10-17 00:57:18.776 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 40% (23500/58610 recipes, 35110 remaining).
+2026-10-17 00:57:19.087 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 45% (26500/58610 recipes, 32110 remaining).
+2026-10-17 00:57:19.380 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 50% (29500/58610 recipes, 29110 remaining).
+2026-10-17 00:57:19.683 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 55% (32500/58610 recipes, 26110 remaining).
+2026-10-17 00:57:19.979 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 60% (35500/58610 recipes, 23110 remaining).
+2026-10-17 00:57:20.278 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 65% (38500/58610 recipes, 20110 remaining).
+2026-10-17 00:57:20.594 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 70% (41500/58610 recipes, 17110 remaining).
+2026-10-17 00:57:20.839 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 75% (44000/58610 recipes, 14610 remaining).
+2026-10-17 00:57:21.162 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 80% (47000/58610 recipes, 11610 remaining).
+2026-10-17 00:57:21.473 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 85% (50000/58610 recipes, 8610 remaining).
+2026-10-17 00:57:21.789 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 90% (53000/58610 recipes, 5610 remaining).
+2026-10-17 00:57:22.045 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 95% (56000/58610 recipes, 2610 remaining).
+2026-10-17 00:57:22.357 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 100% (58610/58610 recipes, 0 remaining).
+2026-10-17 00:57:22.358 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 complete — 122 new item values found.
+2026-10-17 00:57:22.359 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 started.
+2026-10-17 00:57:22.390 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 0% (500/58610 recipes, 58110 remaining).
+2026-10-17 00:57:22.631 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 5% (3000/58610 recipes, 55610 remaining).
+2026-10-17 00:57:23.109 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 10% (6000/58610 recipes, 52610 remaining).
+2026-10-17 00:57:23.266 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 15% (9000/58610 recipes, 49610 remaining).
+2026-10-17 00:57:23.603 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 20% (12000/58610 recipes, 46610 remaining).
+2026-10-17 00:57:23.866 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 25% (15000/58610 recipes, 43610 remaining).
+2026-10-17 00:57:24.131 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 30% (18000/58610 recipes, 40610 remaining).
+2026-10-17 00:57:24.448 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 35% (21000/58610 recipes, 37610 remaining).
+2026-10-17 00:57:24.839 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 40% (23500/58610 recipes, 35110 remaining).
+2026-10-17 00:57:25.123 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 45% (26500/58610 recipes, 32110 remaining).
+2026-10-17 00:57:25.350 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 50% (29500/58610 recipes, 29110 remaining).
+2026-10-17 00:57:25.589 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 55% (32500/58610 recipes, 26110 remaining).
+2026-10-17 00:57:25.879 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 60% (35500/58610 recipes, 23110 remaining).
+2026-10-17 00:57:26.188 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 65% (38500/58610 recipes, 20110 remaining).
+2026-10-17 00:57:26.502 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 70% (41500/58610 recipes, 17110 remaining).
+2026-10-17 00:57:26.747 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 75% (44000/58610 recipes, 14610 remaining).
+2026-10-17 00:57:27.044 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 80% (47000/58610 recipes, 11610 remaining).
+2026-10-17 00:57:27.333 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 85% (50000/58610 recipes, 8610 remaining).
+2026-10-17 00:57:27.676 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 90% (53000/58610 recipes, 5610 remaining).
+2026-10-17 00:57:27.935 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 95% (56000/58610 recipes, 2610 remaining).
+2026-10-17 00:57:28.260 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 100% (58610/58610 recipes, 0 remaining).
+2026-10-17 00:57:28.261 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 complete — 35 new item values found.
+2026-10-17 00:57:28.262 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 started.
+2026-10-17 00:57:28.295 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 0% (500/58610 recipes, 58110 remaining).
+2026-10-17 00:57:28.524 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 5% (3000/58610 recipes, 55610 remaining).
+2026-10-17 00:57:28.833 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 10% (6000/58610 recipes, 52610 remaining).
+2026-10-17 00:57:29.155 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 15% (9000/58610 recipes, 49610 remaining).
+2026-10-17 00:57:29.441 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 20% (12000/58610 recipes, 46610 remaining).
+2026-10-17 00:57:29.789 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 25% (15000/58610 recipes, 43610 remaining).
+2026-10-17 00:57:30.105 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 30% (18000/58610 recipes, 40610 remaining).
+2026-10-17 00:57:30.398 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 35% (21000/58610 recipes, 37610 remaining).
+2026-10-17 00:57:30.610 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 40% (23500/58610 recipes, 35110 remaining).
+2026-10-17 00:57:30.955 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 45% (26500/58610 recipes, 32110 remaining).
+2026-10-17 00:57:31.238 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 50% (29500/58610 recipes, 29110 remaining).
+2026-10-17 00:57:31.500 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 55% (32500/58610 recipes, 26110 remaining).
+2026-10-17 00:57:31.789 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 60% (35500/58610 recipes, 23110 remaining).
+2026-10-17 00:57:32.162 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 65% (38500/58610 recipes, 20110 remaining).
+2026-10-17 00:57:32.705 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 70% (41500/58610 recipes, 17110 remaining).
+2026-10-17 00:57:33.083 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 75% (44000/58610 recipes, 14610 remaining).
+2026-10-17 00:57:33.469 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 80% (46939/58610 recipes, 11671 remaining).
+2026-10-17 00:57:33.771 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 85% (49939/58610 recipes, 8671 remaining).
+2026-10-17 00:57:34.030 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 90% (52939/58610 recipes, 5671 remaining).
+2026-10-17 00:57:34.367 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 95% (55939/58610 recipes, 2671 remaining).
+2026-10-17 00:57:34.773 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 100% (58610/58610 recipes, 0 remaining).
+2026-10-17 00:57:34.773 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 complete — 26 new item values found.
+2026-10-17 00:57:34.774 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 started.
+2026-10-17 00:57:34.830 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 0% (500/58610 recipes, 58110 remaining).
+2026-10-17 00:57:35.038 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 5% (3000/58610 recipes, 55610 remaining).
+2026-10-17 00:57:35.322 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 10% (6000/58610 recipes, 52610 remaining).
+2026-10-17 00:57:35.733 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 15% (9000/58610 recipes, 49610 remaining).
+2026-10-17 00:57:35.996 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 20% (12000/58610 recipes, 46610 remaining).
+2026-10-17 00:57:36.257 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 25% (15000/58610 recipes, 43610 remaining).
+2026-10-17 00:57:36.534 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 30% (18000/58610 recipes, 40610 remaining).
+2026-10-17 00:57:36.787 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 35% (21000/58610 recipes, 37610 remaining).
+2026-10-17 00:57:37.083 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 40% (23500/58610 recipes, 35110 remaining).
+2026-10-17 00:57:37.306 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 45% (26500/58610 recipes, 32110 remaining).
+2026-10-17 00:57:37.571 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 50% (29500/58610 recipes, 29110 remaining).
+2026-10-17 00:57:38.445 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 55% (32500/58610 recipes, 26110 remaining).
+2026-10-17 00:57:39.508 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 60% (35500/58610 recipes, 23110 remaining).
+2026-10-17 00:57:39.835 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 65% (38500/58610 recipes, 20110 remaining).
+2026-10-17 00:57:40.487 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 70% (41500/58610 recipes, 17110 remaining).
+2026-10-17 00:57:40.676 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 75% (44000/58610 recipes, 14610 remaining).
+2026-10-17 00:57:40.911 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 80% (47000/58610 recipes, 11610 remaining).
+2026-10-17 00:57:41.233 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 85% (50000/58610 recipes, 8610 remaining).
+2026-10-17 00:57:41.487 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 90% (53000/58610 recipes, 5610 remaining).
+2026-10-17 00:57:41.984 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 95% (56000/58610 recipes, 2610 remaining).
+2026-10-17 00:57:42.303 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 100% (58610/58610 recipes, 0 remaining).
+2026-10-17 00:57:42.304 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 complete — 9 new item values found.
+2026-10-17 00:57:42.305 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 started.
+2026-10-17 00:57:42.343 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 0% (500/58610 recipes, 58110 remaining).
+2026-10-17 00:57:42.495 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 5% (3000/58610 recipes, 55610 remaining).
+2026-10-17 00:57:42.735 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 10% (6000/58610 recipes, 52610 remaining).
+2026-10-17 00:57:42.993 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 15% (9000/58610 recipes, 49610 remaining).
+2026-10-17 00:57:43.288 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 20% (12000/58610 recipes, 46610 remaining).
+2026-10-17 00:57:43.583 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 25% (15000/58610 recipes, 43610 remaining).
+2026-10-17 00:57:44.021 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 30% (18000/58610 recipes, 40610 remaining).
+2026-10-17 00:57:44.402 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 35% (21000/58610 recipes, 37610 remaining).
+2026-10-17 00:57:44.653 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 40% (23500/58610 recipes, 35110 remaining).
+2026-10-17 00:57:45.094 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 45% (26500/58610 recipes, 32110 remaining).
+2026-10-17 00:57:45.347 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 50% (29500/58610 recipes, 29110 remaining).
+2026-10-17 00:57:46.362 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 55% (32500/58610 recipes, 26110 remaining).
+2026-10-17 00:57:49.996 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 60% (35439/58610 recipes, 23171 remaining).
+2026-10-17 00:57:50.150 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 65% (38439/58610 recipes, 20171 remaining).
+2026-10-17 00:57:52.085 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 70% (41439/58610 recipes, 17171 remaining).
+2026-10-17 00:57:52.558 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 75% (44439/58610 recipes, 14171 remaining).
+2026-10-17 00:57:52.809 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 80% (46939/58610 recipes, 11671 remaining).
+2026-10-17 00:57:53.219 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 85% (49939/58610 recipes, 8671 remaining).
+2026-10-17 00:57:53.571 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 90% (52939/58610 recipes, 5671 remaining).
+2026-10-17 00:57:53.842 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 95% (55939/58610 recipes, 2671 remaining).
+2026-10-17 00:57:54.248 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 100% (58610/58610 recipes, 0 remaining).
+2026-10-17 00:57:54.249 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 complete — 9 new item values found.
+2026-10-17 00:57:54.249 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 started.
+2026-10-17 00:57:54.285 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 0% (500/58610 recipes, 58110 remaining).
+2026-10-17 00:57:54.429 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 5% (3000/58610 recipes, 55610 remaining).
+2026-10-17 00:57:54.626 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 10% (6000/58610 recipes, 52610 remaining).
+2026-10-17 00:57:54.843 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 15% (9000/58610 recipes, 49610 remaining).
+2026-10-17 00:57:55.031 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 20% (12000/58610 recipes, 46610 remaining).
+2026-10-17 00:57:55.205 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 25% (15000/58610 recipes, 43610 remaining).
+2026-10-17 00:57:55.413 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 30% (18000/58610 recipes, 40610 remaining).
+2026-10-17 00:57:55.610 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 35% (21000/58610 recipes, 37610 remaining).
+2026-10-17 00:57:55.825 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 40% (23500/58610 recipes, 35110 remaining).
+2026-10-17 00:57:56.162 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 45% (26500/58610 recipes, 32110 remaining).
+2026-10-17 00:57:56.348 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 50% (29500/58610 recipes, 29110 remaining).
+2026-10-17 00:57:56.565 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 55% (32500/58610 recipes, 26110 remaining).
+2026-10-17 00:57:56.755 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 60% (35500/58610 recipes, 23110 remaining).
+2026-10-17 00:57:57.043 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 65% (38500/58610 recipes, 20110 remaining).
+2026-10-17 00:57:57.258 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 70% (41500/58610 recipes, 17110 remaining).
+2026-10-17 00:57:57.414 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 75% (44000/58610 recipes, 14610 remaining).
+2026-10-17 00:57:57.589 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 80% (47000/58610 recipes, 11610 remaining).
+2026-10-17 00:57:57.766 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 85% (50000/58610 recipes, 8610 remaining).
+2026-10-17 00:57:57.968 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 90% (53000/58610 recipes, 5610 remaining).
+2026-10-17 00:57:58.149 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 95% (56000/58610 recipes, 2610 remaining).
+2026-10-17 00:57:58.325 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 100% (58610/58610 recipes, 0 remaining).
+2026-10-17 00:57:58.325 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 complete — 7 new item values found.
+2026-10-17 00:57:58.326 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 started.
+2026-10-17 00:57:58.347 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 0% (500/58610 recipes, 58110 remaining).
+2026-10-17 00:57:58.543 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 5% (3000/58610 recipes, 55610 remaining).
+2026-10-17 00:57:58.776 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 10% (6000/58610 recipes, 52610 remaining).
+2026-10-17 00:57:59.028 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 15% (9000/58610 recipes, 49610 remaining).
+2026-10-17 00:57:59.197 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 20% (12000/58610 recipes, 46610 remaining).
+2026-10-17 00:57:59.499 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 25% (15000/58610 recipes, 43610 remaining).
+2026-10-17 00:58:00.007 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 30% (18000/58610 recipes, 40610 remaining).
+2026-10-17 00:58:02.598 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 35% (21000/58610 recipes, 37610 remaining).
+2026-10-17 00:58:04.856 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 40% (23500/58610 recipes, 35110 remaining).
+2026-10-17 00:58:05.246 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 45% (26500/58610 recipes, 32110 remaining).
+2026-10-17 00:58:05.572 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 50% (29500/58610 recipes, 29110 remaining).
+2026-10-17 00:58:05.813 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 55% (32500/58610 recipes, 26110 remaining).
+2026-10-17 00:58:06.102 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 60% (35500/58610 recipes, 23110 remaining).
+2026-10-17 00:58:06.384 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 65% (38500/58610 recipes, 20110 remaining).
+2026-10-17 00:58:06.739 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 70% (41500/58610 recipes, 17110 remaining).
+2026-10-17 00:58:06.931 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 75% (44000/58610 recipes, 14610 remaining).
+2026-10-17 00:58:07.209 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 80% (47000/58610 recipes, 11610 remaining).
+2026-10-17 00:58:07.668 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 85% (50000/58610 recipes, 8610 remaining).
+2026-10-17 00:58:08.403 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 90% (53000/58610 recipes, 5610 remaining).
+2026-10-17 00:58:08.923 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 95% (56000/58610 recipes, 2610 remaining).
+2026-10-17 00:58:09.326 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 100% (58610/58610 recipes, 0 remaining).
+2026-10-17 00:58:09.328 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 complete — 5 new item values found.
+2026-10-17 00:58:09.330 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 started.
+2026-10-17 00:58:09.396 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 0% (500/58610 recipes, 58110 remaining).
+2026-10-17 00:58:09.750 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 5% (3000/58610 recipes, 55610 remaining).
+2026-10-17 00:58:10.191 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 10% (6000/58610 recipes, 52610 remaining).
+2026-10-17 00:58:10.759 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 15% (9000/58610 recipes, 49610 remaining).
+2026-10-17 00:58:11.047 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 20% (12000/58610 recipes, 46610 remaining).
+2026-10-17 00:58:11.367 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 25% (15000/58610 recipes, 43610 remaining).
+2026-10-17 00:58:11.649 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 30% (18000/58610 recipes, 40610 remaining).
+2026-10-17 00:58:11.854 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 35% (21000/58610 recipes, 37610 remaining).
+2026-10-17 00:58:12.020 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 40% (23500/58610 recipes, 35110 remaining).
+2026-10-17 00:58:12.222 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 45% (26500/58610 recipes, 32110 remaining).
+2026-10-17 00:58:12.441 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 50% (29500/58610 recipes, 29110 remaining).
+2026-10-17 00:58:12.624 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 55% (32500/58610 recipes, 26110 remaining).
+2026-10-17 00:58:12.745 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 60% (35500/58610 recipes, 23110 remaining).
+2026-10-17 00:58:13.232 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 65% (38500/58610 recipes, 20110 remaining).
+2026-10-17 00:58:13.866 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 70% (41439/58610 recipes, 17171 remaining).
+2026-10-17 00:58:14.395 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 75% (44439/58610 recipes, 14171 remaining).
+2026-10-17 00:58:14.496 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 80% (46939/58610 recipes, 11671 remaining).
+2026-10-17 00:58:14.649 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 85% (49939/58610 recipes, 8671 remaining).
+2026-10-17 00:58:14.807 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 90% (52939/58610 recipes, 5671 remaining).
+2026-10-17 00:58:14.952 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 95% (55939/58610 recipes, 2671 remaining).
+2026-10-17 00:58:15.277 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 100% (58610/58610 recipes, 0 remaining).
+2026-10-17 00:58:15.278 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 complete — 3 new item values found.
+2026-10-17 00:58:15.279 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 started.
+2026-10-17 00:58:15.313 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 0% (500/58610 recipes, 58110 remaining).
+2026-10-17 00:58:15.699 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 5% (3000/58610 recipes, 55610 remaining).
+2026-10-17 00:58:15.911 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 10% (6000/58610 recipes, 52610 remaining).
+2026-10-17 00:58:19.226 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 15% (9000/58610 recipes, 49610 remaining).
+2026-10-17 00:58:23.487 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 20% (12000/58610 recipes, 46610 remaining).
+2026-10-17 00:58:25.088 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 25% (15000/58610 recipes, 43610 remaining).
+2026-10-17 00:58:25.302 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 30% (18000/58610 recipes, 40610 remaining).
+2026-10-17 00:58:27.206 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 35% (21000/58610 recipes, 37610 remaining).
+2026-10-17 00:58:28.023 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 40% (23500/58610 recipes, 35110 remaining).
+2026-10-17 00:58:28.202 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 45% (26500/58610 recipes, 32110 remaining).
+2026-10-17 00:58:28.342 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 50% (29500/58610 recipes, 29110 remaining).
+2026-10-17 00:58:29.357 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 55% (32500/58610 recipes, 26110 remaining).
+2026-10-17 00:58:29.790 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 60% (35500/58610 recipes, 23110 remaining).
+2026-10-17 00:58:30.176 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 65% (38500/58610 recipes, 20110 remaining).
+2026-10-17 00:58:30.539 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 70% (41500/58610 recipes, 17110 remaining).
+2026-10-17 00:58:30.677 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 75% (44000/58610 recipes, 14610 remaining).
+2026-10-17 00:58:30.928 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 80% (47000/58610 recipes, 11610 remaining).
+2026-10-17 00:58:31.354 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 85% (50000/58610 recipes, 8610 remaining).
+2026-10-17 00:58:36.429 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 90% (53000/58610 recipes, 5610 remaining).
+2026-10-17 00:58:38.201 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 95% (56000/58610 recipes, 2610 remaining).
+2026-10-17 00:58:39.121 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 100% (58610/58610 recipes, 0 remaining).
+2026-10-17 00:58:39.180 [INFO] [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 complete — 0 new item values found.
+2026-10-17 00:58:39.183 [INFO] [AutoEMC] Step 5/6 — Assigning fallback EMC only where a recipe still could not solve the item.
+2026-10-17 00:58:39.239 [INFO] [AutoEMC] Step 5/6 — Assigning final fallback EMC — 0% (250/67531 items, 67281 remaining).
+2026-10-17 00:58:39.747 [SMITHING-FALLBACK] output=minecraft:netherite_sword | emc=1555 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:39.748 [SMITHING-FALLBACK] output=minecraft:netherite_shovel | emc=1555 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:39.749 [SMITHING-FALLBACK] output=minecraft:netherite_pickaxe | emc=1555 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:39.749 [SMITHING-FALLBACK] output=minecraft:netherite_axe | emc=1555 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:39.750 [SMITHING-FALLBACK] output=minecraft:netherite_hoe | emc=1555 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:39.750 [SMITHING-FALLBACK] output=minecraft:netherite_helmet | emc=337 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:39.751 [SMITHING-FALLBACK] output=minecraft:netherite_chestplate | emc=476 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:39.752 [SMITHING-FALLBACK] output=minecraft:netherite_leggings | emc=448 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:39.752 [SMITHING-FALLBACK] output=minecraft:netherite_boots | emc=393 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:40.113 [SMITHING-FALLBACK] output=modularbees:electrode_netherite | emc=22532 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:41.429 [INFO] [AutoEMC] Step 5/6 — Assigning final fallback EMC — 5% (3619/67531 items, 63912 remaining).
+2026-10-17 00:58:42.189 [INFO] [AutoEMC] Step 5/6 — Assigning final fallback EMC — 10% (7058/67531 items, 60473 remaining).
+2026-10-17 00:58:42.744 [INFO] [AutoEMC] Step 5/6 — Assigning final fallback EMC — 15% (10558/67531 items, 56973 remaining).
+2026-10-17 00:58:43.233 [SMITHING-FALLBACK] output=bhc:soul_heart_canister | emc=16 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:43.235 [SMITHING-FALLBACK] output=bhc:yellow_heartpulse_belt | emc=32 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:43.236 [SMITHING-FALLBACK] output=bhc:green_heartpulse_belt | emc=32 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:43.236 [SMITHING-FALLBACK] output=bhc:blue_heartpulse_belt | emc=32 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:43.516 [INFO] [AutoEMC] Step 5/6 — Assigning final fallback EMC — 20% (13984/67531 items, 53547 remaining).
+2026-10-17 00:58:43.873 [INFO] [AutoEMC] Step 5/6 — Assigning final fallback EMC — 25% (16984/67531 items, 50547 remaining).
+2026-10-17 00:58:44.187 [INFO] [AutoEMC] Step 5/6 — Assigning final fallback EMC — 30% (20484/67531 items, 47047 remaining).
+2026-10-17 00:58:44.376 [SMITHING-FALLBACK] output=cataclysm:ignitium_helmet | emc=16755 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.376 [SMITHING-FALLBACK] output=cataclysm:ignitium_chestplate | emc=16924 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.376 [SMITHING-FALLBACK] output=cataclysm:ignitium_leggings | emc=16890 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.377 [SMITHING-FALLBACK] output=cataclysm:ignitium_boots | emc=16823 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.377 [SMITHING-FALLBACK] output=cataclysm:cursium_helmet | emc=16755 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.378 [SMITHING-FALLBACK] output=cataclysm:cursium_chestplate | emc=16924 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.379 [SMITHING-FALLBACK] output=cataclysm:cursium_leggings | emc=16890 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.379 [SMITHING-FALLBACK] output=cataclysm:cursium_boots | emc=16823 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.380 [SMITHING-FALLBACK] output=cataclysm:monstrous_helm | emc=16755 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.414 [SMITHING-FALLBACK] output=undergarden:forgotten_battleaxe | emc=17791 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.415 [SMITHING-FALLBACK] output=undergarden:forgotten_sword | emc=1439 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.415 [SMITHING-FALLBACK] output=undergarden:forgotten_pickaxe | emc=1439 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.416 [SMITHING-FALLBACK] output=undergarden:forgotten_axe | emc=1439 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.417 [SMITHING-FALLBACK] output=undergarden:forgotten_shovel | emc=1439 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.417 [SMITHING-FALLBACK] output=undergarden:forgotten_hoe | emc=1439 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.490 [INFO] [AutoEMC] Step 5/6 — Assigning final fallback EMC — 35% (23984/67531 items, 43547 remaining).
+2026-10-17 00:58:44.668 [SMITHING-FALLBACK] output=irons_spellbooks:pyromancer_helmet | emc=337 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.668 [SMITHING-FALLBACK] output=irons_spellbooks:pyromancer_chestplate | emc=476 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.669 [SMITHING-FALLBACK] output=irons_spellbooks:pyromancer_leggings | emc=448 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.670 [SMITHING-FALLBACK] output=irons_spellbooks:pyromancer_boots | emc=393 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.670 [SMITHING-FALLBACK] output=irons_spellbooks:electromancer_helmet | emc=337 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.671 [SMITHING-FALLBACK] output=irons_spellbooks:electromancer_chestplate | emc=476 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.671 [SMITHING-FALLBACK] output=irons_spellbooks:electromancer_leggings | emc=448 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.672 [SMITHING-FALLBACK] output=irons_spellbooks:electromancer_boots | emc=393 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.672 [SMITHING-FALLBACK] output=irons_spellbooks:archevoker_helmet | emc=337 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.673 [SMITHING-FALLBACK] output=irons_spellbooks:archevoker_chestplate | emc=476 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.674 [SMITHING-FALLBACK] output=irons_spellbooks:archevoker_leggings | emc=448 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.675 [SMITHING-FALLBACK] output=irons_spellbooks:archevoker_boots | emc=393 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.676 [SMITHING-FALLBACK] output=irons_spellbooks:cultist_helmet | emc=337 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.677 [SMITHING-FALLBACK] output=irons_spellbooks:cultist_chestplate | emc=476 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.677 [SMITHING-FALLBACK] output=irons_spellbooks:cultist_leggings | emc=448 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.678 [SMITHING-FALLBACK] output=irons_spellbooks:cultist_boots | emc=393 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.679 [SMITHING-FALLBACK] output=irons_spellbooks:cryomancer_helmet | emc=337 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.679 [SMITHING-FALLBACK] output=irons_spellbooks:cryomancer_chestplate | emc=476 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.680 [SMITHING-FALLBACK] output=irons_spellbooks:cryomancer_leggings | emc=448 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.680 [SMITHING-FALLBACK] output=irons_spellbooks:cryomancer_boots | emc=393 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.680 [SMITHING-FALLBACK] output=irons_spellbooks:shadowwalker_helmet | emc=337 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.681 [SMITHING-FALLBACK] output=irons_spellbooks:shadowwalker_chestplate | emc=476 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.681 [SMITHING-FALLBACK] output=irons_spellbooks:shadowwalker_leggings | emc=448 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.682 [SMITHING-FALLBACK] output=irons_spellbooks:shadowwalker_boots | emc=393 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.682 [SMITHING-FALLBACK] output=irons_spellbooks:priest_helmet | emc=337 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.683 [SMITHING-FALLBACK] output=irons_spellbooks:priest_chestplate | emc=476 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.684 [SMITHING-FALLBACK] output=irons_spellbooks:priest_leggings | emc=448 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.684 [SMITHING-FALLBACK] output=irons_spellbooks:priest_boots | emc=393 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.685 [SMITHING-FALLBACK] output=irons_spellbooks:plagued_helmet | emc=337 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.685 [SMITHING-FALLBACK] output=irons_spellbooks:plagued_chestplate | emc=476 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.685 [SMITHING-FALLBACK] output=irons_spellbooks:plagued_leggings | emc=448 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.685 [SMITHING-FALLBACK] output=irons_spellbooks:plagued_boots | emc=393 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.686 [SMITHING-FALLBACK] output=irons_spellbooks:netherite_mage_helmet | emc=337 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.686 [SMITHING-FALLBACK] output=irons_spellbooks:netherite_mage_chestplate | emc=476 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.687 [SMITHING-FALLBACK] output=irons_spellbooks:netherite_mage_leggings | emc=448 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.687 [SMITHING-FALLBACK] output=irons_spellbooks:netherite_mage_boots | emc=393 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.721 [SMITHING-FALLBACK] output=functionalstorage:netherite_upgrade | emc=8 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:44.839 [INFO] [AutoEMC] Step 5/6 — Assigning final fallback EMC — 40% (27423/67531 items, 40108 remaining).
+2026-10-17 00:58:45.079 [INFO] [AutoEMC] Step 5/6 — Assigning final fallback EMC — 45% (30423/67531 items, 37108 remaining).
+2026-10-17 00:58:45.252 [SMITHING-FALLBACK] output=eternal_starlight:pungency_fruit_axe | emc=482 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.253 [SMITHING-FALLBACK] output=eternal_starlight:pungency_fruit_spear | emc=482 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.254 [SMITHING-FALLBACK] output=eternal_starlight:starfire_sword | emc=782 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.254 [SMITHING-FALLBACK] output=eternal_starlight:starfire_pickaxe | emc=782 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.256 [SMITHING-FALLBACK] output=eternal_starlight:starfire_axe | emc=782 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.256 [SMITHING-FALLBACK] output=eternal_starlight:starfire_hoe | emc=782 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.257 [SMITHING-FALLBACK] output=eternal_starlight:starfire_shovel | emc=782 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.257 [SMITHING-FALLBACK] output=eternal_starlight:starfire_scythe | emc=782 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.258 [SMITHING-FALLBACK] output=eternal_starlight:starfire_hammer | emc=782 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.258 [SMITHING-FALLBACK] output=eternal_starlight:starfire_crossbow | emc=688 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.259 [SMITHING-FALLBACK] output=eternal_starlight:flowglaze_sword | emc=782 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.259 [SMITHING-FALLBACK] output=eternal_starlight:flowglaze_pickaxe | emc=782 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.260 [SMITHING-FALLBACK] output=eternal_starlight:flowglaze_axe | emc=782 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.260 [SMITHING-FALLBACK] output=eternal_starlight:flowglaze_hoe | emc=782 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.260 [SMITHING-FALLBACK] output=eternal_starlight:flowglaze_shovel | emc=782 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.261 [SMITHING-FALLBACK] output=eternal_starlight:flowglaze_scythe | emc=782 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.261 [SMITHING-FALLBACK] output=eternal_starlight:flowglaze_bow | emc=688 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.262 [SMITHING-FALLBACK] output=eternal_starlight:flowglaze_shield | emc=782 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.426 [INFO] [AutoEMC] Step 5/6 — Assigning final fallback EMC — 50% (33923/67531 items, 33608 remaining).
+2026-10-17 00:58:45.637 [SMITHING-FALLBACK] output=iceandfire:dragonarmor_netherite_head | emc=8 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.637 [SMITHING-FALLBACK] output=iceandfire:dragonarmor_netherite_neck | emc=8 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.638 [SMITHING-FALLBACK] output=iceandfire:dragonarmor_netherite_body | emc=8 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.638 [SMITHING-FALLBACK] output=iceandfire:dragonarmor_netherite_tail | emc=8 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.639 [SMITHING-FALLBACK] output=iceandfire:netherite_hippogryph_armor | emc=32 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.639 [SMITHING-FALLBACK] output=iceandfire:epic_dragon_seeker | emc=2048 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.762 [SMITHING-FALLBACK] output=allthemodium:allthemodium_helmet | emc=654493890 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.763 [SMITHING-FALLBACK] output=allthemodium:allthemodium_chestplate | emc=805703453 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.764 [SMITHING-FALLBACK] output=allthemodium:allthemodium_leggings | emc=949171768 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.765 [SMITHING-FALLBACK] output=allthemodium:allthemodium_boots | emc=965900372 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.765 [SMITHING-FALLBACK] output=allthemodium:vibranium_helmet | emc=632086694691 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.765 [SMITHING-FALLBACK] output=allthemodium:vibranium_chestplate | emc=542752857336 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.766 [SMITHING-FALLBACK] output=allthemodium:vibranium_leggings | emc=328432705282 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.766 [SMITHING-FALLBACK] output=allthemodium:vibranium_boots | emc=647498505001 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.767 [SMITHING-FALLBACK] output=allthemodium:unobtainium_helmet | emc=4129754034397289 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.767 [SMITHING-FALLBACK] output=allthemodium:unobtainium_chestplate | emc=585767700548503 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.768 [SMITHING-FALLBACK] output=allthemodium:unobtainium_leggings | emc=8944847798914736 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.768 [SMITHING-FALLBACK] output=allthemodium:unobtainium_boots | emc=992703388528269 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.769 [SMITHING-FALLBACK] output=allthemodium:vibranium_sword | emc=749659446783 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.770 [SMITHING-FALLBACK] output=allthemodium:unobtainium_sword | emc=6699987052104309 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.771 [SMITHING-FALLBACK] output=allthemodium:vibranium_pickaxe | emc=623136711441 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.771 [SMITHING-FALLBACK] output=allthemodium:unobtainium_pickaxe | emc=1728626356420251 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.772 [SMITHING-FALLBACK] output=allthemodium:vibranium_axe | emc=36354620898 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.772 [SMITHING-FALLBACK] output=allthemodium:unobtainium_axe | emc=7791692620198728 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.773 [SMITHING-FALLBACK] output=allthemodium:vibranium_shovel | emc=95252555956 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.773 [SMITHING-FALLBACK] output=allthemodium:unobtainium_shovel | emc=6598407430188731 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.774 [SMITHING-FALLBACK] output=allthemodium:vibranium_hoe | emc=213087495625 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.775 [SMITHING-FALLBACK] output=allthemodium:unobtainium_hoe | emc=655563668724468 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.775 [SMITHING-FALLBACK] output=allthemodium:allthemodium_mace | emc=464879775 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.776 [SMITHING-FALLBACK] output=allthemodium:vibranium_mace | emc=250604507639 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.777 [SMITHING-FALLBACK] output=allthemodium:unobtainium_mace | emc=1973583608830206 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:45.780 [INFO] [AutoEMC] Step 5/6 — Assigning final fallback EMC — 55% (37423/67531 items, 30108 remaining).
+2026-10-17 00:58:46.053 [SMITHING-FALLBACK] output=aether:netherite_gloves | emc=1555 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.327 [INFO] [AutoEMC] Step 5/6 — Assigning final fallback EMC — 60% (40862/67531 items, 26669 remaining).
+2026-10-17 00:58:46.408 [SMITHING-FALLBACK] output=generatorgalore:netherite_generator | emc=8 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.409 [SMITHING-FALLBACK] output=generatorgalore:diamond_to_netherite_upgrade | emc=8 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.495 [SMITHING-FALLBACK] output=farmersdelight:netherite_knife | emc=1555 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.541 [SMITHING-FALLBACK] output=xycraft_machines:gauntlet_perfected | emc=32 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.671 [SMITHING-FALLBACK] output=allthearcanistgear:allthemodium_hat | emc=909068578 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.671 [SMITHING-FALLBACK] output=allthearcanistgear:allthemodium_robes | emc=384342279 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.672 [SMITHING-FALLBACK] output=allthearcanistgear:allthemodium_leggings | emc=859938987 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.672 [SMITHING-FALLBACK] output=allthearcanistgear:allthemodium_boots | emc=685682205 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.674 [SMITHING-FALLBACK] output=allthearcanistgear:allthemodium_spell_book | emc=734253686 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.674 [SMITHING-FALLBACK] output=allthearcanistgear:vibranium_hat | emc=867923923738 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.676 [SMITHING-FALLBACK] output=allthearcanistgear:vibranium_robes | emc=854053288493 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.676 [SMITHING-FALLBACK] output=allthearcanistgear:vibranium_leggings | emc=693397751610 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.677 [SMITHING-FALLBACK] output=allthearcanistgear:vibranium_boots | emc=529538750722 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.678 [SMITHING-FALLBACK] output=allthearcanistgear:vibranium_spell_book | emc=466506866086 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.678 [SMITHING-FALLBACK] output=allthearcanistgear:unobtainium_hat | emc=4770770287317574 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.678 [SMITHING-FALLBACK] output=allthearcanistgear:unobtainium_robes | emc=8155949326884060 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.679 [SMITHING-FALLBACK] output=allthearcanistgear:unobtainium_leggings | emc=3697955216313797 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.679 [SMITHING-FALLBACK] output=allthearcanistgear:unobtainium_boots | emc=4619872594390550 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.680 [SMITHING-FALLBACK] output=allthearcanistgear:unobtainium_spell_book | emc=7856737892030747 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.681 [SMITHING-FALLBACK] output=mekanismtools:netherite_paxel | emc=3079 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.682 [SMITHING-FALLBACK] output=deeperdarker:resonarium_shovel | emc=1233 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.682 [SMITHING-FALLBACK] output=deeperdarker:resonarium_pickaxe | emc=1233 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.683 [SMITHING-FALLBACK] output=deeperdarker:resonarium_axe | emc=1233 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.683 [SMITHING-FALLBACK] output=deeperdarker:resonarium_hoe | emc=1233 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.684 [SMITHING-FALLBACK] output=deeperdarker:resonarium_sword | emc=1233 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.685 [SMITHING-FALLBACK] output=deeperdarker:resonarium_helmet | emc=280 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.685 [SMITHING-FALLBACK] output=deeperdarker:resonarium_chestplate | emc=392 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.686 [SMITHING-FALLBACK] output=deeperdarker:resonarium_leggings | emc=370 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.687 [SMITHING-FALLBACK] output=deeperdarker:resonarium_boots | emc=325 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.687 [SMITHING-FALLBACK] output=deeperdarker:warden_shovel | emc=3937 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.688 [SMITHING-FALLBACK] output=deeperdarker:warden_pickaxe | emc=3937 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.689 [SMITHING-FALLBACK] output=deeperdarker:warden_axe | emc=3937 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.689 [SMITHING-FALLBACK] output=deeperdarker:warden_hoe | emc=3937 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.690 [SMITHING-FALLBACK] output=deeperdarker:warden_sword | emc=3937 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.690 [SMITHING-FALLBACK] output=deeperdarker:warden_helmet | emc=2378 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.691 [SMITHING-FALLBACK] output=deeperdarker:warden_chestplate | emc=2528 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.691 [SMITHING-FALLBACK] output=deeperdarker:warden_leggings | emc=2498 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.691 [SMITHING-FALLBACK] output=deeperdarker:warden_boots | emc=2438 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.692 [INFO] [AutoEMC] Step 5/6 — Assigning final fallback EMC — 65% (44362/67531 items, 23169 remaining).
+2026-10-17 00:58:46.770 [SMITHING-FALLBACK] output=advancedperipherals:smart_glasses_netherite | emc=8 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.931 [SMITHING-FALLBACK] output=justdirethings:celestigem_sword | emc=1203 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.931 [SMITHING-FALLBACK] output=justdirethings:celestigem_pickaxe | emc=1203 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.932 [SMITHING-FALLBACK] output=justdirethings:celestigem_shovel | emc=1203 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.933 [SMITHING-FALLBACK] output=justdirethings:celestigem_axe | emc=1203 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.933 [SMITHING-FALLBACK] output=justdirethings:celestigem_hoe | emc=1203 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.934 [SMITHING-FALLBACK] output=justdirethings:celestigem_paxel | emc=1203 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.935 [SMITHING-FALLBACK] output=justdirethings:eclipsealloy_paxel | emc=1953 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.935 [SMITHING-FALLBACK] output=justdirethings:bow_celestigem | emc=370 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.936 [SMITHING-FALLBACK] output=justdirethings:celestigem_helmet | emc=238 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.937 [SMITHING-FALLBACK] output=justdirethings:celestigem_chestplate | emc=332 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.938 [SMITHING-FALLBACK] output=justdirethings:celestigem_leggings | emc=313 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.938 [SMITHING-FALLBACK] output=justdirethings:celestigem_boots | emc=276 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.940 [SMITHING-FALLBACK] output=merrymaking:red_santa_hat_iron | emc=32 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.940 [SMITHING-FALLBACK] output=merrymaking:red_ugly_christmas_sweater_iron | emc=32 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.940 [SMITHING-FALLBACK] output=merrymaking:plaid_pajama_pants_iron | emc=32 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.941 [SMITHING-FALLBACK] output=merrymaking:reindeer_slippers_iron | emc=32 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.942 [SMITHING-FALLBACK] output=merrymaking:reindeer_ears_iron | emc=32 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.942 [SMITHING-FALLBACK] output=merrymaking:green_ugly_christmas_sweater_iron | emc=32 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.943 [SMITHING-FALLBACK] output=merrymaking:striped_pajama_pants_iron | emc=32 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.943 [SMITHING-FALLBACK] output=merrymaking:santa_slippers_iron | emc=32 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.944 [SMITHING-FALLBACK] output=merrymaking:red_santa_hat | emc=32 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.944 [SMITHING-FALLBACK] output=merrymaking:red_ugly_christmas_sweater | emc=32 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.944 [SMITHING-FALLBACK] output=merrymaking:plaid_pajama_pants | emc=32 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.945 [SMITHING-FALLBACK] output=merrymaking:reindeer_slippers | emc=32 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.945 [SMITHING-FALLBACK] output=merrymaking:reindeer_ears | emc=32 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.946 [SMITHING-FALLBACK] output=merrymaking:green_ugly_christmas_sweater | emc=32 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.947 [SMITHING-FALLBACK] output=merrymaking:striped_pajama_pants | emc=32 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.948 [SMITHING-FALLBACK] output=merrymaking:santa_slippers | emc=32 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.948 [SMITHING-FALLBACK] output=merrymaking:reinforced_red_santa_hat | emc=32 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.948 [SMITHING-FALLBACK] output=merrymaking:reinforced_red_ugly_christmas_sweater | emc=32 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.949 [SMITHING-FALLBACK] output=merrymaking:reinforced_plaid_pajama_pants | emc=32 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.949 [SMITHING-FALLBACK] output=merrymaking:reinforced_reindeer_slippers | emc=32 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.950 [SMITHING-FALLBACK] output=merrymaking:reinforced_reindeer_ears | emc=32 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.951 [SMITHING-FALLBACK] output=merrymaking:reinforced_green_ugly_christmas_sweater | emc=32 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.952 [SMITHING-FALLBACK] output=merrymaking:reinforced_striped_pajama_pants | emc=32 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:46.952 [SMITHING-FALLBACK] output=merrymaking:reinforced_santa_slippers | emc=32 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:47.018 [SMITHING-FALLBACK] output=allthewizardgear:allthemodium_mage_helmet | emc=103459961 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:47.018 [SMITHING-FALLBACK] output=allthewizardgear:allthemodium_mage_chestplate | emc=446455990 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:47.019 [SMITHING-FALLBACK] output=allthewizardgear:allthemodium_mage_leggings | emc=11728210 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:47.019 [SMITHING-FALLBACK] output=allthewizardgear:allthemodium_mage_boots | emc=512251608 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:47.019 [SMITHING-FALLBACK] output=allthewizardgear:vibranium_mage_helmet | emc=529765585056 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:47.020 [SMITHING-FALLBACK] output=allthewizardgear:vibranium_mage_chestplate | emc=182797993157 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:47.020 [SMITHING-FALLBACK] output=allthewizardgear:vibranium_mage_leggings | emc=800750188240 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:47.021 [SMITHING-FALLBACK] output=allthewizardgear:vibranium_mage_boots | emc=284954746809 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:47.021 [SMITHING-FALLBACK] output=allthewizardgear:unobtainium_mage_helmet | emc=8022551840209479 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:47.022 [SMITHING-FALLBACK] output=allthewizardgear:unobtainium_mage_chestplate | emc=2346407401694253 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:47.022 [SMITHING-FALLBACK] output=allthewizardgear:unobtainium_mage_leggings | emc=7250983196633858 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:47.023 [SMITHING-FALLBACK] output=allthewizardgear:unobtainium_mage_boots | emc=169279066674167 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:47.024 [SMITHING-FALLBACK] output=allthewizardgear:allthemodium_spell_book | emc=102154223 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:47.024 [SMITHING-FALLBACK] output=allthewizardgear:vibranium_spell_book | emc=328158789149 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:47.025 [SMITHING-FALLBACK] output=allthewizardgear:unobtainium_spell_book | emc=1777014718597129 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:47.025 [INFO] [AutoEMC] Step 5/6 — Assigning final fallback EMC — 70% (47363/67531 items, 20168 remaining).
+2026-10-17 00:58:47.153 [SMITHING-FALLBACK] output=ae2:fluix_axe | emc=595 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:47.153 [SMITHING-FALLBACK] output=ae2:fluix_hoe | emc=595 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:47.154 [SMITHING-FALLBACK] output=ae2:fluix_shovel | emc=595 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:47.155 [SMITHING-FALLBACK] output=ae2:fluix_pickaxe | emc=595 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:47.155 [SMITHING-FALLBACK] output=ae2:fluix_sword | emc=595 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:47.226 [SMITHING-FALLBACK] output=modern_industrialization:netherite_hammer | emc=10187 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:47.306 [SMITHING-FALLBACK] output=forbidden_arcanus:netherite_blacksmith_gavel | emc=1555 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:47.337 [INFO] [AutoEMC] Step 5/6 — Assigning final fallback EMC — 75% (51052/67531 items, 16479 remaining).
+2026-10-17 00:58:47.548 [INFO] [AutoEMC] Step 5/6 — Assigning final fallback EMC — 80% (54052/67531 items, 13479 remaining).
+2026-10-17 00:58:47.834 [INFO] [AutoEMC] Step 5/6 — Assigning final fallback EMC — 85% (57552/67531 items, 9979 remaining).
+2026-10-17 00:58:48.092 [INFO] [AutoEMC] Step 5/6 — Assigning final fallback EMC — 90% (61052/67531 items, 6479 remaining).
+2026-10-17 00:58:48.311 [SMITHING-FALLBACK] output=stevescarts:module_netherite_wood_cutter | emc=8 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:48.341 [INFO] [AutoEMC] Step 5/6 — Assigning final fallback EMC — 95% (64552/67531 items, 2979 remaining).
+2026-10-17 00:58:48.405 [SMITHING-FALLBACK] output=create:netherite_backtank | emc=32 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:48.406 [SMITHING-FALLBACK] output=create:netherite_diving_helmet | emc=337 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:48.407 [SMITHING-FALLBACK] output=create:netherite_diving_boots | emc=393 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:48.471 [SMITHING-FALLBACK] output=create_enchantment_industry:blaze_enchanter | emc=8 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:48.472 [SMITHING-FALLBACK] output=create_enchantment_industry:blaze_forger | emc=8 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:48.473 [SMITHING-FALLBACK] output=create_enchantment_industry:blaze_composer | emc=8 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:48.554 [SMITHING-FALLBACK] output=kubejs:silent_allthemodium_plate | emc=2000000000000 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:48.556 [SMITHING-FALLBACK] output=kubejs:silent_vibranium_plate | emc=2000000000000 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:48.556 [SMITHING-FALLBACK] output=kubejs:silent_unobtainium_plate | emc=6022013033891113 | reason=No complete usable Smithing Table value was available before final fallback.
+2026-10-17 00:58:48.558 [INFO] [AutoEMC] Step 5/6 — Assigning final fallback EMC — 100% (67531/67531 items, 0 remaining).
+2026-10-17 00:58:48.580 [INFO] [AutoEMC] Step 5/6 complete — final fallback values assigned. Step 6/6 will now improve those values through recipe chains.
+2026-10-17 00:58:48.738 [INFO] [AutoEMC] Step 6/6 — Rechecking fallback outputs through recipe chains. Only increases are allowed; recipe cycles are blocked.
+2026-10-17 00:58:48.739 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 0% (250/58610 recipes, 58360 remaining).
+2026-10-17 00:58:48.992 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=allthemodium:allthemodium_mace | emc=3418159939 | inputs=[allthemodium:allthemodium_upgrade_smithing_template] + [minecraft:mace] + [allthemodium:allthemodium_block]
+2026-10-17 00:58:49.091 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=merrymaking:red_santa_hat_iron | emc=464 | inputs=[merrymaking:iron_upgrade_smithing_template] + [merrymaking:red_santa_hat_leather] + [minecraft:iron_helmet]
+2026-10-17 00:58:49.091 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 5% (3122/58610 recipes, 55488 remaining).
+2026-10-17 00:58:49.261 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=deeperdarker:resonarium_pickaxe | emc=2254008 | inputs=[deeperdarker:resonarium_upgrade_smithing_template] + [minecraft:diamond_pickaxe] + [deeperdarker:resonarium_plate]
+2026-10-17 00:58:49.300 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 10% (6122/58610 recipes, 52488 remaining).
+2026-10-17 00:58:49.356 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=merrymaking:reindeer_ears_iron | emc=464 | inputs=[merrymaking:iron_upgrade_smithing_template] + [merrymaking:reindeer_ears_leather] + [minecraft:iron_helmet]
+2026-10-17 00:58:49.385 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=merrymaking:striped_pajama_pants_iron | emc=624 | inputs=[merrymaking:iron_upgrade_smithing_template] + [merrymaking:striped_pajama_pants_leather] + [minecraft:iron_leggings]
+2026-10-17 00:58:49.783 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 15% (9122/58610 recipes, 49488 remaining).
+2026-10-17 00:58:49.931 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=merrymaking:reindeer_ears | emc=41000 | inputs=[merrymaking:diamond_upgrade_smithing_template] + [merrymaking:reindeer_ears_iron] + [minecraft:diamond_helmet]
+2026-10-17 00:58:49.933 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=merrymaking:striped_pajama_pants | emc=57384 | inputs=[merrymaking:diamond_upgrade_smithing_template] + [merrymaking:striped_pajama_pants_iron] + [minecraft:diamond_leggings]
+2026-10-17 00:58:50.000 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=deeperdarker:resonarium_shovel | emc=2237624 | inputs=[deeperdarker:resonarium_upgrade_smithing_template] + [minecraft:diamond_shovel] + [deeperdarker:resonarium_plate]
+2026-10-17 00:58:50.001 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=merrymaking:reindeer_slippers_iron | emc=384 | inputs=[merrymaking:iron_upgrade_smithing_template] + [merrymaking:reindeer_slippers_leather] + [minecraft:iron_boots]
+2026-10-17 00:58:50.002 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=deeperdarker:resonarium_hoe | emc=2245816 | inputs=[deeperdarker:resonarium_upgrade_smithing_template] + [minecraft:diamond_hoe] + [deeperdarker:resonarium_plate]
+2026-10-17 00:58:50.002 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 20% (12122/58610 recipes, 46488 remaining).
+2026-10-17 00:58:50.042 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=merrymaking:plaid_pajama_pants | emc=57384 | inputs=[merrymaking:diamond_upgrade_smithing_template] + [merrymaking:plaid_pajama_pants_iron] + [minecraft:diamond_leggings]
+2026-10-17 00:58:50.320 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 25% (15122/58610 recipes, 43488 remaining).
+2026-10-17 00:58:50.572 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 30% (17622/58610 recipes, 40988 remaining).
+2026-10-17 00:58:50.678 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=merrymaking:red_santa_hat | emc=41000 | inputs=[merrymaking:diamond_upgrade_smithing_template] + [merrymaking:red_santa_hat_iron] + [minecraft:diamond_helmet]
+2026-10-17 00:58:50.877 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 35% (20622/58610 recipes, 37988 remaining).
+2026-10-17 00:58:50.983 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=deeperdarker:resonarium_sword | emc=245820 | inputs=[deeperdarker:resonarium_upgrade_smithing_template] + [minecraft:diamond_sword] + [deeperdarker:resonarium_plate]
+2026-10-17 00:58:50.985 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=allthewizardgear:allthemodium_spell_book | emc=379695897 | inputs=[allthemodium:allthemodium_upgrade_smithing_template] + [irons_spellbooks:netherite_spell_book] + [allthemodium:allthemodium_ingot]
+2026-10-17 00:58:51.026 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=merrymaking:red_ugly_christmas_sweater | emc=65576 | inputs=[merrymaking:diamond_upgrade_smithing_template] + [merrymaking:red_ugly_christmas_sweater_iron] + [minecraft:diamond_chestplate]
+2026-10-17 00:58:51.027 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=merrymaking:plaid_pajama_pants_iron | emc=624 | inputs=[merrymaking:iron_upgrade_smithing_template] + [merrymaking:plaid_pajama_pants_leather] + [minecraft:iron_leggings]
+2026-10-17 00:58:51.173 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 40% (23622/58610 recipes, 34988 remaining).
+2026-10-17 00:58:51.474 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 45% (26622/58610 recipes, 31988 remaining).
+2026-10-17 00:58:51.714 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=deeperdarker:resonarium_helmet | emc=270392 | inputs=[deeperdarker:resonarium_upgrade_smithing_template] + [minecraft:diamond_helmet] + [deeperdarker:resonarium_plate]
+2026-10-17 00:58:51.773 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=merrymaking:red_ugly_christmas_sweater_iron | emc=704 | inputs=[merrymaking:iron_upgrade_smithing_template] + [merrymaking:red_ugly_christmas_sweater_leather] + [minecraft:iron_chestplate]
+2026-10-17 00:58:51.774 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=deeperdarker:resonarium_boots | emc=262200 | inputs=[deeperdarker:resonarium_upgrade_smithing_template] + [minecraft:diamond_boots] + [deeperdarker:resonarium_plate]
+2026-10-17 00:58:51.775 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 50% (29622/58610 recipes, 28988 remaining).
+2026-10-17 00:58:52.176 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 55% (32622/58610 recipes, 25988 remaining).
+2026-10-17 00:58:52.391 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 60% (35622/58610 recipes, 22988 remaining).
+2026-10-17 00:58:52.471 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=merrymaking:santa_slippers | emc=32808 | inputs=[merrymaking:diamond_upgrade_smithing_template] + [merrymaking:santa_slippers_iron] + [minecraft:diamond_boots]
+2026-10-17 00:58:52.537 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=eternal_starlight:flowglaze_shield | emc=1000016 | inputs=[eternal_starlight:flowglaze_upgrade_smithing_template] + [eternal_starlight:glacite_shield] + [eternal_starlight:flowglaze]
+2026-10-17 00:58:52.628 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 65% (38122/58610 recipes, 20488 remaining).
+2026-10-17 00:58:52.919 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=merrymaking:green_ugly_christmas_sweater | emc=65576 | inputs=[merrymaking:diamond_upgrade_smithing_template] + [merrymaking:green_ugly_christmas_sweater_iron] + [minecraft:diamond_chestplate]
+2026-10-17 00:58:52.920 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 70% (41122/58610 recipes, 17488 remaining).
+2026-10-17 00:58:53.170 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=eternal_starlight:flowglaze_bow | emc=3000019 | inputs=[eternal_starlight:flowglaze_upgrade_smithing_template] + [minecraft:bow] + [eternal_starlight:flowglaze]
+2026-10-17 00:58:53.220 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 75% (44122/58610 recipes, 14488 remaining).
+2026-10-17 00:58:53.279 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=deeperdarker:resonarium_axe | emc=2254008 | inputs=[deeperdarker:resonarium_upgrade_smithing_template] + [minecraft:diamond_axe] + [deeperdarker:resonarium_plate]
+2026-10-17 00:58:53.279 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=deeperdarker:resonarium_chestplate | emc=294968 | inputs=[deeperdarker:resonarium_upgrade_smithing_template] + [minecraft:diamond_chestplate] + [deeperdarker:resonarium_plate]
+2026-10-17 00:58:53.746 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=merrymaking:green_ugly_christmas_sweater_iron | emc=704 | inputs=[merrymaking:iron_upgrade_smithing_template] + [merrymaking:green_ugly_christmas_sweater_leather] + [minecraft:iron_chestplate]
+2026-10-17 00:58:53.807 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=eternal_starlight:starfire_crossbow | emc=1000048 | inputs=[eternal_starlight:starfire_upgrade_smithing_template] + [minecraft:crossbow] + [eternal_starlight:starfire]
+2026-10-17 00:58:53.844 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 80% (47122/58610 recipes, 11488 remaining).
+2026-10-17 00:58:53.936 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=merrymaking:reindeer_slippers | emc=32808 | inputs=[merrymaking:diamond_upgrade_smithing_template] + [merrymaking:reindeer_slippers_iron] + [minecraft:diamond_boots]
+2026-10-17 00:58:54.039 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=merrymaking:santa_slippers_iron | emc=384 | inputs=[merrymaking:iron_upgrade_smithing_template] + [merrymaking:santa_slippers_leather] + [minecraft:iron_boots]
+2026-10-17 00:58:54.040 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 85% (50122/58610 recipes, 8488 remaining).
+2026-10-17 00:58:54.263 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 90% (53122/58610 recipes, 5488 remaining).
+2026-10-17 00:58:54.361 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=deeperdarker:resonarium_leggings | emc=286776 | inputs=[deeperdarker:resonarium_upgrade_smithing_template] + [minecraft:diamond_leggings] + [deeperdarker:resonarium_plate]
+2026-10-17 00:58:54.567 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 95% (56122/58610 recipes, 2488 remaining).
+2026-10-17 00:58:54.885 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 100% (58610/58610 recipes, 0 remaining).
+2026-10-17 00:58:54.893 [INFO] [AutoEMC] Step 6/6 — Post-fallback recipe pass 1/25 complete — 32 values increased.
+2026-10-17 00:58:54.895 [INFO] [AutoEMC] Step 6/6 — Starting pass 2/25 so upgraded components can feed their downstream recipes.
+2026-10-17 00:58:54.965 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 0% (500/58610 recipes, 58110 remaining).
+2026-10-17 00:58:55.163 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 5% (3000/58610 recipes, 55610 remaining).
+2026-10-17 00:58:55.449 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 10% (6000/58610 recipes, 52610 remaining).
+2026-10-17 00:58:55.701 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 15% (9000/58610 recipes, 49610 remaining).
+2026-10-17 00:58:55.831 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=merrymaking:reindeer_ears | emc=41432 | inputs=[merrymaking:diamond_upgrade_smithing_template] + [merrymaking:reindeer_ears_iron] + [minecraft:diamond_helmet]
+2026-10-17 00:58:55.863 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=merrymaking:striped_pajama_pants | emc=57976 | inputs=[merrymaking:diamond_upgrade_smithing_template] + [merrymaking:striped_pajama_pants_iron] + [minecraft:diamond_leggings]
+2026-10-17 00:58:55.898 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 20% (12000/58610 recipes, 46610 remaining).
+2026-10-17 00:58:55.930 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=merrymaking:plaid_pajama_pants | emc=57976 | inputs=[merrymaking:diamond_upgrade_smithing_template] + [merrymaking:plaid_pajama_pants_iron] + [minecraft:diamond_leggings]
+2026-10-17 00:58:56.177 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 25% (15000/58610 recipes, 43610 remaining).
+2026-10-17 00:58:56.473 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 30% (18000/58610 recipes, 40610 remaining).
+2026-10-17 00:58:56.607 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=merrymaking:red_santa_hat | emc=41432 | inputs=[merrymaking:diamond_upgrade_smithing_template] + [merrymaking:red_santa_hat_iron] + [minecraft:diamond_helmet]
+2026-10-17 00:58:56.771 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 35% (21000/58610 recipes, 37610 remaining).
+2026-10-17 00:58:56.874 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=merrymaking:red_ugly_christmas_sweater | emc=66248 | inputs=[merrymaking:diamond_upgrade_smithing_template] + [merrymaking:red_ugly_christmas_sweater_iron] + [minecraft:diamond_chestplate]
+2026-10-17 00:58:57.027 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 40% (23500/58610 recipes, 35110 remaining).
+2026-10-17 00:58:57.285 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 45% (26500/58610 recipes, 32110 remaining).
+2026-10-17 00:58:57.628 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 50% (29500/58610 recipes, 29110 remaining).
+2026-10-17 00:58:57.880 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 55% (32500/58610 recipes, 26110 remaining).
+2026-10-17 00:58:58.577 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 60% (35500/58610 recipes, 23110 remaining).
+2026-10-17 00:58:58.671 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=merrymaking:santa_slippers | emc=33160 | inputs=[merrymaking:diamond_upgrade_smithing_template] + [merrymaking:santa_slippers_iron] + [minecraft:diamond_boots]
+2026-10-17 00:58:58.836 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 65% (38500/58610 recipes, 20110 remaining).
+2026-10-17 00:58:59.033 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=merrymaking:green_ugly_christmas_sweater | emc=66248 | inputs=[merrymaking:diamond_upgrade_smithing_template] + [merrymaking:green_ugly_christmas_sweater_iron] + [minecraft:diamond_chestplate]
+2026-10-17 00:58:59.071 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 70% (41500/58610 recipes, 17110 remaining).
+2026-10-17 00:58:59.268 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 75% (44000/58610 recipes, 14610 remaining).
+2026-10-17 00:58:59.491 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 80% (47000/58610 recipes, 11610 remaining).
+2026-10-17 00:58:59.597 [SMITHING-SOLVED] stage=post-fallback recipe reprice | output=merrymaking:reindeer_slippers | emc=33160 | inputs=[merrymaking:diamond_upgrade_smithing_template] + [merrymaking:reindeer_slippers_iron] + [minecraft:diamond_boots]
+2026-10-17 00:58:59.712 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 85% (50000/58610 recipes, 8610 remaining).
+2026-10-17 00:58:59.933 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 90% (53000/58610 recipes, 5610 remaining).
+2026-10-17 00:59:00.233 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 95% (56000/58610 recipes, 2610 remaining).
+2026-10-17 00:59:00.545 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 100% (58610/58610 recipes, 0 remaining).
+2026-10-17 00:59:00.545 [INFO] [AutoEMC] Step 6/6 — Post-fallback recipe pass 2/25 complete — 8 values increased.
+2026-10-17 00:59:00.546 [INFO] [AutoEMC] Step 6/6 — Starting pass 3/25 so upgraded components can feed their downstream recipes.
+2026-10-17 00:59:00.594 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 0% (500/58610 recipes, 58110 remaining).
+2026-10-17 00:59:00.954 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 5% (3000/58610 recipes, 55610 remaining).
+2026-10-17 00:59:01.199 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 10% (6000/58610 recipes, 52610 remaining).
+2026-10-17 00:59:01.433 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 15% (9000/58610 recipes, 49610 remaining).
+2026-10-17 00:59:01.729 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 20% (12000/58610 recipes, 46610 remaining).
+2026-10-17 00:59:02.038 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 25% (15000/58610 recipes, 43610 remaining).
+2026-10-17 00:59:02.335 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 30% (18000/58610 recipes, 40610 remaining).
+2026-10-17 00:59:02.971 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 35% (21000/58610 recipes, 37610 remaining).
+2026-10-17 00:59:03.211 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 40% (23500/58610 recipes, 35110 remaining).
+2026-10-17 00:59:03.495 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 45% (26500/58610 recipes, 32110 remaining).
+2026-10-17 00:59:03.806 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 50% (29500/58610 recipes, 29110 remaining).
+2026-10-17 00:59:04.132 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 55% (32500/58610 recipes, 26110 remaining).
+2026-10-17 00:59:04.447 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 60% (35500/58610 recipes, 23110 remaining).
+2026-10-17 00:59:04.785 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 65% (38500/58610 recipes, 20110 remaining).
+2026-10-17 00:59:05.074 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 70% (41500/58610 recipes, 17110 remaining).
+2026-10-17 00:59:08.764 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 75% (44000/58610 recipes, 14610 remaining).
+2026-10-17 00:59:09.114 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 80% (47000/58610 recipes, 11610 remaining).
+2026-10-17 00:59:09.587 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 85% (50000/58610 recipes, 8610 remaining).
+2026-10-17 00:59:09.973 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 90% (53000/58610 recipes, 5610 remaining).
+2026-10-17 00:59:10.609 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 95% (56000/58610 recipes, 2610 remaining).
+2026-10-17 00:59:10.909 [INFO] [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 100% (58610/58610 recipes, 0 remaining).
+2026-10-17 00:59:10.910 [INFO] [AutoEMC] Step 6/6 — Post-fallback recipe pass 3/25 complete — 0 values increased.
+2026-10-17 00:59:10.925 [INFO] [AutoEMC] Step 6/6 complete — 40 fallback values increased across 3 pass(es); no further increases were possible. 6984 cyclic fallback item(s) were kept safe from recipe-loop inflation.
+2026-10-17 00:59:11.400 [INFO] [AutoEMC] Complete — wrote or updated 67531 AutoEMC entries. Restart Minecraft/server to load them.

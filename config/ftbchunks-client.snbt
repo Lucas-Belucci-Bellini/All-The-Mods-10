@@ -138,24 +138,24 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
-			"minecraft:sheep": true
-			"minecraft:pig": true
-			"minecraft:villager": true
-			"artifacts:mimic": true
-			"minecraft:bat": true
-			"productivebees:bumble_bee": true
-			"aquaculture:minnow": false
-			"aquaculture:muskellunge": false
-			"ars_nouveau:whirlisprig": true
-			"aquaculture:carp": false
-			"aquaculture:bluegill": false
-			"minecraft:chicken": true
-			"minecraft:squid": true
-			"minecraft:llama": true
-			"aquaculture:perch": false
-			"aquaculture:brown_trout": false
 			"minecraft:glow_squid": true
 			"aquaculture:smallmouth_bass": false
+			"aquaculture:bluegill": false
+			"productivebees:bumble_bee": true
+			"minecraft:pig": true
+			"minecraft:villager": true
+			"minecraft:squid": true
+			"minecraft:bat": true
+			"aquaculture:minnow": false
+			"aquaculture:carp": false
+			"aquaculture:perch": false
+			"aquaculture:brown_trout": false
+			"ars_nouveau:whirlisprig": true
+			"aquaculture:muskellunge": false
+			"minecraft:sheep": true
+			"minecraft:llama": true
+			"minecraft:chicken": true
+			"artifacts:mimic": true
 		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)
