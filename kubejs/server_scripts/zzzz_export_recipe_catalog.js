@@ -22,9 +22,11 @@ ServerEvents.recipes(event => {
     }
 
     try {
+      // getOrCreateId() is intentionally hidden from KubeJS scripts in
+      // this version. getId() is public and safely creates an ID when needed.
       const id = recipe.id != null
         ? recipe.id.toString()
-        : recipe.getOrCreateId().toString();
+        : recipe.getId();
 
       // KubeJS exposes its current recipe JSON as a Gson JsonObject.
       // Converting through its JSON text produces a plain serializable object.
