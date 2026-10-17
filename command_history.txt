@@ -15,3 +15,5 @@
 /kill
 /autoemc
 /autoemc rescan
+/projecte setemc
+/projecte showbag

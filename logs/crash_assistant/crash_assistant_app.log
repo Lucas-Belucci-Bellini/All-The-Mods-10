@@ -151,3 +151,27 @@ C:\Users\<USER>\curseforge\minecraft\Install\versions\neoforge-21.1.259\neoforge
 [2026-10-17 00:43:05.983] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: CrashAssistantApp started successfully. Waiting for PID 32204 to stop.
 [2026-10-17 00:45:30.350] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Minecraft is running on renderer:
 AMD Radeon RX 6650 XT
+[2026-10-17 01:14:52.278] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: PID "32204" is not alive or reused by another process. Minecraft JVM appears to have stopped.
+[2026-10-17 01:14:53.508] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: System used RAM after Minecraft process finish moment: 13.1g
+[2026-10-17 01:14:54.463] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: System used Swap Space after Minecraft process finish moment: 6.7g
+[2026-10-17 01:14:54.470] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: System free Disk (C:\) Space after Minecraft process finish moment: 129.0g
+[2026-10-17 01:14:54.535] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Adding latest.log from C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\logs\latest.log
+[2026-10-17 01:14:54.537] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Adding debug.log from C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\logs\debug.log
+[2026-10-17 01:14:54.595] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: stderr_stream.log size: 2979 bytes
+[2026-10-17 01:14:54.638] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Adding CurseForge: stdout-logs.txt from C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\logs\stdout-logs.txt
+[2026-10-17 01:14:54.655] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Adding KubeJS: client.log from C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\logs\kubejs\client.log
+[2026-10-17 01:14:54.657] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Adding KubeJS: server.log from C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\logs\kubejs\server.log
+[2026-10-17 01:14:54.657] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Adding KubeJS: startup.log from C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\logs\kubejs\startup.log
+[2026-10-17 01:14:54.668] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Adding crash_assistant_app.log from C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\logs\crash_assistant\crash_assistant_app.log
+[2026-10-17 01:14:54.669] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Reached first tick of TitleScreen: true
+[2026-10-17 01:14:54.671] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Joined world successfully: true
+[2026-10-17 01:14:54.674] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Prevent Crash Assistant Window: false
+[2026-10-17 01:14:54.674] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: stop() function of Minecraft fired: true
+[2026-10-17 01:14:54.674] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: close() function of Minecraft failed: false
+[2026-10-17 01:14:54.682] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: emergencySave() function of Minecraft fired: false
+[2026-10-17 01:14:54.763] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: isModpackCreator: false
+[2026-10-17 01:14:54.813] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: isHelpLinkDefault: false
+[2026-10-17 01:14:54.813] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: helpLink: https://discord.gg/allthemods
+[2026-10-17 01:14:54.818] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: Seems like Minecraft finished normally. Trying to locate terminated processes and Exiting Crash Assistant app.
+[2026-10-17 01:14:54.940] [INFO] [dev.kostromdan.mods.crash_assistant.common_config.lang.LanguageProvider]: Crash Assistant interface language: pt_br
+[2026-10-17 01:14:56.199] [INFO] [dev.kostromdan.mods.crash_assistant.app.CrashAssistantApp]: UUID(85ee4012cb4e41679ebb79c9a444d6d4) verification result: LICENSED
