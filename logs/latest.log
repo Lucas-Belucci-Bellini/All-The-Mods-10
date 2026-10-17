@@ -23487,3 +23487,1065 @@ java.lang.NoSuchFieldError: Class com.iafenvoy.iceandfire.registry.IafRecipes do
 [17Oct2026 00:55:16.810] [Render thread/INFO] [de.keksuccino.fancymenu.customization.layer.ScreenCustomizationLayerHandler/]: [FANCYMENU] ScreenCustomizationLayer registered: chat_screen
 [17Oct2026 00:55:21.248] [SimpleBackups/INFO] [de.melanx.simplebackups.SimpleBackups/]: Backup completed in 01:06min (22.8 MB | 67.0 MB)
 [17Oct2026 00:55:21.286] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [CHAT] Backup completed in 01:06min (22.8 MB | 67.0 MB)
+[17Oct2026 00:55:26.517] [Render thread/WARN] [net.minecraft.client.renderer.texture.TextureManager/]: Failed to load texture: actuallyadditions:textures/entity/zombie_villager/profession/engineer.png
+java.io.FileNotFoundException: actuallyadditions:textures/entity/zombie_villager/profession/engineer.png
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.packs.resources.ResourceProvider.lambda$getResourceOrThrow$1(ResourceProvider.java:23) ~[client-1.21.1-20240808.144430-srg.jar%23721!/:?]
+	at java.base/java.util.Optional.orElseThrow(Unknown Source) ~[?:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.packs.resources.ResourceProvider.getResourceOrThrow(ResourceProvider.java:23) ~[client-1.21.1-20240808.144430-srg.jar%23721!/:?]
+	at TRANSFORMER/geckolib@4.9.3/software.bernie.geckolib.cache.texture.AnimatableTexture.load(AnimatableTexture.java:40) ~[geckolib-neoforge-1.21.1-4.9.3.jar%23941!/:4.9.3]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:96) ~[client-1.21.1-20240808.144430-srg.jar%23721!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.texture.TextureManager.register(TextureManager.java:68) ~[client-1.21.1-20240808.144430-srg.jar%23721!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.texture.TextureManager.wrapOperation$hab000$geckolib$replaceAnimatableTexture(TextureManager.java:2531) ~[client-1.21.1-20240808.144430-srg.jar%23721!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.texture.TextureManager.getTexture(TextureManager.java:117) ~[client-1.21.1-20240808.144430-srg.jar%23721!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.RenderStateShard$TextureStateShard.lambda$new$0(RenderStateShard.java:241) ~[client-1.21.1-20240808.144430-srg.jar%23721!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.RenderStateShard.setupRenderState(RenderStateShard.java:37) ~[client-1.21.1-20240808.144430-srg.jar%23721!/:?]
+	at MC-BOOTSTRAP/com.google.common@32.1.2-jre/com.google.common.collect.ImmutableList.forEach(ImmutableList.java:422) ~[guava-32.1.2-jre.jar%23130!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.RenderType$CompositeRenderType.lambda$new$1(RenderType.java:1227) ~[client-1.21.1-20240808.144430-srg.jar%23721!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.RenderStateShard.setupRenderState(RenderStateShard.java:37) ~[client-1.21.1-20240808.144430-srg.jar%23721!/:?]
+	at TRANSFORMER/iris@1.8.14-beta.1+mc1.21.1/net.irisshaders.batchedentityrendering.impl.FullyBufferedMultiBufferSource.endBatch(FullyBufferedMultiBufferSource.java:146) ~[iris-neoforge-1.8.14-beta.1+mc1.21.1.jar%23975!/:?]
+	at TRANSFORMER/xycraft_machines@0.7.53/tv.soaryn.xycraft.machines.client.render.XynergyGraphRenderer.onRenderLevel(XynergyGraphRenderer.java:145) ~[xycraft_machines-0.7.53.jar%231229!/:?]
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:360) ~[bus-8.0.5.jar%23110!/:?]
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:328) ~[bus-8.0.5.jar%23110!/:?]
+	at TRANSFORMER/neoforge@21.1.259/net.neoforged.neoforge.client.ClientHooks.dispatchRenderStage(ClientHooks.java:292) ~[neoforge-21.1.259-universal.jar%23722!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.LevelRenderer.renderLevel(LevelRenderer.java:1117) ~[client-1.21.1-20240808.144430-srg.jar%23721!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.GameRenderer.renderLevel(GameRenderer.java:1271) ~[client-1.21.1-20240808.144430-srg.jar%23721!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.GameRenderer.render(GameRenderer.java:1024) ~[client-1.21.1-20240808.144430-srg.jar%23721!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.runTick(Minecraft.java:1195) ~[client-1.21.1-20240808.144430-srg.jar%23721!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.run(Minecraft.java:807) ~[client-1.21.1-20240808.144430-srg.jar%23721!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.main.Main.main(Main.java:230) ~[client-1.21.1-20240808.144430-srg.jar%23721!/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at MC-BOOTSTRAP/fml_loader@4.0.45/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136) ~[loader-4.0.45.jar%23107!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.45/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124) ~[loader-4.0.45.jar%23107!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.45/net.neoforged.fml.loading.targets.CommonClientLaunchHandler.runService(CommonClientLaunchHandler.java:32) ~[loader-4.0.45.jar%23107!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.45/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118) ~[loader-4.0.45.jar%23107!/:4.0]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-11.0.5.jar%23112!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-11.0.5.jar%23112!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-11.0.5.jar%23112!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.run(Launcher.java:103) [modlauncher-11.0.5.jar%23112!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.main(Launcher.java:74) [modlauncher-11.0.5.jar%23112!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-11.0.5.jar%23112!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-11.0.5.jar%23112!/:?]
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210) [bootstraplauncher-2.0.2.jar:?]
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69) [bootstraplauncher-2.0.2.jar:?]
+[17Oct2026 00:55:26.531] [Render thread/WARN] [net.minecraft.client.renderer.texture.TextureManager/]: Failed to load texture: actuallyadditions:textures/entity/zombie_villager/profession/engineer.png
+java.io.FileNotFoundException: actuallyadditions:textures/entity/zombie_villager/profession/engineer.png
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.packs.resources.ResourceProvider.lambda$getResourceOrThrow$1(ResourceProvider.java:23) ~[client-1.21.1-20240808.144430-srg.jar%23721!/:?]
+	at java.base/java.util.Optional.orElseThrow(Unknown Source) ~[?:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.packs.resources.ResourceProvider.getResourceOrThrow(ResourceProvider.java:23) ~[client-1.21.1-20240808.144430-srg.jar%23721!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.texture.SimpleTexture$TextureImage.load(SimpleTexture.java:83) ~[client-1.21.1-20240808.144430-srg.jar%23721!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.texture.SimpleTexture.getTextureImage(SimpleTexture.java:58) ~[client-1.21.1-20240808.144430-srg.jar%23721!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.texture.SimpleTexture.load(SimpleTexture.java:29) ~[client-1.21.1-20240808.144430-srg.jar%23721!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:96) ~[client-1.21.1-20240808.144430-srg.jar%23721!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.texture.TextureManager.register(TextureManager.java:68) ~[client-1.21.1-20240808.144430-srg.jar%23721!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.texture.TextureManager.getTexture(TextureManager.java:118) ~[client-1.21.1-20240808.144430-srg.jar%23721!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.RenderStateShard$TextureStateShard.lambda$new$0(RenderStateShard.java:241) ~[client-1.21.1-20240808.144430-srg.jar%23721!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.RenderStateShard.setupRenderState(RenderStateShard.java:37) ~[client-1.21.1-20240808.144430-srg.jar%23721!/:?]
+	at MC-BOOTSTRAP/com.google.common@32.1.2-jre/com.google.common.collect.ImmutableList.forEach(ImmutableList.java:422) ~[guava-32.1.2-jre.jar%23130!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.RenderType$CompositeRenderType.lambda$new$1(RenderType.java:1227) ~[client-1.21.1-20240808.144430-srg.jar%23721!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.RenderStateShard.setupRenderState(RenderStateShard.java:37) ~[client-1.21.1-20240808.144430-srg.jar%23721!/:?]
+	at TRANSFORMER/iris@1.8.14-beta.1+mc1.21.1/net.irisshaders.batchedentityrendering.impl.FullyBufferedMultiBufferSource.endBatch(FullyBufferedMultiBufferSource.java:146) ~[iris-neoforge-1.8.14-beta.1+mc1.21.1.jar%23975!/:?]
+	at TRANSFORMER/xycraft_machines@0.7.53/tv.soaryn.xycraft.machines.client.render.XynergyGraphRenderer.onRenderLevel(XynergyGraphRenderer.java:145) ~[xycraft_machines-0.7.53.jar%231229!/:?]
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:360) ~[bus-8.0.5.jar%23110!/:?]
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:328) ~[bus-8.0.5.jar%23110!/:?]
+	at TRANSFORMER/neoforge@21.1.259/net.neoforged.neoforge.client.ClientHooks.dispatchRenderStage(ClientHooks.java:292) ~[neoforge-21.1.259-universal.jar%23722!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.LevelRenderer.renderLevel(LevelRenderer.java:1117) ~[client-1.21.1-20240808.144430-srg.jar%23721!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.GameRenderer.renderLevel(GameRenderer.java:1271) ~[client-1.21.1-20240808.144430-srg.jar%23721!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.renderer.GameRenderer.render(GameRenderer.java:1024) ~[client-1.21.1-20240808.144430-srg.jar%23721!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.runTick(Minecraft.java:1195) ~[client-1.21.1-20240808.144430-srg.jar%23721!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.run(Minecraft.java:807) ~[client-1.21.1-20240808.144430-srg.jar%23721!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.main.Main.main(Main.java:230) ~[client-1.21.1-20240808.144430-srg.jar%23721!/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at MC-BOOTSTRAP/fml_loader@4.0.45/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136) ~[loader-4.0.45.jar%23107!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.45/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124) ~[loader-4.0.45.jar%23107!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.45/net.neoforged.fml.loading.targets.CommonClientLaunchHandler.runService(CommonClientLaunchHandler.java:32) ~[loader-4.0.45.jar%23107!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.45/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118) ~[loader-4.0.45.jar%23107!/:4.0]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-11.0.5.jar%23112!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-11.0.5.jar%23112!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-11.0.5.jar%23112!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.run(Launcher.java:103) [modlauncher-11.0.5.jar%23112!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.main(Launcher.java:74) [modlauncher-11.0.5.jar%23112!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-11.0.5.jar%23112!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-11.0.5.jar%23112!/:?]
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210) [bootstraplauncher-2.0.2.jar:?]
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69) [bootstraplauncher-2.0.2.jar:?]
+[17Oct2026 00:55:38.485] [Chunk Render Task Executor #2/WARN] [Sodium-VertexConsumerTracker/]: Class net.mehvahdjukaar.moonlight.api.client.model.platform.BakedQuadBuilderImpl does not support optimized vertex writing code paths, which may cause reduced rendering performance
+[17Oct2026 00:55:39.733] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [CHAT] Unknown or incomplete command, see below for error
+[17Oct2026 00:55:39.734] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [CHAT] autoemc<--[HERE]
+[17Oct2026 00:55:41.855] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 81801ms or 1636 ticks behind
+[17Oct2026 00:55:44.953] [Render thread/INFO] [Iris/]: Destroying pipeline minecraft:overworld
+[17Oct2026 00:55:44.954] [Render thread/INFO] [Iris/]: Shaders are disabled because enableShaders is set to false in iris.properties
+[17Oct2026 00:55:44.954] [Render thread/INFO] [Iris/]: Creating pipeline for dimension minecraft:overworld
+[17Oct2026 00:55:44.970] [Render thread/INFO] [ChunkBuilder/]: Stopping worker threads
+[17Oct2026 00:55:45.058] [Render thread/INFO] [ChunkBuilder/]: Started 6 worker threads
+[17Oct2026 00:55:45.087] [Render thread/WARN] [flywheel/]: Flywheel backend fell back from 'colorwheel:indirect' to 'flywheel:indirect'
+[17Oct2026 00:55:45.099] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [CHAT] Shaders Reloaded!
+[17Oct2026 00:55:45.622] [Render thread/INFO] [de.keksuccino.fancymenu.customization.layer.ScreenCustomizationLayerHandler/]: [FANCYMENU] ScreenCustomizationLayer registered: gg.essential.gui.emotes.EmoteWheel
+[17Oct2026 00:55:47.292] [Server thread/ERROR] [com.iafenvoy.iceandfire.IceAndFire/]: Not a list: null
+[17Oct2026 00:55:52.199] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [CHAT] Unknown or incomplete command, see below for error
+[17Oct2026 00:55:52.200] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [CHAT] autoemc<--[HERE]
+[17Oct2026 00:55:56.799] [Server thread/ERROR] [com.iafenvoy.iceandfire.IceAndFire/]: Not a list: null
+[17Oct2026 00:56:04.493] [Server thread/INFO] [autoemc/]: [AutoEMC] Starting AutoEMC scan — manual /autoemc rescan. Step 1 of 6: checking existing ProjectE EMC for 67531 items.
+[17Oct2026 00:56:04.503] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [CHAT] [AutoEMC] START ▶ Starting a scan (manual /autoemc rescan) — checking 67531 items...
+[17Oct2026 00:56:04.534] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 0% (500/67531 items, 67031 remaining).
+[17Oct2026 00:56:04.751] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 5% (3500/67531 items, 64031 remaining).
+[17Oct2026 00:56:05.026] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 10% (7000/67531 items, 60531 remaining).
+[17Oct2026 00:56:05.288] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 15% (10500/67531 items, 57031 remaining).
+[17Oct2026 00:56:05.560] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 20% (14000/67531 items, 53531 remaining).
+[17Oct2026 00:56:06.359] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 25% (17000/67531 items, 50531 remaining).
+[17Oct2026 00:56:06.851] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 30% (20500/67531 items, 47031 remaining).
+[17Oct2026 00:56:07.222] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 35% (23939/67531 items, 43592 remaining).
+[17Oct2026 00:56:07.690] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 40% (27339/67531 items, 40192 remaining).
+[17Oct2026 00:56:07.952] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 45% (30839/67531 items, 36692 remaining).
+[17Oct2026 00:56:08.309] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 50% (33839/67531 items, 33692 remaining).
+[17Oct2026 00:56:08.622] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 55% (37278/67531 items, 30253 remaining).
+[17Oct2026 00:56:08.889] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 60% (40778/67531 items, 26753 remaining).
+[17Oct2026 00:56:09.134] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 65% (44278/67531 items, 23253 remaining).
+[17Oct2026 00:56:09.374] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 70% (47278/67531 items, 20253 remaining).
+[17Oct2026 00:56:09.634] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 75% (50778/67531 items, 16753 remaining).
+[17Oct2026 00:56:09.862] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 80% (54278/67531 items, 13253 remaining).
+[17Oct2026 00:56:10.133] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 85% (57778/67531 items, 9753 remaining).
+[17Oct2026 00:56:10.344] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 90% (60778/67531 items, 6753 remaining).
+[17Oct2026 00:56:10.597] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 95% (64278/67531 items, 3253 remaining).
+[17Oct2026 00:56:10.949] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 1/6 — Checking existing ProjectE EMC — 100% (67531/67531 items, 0 remaining).
+[17Oct2026 00:56:10.951] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 1/6 complete — 0 items already have ProjectE EMC; 67531 still need a value.
+[17Oct2026 00:56:10.953] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 2/6 — Reading loaded recipes.
+[17Oct2026 00:56:10.959] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [CHAT] [AutoEMC] 1/6 CHECK » Checked items: 67531 still need a value.
+[17Oct2026 00:56:11.028] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:11.067] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:11.114] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:11.221] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:11.309] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:11.310] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:11.356] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:11.450] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:11.480] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:11.523] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:11.531] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:11.555] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:11.573] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:11.626] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:11.673] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:11.744] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:11.750] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:11.773] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:11.822] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:11.961] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:12.074] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:12.085] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:12.086] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:12.156] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:12.207] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:12.295] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:12.303] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:12.352] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:12.355] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:12.368] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:12.372] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:12.398] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:12.400] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:12.450] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:12.476] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:12.629] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:12.761] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:12.767] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:12.867] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:12.966] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:13.034] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:13.054] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:13.075] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:13.166] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:13.186] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:13.220] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:13.238] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:13.279] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:13.317] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:13.354] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:13.356] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:13.368] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:13.369] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:13.372] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:13.380] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:13.399] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:13.404] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:13.405] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:13.574] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:13.598] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:13.692] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:13.795] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:13.912] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:13.966] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:13.996] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:14.066] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:14.080] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:14.106] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:14.147] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:14.154] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:14.176] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:14.253] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:14.321] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:14.323] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:14.353] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:14.386] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:14.407] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:14.411] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:14.421] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:14.444] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:14.479] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:14.503] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:14.520] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:14.542] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:14.578] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:14.615] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:14.647] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:14.649] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:14.687] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:14.707] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:14.733] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:14.734] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:14.759] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:14.764] [Server thread/WARN] [autoemc/]: AutoEMC: skipped a Smithing Table recipe because template, base, and addition inputs were not available.
+[17Oct2026 00:56:19.406] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 2/6 complete — 58610 usable recipes loaded, including 264 Smithing Table recipes with both base and addition inputs.
+[17Oct2026 00:56:19.407] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 2/6 — Recipe solving from ProjectE values: pass 1/25 started.
+[17Oct2026 00:56:19.413] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [CHAT] [AutoEMC] 2/6 RECIPES » Loaded 58610 recipes.
+[17Oct2026 00:56:19.461] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 8564ms or 171 ticks behind
+[17Oct2026 00:56:19.557] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 0% (250/58610 recipes, 58360 remaining).
+[17Oct2026 00:56:21.399] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 5% (2939/58610 recipes, 55671 remaining).
+[17Oct2026 00:56:21.703] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 10% (5939/58610 recipes, 52671 remaining).
+[17Oct2026 00:56:22.003] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 15% (8939/58610 recipes, 49671 remaining).
+[17Oct2026 00:56:22.236] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 20% (11939/58610 recipes, 46671 remaining).
+[17Oct2026 00:56:23.610] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 25% (14939/58610 recipes, 43671 remaining).
+[17Oct2026 00:56:23.911] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 30% (17939/58610 recipes, 40671 remaining).
+[17Oct2026 00:56:24.203] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 35% (20939/58610 recipes, 37671 remaining).
+[17Oct2026 00:56:24.522] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 40% (23939/58610 recipes, 34671 remaining).
+[17Oct2026 00:56:24.686] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 45% (26439/58610 recipes, 32171 remaining).
+[17Oct2026 00:56:24.891] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 50% (29439/58610 recipes, 29171 remaining).
+[17Oct2026 00:56:25.063] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 55% (32439/58610 recipes, 26171 remaining).
+[17Oct2026 00:56:25.242] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 60% (35439/58610 recipes, 23171 remaining).
+[17Oct2026 00:56:25.451] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 65% (38439/58610 recipes, 20171 remaining).
+[17Oct2026 00:56:25.690] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 70% (41439/58610 recipes, 17171 remaining).
+[17Oct2026 00:56:25.936] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 75% (44439/58610 recipes, 14171 remaining).
+[17Oct2026 00:56:26.156] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 80% (46939/58610 recipes, 11671 remaining).
+[17Oct2026 00:56:26.376] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 85% (49939/58610 recipes, 8671 remaining).
+[17Oct2026 00:56:26.571] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 90% (52939/58610 recipes, 5671 remaining).
+[17Oct2026 00:56:26.774] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 95% (55939/58610 recipes, 2671 remaining).
+[17Oct2026 00:56:26.996] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 — 100% (58610/58610 recipes, 0 remaining).
+[17Oct2026 00:56:27.016] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 2/6 — ProjectE recipe pass 1/25 complete — 0 new item values found.
+[17Oct2026 00:56:27.018] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 3/6 — Finding source materials with no recipe output.
+[17Oct2026 00:56:27.021] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [CHAT] [AutoEMC] 3/6 SOURCES » Found 0 values from recipes. Looking for base materials next...
+[17Oct2026 00:56:27.089] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 3/6 — Seeding raw/source materials — 0% (250/67531 items, 67281 remaining).
+[17Oct2026 00:56:27.445] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 3/6 — Seeding raw/source materials — 5% (3622/67531 items, 63909 remaining).
+[17Oct2026 00:56:27.846] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 3/6 — Seeding raw/source materials — 10% (7122/67531 items, 60409 remaining).
+[17Oct2026 00:56:28.127] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 3/6 — Seeding raw/source materials — 15% (10622/67531 items, 56909 remaining).
+[17Oct2026 00:56:28.385] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 3/6 — Seeding raw/source materials — 20% (13622/67531 items, 53909 remaining).
+[17Oct2026 00:56:28.676] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 3/6 — Seeding raw/source materials — 25% (17122/67531 items, 50409 remaining).
+[17Oct2026 00:56:28.947] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 3/6 — Seeding raw/source materials — 30% (20622/67531 items, 46909 remaining).
+[17Oct2026 00:56:29.185] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 3/6 — Seeding raw/source materials — 35% (24122/67531 items, 43409 remaining).
+[17Oct2026 00:56:29.363] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 3/6 — Seeding raw/source materials — 40% (27122/67531 items, 40409 remaining).
+[17Oct2026 00:56:29.570] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 3/6 — Seeding raw/source materials — 45% (30622/67531 items, 36909 remaining).
+[17Oct2026 00:56:29.765] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 3/6 — Seeding raw/source materials — 50% (34122/67531 items, 33409 remaining).
+[17Oct2026 00:56:29.971] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 3/6 — Seeding raw/source materials — 55% (37622/67531 items, 29909 remaining).
+[17Oct2026 00:56:30.165] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 3/6 — Seeding raw/source materials — 60% (40622/67531 items, 26909 remaining).
+[17Oct2026 00:56:30.361] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 3/6 — Seeding raw/source materials — 65% (44122/67531 items, 23409 remaining).
+[17Oct2026 00:56:30.551] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 3/6 — Seeding raw/source materials — 70% (47622/67531 items, 19909 remaining).
+[17Oct2026 00:56:30.824] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 3/6 — Seeding raw/source materials — 75% (51122/67531 items, 16409 remaining).
+[17Oct2026 00:56:31.201] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Spartan_Gamer_BR fell from a high place
+[17Oct2026 00:56:31.286] [Render thread/INFO] [de.keksuccino.fancymenu.customization.layer.ScreenCustomizationLayerHandler/]: [FANCYMENU] ScreenCustomizationLayer registered: death_screen
+[17Oct2026 00:56:31.317] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [CHAT] Spartan_Gamer_BR fell from a high place
+[17Oct2026 00:56:31.332] [Server thread/INFO] [tombstone/]: The player Spartan_Gamer_BR has successfully been saved
+[17Oct2026 00:56:31.438] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 3/6 — Seeding raw/source materials — 80% (54122/67531 items, 13409 remaining).
+[17Oct2026 00:56:31.896] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 3/6 — Seeding raw/source materials — 85% (57622/67531 items, 9909 remaining).
+[17Oct2026 00:56:32.183] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 3/6 — Seeding raw/source materials — 90% (61122/67531 items, 6409 remaining).
+[17Oct2026 00:56:32.955] [Render thread/WARN] [net.minecraft.client.multiplayer.ClientPacketListener/]: Received passengers for unknown entity
+[17Oct2026 00:56:33.582] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 3/6 — Seeding raw/source materials — 95% (64622/67531 items, 2909 remaining).
+[17Oct2026 00:56:34.261] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 3/6 — Seeding raw/source materials — 100% (67531/67531 items, 0 remaining).
+[17Oct2026 00:56:34.261] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 3/6 complete — source materials received fallback EMC once.
+[17Oct2026 00:56:34.263] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Re-solving recipes using those source values.
+[17Oct2026 00:56:34.284] [Render thread/INFO] [de.keksuccino.fancymenu.customization.layer.ScreenCustomizationLayerHandler/]: [FANCYMENU] ScreenCustomizationLayer registered: hellfirepvp.astralsorcery.client.screen.tome.TomePagesScreen
+[17Oct2026 00:56:34.316] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 0% (500/58610 recipes, 58110 remaining).
+[17Oct2026 00:56:34.745] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [CHAT] [AutoEMC] 3/6 SOURCES » Gave base materials a starting value.
+[17Oct2026 00:56:34.835] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 5% (3000/58610 recipes, 55610 remaining).
+[17Oct2026 00:56:36.182] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 10% (6000/58610 recipes, 52610 remaining).
+[17Oct2026 00:56:36.783] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 15% (9000/58610 recipes, 49610 remaining).
+[17Oct2026 00:56:37.376] [Render thread/INFO] [de.keksuccino.fancymenu.customization.layer.ScreenCustomizationLayerHandler/]: [FANCYMENU] ScreenCustomizationLayer registered: hellfirepvp.astralsorcery.client.screen.tome.TomeResearchScreen
+[17Oct2026 00:56:37.541] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 20% (12000/58610 recipes, 46610 remaining).
+[17Oct2026 00:56:37.984] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 25% (15000/58610 recipes, 43610 remaining).
+[17Oct2026 00:56:38.657] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 30% (17952/58610 recipes, 40658 remaining).
+[17Oct2026 00:56:39.040] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 4593ms or 91 ticks behind
+[17Oct2026 00:56:39.133] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 35% (20939/58610 recipes, 37671 remaining).
+[17Oct2026 00:56:39.617] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 40% (23939/58610 recipes, 34671 remaining).
+[17Oct2026 00:56:39.919] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 45% (26439/58610 recipes, 32171 remaining).
+[17Oct2026 00:56:40.221] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 50% (29439/58610 recipes, 29171 remaining).
+[17Oct2026 00:56:40.516] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 55% (32439/58610 recipes, 26171 remaining).
+[17Oct2026 00:56:40.774] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 60% (35439/58610 recipes, 23171 remaining).
+[17Oct2026 00:56:41.063] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 65% (38439/58610 recipes, 20171 remaining).
+[17Oct2026 00:56:41.336] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 70% (41439/58610 recipes, 17171 remaining).
+[17Oct2026 00:56:41.623] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 75% (44439/58610 recipes, 14171 remaining).
+[17Oct2026 00:56:41.846] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 80% (46939/58610 recipes, 11671 remaining).
+[17Oct2026 00:56:42.344] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 85% (49939/58610 recipes, 8671 remaining).
+[17Oct2026 00:56:42.652] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 90% (52939/58610 recipes, 5671 remaining).
+[17Oct2026 00:56:42.889] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 95% (55939/58610 recipes, 2671 remaining).
+[17Oct2026 00:56:43.154] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 — 100% (58610/58610 recipes, 0 remaining).
+[17Oct2026 00:56:43.155] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 1/25 complete — 9509 new item values found.
+[17Oct2026 00:56:43.162] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 started.
+[17Oct2026 00:56:43.205] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 0% (500/58610 recipes, 58110 remaining).
+[17Oct2026 00:56:43.426] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 5% (3000/58610 recipes, 55610 remaining).
+[17Oct2026 00:56:43.669] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 10% (6000/58610 recipes, 52610 remaining).
+[17Oct2026 00:56:43.911] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 15% (9000/58610 recipes, 49610 remaining).
+[17Oct2026 00:56:44.173] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 20% (12000/58610 recipes, 46610 remaining).
+[17Oct2026 00:56:44.378] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 25% (15000/58610 recipes, 43610 remaining).
+[17Oct2026 00:56:44.695] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 30% (18000/58610 recipes, 40610 remaining).
+[17Oct2026 00:56:45.009] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 35% (21000/58610 recipes, 37610 remaining).
+[17Oct2026 00:56:45.226] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 40% (23500/58610 recipes, 35110 remaining).
+[17Oct2026 00:56:45.580] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 45% (26439/58610 recipes, 32171 remaining).
+[17Oct2026 00:56:45.845] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 50% (29439/58610 recipes, 29171 remaining).
+[17Oct2026 00:56:46.145] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 55% (32439/58610 recipes, 26171 remaining).
+[17Oct2026 00:56:46.452] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 60% (35439/58610 recipes, 23171 remaining).
+[17Oct2026 00:56:46.731] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 65% (38439/58610 recipes, 20171 remaining).
+[17Oct2026 00:56:47.027] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 70% (41439/58610 recipes, 17171 remaining).
+[17Oct2026 00:56:47.326] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 75% (44439/58610 recipes, 14171 remaining).
+[17Oct2026 00:56:47.581] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 80% (46939/58610 recipes, 11671 remaining).
+[17Oct2026 00:56:47.877] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 85% (49939/58610 recipes, 8671 remaining).
+[17Oct2026 00:56:48.179] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 90% (52939/58610 recipes, 5671 remaining).
+[17Oct2026 00:56:48.476] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 95% (55939/58610 recipes, 2671 remaining).
+[17Oct2026 00:56:48.777] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 — 100% (58610/58610 recipes, 0 remaining).
+[17Oct2026 00:56:48.778] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 2/25 complete — 19033 new item values found.
+[17Oct2026 00:56:48.779] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 started.
+[17Oct2026 00:56:48.887] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 0% (500/58610 recipes, 58110 remaining).
+[17Oct2026 00:56:48.895] [Render thread/INFO] [de.keksuccino.fancymenu.customization.layer.ScreenCustomizationLayerHandler/]: [FANCYMENU] ScreenCustomizationLayer registered: com.mamailes.herbsandharvest.book.HHGuideBookScreen
+[17Oct2026 00:56:49.047] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[17Oct2026 00:56:49.077] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:overworld
+[17Oct2026 00:56:49.078] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:overworld
+[17Oct2026 00:56:49.148] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/mahoutsukai:reality_marble
+[17Oct2026 00:56:49.148] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/mahoutsukai:reality_marble
+[17Oct2026 00:56:49.149] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:earth_orbit
+[17Oct2026 00:56:49.149] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:earth_orbit
+[17Oct2026 00:56:49.150] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:glacio_orbit
+[17Oct2026 00:56:49.150] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:glacio_orbit
+[17Oct2026 00:56:49.151] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/the_bumblezone:the_bumblezone
+[17Oct2026 00:56:49.151] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/the_bumblezone:the_bumblezone
+[17Oct2026 00:56:49.151] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/deeperdarker:otherside
+[17Oct2026 00:56:49.151] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/deeperdarker:otherside
+[17Oct2026 00:56:49.152] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mars_orbit
+[17Oct2026 00:56:49.152] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mars_orbit
+[17Oct2026 00:56:49.153] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/eternal_starlight:starlight
+[17Oct2026 00:56:49.153] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/eternal_starlight:starlight
+[17Oct2026 00:56:49.154] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:venus_orbit
+[17Oct2026 00:56:49.154] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:venus_orbit
+[17Oct2026 00:56:49.154] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:venus
+[17Oct2026 00:56:49.154] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:venus
+[17Oct2026 00:56:49.155] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/compactmachines:compact_world
+[17Oct2026 00:56:49.155] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/compactmachines:compact_world
+[17Oct2026 00:56:49.168] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mercury
+[17Oct2026 00:56:49.169] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mercury
+[17Oct2026 00:56:49.170] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mars
+[17Oct2026 00:56:49.170] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mars
+[17Oct2026 00:56:49.171] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:moon
+[17Oct2026 00:56:49.171] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:moon
+[17Oct2026 00:56:49.172] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mercury_orbit
+[17Oct2026 00:56:49.172] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mercury_orbit
+[17Oct2026 00:56:49.172] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/twilightforest:twilight_forest
+[17Oct2026 00:56:49.172] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/twilightforest:twilight_forest
+[17Oct2026 00:56:49.174] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/undergarden:undergarden
+[17Oct2026 00:56:49.174] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/undergarden:undergarden
+[17Oct2026 00:56:49.174] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:moon_orbit
+[17Oct2026 00:56:49.174] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:moon_orbit
+[17Oct2026 00:56:49.175] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/irons_spellbooks:pocket_dimension
+[17Oct2026 00:56:49.175] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/irons_spellbooks:pocket_dimension
+[17Oct2026 00:56:49.175] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:the_nether
+[17Oct2026 00:56:49.175] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:the_nether
+[17Oct2026 00:56:49.176] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:glacio
+[17Oct2026 00:56:49.176] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:glacio
+[17Oct2026 00:56:49.176] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:the_other
+[17Oct2026 00:56:49.176] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:the_other
+[17Oct2026 00:56:49.176] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/iceandfire:dread_land
+[17Oct2026 00:56:49.176] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/iceandfire:dread_land
+[17Oct2026 00:56:49.177] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/neovitae:dungeon
+[17Oct2026 00:56:49.177] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/neovitae:dungeon
+[17Oct2026 00:56:49.177] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:the_beyond
+[17Oct2026 00:56:49.177] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:the_beyond
+[17Oct2026 00:56:49.178] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/aether:the_aether
+[17Oct2026 00:56:49.178] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/aether:the_aether
+[17Oct2026 00:56:49.178] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:the_end
+[17Oct2026 00:56:49.178] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:the_end
+[17Oct2026 00:56:49.179] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:mining
+[17Oct2026 00:56:49.179] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:mining
+[17Oct2026 00:56:49.180] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ae2:spatial_storage
+[17Oct2026 00:56:49.180] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ae2:spatial_storage
+[17Oct2026 00:56:54.372] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 5% (3000/58610 recipes, 55610 remaining).
+[17Oct2026 00:56:54.671] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 10% (6000/58610 recipes, 52610 remaining).
+[17Oct2026 00:56:54.972] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 15% (9000/58610 recipes, 49610 remaining).
+[17Oct2026 00:56:55.275] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 20% (12000/58610 recipes, 46610 remaining).
+[17Oct2026 00:56:55.583] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 25% (15000/58610 recipes, 43610 remaining).
+[17Oct2026 00:56:55.586] [Render thread/INFO] [de.keksuccino.fancymenu.customization.layer.ScreenCustomizationLayerHandler/]: [FANCYMENU] ScreenCustomizationLayer registered: inventory_screen
+[17Oct2026 00:56:55.882] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 30% (18000/58610 recipes, 40610 remaining).
+[17Oct2026 00:56:56.177] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 35% (21000/58610 recipes, 37610 remaining).
+[17Oct2026 00:56:56.427] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 40% (23500/58610 recipes, 35110 remaining).
+[17Oct2026 00:56:56.730] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 45% (26500/58610 recipes, 32110 remaining).
+[17Oct2026 00:56:57.042] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 50% (29500/58610 recipes, 29110 remaining).
+[17Oct2026 00:56:57.350] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 55% (32500/58610 recipes, 26110 remaining).
+[17Oct2026 00:56:57.751] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 60% (35500/58610 recipes, 23110 remaining).
+[17Oct2026 00:56:58.115] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 65% (38500/58610 recipes, 20110 remaining).
+[17Oct2026 00:56:58.628] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 70% (41500/58610 recipes, 17110 remaining).
+[17Oct2026 00:56:58.982] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 75% (44000/58610 recipes, 14610 remaining).
+[17Oct2026 00:56:59.352] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 80% (47000/58610 recipes, 11610 remaining).
+[17Oct2026 00:56:59.593] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 85% (50000/58610 recipes, 8610 remaining).
+[17Oct2026 00:56:59.788] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 90% (53000/58610 recipes, 5610 remaining).
+[17Oct2026 00:57:00.059] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 95% (56000/58610 recipes, 2610 remaining).
+[17Oct2026 00:57:00.255] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 — 100% (58610/58610 recipes, 0 remaining).
+[17Oct2026 00:57:00.255] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 3/25 complete — 7129 new item values found.
+[17Oct2026 00:57:00.256] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 started.
+[17Oct2026 00:57:00.286] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 0% (500/58610 recipes, 58110 remaining).
+[17Oct2026 00:57:00.462] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 5% (3000/58610 recipes, 55610 remaining).
+[17Oct2026 00:57:00.677] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 10% (6000/58610 recipes, 52610 remaining).
+[17Oct2026 00:57:00.888] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 15% (9000/58610 recipes, 49610 remaining).
+[17Oct2026 00:57:01.188] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 20% (12000/58610 recipes, 46610 remaining).
+[17Oct2026 00:57:01.492] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 25% (15000/58610 recipes, 43610 remaining).
+[17Oct2026 00:57:01.845] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 30% (18000/58610 recipes, 40610 remaining).
+[17Oct2026 00:57:02.192] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 35% (21000/58610 recipes, 37610 remaining).
+[17Oct2026 00:57:02.442] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 40% (23500/58610 recipes, 35110 remaining).
+[17Oct2026 00:57:03.681] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 45% (26500/58610 recipes, 32110 remaining).
+[17Oct2026 00:57:03.888] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 50% (29500/58610 recipes, 29110 remaining).
+[17Oct2026 00:57:04.074] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 55% (32500/58610 recipes, 26110 remaining).
+[17Oct2026 00:57:04.264] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 60% (35500/58610 recipes, 23110 remaining).
+[17Oct2026 00:57:04.435] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 65% (38500/58610 recipes, 20110 remaining).
+[17Oct2026 00:57:04.616] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 70% (41500/58610 recipes, 17110 remaining).
+[17Oct2026 00:57:09.007] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 4661ms or 93 ticks behind
+[17Oct2026 00:57:09.070] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 75% (44000/58610 recipes, 14610 remaining).
+[17Oct2026 00:57:09.706] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 80% (47000/58610 recipes, 11610 remaining).
+[17Oct2026 00:57:10.110] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 85% (50000/58610 recipes, 8610 remaining).
+[17Oct2026 00:57:10.679] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 90% (53000/58610 recipes, 5610 remaining).
+[17Oct2026 00:57:11.049] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 95% (56000/58610 recipes, 2610 remaining).
+[17Oct2026 00:57:11.311] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 — 100% (58610/58610 recipes, 0 remaining).
+[17Oct2026 00:57:11.312] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 4/25 complete — 1486 new item values found.
+[17Oct2026 00:57:11.314] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 started.
+[17Oct2026 00:57:11.367] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 0% (500/58610 recipes, 58110 remaining).
+[17Oct2026 00:57:11.659] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 5% (3000/58610 recipes, 55610 remaining).
+[17Oct2026 00:57:12.027] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 10% (6000/58610 recipes, 52610 remaining).
+[17Oct2026 00:57:12.263] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 15% (9000/58610 recipes, 49610 remaining).
+[17Oct2026 00:57:12.476] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 20% (12000/58610 recipes, 46610 remaining).
+[17Oct2026 00:57:12.731] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 25% (15000/58610 recipes, 43610 remaining).
+[17Oct2026 00:57:12.986] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 30% (18000/58610 recipes, 40610 remaining).
+[17Oct2026 00:57:13.293] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 35% (21000/58610 recipes, 37610 remaining).
+[17Oct2026 00:57:13.551] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 40% (23500/58610 recipes, 35110 remaining).
+[17Oct2026 00:57:13.820] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 45% (26500/58610 recipes, 32110 remaining).
+[17Oct2026 00:57:14.049] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 50% (29500/58610 recipes, 29110 remaining).
+[17Oct2026 00:57:14.545] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 55% (32500/58610 recipes, 26110 remaining).
+[17Oct2026 00:57:14.844] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 60% (35500/58610 recipes, 23110 remaining).
+[17Oct2026 00:57:15.154] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 65% (38500/58610 recipes, 20110 remaining).
+[17Oct2026 00:57:15.450] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 70% (41500/58610 recipes, 17110 remaining).
+[17Oct2026 00:57:15.693] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 75% (44000/58610 recipes, 14610 remaining).
+[17Oct2026 00:57:15.953] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 80% (47000/58610 recipes, 11610 remaining).
+[17Oct2026 00:57:16.205] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 85% (50000/58610 recipes, 8610 remaining).
+[17Oct2026 00:57:16.454] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 90% (53000/58610 recipes, 5610 remaining).
+[17Oct2026 00:57:16.721] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 95% (56000/58610 recipes, 2610 remaining).
+[17Oct2026 00:57:17.015] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 — 100% (58610/58610 recipes, 0 remaining).
+[17Oct2026 00:57:17.016] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 5/25 complete — 467 new item values found.
+[17Oct2026 00:57:17.017] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 started.
+[17Oct2026 00:57:17.062] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 0% (500/58610 recipes, 58110 remaining).
+[17Oct2026 00:57:17.225] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 5% (3000/58610 recipes, 55610 remaining).
+[17Oct2026 00:57:17.414] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 10% (6000/58610 recipes, 52610 remaining).
+[17Oct2026 00:57:17.602] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 15% (9000/58610 recipes, 49610 remaining).
+[17Oct2026 00:57:17.789] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 20% (12000/58610 recipes, 46610 remaining).
+[17Oct2026 00:57:17.961] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 25% (15000/58610 recipes, 43610 remaining).
+[17Oct2026 00:57:18.247] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 30% (18000/58610 recipes, 40610 remaining).
+[17Oct2026 00:57:18.525] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 35% (21000/58610 recipes, 37610 remaining).
+[17Oct2026 00:57:18.776] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 40% (23500/58610 recipes, 35110 remaining).
+[17Oct2026 00:57:19.087] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 45% (26500/58610 recipes, 32110 remaining).
+[17Oct2026 00:57:19.380] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 50% (29500/58610 recipes, 29110 remaining).
+[17Oct2026 00:57:19.683] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 55% (32500/58610 recipes, 26110 remaining).
+[17Oct2026 00:57:19.979] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 60% (35500/58610 recipes, 23110 remaining).
+[17Oct2026 00:57:20.278] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 65% (38500/58610 recipes, 20110 remaining).
+[17Oct2026 00:57:20.594] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 70% (41500/58610 recipes, 17110 remaining).
+[17Oct2026 00:57:20.839] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 75% (44000/58610 recipes, 14610 remaining).
+[17Oct2026 00:57:21.162] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 80% (47000/58610 recipes, 11610 remaining).
+[17Oct2026 00:57:21.473] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 85% (50000/58610 recipes, 8610 remaining).
+[17Oct2026 00:57:21.789] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 90% (53000/58610 recipes, 5610 remaining).
+[17Oct2026 00:57:22.045] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 95% (56000/58610 recipes, 2610 remaining).
+[17Oct2026 00:57:22.357] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 — 100% (58610/58610 recipes, 0 remaining).
+[17Oct2026 00:57:22.358] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 6/25 complete — 122 new item values found.
+[17Oct2026 00:57:22.359] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 started.
+[17Oct2026 00:57:22.390] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 0% (500/58610 recipes, 58110 remaining).
+[17Oct2026 00:57:22.631] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 5% (3000/58610 recipes, 55610 remaining).
+[17Oct2026 00:57:23.108] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 10% (6000/58610 recipes, 52610 remaining).
+[17Oct2026 00:57:23.266] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 15% (9000/58610 recipes, 49610 remaining).
+[17Oct2026 00:57:23.602] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 20% (12000/58610 recipes, 46610 remaining).
+[17Oct2026 00:57:23.866] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 25% (15000/58610 recipes, 43610 remaining).
+[17Oct2026 00:57:24.130] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 30% (18000/58610 recipes, 40610 remaining).
+[17Oct2026 00:57:24.448] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 35% (21000/58610 recipes, 37610 remaining).
+[17Oct2026 00:57:24.838] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 40% (23500/58610 recipes, 35110 remaining).
+[17Oct2026 00:57:24.993] [Server thread/ERROR] [com.iafenvoy.iceandfire.IceAndFire/]: Not a list: null
+[17Oct2026 00:57:25.123] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 45% (26500/58610 recipes, 32110 remaining).
+[17Oct2026 00:57:25.349] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 50% (29500/58610 recipes, 29110 remaining).
+[17Oct2026 00:57:25.589] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 55% (32500/58610 recipes, 26110 remaining).
+[17Oct2026 00:57:25.878] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 60% (35500/58610 recipes, 23110 remaining).
+[17Oct2026 00:57:26.188] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 65% (38500/58610 recipes, 20110 remaining).
+[17Oct2026 00:57:26.502] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 70% (41500/58610 recipes, 17110 remaining).
+[17Oct2026 00:57:26.747] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 75% (44000/58610 recipes, 14610 remaining).
+[17Oct2026 00:57:27.044] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 80% (47000/58610 recipes, 11610 remaining).
+[17Oct2026 00:57:27.333] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 85% (50000/58610 recipes, 8610 remaining).
+[17Oct2026 00:57:27.675] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 90% (53000/58610 recipes, 5610 remaining).
+[17Oct2026 00:57:27.935] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 95% (56000/58610 recipes, 2610 remaining).
+[17Oct2026 00:57:28.260] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 — 100% (58610/58610 recipes, 0 remaining).
+[17Oct2026 00:57:28.261] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 7/25 complete — 35 new item values found.
+[17Oct2026 00:57:28.262] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 started.
+[17Oct2026 00:57:28.295] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 0% (500/58610 recipes, 58110 remaining).
+[17Oct2026 00:57:28.524] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 5% (3000/58610 recipes, 55610 remaining).
+[17Oct2026 00:57:28.833] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 10% (6000/58610 recipes, 52610 remaining).
+[17Oct2026 00:57:29.155] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 15% (9000/58610 recipes, 49610 remaining).
+[17Oct2026 00:57:29.441] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 20% (12000/58610 recipes, 46610 remaining).
+[17Oct2026 00:57:29.788] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 25% (15000/58610 recipes, 43610 remaining).
+[17Oct2026 00:57:30.105] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 30% (18000/58610 recipes, 40610 remaining).
+[17Oct2026 00:57:30.398] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 35% (21000/58610 recipes, 37610 remaining).
+[17Oct2026 00:57:30.610] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 40% (23500/58610 recipes, 35110 remaining).
+[17Oct2026 00:57:30.955] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 45% (26500/58610 recipes, 32110 remaining).
+[17Oct2026 00:57:31.238] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 50% (29500/58610 recipes, 29110 remaining).
+[17Oct2026 00:57:31.500] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 55% (32500/58610 recipes, 26110 remaining).
+[17Oct2026 00:57:31.789] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 60% (35500/58610 recipes, 23110 remaining).
+[17Oct2026 00:57:32.162] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 65% (38500/58610 recipes, 20110 remaining).
+[17Oct2026 00:57:32.705] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 70% (41500/58610 recipes, 17110 remaining).
+[17Oct2026 00:57:33.082] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 75% (44000/58610 recipes, 14610 remaining).
+[17Oct2026 00:57:33.469] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 80% (46939/58610 recipes, 11671 remaining).
+[17Oct2026 00:57:33.770] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 85% (49939/58610 recipes, 8671 remaining).
+[17Oct2026 00:57:34.030] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 90% (52939/58610 recipes, 5671 remaining).
+[17Oct2026 00:57:34.367] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 95% (55939/58610 recipes, 2671 remaining).
+[17Oct2026 00:57:34.772] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 — 100% (58610/58610 recipes, 0 remaining).
+[17Oct2026 00:57:34.773] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 8/25 complete — 26 new item values found.
+[17Oct2026 00:57:34.774] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 started.
+[17Oct2026 00:57:34.829] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 0% (500/58610 recipes, 58110 remaining).
+[17Oct2026 00:57:35.038] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 5% (3000/58610 recipes, 55610 remaining).
+[17Oct2026 00:57:35.322] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 10% (6000/58610 recipes, 52610 remaining).
+[17Oct2026 00:57:35.733] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 15% (9000/58610 recipes, 49610 remaining).
+[17Oct2026 00:57:35.996] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 20% (12000/58610 recipes, 46610 remaining).
+[17Oct2026 00:57:36.256] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 25% (15000/58610 recipes, 43610 remaining).
+[17Oct2026 00:57:36.534] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 30% (18000/58610 recipes, 40610 remaining).
+[17Oct2026 00:57:36.787] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 35% (21000/58610 recipes, 37610 remaining).
+[17Oct2026 00:57:37.083] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 40% (23500/58610 recipes, 35110 remaining).
+[17Oct2026 00:57:37.306] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 45% (26500/58610 recipes, 32110 remaining).
+[17Oct2026 00:57:37.571] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 50% (29500/58610 recipes, 29110 remaining).
+[17Oct2026 00:57:38.445] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 55% (32500/58610 recipes, 26110 remaining).
+[17Oct2026 00:57:39.507] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 60% (35500/58610 recipes, 23110 remaining).
+[17Oct2026 00:57:39.835] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 65% (38500/58610 recipes, 20110 remaining).
+[17Oct2026 00:57:40.209] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2013ms or 40 ticks behind
+[17Oct2026 00:57:40.486] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 70% (41500/58610 recipes, 17110 remaining).
+[17Oct2026 00:57:40.676] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 75% (44000/58610 recipes, 14610 remaining).
+[17Oct2026 00:57:40.911] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 80% (47000/58610 recipes, 11610 remaining).
+[17Oct2026 00:57:41.233] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 85% (50000/58610 recipes, 8610 remaining).
+[17Oct2026 00:57:41.487] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 90% (53000/58610 recipes, 5610 remaining).
+[17Oct2026 00:57:41.984] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 95% (56000/58610 recipes, 2610 remaining).
+[17Oct2026 00:57:42.303] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 — 100% (58610/58610 recipes, 0 remaining).
+[17Oct2026 00:57:42.304] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 9/25 complete — 9 new item values found.
+[17Oct2026 00:57:42.304] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 started.
+[17Oct2026 00:57:42.343] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 0% (500/58610 recipes, 58110 remaining).
+[17Oct2026 00:57:42.495] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 5% (3000/58610 recipes, 55610 remaining).
+[17Oct2026 00:57:42.733] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 10% (6000/58610 recipes, 52610 remaining).
+[17Oct2026 00:57:42.993] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 15% (9000/58610 recipes, 49610 remaining).
+[17Oct2026 00:57:43.288] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 20% (12000/58610 recipes, 46610 remaining).
+[17Oct2026 00:57:43.583] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 25% (15000/58610 recipes, 43610 remaining).
+[17Oct2026 00:57:44.021] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 30% (18000/58610 recipes, 40610 remaining).
+[17Oct2026 00:57:44.402] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 35% (21000/58610 recipes, 37610 remaining).
+[17Oct2026 00:57:44.653] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 40% (23500/58610 recipes, 35110 remaining).
+[17Oct2026 00:57:45.093] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 45% (26500/58610 recipes, 32110 remaining).
+[17Oct2026 00:57:45.347] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 50% (29500/58610 recipes, 29110 remaining).
+[17Oct2026 00:57:46.362] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 55% (32500/58610 recipes, 26110 remaining).
+[17Oct2026 00:57:49.996] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 60% (35439/58610 recipes, 23171 remaining).
+[17Oct2026 00:57:50.150] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 65% (38439/58610 recipes, 20171 remaining).
+[17Oct2026 00:57:52.085] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 70% (41439/58610 recipes, 17171 remaining).
+[17Oct2026 00:57:52.557] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 75% (44439/58610 recipes, 14171 remaining).
+[17Oct2026 00:57:52.809] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 80% (46939/58610 recipes, 11671 remaining).
+[17Oct2026 00:57:53.218] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 85% (49939/58610 recipes, 8671 remaining).
+[17Oct2026 00:57:53.571] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 90% (52939/58610 recipes, 5671 remaining).
+[17Oct2026 00:57:53.842] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 95% (55939/58610 recipes, 2671 remaining).
+[17Oct2026 00:57:54.248] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 — 100% (58610/58610 recipes, 0 remaining).
+[17Oct2026 00:57:54.249] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 10/25 complete — 9 new item values found.
+[17Oct2026 00:57:54.249] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 started.
+[17Oct2026 00:57:54.285] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 0% (500/58610 recipes, 58110 remaining).
+[17Oct2026 00:57:54.429] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 5% (3000/58610 recipes, 55610 remaining).
+[17Oct2026 00:57:54.626] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 10% (6000/58610 recipes, 52610 remaining).
+[17Oct2026 00:57:54.843] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 15% (9000/58610 recipes, 49610 remaining).
+[17Oct2026 00:57:55.031] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 20% (12000/58610 recipes, 46610 remaining).
+[17Oct2026 00:57:55.205] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 25% (15000/58610 recipes, 43610 remaining).
+[17Oct2026 00:57:55.413] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 30% (18000/58610 recipes, 40610 remaining).
+[17Oct2026 00:57:55.610] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 35% (21000/58610 recipes, 37610 remaining).
+[17Oct2026 00:57:55.825] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 40% (23500/58610 recipes, 35110 remaining).
+[17Oct2026 00:57:56.161] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 45% (26500/58610 recipes, 32110 remaining).
+[17Oct2026 00:57:56.348] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 50% (29500/58610 recipes, 29110 remaining).
+[17Oct2026 00:57:56.565] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 55% (32500/58610 recipes, 26110 remaining).
+[17Oct2026 00:57:56.755] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 60% (35500/58610 recipes, 23110 remaining).
+[17Oct2026 00:57:57.043] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 65% (38500/58610 recipes, 20110 remaining).
+[17Oct2026 00:57:57.258] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 70% (41500/58610 recipes, 17110 remaining).
+[17Oct2026 00:57:57.414] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 75% (44000/58610 recipes, 14610 remaining).
+[17Oct2026 00:57:57.589] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 80% (47000/58610 recipes, 11610 remaining).
+[17Oct2026 00:57:57.766] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 85% (50000/58610 recipes, 8610 remaining).
+[17Oct2026 00:57:57.967] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 90% (53000/58610 recipes, 5610 remaining).
+[17Oct2026 00:57:58.149] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 95% (56000/58610 recipes, 2610 remaining).
+[17Oct2026 00:57:58.325] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 — 100% (58610/58610 recipes, 0 remaining).
+[17Oct2026 00:57:58.325] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 11/25 complete — 7 new item values found.
+[17Oct2026 00:57:58.326] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 started.
+[17Oct2026 00:57:58.347] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 0% (500/58610 recipes, 58110 remaining).
+[17Oct2026 00:57:58.543] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 5% (3000/58610 recipes, 55610 remaining).
+[17Oct2026 00:57:58.776] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 10% (6000/58610 recipes, 52610 remaining).
+[17Oct2026 00:57:59.028] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 15% (9000/58610 recipes, 49610 remaining).
+[17Oct2026 00:57:59.197] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 20% (12000/58610 recipes, 46610 remaining).
+[17Oct2026 00:57:59.245] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 4048ms or 80 ticks behind
+[17Oct2026 00:57:59.499] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 25% (15000/58610 recipes, 43610 remaining).
+[17Oct2026 00:58:00.006] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 30% (18000/58610 recipes, 40610 remaining).
+[17Oct2026 00:58:02.598] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 35% (21000/58610 recipes, 37610 remaining).
+[17Oct2026 00:58:04.856] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 40% (23500/58610 recipes, 35110 remaining).
+[17Oct2026 00:58:05.246] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 45% (26500/58610 recipes, 32110 remaining).
+[17Oct2026 00:58:05.572] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 50% (29500/58610 recipes, 29110 remaining).
+[17Oct2026 00:58:05.813] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 55% (32500/58610 recipes, 26110 remaining).
+[17Oct2026 00:58:06.102] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 60% (35500/58610 recipes, 23110 remaining).
+[17Oct2026 00:58:06.384] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 65% (38500/58610 recipes, 20110 remaining).
+[17Oct2026 00:58:06.738] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 70% (41500/58610 recipes, 17110 remaining).
+[17Oct2026 00:58:06.931] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 75% (44000/58610 recipes, 14610 remaining).
+[17Oct2026 00:58:07.209] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 80% (47000/58610 recipes, 11610 remaining).
+[17Oct2026 00:58:07.668] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 85% (50000/58610 recipes, 8610 remaining).
+[17Oct2026 00:58:08.402] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 90% (53000/58610 recipes, 5610 remaining).
+[17Oct2026 00:58:08.923] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 95% (56000/58610 recipes, 2610 remaining).
+[17Oct2026 00:58:09.326] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 — 100% (58610/58610 recipes, 0 remaining).
+[17Oct2026 00:58:09.328] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 12/25 complete — 5 new item values found.
+[17Oct2026 00:58:09.330] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 started.
+[17Oct2026 00:58:09.396] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 0% (500/58610 recipes, 58110 remaining).
+[17Oct2026 00:58:09.750] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 5% (3000/58610 recipes, 55610 remaining).
+[17Oct2026 00:58:10.191] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 10% (6000/58610 recipes, 52610 remaining).
+[17Oct2026 00:58:10.759] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 15% (9000/58610 recipes, 49610 remaining).
+[17Oct2026 00:58:11.046] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 20% (12000/58610 recipes, 46610 remaining).
+[17Oct2026 00:58:11.367] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 25% (15000/58610 recipes, 43610 remaining).
+[17Oct2026 00:58:11.649] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 30% (18000/58610 recipes, 40610 remaining).
+[17Oct2026 00:58:11.854] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 35% (21000/58610 recipes, 37610 remaining).
+[17Oct2026 00:58:12.020] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 40% (23500/58610 recipes, 35110 remaining).
+[17Oct2026 00:58:12.222] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 45% (26500/58610 recipes, 32110 remaining).
+[17Oct2026 00:58:12.441] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 50% (29500/58610 recipes, 29110 remaining).
+[17Oct2026 00:58:12.624] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 55% (32500/58610 recipes, 26110 remaining).
+[17Oct2026 00:58:12.745] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 60% (35500/58610 recipes, 23110 remaining).
+[17Oct2026 00:58:13.232] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 65% (38500/58610 recipes, 20110 remaining).
+[17Oct2026 00:58:13.865] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 70% (41439/58610 recipes, 17171 remaining).
+[17Oct2026 00:58:14.285] [Server thread/INFO] [ObserverLib/]: Loading WorldData astralsorcery/rock_crystals for level minecraft:overworld
+[17Oct2026 00:58:14.298] [Server thread/INFO] [ObserverLib/]: Loading WorldData astralsorcery/rock_crystals for level minecraft:overworld finished
+[17Oct2026 00:58:14.395] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 75% (44439/58610 recipes, 14171 remaining).
+[17Oct2026 00:58:14.496] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 80% (46939/58610 recipes, 11671 remaining).
+[17Oct2026 00:58:14.649] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 85% (49939/58610 recipes, 8671 remaining).
+[17Oct2026 00:58:14.807] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 90% (52939/58610 recipes, 5671 remaining).
+[17Oct2026 00:58:14.952] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 95% (55939/58610 recipes, 2671 remaining).
+[17Oct2026 00:58:15.277] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 — 100% (58610/58610 recipes, 0 remaining).
+[17Oct2026 00:58:15.278] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 13/25 complete — 3 new item values found.
+[17Oct2026 00:58:15.279] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 started.
+[17Oct2026 00:58:15.312] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 0% (500/58610 recipes, 58110 remaining).
+[17Oct2026 00:58:15.699] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 5% (3000/58610 recipes, 55610 remaining).
+[17Oct2026 00:58:15.774] [Render thread/INFO] [de.keksuccino.fancymenu.customization.layer.ScreenCustomizationLayerHandler/]: [FANCYMENU] ScreenCustomizationLayer registered: pause_screen
+[17Oct2026 00:58:15.910] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 10% (6000/58610 recipes, 52610 remaining).
+[17Oct2026 00:58:16.198] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[17Oct2026 00:58:16.491] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:overworld
+[17Oct2026 00:58:16.492] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:overworld
+[17Oct2026 00:58:16.744] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/mahoutsukai:reality_marble
+[17Oct2026 00:58:16.744] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/mahoutsukai:reality_marble
+[17Oct2026 00:58:16.745] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:earth_orbit
+[17Oct2026 00:58:16.745] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:earth_orbit
+[17Oct2026 00:58:16.745] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:glacio_orbit
+[17Oct2026 00:58:16.746] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:glacio_orbit
+[17Oct2026 00:58:16.746] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/the_bumblezone:the_bumblezone
+[17Oct2026 00:58:16.746] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/the_bumblezone:the_bumblezone
+[17Oct2026 00:58:16.747] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/deeperdarker:otherside
+[17Oct2026 00:58:16.747] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/deeperdarker:otherside
+[17Oct2026 00:58:16.747] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mars_orbit
+[17Oct2026 00:58:16.747] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mars_orbit
+[17Oct2026 00:58:16.748] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/eternal_starlight:starlight
+[17Oct2026 00:58:16.749] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/eternal_starlight:starlight
+[17Oct2026 00:58:16.749] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:venus_orbit
+[17Oct2026 00:58:16.749] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:venus_orbit
+[17Oct2026 00:58:16.749] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:venus
+[17Oct2026 00:58:16.749] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:venus
+[17Oct2026 00:58:16.750] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/compactmachines:compact_world
+[17Oct2026 00:58:16.750] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/compactmachines:compact_world
+[17Oct2026 00:58:16.773] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mercury
+[17Oct2026 00:58:16.773] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mercury
+[17Oct2026 00:58:16.775] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mars
+[17Oct2026 00:58:16.775] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mars
+[17Oct2026 00:58:16.775] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:moon
+[17Oct2026 00:58:16.776] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:moon
+[17Oct2026 00:58:16.776] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mercury_orbit
+[17Oct2026 00:58:16.776] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mercury_orbit
+[17Oct2026 00:58:16.776] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/twilightforest:twilight_forest
+[17Oct2026 00:58:16.776] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/twilightforest:twilight_forest
+[17Oct2026 00:58:16.777] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/undergarden:undergarden
+[17Oct2026 00:58:16.777] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/undergarden:undergarden
+[17Oct2026 00:58:16.777] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:moon_orbit
+[17Oct2026 00:58:16.777] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:moon_orbit
+[17Oct2026 00:58:16.778] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/irons_spellbooks:pocket_dimension
+[17Oct2026 00:58:16.778] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/irons_spellbooks:pocket_dimension
+[17Oct2026 00:58:16.778] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:the_nether
+[17Oct2026 00:58:16.779] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:the_nether
+[17Oct2026 00:58:16.779] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:glacio
+[17Oct2026 00:58:16.779] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:glacio
+[17Oct2026 00:58:16.779] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:the_other
+[17Oct2026 00:58:16.780] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:the_other
+[17Oct2026 00:58:16.780] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/iceandfire:dread_land
+[17Oct2026 00:58:16.780] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/iceandfire:dread_land
+[17Oct2026 00:58:16.780] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/neovitae:dungeon
+[17Oct2026 00:58:16.780] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/neovitae:dungeon
+[17Oct2026 00:58:16.781] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:the_beyond
+[17Oct2026 00:58:16.781] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:the_beyond
+[17Oct2026 00:58:16.781] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/aether:the_aether
+[17Oct2026 00:58:16.781] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/aether:the_aether
+[17Oct2026 00:58:16.782] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:the_end
+[17Oct2026 00:58:16.782] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:the_end
+[17Oct2026 00:58:16.782] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:mining
+[17Oct2026 00:58:16.782] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:mining
+[17Oct2026 00:58:16.783] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ae2:spatial_storage
+[17Oct2026 00:58:16.783] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ae2:spatial_storage
+[17Oct2026 00:58:17.734] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 3537ms or 70 ticks behind
+[17Oct2026 00:58:19.226] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 15% (9000/58610 recipes, 49610 remaining).
+[17Oct2026 00:58:20.363] [Worker-Main-5/INFO] [me.kall.overlapless.Overlapless/]: Section at [128, {minY: -53, maxY: 320}, -480] is occupied by structure bettermineshafts:mineshaft_overgrown. Skipping the generation of repurposed_structures:mineshaft_taiga at [128, {minY: 54, maxY: 81}, -480]
+[17Oct2026 00:58:20.397] [Worker-Main-5/INFO] [me.kall.overlapless.Overlapless/]: Section at [128, {minY: -53, maxY: 320}, -480] is occupied by structure bettermineshafts:mineshaft_overgrown. Skipping the generation of mvs:windmill at [128, {minY: 98, maxY: 129}, -480]
+[17Oct2026 00:58:20.402] [Worker-Main-5/INFO] [me.kall.overlapless.Overlapless/]: Section at [144, {minY: -53, maxY: 320}, -480] is occupied by structure bettermineshafts:mineshaft_overgrown. Skipping the generation of betterdungeons:spider_dungeon at [144, {minY: 17, maxY: 62}, -480]
+[17Oct2026 00:58:20.621] [Worker-Main-5/INFO] [me.kall.overlapless.Overlapless/]: Section at [160, {minY: -53, maxY: 320}, -480] is occupied by structure bettermineshafts:mineshaft_overgrown. Skipping the generation of mvs:wooden_wheat_farm at [160, {minY: 98, maxY: 126}, -480]
+[17Oct2026 00:58:23.487] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 20% (12000/58610 recipes, 46610 remaining).
+[17Oct2026 00:58:25.088] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 25% (15000/58610 recipes, 43610 remaining).
+[17Oct2026 00:58:25.302] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 30% (18000/58610 recipes, 40610 remaining).
+[17Oct2026 00:58:27.206] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 35% (21000/58610 recipes, 37610 remaining).
+[17Oct2026 00:58:28.023] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 40% (23500/58610 recipes, 35110 remaining).
+[17Oct2026 00:58:28.202] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 45% (26500/58610 recipes, 32110 remaining).
+[17Oct2026 00:58:28.342] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 50% (29500/58610 recipes, 29110 remaining).
+[17Oct2026 00:58:29.357] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 55% (32500/58610 recipes, 26110 remaining).
+[17Oct2026 00:58:29.789] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 60% (35500/58610 recipes, 23110 remaining).
+[17Oct2026 00:58:30.174] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 65% (38500/58610 recipes, 20110 remaining).
+[17Oct2026 00:58:30.539] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 70% (41500/58610 recipes, 17110 remaining).
+[17Oct2026 00:58:30.677] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 75% (44000/58610 recipes, 14610 remaining).
+[17Oct2026 00:58:30.928] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 80% (47000/58610 recipes, 11610 remaining).
+[17Oct2026 00:58:31.354] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 85% (50000/58610 recipes, 8610 remaining).
+[17Oct2026 00:58:32.367] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Spartan_Gamer_BR has reached the goal [Here They Come]
+[17Oct2026 00:58:32.903] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [CHAT] Your knowledge of death increased (+1)
+[17Oct2026 00:58:32.904] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [CHAT] Spartan_Gamer_BR has reached the goal [Here They Come]
+[17Oct2026 00:58:32.936] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [CHAT] One of your actions canceled the Ghostly Shape effect
+[17Oct2026 00:58:32.938] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 254 advancements
+[17Oct2026 00:58:36.429] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 90% (53000/58610 recipes, 5610 remaining).
+[17Oct2026 00:58:38.201] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 95% (56000/58610 recipes, 2610 remaining).
+[17Oct2026 00:58:39.121] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 — 100% (58610/58610 recipes, 0 remaining).
+[17Oct2026 00:58:39.180] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 4/6 — Seeded recipe pass 14/25 complete — 0 new item values found.
+[17Oct2026 00:58:39.183] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 5/6 — Assigning fallback EMC only where a recipe still could not solve the item.
+[17Oct2026 00:58:39.187] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 258 advancements
+[17Oct2026 00:58:39.190] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [CHAT] [AutoEMC] 5/6 FALLBACK » Found 37840 values from recipes. Filling in the rest...
+[17Oct2026 00:58:39.239] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 5/6 — Assigning final fallback EMC — 0% (250/67531 items, 67281 remaining).
+[17Oct2026 00:58:41.428] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 5/6 — Assigning final fallback EMC — 5% (3619/67531 items, 63912 remaining).
+[17Oct2026 00:58:42.189] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 5/6 — Assigning final fallback EMC — 10% (7058/67531 items, 60473 remaining).
+[17Oct2026 00:58:42.744] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 5/6 — Assigning final fallback EMC — 15% (10558/67531 items, 56973 remaining).
+[17Oct2026 00:58:42.964] [Worker-Main-9/ERROR] [net.minecraft.world.item.ItemStack/]: Tried to load invalid item: 'Item must not be minecraft:air'
+[17Oct2026 00:58:43.403] [Worker-Main-8/INFO] [me.kall.overlapless.Overlapless/]: Section at [160, {minY: -53, maxY: 320}, -512] is occupied by structure bettermineshafts:mineshaft_overgrown. Skipping the generation of astralsorcery:dig_site at [160, {minY: 102, maxY: 131}, -512]
+[17Oct2026 00:58:43.515] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 5/6 — Assigning final fallback EMC — 20% (13984/67531 items, 53547 remaining).
+[17Oct2026 00:58:43.873] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 5/6 — Assigning final fallback EMC — 25% (16984/67531 items, 50547 remaining).
+[17Oct2026 00:58:44.187] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 5/6 — Assigning final fallback EMC — 30% (20484/67531 items, 47047 remaining).
+[17Oct2026 00:58:44.490] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 5/6 — Assigning final fallback EMC — 35% (23984/67531 items, 43547 remaining).
+[17Oct2026 00:58:44.839] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 5/6 — Assigning final fallback EMC — 40% (27423/67531 items, 40108 remaining).
+[17Oct2026 00:58:45.079] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 5/6 — Assigning final fallback EMC — 45% (30423/67531 items, 37108 remaining).
+[17Oct2026 00:58:45.426] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 5/6 — Assigning final fallback EMC — 50% (33923/67531 items, 33608 remaining).
+[17Oct2026 00:58:45.779] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 5/6 — Assigning final fallback EMC — 55% (37423/67531 items, 30108 remaining).
+[17Oct2026 00:58:46.327] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 5/6 — Assigning final fallback EMC — 60% (40862/67531 items, 26669 remaining).
+[17Oct2026 00:58:46.692] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 5/6 — Assigning final fallback EMC — 65% (44362/67531 items, 23169 remaining).
+[17Oct2026 00:58:47.025] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 5/6 — Assigning final fallback EMC — 70% (47363/67531 items, 20168 remaining).
+[17Oct2026 00:58:47.337] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 5/6 — Assigning final fallback EMC — 75% (51052/67531 items, 16479 remaining).
+[17Oct2026 00:58:47.548] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 5/6 — Assigning final fallback EMC — 80% (54052/67531 items, 13479 remaining).
+[17Oct2026 00:58:47.834] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 5/6 — Assigning final fallback EMC — 85% (57552/67531 items, 9979 remaining).
+[17Oct2026 00:58:48.092] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 5/6 — Assigning final fallback EMC — 90% (61052/67531 items, 6479 remaining).
+[17Oct2026 00:58:48.341] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 5/6 — Assigning final fallback EMC — 95% (64552/67531 items, 2979 remaining).
+[17Oct2026 00:58:48.557] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 5/6 — Assigning final fallback EMC — 100% (67531/67531 items, 0 remaining).
+[17Oct2026 00:58:48.580] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 5/6 complete — final fallback values assigned. Step 6/6 will now improve those values through recipe chains.
+[17Oct2026 00:58:48.588] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [CHAT] [AutoEMC] 5/6 FALLBACK » Filled in remaining items. Refining those values now...
+[17Oct2026 00:58:48.737] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Rechecking fallback outputs through recipe chains. Only increases are allowed; recipe cycles are blocked.
+[17Oct2026 00:58:48.739] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 0% (250/58610 recipes, 58360 remaining).
+[17Oct2026 00:58:49.091] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 5% (3122/58610 recipes, 55488 remaining).
+[17Oct2026 00:58:49.299] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 10% (6122/58610 recipes, 52488 remaining).
+[17Oct2026 00:58:49.783] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 15% (9122/58610 recipes, 49488 remaining).
+[17Oct2026 00:58:50.002] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 20% (12122/58610 recipes, 46488 remaining).
+[17Oct2026 00:58:50.320] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 25% (15122/58610 recipes, 43488 remaining).
+[17Oct2026 00:58:50.323] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 17626ms or 352 ticks behind
+[17Oct2026 00:58:50.572] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 30% (17622/58610 recipes, 40988 remaining).
+[17Oct2026 00:58:50.877] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 35% (20622/58610 recipes, 37988 remaining).
+[17Oct2026 00:58:51.173] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 40% (23622/58610 recipes, 34988 remaining).
+[17Oct2026 00:58:51.380] [Server thread/ERROR] [com.iafenvoy.iceandfire.IceAndFire/]: Not a list: null
+[17Oct2026 00:58:51.473] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 45% (26622/58610 recipes, 31988 remaining).
+[17Oct2026 00:58:51.775] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 50% (29622/58610 recipes, 28988 remaining).
+[17Oct2026 00:58:52.176] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 55% (32622/58610 recipes, 25988 remaining).
+[17Oct2026 00:58:52.391] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 60% (35622/58610 recipes, 22988 remaining).
+[17Oct2026 00:58:52.628] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 65% (38122/58610 recipes, 20488 remaining).
+[17Oct2026 00:58:52.920] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 70% (41122/58610 recipes, 17488 remaining).
+[17Oct2026 00:58:53.220] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 75% (44122/58610 recipes, 14488 remaining).
+[17Oct2026 00:58:53.844] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 80% (47122/58610 recipes, 11488 remaining).
+[17Oct2026 00:58:54.040] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 85% (50122/58610 recipes, 8488 remaining).
+[17Oct2026 00:58:54.263] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 90% (53122/58610 recipes, 5488 remaining).
+[17Oct2026 00:58:54.566] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 95% (56122/58610 recipes, 2488 remaining).
+[17Oct2026 00:58:54.885] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 1/25 — 100% (58610/58610 recipes, 0 remaining).
+[17Oct2026 00:58:54.892] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Post-fallback recipe pass 1/25 complete — 32 values increased.
+[17Oct2026 00:58:54.895] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Starting pass 2/25 so upgraded components can feed their downstream recipes.
+[17Oct2026 00:58:54.965] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 0% (500/58610 recipes, 58110 remaining).
+[17Oct2026 00:58:55.163] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 5% (3000/58610 recipes, 55610 remaining).
+[17Oct2026 00:58:55.449] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 10% (6000/58610 recipes, 52610 remaining).
+[17Oct2026 00:58:55.701] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 15% (9000/58610 recipes, 49610 remaining).
+[17Oct2026 00:58:55.898] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 20% (12000/58610 recipes, 46610 remaining).
+[17Oct2026 00:58:56.177] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 25% (15000/58610 recipes, 43610 remaining).
+[17Oct2026 00:58:56.473] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 30% (18000/58610 recipes, 40610 remaining).
+[17Oct2026 00:58:56.771] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 35% (21000/58610 recipes, 37610 remaining).
+[17Oct2026 00:58:57.026] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 40% (23500/58610 recipes, 35110 remaining).
+[17Oct2026 00:58:57.284] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 45% (26500/58610 recipes, 32110 remaining).
+[17Oct2026 00:58:57.628] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 50% (29500/58610 recipes, 29110 remaining).
+[17Oct2026 00:58:57.879] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 55% (32500/58610 recipes, 26110 remaining).
+[17Oct2026 00:58:58.576] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 60% (35500/58610 recipes, 23110 remaining).
+[17Oct2026 00:58:58.835] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 65% (38500/58610 recipes, 20110 remaining).
+[17Oct2026 00:58:59.070] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 70% (41500/58610 recipes, 17110 remaining).
+[17Oct2026 00:58:59.268] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 75% (44000/58610 recipes, 14610 remaining).
+[17Oct2026 00:58:59.491] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 80% (47000/58610 recipes, 11610 remaining).
+[17Oct2026 00:58:59.712] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 85% (50000/58610 recipes, 8610 remaining).
+[17Oct2026 00:58:59.933] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 90% (53000/58610 recipes, 5610 remaining).
+[17Oct2026 00:59:00.233] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 95% (56000/58610 recipes, 2610 remaining).
+[17Oct2026 00:59:00.545] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 2/25 — 100% (58610/58610 recipes, 0 remaining).
+[17Oct2026 00:59:00.545] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Post-fallback recipe pass 2/25 complete — 8 values increased.
+[17Oct2026 00:59:00.546] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Starting pass 3/25 so upgraded components can feed their downstream recipes.
+[17Oct2026 00:59:00.594] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 0% (500/58610 recipes, 58110 remaining).
+[17Oct2026 00:59:00.952] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 5% (3000/58610 recipes, 55610 remaining).
+[17Oct2026 00:59:01.199] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 10% (6000/58610 recipes, 52610 remaining).
+[17Oct2026 00:59:01.358] [Server thread/ERROR] [com.iafenvoy.iceandfire.IceAndFire/]: Not a list: null
+[17Oct2026 00:59:01.433] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 15% (9000/58610 recipes, 49610 remaining).
+[17Oct2026 00:59:01.729] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 20% (12000/58610 recipes, 46610 remaining).
+[17Oct2026 00:59:02.038] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 25% (15000/58610 recipes, 43610 remaining).
+[17Oct2026 00:59:02.335] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 30% (18000/58610 recipes, 40610 remaining).
+[17Oct2026 00:59:02.970] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 35% (21000/58610 recipes, 37610 remaining).
+[17Oct2026 00:59:03.211] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 40% (23500/58610 recipes, 35110 remaining).
+[17Oct2026 00:59:03.495] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 45% (26500/58610 recipes, 32110 remaining).
+[17Oct2026 00:59:03.805] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 50% (29500/58610 recipes, 29110 remaining).
+[17Oct2026 00:59:04.132] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 55% (32500/58610 recipes, 26110 remaining).
+[17Oct2026 00:59:04.447] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 60% (35500/58610 recipes, 23110 remaining).
+[17Oct2026 00:59:04.785] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 65% (38500/58610 recipes, 20110 remaining).
+[17Oct2026 00:59:05.073] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 70% (41500/58610 recipes, 17110 remaining).
+[17Oct2026 00:59:08.764] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 75% (44000/58610 recipes, 14610 remaining).
+[17Oct2026 00:59:09.114] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 80% (47000/58610 recipes, 11610 remaining).
+[17Oct2026 00:59:09.183] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 3886ms or 77 ticks behind
+[17Oct2026 00:59:09.587] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 85% (50000/58610 recipes, 8610 remaining).
+[17Oct2026 00:59:09.973] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 90% (53000/58610 recipes, 5610 remaining).
+[17Oct2026 00:59:10.609] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 95% (56000/58610 recipes, 2610 remaining).
+[17Oct2026 00:59:10.909] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Upgrading fallback recipe outputs: pass 3/25 — 100% (58610/58610 recipes, 0 remaining).
+[17Oct2026 00:59:10.910] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 — Post-fallback recipe pass 3/25 complete — 0 values increased.
+[17Oct2026 00:59:10.925] [Server thread/INFO] [autoemc/]: [AutoEMC] Step 6/6 complete — 40 fallback values increased across 3 pass(es); no further increases were possible. 6984 cyclic fallback item(s) were kept safe from recipe-loop inflation.
+[17Oct2026 00:59:10.939] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [CHAT] [AutoEMC] 6/6 UPGRADE » Improved 40 values using recipe chains.
+[17Oct2026 00:59:11.400] [Server thread/INFO] [autoemc/]: [AutoEMC] Complete — wrote or updated 67531 AutoEMC entries. Restart Minecraft/server to load them.
+[17Oct2026 00:59:11.404] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [CHAT] [AutoEMC] DONE ✓ Complete — wrote or updated 67531 AutoEMC entries. Restart Minecraft/server to load them.
+[17Oct2026 00:59:12.160] [Worker-Main-3/ERROR] [com.telepathicgrunt.repurposedstructures.RepurposedStructures/]: 
+-------------------------------------------------------------------
+Repurposed Structures: Failed to create valid structure with all required pieces starting from this pool file: repurposed_structures:cities/overworld/start_pool. Required pieces failed to generate the required amount are: [repurposed_structures:cities/overworld/fat_tower_top=1]
+  This can happen if a structure has a required piece but the structure size is set too low.
+  However, this is most likely caused by a structure unable to spawn properly due to hitting the world's min y or max y build thresholds or a broken RS datapack.
+  Try teleporting to: BlockPos{x=-26087, y=90, z=16167} and see if the structure generated fine with the required structure piece or if it is indeed missing it.
+  Please report the issue to Repurposed Structures's dev with latest.log file if the structure is not cut off by world min/max y build thresholds.
+
+
+[17Oct2026 00:59:12.167] [Worker-Main-3/INFO] [me.kall.overlapless.Overlapless/]: Section at [-26080, {minY: 77, maxY: 159}, 16160] is occupied by structure repurposed_structures:city_overworld. Skipping the generation of astralsorcery:column at [-26080, {minY: 80, maxY: 111}, 16160]
+[17Oct2026 00:59:16.821] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[17Oct2026 00:59:16.861] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:overworld
+[17Oct2026 00:59:16.861] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:overworld
+[17Oct2026 00:59:17.093] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/mahoutsukai:reality_marble
+[17Oct2026 00:59:17.094] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/mahoutsukai:reality_marble
+[17Oct2026 00:59:17.098] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:earth_orbit
+[17Oct2026 00:59:17.098] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:earth_orbit
+[17Oct2026 00:59:17.099] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:glacio_orbit
+[17Oct2026 00:59:17.099] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:glacio_orbit
+[17Oct2026 00:59:17.099] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/the_bumblezone:the_bumblezone
+[17Oct2026 00:59:17.100] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/the_bumblezone:the_bumblezone
+[17Oct2026 00:59:17.100] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/deeperdarker:otherside
+[17Oct2026 00:59:17.100] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/deeperdarker:otherside
+[17Oct2026 00:59:17.101] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mars_orbit
+[17Oct2026 00:59:17.101] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mars_orbit
+[17Oct2026 00:59:17.101] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/eternal_starlight:starlight
+[17Oct2026 00:59:17.101] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/eternal_starlight:starlight
+[17Oct2026 00:59:17.102] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:venus_orbit
+[17Oct2026 00:59:17.102] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:venus_orbit
+[17Oct2026 00:59:17.102] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:venus
+[17Oct2026 00:59:17.102] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:venus
+[17Oct2026 00:59:17.108] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/compactmachines:compact_world
+[17Oct2026 00:59:17.108] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/compactmachines:compact_world
+[17Oct2026 00:59:17.135] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mercury
+[17Oct2026 00:59:17.137] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mercury
+[17Oct2026 00:59:17.139] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mars
+[17Oct2026 00:59:17.139] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mars
+[17Oct2026 00:59:17.140] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:moon
+[17Oct2026 00:59:17.140] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:moon
+[17Oct2026 00:59:17.140] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mercury_orbit
+[17Oct2026 00:59:17.140] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mercury_orbit
+[17Oct2026 00:59:17.141] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/twilightforest:twilight_forest
+[17Oct2026 00:59:17.141] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/twilightforest:twilight_forest
+[17Oct2026 00:59:17.142] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/undergarden:undergarden
+[17Oct2026 00:59:17.143] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/undergarden:undergarden
+[17Oct2026 00:59:17.144] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:moon_orbit
+[17Oct2026 00:59:17.144] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:moon_orbit
+[17Oct2026 00:59:17.145] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/irons_spellbooks:pocket_dimension
+[17Oct2026 00:59:17.145] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/irons_spellbooks:pocket_dimension
+[17Oct2026 00:59:17.146] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:the_nether
+[17Oct2026 00:59:17.147] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:the_nether
+[17Oct2026 00:59:17.147] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:glacio
+[17Oct2026 00:59:17.148] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:glacio
+[17Oct2026 00:59:17.149] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:the_other
+[17Oct2026 00:59:17.149] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:the_other
+[17Oct2026 00:59:17.150] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/iceandfire:dread_land
+[17Oct2026 00:59:17.150] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/iceandfire:dread_land
+[17Oct2026 00:59:17.151] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/neovitae:dungeon
+[17Oct2026 00:59:17.151] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/neovitae:dungeon
+[17Oct2026 00:59:17.152] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:the_beyond
+[17Oct2026 00:59:17.152] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:the_beyond
+[17Oct2026 00:59:17.152] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/aether:the_aether
+[17Oct2026 00:59:17.152] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/aether:the_aether
+[17Oct2026 00:59:17.153] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:the_end
+[17Oct2026 00:59:17.153] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:the_end
+[17Oct2026 00:59:17.154] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:mining
+[17Oct2026 00:59:17.154] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:mining
+[17Oct2026 00:59:17.154] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ae2:spatial_storage
+[17Oct2026 00:59:17.154] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ae2:spatial_storage
+[17Oct2026 00:59:17.599] [Netty Local Client IO #1/INFO] [dev.ryanhcode.sable.Sable/]: Closed UDP channel!
+[17Oct2026 00:59:17.599] [Netty Local Client IO #1/INFO] [dev.ryanhcode.sable.Sable/]: Client UDP channel inactive
+[17Oct2026 00:59:17.658] [Render thread/INFO] [minecolonies/]: Removed all colony views
+[17Oct2026 00:59:17.660] [Render thread/INFO] [FluxNetworks/]: Released client Flux Networks cache
+[17Oct2026 00:59:17.668] [Render thread/INFO] [mezz.jei.library.startup.JeiStarter/]: Stopping JEI
+[17Oct2026 00:59:17.669] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable...
+[17Oct2026 00:59:17.695] [Render thread/INFO] [mezz.jei.neoforge.plugins.neoforge.NeoForgeGuiPlugin/]: Stopping JEI GUI
+[17Oct2026 00:59:17.721] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable took 51.28 milliseconds
+[17Oct2026 00:59:18.491] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Spartan_Gamer_BR lost connection: Disconnected
+[17Oct2026 00:59:18.494] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Spartan_Gamer_BR left the game
+[17Oct2026 00:59:19.087] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
+[17Oct2026 00:59:21.063] [Server thread/INFO] [com.github.jarva.arsadditions.ArsAdditions/]: Shutting down locating executor service
+[17Oct2026 00:59:21.084] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[17Oct2026 00:59:21.085] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[17Oct2026 00:59:21.087] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[17Oct2026 00:59:21.323] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:overworld
+[17Oct2026 00:59:21.323] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:overworld
+[17Oct2026 00:59:22.045] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/mahoutsukai:reality_marble
+[17Oct2026 00:59:22.045] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/mahoutsukai:reality_marble
+[17Oct2026 00:59:22.078] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:earth_orbit
+[17Oct2026 00:59:22.078] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:earth_orbit
+[17Oct2026 00:59:22.105] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:glacio_orbit
+[17Oct2026 00:59:22.105] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:glacio_orbit
+[17Oct2026 00:59:22.133] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/the_bumblezone:the_bumblezone
+[17Oct2026 00:59:22.134] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/the_bumblezone:the_bumblezone
+[17Oct2026 00:59:22.167] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/deeperdarker:otherside
+[17Oct2026 00:59:22.167] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/deeperdarker:otherside
+[17Oct2026 00:59:22.199] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mars_orbit
+[17Oct2026 00:59:22.199] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mars_orbit
+[17Oct2026 00:59:22.223] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/eternal_starlight:starlight
+[17Oct2026 00:59:22.223] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/eternal_starlight:starlight
+[17Oct2026 00:59:22.253] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:venus_orbit
+[17Oct2026 00:59:22.253] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:venus_orbit
+[17Oct2026 00:59:22.279] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:venus
+[17Oct2026 00:59:22.279] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:venus
+[17Oct2026 00:59:22.307] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/compactmachines:compact_world
+[17Oct2026 00:59:22.307] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/compactmachines:compact_world
+[17Oct2026 00:59:22.332] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mercury
+[17Oct2026 00:59:22.332] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mercury
+[17Oct2026 00:59:22.358] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mars
+[17Oct2026 00:59:22.358] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mars
+[17Oct2026 00:59:22.383] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:moon
+[17Oct2026 00:59:22.384] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:moon
+[17Oct2026 00:59:22.408] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mercury_orbit
+[17Oct2026 00:59:22.408] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:mercury_orbit
+[17Oct2026 00:59:22.437] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/twilightforest:twilight_forest
+[17Oct2026 00:59:22.437] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/twilightforest:twilight_forest
+[17Oct2026 00:59:22.465] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/undergarden:undergarden
+[17Oct2026 00:59:22.465] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/undergarden:undergarden
+[17Oct2026 00:59:22.495] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:moon_orbit
+[17Oct2026 00:59:22.495] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:moon_orbit
+[17Oct2026 00:59:22.523] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/irons_spellbooks:pocket_dimension
+[17Oct2026 00:59:22.523] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/irons_spellbooks:pocket_dimension
+[17Oct2026 00:59:22.548] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:the_nether
+[17Oct2026 00:59:22.548] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:the_nether
+[17Oct2026 00:59:22.574] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:glacio
+[17Oct2026 00:59:22.574] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ad_astra:glacio
+[17Oct2026 00:59:22.598] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:the_other
+[17Oct2026 00:59:22.598] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:the_other
+[17Oct2026 00:59:22.625] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/iceandfire:dread_land
+[17Oct2026 00:59:22.625] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/iceandfire:dread_land
+[17Oct2026 00:59:22.661] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/neovitae:dungeon
+[17Oct2026 00:59:22.661] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/neovitae:dungeon
+[17Oct2026 00:59:22.705] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:the_beyond
+[17Oct2026 00:59:22.705] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:the_beyond
+[17Oct2026 00:59:22.751] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/aether:the_aether
+[17Oct2026 00:59:22.751] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/aether:the_aether
+[17Oct2026 00:59:22.798] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:the_end
+[17Oct2026 00:59:22.798] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/minecraft:the_end
+[17Oct2026 00:59:22.857] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:mining
+[17Oct2026 00:59:22.857] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/allthemodium:mining
+[17Oct2026 00:59:22.908] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Gustavo farms aura + ego]'/ae2:spatial_storage
+[17Oct2026 00:59:22.908] [Server thread/INFO] [dev.ryanhcode.sable.Sable/]: Saving sub-levels for level 'ServerLevel[Gustavo farms aura + ego]'/ae2:spatial_storage
+[17Oct2026 00:59:23.078] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (Gustavo farms aura + ego): All chunks are saved
+[17Oct2026 00:59:23.078] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (reality_marble): All chunks are saved
+[17Oct2026 00:59:23.078] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (earth_orbit): All chunks are saved
+[17Oct2026 00:59:23.078] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (glacio_orbit): All chunks are saved
+[17Oct2026 00:59:23.078] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (the_bumblezone): All chunks are saved
+[17Oct2026 00:59:23.078] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (otherside): All chunks are saved
+[17Oct2026 00:59:23.078] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (mars_orbit): All chunks are saved
+[17Oct2026 00:59:23.078] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (starlight): All chunks are saved
+[17Oct2026 00:59:23.078] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (venus_orbit): All chunks are saved
+[17Oct2026 00:59:23.078] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (venus): All chunks are saved
+[17Oct2026 00:59:23.078] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (compact_world): All chunks are saved
+[17Oct2026 00:59:23.078] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (mercury): All chunks are saved
+[17Oct2026 00:59:23.078] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (mars): All chunks are saved
+[17Oct2026 00:59:23.078] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (moon): All chunks are saved
+[17Oct2026 00:59:23.078] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (mercury_orbit): All chunks are saved
+[17Oct2026 00:59:23.078] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (twilight_forest): All chunks are saved
+[17Oct2026 00:59:23.078] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (undergarden): All chunks are saved
+[17Oct2026 00:59:23.078] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (moon_orbit): All chunks are saved
+[17Oct2026 00:59:23.078] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (pocket_dimension): All chunks are saved
+[17Oct2026 00:59:23.078] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[17Oct2026 00:59:23.078] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (glacio): All chunks are saved
+[17Oct2026 00:59:23.078] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (the_other): All chunks are saved
+[17Oct2026 00:59:23.078] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (dread_land): All chunks are saved
+[17Oct2026 00:59:23.079] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (dungeon): All chunks are saved
+[17Oct2026 00:59:23.079] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (the_beyond): All chunks are saved
+[17Oct2026 00:59:23.079] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (the_aether): All chunks are saved
+[17Oct2026 00:59:23.079] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[17Oct2026 00:59:23.079] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (mining): All chunks are saved
+[17Oct2026 00:59:23.079] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (spatial_storage): All chunks are saved
+[17Oct2026 00:59:23.079] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[17Oct2026 00:59:29.399] [Server thread/INFO] [Framework/]: Unloading server configs...
+[17Oct2026 00:59:29.404] [Server thread/INFO] [Framework/]: Sending config unload event for refurbished_furniture.server.toml
+[17Oct2026 00:59:29.406] [Server thread/INFO] [Framework/]: Finished unloading server configs
+[17Oct2026 00:59:29.534] [Server thread/INFO] [Puzzles Lib/]: Dispatching unloading event for config enchantinginfuser-server.toml
+[17Oct2026 00:59:29.757] [Render thread/INFO] [ChunkBuilder/]: Stopping worker threads
+[17Oct2026 00:59:30.928] [Render thread/WARN] [structurize/]: Client logged off. Resetting Pack Meta and Reloading State
+[17Oct2026 00:59:30.938] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Shogun
+[17Oct2026 00:59:30.939] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Rebel_Base
+[17Oct2026 00:59:30.939] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Nile
+[17Oct2026 00:59:30.940] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Byzantine_for_1.20
+[17Oct2026 00:59:30.942] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Jungle Treehouse
+[17Oct2026 00:59:30.943] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Pagoda
+[17Oct2026 00:59:30.943] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Stalactite Caves
+[17Oct2026 00:59:30.944] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Fortress
+[17Oct2026 00:59:30.944] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Colonial
+[17Oct2026 00:59:30.945] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Medieval Spruce
+[17Oct2026 00:59:30.945] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Lost Mesa City
+[17Oct2026 00:59:30.946] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Medieval Dark Oak
+[17Oct2026 00:59:30.946] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Urban Birch
+[17Oct2026 00:59:30.947] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Medieval Birch
+[17Oct2026 00:59:30.947] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Shire
+[17Oct2026 00:59:30.947] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Incan
+[17Oct2026 00:59:30.947] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Ancient Athens
+[17Oct2026 00:59:30.949] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Medieval Oak
+[17Oct2026 00:59:30.949] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Urban Savanna
+[17Oct2026 00:59:30.950] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Desert Oasis
+[17Oct2026 00:59:30.951] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Minecolonies Original
+[17Oct2026 00:59:30.951] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Cavern
+[17Oct2026 00:59:30.951] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Dark Oak Treehouse
+[17Oct2026 00:59:30.952] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Nordic Spruce
+[17Oct2026 00:59:30.952] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Space Wars
+[17Oct2026 00:59:30.952] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Caledonia
+[17Oct2026 00:59:30.953] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Warped Netherlands
+[17Oct2026 00:59:30.955] [Structurize IO Worker #1/WARN] [structurize/]: Missing Mod: quark for Pack: FairyTale
+[17Oct2026 00:59:30.955] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Steampunk
+[17Oct2026 00:59:30.956] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Tropical
+[17Oct2026 00:59:30.956] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Functional Fantasy
+[17Oct2026 00:59:30.956] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Antique
+[17Oct2026 00:59:30.957] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: High Magic
+[17Oct2026 00:59:30.958] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Aquatica
+[17Oct2026 00:59:30.960] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Crimson Keep
+[17Oct2026 00:59:30.960] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Farthest Frontier
+[17Oct2026 00:59:30.961] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Hive
+[17Oct2026 00:59:30.961] [Structurize IO Worker #1/WARN] [structurize/]: Missing Mod: byg for Pack: Corrupted
+[17Oct2026 00:59:30.961] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Underwater Base
+[17Oct2026 00:59:30.962] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Frontier
+[17Oct2026 00:59:30.970] [Structurize IO Worker #1/INFO] [structurize/]: Registered structure pack: Spartan_Gamer_BR
+[17Oct2026 00:59:30.970] [Structurize IO Worker #1/WARN] [structurize/]: Finished discovering Client Structure packs

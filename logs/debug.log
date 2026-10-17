@@ -134105,3 +134105,10 @@ Repurposed Structures: Failed to create valid structure with all required pieces
 [17Oct2026 00:59:31.108] [AllTheTweaks-DiscordRpc/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.command.CommandExecutor/]: Sending command: SET_ACTIVITY (nonce: 11)
 [17Oct2026 00:59:31.185] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Received frame: op=FRAME, data={"cmd":"SET_ACTIVITY","data":{"type":0,"state":"571 Mods","details":"Main Menu","timestamps":{"start":1792208744000},"assets":{"large_image":"1252861204045500466","large_text":"All The Mods 10"},"name...
 [17Oct2026 00:59:31.185] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Frame handled by command executor: true
+[17Oct2026 00:59:51.756] [Worker-ResourceReload-13/DEBUG] [ModernFix/]: Worker-ResourceReload-13 shutdown
+[17Oct2026 01:00:21.147] [ComputerCraft-Network-3/DEBUG] [io.netty.handler.traffic.TrafficCounter/]: Acct schedule not ok: 4636 > 2*1000 from GlobalTC
+[17Oct2026 01:00:31.348] [AllTheTweaks-DiscordRpc/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.command.CommandExecutor/]: Sending command: SET_ACTIVITY (nonce: 12)
+[17Oct2026 01:00:32.915] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Received frame: op=FRAME, data={"cmd":"SET_ACTIVITY","data":{"type":0,"state":"571 Mods","details":"Looking for the right button","timestamps":{"start":1792208744000},"assets":{"large_image":"1252861204045500466","large_text":"All ...
+[17Oct2026 01:00:32.916] [jDRPC-worker/DEBUG] [com.thevortex.allthetweaks.shadow.jdrpc.connection.ConnectionManager/]: Frame handled by command executor: true
+[17Oct2026 01:00:50.016] [ComputerCraft-Network-1/DEBUG] [io.netty.handler.traffic.TrafficCounter/]: Acct schedule not ok: 3158 > 2*1000 from GlobalTC
+[17Oct2026 01:00:51.762] [Worker-ResourceReload-8/DEBUG] [ModernFix/]: Worker-ResourceReload-8 shutdown

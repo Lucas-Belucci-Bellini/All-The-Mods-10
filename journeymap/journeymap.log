@@ -42,3 +42,213 @@ CoreProperties{state=Valid, file=journeymap.core.config, configVersion=6.0.9, ma
 [00:45:58] [Render thread/DEBUG] [StatTimer] elapsed was slow: 1925.4322
 [00:45:58] [Render thread/INFO] [JourneymapClient] postInitialize EXIT, elapsed count 1 avg 1925.43ms
 [00:46:14] [Render thread/INFO] [ColorPalette] Color palette file generated for 0 blockstates in 1ms for: Default Palette
+[00:50:52] [Render thread/INFO] [PlayerConnectHandler] onDisconnect: world is null
+[00:50:54] [Server thread/INFO] [NeoForgeConfig] Loading JourneyMap Forge Configs
+[00:51:04] [Server thread/INFO] [PluginHelper] Found @JourneyMapPlugin: journeymap.api.plugins.LoadedChunkOverlayPlugin
+[00:51:16] [Server thread/INFO] [PluginHelper] Initialized IJourneyMapPlugin as:journeymap.api.plugins.LoadedChunkOverlayPlugin: for:journeymap_chunk_overlay
+[00:51:32] [Render thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): optionsManagerViewed=null
+[00:51:32] [Render thread/INFO] [WaypointGroupStore] Loaded 0 waypoint groups from disk.
+[00:51:32] [Render thread/INFO] [WaypointStore] Loaded 0 waypoints from disk.
+[00:51:32] [Render thread/INFO] [LegacyWaypointFileMigrator] 0 Legacy waypoints found that need to be migrated and backed up.
+[00:51:32] [Render thread/INFO] [ColorPalette] Color palette file generated for 0 blockstates in 1ms for: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\colorpalette.json
+[00:51:32] [Render thread/INFO] [ColorPalette] Color palette file generated for 0 blockstates in 1ms for: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\data\sp\Gustavo farms aura + ego\colorpalette.json
+[00:51:32] [Render thread/INFO] [JourneymapClient] Mapping started in C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\data\sp\Gustavo farms aura + ego\overworld. Memory: 7360MB total, 1988MB free 
+[00:51:32] [Render thread/INFO] [JMChunkCache] JMChunkCache: opened at C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\data\sp\Gustavo farms aura + ego\overworld\chunk_cache
+[00:51:32] [Render thread/INFO] [WaypointHandler] WaypointBackend selected: Client (was=null, shouldBeRemote=false, isJMServer=false, serverManagedWP=false, isServerManagedWaypointConnection=false, hasSingleplayerServer=true)
+[00:51:48] [Server thread/INFO] [HandshakePacket] JourneyMap client version for Spartan_Gamer_BR: 6.0.9 (server version: 6.0.9)
+[00:53:47] [Render thread/INFO] [InternalStateHandler] Connection initiated with Journeymap Server: true
+[00:53:47] [Render thread/INFO] [WaypointHandler] WaypointBackend selected: Server (was=Client, shouldBeRemote=true, isJMServer=true, serverManagedWP=true, isServerManagedWaypointConnection=true, hasSingleplayerServer=true)
+[00:53:47] [Render thread/INFO] [WaypointGroupStore] Loaded 0 waypoint groups from disk.
+[00:53:47] [Render thread/INFO] [LegacyWaypointFileMigrator] 0 Legacy waypoints found that need to be migrated and backed up.
+[00:53:47] [Render thread/INFO] [WaypointHandler] WaypointBackend selected: Server (was=null, shouldBeRemote=true, isJMServer=true, serverManagedWP=true, isServerManagedWaypointConnection=true, hasSingleplayerServer=true)
+[00:53:47] [Render thread/INFO] [InternalStateHandler] Teleport Enabled: false
+[00:53:47] [Render thread/INFO] [InternalStateHandler] Server set waypointTeleportOnly: false
+[00:53:47] [Render thread/INFO] [InternalStateHandler] Server set globalWaypointTeleportOnly: false
+[00:53:47] [Render thread/INFO] [InternalStateHandler] Expanded Radar Enabled: true
+[00:53:47] [Render thread/INFO] [InternalStateHandler] Server Admin Enabled: false
+[00:53:47] [Render thread/INFO] [InternalStateHandler] Server set show in-game beacons: true
+[00:53:47] [Render thread/INFO] [InternalStateHandler] Server set waypoints allowed: true
+[00:53:47] [Render thread/INFO] [InternalStateHandler] Server set Server Admin read only mode: true
+[00:53:47] [Render thread/INFO] [InternalStateHandler] Server set maxSurfaceRenderDistance to: 0
+[00:53:47] [Render thread/INFO] [InternalStateHandler] Server setmaxCaveRenderDistance to: 0
+[00:53:47] [Render thread/INFO] [InternalStateHandler] Server set allow mutliplayer options: true
+[00:53:47] [Render thread/INFO] [InternalStateHandler] Server set globalWaypointsOnly: false
+[00:53:47] [Render thread/INFO] [InternalStateHandler] Server set allow radarLateralDistance options: 512
+[00:53:47] [Render thread/INFO] [InternalStateHandler] Server set allow radarVerticalDistance options: 320
+[00:53:47] [Render thread/INFO] [InternalStateHandler] Server set allow maxAnimalsData options: 128
+[00:53:47] [Render thread/INFO] [InternalStateHandler] Server set allow maxAmbientCreaturesData options: 128
+[00:53:47] [Render thread/INFO] [InternalStateHandler] Server set allow maxMobsData options: 128
+[00:53:47] [Render thread/INFO] [InternalStateHandler] Server set allow maxPlayersData options: 128
+[00:53:47] [Render thread/INFO] [InternalStateHandler] Server set allow maxVillagersData options: 128
+[00:53:47] [Render thread/INFO] [InternalStateHandler] Server set allow playerRadarNamesEnabled options: true
+[00:53:47] [Render thread/INFO] [InternalStateHandler] Server set allow minimapEnabled options: true
+[00:53:47] [Render thread/INFO] [InternalStateHandler] Server set allow hideCoordinates options: false
+[00:53:52] [Render thread/INFO] [HandshakePacket] JourneyMap server version: 6.0.9 (client version: 6.0.9)
+[00:53:52] [Render thread/INFO] [InternalStateHandler] Connection initiated with Journeymap Server: true
+[00:53:52] [Render thread/INFO] [InternalStateHandler] Teleport Enabled: false
+[00:53:52] [Render thread/INFO] [InternalStateHandler] Server set waypointTeleportOnly: false
+[00:53:52] [Render thread/INFO] [InternalStateHandler] Server set globalWaypointTeleportOnly: false
+[00:53:52] [Render thread/INFO] [InternalStateHandler] Expanded Radar Enabled: true
+[00:53:52] [Render thread/INFO] [InternalStateHandler] Server Admin Enabled: false
+[00:53:52] [Render thread/INFO] [InternalStateHandler] Server set show in-game beacons: true
+[00:53:52] [Render thread/INFO] [InternalStateHandler] Server set waypoints allowed: true
+[00:53:52] [Render thread/INFO] [InternalStateHandler] Server set Server Admin read only mode: true
+[00:53:52] [Render thread/INFO] [InternalStateHandler] Server set maxSurfaceRenderDistance to: 0
+[00:53:52] [Render thread/INFO] [InternalStateHandler] Server setmaxCaveRenderDistance to: 0
+[00:53:52] [Render thread/INFO] [InternalStateHandler] Server set allow mutliplayer options: true
+[00:53:52] [Render thread/INFO] [InternalStateHandler] Server set globalWaypointsOnly: false
+[00:53:52] [Render thread/INFO] [InternalStateHandler] Server set allow radarLateralDistance options: 512
+[00:53:52] [Render thread/INFO] [InternalStateHandler] Server set allow radarVerticalDistance options: 320
+[00:53:52] [Render thread/INFO] [InternalStateHandler] Server set allow maxAnimalsData options: 128
+[00:53:52] [Render thread/INFO] [InternalStateHandler] Server set allow maxAmbientCreaturesData options: 128
+[00:53:52] [Render thread/INFO] [InternalStateHandler] Server set allow maxMobsData options: 128
+[00:53:52] [Render thread/INFO] [InternalStateHandler] Server set allow maxPlayersData options: 128
+[00:53:52] [Render thread/INFO] [InternalStateHandler] Server set allow maxVillagersData options: 128
+[00:53:52] [Render thread/INFO] [InternalStateHandler] Server set allow playerRadarNamesEnabled options: true
+[00:53:52] [Render thread/INFO] [InternalStateHandler] Server set allow minimapEnabled options: true
+[00:53:52] [Render thread/INFO] [InternalStateHandler] Server set allow hideCoordinates options: false
+[00:54:02] [Render thread/INFO] [HandshakePacket] JourneyMap server version: 6.0.9 (client version: 6.0.9)
+[00:54:02] [Render thread/INFO] [InternalStateHandler] Connection initiated with Journeymap Server: true
+[00:54:02] [Render thread/INFO] [InternalStateHandler] Teleport Enabled: false
+[00:54:02] [Render thread/INFO] [InternalStateHandler] Server set waypointTeleportOnly: false
+[00:54:02] [Render thread/INFO] [InternalStateHandler] Server set globalWaypointTeleportOnly: false
+[00:54:02] [Render thread/INFO] [InternalStateHandler] Expanded Radar Enabled: true
+[00:54:02] [Render thread/INFO] [InternalStateHandler] Server Admin Enabled: false
+[00:54:02] [Render thread/INFO] [InternalStateHandler] Server set show in-game beacons: true
+[00:54:02] [Render thread/INFO] [InternalStateHandler] Server set waypoints allowed: true
+[00:54:02] [Render thread/INFO] [InternalStateHandler] Server set Server Admin read only mode: true
+[00:54:02] [Render thread/INFO] [InternalStateHandler] Server set maxSurfaceRenderDistance to: 0
+[00:54:02] [Render thread/INFO] [InternalStateHandler] Server setmaxCaveRenderDistance to: 0
+[00:54:02] [Render thread/INFO] [InternalStateHandler] Server set allow mutliplayer options: true
+[00:54:02] [Render thread/INFO] [InternalStateHandler] Server set globalWaypointsOnly: false
+[00:54:02] [Render thread/INFO] [InternalStateHandler] Server set allow radarLateralDistance options: 512
+[00:54:02] [Render thread/INFO] [InternalStateHandler] Server set allow radarVerticalDistance options: 320
+[00:54:02] [Render thread/INFO] [InternalStateHandler] Server set allow maxAnimalsData options: 128
+[00:54:02] [Render thread/INFO] [InternalStateHandler] Server set allow maxAmbientCreaturesData options: 128
+[00:54:02] [Render thread/INFO] [InternalStateHandler] Server set allow maxMobsData options: 128
+[00:54:02] [Render thread/INFO] [InternalStateHandler] Server set allow maxPlayersData options: 128
+[00:54:02] [Render thread/INFO] [InternalStateHandler] Server set allow maxVillagersData options: 128
+[00:54:02] [Render thread/INFO] [InternalStateHandler] Server set allow playerRadarNamesEnabled options: true
+[00:54:02] [Render thread/INFO] [InternalStateHandler] Server set allow minimapEnabled options: true
+[00:54:02] [Render thread/INFO] [InternalStateHandler] Server set allow hideCoordinates options: false
+[00:54:38] [Render thread/INFO] [ModBlockDelegate] Custom modded block handling enabled for create
+[00:54:38] [Render thread/ERROR] [ModPropertyEnum] Error reflecting PropertyEnum on %s.%s: %s
+[00:54:38] [Render thread/ERROR] [ModPropertyEnum] Error reflecting PropertyEnum on %s.%s: %s
+[00:54:38] [Render thread/INFO] [ModBlockDelegate] Custom modded block handling enabled for bibliocraft
+[00:54:38] [Render thread/INFO] [ModBlockDelegate] Custom modded block handling enabled for biomesoplenty
+[00:55:01] [Render thread/INFO] [ChatLog] JourneyMap: Press [J]
+[00:56:31] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:31] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:31] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:31] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:31] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:31] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:31] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:31] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:31] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:31] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:31] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:31] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:31] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:31] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:31] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:31] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:31] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:31] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:31] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:31] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:31] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:31] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:31] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:31] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:31] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:31] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:31] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:31] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:31] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:31] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:31] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:31] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/WARN] [StatTimer] MiniMap1.Circle is not running.
+[00:56:32] [Render thread/INFO] [InternalStateHandler] Connection initiated with Journeymap Server: true
+[00:56:32] [Render thread/INFO] [InternalStateHandler] Teleport Enabled: false
+[00:56:32] [Render thread/INFO] [InternalStateHandler] Server set waypointTeleportOnly: false
+[00:56:32] [Render thread/INFO] [InternalStateHandler] Server set globalWaypointTeleportOnly: false
+[00:56:32] [Render thread/INFO] [InternalStateHandler] Expanded Radar Enabled: true
+[00:56:32] [Render thread/INFO] [InternalStateHandler] Server Admin Enabled: false
+[00:56:32] [Render thread/INFO] [InternalStateHandler] Server set show in-game beacons: true
+[00:56:32] [Render thread/INFO] [InternalStateHandler] Server set waypoints allowed: true
+[00:56:32] [Render thread/INFO] [InternalStateHandler] Server set Server Admin read only mode: true
+[00:56:32] [Render thread/INFO] [InternalStateHandler] Server set maxSurfaceRenderDistance to: 0
+[00:56:32] [Render thread/INFO] [InternalStateHandler] Server setmaxCaveRenderDistance to: 0
+[00:56:32] [Render thread/INFO] [InternalStateHandler] Server set allow mutliplayer options: true
+[00:56:32] [Render thread/INFO] [InternalStateHandler] Server set globalWaypointsOnly: false
+[00:56:32] [Render thread/INFO] [InternalStateHandler] Server set allow radarLateralDistance options: 512
+[00:56:32] [Render thread/INFO] [InternalStateHandler] Server set allow radarVerticalDistance options: 320
+[00:56:32] [Render thread/INFO] [InternalStateHandler] Server set allow maxAnimalsData options: 128
+[00:56:32] [Render thread/INFO] [InternalStateHandler] Server set allow maxAmbientCreaturesData options: 128
+[00:56:32] [Render thread/INFO] [InternalStateHandler] Server set allow maxMobsData options: 128
+[00:56:32] [Render thread/INFO] [InternalStateHandler] Server set allow maxPlayersData options: 128
+[00:56:32] [Render thread/INFO] [InternalStateHandler] Server set allow maxVillagersData options: 128
+[00:56:32] [Render thread/INFO] [InternalStateHandler] Server set allow playerRadarNamesEnabled options: true
+[00:56:32] [Render thread/INFO] [InternalStateHandler] Server set allow minimapEnabled options: true
+[00:56:32] [Render thread/INFO] [InternalStateHandler] Server set allow hideCoordinates options: false
+[00:58:05] [Render thread/WARN] [JMLogger] Image is null: creeperoverhaul:textures/entity_icon/plains/plains_creeper.png
+[00:59:10] [Render thread/WARN] [JMLogger] Image is null: creeperoverhaul:textures/entity_icon/plains/plains_creeper.png
+[00:59:17] [Render thread/INFO] [TextureCache] [JourneyMap]: Purging Theme Images
+[00:59:17] [Render thread/INFO] [TextureCache] [JourneyMap]: Purging Region Images
+[00:59:18] [Render thread/INFO] [TextureCache] [JourneyMap]: Purging Mob Icon Images
+[00:59:18] [Render thread/INFO] [WaypointGroupStore] Loaded 0 waypoint groups from disk.
+[00:59:18] [Render thread/INFO] [WaypointStore] Loaded 0 waypoints from disk.
+[00:59:18] [Render thread/INFO] [LegacyWaypointFileMigrator] 0 Legacy waypoints found that need to be migrated and backed up.
+[00:59:18] [Render thread/INFO] [WaypointHandler] WaypointBackend selected: Server (was=null, shouldBeRemote=true, isJMServer=true, serverManagedWP=true, isServerManagedWaypointConnection=true, hasSingleplayerServer=false)
+[00:59:18] [Render thread/INFO] [JourneymapClient] Mapping halted in C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\data\mp\offline\minecraft:overworld
+[00:59:18] [Render thread/INFO] [JourneymapClient] Mapping halted in C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\journeymap\data\mp\offline\minecraft:overworld
+[00:59:18] [Render thread/INFO] [WaypointHandler] WaypointBackend selected: Client (was=Server, shouldBeRemote=false, isJMServer=false, serverManagedWP=false, isServerManagedWaypointConnection=false, hasSingleplayerServer=false)

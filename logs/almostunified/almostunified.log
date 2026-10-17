@@ -241,3 +241,4 @@
 [00:49:51.827] [WARN]: Could not detect recipe type for recipe 'sushigocrafting:fermenting_barrel/soy', skipping.
 [00:49:51.907] [WARN]: Could not detect recipe type for recipe 'immersiveengineering:arc_recycling_list', skipping.
 [00:49:52.094] [INFO]: 79487 out of 88680 recipes were loaded for unification.
+[00:49:56.607] [INFO]: Recipe count afterwards: 87723 (done in 5.019 s)
