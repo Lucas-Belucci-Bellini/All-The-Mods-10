@@ -86,6 +86,26 @@ Só marcar o balanceamento como aprovado depois de:
 - [ ] O catálogo refletir as receitas da instância e versão correta.
 - [ ] A atualização ser testada em uma cópia do mundo; save original e backup permanecerem intactos.
 
+## Uso local das ferramentas
+
+Execute os comandos a partir da raiz do repositório. Python 3.10+ é necessário apenas para as ferramentas de desenvolvimento; jogadores comuns não precisam dele para abrir o modpack.
+
+Gerar a configuração candidata usando apenas as entradas `approved` na política:
+
+```powershell
+python tools/projecte-emc/build_custom_emc.py
+```
+
+O resultado será `build/projecte-emc/custom_emc.json`. O script valida seletores, duplicatas, EMC inteiro não negativo e justificativas. Ele não altera `config/ProjectE/custom_emc.json` automaticamente.
+
+Executar os testes unitários:
+
+```powershell
+python -m unittest discover -s tools/projecte-emc -p "test_*.py"
+```
+
+A política inicial está vazia de propósito. Portanto, a primeira saída esperada é um arquivo válido com `entries: []`; não significa que todos os itens do ATM10 tenham sido auditados. Primeiro precisamos comprovar o mapeamento nativo e só depois adicionar overrides revisados.
+
 ## Estado legado
 
 Antes de começar este fluxo, `config/ProjectE/custom_emc.json` continha **67.531 entradas**. Essa tabela foi gerada no período dos addons anteriores e inclui valores que precisam de revisão; por isso, ela fica no arquivo de arquivo legado apenas para comparação e recuperação. **Não deve ser tratada como a política nova nem mesclada automaticamente**. A configuração ativa começa vazia e o ProjectE volta a ser responsável pelo cálculo nativo que ele suporta.
