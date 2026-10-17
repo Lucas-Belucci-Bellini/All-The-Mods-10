@@ -1,0 +1,302 @@
+{
+  "comment": "Materiais de progressao do ATM10 sem EMC (0 propaga: tudo feito com eles fica sem EMC).",
+  "values": {
+    "before": [
+      {
+        "type": "projecte:item",
+        "tag": "c:clumps/allthemodium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:clumps/unobtainium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:clumps/vibranium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crystals/allthemodium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crystals/unobtainium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crystals/vibranium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:dirty_dusts/allthemodium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:dirty_dusts/unobtainium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:dirty_dusts/vibranium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:dusts/allthemodium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:dusts/draconium_awakened",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:dusts/unobtainium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:dusts/unobtainium_allthemodium_alloy",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:dusts/unobtainium_vibranium_alloy",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:dusts/vibranium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:dusts/vibranium_allthemodium_alloy",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:foods/allthemodium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:furnaces/allthemodium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:furnaces/unobtainium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:furnaces/vibranium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gears/allthemodium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gears/unobtainium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gears/vibranium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/awakened_supremium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/allthemodium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/awakened_supremium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/draconium_awakened",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/unobtainium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/unobtainium_allthemodium_alloy",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/unobtainium_vibranium_alloy",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/vibranium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/vibranium_allthemodium_alloy",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:nuggets/allthemodium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:nuggets/awakened_supremium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:nuggets/draconium_awakened",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:nuggets/unobtainium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:nuggets/vibranium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ores/allthemodium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ores/unobtainium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ores/vibranium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:plates/allthemodium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:plates/unobtainium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:plates/vibranium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:raw_materials/allthemodium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:raw_materials/unobtainium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:raw_materials/vibranium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:rods/allthemodium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:rods/unobtainium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:rods/vibranium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:shards/allthemodium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:shards/unobtainium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:shards/vibranium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:storage_blocks/allthemodium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:storage_blocks/draconium_awakened",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:storage_blocks/unobtainium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:storage_blocks/unobtainium_allthemodium_alloy",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:storage_blocks/unobtainium_vibranium_alloy",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:storage_blocks/vibranium",
+        "emc_value": 0
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:storage_blocks/vibranium_allthemodium_alloy",
+        "emc_value": 0
+      }
+    ]
+  }
+}

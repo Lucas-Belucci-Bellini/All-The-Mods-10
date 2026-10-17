@@ -1,0 +1,54 @@
+# ProjectExpansion - config padrao para mundos novos (balanceada).
+# O NeoForge copia este arquivo para saves/<mundo>/serverconfig/projectexpansion/server.toml
+# quando o mundo e criado. Mundos que ja existem nao sao afetados.
+
+#The delay between mod operations (in ticks, default 20)
+tickDelay = 20
+#Notify users when something is changed about them via commands.
+notifyCommandChanges = true
+#Tell users the list of items they gained when using a knowledge book.
+notifyKnowledgeBookGains = true
+#If EMC Link Right-Click functionality should be Limited by Tier or Not.
+limitEmcLinkVendor = true
+#If fluid efficiency should be enabled.
+enableFluidEfficiency = true
+#The amount of items that the transmutation interface will report to have.
+transmutationInterfaceItemCount = 2147483647
+
+# Balanceamento: geracao passiva de EMC reduzida (padrao 1.0).
+#Multiplies the output of Collectors.
+collectorMultiplier = 0.5
+#Multiplies the output of Power Flowers.
+powerflowerMultiplier = 0.25
+#Multiplies the bonus of Relays.
+relayBonusMultiplier = 0.5
+#Multiplies the transfer limit of Relays.
+relayTransferMultiplier = 1.0
+
+#Multiplies the item limit of EMC Links.
+emcLinkItemLimitMultiplier = 1.0
+#Multiplies the fluid limit of EMC Links.
+emcLinkFluidLimitMultiplier = 1.0
+#Multiplies the emc limit of EMC Links.
+emcLinkEMCLimitMultiplier = 1.0
+
+#The cost of using the infinite fuel item.
+infiniteFuelCost = 128
+#The ticks each usage of the infinite fuel item will give.
+infiniteFuelBurnTime = 1600
+#The cost of using the infinite steak item.
+infiniteSteakCost = 64
+#If ProjectE's processors.EnchantmentProcessor.persistent option should only include enchanted books.
+persistEnchantedBooksOnly = false
+
+# Balanceamento: fluidos sem EMC (ex.: metais fundidos bloqueados) NAO saem de graca do EMC Link.
+#If fluids which end their calculations at zero emc should be returned as free.
+zeroEmcFluidsAreFree = false
+#If optimizations (ticking only once per second) should be enabled for collectors.
+enableCollectorOptimizations = true
+
+# Balanceamento: Compact Sun da 4x (padrao 10x, e ~40x com a compensacao de preco ligada).
+#The bonus (multiplicative) the compact sun block should give. Set to 0 to disable.
+compactSunBonus = 4
+#Enable determining the sun bonus multiplier via the price difference (gives ~40x).
+sunMultiplierPriceCompensation = false

@@ -1,0 +1,1517 @@
+{
+  "comment": "Plantacoes e sementes de mods de agricultura (sem itens vanilla, que ja tem valor).",
+  "values": {
+    "before": [
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/acorn",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/agave",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/alfalfa",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/almond",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/aloe",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/amaranth",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/apricot",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/arrowroot",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/artichoke",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/asai_berry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/asparagus",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/avocado",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/banana",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/baobab_fruit",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/barley",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/barrelcactus",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/bean",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/beechnut",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/beliy_naliv_apple",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/bellpepper",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/black_cherry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/blackberry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/blueberry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/bokchoy",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/brazil_nut",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/breadfruit",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/broccoli",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/brusselsprout",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/buddhas_hand",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/butternut",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/cabbage",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/cactusfruit",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/candleberry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/candlenut",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/canola",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/cantaloupe",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/cashew",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/cassava",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/cattail",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/cauliflower",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/celery",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/cempedak",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/cherries",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/cherry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/cherry_plum",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/chestnut",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/chia",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/chickpea",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/chilipepper",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/cinnamon",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/citron",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/cloudberry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/coconut",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/coffee",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/coffeebean",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/copoazu",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/corn",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/cotton",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/cranberry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/crinoa",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/cucumber",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/date",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/datura",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/dragonfruit",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/durian",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/eggplant",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/elderberry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/fig",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/finger_lime",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/flax",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/flowering_crabapple",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/garlic",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/garlic_bulb",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/ginger",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/ginger_root",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/ginkgo_nut",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/golden_delicious_apple",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/gooseberry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/granny_smith_apple",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/grape",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/grapefruit",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/grapes",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/green_bean",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/green_pepper",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/greengrape",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/guava",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/hala_fruit",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/haw",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/hazelnut",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/huckleberry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/jackfruit",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/jicama",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/juniperberry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/jute",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/kale",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/kenaf",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/key_lime",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/kiwi",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/kohlrabi",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/kumquat",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/leek",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/lemon",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/lentil",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/lettuce",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/lime",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/lotus",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/lychee",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/mandarin",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/mango",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/maple",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/millet",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/mulberry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/mustardseeds",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/nectarine",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/nettles",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/nocturnal_millet",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/nopales",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/nutmeg",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/oat",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/oats",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/okra",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/olive",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/onion",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/orange",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/osage_orange",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/papaya",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/parsnip",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/passionfruit",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/pawpaw",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/pea",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/peach",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/peanut",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/peanut_seeds",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/pear",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/peas",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/pecan",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/peppercorn",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/persimmon",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/pineapple",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/pinenut",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/pistachio",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/plantain",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/plum",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/pomegranate",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/pomelo",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/prairie_crabapple",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/pungency_fruit",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/quinoa",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/radish",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/rambutan",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/raspberry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/red_banana",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/rhubarb",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/rice",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/rowan",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/rutabaga",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/rye",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/sand_pear",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/satsuma",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/scallion",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/sesame_seed",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/sesameseeds",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/sisal",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/sloe",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/snake_fruit",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/sorghum",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/soul_flower",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/sour_cherry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/soursop",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/soybean",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/sparkling_cherry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/spiceleaf",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/spinach",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/squash",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/starfruit",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/strawberry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/sunchoke",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/sweet_crabapple",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/sweet_potato",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/sweetpotato",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/sweetsop",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/tamarind",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/tangerine",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/taro",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/tealeaf",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/tomatillo",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/tomato",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/truffle",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/turmeric_root",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/turnip",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/vanillabean",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/walnut",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/wasabi_root",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/waterchestnut",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/whitemushroom",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/wild_cherry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/wintersquash",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/wolfberry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/yucca",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:crops/zucchini",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/agave",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/alfalfa",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/aloe",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/amaranth",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/arrowroot",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/artichoke",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/asparagus",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/barley",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/barrelcactus",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/bean",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/bellpepper",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/blackberry",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/blueberry",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/bokchoy",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/broccoli",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/brusselsprout",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/cabbage",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/cactusfruit",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/candleberry",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/canola",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/cantaloupe",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/cassava",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/cattail",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/cauliflower",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/celery",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/chia",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/chickpea",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/chilipepper",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/cloudberry",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/coffeebean",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/corn",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/cotton",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/cranberry",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/crinoa",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/cucumber",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/datura",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/eggplant",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/elderberry",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/fluffy_puff",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/garlic",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/ginger",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/grape",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/greengrape",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/hemp",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/huckleberry",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/jicama",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/juniperberry",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/jute",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/kale",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/kenaf",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/kiwi",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/kohlrabi",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/leek",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/lentil",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/lettuce",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/lotus",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/millet",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/mulberry",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/mustardseeds",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/nettles",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/nocturnal_millet",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/nopales",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/oats",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/okra",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/onion",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/parsnip",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/peanut",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/peas",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/pineapple",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/pumpkin",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/pungency_fruit",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/quinoa",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/radish",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/raspberry",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/rhubarb",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/rice",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/rutabaga",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/rye",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/scallion",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/sesame",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/sesameseeds",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/sisal",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/sorghum",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/soy",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/soybean",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/spiceleaf",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/spinach",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/strawberry",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/sweetpotato",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/taro",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/tealeaf",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/tomatillo",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/tomato",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/truffle",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/turnip",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/wasabi",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/waterchestnut",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/whitemushroom",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/wintersquash",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/wolfberry",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/yucca",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:seeds/zucchini",
+        "emc_value": 16
+      }
+    ]
+  }
+}

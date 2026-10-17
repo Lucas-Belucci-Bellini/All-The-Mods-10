@@ -1,0 +1,658 @@
+{
+  "comment": "Poeiras valem o mesmo que o lingote/gema (britador 1:1); obsidiana rende 4.",
+  "values": {
+    "conversion": [
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/iron"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/iron"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/gold"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/gold"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/copper"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/copper"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/tin"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/tin"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/bronze"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/bronze"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/silver"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/silver"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/lead"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/lead"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/osmium"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/osmium"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/nickel"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/nickel"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/aluminum"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/aluminum"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/platinum"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/platinum"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/uranium"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/uranium"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/netherite"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/netherite"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/zinc"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/zinc"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/antimony"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/antimony"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/silicon"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/silicon"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/chromium"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/chromium"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/beryllium"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/beryllium"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/cadmium"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/cadmium"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/titanium"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/titanium"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/tungsten"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/tungsten"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/iridium"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/iridium"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/iesnium"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/iesnium"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/crimson_iron"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/crimson_iron"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/azure_silver"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/azure_silver"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/draconium"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/draconium"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/brass"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/brass"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/electrum"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/electrum"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/invar"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/invar"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/constantan"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/constantan"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/steel"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/steel"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/signalum"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/signalum"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/lumium"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/lumium"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/enderium"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/enderium"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/refined_obsidian"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/refined_obsidian"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:gems/fluix"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/fluix"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:gems/diamond"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/diamond"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:gems/emerald"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/emerald"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:gems/quartz"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/quartz"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:gems/amethyst"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/amethyst"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:gems/ruby"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/ruby"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:gems/sapphire"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/sapphire"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:gems/peridot"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/peridot"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:gems/lapis"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/lapis"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:gems/certus_quartz"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/certus_quartz"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:gems/fluorite"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/fluorite"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:gems/cinnabar"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/cinnabar"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:gems/lignite_coal"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/lignite_coal"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:gems/arcane_crystal"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/arcane_crystal"
+        },
+        "propagateTags": true
+      },
+      {
+        "count": 4,
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "id": "minecraft:obsidian"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:dusts/obsidian"
+        },
+        "propagateTags": true
+      }
+    ]
+  }
+}

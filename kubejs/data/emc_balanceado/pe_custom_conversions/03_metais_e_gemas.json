@@ -1,0 +1,342 @@
+{
+  "comment": "Valores base de metais e gemas de mods (escala: ferro 256, ouro 2048, diamante 8192).",
+  "values": {
+    "before": [
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/aethersent",
+        "emc_value": 2048
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/amaramber",
+        "emc_value": 512
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/antimony",
+        "emc_value": 256
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/azure_silver",
+        "emc_value": 512
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/beryllium",
+        "emc_value": 512
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/cadmium",
+        "emc_value": 512
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/calorite",
+        "emc_value": 16384
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/chromium",
+        "emc_value": 512
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/cloggrum",
+        "emc_value": 256
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/crimson_iron",
+        "emc_value": 512
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/deepsilver",
+        "emc_value": 512
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/desh",
+        "emc_value": 4096
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/draconium",
+        "emc_value": 16384
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/forgotten_metal",
+        "emc_value": 4096
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/froststeel",
+        "emc_value": 512
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/golem_steel",
+        "emc_value": 2048
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/iesnium",
+        "emc_value": 2048
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/iridium",
+        "emc_value": 8192
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/ironwood",
+        "emc_value": 1024
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/knightmetal",
+        "emc_value": 2048
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/mithril",
+        "emc_value": 4096
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/neptunium",
+        "emc_value": 4096
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/ostrum",
+        "emc_value": 8192
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/pyrium",
+        "emc_value": 4096
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/silicon",
+        "emc_value": 256
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/steeleaf",
+        "emc_value": 256
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/thermal_springstone",
+        "emc_value": 512
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/titanium",
+        "emc_value": 1024
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/tungsten",
+        "emc_value": 1024
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/zinc",
+        "emc_value": 256
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/alexandrite",
+        "emc_value": 1024
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/ammolite",
+        "emc_value": 1024
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/aquamarine",
+        "emc_value": 512
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/arcane_crystal",
+        "emc_value": 512
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/black_diamond",
+        "emc_value": 4096
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/black_quartz",
+        "emc_value": 256
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/bort",
+        "emc_value": 128
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/carnelian",
+        "emc_value": 1024
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/certus_quartz",
+        "emc_value": 256
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/cinnabar",
+        "emc_value": 256
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/citrine",
+        "emc_value": 1024
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/fluorite",
+        "emc_value": 256
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/garnet",
+        "emc_value": 1024
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/glacite",
+        "emc_value": 256
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/heliodor",
+        "emc_value": 1024
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/iolite",
+        "emc_value": 1024
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/kyanite",
+        "emc_value": 1024
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/lignite_coal",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/malarite",
+        "emc_value": 1024
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/moldavite",
+        "emc_value": 1024
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/moonstone",
+        "emc_value": 1024
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/onyx",
+        "emc_value": 1024
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/opal",
+        "emc_value": 1024
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/pearl",
+        "emc_value": 1024
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/regalium",
+        "emc_value": 1024
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/rose_quartz",
+        "emc_value": 1024
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/sal_ammoniac",
+        "emc_value": 128
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/source",
+        "emc_value": 256
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/starlit_diamond",
+        "emc_value": 16384
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/tanzanite",
+        "emc_value": 1024
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/thioquartz",
+        "emc_value": 256
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/topaz",
+        "emc_value": 1024
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/turquoise",
+        "emc_value": 1024
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/utherium",
+        "emc_value": 512
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/white_diamond",
+        "emc_value": 4096
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:gems/xychorium",
+        "emc_value": 128
+      },
+      {
+        "type": "projecte:item",
+        "id": "powah:uraninite",
+        "emc_value": 512
+      }
+    ]
+  }
+}

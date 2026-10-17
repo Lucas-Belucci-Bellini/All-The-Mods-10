@@ -1,0 +1,382 @@
+{
+  "comment": "Ligas calculadas pelos ingredientes (valor = soma / quantidade, sem lucro em maquina).",
+  "values": {
+    "conversion": [
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/copper"
+          },
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/zinc"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:ingots/brass"
+        },
+        "propagateTags": true,
+        "count": 2
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/gold"
+          },
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/silver"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:ingots/electrum"
+        },
+        "propagateTags": true,
+        "count": 2
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/iron",
+            "amount": 2
+          },
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/nickel"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:ingots/invar"
+        },
+        "propagateTags": true,
+        "count": 3
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/copper"
+          },
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/nickel"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:ingots/constantan"
+        },
+        "propagateTags": true,
+        "count": 2
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/iron"
+          },
+          {
+            "type": "projecte:item",
+            "id": "minecraft:coal"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:ingots/steel"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/copper",
+            "amount": 3
+          },
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/silver"
+          },
+          {
+            "type": "projecte:item",
+            "tag": "c:dusts/redstone",
+            "amount": 4
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:ingots/signalum"
+        },
+        "propagateTags": true,
+        "count": 4
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/tin",
+            "amount": 3
+          },
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/silver"
+          },
+          {
+            "type": "projecte:item",
+            "tag": "c:dusts/glowstone",
+            "amount": 2
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:ingots/lumium"
+        },
+        "propagateTags": true,
+        "count": 4
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/lead",
+            "amount": 3
+          },
+          {
+            "type": "projecte:item",
+            "tag": "c:gems/diamond"
+          },
+          {
+            "type": "projecte:item",
+            "id": "minecraft:ender_pearl",
+            "amount": 2
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:ingots/enderium"
+        },
+        "propagateTags": true,
+        "count": 4
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/copper"
+          },
+          {
+            "type": "projecte:item",
+            "tag": "c:dusts/redstone"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:ingots/conductive_alloy"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/gold"
+          },
+          {
+            "type": "projecte:item",
+            "tag": "c:dusts/redstone"
+          },
+          {
+            "type": "projecte:item",
+            "tag": "c:dusts/glowstone"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:ingots/energetic_alloy"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/energetic_alloy"
+          },
+          {
+            "type": "projecte:item",
+            "id": "minecraft:ender_pearl"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:ingots/vibrant_alloy"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/iron"
+          },
+          {
+            "type": "projecte:item",
+            "id": "minecraft:ender_pearl"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:ingots/pulsating_alloy"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/iron"
+          },
+          {
+            "type": "projecte:item",
+            "id": "minecraft:coal"
+          },
+          {
+            "type": "projecte:item",
+            "id": "minecraft:obsidian"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:ingots/dark_steel"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/dark_steel"
+          },
+          {
+            "type": "projecte:item",
+            "id": "minecraft:end_stone"
+          },
+          {
+            "type": "projecte:item",
+            "id": "minecraft:obsidian"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:ingots/end_steel"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/gold"
+          },
+          {
+            "type": "projecte:item",
+            "id": "minecraft:soul_sand"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:ingots/soularium"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:dusts/glowstone"
+          },
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/osmium"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:ingots/refined_glowstone"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "id": "minecraft:obsidian"
+          },
+          {
+            "type": "projecte:item",
+            "tag": "c:gems/diamond"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:ingots/refined_obsidian"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/iron"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:ingots/compressed_iron"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:ingots/golem_steel"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:ingots/oxidized_golem_steel"
+        },
+        "propagateTags": true
+      },
+      {
+        "ingredients": [
+          {
+            "type": "projecte:item",
+            "tag": "c:gems/certus_quartz"
+          },
+          {
+            "type": "projecte:item",
+            "tag": "c:dusts/redstone"
+          },
+          {
+            "type": "projecte:item",
+            "tag": "c:gems/quartz"
+          }
+        ],
+        "output": {
+          "type": "projecte:item",
+          "tag": "c:gems/fluix"
+        },
+        "propagateTags": true,
+        "count": 2
+      }
+    ]
+  }
+}
