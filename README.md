@@ -166,7 +166,7 @@ O repositório contém muitos arquivos. Aguarde o terminal terminar e mantenha e
 
 O trabalho de EMC está sendo desenvolvido sem depender de AutoEMC ou ProjectE Integration. O plano é deixar o ProjectE fazer os cálculos nativos das receitas que ele já suporta e cadastrar manualmente apenas exceções revisadas.
 
-Veja o [plano de implementação do EMC](docs/projecte-emc/IMPLEMENTATION_PLAN.md) e a [exportação das receitas em JSON](docs/projecte-emc/RECIPE_EXPORT.md). A tabela antiga de custom EMC foi arquivada em [custom_emc.legacy-generated.json](docs/projecte-emc/archive/custom_emc.legacy-generated.json) apenas para referência; a configuração ativa começa vazia e a tabela antiga não será restaurada automaticamente.
+Veja o [plano de implementação do EMC](docs/projecte-emc/IMPLEMENTATION_PLAN.md), a [exportação das receitas em JSON](docs/projecte-emc/RECIPE_EXPORT.md) e a [auditoria pré-merge de integridade das receitas](docs/projecte-emc/PREMERGE_RECIPE_AUDIT.md). A tabela antiga de custom EMC foi arquivada em [custom_emc.legacy-generated.json](docs/projecte-emc/archive/custom_emc.legacy-generated.json) apenas para referência; a configuração ativa começa vazia e a tabela antiga não será restaurada automaticamente.
 
 ### Ferramentas para desenvolvedores
 
