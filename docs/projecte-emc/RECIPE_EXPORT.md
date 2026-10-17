@@ -38,3 +38,10 @@ O script é somente leitura: não cria, remove ou modifica receitas de jogo. Ele
 ## Atualização futura
 
 Depois de atualizar mods, scripts ou datapacks, rode `/reload` novamente e gere um novo catálogo. Ao comparar dois catálogos, use `recipes[].id` como chave e observe mudanças em `type` e `data`.
+
+
+## Relação com o EMC independente
+
+Este exportador é parte do processo de análise próprio do repositório. Ele não depende de AutoEMC nem de ProjectE Integration e não modifica as receitas do jogo. Ele registra o JSON exposto ao evento de receitas do KubeJS; a lista gerada deve ser auditada e comparada com os mapeadores nativos do ProjectE. O formato final de overrides é compilado separadamente a partir de `docs/projecte-emc/emc-policy.json` usando `tools/projecte-emc/build_custom_emc.py`.
+
+A configuração ativa de custom EMC começa com `entries: []`; a tabela de 67.531 entradas anterior foi arquivada apenas para comparação. Não copie essa tabela antiga de volta automaticamente.
