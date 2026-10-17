@@ -26,13 +26,15 @@ A issue registra:
 - O log do AutoEMC termina com a mensagem de que os mapeamentos do ProjectE nunca ficaram prontos.
 - `config/ProjectE/custom_emc.json` está vazio no snapshot consultado.
 - A hipótese mais forte documentada é o conflito entre ProjectE Integration e Ice and Fire CE; Immersive Engineering é uma hipótese secundária.
+- Novo log de 17/10/2026: uma tentativa de iniciar sem ProjectE Integration falhou porque AutoEMC 2.1.1 declara `projecteintegration >= 8.3.1` como dependência obrigatória.
+- `logs/instance_audit.txt` registra que nessa tentativa foram removidos tanto ProjectE Integration quanto ProjectE. Portanto, ela não permite concluir se os EMCs do ProjectE funcionam sem o Integration.
 
 **Interpretação:** resolver o carregamento do ProjectE vem antes de ajustar os preços.
 
 ### Issue #5 — relato original
 [chat do chatgpt sobre o modpack](https://github.com/Lucas-Belucci-Bellini/All-The-Mods-10/issues/5)
 
-O histórico registra que nenhum EMC aparece nem para pedra. Também registra a proposta de testar desativando temporariamente apenas ProjectE Integration, mantendo ProjectE e AutoEMC. É uma proposta de teste, não uma confirmação de que o conflito já foi corrigido.
+O histórico registra que nenhum EMC aparece nem para pedra. A proposta antiga de remover somente ProjectE Integration mantendo AutoEMC foi invalidada pelo log atual, pois AutoEMC 2.1.1 exige essa dependência. O teste deve desativar AutoEMC junto do Integration, e manter ProjectE instalado.
 
 ### Issue #1 — inventário de mods
 [mods do modpack antigo](https://github.com/Lucas-Belucci-Bellini/All-The-Mods-10/issues/1)
@@ -71,12 +73,12 @@ A presença desses valores no TOML **não prova que eles estão ativos no Projec
 ## Plano de diagnóstico seguro
 
 1. Fazer backup da instância e do mundo; fechar o jogo.
-2. Em uma **cópia** da instância, desativar temporariamente ProjectE Integration e AutoEMC juntos, mantendo ProjectE, Project Expansion e Ice and Fire CE. Fazer isso porque a documentação pública do AutoEMC é ambígua sobre a dependência obrigatória desta versão específica.
-3. Abrir um mundo de teste e verificar se pedra, terra e diamante exibem EMC e podem ser aprendidos na Transmutation Table.
-4. Guardar o novo `latest.log` e o log de debug.
-5. Se o EMC voltar, a presença de ProjectE Integration está envolvida no conflito. Depois, testar AutoEMC 2.1.1 sem ProjectE Integration numa segunda cópia, para confirmar se o jogo aceita essa combinação. Se EMC não voltar mesmo sem os dois addons, examinar a exceção do ProjectE no `latest.log` e isolar a hipótese de Immersive Engineering.
+2. Em uma **cópia** da instância, testar primeiro ProjectE + Project Expansion + ProjectE Integration + Ice and Fire CE, desativando apenas AutoEMC. Verificar os valores de EMC.
+3. Em outra cópia, manter ProjectE + Project Expansion + Ice and Fire CE, desativando **ProjectE Integration e AutoEMC juntos**. Não remover ProjectE.
+4. Em cada teste, guardar o `latest.log` e o log de debug e verificar pedra, terra, diamante e a Transmutation Table.
+5. Se o segundo teste funcionar e o primeiro não, a presença do Integration fica fortemente implicada. Se ambos falharem, examinar o erro original do ProjectE e isolar a hipótese de Immersive Engineering.
 
-Para a verificação de dependências e a ressalva sobre AutoEMC, consulte também [`DEPENDENCY_AUDIT.md`](DEPENDENCY_AUDIT.md).
+Para a verificação atualizada da dependência, consulte [`DEPENDENCY_AUDIT.md`](DEPENDENCY_AUDIT.md).
 6. Somente depois de o ProjectE ficar estável, gerar e auditar os EMCs.
 
 ## Critérios para o balanceamento posterior
