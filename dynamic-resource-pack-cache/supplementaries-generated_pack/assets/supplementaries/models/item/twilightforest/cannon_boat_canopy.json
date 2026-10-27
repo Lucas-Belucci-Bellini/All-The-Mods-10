@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "supplementaries:item/cannon_boat/twilightforest/cannon_boat_canopy"
+  }
+}

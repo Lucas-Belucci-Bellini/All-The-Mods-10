@@ -13,6 +13,8 @@
 		dieWithoutAnyReason = false
 		#The Y offset for the blood gui overlay.
 		bloodGuiOverlayPositionOffsetY = -5
+		#If the broom smash modifier should be enabled to allow breaking blocks.
+		broomSmashEnabled = true
 
 	[general.weather_container]
 		#If shapeless crafting of the higher tiers of weather containers should be enabled.
@@ -52,6 +54,10 @@
 		#The radius that will be kept spirit-proof.
 		area = 15
 
+	[block.eternal_water]
+		#If the Eternal Water Block should auto-output water to adjacent blocks by default.
+		autoOutputDefault = true
+
 	[machine.blood_chest]
 		#The amount of ticks required for repairing one damage value.
 		ticksPerDamage = 2
@@ -76,7 +82,9 @@
 		#The duration limit in ticks for which potion effect can be collected. Set to a negative value to allow any duration.
 		maxPotionEffectDuration = 6000
 		#Item that can not be disenchanted. Regular expressions are allowed.
-		disenchantBlacklist = ["tetra:.*","ars_nouveau:thread_wixie"]
+		disenchantBlacklist = ["tetra:.*", "ars_nouveau:thread_wixie"]
+		#Enchantments to be disqualified from disenchantment, or curses disallowed from purification. Regular expressions are allowed.
+		enchantmentIdBlacklist = []
 
 	[machine.spirit_furnace]
 		#How much mB per tick this furnace should consume.
@@ -276,6 +284,14 @@
 		#If creative versions for all variants should be added to the creative tab.
 		creativeTabVariants = true
 
+	[item.mace_of_distortion]
+		#The attack speed modifier of this mace, which is added to the default player attack speed of 4.
+		attackSpeed = -2.4
+
+	[item.mace_of_destruction]
+		#The attack speed modifier of this mace, which is added to the default player attack speed of 4.
+		attackSpeed = -3.0
+
 	[mob.kineticator]
 		#The blacklisted items which should not be influenced by the Kineticator, by unique item/blockState name.
 		kineticateBlacklist = ["appliedenergistics2:item.ItemCrystalSeed"]
@@ -303,6 +319,8 @@
 		alwaysVisibleInCreative = false
 		#The maximum amount of vengeance spirits naturally spawnable in the spawnLimitArea.
 		spawnLimit = 2
+		#If vengeance spirits should also spawn when entities are killed by non-player damage sources.
+		spawnOnNonPlayerKills = true
 
 	[mob.werewolf]
 		#If villagers struck by lightning should have a 50% chance of becoming a werewolf villager

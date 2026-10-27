@@ -33,21 +33,26 @@
 	#Allows your grave to appear in water [false/true|default:true]
 	allow_grave_in_water = true
 	#Decimal value for the color of the particles when using magic items [0..16777215|default:125656]
-	#Range: 0 ~ 16777215
+	# Default: 14937088
+	# Range: 0 ~ 16777215
 	particle_casting_color = 14937088
 	#Decimal value for the color of the grave text <Death Date> [0..16777215|default:2962496]
-	#Range: 0 ~ 16777215
+	# Default: 2962496
+	# Range: 0 ~ 16777215
 	text_color_death_date = 2962496
 	#Decimal value for the color of the grave text <R.I.P.> [0..16777215|default:2962496]
-	#Range: 0 ~ 16777215
+	# Default: 2962496
+	# Range: 0 ~ 16777215
 	text_color_rip = 2962496
 	#Decimal value for the color of the grave text <Owner Name> [0..16777215|default:5991302]
-	#Range: 0 ~ 16777215
+	# Default: 5991302
+	# Range: 0 ~ 16777215
 	text_color_owner = 5991302
 	#Decimal value of the fog color [0..16777215|default:125656]
-	#Range: 0 ~ 16777215
+	# Default: 16777215
+	# Range: 0 ~ 16777215
 	fog_color = 16777215
-	#Fog density around the graves [NONE/LOW/NORMAL/HIGH|default:LOW]
+	#Fog density around the graves [NONE/LOW/NORMAL/HIGH|default:NORMAL]
 	#Allowed Values: NONE, LOW, NORMAL, HIGH
 	fog_density = "LOW"
 	#Favorite grave
@@ -57,7 +62,7 @@
 	#Allowed Values: DARK, WHITE, BLUE, GREEN, CARMIN
 	favorite_grave_marble = "DARK"
 	#Defines the rule to use for grave's skin [DEFAULT/FORCE_NORMAL/FORCE_HALLOWEEN|default:DEFAULT]
-	#Allowed Values: DEFAULT, FORCE_NORMAL, FORCE_HALLOWEEN, FORCE_CHRISTMAS
+	#Allowed Values: DEFAULT, FORCE_NORMAL, FORCE_HALLOWEEN, FORCE_CHRISTMAS, FORCE_SPRING_BLOOM
 	grave_skin_rule = "DEFAULT"
 	#Defines when to automatically equip your items [NEVER/GRAVE_RECOVERY/DEATH_RESPAWN/ALWAYS|default:ALWAYS]
 	#Allowed Values: NEVER, GRAVE_RECOVERY, DEATH_RESPAWN, ALWAYS
@@ -72,3 +77,5 @@
 	show_tooltip_combine = true
 	#Prevent night vision from flashing when less than 5 seconds left [false/true|default:true]
 	no_blinking_nightvision = true
+	#Scales Tombstone guiscreens to be larger as possible [false/true|default:true]
+	scale_guiscreens = true

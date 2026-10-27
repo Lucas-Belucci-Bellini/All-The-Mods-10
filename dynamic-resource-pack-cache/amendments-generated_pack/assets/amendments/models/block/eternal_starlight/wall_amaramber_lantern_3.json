@@ -1,0 +1,9 @@
+{
+	"loader": "amendments:wall_lantern",
+	"support": {
+		"parent": "amendments:block/eternal_starlight/wall_amaramber_lantern_2_template",
+		"textures": {
+			"1": "amendments:block/wall_lanterns/eternal_starlight/amaramber_lantern"
+		}
+	}
+}

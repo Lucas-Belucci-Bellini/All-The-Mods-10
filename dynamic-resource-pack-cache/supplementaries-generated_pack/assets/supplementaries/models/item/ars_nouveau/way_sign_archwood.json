@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "supplementaries:item/way_signs/ars_nouveau/way_sign_archwood"
+  }
+}

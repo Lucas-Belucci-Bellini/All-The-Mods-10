@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "amendments:block/signs/productivetrees/sign_nectarine_wall"
+    },
+    "facing=south": {
+      "model": "amendments:block/signs/productivetrees/sign_nectarine_wall",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "amendments:block/signs/productivetrees/sign_nectarine_wall",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "amendments:block/signs/productivetrees/sign_nectarine_wall",
+      "y": 270
+    }
+  }
+}

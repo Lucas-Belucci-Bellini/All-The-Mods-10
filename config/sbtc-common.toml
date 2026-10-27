@@ -1,0 +1,22 @@
+#客户端动态背包贴图的通用设置。
+#这些设置只影响外观，不会改变背包容量或游戏平衡。
+#Common settings for client-side dynamic backpack textures.
+#These options affect appearance only, not capacity or game balance.
+[textures]
+	#从材料贴图取色后的颜色深度倍数；越大颜色越鲜艳。
+	#Colour-depth multiplier applied after sampling material textures; higher values are more vivid.
+	# Default: 2.0
+	# Range: 0.25 ~ 4.0
+	sampledColorDepthMultiplier = 2.0
+	#是否在日志中记录每张动态贴图使用的颜色。
+	#Whether to log the colour used for every generated texture.
+	logGeneratedColors = true
+
+	#固定色背包的 RGB 十六进制颜色。格式为 #RRGGBB。
+	#RGB hex colours for flat-colour backpacks. Format: #RRGGBB.
+	[textures.flatColors]
+		ignitium = "#F39A10"
+		cursium = "#25C9AC"
+		forgotten = "#B8A77A"
+		honeyCrystal = "#E5AA5C"
+		antimatter = "#BC75C0"

@@ -1,0 +1,9 @@
+{
+	"loader": "amendments:wall_lantern",
+	"support": {
+		"parent": "amendments:block/ars_additions/wall_archwood_lantern_4_template",
+		"textures": {
+			"1": "amendments:block/wall_lanterns/ars_additions/archwood_lantern"
+		}
+	}
+}
