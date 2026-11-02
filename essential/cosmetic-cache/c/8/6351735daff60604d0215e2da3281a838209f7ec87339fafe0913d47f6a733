@@ -1,0 +1,1 @@
+{"format_version":"1.8.0","animations":{"animation.style_stars.idle":{"loop":true,"animation_length":1.0,"particle_effects":{"0.0":[{"effect":"essential:shooting_star"},{"effect":"essential:style_stars"}],"0.0417":{"effect":"essential:back_stars"}}}},"triggers":[{"type":"IDLE","target":"ALL","name":"animation.style_stars.idle","loops":1,"priority":1}]}

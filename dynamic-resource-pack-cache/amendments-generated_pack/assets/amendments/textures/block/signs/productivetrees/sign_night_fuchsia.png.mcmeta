@@ -1,0 +1,42 @@
+{
+  "animation": {
+    "frametime": 200,
+    "interpolate": false,
+    "height": 16,
+    "width": 64,
+    "frames": [
+      {
+        "time": 200,
+        "index": 0
+      },
+      {
+        "time": 200,
+        "index": 1
+      },
+      {
+        "time": 200,
+        "index": 2
+      },
+      {
+        "time": 200,
+        "index": 3
+      },
+      {
+        "time": 200,
+        "index": 4
+      },
+      {
+        "time": 200,
+        "index": 3
+      },
+      {
+        "time": 200,
+        "index": 2
+      },
+      {
+        "time": 200,
+        "index": 1
+      }
+    ]
+  }
+}

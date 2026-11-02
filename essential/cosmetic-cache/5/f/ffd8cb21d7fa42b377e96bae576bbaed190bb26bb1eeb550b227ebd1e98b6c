@@ -1,0 +1,1 @@
+{"sound_definitions":{"em_broomstick_flight_enter":{"category":"hostile","max_distance":25.0,"sounds":[{"name":"sounds/broomstick_enter","interruptible":true,"volume":1.2}]},"em_broomstick_flight_loop":{"category":"hostile","max_distance":25.0,"sounds":[{"name":"sounds/broomstick_loop","interruptible":true,"volume":0.8}]}}}

@@ -1,0 +1,8 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "amendments:block/signs/sign_2",
+	"textures": {
+		"1": "amendments:block/signs/twilightforest/sign_sorting",
+		"particle": "amendments:block/signs/twilightforest/sign_sorting"
+	}
+}
