@@ -10,6 +10,7 @@
 	images: [
 		{
 			height: 1.0d
+			id: "62891C548678D2C2"
 			image: "mekanismtools:item/osmium/paxel"
 			rotation: 0.0d
 			width: 1.0d
@@ -18,6 +19,7 @@
 		}
 		{
 			height: 2.0d
+			id: "16DABB6BE51BF97C"
 			image: "atm:textures/questpics/mek/mek_title.png"
 			rotation: 0.0d
 			width: 6.0d
@@ -26,6 +28,7 @@
 		}
 		{
 			height: 1.0d
+			id: "1D07A0DAF8D8281D"
 			image: "atm:textures/questpics/mek/mek_title_basic.png"
 			rotation: 0.0d
 			width: 4.0d
@@ -34,6 +37,7 @@
 		}
 		{
 			height: 1.0d
+			id: "55F40A099CA75D17"
 			image: "atm:textures/questpics/mek/mek_title_advanced.png"
 			rotation: 0.0d
 			width: 6.0d
@@ -42,6 +46,7 @@
 		}
 		{
 			height: 1.0d
+			id: "4809B4F09D4BB7DC"
 			image: "atm:textures/questpics/mek/mek_title_elite.png"
 			rotation: 0.0d
 			width: 4.0d
@@ -50,6 +55,7 @@
 		}
 		{
 			height: 1.0d
+			id: "3FB082C6CB5B2594"
 			image: "atm:textures/questpics/mek/mek_title_ultimate.png"
 			rotation: 0.0d
 			width: 5.0d
@@ -58,6 +64,7 @@
 		}
 		{
 			height: 2.0d
+			id: "1D2FE240AC0494B0"
 			image: "atm:textures/questpics/mek/mek_title_machines.png"
 			rotation: 0.0d
 			width: 7.0d
@@ -66,6 +73,7 @@
 		}
 		{
 			height: 2.0d
+			id: "43A640D8D682E007"
 			image: "atm:textures/questpics/mek/mek_title_logistics.png"
 			rotation: 0.0d
 			width: 6.0d
@@ -74,6 +82,7 @@
 		}
 		{
 			height: 2.0d
+			id: "47937A81E20B355C"
 			image: "atm:textures/questpics/mek/mek_title_machines.png"
 			rotation: 0.0d
 			width: 7.0d
@@ -82,6 +91,7 @@
 		}
 		{
 			height: 1.0d
+			id: "539B314DB5ECAB86"
 			image: "atm:textures/questpics/mek/mek_title_mo.png"
 			rotation: 0.0d
 			width: 5.0d
@@ -90,6 +100,7 @@
 		}
 		{
 			height: 1.0d
+			id: "346AAAB81FD5708C"
 			image: "atm:textures/questpics/mek/mek_title_upgrades.png"
 			rotation: 0.0d
 			width: 3.0d
@@ -98,6 +109,7 @@
 		}
 		{
 			height: 2.0d
+			id: "31EF7EF98E356D93"
 			image: "atm:textures/questpics/mek/mek_title_energy.png"
 			rotation: 0.0d
 			width: 4.0d
@@ -106,6 +118,7 @@
 		}
 		{
 			height: 1.0d
+			id: "1A027C453EE1B1C1"
 			image: "atm:textures/questpics/mek/mek_title_tools.png"
 			rotation: 0.0d
 			width: 2.0d
@@ -114,6 +127,7 @@
 		}
 		{
 			height: 1.0d
+			id: "5F37D68D98958EBB"
 			image: "atm:textures/questpics/mek/mek_title_1.png"
 			rotation: 0.0d
 			width: 6.0d
@@ -122,6 +136,7 @@
 		}
 		{
 			height: 1.0d
+			id: "67C46E0C2259B13E"
 			image: "atm:textures/questpics/mek/mek_title_2.png"
 			rotation: 0.0d
 			width: 6.0d
@@ -130,6 +145,7 @@
 		}
 		{
 			height: 1.0d
+			id: "2D58C3C11821E6A9"
 			image: "atm:textures/questpics/mek/mek_title_3.png"
 			rotation: 0.0d
 			width: 6.0d
@@ -138,6 +154,7 @@
 		}
 		{
 			height: 1.0d
+			id: "0B85A82CCEDEE437"
 			image: "atm:textures/questpics/mek/mek_title_4.png"
 			rotation: 0.0d
 			width: 6.0d
@@ -146,6 +163,7 @@
 		}
 		{
 			height: 3.0d
+			id: "2971E488AA8205CE"
 			image: "atm:textures/questpics/mek/mek_wind.png"
 			rotation: 0.0d
 			width: 2.0d
@@ -154,6 +172,7 @@
 		}
 		{
 			height: 3.0d
+			id: "6893BBFE93C4A31F"
 			image: "atm:textures/questpics/mek/mek_wind.png"
 			rotation: 0.0d
 			width: 2.0d
@@ -162,6 +181,7 @@
 		}
 		{
 			height: 3.0d
+			id: "6E8B5B2B321995E5"
 			image: "atm:textures/questpics/mek/mek_wind.png"
 			rotation: 0.0d
 			width: 2.0d
@@ -170,6 +190,7 @@
 		}
 		{
 			height: 2.0d
+			id: "61E41833BACD1752"
 			image: "atm:textures/questpics/mek/mek_solar.png"
 			rotation: 0.0d
 			width: 2.0d
@@ -178,6 +199,7 @@
 		}
 		{
 			height: 2.0d
+			id: "00E375223C70E104"
 			image: "atm:textures/questpics/mek/mek_solar.png"
 			rotation: 0.0d
 			width: 2.0d
@@ -186,6 +208,7 @@
 		}
 		{
 			height: 2.0d
+			id: "7186A5B098958A4B"
 			image: "atm:textures/questpics/mek/mek_box.png"
 			rotation: 0.0d
 			width: 2.0d
@@ -194,6 +217,7 @@
 		}
 		{
 			height: 2.0d
+			id: "041648C5F1351354"
 			image: "atm:textures/questpics/mek/mek_enrich.png"
 			rotation: 0.0d
 			width: 2.0d
@@ -202,6 +226,7 @@
 		}
 		{
 			height: 2.0d
+			id: "5C3D4E11AD5C1A5F"
 			image: "atm:textures/questpics/mek/mek_fluid.png"
 			rotation: 0.0d
 			width: 1.5d
@@ -210,6 +235,7 @@
 		}
 		{
 			height: 2.0d
+			id: "36F569F9763E62BE"
 			image: "atm:textures/questpics/mek/mek_chemical.png"
 			rotation: 0.0d
 			width: 1.5d
@@ -217,7 +243,7 @@
 			y: -9.5d
 		}
 	]
-	order_index: 5
+	order_index: 6
 	progression_mode: "flexible"
 	quest_links: [ ]
 	quests: [
@@ -1090,10 +1116,10 @@
 		}
 		{
 			id: "4A1C8125896F7F1A"
-			tags: ["arr"]
 			invisible: true
 			optional: true
 			shape: "circle"
+			tags: ["arr"]
 			tasks: [
 				{
 					id: "62F11A588B293CA6"
@@ -2530,7 +2556,7 @@
 				{
 					count: 33L
 					id: "16BF380980B2DE0C"
-					item: { count: 33, id: "mekanism:thermal_evaporation_block" }
+					item: { count: 1, id: "mekanism:thermal_evaporation_block" }
 					type: "item"
 				}
 				{
@@ -2541,7 +2567,7 @@
 				{
 					count: 2L
 					id: "10105D951F3248A7"
-					item: { count: 2, id: "mekanism:thermal_evaporation_valve" }
+					item: { count: 1, id: "mekanism:thermal_evaporation_valve" }
 					type: "item"
 				}
 				{
@@ -2634,7 +2660,7 @@
 				{
 					count: 33L
 					id: "16C70D3717B4AFA6"
-					item: { count: 33, id: "mekanism:thermal_evaporation_block" }
+					item: { count: 1, id: "mekanism:thermal_evaporation_block" }
 					type: "item"
 				}
 				{
@@ -2919,7 +2945,7 @@
 				{
 					count: 33L
 					id: "2CC21EF452CFFF59"
-					item: { count: 33, id: "mekanism:thermal_evaporation_block" }
+					item: { count: 1, id: "mekanism:thermal_evaporation_block" }
 					type: "item"
 				}
 				{
@@ -2930,7 +2956,7 @@
 				{
 					count: 2L
 					id: "41E94425E789750E"
-					item: { count: 2, id: "mekanism:thermal_evaporation_valve" }
+					item: { count: 1, id: "mekanism:thermal_evaporation_valve" }
 					type: "item"
 				}
 				{

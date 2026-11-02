@@ -1,0 +1,222 @@
+{
+  "comment": "Endgame liberado (ATM, Draconic, antimateria) e itens sem receita (prensas do AE2). Valores altos para nao quebrar a progressao.",
+  "values": {
+    "before": [
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/allthemodium",
+        "emc_value": 32768
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/vibranium",
+        "emc_value": 65536
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/unobtainium",
+        "emc_value": 131072
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/draconium",
+        "emc_value": 8192
+      },
+      {
+        "type": "projecte:item",
+        "id": "draconicevolution:dragon_heart",
+        "emc_value": 262144
+      },
+      {
+        "type": "projecte:item",
+        "id": "draconicevolution:chaos_shard",
+        "emc_value": 1048576
+      },
+      {
+        "type": "projecte:item",
+        "id": "ae2:calculation_processor_press",
+        "emc_value": 8192
+      },
+      {
+        "type": "projecte:item",
+        "id": "ae2:engineering_processor_press",
+        "emc_value": 8192
+      },
+      {
+        "type": "projecte:item",
+        "id": "ae2:logic_processor_press",
+        "emc_value": 8192
+      },
+      {
+        "type": "projecte:item",
+        "id": "ae2:silicon_press",
+        "emc_value": 8192
+      },
+      {
+        "type": "projecte:item",
+        "id": "ae2:sky_stone_block",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "mekanism:pellet_antimatter",
+        "emc_value": 524288
+      },
+      {
+        "type": "projecte:item",
+        "id": "allthemodium:ancient_dirt",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "allthemodium:ancient_fern",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "allthemodium:ancient_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "allthemodium:ancient_herb",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "allthemodium:ancient_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "allthemodium:ancient_log_0",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "allthemodium:ancient_log_1",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "allthemodium:ancient_log_2",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "allthemodium:ancient_podzol",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "allthemodium:ancient_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "allthemodium:ancient_soulberries",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "allthemodium:ancient_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "allthemodium:demonic_herb",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "allthemodium:demonic_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "allthemodium:demonic_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "allthemodium:demonic_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "allthemodium:soul_herb",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "allthemodium:soul_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "allthemodium:soul_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "allthemodium:soul_log_0",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "allthemodium:soul_log_1",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "allthemodium:soul_log_2",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "allthemodium:soul_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "allthemodium:stripped_ancient_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "allthemodium:stripped_demonic_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "allthemodium:stripped_soul_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "allthemodium:suspicious_clay",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "allthemodium:suspicious_soul_sand",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "draconicevolution:awakened_draconium_ingot",
+        "emc_value": 23552
+      },
+      {
+        "type": "projecte:item",
+        "id": "draconicevolution:awakened_draconium_dust",
+        "emc_value": 23552
+      },
+      {
+        "type": "projecte:item",
+        "id": "draconicevolution:awakened_draconium_block",
+        "emc_value": 211968
+      }
+    ]
+  }
+}

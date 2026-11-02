@@ -9,9 +9,9 @@
 	id: "4EAAE0CEB26378A6"
 	images: [
 		{
-			click: "https://m.youtube.com/watch?v=phsjFbUs7gw"
+			click_action: "open_uri:https://m.youtube.com/watch?v=phsjFbUs7gw"
 			height: 1.0d
-			hover: ["Pilpoh's Time Crystal Automation Tutorial"]
+			id: "495AB9715A6E243D"
 			image: "actuallyadditions:item/youtube"
 			rotation: 0.0d
 			width: 1.0d
@@ -20,6 +20,7 @@
 		}
 		{
 			height: 0.25d
+			id: "64906D4036E4ABD1"
 			image: "allthetweaks:item/atm_star"
 			rotation: 0.0d
 			width: 0.25d
@@ -28,6 +29,7 @@
 		}
 		{
 			height: 0.25d
+			id: "700BB6072740D75E"
 			image: "allthetweaks:item/atm_star"
 			rotation: 0.0d
 			width: 0.25d
@@ -35,7 +37,7 @@
 			y: -8.089285714285715d
 		}
 	]
-	order_index: 4
+	order_index: 5
 	progression_mode: "flexible"
 	quest_links: [ ]
 	quests: [
@@ -3040,10 +3042,10 @@
 		}
 		{
 			id: "441F37A95AB66E6B"
-			tags: ["arr"]
 			invisible: true
 			optional: true
 			shape: "circle"
+			tags: ["arr"]
 			tasks: [
 				{
 					id: "19931057AAC1A03A"
@@ -3087,6 +3089,7 @@
 						id: "justdirethings:time_crystal_budding_block"
 					}
 					id: "0FB06A55F5FE6F26"
+					observation_type: "block"
 					observe_type: 0
 					timer: 0L
 					to_observe: "justdirethings:time_crystal_budding_block"

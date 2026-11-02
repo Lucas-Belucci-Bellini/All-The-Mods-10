@@ -1,0 +1,20 @@
+# Invert the scroll direction in the radial menu
+# Default: false
+invert_radial_scroll = false
+# Defines when the tooltip in the radial menu should be displayed
+# Default: ALWAYS
+# ALWAYS - Always show the tooltip
+# SHIFT - Only show the tooltip when holding shift
+# NEVER - Never show the tooltip
+#Allowed Values: ALWAYS, SHIFT, NEVER
+radial_tooltip = "ALWAYS"
+# Defines when stack size label should be displayed for single items
+# Default: TOOLS_ONLY
+# ALWAYS - Always show the stack counts for single items
+# TOOLS_ONLY - Hide stack counts for tools & armor only
+# NEVER - Never show the stack count for single items
+#Allowed Values: ALWAYS, TOOLS_ONLY, NEVER
+radial_stack_count = "TOOLS_ONLY"
+# Reopen radial menu on last closed row
+# Default: true
+remember_radial_row = true

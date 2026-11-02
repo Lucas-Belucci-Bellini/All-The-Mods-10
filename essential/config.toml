@@ -21,7 +21,7 @@
 
 [hidden]
 	play_emote_sounds_in_wardrobe = true
-	previously_launched_with_container = 0
+	previously_launched_with_container = 1
 	acknowledged_permanent_suspension = false
 
 	[hidden.hidden]
@@ -50,7 +50,6 @@
 
 	[notifications.general]
 		disable_all_notifications = false
-		host_world_ip_warning = true
 		update_notifications = true
 		screenshot_toast_duration = 1
 		message_sound = true
@@ -97,7 +96,14 @@
 		"screenshot_quick_action_#4_-_bottom_right" = 4
 
 [__meta]
-	version = 12
+	version = 13
+
+	[__meta.migration_log]
+
+		[__meta.migration_log.12]
+
+			[__meta.migration_log.12.changed]
+				"notifications.general.host_world_ip_warning" = true
 
 [cosmetics]
 

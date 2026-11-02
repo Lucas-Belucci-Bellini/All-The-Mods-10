@@ -1,0 +1,13 @@
+[
+  {"version":2},
+  {"ingredient":{"id":"projectexpansion:fading_matter_block"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"allthecompressed:diorite_1x"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"recipe":"immersiveengineering:crafting/treated_wood_horizontal_from_packaged","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
+  {"ingredient":{"id":"projectexpansion:gargantuan_star_drei"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"projectexpansion:arcane_transmutation_tablet"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"immersiveengineering:treated_wood_horizontal"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"immersiveengineering:sample_drill"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"immersiveengineering:cloche"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"recipe":"occultism:crafting/otherflower_to_lime_dye","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
+  {"ingredient":{"id":"minecraft:lime_dye"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

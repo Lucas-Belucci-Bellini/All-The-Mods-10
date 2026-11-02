@@ -1,0 +1,46 @@
+Detected that Windows reported recent critical or error events in the Application log,
+which can indicate that a process (including the Minecraft JVM) terminated unexpectedly.
+Scope: Application log; Levels: Error & Critical; Window: last ~15 seconds.
+
+If no java.exe (or related JVM processes) are listed below, you can disregard this message.
+To inspect these events manually:
+  1) Press Win+R, type "eventvwr.msc", press Enter.
+  2) Open "Windows Logs" → "Application".
+  3) Sort by Date and look for entries with Level = Error or Critical near the crash time.
+
+-----------------------
+Time: 2026-11-02 00:59:02.736 BRT
+Source: Application Error
+Event ID: 1000
+Level: Error
+
+Message:
+  Nome do aplicativo com falha: javaw.exe, versão: 21.0.12.1, carimbo de data/hora: 0x9c5f62de
+  Nome do módulo com falha: OpenAL.dll, versão: 1.23.1.0, carimbo de data/hora: 0x647635a1
+  Código de exceção: 0xc0000409
+  Deslocamento de falha: 0x00000000000a2b05
+  ID do processo com falha: 0x978
+  Hora de início do aplicativo com falha: 0x1DD6A7DD7E5801B
+  Caminho do aplicativo com falha: C:\Users\SpartanGamerBR\curseforge\minecraft\Install\java\java-runtime-delta\bin\javaw.exe
+  Caminho do módulo com falha: C:\Users\SpartanGamerBR\curseforge\minecraft\Install\natives\neoforge-21.1.259\OpenAL.dll
+  ID do relatório: 72741191-ac17-4a8e-b5b5-be81d1e2278b
+  Nome completo do pacote com falha: 
+  ID do aplicativo relativo ao pacote com falha:
+
+
+Details:
+  - AppName: javaw.exe
+  - AppVersion: 21.0.12.1
+  - AppTimeStamp: 9c5f62de
+  - ModuleName: OpenAL.dll
+  - ModuleVersion: 1.23.1.0
+  - ModuleTimeStamp: 647635a1
+  - ExceptionCode: c0000409
+  - FaultingOffset: 00000000000a2b05
+  - Process ID: 2424 [0x978]
+  - ProcessCreationTime: 0x1dd6a7dd7e5801b
+  - AppPath: C:\Users\SpartanGamerBR\curseforge\minecraft\Install\java\java-runtime-delta\bin\javaw.exe
+  - ModulePath: C:\Users\SpartanGamerBR\curseforge\minecraft\Install\natives\neoforge-21.1.259\OpenAL.dll
+  - IntegratorReportId: 72741191-ac17-4a8e-b5b5-be81d1e2278b
+-----------------------
+

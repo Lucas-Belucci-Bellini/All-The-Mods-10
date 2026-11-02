@@ -9,6 +9,7 @@
 	id: "5C4F10E65D86ED0E"
 	images: [{
 		height: 5.5d
+		id: "22F091DD6FBDB0CC"
 		image: "atm:textures/questpics/modernindustrialization/ebf.png"
 		rotation: 0.0d
 		width: 4.5d
@@ -33,7 +34,7 @@
 			tasks: [{
 				count: 4L
 				id: "691AB40D72F751E4"
-				item: { count: 4, id: "modern_industrialization:battery_alloy_ingot" }
+				item: { count: 1, id: "modern_industrialization:battery_alloy_ingot" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -385,7 +386,7 @@
 				{
 					count: 14L
 					id: "415FEEAE6A4A5B4D"
-					item: { count: 14, id: "modern_industrialization:heatproof_machine_casing" }
+					item: { count: 1, id: "modern_industrialization:heatproof_machine_casing" }
 					type: "item"
 				}
 				{
@@ -648,7 +649,7 @@
 				{
 					count: 30L
 					id: "70F211A6F38841BE"
-					item: { count: 30, id: "modern_industrialization:frostproof_machine_casing" }
+					item: { count: 1, id: "modern_industrialization:frostproof_machine_casing" }
 					type: "item"
 				}
 				{
@@ -698,7 +699,7 @@
 				{
 					count: 35L
 					id: "7BC14728678BD605"
-					item: { count: 35, id: "modern_industrialization:steel_machine_casing" }
+					item: { count: 1, id: "modern_industrialization:steel_machine_casing" }
 					type: "item"
 				}
 				{
@@ -996,10 +997,10 @@
 		}
 		{
 			id: "3EB39C72800A741D"
-			tags: ["arr"]
 			invisible: true
 			optional: true
 			shape: "circle"
+			tags: ["arr"]
 			tasks: [
 				{
 					id: "2331AA60CA6E2304"

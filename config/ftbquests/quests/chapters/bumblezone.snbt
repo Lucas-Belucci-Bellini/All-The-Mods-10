@@ -11,6 +11,7 @@
 	images: [
 		{
 			height: 2.0d
+			id: "3C30183A1B4A9FA6"
 			image: "atm:textures/questpics/bumblezone/bumble_title.png"
 			rotation: 0.0d
 			width: 11.936170212765957d
@@ -19,6 +20,7 @@
 		}
 		{
 			height: 1.0d
+			id: "3807F7DF338076EA"
 			image: "atm:textures/questpics/bumblezone/bumble_title_structures.png"
 			rotation: 0.0d
 			width: 5.1d
@@ -27,6 +29,7 @@
 		}
 		{
 			height: 1.0d
+			id: "51CCC0C94601B1E1"
 			image: "atm:textures/questpics/bumblezone/bumble_title_mobs.png"
 			rotation: 0.0d
 			width: 2.7916666666666665d
@@ -35,6 +38,7 @@
 		}
 		{
 			height: 1.0d
+			id: "3247D011D2BD9662"
 			image: "atm:textures/questpics/bumblezone/bumble_title_tools.png"
 			rotation: 0.0d
 			width: 2.736111111111111d
@@ -43,6 +47,7 @@
 		}
 		{
 			height: 1.0d
+			id: "3D768D26D9082E51"
 			image: "atm:textures/questpics/bumblezone/bumble_title_armor.png"
 			rotation: 0.0d
 			width: 3.2753623188405796d
@@ -51,6 +56,7 @@
 		}
 		{
 			height: 1.0d
+			id: "1A91F7E0CEE759D2"
 			image: "atm:textures/questpics/bumblezone/bumble_title_special.png"
 			rotation: 0.0d
 			width: 3.0941176470588236d
@@ -60,6 +66,7 @@
 		{
 			dependency: "396CEB9D05700927"
 			height: 1.5d
+			id: "40CA96A4BDE79527"
 			image: "atm:textures/questpics/bumblezone/bumble_title_progression.png"
 			rotation: 0.0d
 			width: 7.243243243243244d
@@ -68,6 +75,7 @@
 		}
 		{
 			height: 2.0d
+			id: "674CA3ADDB9821B6"
 			image: "atm:textures/questpics/bumblezone/bumble_rootmin3.png"
 			rotation: 0.0d
 			width: 3.5555555555555554d
@@ -76,6 +84,7 @@
 		}
 		{
 			height: 2.0d
+			id: "3470B043C3A39071"
 			image: "atm:textures/questpics/bumblezone/bumble_beehemoth.png"
 			rotation: 0.0d
 			width: 2.2282608695652173d
@@ -84,6 +93,7 @@
 		}
 		{
 			height: 3.0d
+			id: "539398AFB0BF495E"
 			image: "atm:textures/questpics/bumblezone/bumble_armor2.png"
 			rotation: 0.0d
 			width: 1.475206611570248d
@@ -92,6 +102,7 @@
 		}
 		{
 			height: 3.0d
+			id: "60EA9A9935FDF062"
 			image: "atm:textures/questpics/bumblezone/bumble_armor1.png"
 			rotation: 0.0d
 			width: 1.4297872340425533d
@@ -100,6 +111,7 @@
 		}
 		{
 			height: 3.0d
+			id: "1C80D985ABF4F7A3"
 			image: "atm:textures/questpics/bumblezone/bumble_cannon2.png"
 			rotation: 0.0d
 			width: 1.3043478260869565d
@@ -108,6 +120,7 @@
 		}
 		{
 			height: 3.0d
+			id: "394A2A7329D3D11F"
 			image: "atm:textures/questpics/bumblezone/bumble_cannon3.png"
 			rotation: 0.0d
 			width: 1.2885906040268456d
@@ -116,6 +129,7 @@
 		}
 		{
 			height: 3.0d
+			id: "0069D19C489628D7"
 			image: "atm:textures/questpics/bumblezone/bumble_shield.png"
 			rotation: 0.0d
 			width: 1.9675324675324677d
@@ -124,6 +138,7 @@
 		}
 		{
 			height: 3.0d
+			id: "03C64727995E4EF8"
 			image: "atm:textures/questpics/bumblezone/bumble_spear.png"
 			rotation: 0.0d
 			width: 1.9177215189873418d
@@ -131,10 +146,10 @@
 			y: 6.0d
 		}
 		{
-			click: "#5C040191740A53C8"
+			click_action: "open_quest:5C040191740A53C8"
 			dependency: "5C040191740A53C8"
 			height: 2.5d
-			hover: ["Your Highness"]
+			id: "310005DD2838275E"
 			image: "atm:textures/questpics/bumblezone/bumble_queen.png"
 			rotation: 0.0d
 			width: 4.444444444444445d
@@ -142,10 +157,10 @@
 			y: -1.0d
 		}
 		{
-			click: "#30C12E249F7E2D52"
+			click_action: "open_quest:30C12E249F7E2D52"
 			dependency: "30C12E249F7E2D52"
 			height: 2.5d
-			hover: ["Cell Maze"]
+			id: "1595E93BEA60E038"
 			image: "atm:textures/questpics/bumblezone/bumble_cell.png"
 			rotation: 0.0d
 			width: 4.444444444444445d
@@ -153,10 +168,10 @@
 			y: -1.0d
 		}
 		{
-			click: "#46FEF3DB6A5B52A0"
+			click_action: "open_quest:46FEF3DB6A5B52A0"
 			dependency: "46FEF3DB6A5B52A0"
 			height: 2.5d
-			hover: ["Battle Cubes"]
+			id: "135D7419473FE203"
 			image: "atm:textures/questpics/bumblezone/bumble_cube.png"
 			rotation: 0.0d
 			width: 4.444444444444445d
@@ -164,10 +179,10 @@
 			y: -4.0d
 		}
 		{
-			click: "#4040BFCD4BE56621"
+			click_action: "open_quest:4040BFCD4BE56621"
 			dependency: "4040BFCD4BE56621"
 			height: 2.5d
-			hover: ["Honitel"]
+			id: "065D7F5EAD652DE2"
 			image: "atm:textures/questpics/bumblezone/bumble_honitel.png"
 			rotation: 0.0d
 			width: 4.444444444444445d
@@ -176,6 +191,7 @@
 		}
 		{
 			height: 5.0d
+			id: "094FABCBBBD94289"
 			image: "atm:textures/questpics/bumblezone/bumble_variants.png"
 			rotation: 0.0d
 			width: 8.88d
@@ -185,6 +201,7 @@
 		{
 			dependency: "46FEF3DB6A5B52A0"
 			height: 0.75d
+			id: "217ACD83B100A66A"
 			image: "atm:textures/questpics/bumblezone/bumble_frame.png"
 			order: 1
 			rotation: 0.0d
@@ -195,6 +212,7 @@
 		{
 			dependency: "46FEF3DB6A5B52A0"
 			height: 0.75d
+			id: "335DE9813A2E27B5"
 			image: "atm:textures/questpics/bumblezone/bumble_frame.png"
 			order: 1
 			rotation: 180.0d
@@ -205,6 +223,7 @@
 		{
 			dependency: "4040BFCD4BE56621"
 			height: 0.75d
+			id: "727029D2D7001A09"
 			image: "atm:textures/questpics/bumblezone/bumble_frame.png"
 			order: 1
 			rotation: 180.0d
@@ -215,6 +234,7 @@
 		{
 			dependency: "5C040191740A53C8"
 			height: 0.75d
+			id: "02E61D91E124E7FD"
 			image: "atm:textures/questpics/bumblezone/bumble_frame.png"
 			order: 1
 			rotation: 180.0d
@@ -225,6 +245,7 @@
 		{
 			dependency: "30C12E249F7E2D52"
 			height: 0.75d
+			id: "3C85CFBC9660CF0B"
 			image: "atm:textures/questpics/bumblezone/bumble_frame.png"
 			order: 1
 			rotation: 180.0d
@@ -235,6 +256,7 @@
 		{
 			dependency: "4040BFCD4BE56621"
 			height: 0.75d
+			id: "658C8C9596EFBB17"
 			image: "atm:textures/questpics/bumblezone/bumble_frame.png"
 			order: 1
 			rotation: 0.0d
@@ -245,6 +267,7 @@
 		{
 			dependency: "5C040191740A53C8"
 			height: 0.75d
+			id: "6B2C1634B0FD33AF"
 			image: "atm:textures/questpics/bumblezone/bumble_frame.png"
 			order: 1
 			rotation: 0.0d
@@ -255,6 +278,7 @@
 		{
 			dependency: "30C12E249F7E2D52"
 			height: 0.75d
+			id: "71B482006D36A901"
 			image: "atm:textures/questpics/bumblezone/bumble_frame.png"
 			order: 1
 			rotation: 0.0d
@@ -264,6 +288,7 @@
 		}
 		{
 			height: 0.75d
+			id: "6B51A2B26EC0B93E"
 			image: "atm:textures/questpics/bumblezone/bumble_frame.png"
 			rotation: 0.0d
 			width: 3.55d
@@ -272,6 +297,7 @@
 		}
 		{
 			height: 0.75d
+			id: "4423CF24A27A8D55"
 			image: "atm:textures/questpics/bumblezone/bumble_frame.png"
 			rotation: 180.0d
 			width: 3.55d
@@ -280,6 +306,7 @@
 		}
 		{
 			height: 5.0d
+			id: "09EED69662ADFB50"
 			image: "atm:textures/questpics/bumblezone/bumble_variants.png"
 			rotation: 0.0d
 			width: 8.88d
@@ -288,6 +315,7 @@
 		}
 		{
 			height: 5.0d
+			id: "28E6EF9A50B33A7B"
 			image: "atm:textures/questpics/bumblezone/bumble_variants.png"
 			rotation: 0.0d
 			width: 8.88d
@@ -295,7 +323,7 @@
 			y: 0.0d
 		}
 	]
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -1448,6 +1476,7 @@
 			}]
 			tasks: [{
 				id: "262F74C837037298"
+				observation_type: "block"
 				observe_type: 0
 				timer: 0L
 				to_observe: "the_bumblezone:ancient_wax_diamond"
@@ -1477,6 +1506,7 @@
 			}]
 			tasks: [{
 				id: "2A719B03218D5DB8"
+				observation_type: "block"
 				observe_type: 0
 				timer: 0L
 				to_observe: "the_bumblezone:honeycomb_brood_block"
@@ -3052,10 +3082,10 @@
 		}
 		{
 			id: "565EBD340595EAC4"
-			tags: ["arr"]
 			invisible: true
 			optional: true
 			shape: "circle"
+			tags: ["arr"]
 			tasks: [
 				{
 					id: "1884D3DA3CCC1439"

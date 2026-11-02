@@ -10,6 +10,7 @@
 	images: [
 		{
 			height: 1.0d
+			id: "08297A824DDEF6EC"
 			image: "industrialforegoing:block/reactor_front_mycelial"
 			rotation: 0.0d
 			width: 1.0d
@@ -18,6 +19,7 @@
 		}
 		{
 			height: 1.0d
+			id: "21933A5B8DE1B48E"
 			image: "industrialforegoing:block/generators/generator_front_crimed"
 			rotation: 0.0d
 			width: 1.0d
@@ -26,6 +28,7 @@
 		}
 		{
 			height: 1.0d
+			id: "70E62426A7D8E9C4"
 			image: "industrialforegoing:block/generators/generator_front_culinary"
 			rotation: 0.0d
 			width: 1.0d
@@ -34,6 +37,7 @@
 		}
 		{
 			height: 1.0d
+			id: "77073E3C77DFB423"
 			image: "industrialforegoing:block/generators/generator_front_death"
 			rotation: 0.0d
 			width: 1.0d
@@ -42,6 +46,7 @@
 		}
 		{
 			height: 1.0d
+			id: "7EFE6B670BB0235B"
 			image: "industrialforegoing:block/generators/generator_front_disenchantment"
 			rotation: 0.0d
 			width: 1.0d
@@ -50,6 +55,7 @@
 		}
 		{
 			height: 1.0d
+			id: "65B7AC6B0DADDB8F"
 			image: "industrialforegoing:block/generators/generator_front_ender"
 			rotation: 0.0d
 			width: 1.0d
@@ -58,6 +64,7 @@
 		}
 		{
 			height: 1.0d
+			id: "2A2D18900C8E744A"
 			image: "industrialforegoing:block/generators/generator_front_explosive"
 			rotation: 0.0d
 			width: 1.0d
@@ -66,6 +73,7 @@
 		}
 		{
 			height: 1.0d
+			id: "7519531D144C5818"
 			image: "industrialforegoing:block/generators/generator_front_frosty"
 			rotation: 0.0d
 			width: 1.0d
@@ -74,6 +82,7 @@
 		}
 		{
 			height: 1.0d
+			id: "429B1F1D26CDD37A"
 			image: "industrialforegoing:block/generators/generator_front_furnace"
 			rotation: 0.0d
 			width: 1.0d
@@ -82,6 +91,7 @@
 		}
 		{
 			height: 1.0d
+			id: "4F82E3812EF9C36F"
 			image: "industrialforegoing:block/generators/generator_front_halitosis"
 			rotation: 0.0d
 			width: 1.0d
@@ -90,6 +100,7 @@
 		}
 		{
 			height: 1.0d
+			id: "3322A2A63EAC21DD"
 			image: "industrialforegoing:block/generators/generator_front_magmatic"
 			rotation: 0.0d
 			width: 1.0d
@@ -98,6 +109,7 @@
 		}
 		{
 			height: 1.0d
+			id: "68EE0723F398A8BE"
 			image: "industrialforegoing:block/generators/generator_front_meatallurgic"
 			rotation: 0.0d
 			width: 1.0d
@@ -106,6 +118,7 @@
 		}
 		{
 			height: 1.0d
+			id: "55D8A4E1EC449400"
 			image: "industrialforegoing:block/generators/generator_front_netherstar"
 			rotation: 0.0d
 			width: 1.0d
@@ -114,6 +127,7 @@
 		}
 		{
 			height: 1.0d
+			id: "02B5CE70F781FA98"
 			image: "industrialforegoing:block/generators/generator_front_pink"
 			rotation: 0.0d
 			width: 1.0d
@@ -122,6 +136,7 @@
 		}
 		{
 			height: 1.0d
+			id: "4712531B64F7CB3B"
 			image: "industrialforegoing:block/generators/generator_front_potion"
 			rotation: 0.0d
 			width: 1.0d
@@ -130,6 +145,7 @@
 		}
 		{
 			height: 1.0d
+			id: "7D57F4F04366DB73"
 			image: "industrialforegoing:block/generators/generator_front_rocket"
 			rotation: 0.0d
 			width: 1.0d
@@ -138,6 +154,7 @@
 		}
 		{
 			height: 1.0d
+			id: "0951B75C662F0FE7"
 			image: "industrialforegoing:block/generators/generator_front_slimey"
 			rotation: 0.0d
 			width: 1.0d
@@ -145,9 +162,9 @@
 			y: 14.5d
 		}
 		{
-			click: "#0EC2053B191C55C6"
+			click_action: "open_quest:0EC2053B191C55C6"
 			height: 1.0d
-			hover: ["Fluid Extractor"]
+			id: "303E3377399E30D5"
 			image: "industrialforegoing:block/tree_fluid_extractor_back"
 			rotation: 0.0d
 			width: 1.0d
@@ -155,9 +172,9 @@
 			y: 2.910034013605461d
 		}
 		{
-			click: "#294C729B9EBD7A3C"
+			click_action: "open_quest:294C729B9EBD7A3C"
 			height: 1.0d
-			hover: ["Block Placer"]
+			id: "3EBE9006CC89CF04"
 			image: "industrialforegoing:block/block_placer_back"
 			rotation: 0.0d
 			width: 1.0d
@@ -166,6 +183,7 @@
 		}
 		{
 			height: 1.0d
+			id: "37E48C6D1B3801CD"
 			image: "chipped:block/acacia_log/firewood_acacia_log"
 			rotation: 0.0d
 			width: 1.0d
@@ -173,9 +191,9 @@
 			y: 2.909523809523833d
 		}
 		{
-			click: "#0EC2053B191C55C6"
+			click_action: "open_quest:0EC2053B191C55C6"
 			height: 1.0d
-			hover: ["Fluid Extractor"]
+			id: "02F10A388CE5C072"
 			image: "industrialforegoing:block/tree_fluid_extractor_back"
 			rotation: 0.0d
 			width: 1.0d
@@ -183,9 +201,9 @@
 			y: 3.828401360544234d
 		}
 		{
-			click: "#0EC2053B191C55C6"
+			click_action: "open_quest:0EC2053B191C55C6"
 			height: 1.0d
-			hover: ["Fluid Extractor"]
+			id: "45BAB9A20CFC4C24"
 			image: "industrialforegoing:block/tree_fluid_extractor_back"
 			rotation: 0.0d
 			width: 1.0d
@@ -193,9 +211,9 @@
 			y: 2.910034013605461d
 		}
 		{
-			click: "#6FF04DD735346BED"
+			click_action: "open_quest:6FF04DD735346BED"
 			height: 1.0d
-			hover: ["Latex Processing Unit"]
+			id: "3887242026CB32BE"
 			image: "industrialforegoing:block/latex_processing_unit_front"
 			rotation: 0.0d
 			width: 1.0d
@@ -204,6 +222,7 @@
 		}
 		{
 			height: 1.0d
+			id: "6CBDEE4425E27147"
 			image: "jei:textures/jei/atlas/gui/icons/arrow_next.png"
 			rotation: 0.0d
 			width: 1.0d
@@ -212,6 +231,7 @@
 		}
 		{
 			height: 7.0d
+			id: "471AC7A357881DFC"
 			image: "atm:textures/questpics/industrialforegoing/mycelial_reactor.png"
 			rotation: 0.0d
 			width: 12.0d
@@ -220,6 +240,7 @@
 		}
 		{
 			height: 7.0d
+			id: "07700B607982148E"
 			image: "atm:textures/questpics/industrialforegoing/ether_gas_setup.png"
 			order: 10
 			rotation: 0.0d
@@ -229,6 +250,7 @@
 		}
 		{
 			height: 1.0d
+			id: "003264FE388040DD"
 			image: "minecraft:block/furnace_front_on"
 			rotation: 0.0d
 			width: 1.0d
@@ -237,6 +259,7 @@
 		}
 		{
 			height: 1.0d
+			id: "5CFB3800F1D9A8D8"
 			image: "jei:textures/jei/atlas/gui/icons/arrow_next.png"
 			rotation: 0.0d
 			width: 1.0d
@@ -245,6 +268,7 @@
 		}
 		{
 			height: 0.3d
+			id: "1EF72510F787BB94"
 			image: "allthetweaks:item/atm_star"
 			rotation: 0.0d
 			width: 0.3d
@@ -253,6 +277,7 @@
 		}
 		{
 			height: 2.5d
+			id: "4813BEFC57E166C6"
 			image: "atm:textures/questpics/industrialforegoing/industrial_foregoing_title.png"
 			rotation: 0.0d
 			width: 24.0d
@@ -261,6 +286,7 @@
 		}
 		{
 			height: 0.3d
+			id: "661F7BB9195E05EE"
 			image: "allthetweaks:item/atm_star"
 			rotation: 0.0d
 			width: 0.3d
@@ -268,9 +294,9 @@
 			y: 5.9d
 		}
 		{
-			click: "https://youtu.be/d4XVnLaHgrc?si=u_DIyC_FU7ZrNsgA"
+			click_action: "open_uri:https://youtu.be/d4XVnLaHgrc?si=u_DIyC_FU7ZrNsgA"
 			height: 1.0d
-			hover: ["BucketSt's Industrial Foregoing Video"]
+			id: "075FFEA7205ACB0A"
 			image: "actuallyadditions:item/youtube"
 			rotation: 0.0d
 			width: 1.0d
@@ -278,7 +304,7 @@
 			y: -3.0d
 		}
 	]
-	order_index: 3
+	order_index: 4
 	progression_mode: "flexible"
 	quest_links: [ ]
 	quests: [
@@ -1810,10 +1836,10 @@
 		}
 		{
 			id: "2F69010E1FA2787D"
-			tags: ["arr"]
 			invisible: true
 			optional: true
 			shape: "circle"
+			tags: ["arr"]
 			tasks: [
 				{
 					id: "7058D3373DA87B34"

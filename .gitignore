@@ -1,0 +1,17 @@
+# Dados de jogo/runtime: mundos, logs e caches nao vao para o repositorio (ele e publico)
+saves/
+logs/
+crash-reports/
+journeymap/
+essential/
+local/
+dynamic-resource-pack-cache/
+dynamic-data-pack-cache/
+.sable/
+ESM/
+blueprints/
+screenshots/
+command_history.txt
+*.bak
+simplebackups/
+backups/

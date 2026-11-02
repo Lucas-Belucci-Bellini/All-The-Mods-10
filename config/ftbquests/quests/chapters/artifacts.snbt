@@ -56,6 +56,7 @@
 	images: [
 		{
 			height: 1.0d
+			id: "73A814BFA9084173"
 			image: "atm:textures/questpics/artifacts/artifacts_head.png"
 			rotation: 0.0d
 			width: 3.1125d
@@ -64,6 +65,7 @@
 		}
 		{
 			height: 1.0d
+			id: "7302C3259DA164FE"
 			image: "atm:textures/questpics/artifacts/artifacts_hands.png"
 			rotation: 0.0d
 			width: 3.7375d
@@ -72,6 +74,7 @@
 		}
 		{
 			height: 1.0d
+			id: "14F99495C48790D0"
 			image: "atm:textures/questpics/artifacts/artifacts_hands.png"
 			rotation: 0.0d
 			width: 3.7375d
@@ -80,6 +83,7 @@
 		}
 		{
 			height: 1.0d
+			id: "7348B3ECDFB8F20B"
 			image: "atm:textures/questpics/artifacts/artifacts_necklace.png"
 			rotation: 0.0d
 			width: 5.15d
@@ -88,6 +92,7 @@
 		}
 		{
 			height: 1.0d
+			id: "0DAB3C7AEA34E51F"
 			image: "atm:textures/questpics/artifacts/artifacts_belt.png"
 			rotation: 0.0d
 			width: 2.5625d
@@ -96,6 +101,7 @@
 		}
 		{
 			height: 2.0d
+			id: "2AE3D5DF7D6E1540"
 			image: "atm:textures/questpics/artifacts/artifacts_title.png"
 			rotation: 0.0d
 			width: 10.585365853658537d
@@ -104,6 +110,7 @@
 		}
 		{
 			height: 5.0d
+			id: "67ADEC35B6360328"
 			image: "atm:textures/questpics/artifacts/artifacts_cowboy.png"
 			rotation: 0.0d
 			width: 2.67203513909224d
@@ -112,6 +119,7 @@
 		}
 		{
 			height: 5.0d
+			id: "2011310CCC4309A6"
 			image: "atm:textures/questpics/artifacts/artifacts_pool.png"
 			rotation: 0.0d
 			width: 2.5428571428571427d
@@ -120,6 +128,7 @@
 		}
 		{
 			height: 5.0d
+			id: "3597C5E215028D86"
 			image: "atm:textures/questpics/artifacts/artifacts_flameon.png"
 			rotation: 0.0d
 			width: 2.8474320241691844d
@@ -128,6 +137,7 @@
 		}
 		{
 			height: 5.0d
+			id: "31E177C8F38CE818"
 			image: "atm:textures/questpics/artifacts/artifacts_lucky.png"
 			rotation: 0.0d
 			width: 2.0412517780938835d
@@ -136,6 +146,7 @@
 		}
 		{
 			height: 5.0d
+			id: "68E3502540F912CF"
 			image: "atm:textures/questpics/artifacts/artifacts_hungry.png"
 			rotation: 0.0d
 			width: 2.766990291262136d
@@ -144,6 +155,7 @@
 		}
 		{
 			height: 1.0d
+			id: "4D375F156B086940"
 			image: "atm:textures/questpics/artifacts/feet_olyfans.png"
 			rotation: 0.0d
 			width: 2.775d
@@ -152,6 +164,7 @@
 		}
 		{
 			height: 1.0d
+			id: "2DF9258797DEF458"
 			image: "atm:textures/questpics/artifacts/feet_olyfans.png"
 			rotation: 0.0d
 			width: 2.775d
@@ -947,7 +960,6 @@
 		}
 		{
 			id: "5FD6A738754F6013"
-			tags: ["arr"]
 			invisible: true
 			optional: true
 			rewards: [{
@@ -956,6 +968,7 @@
 				xp: 100
 			}]
 			shape: "circle"
+			tags: ["arr"]
 			tasks: [
 				{
 					id: "376652638B9221C9"

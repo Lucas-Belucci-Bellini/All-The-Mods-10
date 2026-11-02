@@ -1,0 +1,3 @@
+#Enable Discord Rich Presence for this player
+#The pack turns it off for everyone with discord.discord in the common config
+rpc_enabled = true

@@ -10,6 +10,7 @@
 	images: [
 		{
 			height: 2.0d
+			id: "627A0DBB7E00102C"
 			image: "atm:textures/questpics/allthemodium/all_allthemodium.png"
 			rotation: 0.0d
 			width: 26.666666666666668d
@@ -18,6 +19,7 @@
 		}
 		{
 			height: 1.5d
+			id: "110D9424BE7F4C6D"
 			image: "allthemodium:item/allthemodium_upgrade_smithing_template"
 			rotation: 0.0d
 			width: 1.5d
@@ -26,6 +28,7 @@
 		}
 		{
 			height: 1.5d
+			id: "5804B6D67F6CDAB4"
 			image: "allthemodium:item/vibranium_upgrade_smithing_template"
 			rotation: 0.0d
 			width: 1.5d
@@ -34,6 +37,7 @@
 		}
 		{
 			height: 1.5d
+			id: "6A05AFF61DEBABCA"
 			image: "allthemodium:item/unobtainium_upgrade_smithing_template"
 			rotation: 0.0d
 			width: 1.5d
@@ -42,6 +46,7 @@
 		}
 		{
 			height: 2.0d
+			id: "749A807B7ADD3961"
 			image: "atm:textures/questpics/allthemodium/all_1.png"
 			rotation: 0.0d
 			width: 2.0d
@@ -50,6 +55,7 @@
 		}
 		{
 			height: 2.0d
+			id: "27DAD0C614EBD483"
 			image: "atm:textures/questpics/allthemodium/all_2.png"
 			rotation: 0.0d
 			width: 2.0842105263157893d
@@ -58,6 +64,7 @@
 		}
 		{
 			height: 2.0d
+			id: "497D77B5BF541FDD"
 			image: "atm:textures/questpics/allthemodium/all_3.png"
 			rotation: 0.0d
 			width: 1.9365079365079365d
@@ -66,6 +73,7 @@
 		}
 		{
 			height: 3.0d
+			id: "663D6517AC01C323"
 			image: "atm:textures/questpics/allthemodium/all_armor_all.png"
 			rotation: 0.0d
 			width: 1.7203125000000001d
@@ -74,6 +82,7 @@
 		}
 		{
 			height: 3.0d
+			id: "744DC2D7EE7F131B"
 			image: "atm:textures/questpics/allthemodium/all_armor_vib.png"
 			rotation: 0.0d
 			width: 2.08d
@@ -82,6 +91,7 @@
 		}
 		{
 			height: 3.0d
+			id: "15B2B670732C0C15"
 			image: "atm:textures/questpics/allthemodium/all_armor_uno.png"
 			rotation: 0.0d
 			width: 1.5406626506024095d
@@ -90,6 +100,7 @@
 		}
 		{
 			height: 0.3d
+			id: "593D09C6E3647D0F"
 			image: "allthetweaks:item/atm_star"
 			rotation: 0.0d
 			width: 0.3d
@@ -98,6 +109,7 @@
 		}
 		{
 			height: 0.3d
+			id: "6EEA1A6C81E6978A"
 			image: "allthetweaks:item/atm_star"
 			rotation: 0.0d
 			width: 0.3d
@@ -106,6 +118,7 @@
 		}
 		{
 			height: 2.0d
+			id: "090A812002D183CE"
 			image: "atm:textures/questpics/allthemodium/all_title.png"
 			rotation: 0.0d
 			width: 10.804347826086957d
@@ -446,7 +459,7 @@
 			optional: true
 			tasks: [{
 				id: "04CA935E34BFC9C0"
-				item: { count: 1, id: "allthemodium:allthemodium_bow" }
+				item: { components: { "ftbquests:missing_item": "allthemodium:allthemodium_bow" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 6.0d
@@ -608,7 +621,7 @@
 			optional: true
 			tasks: [{
 				id: "26E4BA33D4069317"
-				item: { count: 1, id: "allthemodium:unobtainium_crossbow" }
+				item: { components: { "ftbquests:missing_item": "allthemodium:unobtainium_crossbow" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 14.5d
@@ -740,7 +753,7 @@
 			optional: true
 			tasks: [{
 				id: "418913E28EACAC43"
-				item: { count: 1, id: "allthemodium:vibranium_shield" }
+				item: { components: { "ftbquests:missing_item": "allthemodium:vibranium_shield" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 11.5d
@@ -1391,10 +1404,10 @@
 		}
 		{
 			id: "552F0B9B00F4F914"
-			tags: ["arr"]
 			invisible: true
 			optional: true
 			shape: "circle"
+			tags: ["arr"]
 			tasks: [
 				{
 					id: "5F45BABFD89DE0EC"

@@ -12,6 +12,7 @@
 	id: "07210DDF872160BA"
 	images: [{
 		height: 3.0d
+		id: "316F3BA931E6067B"
 		image: "atm:textures/questpics/ae2.png"
 		rotation: 0.0d
 		width: 9.27d
@@ -1958,10 +1959,10 @@
 		}
 		{
 			id: "5034A9137E0F3D3D"
-			tags: ["arr"]
 			invisible: true
 			optional: true
 			shape: "circle"
+			tags: ["arr"]
 			tasks: [
 				{
 					id: "4C5435BE5560E71B"

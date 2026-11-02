@@ -19,6 +19,7 @@
 	images: [
 		{
 			height: 2.0d
+			id: "4DDC681629B28AA7"
 			image: "atm:textures/questpics/mahou/mahou_tsukai.png"
 			rotation: 0.0d
 			width: 16.258823529411764d
@@ -27,6 +28,7 @@
 		}
 		{
 			height: 0.75d
+			id: "5786C1BDE69ADD99"
 			image: "atm:textures/questpics/mahou/mahou_generation.png"
 			rotation: 0.0d
 			width: 9.0635593220339d
@@ -35,6 +37,7 @@
 		}
 		{
 			height: 0.75d
+			id: "487284B7FFEE1B17"
 			image: "atm:textures/questpics/mahou/mahou_clarent.png"
 			order: 1
 			rotation: 0.0d
@@ -44,6 +47,7 @@
 		}
 		{
 			height: 0.75d
+			id: "0EE4409CCEE61C4A"
 			image: "atm:textures/questpics/mahou/mahou_nobu.png"
 			rotation: 0.0d
 			width: 2.6186440677966103d
@@ -52,6 +56,7 @@
 		}
 		{
 			height: 0.75d
+			id: "5BD6CC20054DD996"
 			image: "atm:textures/questpics/mahou/mahou_emrys.png"
 			order: 1
 			rotation: 0.0d
@@ -61,6 +66,7 @@
 		}
 		{
 			height: 0.75d
+			id: "452F9157A74CEC18"
 			image: "atm:textures/questpics/mahou/mahou_replica.png"
 			rotation: 0.0d
 			width: 3.8008474576271185d
@@ -69,6 +75,7 @@
 		}
 		{
 			height: 0.75d
+			id: "68727F13AA0F88A8"
 			image: "atm:textures/questpics/mahou/mahou_disorientation.png"
 			rotation: 0.0d
 			width: 10.652542372881356d
@@ -77,6 +84,7 @@
 		}
 		{
 			height: 0.75d
+			id: "7352191EDE4C28DA"
 			image: "atm:textures/questpics/mahou/mahou_explosion.png"
 			order: 1
 			rotation: 0.0d
@@ -86,6 +94,7 @@
 		}
 		{
 			height: 0.75d
+			id: "07F85F7A52B99A76"
 			image: "atm:textures/questpics/mahou/mahou_bow.png"
 			rotation: 0.0d
 			width: 6.332142857142857d
@@ -94,6 +103,7 @@
 		}
 		{
 			height: 0.75d
+			id: "4BAEF5BBA1BC3316"
 			image: "atm:textures/questpics/mahou/mahou_keys.png"
 			order: 1
 			rotation: 0.0d
@@ -103,6 +113,7 @@
 		}
 		{
 			height: 0.75d
+			id: "4E1FB7BCA88C6A4F"
 			image: "atm:textures/questpics/mahou/mahou_caliburn.png"
 			rotation: 0.0d
 			width: 4.525423728813559d
@@ -111,6 +122,7 @@
 		}
 		{
 			height: 0.75d
+			id: "540180F5DA3507C0"
 			image: "atm:textures/questpics/mahou/mahou_morgan.png"
 			rotation: 0.0d
 			width: 3.851694915254237d
@@ -119,6 +131,7 @@
 		}
 		{
 			height: 7.0d
+			id: "5BB55B8CF9EB2730"
 			image: "mahoutsukai:item/morgan"
 			rotation: 0.0d
 			width: 7.0d
@@ -127,6 +140,7 @@
 		}
 		{
 			height: 8.0d
+			id: "313BE02C26F94B91"
 			image: "mahoutsukai:block/mahoujin"
 			rotation: 0.0d
 			width: 8.0d
@@ -135,6 +149,7 @@
 		}
 		{
 			height: 4.0d
+			id: "48642BC0F725AFD2"
 			image: "mahoutsukai:block/mahoujin_casting"
 			rotation: 0.0d
 			width: 4.0d
@@ -143,6 +158,7 @@
 		}
 		{
 			height: 5.0d
+			id: "3D829EDAE37884ED"
 			image: "mahoutsukai:block/mahoujin_changeable_fae"
 			rotation: 0.0d
 			width: 5.0d
@@ -151,6 +167,7 @@
 		}
 		{
 			height: 3.0d
+			id: "2AB1CB795AE6849B"
 			image: "mahoutsukai:block/mahoujin_changeable"
 			rotation: 0.0d
 			width: 3.0d
@@ -158,7 +175,7 @@
 			y: -3.5d
 		}
 	]
-	order_index: 3
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -287,7 +304,7 @@
 				{
 					count: 2L
 					id: "4A084703BE712433"
-					item: { count: 2, id: "mahoutsukai:powdered_iron" }
+					item: { count: 1, id: "mahoutsukai:powdered_iron" }
 					type: "item"
 				}
 				{
@@ -333,7 +350,7 @@
 				{
 					count: 2L
 					id: "5AE0B9B99B80AE07"
-					item: { count: 2, id: "mahoutsukai:powdered_emerald" }
+					item: { count: 1, id: "mahoutsukai:powdered_emerald" }
 					type: "item"
 				}
 			]
@@ -374,7 +391,7 @@
 				{
 					count: 2L
 					id: "17FF908275004895"
-					item: { count: 2, id: "mahoutsukai:powdered_emerald" }
+					item: { count: 1, id: "mahoutsukai:powdered_emerald" }
 					type: "item"
 				}
 			]
@@ -470,7 +487,7 @@
 				{
 					count: 2L
 					id: "2214CCA41C2062D5"
-					item: { count: 2, id: "mahoutsukai:powdered_diamond" }
+					item: { count: 1, id: "mahoutsukai:powdered_diamond" }
 					type: "item"
 				}
 				{
@@ -690,7 +707,7 @@
 				{
 					count: 2L
 					id: "21CEAE027D983282"
-					item: { count: 2, id: "mahoutsukai:powdered_diamond" }
+					item: { count: 1, id: "mahoutsukai:powdered_diamond" }
 					type: "item"
 				}
 				{
@@ -1012,7 +1029,7 @@
 				{
 					count: 2L
 					id: "381CBCFB71018C25"
-					item: { count: 2, id: "mahoutsukai:powdered_gold" }
+					item: { count: 1, id: "mahoutsukai:powdered_gold" }
 					type: "item"
 				}
 				{
@@ -1083,7 +1100,7 @@
 				{
 					count: 2L
 					id: "18980EBAE4ED777A"
-					item: { count: 2, id: "mahoutsukai:powdered_gold" }
+					item: { count: 1, id: "mahoutsukai:powdered_gold" }
 					type: "item"
 				}
 				{
@@ -1154,7 +1171,7 @@
 				{
 					count: 2L
 					id: "0754EB6E2BC4CBE4"
-					item: { count: 2, id: "mahoutsukai:powdered_diamond" }
+					item: { count: 1, id: "mahoutsukai:powdered_diamond" }
 					type: "item"
 				}
 				{
@@ -1224,7 +1241,7 @@
 			tasks: [
 				{
 					id: "664ADBD5CACCEC65"
-					item: { count: 2, id: "mahoutsukai:powdered_gold" }
+					item: { count: 1, id: "mahoutsukai:powdered_gold" }
 					type: "item"
 				}
 				{
@@ -1275,10 +1292,10 @@
 		}
 		{
 			id: "760D732DB3B8164D"
-			tags: ["arr"]
 			invisible: true
 			optional: true
 			shape: "circle"
+			tags: ["arr"]
 			tasks: [
 				{
 					id: "3D2A726A77FD37E6"

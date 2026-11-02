@@ -1,0 +1,595 @@
+#所有兼容背包的容量与升级槽数量。
+#修改后请重启服务器或退出并重新进入世界。
+#Inventory and upgrade-slot sizes for every integration backpack.
+#Changes take effect after the server or world is restarted.
+[backpacks]
+
+	[backpacks.black_steel_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 63
+		# Range: 1 ~ 4096
+		inventorySlots = 63
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 3
+		# Range: 0 ~ 64
+		upgradeSlots = 3
+
+	[backpacks.ignitium_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 264
+		# Range: 1 ~ 4096
+		inventorySlots = 264
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 10
+		# Range: 0 ~ 64
+		upgradeSlots = 10
+
+	[backpacks.cursium_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 240
+		# Range: 1 ~ 4096
+		inventorySlots = 240
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 10
+		# Range: 0 ~ 64
+		upgradeSlots = 10
+
+	[backpacks.ironwood_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 63
+		# Range: 1 ~ 4096
+		inventorySlots = 63
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 3
+		# Range: 0 ~ 64
+		upgradeSlots = 3
+
+	[backpacks.steeleaf_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 90
+		# Range: 1 ~ 4096
+		inventorySlots = 90
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 5
+		# Range: 0 ~ 64
+		upgradeSlots = 5
+
+	[backpacks.knightmetal_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 140
+		# Range: 1 ~ 4096
+		inventorySlots = 140
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 7
+		# Range: 0 ~ 64
+		upgradeSlots = 7
+
+	[backpacks.fiery_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 116
+		# Range: 1 ~ 4096
+		inventorySlots = 116
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 6
+		# Range: 0 ~ 64
+		upgradeSlots = 6
+
+	[backpacks.carminite_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 116
+		# Range: 1 ~ 4096
+		inventorySlots = 116
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 6
+		# Range: 0 ~ 64
+		upgradeSlots = 6
+
+	[backpacks.cloggrum_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 63
+		# Range: 1 ~ 4096
+		inventorySlots = 63
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 3
+		# Range: 0 ~ 64
+		upgradeSlots = 3
+
+	[backpacks.froststeel_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 90
+		# Range: 1 ~ 4096
+		inventorySlots = 90
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 4
+		# Range: 0 ~ 64
+		upgradeSlots = 4
+
+	[backpacks.utherium_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 116
+		# Range: 1 ~ 4096
+		inventorySlots = 116
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 6
+		# Range: 0 ~ 64
+		upgradeSlots = 6
+
+	[backpacks.forgotten_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 126
+		# Range: 1 ~ 4096
+		inventorySlots = 126
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 7
+		# Range: 0 ~ 64
+		upgradeSlots = 7
+
+	[backpacks.ambrosium_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 45
+		# Range: 1 ~ 4096
+		inventorySlots = 45
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 3
+		# Range: 0 ~ 64
+		upgradeSlots = 3
+
+	[backpacks.zanite_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 72
+		# Range: 1 ~ 4096
+		inventorySlots = 72
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 3
+		# Range: 0 ~ 64
+		upgradeSlots = 3
+
+	[backpacks.golden_amber_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 90
+		# Range: 1 ~ 4096
+		inventorySlots = 90
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 5
+		# Range: 0 ~ 64
+		upgradeSlots = 5
+
+	[backpacks.gravitite_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 116
+		# Range: 1 ~ 4096
+		inventorySlots = 116
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 6
+		# Range: 0 ~ 64
+		upgradeSlots = 6
+
+	[backpacks.bronze_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 63
+		# Range: 1 ~ 4096
+		inventorySlots = 63
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 3
+		# Range: 0 ~ 64
+		upgradeSlots = 3
+
+	[backpacks.lapis_lazuli_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 54
+		# Range: 1 ~ 4096
+		inventorySlots = 54
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 5
+		# Range: 0 ~ 64
+		upgradeSlots = 5
+
+	[backpacks.steel_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 90
+		# Range: 1 ~ 4096
+		inventorySlots = 90
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 5
+		# Range: 0 ~ 64
+		upgradeSlots = 5
+
+	[backpacks.osmium_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 108
+		# Range: 1 ~ 4096
+		inventorySlots = 108
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 5
+		# Range: 0 ~ 64
+		upgradeSlots = 5
+
+	[backpacks.refined_glowstone_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 99
+		# Range: 1 ~ 4096
+		inventorySlots = 99
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 6
+		# Range: 0 ~ 64
+		upgradeSlots = 6
+
+	[backpacks.refined_obsidian_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 140
+		# Range: 1 ~ 4096
+		inventorySlots = 140
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 8
+		# Range: 0 ~ 64
+		upgradeSlots = 8
+
+	[backpacks.antimatter_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 1200
+		# Range: 1 ~ 4096
+		inventorySlots = 1200
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 10
+		# Range: 0 ~ 64
+		upgradeSlots = 10
+
+	[backpacks.naquadah_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 180
+		# Range: 1 ~ 4096
+		inventorySlots = 180
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 8
+		# Range: 0 ~ 64
+		upgradeSlots = 8
+
+	[backpacks.radiance_alloy_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 360
+		# Range: 1 ~ 4096
+		inventorySlots = 360
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 10
+		# Range: 0 ~ 64
+		upgradeSlots = 10
+
+	[backpacks.thermonuclear_alloy_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 720
+		# Range: 1 ~ 4096
+		inventorySlots = 720
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 12
+		# Range: 0 ~ 64
+		upgradeSlots = 12
+
+	[backpacks.shining_alloy_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 1400
+		# Range: 1 ~ 4096
+		inventorySlots = 1400
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 14
+		# Range: 0 ~ 64
+		upgradeSlots = 14
+
+	[backpacks.spectrum_alloy_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 2400
+		# Range: 1 ~ 4096
+		inventorySlots = 2400
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 16
+		# Range: 0 ~ 64
+		upgradeSlots = 16
+
+	[backpacks.honey_crystal_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 90
+		# Range: 1 ~ 4096
+		inventorySlots = 90
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 4
+		# Range: 0 ~ 64
+		upgradeSlots = 4
+
+	[backpacks.andesite_alloy_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 63
+		# Range: 1 ~ 4096
+		inventorySlots = 63
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 4
+		# Range: 0 ~ 64
+		upgradeSlots = 4
+
+	[backpacks.brass_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 81
+		# Range: 1 ~ 4096
+		inventorySlots = 81
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 8
+		# Range: 0 ~ 64
+		upgradeSlots = 8
+
+	[backpacks.overcharged_iron_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 72
+		# Range: 1 ~ 4096
+		inventorySlots = 72
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 6
+		# Range: 0 ~ 64
+		upgradeSlots = 6
+
+	[backpacks.overcharged_gold_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 90
+		# Range: 1 ~ 4096
+		inventorySlots = 90
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 8
+		# Range: 0 ~ 64
+		upgradeSlots = 8
+
+	[backpacks.overcharged_diamond_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 126
+		# Range: 1 ~ 4096
+		inventorySlots = 126
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 10
+		# Range: 0 ~ 64
+		upgradeSlots = 10
+
+	[backpacks.resonarium_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 116
+		# Range: 1 ~ 4096
+		inventorySlots = 116
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 6
+		# Range: 0 ~ 64
+		upgradeSlots = 6
+
+	[backpacks.warden_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 144
+		# Range: 1 ~ 4096
+		inventorySlots = 144
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 8
+		# Range: 0 ~ 64
+		upgradeSlots = 8
+
+	[backpacks.source_gem_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 72
+		# Range: 1 ~ 4096
+		inventorySlots = 72
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 6
+		# Range: 0 ~ 64
+		upgradeSlots = 6
+
+	[backpacks.magebloom_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 90
+		# Range: 1 ~ 4096
+		inventorySlots = 90
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 8
+		# Range: 0 ~ 64
+		upgradeSlots = 8
+
+	[backpacks.arcane_ingot_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 108
+		# Range: 1 ~ 4096
+		inventorySlots = 108
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 8
+		# Range: 0 ~ 64
+		upgradeSlots = 8
+
+	[backpacks.mithril_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 126
+		# Range: 1 ~ 4096
+		inventorySlots = 126
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 9
+		# Range: 0 ~ 64
+		upgradeSlots = 9
+
+	[backpacks.aluminum_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 63
+		# Range: 1 ~ 4096
+		inventorySlots = 63
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 4
+		# Range: 0 ~ 64
+		upgradeSlots = 4
+
+	[backpacks.constantan_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 81
+		# Range: 1 ~ 4096
+		inventorySlots = 81
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 6
+		# Range: 0 ~ 64
+		upgradeSlots = 6
+
+	[backpacks.electrum_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 81
+		# Range: 1 ~ 4096
+		inventorySlots = 81
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 8
+		# Range: 0 ~ 64
+		upgradeSlots = 8
+
+	[backpacks.hop_graphite_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 116
+		# Range: 1 ~ 4096
+		inventorySlots = 116
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 8
+		# Range: 0 ~ 64
+		upgradeSlots = 8
+
+	[backpacks.certus_quartz_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 72
+		# Range: 1 ~ 4096
+		inventorySlots = 72
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 5
+		# Range: 0 ~ 64
+		upgradeSlots = 5
+
+	[backpacks.fluix_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 108
+		# Range: 1 ~ 4096
+		inventorySlots = 108
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 10
+		# Range: 0 ~ 64
+		upgradeSlots = 10
+
+	[backpacks.amaramber_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 54
+		# Range: 1 ~ 4096
+		inventorySlots = 54
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 4
+		# Range: 0 ~ 64
+		upgradeSlots = 4
+
+	[backpacks.thermal_springstone_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 63
+		# Range: 1 ~ 4096
+		inventorySlots = 63
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 4
+		# Range: 0 ~ 64
+		upgradeSlots = 4
+
+	[backpacks.glacite_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 72
+		# Range: 1 ~ 4096
+		inventorySlots = 72
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 5
+		# Range: 0 ~ 64
+		upgradeSlots = 5
+
+	[backpacks.deepsilver_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 90
+		# Range: 1 ~ 4096
+		inventorySlots = 90
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 6
+		# Range: 0 ~ 64
+		upgradeSlots = 6
+
+	[backpacks.aethersent_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 116
+		# Range: 1 ~ 4096
+		inventorySlots = 116
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 7
+		# Range: 0 ~ 64
+		upgradeSlots = 7
+
+	[backpacks.starlit_diamond_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 126
+		# Range: 1 ~ 4096
+		inventorySlots = 126
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 8
+		# Range: 0 ~ 64
+		upgradeSlots = 8
+
+	[backpacks.unrealium_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 140
+		# Range: 1 ~ 4096
+		inventorySlots = 140
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 9
+		# Range: 0 ~ 64
+		upgradeSlots = 9
+
+	[backpacks.desh_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 108
+		# Range: 1 ~ 4096
+		inventorySlots = 108
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 6
+		# Range: 0 ~ 64
+		upgradeSlots = 6
+
+	[backpacks.ostrum_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 126
+		# Range: 1 ~ 4096
+		inventorySlots = 126
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 7
+		# Range: 0 ~ 64
+		upgradeSlots = 7
+
+	[backpacks.calorite_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 144
+		# Range: 1 ~ 4096
+		inventorySlots = 144
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 8
+		# Range: 0 ~ 64
+		upgradeSlots = 8
+
+	[backpacks.allthemodium_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 180
+		# Range: 1 ~ 4096
+		inventorySlots = 180
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 8
+		# Range: 0 ~ 64
+		upgradeSlots = 8
+
+	[backpacks.vibranium_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 270
+		# Range: 1 ~ 4096
+		inventorySlots = 270
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 10
+		# Range: 0 ~ 64
+		upgradeSlots = 10
+
+	[backpacks.unobtainium_backpack]
+		#背包物品栏格数。 / Number of inventory slots.
+		# Default: 360
+		# Range: 1 ~ 4096
+		inventorySlots = 360
+		#背包升级槽数量。 / Number of upgrade slots.
+		# Default: 12
+		# Range: 0 ~ 64
+		upgradeSlots = 12

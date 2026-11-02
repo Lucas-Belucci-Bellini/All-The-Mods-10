@@ -10,6 +10,7 @@
 	images: [
 		{
 			height: 1.5d
+			id: "509517F2E6D22D30"
 			image: "atm:textures/questpics/deepndark/dnd_title.png"
 			order: 2
 			rotation: 0.0d
@@ -20,6 +21,7 @@
 		{
 			dependency: "76F14C2B866B4EAD"
 			height: 1.0d
+			id: "708015651F262923"
 			image: "atm:textures/questpics/deepndark/dnd_biome.png"
 			order: 2
 			rotation: 0.0d
@@ -30,6 +32,7 @@
 		{
 			dependency: "76F14C2B866B4EAD"
 			height: 1.0d
+			id: "1096521E6C0AA51E"
 			image: "atm:textures/questpics/deepndark/dnd_blocks.png"
 			order: 2
 			rotation: 0.0d
@@ -40,6 +43,7 @@
 		{
 			dependency: "76F14C2B866B4EAD"
 			height: 1.0d
+			id: "23AF65B2256444A9"
 			image: "atm:textures/questpics/deepndark/dnd_blocks.png"
 			order: 2
 			rotation: 0.0d
@@ -50,6 +54,7 @@
 		{
 			dependency: "76F14C2B866B4EAD"
 			height: 1.0d
+			id: "12B62A48BD2550A4"
 			image: "atm:textures/questpics/deepndark/dnd_plants.png"
 			order: 2
 			rotation: 0.0d
@@ -60,6 +65,7 @@
 		{
 			dependency: "76F14C2B866B4EAD"
 			height: 1.0d
+			id: "5CC8062CBB0A77EA"
 			image: "atm:textures/questpics/deepndark/dnd_plants.png"
 			order: 2
 			rotation: 0.0d
@@ -70,6 +76,7 @@
 		{
 			dependency: "76F14C2B866B4EAD"
 			height: 1.0d
+			id: "11650DCE8A00ADDD"
 			image: "atm:textures/questpics/deepndark/dnd_gear.png"
 			order: 2
 			rotation: 0.0d
@@ -80,6 +87,7 @@
 		{
 			dependency: "76F14C2B866B4EAD"
 			height: 1.0d
+			id: "78E0F6A373569706"
 			image: "atm:textures/questpics/deepndark/dnd_mobs.png"
 			order: 2
 			rotation: 0.0d
@@ -89,6 +97,7 @@
 		}
 		{
 			height: 8.0d
+			id: "3C7EDC6942C1F42D"
 			image: "minecraft:block/sculk"
 			rotation: 0.0d
 			width: 8.0d
@@ -97,6 +106,7 @@
 		}
 		{
 			height: 8.0d
+			id: "640025CACB02979B"
 			image: "minecraft:block/sculk"
 			rotation: 0.0d
 			width: 8.0d
@@ -105,6 +115,7 @@
 		}
 		{
 			height: 8.0d
+			id: "25D7699397EDD43B"
 			image: "minecraft:block/sculk"
 			rotation: 0.0d
 			width: 8.0d
@@ -113,6 +124,7 @@
 		}
 		{
 			height: 8.0d
+			id: "473DAD3B0CDF2600"
 			image: "minecraft:block/sculk"
 			rotation: 0.0d
 			width: 8.0d
@@ -121,6 +133,7 @@
 		}
 		{
 			height: 8.0d
+			id: "0F8132C3AAF9B1F5"
 			image: "minecraft:block/sculk"
 			rotation: 0.0d
 			width: 8.0d
@@ -129,6 +142,7 @@
 		}
 		{
 			height: 8.0d
+			id: "513366AACBBBF159"
 			image: "minecraft:block/sculk"
 			rotation: 0.0d
 			width: 8.0d
@@ -137,6 +151,7 @@
 		}
 		{
 			height: 8.0d
+			id: "40E7A74C6E63C9CB"
 			image: "minecraft:block/sculk"
 			rotation: 0.0d
 			width: 8.0d
@@ -145,6 +160,7 @@
 		}
 		{
 			height: 8.0d
+			id: "73F6659F52A1A1BA"
 			image: "minecraft:block/sculk"
 			rotation: 0.0d
 			width: 8.0d
@@ -153,6 +169,7 @@
 		}
 		{
 			height: 8.0d
+			id: "51F286B4C354040F"
 			image: "minecraft:block/sculk"
 			rotation: 0.0d
 			width: 8.0d
@@ -160,7 +177,7 @@
 			y: 8.0d
 		}
 	]
-	order_index: 2
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -1043,6 +1060,7 @@
 			}]
 			tasks: [{
 				id: "5F2E186A1A3C41EA"
+				observation_type: "block"
 				observe_type: 0
 				timer: 0L
 				to_observe: "deeperdarker:gloomy_geyser"
@@ -1180,6 +1198,7 @@
 			}]
 			tasks: [{
 				id: "442E351384423777"
+				observation_type: "block"
 				observe_type: 0
 				timer: 0L
 				to_observe: "deeperdarker:sculk_jaw"
@@ -1203,6 +1222,7 @@
 			shape: "circle"
 			tasks: [{
 				id: "52747BC064FD3D7F"
+				observation_type: "block"
 				observe_type: 0
 				timer: 0L
 				to_observe: "deeperdarker:ancient_vase"
@@ -1257,6 +1277,7 @@
 			shape: "gear"
 			tasks: [{
 				id: "2558DFB29F08FAEF"
+				observation_type: "block"
 				observe_type: 0
 				timer: 0L
 				to_observe: "minecraft:reinforced_deepslate"
@@ -1314,10 +1335,10 @@
 		}
 		{
 			id: "01ECFBB5F0574C24"
-			tags: ["arr"]
 			invisible: true
 			optional: true
 			shape: "circle"
+			tags: ["arr"]
 			tasks: [{
 				id: "5B7FD7C2F05FA64D"
 				type: "checkmark"

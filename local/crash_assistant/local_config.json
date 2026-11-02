@@ -1,1 +1,6 @@
-{}
+{
+	"shown_reasons": {
+		"InsufficientMemory": true,
+		"WasClosedByWindows": true
+	}
+}

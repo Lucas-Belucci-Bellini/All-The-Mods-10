@@ -9,6 +9,7 @@
 	id: "1BE666F01EFFC00D"
 	images: [{
 		height: 3.0d
+		id: "0DC1C45E204661BE"
 		image: "atm:textures/questpics/tips_and_tricks.png"
 		rotation: 0.0d
 		width: 12.0d
@@ -268,10 +269,10 @@
 		}
 		{
 			id: "0152938EE5651409"
-			tags: ["arr"]
 			invisible: true
 			optional: true
 			shape: "circle"
+			tags: ["arr"]
 			tasks: [
 				{
 					id: "4AEB792F6A939B3A"

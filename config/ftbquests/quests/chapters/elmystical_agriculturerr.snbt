@@ -5151,10 +5151,10 @@
 		}
 		{
 			id: "23C36E4B5DCEBFDD"
-			tags: ["arr"]
 			invisible: true
 			optional: true
 			shape: "circle"
+			tags: ["arr"]
 			tasks: [
 				{
 					id: "773CA1FDC4CEFCEF"

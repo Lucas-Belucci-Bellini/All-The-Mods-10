@@ -7,6 +7,7 @@
 		id: "modern_industrialization:quantum_upgrade"
 	}
 	id: "25344A9254E02C8E"
+	images: [ ]
 	order_index: 3
 	quest_links: [ ]
 	quests: [
@@ -126,7 +127,7 @@
 			tasks: [{
 				count: 2L
 				id: "52451673B1B76E89"
-				item: { count: 2, id: "modern_industrialization:carbon_plate" }
+				item: { count: 1, id: "modern_industrialization:carbon_plate" }
 				type: "item"
 			}]
 			x: 2.0d
@@ -171,7 +172,7 @@
 			tasks: [{
 				count: 2L
 				id: "792D17F92E68F56B"
-				item: { count: 2, id: "modern_industrialization:small_heat_exchanger" }
+				item: { count: 1, id: "modern_industrialization:small_heat_exchanger" }
 				type: "item"
 			}]
 			x: 5.0d
@@ -183,7 +184,7 @@
 			tasks: [{
 				count: 2L
 				id: "343081AB25D232B3"
-				item: { count: 2, id: "modern_industrialization:plutonium_battery" }
+				item: { count: 1, id: "modern_industrialization:plutonium_battery" }
 				type: "item"
 			}]
 			x: 8.0d
@@ -235,7 +236,7 @@
 			tasks: [{
 				count: 64L
 				id: "3117D48027C190C7"
-				item: { count: 64, id: "modern_industrialization:nuke" }
+				item: { count: 1, id: "modern_industrialization:nuke" }
 				type: "item"
 			}]
 			x: 1.5d
@@ -261,7 +262,7 @@
 			tasks: [{
 				count: 12L
 				id: "73897EDFF6685AA2"
-				item: { count: 12, id: "modern_industrialization:superconductor_cable" }
+				item: { count: 1, id: "modern_industrialization:superconductor_cable" }
 				type: "item"
 			}]
 			x: 9.5d
@@ -317,7 +318,7 @@
 			tasks: [{
 				count: 32L
 				id: "39DBE073F1AC715D"
-				item: { count: 32, id: "modern_industrialization:highly_advanced_upgrade" }
+				item: { count: 1, id: "modern_industrialization:highly_advanced_upgrade" }
 				type: "item"
 			}]
 			x: 7.0d
@@ -380,10 +381,10 @@
 		}
 		{
 			id: "31C7F8FEF384F172"
-			tags: ["arr"]
 			invisible: true
 			optional: true
 			shape: "circle"
+			tags: ["arr"]
 			tasks: [
 				{
 					id: "14FC3326C87511B9"

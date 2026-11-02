@@ -10,6 +10,7 @@
 	images: [
 		{
 			height: 3.0d
+			id: "1DD8257BF993CF8C"
 			image: "atm:textures/questpics/draconic/draconic_title.png"
 			rotation: 0.0d
 			width: 8.019230769230768d
@@ -18,6 +19,7 @@
 		}
 		{
 			height: 2.0d
+			id: "751A7B5A937412E9"
 			image: "atm:textures/questpics/draconic/draconic_core_1on.png"
 			rotation: 0.0d
 			width: 2.0089285714285716d
@@ -26,6 +28,7 @@
 		}
 		{
 			height: 5.0d
+			id: "242A9055BB58C0E8"
 			image: "atm:textures/questpics/draconic/draconic_core_8on.png"
 			rotation: 0.0d
 			width: 5.038167938931297d
@@ -34,6 +37,7 @@
 		}
 		{
 			height: 2.0d
+			id: "45B2C9193E7B369E"
 			image: "atm:textures/questpics/draconic/draconic_energy.png"
 			rotation: 0.0d
 			width: 4.1257142857142854d
@@ -42,6 +46,7 @@
 		}
 		{
 			height: 5.0d
+			id: "220C93929F500B6E"
 			image: "atm:textures/questpics/draconic/draconic_reactor_off_down.png"
 			rotation: 0.0d
 			width: 11.26126126126126d
@@ -50,6 +55,7 @@
 		}
 		{
 			height: 3.0d
+			id: "69E1B8F830EA7E65"
 			image: "atm:textures/questpics/draconic/draconic_fusion.png"
 			rotation: 0.0d
 			width: 9.072463768115941d
@@ -57,7 +63,7 @@
 			y: -7.5d
 		}
 	]
-	order_index: 1
+	order_index: 2
 	progression_mode: "flexible"
 	quest_links: [ ]
 	quests: [
@@ -2928,10 +2934,10 @@
 			hide_details_until_startable: true
 			hide_until_deps_visible: true
 			id: "366431661CC43A6E"
-			tags: ["arr"]
 			invisible: true
 			optional: true
 			shape: "octagon"
+			tags: ["arr"]
 			tasks: [
 				{
 					disable_toast: true

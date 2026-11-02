@@ -1,0 +1,7512 @@
+{
+  "comment": "Recursos naturais dos mods sem receita (madeira, pedra, plantas, drops de mob). Itens feitos com eles herdam EMC pelas receitas. Gerado por gen_leaves.py.",
+  "values": {
+    "before": [
+      {
+        "type": "projecte:item",
+        "id": "actuallyadditions:bats_wing",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "ad_astra:aeronos_mushroom",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "ad_astra:aeronos_stem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "ad_astra:glacian_fur",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "ad_astra:glacian_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "ad_astra:glacian_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "ad_astra:mars_sand",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "ad_astra:moon_deepslate",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "ad_astra:moon_sand",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "ad_astra:rendered_item",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "ad_astra:strophar_mushroom",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "ad_astra:strophar_stem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "additional_lights:standing_torch_s_nd_stone_bricks",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "aether:aechor_petal",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "aether:aether_dirt",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "aether:berry_bush",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "aether:berry_bush_stem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "aether:blue_berry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "aether:crystal_fruit_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "aether:decorated_holiday_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "aether:gingerbread_man",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "aether:golden_amber",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "aether:golden_feather",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "aether:golden_oak_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "aether:golden_oak_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "aether:golden_oak_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "aether:holiday_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "aether:icestone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "aether:locked_angelic_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "aether:locked_hellfire_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "aether:locked_light_angelic_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "aether:locked_light_hellfire_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "aether:locked_sentry_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "aether:purple_flower",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "aether:quicksoil",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "aether:regeneration_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "aether:skyroot_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "aether:skyroot_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "aether:skyroot_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "aether:stripped_skyroot_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "aether:trapped_angelic_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "aether:trapped_hellfire_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "aether:trapped_light_angelic_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "aether:trapped_light_hellfire_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "aether:trapped_sentry_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "aether:white_apple",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "aether:white_flower",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "aquaculture:algae",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "aquaculture:blackfish",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "aquaculture:brown_shrooma",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "aquaculture:catfish",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "aquaculture:fish_fillet_raw",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "aquaculture:goldfish",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "aquaculture:jellyfish",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "aquaculture:red_shrooma",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "ars_elemental:mermaid_rock",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "ars_elemental:sparkflower",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "ars_elemental:stripped_yellow_archwood_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "ars_elemental:yellow_archwood_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "ars_nouveau:archwood_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "ars_nouveau:blue_archwood_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "ars_nouveau:drygmy_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "ars_nouveau:familiar_whirlisprig",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "ars_nouveau:green_archwood_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "ars_nouveau:lava_lily",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "ars_nouveau:purple_archwood_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "ars_nouveau:red_archwood_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "ars_nouveau:stripped_blue_archwood_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "ars_nouveau:stripped_green_archwood_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "ars_nouveau:stripped_purple_archwood_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "ars_nouveau:stripped_red_archwood_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "ars_nouveau:whirlisprig_flower",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "ars_nouveau:whirlisprig_se",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "ars_nouveau:wilden_horn",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "ars_nouveau:wilden_spike",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "ars_nouveau:wilden_wing",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "astralsorcery:celestial_crystal",
+        "emc_value": 256
+      },
+      {
+        "type": "projecte:item",
+        "id": "astralsorcery:gem_crystal_cluster",
+        "emc_value": 256
+      },
+      {
+        "type": "projecte:item",
+        "id": "astralsorcery:lumen_crystal",
+        "emc_value": 256
+      },
+      {
+        "type": "projecte:item",
+        "id": "auroral:aurora_bloom",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "auroral:ender_bloom",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "auroral:frozen_petals",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "auroral:glow_leek",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "auroral:shimmer_soil",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "auroral:shimmering_ice",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "bigreactors:anglesite_crystal",
+        "emc_value": 256
+      },
+      {
+        "type": "projecte:item",
+        "id": "bigreactors:benitoite_crystal",
+        "emc_value": 256
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:barley",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:bramble_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:brimstone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:bush",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:cypress_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:dead_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:dead_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:dead_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:desert_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:dune_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:empyreal_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:empyreal_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:endbloom",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:eyebulb",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:fir_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:fir_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:flesh_tendons",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:flesh_tendons_strand",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:flowering_oak_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:glowing_moss_carpet",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:glowworm_silk",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:glowworm_silk_strand",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:hellbark_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:hellbark_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:high_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:huge_clover_petal",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:huge_lily_pad",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:jacaranda_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:jacaranda_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:large_rose_quartz_bud",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:magic_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:magic_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:mahogany_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:mahogany_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:maple_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:medium_rose_quartz_bud",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:null_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:orange_maple_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:origin_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:palm_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:palm_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:pine_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:pine_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:porous_flesh",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:rainbow_birch_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:red_maple_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:redwood_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:redwood_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:reed",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:rose_quartz_bud",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:rose_quartz_cluster",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:small_rose_quartz_bud",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:snowblossom_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:spanish_moss",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:spanish_moss_plant",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:sprout",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:stripped_dead_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:stripped_empyreal_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:stripped_fir_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:stripped_hellbark_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:stripped_jacaranda_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:stripped_magic_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:stripped_mahogany_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:stripped_maple_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:stripped_palm_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:stripped_pine_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:stripped_redwood_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:stripped_umbran_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:stripped_willow_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:tiny_cactus",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:umbran_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:umbran_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:watergrass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:waterlily",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:white_petals",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:willow_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:willow_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:willow_vine",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomesoplenty:yellow_maple_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:allium_flower_bush",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:alpine_bellflower",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:araucaria_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:araucaria_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:aspen_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:aspen_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:aspen_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:baobab_fruit",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:baobab_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:baobab_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:baobab_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:barrel_cactus",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:beach_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:black_rose",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:blooming_aloe_vera",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:blooming_witch_hazel_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:blue_enchanted_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:blue_enchanted_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:blue_enchanted_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:blue_rose_bush",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:blue_spruce_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:blue_spruce_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:blueberries",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:borealis_ice",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:brown_birch_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:brown_birch_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:brown_mushroom_stem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:brown_oak_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:brown_oak_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:brown_zelkova_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:brown_zelkova_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:cattail_sprout",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:cika_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:cika_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:cika_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:cracked_red_sand",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:cracked_sand",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:cyan_rose",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:cyan_tulip",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:cypress_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:cypress_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:ebony_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:ebony_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:fir_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:fir_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:firecracker_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:florus_stem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:flower_patch",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:flowering_baobab_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:flowering_barrel_cactus",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:flowering_indigo_jacaranda_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:flowering_ironwood_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:flowering_jacaranda_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:flowering_orchard_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:flowering_palo_verde_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:flowering_skyris_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:flowering_tiny_lily_pads",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:flowering_yucca_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:fluorescent_cattail_sprout",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:green_apple",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:green_apple_skyris_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:green_enchanted_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:green_enchanted_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:holly_berry_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:holly_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:holly_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:imbued_blue_enchanted_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:imbued_green_enchanted_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:indigo_jacaranda_bush",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:indigo_jacaranda_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:ironwood_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:ironwood_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:jacaranda_bush",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:jacaranda_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:jacaranda_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:lush_dirt",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:mahogany_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:mahogany_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:maple_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:maple_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:mini_cactus",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:oddion_bulb",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:orange_birch_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:orange_oak_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:orange_spruce_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:orchard_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:overgrown_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:pale_pumpkin",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:palm_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:palm_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:palo_verde_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:palo_verde_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:pine_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:pine_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:prickly_pear_cactus",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:quicksand",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:rainbow_eucalyptus_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:rainbow_eucalyptus_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:red_birch_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:red_maple_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:red_oak_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:red_quicksand",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:red_spruce_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:redwood_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:redwood_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:ripe_baobab_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:ripe_orchard_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:ripe_yucca_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:sakura_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:silver_maple_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:skyris_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:skyris_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:skyris_vine",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:stripped_aspen_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:stripped_baobab_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:stripped_blue_enchanted_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:stripped_cika_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:stripped_cypress_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:stripped_ebony_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:stripped_fir_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:stripped_florus_stem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:stripped_green_enchanted_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:stripped_holly_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:stripped_ironwood_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:stripped_jacaranda_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:stripped_mahogany_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:stripped_maple_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:stripped_palm_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:stripped_palo_verde_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:stripped_pine_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:stripped_rainbow_eucalyptus_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:stripped_redwood_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:stripped_sakura_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:stripped_skyris_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:stripped_white_mangrove_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:stripped_willow_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:stripped_witch_hazel_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:stripped_zelkova_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:tall_beach_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:tall_prairie_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:tiny_lily_pads",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:water_silk",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:white_allium_flower_bush",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:white_mangrove_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:white_mangrove_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:white_mushroom_stem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:white_sakura_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:white_sakura_petals",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:willow_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:willow_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:witch_hazel_blossom",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:witch_hazel_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:witch_hazel_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:yellow_birch_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:yellow_sakura_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:yellow_sakura_petals",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:yellow_spruce_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:yucca_fruit",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:yucca_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:zelkova_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "biomeswevegone:zelkova_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "cataclysm:amethyst_crab_meat",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "cataclysm:blazing_bone",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "cataclysm:coral_bardiche",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "cataclysm:coral_chunk",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "cataclysm:coral_chunk_1",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "cataclysm:coral_chunk_2",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "cataclysm:coral_chunk_3",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "cataclysm:coral_spear",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "cataclysm:crystallized_coral_fragments",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "cataclysm:cursed_tombstone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "cataclysm:infernal_forge",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "cataclysm:koboleton_bone",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "cataclysm:lionfish",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "cataclysm:lionfish_spike",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "cataclysm:urchin_spike",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "cataclysm:void_infused_end_stone_bricks",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "cataclysm:void_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "create:andesite_encased_cogwheel",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "create:andesite_encased_large_cogwheel",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "create:andesite_encased_shaft",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "create_dragons_plus:rare_marble_gate_package",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "creeperoverhaul:tiny_cactus",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "deeperdarker:angler_fish",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "deeperdarker:bloom_berries",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "deeperdarker:blooming_sculk_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "deeperdarker:blooming_stem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "deeperdarker:crystallized_amber",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "deeperdarker:echo_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "deeperdarker:echo_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "deeperdarker:echo_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "deeperdarker:echo_soil",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "deeperdarker:enriched_gloomslate_bricks",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "deeperdarker:gloomy_cactus",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "deeperdarker:gloomy_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "deeperdarker:glowing_flowers",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "deeperdarker:glowing_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "deeperdarker:glowing_roots",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "deeperdarker:ice_lily",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "deeperdarker:lily_flower",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "deeperdarker:sculk_bone",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "deeperdarker:sculk_vines",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "deeperdarker:stripped_blooming_stem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "deeperdarker:stripped_echo_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "dyenamics:peach_shulker_box",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "dyenamics:rose_shulker_box",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "endermanoverhaul:ancient_pearl",
+        "emc_value": 256
+      },
+      {
+        "type": "projecte:item",
+        "id": "endermanoverhaul:bubble_pearl",
+        "emc_value": 256
+      },
+      {
+        "type": "projecte:item",
+        "id": "endermanoverhaul:corrupted_pearl",
+        "emc_value": 256
+      },
+      {
+        "type": "projecte:item",
+        "id": "endermanoverhaul:crimson_pearl",
+        "emc_value": 256
+      },
+      {
+        "type": "projecte:item",
+        "id": "endermanoverhaul:enderman_tooth",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "endermanoverhaul:icy_pearl",
+        "emc_value": 256
+      },
+      {
+        "type": "projecte:item",
+        "id": "endermanoverhaul:summoner_pearl",
+        "emc_value": 256
+      },
+      {
+        "type": "projecte:item",
+        "id": "endermanoverhaul:warped_pearl",
+        "emc_value": 256
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:abyssal_fruit",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:abysslate",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:amaramber_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:amaramber_grass_bush",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:amethysia_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:ashen_snow",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:aureate_flower",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:banyin_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:banyin_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:banyin_roots",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:banyin_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:blazebank_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:blooming_blue_starlight_crystal_cluster",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:blooming_red_starlight_crystal_cluster",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:blooming_shadegrieve",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:blossom_of_stars",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:blue_crystal_roots",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:blue_crystalfleur_vine",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:blue_crystallized_lunar_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:bouldershroom",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:bouldershroom_roots",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:bouldershroom_stem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:broken_doomeden_bone",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:cave_moss",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:cobbled_grimstone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:cobbled_radianite",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:cobbled_voidstone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:conebloom",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:cradlewood_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:cradlewood_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:cradlewood_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:crescent_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:creteor_hide",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:cryobysslate",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:crystallized_lunar_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:crystallized_sand",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:crystallum_coral",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:crystallum_coral_fan",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:cyan_lunar_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:dead_crystallum_coral",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:dead_crystallum_coral_fan",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:dead_golden_coral",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:dead_golden_coral_fan",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:dead_lunar_bush",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:dead_lunar_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:dead_tentacles_coral",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:dead_tentacles_coral_fan",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:doomeden_bricks",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:dusted_gravel",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:eternal_ice",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:fantafern",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:fantagrass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:fire_orchid",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:flare_brick",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:flesh_grinder",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:gladespike",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:glimmerfly_bush",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:glintgrass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:gloomcandle_root",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:gloreed",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:glowing_crescent_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:glowing_grimstone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:glowing_lunar_bush",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:glowing_lunar_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:glowing_mossy_dusted_gravel",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:glowing_mushroom",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:glowing_mushroom_stem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:glowing_night_sprouts",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:glowing_nightfall_mud",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:glowing_parasol_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:glowing_voidstone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:golden_coral",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:golden_coral_fan",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:golden_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:green_fantafern",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:green_fantagrass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:hanging_fantagrass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:haze_ice",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:jinglestem_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:jinglestem_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:luminofish",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:lunar_berries",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:lunar_bush",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:lunar_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:lunar_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:lunar_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:lunar_reed",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:lunar_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:lunar_vine",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:lunaris_cactus",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:lunaris_cactus_fruit",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:marimold_stem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:mauve_fern",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:moonlight_bush",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:moonlight_lily_pad",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:mossy_dusted_gravel",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:night_sprouts",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:nightfall_dirt",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:nightfall_mud",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:nightfan_bush",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:northland_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:northland_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:northland_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:parasol_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:petal_scythe_inventory",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:pink_rose",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:pink_rose_bush",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:pungency_fruit_spear_inventory",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:purple_lunar_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:ratlin_meat",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:red_crystal_roots",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:red_crystalfleur_vine",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:red_crystallized_lunar_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:red_velvetumoss",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:red_velvetumoss_flower",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:red_velvetumoss_villi",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:rookfish",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:sacred_lanternvine",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:sacred_starlight_flower",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:scarlet_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:scarlet_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:scarlet_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:scarlet_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:seeker_tentacle",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:shadow_snail_meat",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:shining_mushroom",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:shining_mushroom_stem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:small_glowing_night_sprouts",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:small_night_sprouts",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:spiral_kelp",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:springstone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:starlight_flower",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:starlight_seagrass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:starlight_torchflower",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:starlit_lily_pad",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:stellafly_bush",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:stripped_banyin_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:stripped_cradlewood_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:stripped_jinglestem_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:stripped_lunar_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:stripped_northland_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:stripped_scarlet_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:stripped_torreya_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:sunset_thornbloom",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:suspicious_dusted_gravel",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:swamp_rose",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:tall_crescent_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:tall_gladespike",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:tall_glowing_crescent_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:tall_golden_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:tenacious_petal",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:tenacious_vine",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:tentacle_spike_extended",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:tentacles_coral",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:tentacles_coral_fan",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:thermabysslate",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:thin_eternal_ice",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:tooth_of_hunger",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:torreya_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:torreya_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:torreya_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:torreya_vines",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:twilight_sand",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:twilvewyrm_herb",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:velvetumoss",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:velvetumoss_ball",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:velvetumoss_villi",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:vividstalk",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:voidstone_spike",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:whisperbloom",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:wick_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "eternal_starlight:withered_starlight_flower",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "evilcraft:flesh_humanoid",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "evilcraft:flesh_werewolf",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "evilcraft:infested_nether_nether_bricks",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "evilcraft:invisible_redstone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "evilcraft:undead_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "evilcraft:undead_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "evilcraft:werewolf_bone",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "evilcraft:werewolf_fur",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "extrautilitiesreborn:ender_lilly_end_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "extrautilitiesreborn:ender_lilly_seed",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "extrautilitiesreborn:magical_apple",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "extrautilitiesreborn:magical_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "extrautilitiesreborn:rainbow_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "factory_blocks:ice",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "farmersdelight:apple_pie_slice",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "farmersdelight:kelp_roll_slice",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "farmersdelight:pumpkin_pie_slice",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "farmersdelight:stuffed_pumpkin",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "farmersdelight:sweet_berry_cheesecake_slice",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "forbidden_arcanus:aureal_wardstone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "forbidden_arcanus:aurum_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "forbidden_arcanus:aurum_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "forbidden_arcanus:aurum_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "forbidden_arcanus:bat_wing",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "forbidden_arcanus:crimson_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "forbidden_arcanus:divine_pact",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "forbidden_arcanus:edelwood_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "forbidden_arcanus:fungyss_stem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "forbidden_arcanus:nuggety_aurum_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "forbidden_arcanus:stripped_aurum_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "forbidden_arcanus:tentacle",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "forbidden_arcanus:yellow_orchid",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "ftblibrary:icon_item",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "ftbquests:missing_item",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:apple_pie_slice",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:avocado_fruit_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:avocado_fruit_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:basil_seeds",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:bay_leaf_seeds",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:blueberry_cheesecake_slice",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:blueberry_pie_slice",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:carrot_cake_slice",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:cherry_fruit_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:cherry_fruit_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:cherry_pie_slice",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:chive_seeds",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:cilantro_seeds",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:cinnamon_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:cup_apple",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:cup_berry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:cup_fruit_punch",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:cup_grape",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:cup_lemonade",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:cup_orange",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:dill_seeds",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:eggplant_plate_delftware",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:eggplant_plate_holiday",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:eggplant_plate_plain",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:fresh_lemongrass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:fresh_peppercorn",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:fresh_rosemary",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:fruit_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:lemon_fruit_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:lemon_fruit_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:lemon_meringue_pie_slice",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:lemongrass_seeds",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:lime_fruit_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:lime_fruit_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:mint_seeds",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:mustard_seeds",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:orange_fruit_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:orange_fruit_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:oregano_seeds",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:parsley_seeds",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:peach_fruit_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:peach_fruit_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:peach_pie_slice",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:pear_fruit_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:pear_fruit_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:peppercorn_seeds",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:pineapple_cake_slice",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:pinto_beans",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:plum_fruit_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:plum_fruit_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:plum_pudding_slice",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:potato_soup",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:raspberry_cheesecake_slice",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:rosemary_seeds",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:sage_seeds",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:squash_soup",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:strawberry_cake_slice",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:thyme_seeds",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "herbsandharvest:tomato_soup",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "iceandfire:amphithere_feather",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "iceandfire:chared_cobblestone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "iceandfire:chared_dirt",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "iceandfire:chared_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "iceandfire:chared_gravel",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "iceandfire:chared_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "iceandfire:crackled_cobblestone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "iceandfire:crackled_dirt",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "iceandfire:crackled_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "iceandfire:crackled_gravel",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "iceandfire:crackled_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "iceandfire:dreadwood_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "iceandfire:dreadwood_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "iceandfire:dreadwood_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "iceandfire:fire_lily",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "iceandfire:fishing_spear",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "iceandfire:frost_lily",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "iceandfire:frozen_cobblestone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "iceandfire:frozen_dirt",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "iceandfire:frozen_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "iceandfire:frozen_gravel",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "iceandfire:frozen_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "iceandfire:lightning_lily",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "iceandfire:pixie_house_mushroom_brown",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "iceandfire:pixie_house_mushroom_red",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "iceandfire:shiny_scales",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "iceandfire:stymphalian_bird_feather",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "iceandfire:troll_leather_forest",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "iceandfire:troll_leather_frost",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "iceandfire:troll_leather_mountain",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "iceandfire:troll_tusk",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "iceandfire:troll_weapon_trunk",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "iceandfire:troll_weapon_trunk_frost",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "iceandfire:witherbone",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "immersiveengineering:shader_crescentrose",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "immersiveengineering:shader_rosequartz",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "immersiveengineering:shader_stormflower",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "industrialforegoing:item",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "integrateddynamics:block_menril_resin",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "integrateddynamics:menril_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "irons_spellbooks:affinity_ring_ice",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "irons_spellbooks:frozen_bone",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "irons_spellbooks:hogskin",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "irons_spellbooks:icy_fang",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "irons_spellbooks:scroll_ice",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "livingthings:banana",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "livingthings:shark_tooth",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "lootr:suspicious_gravel",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "lootr:suspicious_sand",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "mahoutsukai:scroll_reality_marble",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "minecolonies:bell_pepper",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "minecolonies:butternut_squash",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "minecolonies:cabbage",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "minecolonies:corn",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "minecolonies:durum",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "minecolonies:eggplant",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "minecolonies:eggplant_dolma",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "minecolonies:garlic",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "minecolonies:gate_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "minecolonies:mushroom_pizza",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "minecolonies:nether_pepper",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "minecolonies:onion",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "minecolonies:rice",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "minecolonies:soybean",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "minecolonies:spicy_eggplant",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "minecolonies:stuffed_pepper",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "minecolonies:stuffed_pita",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "minecolonies:tomato",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "mob_grinding_utils:dark_oak_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "mob_grinding_utils:delightful_dirt",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "mob_grinding_utils:dreadful_dirt",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "moonlight:placeable_item",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "mysticalagriculture:mystical_seeds",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "naturesaura:ancient_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "naturesaura:ancient_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "naturesaura:aura_bloom",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "naturesaura:aura_cactus",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "naturesaura:aura_mushroom",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "naturesaura:crimson_aura_mushroom",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "naturesaura:decayed_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "naturesaura:end_flower",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "naturesaura:golden_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "naturesaura:nether_wart_mushroom",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "naturesaura:warped_aura_mushroom",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "neovitae:air_ritual_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "neovitae:amethyst_gravel",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "neovitae:array_spike",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "neovitae:copper_gravel",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "neovitae:deus_ritual_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "neovitae:diamond_gravel",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "neovitae:earth_ritual_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "neovitae:emerald_gravel",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "neovitae:fire_ritual_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "neovitae:gold_gravel",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "neovitae:gore_clotted_fang",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "neovitae:inverted_master_ritual_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "neovitae:iron_gravel",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "neovitae:lapis_gravel",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "neovitae:netherite_scrap_gravel",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "neovitae:quartz_gravel",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "neovitae:tainted_flesh",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "neovitae:tenebrae_ritual_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "neovitae:venomgland_sac",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "neovitae:water_ritual_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "occultism:demonic_meat",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "occultism:othercobblestone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "occultism:otherflower_natural",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "occultism:otherworld_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "occultism:otherworld_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "occultism:otherworld_sapling_natural_inventory",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "occultism:storage_controller_item",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "occultism:stripped_otherworld_log_natural",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "oritech:banana",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "oritech:uranium_crystal",
+        "emc_value": 256
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2crops:calabashitem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2crops:guaranaitem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2crops:papyrusitem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2foodcore:caramelcupcakeitem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2foodcore:carrotcupcakeitem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2foodcore:chocolatecupcakeitem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2foodcore:chocolatepuddingitem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2foodcore:cookedgroundporkitem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2foodcore:jellydonutitem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2foodcore:marshmellowchicksitem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2foodcore:pumpkincupcakeitem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2foodextended:honeyglazedhamitem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2foodextended:meringuebrownieitem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2trees:appleitem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2trees:pamacorn",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2trees:pamapple",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2trees:pambanana",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2trees:pambreadfruit",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2trees:pamcandlenut",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2trees:pamcherry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2trees:pamchestnut",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2trees:pamcoconut",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2trees:pamgooseberry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2trees:pamgrapefruit",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2trees:pamhazelnut",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2trees:pamjackfruit",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2trees:pamlemon",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2trees:pamlime",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2trees:pammango",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2trees:pamolive",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2trees:pamorange",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2trees:pampassionfruit",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2trees:pampeach",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2trees:pampear",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2trees:pampeppercorn",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2trees:pampinenut",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2trees:pamplum",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2trees:pamstarfruit",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2trees:pamvanillabean",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pamhc2trees:pamwalnut",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "pneumaticcraft:fake_ice",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "potionsmaster:red_feather",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivebees:adv_breed_all_bees",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivebees:amber",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivebees:sugarbag_honeycomb",
+        "emc_value": 24
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:alder_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:alder_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:allspice_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:allspice_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:almond_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:almond_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:apricot_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:apricot_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:aquilaria_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:aquilaria_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:asai_palm_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:asai_palm_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:ash_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:ash_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:aspen_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:aspen_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:avocado_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:avocado_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:balsa_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:balsa_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:balsam_fir_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:balsam_fir_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:banana_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:banana_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:bay_leaf_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:bay_leaf_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:beech_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:beech_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:beliy_naliv_apple_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:beliy_naliv_apple_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:black_cherry_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:black_cherry_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:black_ember_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:black_ember_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:black_locust_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:black_locust_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:blackthorn_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:blackthorn_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:blue_mahoe_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:blue_mahoe_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:blue_yonder_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:blue_yonder_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:boxwood_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:boxwood_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:brazil_nut_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:brazil_nut_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:brazilwood_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:brazilwood_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:breadfruit_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:breadfruit_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:brown_amber_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:brown_amber_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:buddhas_hand_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:buddhas_hand_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:bull_pine_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:bull_pine_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:butternut_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:butternut_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:cacao_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:cacao_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:candlenut_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:candlenut_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:carob_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:carob_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:cashew_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:cashew_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:cave_dweller_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:cave_dweller_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:cedar_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:cedar_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:cempedak_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:cempedak_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:ceylon_ebony_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:ceylon_ebony_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:cherry_plum_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:cherry_plum_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:cinnamon_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:cinnamon_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:citron_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:citron_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:clove_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:clove_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:cocobolo_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:cocobolo_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:coconut_sprout",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:coconut_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:coconut_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:coffea_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:coffea_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:copoazu_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:copoazu_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:copper_beech_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:copper_beech_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:cork_oak_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:cork_oak_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:cultivated_pear_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:cultivated_pear_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:date_palm_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:date_palm_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:dogwood_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:dogwood_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:douglas_fir_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:douglas_fir_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:elderberry_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:elderberry_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:elm_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:elm_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:european_larch_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:european_larch_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:finger_lime_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:finger_lime_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:firecracker_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:firecracker_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:flickering_sun_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:flickering_sun_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:flowering_crabapple_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:flowering_crabapple_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:foggy_blast_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:foggy_blast_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:ginkgo_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:ginkgo_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:golden_delicious_apple_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:golden_delicious_apple_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:grandidiers_baobab_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:grandidiers_baobab_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:granny_smith_apple_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:granny_smith_apple_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:grapefruit_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:grapefruit_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:great_sallow_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:great_sallow_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:hawthorn_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:hawthorn_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:hazel_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:hazel_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:holly_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:holly_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:hornbeam_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:hornbeam_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:ipe_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:ipe_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:iroko_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:iroko_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:jackfruit_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:jackfruit_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:juniper_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:juniper_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:kapok_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:kapok_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:key_lime_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:key_lime_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:kumquat_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:kumquat_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:lawson_cypress_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:lawson_cypress_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:lemon_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:lemon_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:lime_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:lime_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:loblolly_pine_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:loblolly_pine_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:logwood_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:logwood_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:mahogany_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:mahogany_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:mandarin_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:mandarin_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:mango_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:mango_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:monkey_puzzle_medium_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:monkey_puzzle_small_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:monkey_puzzle_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:monkey_puzzle_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:moonlight_magic_crepe_myrtle_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:moonlight_magic_crepe_myrtle_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:myrtle_ebony_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:myrtle_ebony_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:nectarine_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:nectarine_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:night_fuchsia_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:night_fuchsia_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:nutmeg_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:nutmeg_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:old_fustic_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:old_fustic_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:olive_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:olive_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:orange_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:orange_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:osage_orange_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:osage_orange_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:padauk_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:padauk_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:pandanus_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:pandanus_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:papaya_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:papaya_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:peach_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:peach_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:pecan_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:pecan_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:persimmon_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:persimmon_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:pink_ipe_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:pink_ipe_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:pink_ivory_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:pink_ivory_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:pistachio_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:pistachio_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:plantain_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:plantain_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:plum_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:plum_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:pomegranate_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:pomegranate_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:pomelo_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:pomelo_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:prairie_crabapple_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:prairie_crabapple_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:purple_blackthorn_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:purple_blackthorn_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:purple_crepe_myrtle_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:purple_crepe_myrtle_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:purple_ipe_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:purple_ipe_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:purple_spiral_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:purple_spiral_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:rainbow_gum_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:rainbow_gum_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:red_banana_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:red_banana_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:red_crepe_myrtle_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:red_crepe_myrtle_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:red_delicious_apple_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:red_delicious_apple_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:red_maple_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:red_maple_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:rippling_willow_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:rippling_willow_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:rose_gum_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:rose_gum_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:rosewood_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:rosewood_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:rowan_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:rowan_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:rubber_tree_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:rubber_tree_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:salak_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:salak_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:sand_pear_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:sand_pear_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:sandalwood_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:sandalwood_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:satsuma_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:satsuma_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:sequoia_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:sequoia_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:silver_fir_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:silver_fir_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:silver_lime_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:silver_lime_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:slimy_delight_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:slimy_delight_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:sour_cherry_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:sour_cherry_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:soursop_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:soursop_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:sparkle_cherry_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:sparkle_cherry_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:star_anise_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:star_anise_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:star_fruit_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:star_fruit_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:sugar_apple_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:sugar_apple_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:sugar_maple_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:sugar_maple_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:swamp_gum_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:swamp_gum_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:sweet_chestnut_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:sweet_chestnut_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:sweet_crabapple_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:sweet_crabapple_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:sweetgum_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:sweetgum_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:sycamore_fig_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:sycamore_fig_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:tangerine_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:tangerine_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:teak_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:teak_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:thunder_bolt_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:thunder_bolt_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:time_traveller_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:time_traveller_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:tuscarora_crepe_myrtle_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:tuscarora_crepe_myrtle_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:walnut_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:walnut_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:water_wonder_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:water_wonder_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:wenge_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:wenge_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:western_hemlock_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:western_hemlock_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:white_ipe_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:white_ipe_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:white_poplar_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:white_poplar_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:white_willow_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:white_willow_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:whitebeam_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:whitebeam_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:wild_cherry_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:wild_cherry_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:yellow_meranti_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:yellow_meranti_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:yew_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:yew_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:zebrano_stripped_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "productivetrees:zebrano_stripped_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "railcraft:abyssal_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "railcraft:cracked_firestone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "railcraft:quarried_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:alpha_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:alpha_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:alpha_rose",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:alpha_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:apple_oak_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:apple_oak_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:ashen_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:ashen_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:ashen_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:bamboo_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:bamboo_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:bamboo_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:baobab_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:baobab_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:barley",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:barrel_cactus",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:blackwood_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:blackwood_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:bladed_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:bladed_tall_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:blue_bioshroom_stem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:blue_magnolia_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:brimsprout",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:brimsprout_nylium",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:brimwood_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:brimwood_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:brown_wall_mushroom",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:cactus_flower",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:chalk",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:cobalt_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:cobalt_nylium",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:cobalt_roots",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:cobalt_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:cooked_meat",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:corpse_flower",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:cypress_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:cypress_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:daisy",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:day_lily",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:dead_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:dead_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:dead_pine_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:duskmelon_slice",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:enchanted_birch_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:eucalyptus_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:eucalyptus_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:felicia_daisy",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:flowering_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:flowering_lily_pad",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:frozen_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:glister_bulb",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:glistering_bloom",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:glistering_fern",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:glistering_nylium",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:glistering_sprout",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:golden_larch_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:green_bioshroom_stem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:hanging_earlight_fruit",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:hyacinth_bloom",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:hyacinth_flowers",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:joshua_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:joshua_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:kapok_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:kapok_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:kapok_vines",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:larch_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:larch_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:magnolia_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:magnolia_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:maple_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:maple_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:mauve_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:mauve_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:medium_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:mycotoxic_daisy",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:mycotoxic_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:mycotoxic_moss",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:mycotoxic_mushrooms",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:orange_coneflower",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:orange_maple_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:palm_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:palm_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:peat_dirt",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:pine_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:pine_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:pink_bioshroom_stem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:pink_magnolia_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:pointed_redstone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:poppy_bush",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:prismoss_sprout",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:purple_coneflower",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:red_maple_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:redstone_bulb",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:redwood_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:redwood_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:saguaro_cactus",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:saguaro_cactus_corner",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:salmon_poppy_bush",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:salmonberry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:sandy_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:sandy_tall_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:seeded_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:seeded_tall_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:silt_dirt",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:silver_birch_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:silver_birch_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:small_oak_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:small_oak_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:small_oak_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:socotra_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:socotra_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:spanish_moss",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:steppe_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:steppe_tall_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:stripped_bamboo_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:stripped_baobab_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:stripped_blackwood_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:stripped_blue_bioshroom_stem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:stripped_cobalt_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:stripped_cypress_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:stripped_eucalyptus_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:stripped_green_bioshroom_stem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:stripped_joshua_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:stripped_kapok_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:stripped_larch_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:stripped_magnolia_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:stripped_maple_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:stripped_mauve_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:stripped_palm_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:stripped_pine_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:stripped_pink_bioshroom_stem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:stripped_redwood_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:stripped_small_oak_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:stripped_socotra_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:stripped_willow_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:stripped_yellow_bioshroom_stem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:white_magnolia_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:willow_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:willow_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:windswept_grass",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:yellow_bioshroom_stem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "regions_unexplored:yellow_wall_bioshroom",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "rftoolsutility:tablet_redstone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "rootsclassic:acacia_bark",
+        "emc_value": 8
+      },
+      {
+        "type": "projecte:item",
+        "id": "rootsclassic:aesthetic_standing_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "rootsclassic:birch_bark",
+        "emc_value": 8
+      },
+      {
+        "type": "projecte:item",
+        "id": "rootsclassic:dark_oak_bark",
+        "emc_value": 8
+      },
+      {
+        "type": "projecte:item",
+        "id": "rootsclassic:elderberry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "rootsclassic:entangler_standing_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "rootsclassic:flare_orchid",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "rootsclassic:grower_standing_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "rootsclassic:healer_standing_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "rootsclassic:igniter_standing_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "rootsclassic:infernal_bulb",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "rootsclassic:jungle_bark",
+        "emc_value": 8
+      },
+      {
+        "type": "projecte:item",
+        "id": "rootsclassic:midnight_bloom",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "rootsclassic:oak_bark",
+        "emc_value": 8
+      },
+      {
+        "type": "projecte:item",
+        "id": "rootsclassic:old_root",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "rootsclassic:radiant_daisy",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "rootsclassic:repulsor_standing_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "rootsclassic:spruce_bark",
+        "emc_value": 8
+      },
+      {
+        "type": "projecte:item",
+        "id": "rootsclassic:standing_stone_item",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "rootsclassic:vacuum_standing_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "rootsclassic:verdant_sprig",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "silentgear:flax_flowers",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "silentgear:flax_seeds",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "silentgear:netherwood_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "silentgear:sinew",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "silentgear:stripped_netherwood_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "silentgems:alexandrite_glowrose",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "silentgems:ammolite_glowrose",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "silentgems:aquamarine_glowrose",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "silentgems:black_diamond_glowrose",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "silentgems:carnelian_glowrose",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "silentgems:citrine_glowrose",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "silentgems:garnet_glowrose",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "silentgems:heliodor_glowrose",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "silentgems:iolite_glowrose",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "silentgems:kyanite_glowrose",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "silentgems:moldavite_glowrose",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "silentgems:opal_glowrose",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "silentgems:pearl_glowrose",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "silentgems:peridot_glowrose",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "silentgems:rose_quartz_glowrose",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "silentgems:ruby_glowrose",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "silentgems:sapphire_glowrose",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "silentgems:tanzanite_glowrose",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "silentgems:topaz_glowrose",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "silentgems:turquoise_glowrose",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "silentgems:white_diamond_glowrose",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "stevescarts:component_birch_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "stevescarts:component_jungle_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "stevescarts:component_oak_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "stevescarts:component_spruce_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "stevescarts:component_stuffed_sock",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "sushigocrafting:avocado_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "sushigocrafting:avocado_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "sushigocrafting:avocado_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "sushigocrafting:cooked_rice",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "sushigocrafting:crab_cucumber_california",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "sushigocrafting:cucumber_maki",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "sushigocrafting:cucumber_slices",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "sushigocrafting:salmon_cucumber_california",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "sushigocrafting:tobiko_crab_cucumber_california",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "sushigocrafting:tobiko_salmon_cucumber_california",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "sushigocrafting:tobiko_tuna_cucumber_california",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "sushigocrafting:tuna_cucumber_california",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "the_bumblezone:ancient_wax_bricks",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "the_bumblezone:banner_pattern_honeycombs",
+        "emc_value": 24
+      },
+      {
+        "type": "projecte:item",
+        "id": "the_bumblezone:beehive_beeswax",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "the_bumblezone:carvable_wax_bricks",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "the_bumblezone:carvable_wax_flower",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "the_bumblezone:crystalline_flower",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "the_bumblezone:honey_crystal",
+        "emc_value": 256
+      },
+      {
+        "type": "projecte:item",
+        "id": "the_bumblezone:sugar_infused_cobblestone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "the_bumblezone:sugar_infused_stone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:banister_item",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:beanstalk_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:blackberry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:blackberry_bush",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:blightberry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:blightberry_bush",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:blue_castle_rune_brick",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:blueberry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:blueberry_bush",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:canopy_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:canopy_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:castle_brick",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:cinder_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:cinder_wood",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:copper_berry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:copper_oreberry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:cracked_deadrock",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:dark_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:dark_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:deadrock",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:duskberry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:duskberry_bush",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:etched_nagastone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:fallen_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:giant_cobblestone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:giant_cobblestone_base",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:giant_cobblestone_gui",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:giant_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:giant_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:gold_berry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:gold_oreberry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:huge_lily_pad",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:huge_mushgloom_stem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:huge_stalk",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:huge_water_lily",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:iron_berry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:iron_oreberry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:magic_beans",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:maloberry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:maloberry_bush",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:mangrove_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:mangrove_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:mangrove_root",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:mayapple",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:mazestone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:mining_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:mining_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:moss_patch",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:nagastone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:pink_castle_rune_brick",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:rainbow_oak_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:raspberry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:raspberry_bush",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:root",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:root_strand",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:skyberry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:skyberry_bush",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:sorting_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:sorting_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:stingberry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:stingberry_bush",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:stripped_canopy_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:stripped_dark_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:stripped_mangrove_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:stripped_mining_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:stripped_sorting_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:stripped_time_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:stripped_transformation_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:stripped_twilight_oak_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:thorn_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:thorn_rose",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:time_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:time_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:torchberry_plant",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:transformation_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:transformation_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:twilight_oak_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:twilight_oak_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:underbrick",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:violet_castle_rune_brick",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:weathered_deadrock",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "twilightforest:yellow_castle_rune_brick",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:ancient_root",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:blisterberry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:blood_mushroom",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:blood_mushroom_cap",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:blood_mushroom_stem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:blue_mogmoss",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:brute_tusk",
+        "emc_value": 64
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:ditchbulb",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:ditchbulb_plant",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:dreadrock",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:droopvine_item",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:engorged_blood_mushroom_cap",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:glitterkelp",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:gloomgourd",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:grongle_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:grongle_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:grongle_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:hanging_grongle_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:indigo_mushroom",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:indigo_mushroom_cap",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:indigo_mushroom_stem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:ink_mushroom",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:ink_mushroom_cap",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:ink_mushroom_stem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:loose_tremblecrust",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:mogmoss",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:mushroom_veil",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:puff_mushroom",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:puff_mushroom_cap",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:puff_mushroom_stem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:rogdoric_ancient_root",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:rotten_blisterberry",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:shiverstone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:slingshot_pulling_blisterberry_0",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:slingshot_pulling_blisterberry_1",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:slingshot_pulling_blisterberry_2",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:smogstem_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:smogstem_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:smogstem_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:stripped_grongle_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:stripped_smogstem_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:stripped_wigglewood_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:tremblecrust",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:underbeans",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:veil_mushroom",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:veil_mushroom_cap",
+        "emc_value": 16
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:veil_mushroom_stem",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:wigglewood_leaves",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:wigglewood_log",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "undergarden:wigglewood_sapling",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "waystones:portstone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "waystones:sharestone",
+        "emc_value": 1
+      },
+      {
+        "type": "projecte:item",
+        "id": "xycraft_machines:pipe_item",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "xycraft_world:aurey_block_fx_glowing_lime",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "xycraft_world:aurey_block_fx_glowing_orange",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "xycraft_world:aurey_block_fx_lime",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "xycraft_world:aurey_block_fx_orange",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "xycraft_world:aurey_block_matte_glowing_lime",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "xycraft_world:aurey_block_matte_glowing_orange",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "xycraft_world:aurey_block_matte_lime",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "xycraft_world:aurey_block_matte_orange",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "xycraft_world:glass_viewer_rgb_glowing_lime",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "xycraft_world:glass_viewer_rgb_glowing_orange",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "xycraft_world:glass_viewer_rgb_lime",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "xycraft_world:glass_viewer_rgb_orange",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "xycraft_world:lamp_cube_lime",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "xycraft_world:lamp_cube_orange",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "xycraft_world:lamp_flush_lime",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "xycraft_world:lamp_flush_orange",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "xycraft_world:lamp_lantern_lime",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "xycraft_world:lamp_lantern_orange",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "xycraft_world:lamp_rgb_glowing_inverted_lime",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "xycraft_world:lamp_rgb_glowing_inverted_orange",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "xycraft_world:lamp_rgb_glowing_lime",
+        "emc_value": 32
+      },
+      {
+        "type": "projecte:item",
+        "id": "xycraft_world:lamp_rgb_glowing_orange",
+        "emc_value": 32
+      }
+    ]
+  }
+}

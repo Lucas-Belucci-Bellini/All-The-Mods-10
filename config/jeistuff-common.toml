@@ -1,0 +1,6 @@
+#Stop JEI generating grindstone disenchanting recipes, one per enchantment per item it fits
+hide_grindstone_disenchanting = true
+#Stop JEI generating grindstone repair recipes, one for every damageable item in the game
+hide_grindstone_repair = true
+#Stop JEI generating anvil repair recipes: an item repaired by a second of itself, and an item repaired by its material.
+hide_anvil_repair = true

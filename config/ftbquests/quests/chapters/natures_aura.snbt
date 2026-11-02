@@ -10,6 +10,7 @@
 	images: [
 		{
 			height: 2.0d
+			id: "68FA247BE4A39BD7"
 			image: "naturesaura:item/gold_leaf"
 			rotation: 0.0d
 			width: 2.0d
@@ -18,6 +19,7 @@
 		}
 		{
 			height: 2.0d
+			id: "565169305639025D"
 			image: "naturesaura:item/vacuum_bottle"
 			rotation: 0.0d
 			width: 2.0d
@@ -26,6 +28,7 @@
 		}
 		{
 			height: 2.0d
+			id: "104784962C53BFF7"
 			image: "atm:textures/questpics/natures_aura/natures_aura_title.png"
 			rotation: 0.0d
 			width: 12.1d
@@ -34,6 +37,7 @@
 		}
 		{
 			height: 1.5d
+			id: "46407FC18002D0A7"
 			image: "naturesaura:item/eye_improved"
 			rotation: 0.0d
 			width: 1.5d
@@ -42,6 +46,7 @@
 		}
 		{
 			height: 1.75d
+			id: "78157B30683A6657"
 			image: "refurbished_furniture:textures/particle/super_bounce_0.png"
 			rotation: 0.0d
 			width: 1.75d
@@ -50,6 +55,7 @@
 		}
 		{
 			height: 5.0d
+			id: "2335C1D6E55C1CBF"
 			image: "irons_spellbooks:textures/particle/acid_bubble_3.png"
 			rotation: 0.0d
 			width: 5.0d
@@ -58,6 +64,7 @@
 		}
 		{
 			height: 5.0d
+			id: "765747C8F29D4811"
 			image: "atm:textures/questpics/natures_aura/natural_altar.png"
 			rotation: 0.0d
 			width: 9.859550561797754d
@@ -92,7 +99,7 @@
 			tasks: [{
 				count: 4L
 				id: "46CB54014AC0447C"
-				item: { count: 4, id: "naturesaura:gold_leaf" }
+				item: { count: 1, id: "naturesaura:gold_leaf" }
 				type: "item"
 			}]
 			x: 2.5d
@@ -129,13 +136,13 @@
 				{
 					count: 8L
 					id: "531BA7E45499F20D"
-					item: { count: 8, id: "naturesaura:wood_stand" }
+					item: { count: 1, id: "naturesaura:wood_stand" }
 					type: "item"
 				}
 				{
 					count: 16L
 					id: "172E24F739EEA426"
-					item: { count: 16, id: "naturesaura:gold_powder" }
+					item: { count: 1, id: "naturesaura:gold_powder" }
 					type: "item"
 				}
 			]
@@ -381,13 +388,13 @@
 				{
 					count: 8L
 					id: "005FC74EBECBBD39"
-					item: { count: 8, id: "naturesaura:gold_brick" }
+					item: { count: 1, id: "naturesaura:gold_brick" }
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "1523CDF0F19A3162"
-					item: { count: 4, id: "minecraft:chiseled_stone_bricks" }
+					item: { count: 1, id: "minecraft:chiseled_stone_bricks" }
 					type: "item"
 				}
 			]
@@ -519,7 +526,7 @@
 				{
 					count: 3L
 					id: "5CFDF0F9971BE465"
-					item: { count: 3, id: "naturesaura:calling_spirit" }
+					item: { count: 1, id: "naturesaura:calling_spirit" }
 					type: "item"
 				}
 			]
@@ -843,10 +850,10 @@
 		}
 		{
 			id: "5A0EB2ADEBC7EE2B"
-			tags: ["arr"]
 			invisible: true
 			optional: true
 			shape: "circle"
+			tags: ["arr"]
 			tasks: [
 				{
 					id: "15698B55CCAD2433"

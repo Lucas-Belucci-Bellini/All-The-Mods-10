@@ -10,6 +10,7 @@
 	images: [
 		{
 			height: 1.5d
+			id: "1DCFC12F3434C81B"
 			image: "silentgear:item/azure_repair_kit"
 			rotation: 0.0d
 			width: 1.5d
@@ -18,6 +19,7 @@
 		}
 		{
 			height: 5.0d
+			id: "29EAEF41EE27047F"
 			image: "atm:textures/questpics/silentgear/starcharger.png"
 			rotation: 0.0d
 			width: 10.0d
@@ -1739,10 +1741,10 @@
 		}
 		{
 			id: "769D5DE66D13B256"
-			tags: ["arr"]
 			invisible: true
 			optional: true
 			shape: "circle"
+			tags: ["arr"]
 			tasks: [
 				{
 					id: "6D9DBD885FE4C94C"
