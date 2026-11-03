@@ -403,7 +403,7 @@ def load_pack(inst, tags_json, bad_ids):
 
 def run(pack, inst, out_json):
     # hand-tuned base values live outside data/ so ProjectE only loads the generated 00 file
-    ours = [json.loads(p.read_text(encoding="utf-8")) for p in sorted((inst / "kubejs/emc_fontes").glob("0[3-9]_*.json"))]
+    ours = [json.loads(p.read_text(encoding="utf-8")) for p in sorted((inst / "kubejs/emc_fontes").glob("[0-9][0-9]_*.json"))]
 
     base = {k: v for k, v in {**pec_before(pack, pack.pec), **pec_before(pack, ours)}.items() if k in pack.items}
     recipes = [r for r in parse_recipes(pack) + pec_conversions(pack, pack.pec + ours) if r[0] in pack.items]
