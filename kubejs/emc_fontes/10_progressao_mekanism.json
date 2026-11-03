@@ -1,0 +1,27 @@
+{
+  "comment": "Overrides iniciais de progressao para componentes de circuito do Mekanism. Escala em x4 por tier; revisar contra receitas reais e valores dos materiais-base.",
+  "values": {
+    "before": [
+      {
+        "type": "projecte:item",
+        "id": "mekanism:basic_control_circuit",
+        "emc_value": 512
+      },
+      {
+        "type": "projecte:item",
+        "id": "mekanism:advanced_control_circuit",
+        "emc_value": 2048
+      },
+      {
+        "type": "projecte:item",
+        "id": "mekanism:elite_control_circuit",
+        "emc_value": 8192
+      },
+      {
+        "type": "projecte:item",
+        "id": "mekanism:ultimate_control_circuit",
+        "emc_value": 32768
+      }
+    ]
+  }
+}
