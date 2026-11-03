@@ -514,6 +514,41 @@ def run(pack, inst, out_json):
                    "Allthemodium), calculado pelas receitas. Minerio = 5 lingotes, minerio bruto = 3.",
         "values": {"before": [{"type": "projecte:item", "id": i, "emc_value": v} for i, v in sorted(final.items())]},
     }, separators=(",", ":")) + "\n", encoding="utf-8")
+
+    # Full-pack audit table: one row per discovered item, including items without EMC.
+    # This is the review surface for global rebalance; it does not change ProjectE values.
+    audit = []
+    for item in sorted(pack.items):
+        if item in base:
+            origin = "manual_base"
+        elif item in ores:
+            origin = "ore_rule"
+        elif item in guess:
+            origin = "heuristic_fallback"
+        elif item in final:
+            origin = "recipe_calculated"
+        else:
+            origin = "no_emc"
+        audit.append({
+            "id": item,
+            "mod": item.split(":", 1)[0],
+            "current_emc": final.get(item),
+            "origin": origin,
+            "progression_tier": None,
+            "target_emc": None,
+            "review_status": "pending",
+            "review_notes": ""
+        })
+    audit_path = inst / "kubejs/emc_fontes/00_tabela_mestra_emc.json"
+    audit_path.write_text(json.dumps({
+        "schema_version": 1,
+        "comment": "Inventario completo gerado por gen_all.py. current_emc reflete o calculo atual; target_emc e progression_tier aguardam auditoria manual por mod e progressao.",
+        "item_count": len(audit),
+        "reviewed_count": 0,
+        "items": audit
+    }, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
+    print("tabela mestra:", audit_path, len(audit), "itens")
+
     print("total com EMC:", len(final), "de", len(pack.items))
     for probe in ("minecraft:iron_block", "minecraft:gold_block", "minecraft:diamond_block", "minecraft:emerald_block",
                   "minecraft:lapis_block", "minecraft:redstone_block", "minecraft:netherite_block",
