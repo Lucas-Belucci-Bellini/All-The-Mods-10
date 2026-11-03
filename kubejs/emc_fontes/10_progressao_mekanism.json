@@ -1,5 +1,5 @@
 {
-  "comment": "Overrides iniciais de progressao para componentes de circuito do Mekanism. Escala em x4 por tier; revisar contra receitas reais e valores dos materiais-base.",
+  "comment": "Progressao de circuitos Mekanism e Mekanism Extras. Escala x4 por tier; os quatro tiers extras foram identificados nas receitas da versao 1.4.x para Minecraft 1.21.1. Valores-alvo devem ser validados contra materiais-base e receitas completas.",
   "values": {
     "before": [
       {
@@ -21,6 +21,26 @@
         "type": "projecte:item",
         "id": "mekanism:ultimate_control_circuit",
         "emc_value": 32768
+      },
+      {
+        "type": "projecte:item",
+        "id": "mekanism_extras:absolute_control_circuit",
+        "emc_value": 131072
+      },
+      {
+        "type": "projecte:item",
+        "id": "mekanism_extras:supreme_control_circuit",
+        "emc_value": 524288
+      },
+      {
+        "type": "projecte:item",
+        "id": "mekanism_extras:cosmic_control_circuit",
+        "emc_value": 2097152
+      },
+      {
+        "type": "projecte:item",
+        "id": "mekanism_extras:infinite_control_circuit",
+        "emc_value": 8388608
       }
     ]
   }
