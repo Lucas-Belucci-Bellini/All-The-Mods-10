@@ -35,22 +35,22 @@
       {
         "type": "projecte:item",
         "id": "ae2:calculation_processor_press",
-        "emc_value": 8192
+        "emc_value": 2304
       },
       {
         "type": "projecte:item",
         "id": "ae2:engineering_processor_press",
-        "emc_value": 8192
+        "emc_value": 2304
       },
       {
         "type": "projecte:item",
         "id": "ae2:logic_processor_press",
-        "emc_value": 8192
+        "emc_value": 2304
       },
       {
         "type": "projecte:item",
         "id": "ae2:silicon_press",
-        "emc_value": 8192
+        "emc_value": 2304
       },
       {
         "type": "projecte:item",
@@ -216,6 +216,11 @@
         "type": "projecte:item",
         "id": "draconicevolution:awakened_draconium_block",
         "emc_value": 211968
+      },
+      {
+        "type": "projecte:item",
+        "id": "irons_spellbooks:pyrium_ingot",
+        "emc_value": 122880
       }
     ]
   }

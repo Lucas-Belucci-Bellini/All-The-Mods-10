@@ -47,14 +47,14 @@ SKIP_KEYS = {"type", "neoforge:conditions", "conditions", "fluid", "fluid_input"
 # Recipe types that are not real crafting: generators, trades, breeding, recolor/recycle loops.
 SKIP_TYPES = re.compile(
     r"^(minecraft:crafting_(special|decorated_pot|transmute)|botanypots|justenoughbreeding"
-    r"|farmingforblockheads|occultism:miner|mekanism:mek_data|sauce:|framedblocks|refinedstorage:recolor"
+    r"|farmingforblockheads|occultism:miner|sauce:|framedblocks|refinedstorage:recolor"
     r"|productivebees:(advanced_beehive|centrifuge|bottler|bee_conversion|bee_spawning)|mekmm:planting"
     r"|theurgy:incubation|.*(recolor|dye_|_dyeing|coloring|uncraft|disassembl|recycl|salvag|repair|duplicat"
     r"|clone|cloning|_loot|loot_|fishing|trade|villager|spawn|summon|transmut|test))")
 DENY = re.compile(r"creative|spawn_egg|debug|command_block|minecraft:(barrier|structure_|jigsaw|light$|bedrock"
                   r"|end_portal_frame|reinforced_deepslate|petrified_oak_slab|spawner|trial_spawner|vault"
                   r"|budding_amethyst|knowledge_book|written_book|filled_map)|_test\b|:test_"
-                  r"|admin|infinite|unlimited|dev_tool|missing|placeholder|dummy|:rendered_|_rendered|ponder")
+                  r"|admin|(?<!mekanism_extras:)infinite|unlimited|dev_tool|missing|placeholder|dummy|:rendered_|_rendered|ponder")
 
 VAL_RULES = [
     (8, r"_bark$"), (1, r"_leaves$|leaf_litter"),
@@ -276,6 +276,31 @@ def first_output(node):
     return None
 
 
+CHEM = "chem:"  # pseudo items for Mekanism chemicals, priced per mB
+
+
+def chem_output(t, data):
+    """(chem:id, mB) when a Mekanism recipe turns items into a fixed amount of chemical."""
+    if not t.startswith("mekanism"):
+        return None
+    for k in ("output", "chemical_output"):
+        o = data.get(k)
+        if isinstance(o, dict) and isinstance(o.get("id"), str) and isinstance(o.get("amount"), int)                 and o["amount"] >= 1 and "count" not in o:
+            return (CHEM + o["id"], o["amount"])
+    return None
+
+
+def chem_input(data):
+    """(chem:id, mB) for a fixed-amount chemical input, or None if absent/per-tick/unreadable."""
+    c = data.get("chemical_input")
+    if not isinstance(c, dict) or data.get("per_tick_usage") is True:
+        return None
+    name = c.get("chemical") or c.get("tag")
+    if isinstance(name, str) and ID_RE.match(name) and isinstance(c.get("amount"), int) and c["amount"] >= 1:
+        return (CHEM + name, c["amount"])
+    return None
+
+
 def parse_recipes(pack):
     out = []
     for data in pack.recipes.values():
@@ -284,8 +309,8 @@ def parse_recipes(pack):
         t = data.get("type", "")
         if not isinstance(t, str) or SKIP_TYPES.match(t):
             continue
-        o = next((first_output(data[k]) for k in data if k in OUT_KEYS), None)
-        if not o or o[0] not in pack.items:
+        o = chem_output(t, data) or next((first_output(data[k]) for k in data if k in OUT_KEYS), None)
+        if not o or not (o[0] in pack.items or o[0].startswith(CHEM)):
             continue
         parsed = ingredients(pack, data)
         if not parsed or not parsed[0] or any(len(a) == 1 and o[0] in a for a, _ in parsed[0]):
@@ -296,6 +321,52 @@ def parse_recipes(pack):
         # essence -> resource is a farm: never prices the resource (tier 9), only the essence
         tier = 9 if farm else 3 if lossy else 1 if crafting else 2
         out.append((o[0], o[1], ings, t, tier))
+        # the chemical is the only missing input: also add the full-cost version as a lossless recipe
+        ci = chem_input(data)
+        others = [k for k in FLUID_KEYS if k in data and k != "chemical_input"]
+        # nucleosynthesis turns a few mB of antimatter into rare blocks (2 mB -> lapis block); it is an
+        # endgame energy sink and must not undercut the item's normal price
+        if lossy and not farm and ci and not others and t != "mekanism:nucleosynthesizing":
+            out.append((o[0], o[1], ings + [(frozenset([ci[0]]), ci[1])], t, 2))
+    return out
+
+
+def group_recipes(pack, inst):
+    """Chipped and Rechiseled swap a block for any variant of it for free, so every variant must be
+    worth the same as its cheapest member. Each group gets a pseudo item linked 1:1 both ways."""
+    groups = []  # (name, [(item, worth)])
+    for tag in pack.tags:
+        if tag.startswith("chipped:"):
+            # chipped lists the vanilla base block without a namespace ("andesite")
+            bare = {"minecraft:" + e for e in pack.tags[tag] if isinstance(e, str) and ":" not in e}
+            groups.append((tag, [(i, F(1)) for i in pack.members(tag) | bare]))
+    for jar in (inst / "mods").glob("rechiseled-*.jar"):
+        with zipfile.ZipFile(jar) as zf:
+            for name in zf.namelist():
+                if "/chiseling_recipes/" not in name or not name.endswith(".json"):
+                    continue
+                members = []
+                for e in json.loads(zf.read(name)).get("entries", []):
+                    if isinstance(e, str):
+                        e = {"block": e}
+                    for pre in ("", "connecting_"):
+                        if isinstance(e.get(pre + "block"), str):
+                            members.append((e[pre + "block"], F(1)))
+                        if isinstance(e.get(pre + "stairs"), str):
+                            members.append((e[pre + "stairs"], F(1)))
+                        if isinstance(e.get(pre + "slab"), str):
+                            w = F(e.get(pre + "slab_worth", 0.5)).limit_denominator(16)
+                            members.append((e[pre + "slab"], w))
+                groups.append(("rechiseled:" + name.rsplit("/", 1)[1][:-5], members))
+    out = []
+    for name, members in groups:
+        g = "grp:" + name
+        for item, w in members:
+            if item not in pack.items or w <= 0:
+                continue
+            # 1 item -> w group units, and back; slabs are half a block
+            out.append((g, w.numerator, [(frozenset([item]), w.denominator)], "grupo_variantes", 1))
+            out.append((item, w.denominator, [(frozenset([g]), w.numerator)], "grupo_variantes", 1))
     return out
 
 
@@ -332,14 +403,16 @@ def pec_before(pack, docs):
 
 def solve(values, fixed, recipes, passes=80):
     by_out = defaultdict(list)
-    for o, c, ings, t, _tier in recipes:
+    for o, c, ings, t, tier in recipes:
         if o not in fixed:
-            by_out[o].append((c, ings, t))
+            by_out[o].append((c, ings, t, tier >= 3))
     for _ in range(passes):
         changed = False
         for o, lst in by_out.items():
-            best = values.get(o)
-            for c, ings, t in lst:
+            # a recipe that lists every input beats one with an uncounted fluid/chemical,
+            # even when the incomplete one looks cheaper
+            best = {False: None, True: None}
+            for c, ings, t, lossy in lst:
                 cost = F(0)
                 for a, n in ings:
                     m = min((values[x] for x in a if x in values), default=None)
@@ -348,12 +421,17 @@ def solve(values, fixed, recipes, passes=80):
                     cost += m * n
                 else:
                     cand = cost / c
-                    if cand >= 1 and (best is None or cand < best):
-                        best = cand
-                        WHY[o] = (t, c, [(sorted(a)[:3], n) for a, n in ings])
-                        DEPS[o] = {x for a, _ in ings for x in a}
-            if best is not None and best != values.get(o):
-                values[o] = best
+                    if (cand >= 1 or (t == "grupo_variantes" and cand > 0)) and (best[lossy] is None or cand < best[lossy][0]):
+                        best[lossy] = (cand, t, c, ings)
+            pick = best[False] or best[True]
+            if pick is None:
+                continue
+            cand, t, c, ings = pick
+            if values.get(o) is None or (cand < values[o] if pick is best[True] or best[False] is None
+                                         else cand != values[o]):
+                values[o] = cand
+                WHY[o] = (t, c, [(sorted(a)[:3], n) for a, n in ings])
+                DEPS[o] = {x for a, _ in ings for x in a}
                 changed = True
         if not changed:
             return
@@ -403,10 +481,13 @@ def load_pack(inst, tags_json, bad_ids):
 
 def run(pack, inst, out_json):
     # hand-tuned base values live outside data/ so ProjectE only loads the generated 00 file
-    ours = [json.loads(p.read_text(encoding="utf-8")) for p in sorted((inst / "kubejs/emc_fontes").glob("[0-9][0-9]_*.json"))]
+    ours = [json.loads(p.read_text(encoding="utf-8")) for p in sorted((inst / "kubejs/emc_fontes").glob("[0-9][0-9]_*.json"))
+            if not p.name.startswith("00_")]  # 00_ is this script's own audit output
 
     base = {k: v for k, v in {**pec_before(pack, pack.pec), **pec_before(pack, ours)}.items() if k in pack.items}
-    recipes = [r for r in parse_recipes(pack) + pec_conversions(pack, pack.pec + ours) if r[0] in pack.items]
+    recipes = [r for r in parse_recipes(pack) + pec_conversions(pack, pack.pec + ours)
+               if r[0] in pack.items or r[0].startswith(CHEM)]
+    recipes += group_recipes(pack, inst)
     print("itens", len(pack.items), "receitas", len(recipes), "base", len(base))
 
     # first pass only to learn ingot/gem prices for the ores

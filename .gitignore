@@ -15,3 +15,4 @@ command_history.txt
 *.bak
 simplebackups/
 backups/
+__pycache__/

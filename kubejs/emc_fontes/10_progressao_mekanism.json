@@ -1,47 +1,48 @@
 {
-  "comment": "Progressao de circuitos Mekanism e Mekanism Extras. Escala x4 por tier; os quatro tiers extras foram identificados nas receitas da versao 1.4.x para Minecraft 1.21.1. Valores-alvo devem ser validados contra materiais-base e receitas completas.",
+  "comment": "Progressao de circuitos Mekanism e Mekanism Extras. Os overrides fixos x4 (512 -> 8.388.608) foram retirados: ficavam acima do custo real das receitas (ex.: Absolute = Ultimate + 2 Radiance Alloy ~ 45.9k, override 131k), o que dava lucro ao fabricar e queimar. Agora o valor vem das receitas, incluindo os quimicos de infusao (Radiance, Thermonuclear, Shining, Spectrum). Para fixar um valor aqui, ele deve ser <= ao custo da receita.",
   "values": {
-    "before": [
-      {
-        "type": "projecte:item",
-        "id": "mekanism:basic_control_circuit",
-        "emc_value": 512
-      },
-      {
-        "type": "projecte:item",
-        "id": "mekanism:advanced_control_circuit",
-        "emc_value": 2048
-      },
-      {
-        "type": "projecte:item",
-        "id": "mekanism:elite_control_circuit",
-        "emc_value": 8192
-      },
-      {
-        "type": "projecte:item",
-        "id": "mekanism:ultimate_control_circuit",
-        "emc_value": 32768
-      },
-      {
-        "type": "projecte:item",
-        "id": "mekanism_extras:absolute_control_circuit",
-        "emc_value": 131072
-      },
-      {
-        "type": "projecte:item",
-        "id": "mekanism_extras:supreme_control_circuit",
-        "emc_value": 524288
-      },
-      {
-        "type": "projecte:item",
-        "id": "mekanism_extras:cosmic_control_circuit",
-        "emc_value": 2097152
-      },
-      {
-        "type": "projecte:item",
-        "id": "mekanism_extras:infinite_control_circuit",
-        "emc_value": 8388608
-      }
-    ]
-  }
+    "before": []
+  },
+  "removidos": [
+    {
+      "type": "projecte:item",
+      "id": "mekanism:basic_control_circuit",
+      "emc_value": 512
+    },
+    {
+      "type": "projecte:item",
+      "id": "mekanism:advanced_control_circuit",
+      "emc_value": 2048
+    },
+    {
+      "type": "projecte:item",
+      "id": "mekanism:elite_control_circuit",
+      "emc_value": 8192
+    },
+    {
+      "type": "projecte:item",
+      "id": "mekanism:ultimate_control_circuit",
+      "emc_value": 32768
+    },
+    {
+      "type": "projecte:item",
+      "id": "mekanism_extras:absolute_control_circuit",
+      "emc_value": 131072
+    },
+    {
+      "type": "projecte:item",
+      "id": "mekanism_extras:supreme_control_circuit",
+      "emc_value": 524288
+    },
+    {
+      "type": "projecte:item",
+      "id": "mekanism_extras:cosmic_control_circuit",
+      "emc_value": 2097152
+    },
+    {
+      "type": "projecte:item",
+      "id": "mekanism_extras:infinite_control_circuit",
+      "emc_value": 8388608
+    }
+  ]
 }
