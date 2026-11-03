@@ -54,7 +54,21 @@ SKIP_TYPES = re.compile(
 DENY = re.compile(r"creative|spawn_egg|debug|command_block|minecraft:(barrier|structure_|jigsaw|light$|bedrock"
                   r"|end_portal_frame|reinforced_deepslate|petrified_oak_slab|spawner|trial_spawner|vault"
                   r"|budding_amethyst|knowledge_book|written_book|filled_map)|_test\b|:test_"
-                  r"|admin|(?<!mekanism_extras:)infinite|unlimited|dev_tool|missing|placeholder|dummy|:rendered_|_rendered|ponder")
+                  r"|admin|(?<!mekanism_extras:)infinite|unlimited|dev_tool|missing|placeholder|dummy|:rendered_|_rendered|ponder"
+                  r"|^allthecompressed:|_pulling_[0-9]$|_throwing$|_in_hand$")
+COMPRESSED_RE = re.compile(r"_\d+x$")
+# Last-resort floors for unique items the JSON files missed. Never 64.
+UNIQUE_HINTS = [
+    (10**18, re.compile(r"(^|:)(atm_star|atm_star_block)$")),
+    (10**17, re.compile(r"atm_star_shard")),
+    (10**17, re.compile(r"(^|:)greg_star(_block)?$")),
+    (10**17, re.compile(r"nexium_emitter|withers_compass|improbable_probability|philosophers_fuel|pulsating_black_hole|oblivion_shard|dimensional_seed|dragon_soul")),
+    (10**16, re.compile(r"patrick_star")),
+    (2 * 10**8, re.compile(r"unobtainium_vibranium_alloy")),
+    (10**8, re.compile(r"unobtainium_allthemodium_alloy")),
+    (5 * 10**7, re.compile(r"vibranium_allthemodium_alloy")),
+    (2 * 10**6, re.compile(r"piglich_heart")),
+]
 
 VAL_RULES = [
     (8, r"_bark$"), (1, r"_leaves$|leaf_litter"),
@@ -73,7 +87,7 @@ VAL_RULES = [
          r"|grape|cherry|lemon|lime$|orange$|peach|pear$|plum|banana|mango|coconut|olive|spice|cocoa"
          r"|wheat|barley|oat$|rye$|hops|potato|carrot|beet|radish|turnip|squash|melon|pumpkin|cucumber"),
     (4096, r"totem|elytra"),
-    (2048, r"heart|_star$|essence|soul|relic|artifact|trophy|_core$"),
+    (2048, r"(?<!piglich_)heart$|_star$|essence|soul|relic|artifact|trophy|_core$"),
     (512, r"_dust$|_nugget$|_ingot$|_plate$|_gear$|_rod$|_wire$"),
 ]
 VAL_RULES = [(v, re.compile(p)) for v, p in VAL_RULES]
@@ -479,7 +493,14 @@ def load_pack(inst, tags_json, bad_ids):
     return pack
 
 
+def unique_floor(item):
+    path = item.split(":", 1)[1]
+    return next((v for v, rx in UNIQUE_HINTS if rx.search(item) or rx.search(path)), None)
+
+
 def run(pack, inst, out_json):
+    pack.items = {i for i in pack.items if not DENY.search(i)}
+    pack._cache.clear()
     # hand-tuned base values live outside data/ so ProjectE only loads the generated 00 file
     ours = [json.loads(p.read_text(encoding="utf-8")) for p in sorted((inst / "kubejs/emc_fontes").glob("[0-9][0-9]_*.json"))
             if not p.name.startswith("00_")]  # 00_ is this script's own audit output
@@ -549,15 +570,21 @@ def run(pack, inst, out_json):
     produced = {r[0] for r in recipes}
     guess = {}
     for i in sorted(pack.items - set(values) - produced):
+        if COMPRESSED_RE.search(i):
+            continue
         path = i.split(":", 1)[1]
-        guess[i] = F(next((v for v, rx in VAL_RULES if rx.search(path)), FALLBACK))
+        floor = unique_floor(i)
+        guess[i] = F(floor if floor is not None else next((v for v, rx in VAL_RULES if rx.search(path)), FALLBACK))
     raised = set()  # farm items pushed up to their output's share; never lowered again
     for rnd in range(8):
         values = {**base, **ores, **guess}
         fixed = set(values)
         tiered(values, fixed, recipes)
         for i in pack.items - set(values):  # crafted only from things that never got a value
-            guess[i] = values[i] = F(FALLBACK)
+            if COMPRESSED_RE.search(i):
+                continue
+            floor = unique_floor(i)
+            guess[i] = values[i] = F(floor if floor is not None else FALLBACK)
         changed = 0
         for o, c, ings, t, tier in recipes:
             if tier == 3 or o not in values:
@@ -573,7 +600,7 @@ def run(pack, inst, out_json):
                         changed += 1
                         if farm:
                             raised.add(x)
-            elif o in guess and o not in raised and tier <= 1:
+            elif o in guess and o not in raised and tier <= 1 and c == 1 and unique_floor(o) is None:
                 cost = F(0)
                 for a, n in ings:
                     m = min((values[x] for x in a if x in values), default=None)
@@ -635,7 +662,10 @@ def run(pack, inst, out_json):
                   "minecraft:lapis_block", "minecraft:redstone_block", "minecraft:netherite_block",
                   "minecraft:iron_ore", "minecraft:raw_iron", "allthemodium:allthemodium_ingot",
                   "allthemodium:allthemodium_block", "allthemodium:allthemodium_ore", "allthemodium:vibranium_ingot",
-                  "allthemodium:unobtainium_ingot", "allthemodium:allthemodium_nugget", "ae2:controller",
+                  "allthemodium:unobtainium_ingot", "allthemodium:allthemodium_nugget",
+                  "allthetweaks:atm_star", "allthetweaks:atm_star_shard",
+                  "allthemodium:unobtainium_vibranium_alloy_ingot", "allthemodium:piglich_heart",
+                  "minecraft:cobblestone", "ae2:controller",
                   "ae2:logic_processor_press", "mekanism:steel_casing", "mekanism:ultimate_control_circuit",
                   "immersiveengineering:treated_wood_horizontal", "draconicevolution:draconium_ingot",
                   "draconicevolution:awakened_draconium_ingot"):

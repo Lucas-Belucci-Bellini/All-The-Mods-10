@@ -25,7 +25,7 @@ Auditar todos os itens descobertos no modpack, não apenas Mekanism Extras. A ta
 
 ## Escala inicial
 
-Os valores existentes servem apenas como âncoras iniciais, não como verdade imutável: ferro 256, ouro 2.048, diamante 8.192; Allthemodium 32.768, Vibranium 65.536 e Unobtainium 131.072. A auditoria pode ajustar esses números se a progressão real do pack justificar.
+Âncoras atuais: ferro 256, ouro 2.048, diamante 8.192, nether star 139.264; Allthemodium 1.048.576, Vibranium 4.194.304, Unobtainium 16.777.216; estrela ATM 1 quintilhão (10^18). AllTheCompressed não recebe EMC, para não explodir pedra compactada nem puxar uniques para 64.
 
 ## Campos da tabela mestra
 

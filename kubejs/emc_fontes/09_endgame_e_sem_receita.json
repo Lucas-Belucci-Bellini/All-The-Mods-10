@@ -1,36 +1,36 @@
 {
-  "comment": "Endgame liberado (ATM, Draconic, antimateria) e itens sem receita (prensas do AE2). Valores altos para nao quebrar a progressao.",
+  "comment": "Endgame liberado (ATM, Draconic, antimateria) e itens sem receita (prensas do AE2). Metais ATM acima de nether star (139264). Unicos da estrela ficam em 08_unicos_atm.json.",
   "values": {
     "before": [
       {
         "type": "projecte:item",
         "tag": "c:ingots/allthemodium",
-        "emc_value": 32768
+        "emc_value": 1048576
       },
       {
         "type": "projecte:item",
         "tag": "c:ingots/vibranium",
-        "emc_value": 65536
+        "emc_value": 4194304
       },
       {
         "type": "projecte:item",
         "tag": "c:ingots/unobtainium",
-        "emc_value": 131072
+        "emc_value": 16777216
       },
       {
         "type": "projecte:item",
         "tag": "c:ingots/draconium",
-        "emc_value": 8192
+        "emc_value": 16384
       },
       {
         "type": "projecte:item",
         "id": "draconicevolution:dragon_heart",
-        "emc_value": 262144
+        "emc_value": 2097152
       },
       {
         "type": "projecte:item",
         "id": "draconicevolution:chaos_shard",
-        "emc_value": 1048576
+        "emc_value": 16777216
       },
       {
         "type": "projecte:item",
@@ -60,7 +60,7 @@
       {
         "type": "projecte:item",
         "id": "mekanism:pellet_antimatter",
-        "emc_value": 524288
+        "emc_value": 8388608
       },
       {
         "type": "projecte:item",
@@ -205,17 +205,17 @@
       {
         "type": "projecte:item",
         "id": "draconicevolution:awakened_draconium_ingot",
-        "emc_value": 23552
+        "emc_value": 262144
       },
       {
         "type": "projecte:item",
         "id": "draconicevolution:awakened_draconium_dust",
-        "emc_value": 23552
+        "emc_value": 262144
       },
       {
         "type": "projecte:item",
         "id": "draconicevolution:awakened_draconium_block",
-        "emc_value": 211968
+        "emc_value": 2359296
       },
       {
         "type": "projecte:item",

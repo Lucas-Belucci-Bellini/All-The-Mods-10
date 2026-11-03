@@ -1,46 +1,46 @@
-[15:05:58] [INIT] KubeJS 2101.7.2-build.374; MC 2101 NeoForge
-[15:05:58] [INIT] Loaded plugins:
-[15:05:58] [INIT] - dev.latvian.mods.kubejs.plugin.builtin.BuiltinKubeJSPlugin
-[15:05:58] [INIT] - dev.latvian.mods.kubejs.plugin.builtin.BuiltinKubeJSClientPlugin
-[15:05:58] [INIT] - dev.latvian.mods.kubejs.integration.architectury.ArchitecturyIntegration
-[15:05:58] [INIT] - com.breakinblocks.neovitae.compat.kubejs.NVKubeJSPlugin
-[15:05:58] [INIT] - com.klikli_dev.theurgykubejs.kubejs.TheurgyKubeJSPlugin
-[15:05:58] [INIT] - dev.uncandango.kubejstweaks.kubejs.kjs71.plugin.KJSTPlugin
-[15:05:58] [INIT] - dev.uncandango.kubejstweaks.kubejs.kjs72.plugin.KJSTPlugin
-[15:05:58] [INIT] - net.davio.aquaticambitions.compat.KubeJS.CAAKubeJSPlugin
-[15:05:58] [INIT] - dev.ftb.mods.ftbxmodcompat.neoforge.ftbquests.kubejs.FTBQuestsKubeJSPlugin
-[15:05:58] [INIT] - dev.ftb.mods.ftbxmodcompat.neoforge.ftbchunks.kubejs.FTBChunksKubeJSPlugin
-[15:05:58] [INIT] - dev.ftb.mods.ftbxmodcompat.neoforge.ftbteams.kubejs.FTBTeamsKubeJSPlugin
-[15:05:58] [INIT] - dev.ftb.mods.ftbxmodcompat.neoforge.ftbfiltersystem.kubejs.FFSKubeJSPlugin
-[15:05:58] [INIT] - com.klikli_dev.occultism_kubejs.KubeJSOccultismPlugin
-[15:05:58] [INIT] - com.almostreliable.ponderjs.KubePlugin
-[15:05:58] [INIT] - com.glodblock.github.extendedae.xmod.kjs.KJSPlugin
-[15:05:58] [INIT] - aztech.modern_industrialization.compat.kubejs.MIKubeJSPlugin
-[15:05:58] [INFO] client_scripts:att_rpc.js#4: Loaded Java class 'dev.ftb.mods.ftbquests.client.ClientQuestFile'
-[15:05:58] [INFO] client_scripts:att_rpc.js#5: Loaded Java class 'net.minecraft.client.Minecraft'
-[15:05:58] [INFO] client_scripts:att_rpc.js#6: Loaded Java class 'net.minecraft.client.resources.language.I18n'
-[15:05:58] [INFO] client_scripts:att_rpc.js#7: Loaded Java class 'com.thevortex.allthetweaks.api.ATTRpc'
-[15:05:58] [INFO] client_scripts:att_rpc.js#8: Loaded Java class 'dev.ftb.mods.ftbquests.events.ObjectCompletedEvent'
-[15:05:58] [INFO] client_scripts:att_rpc.js#9: Loaded Java class 'dev.architectury.event.EventResult'
-[15:05:58] [INFO] Loaded script client_scripts:att_rpc.js in 0.04 s
-[15:05:58] [INFO] Loaded script client_scripts:crashing_items.js in 0.002 s
-[15:05:58] [INFO] Loaded script client_scripts:Mekanism-Tooltips.js in 0.003 s
-[15:05:58] [INFO] Loaded script client_scripts:ponder/fission_mek.js in 0.003 s
-[15:05:58] [INFO] Loaded script client_scripts:ponder/fission_mek_fuelrod.js in 0.002 s
-[15:05:58] [INFO] Loaded script client_scripts:ponder/fission_mek_logic.js in 0.001 s
-[15:05:58] [INFO] Loaded script client_scripts:ponder/fission_mek_port.js in 0.001 s
-[15:05:58] [INFO] Loaded script client_scripts:ponder/fusion_activate.js in 0.001 s
-[15:05:58] [INFO] Loaded script client_scripts:ponder/fusion_reactor.js in 0.001 s
-[15:05:58] [INFO] Loaded script client_scripts:ponder/induction_mek.js in 0.002 s
-[15:05:58] [INFO] Loaded script client_scripts:ponder/sps.js in 0.001 s
-[15:05:58] [INFO] Loaded script client_scripts:ponder/turbine_mek.js in 0.002 s
-[15:05:58] [INFO] Loaded script client_scripts:RecipeViewer.js in 0.006 s
-[15:05:58] [INFO] Loaded script client_scripts:registry_fix.js in 0.001 s
-[15:05:58] [INFO] client_scripts:server_sync_banlist.js#6: Loaded Java class 'java.util.HashSet'
-[15:05:58] [INFO] Loaded script client_scripts:server_sync_banlist.js in 0.008 s
-[15:05:58] [INFO] Loaded script client_scripts:tooltips.js in 0.003 s
-[15:05:58] [INFO] Loaded 16/16 KubeJS client scripts in 0.351 s with 0 errors and 0 warnings
-[15:06:45] [INFO] Client resource reload complete!
-[15:14:52] [INFO] Logged in: LocalPlayer['Spartan_Gamer_BR'/1888, l='ClientLevel', x=8.50, y=65.00, z=8.50]
-[15:14:52] [INFO] Loaded Java class 'net.minecraft.core.registries.Registries'
-[15:16:58] [INFO] Loaded Java class 'net.minecraft.world.item.DyeColor'
+[16:56:33] [INIT] KubeJS 2101.7.2-build.374; MC 2101 NeoForge
+[16:56:33] [INIT] Loaded plugins:
+[16:56:33] [INIT] - dev.latvian.mods.kubejs.plugin.builtin.BuiltinKubeJSPlugin
+[16:56:33] [INIT] - dev.latvian.mods.kubejs.plugin.builtin.BuiltinKubeJSClientPlugin
+[16:56:33] [INIT] - dev.latvian.mods.kubejs.integration.architectury.ArchitecturyIntegration
+[16:56:33] [INIT] - com.breakinblocks.neovitae.compat.kubejs.NVKubeJSPlugin
+[16:56:33] [INIT] - com.klikli_dev.theurgykubejs.kubejs.TheurgyKubeJSPlugin
+[16:56:33] [INIT] - dev.uncandango.kubejstweaks.kubejs.kjs71.plugin.KJSTPlugin
+[16:56:33] [INIT] - dev.uncandango.kubejstweaks.kubejs.kjs72.plugin.KJSTPlugin
+[16:56:33] [INIT] - net.davio.aquaticambitions.compat.KubeJS.CAAKubeJSPlugin
+[16:56:33] [INIT] - dev.ftb.mods.ftbxmodcompat.neoforge.ftbquests.kubejs.FTBQuestsKubeJSPlugin
+[16:56:33] [INIT] - dev.ftb.mods.ftbxmodcompat.neoforge.ftbchunks.kubejs.FTBChunksKubeJSPlugin
+[16:56:33] [INIT] - dev.ftb.mods.ftbxmodcompat.neoforge.ftbteams.kubejs.FTBTeamsKubeJSPlugin
+[16:56:33] [INIT] - dev.ftb.mods.ftbxmodcompat.neoforge.ftbfiltersystem.kubejs.FFSKubeJSPlugin
+[16:56:33] [INIT] - com.klikli_dev.occultism_kubejs.KubeJSOccultismPlugin
+[16:56:33] [INIT] - com.almostreliable.ponderjs.KubePlugin
+[16:56:33] [INIT] - com.glodblock.github.extendedae.xmod.kjs.KJSPlugin
+[16:56:33] [INIT] - aztech.modern_industrialization.compat.kubejs.MIKubeJSPlugin
+[16:56:33] [INFO] client_scripts:att_rpc.js#4: Loaded Java class 'dev.ftb.mods.ftbquests.client.ClientQuestFile'
+[16:56:33] [INFO] client_scripts:att_rpc.js#5: Loaded Java class 'net.minecraft.client.Minecraft'
+[16:56:33] [INFO] client_scripts:att_rpc.js#6: Loaded Java class 'net.minecraft.client.resources.language.I18n'
+[16:56:33] [INFO] client_scripts:att_rpc.js#7: Loaded Java class 'com.thevortex.allthetweaks.api.ATTRpc'
+[16:56:33] [INFO] client_scripts:att_rpc.js#8: Loaded Java class 'dev.ftb.mods.ftbquests.events.ObjectCompletedEvent'
+[16:56:33] [INFO] client_scripts:att_rpc.js#9: Loaded Java class 'dev.architectury.event.EventResult'
+[16:56:33] [INFO] Loaded script client_scripts:att_rpc.js in 0.049 s
+[16:56:33] [INFO] Loaded script client_scripts:crashing_items.js in 0.002 s
+[16:56:33] [INFO] Loaded script client_scripts:Mekanism-Tooltips.js in 0.003 s
+[16:56:33] [INFO] Loaded script client_scripts:ponder/fission_mek.js in 0.002 s
+[16:56:33] [INFO] Loaded script client_scripts:ponder/fission_mek_fuelrod.js in 0.002 s
+[16:56:33] [INFO] Loaded script client_scripts:ponder/fission_mek_logic.js in 0.001 s
+[16:56:33] [INFO] Loaded script client_scripts:ponder/fission_mek_port.js in 0.0 s
+[16:56:33] [INFO] Loaded script client_scripts:ponder/fusion_activate.js in 0.001 s
+[16:56:33] [INFO] Loaded script client_scripts:ponder/fusion_reactor.js in 0.001 s
+[16:56:33] [INFO] Loaded script client_scripts:ponder/induction_mek.js in 0.002 s
+[16:56:33] [INFO] Loaded script client_scripts:ponder/sps.js in 0.001 s
+[16:56:33] [INFO] Loaded script client_scripts:ponder/turbine_mek.js in 0.002 s
+[16:56:33] [INFO] Loaded script client_scripts:RecipeViewer.js in 0.007 s
+[16:56:33] [INFO] Loaded script client_scripts:registry_fix.js in 0.0 s
+[16:56:33] [INFO] client_scripts:server_sync_banlist.js#6: Loaded Java class 'java.util.HashSet'
+[16:56:33] [INFO] Loaded script client_scripts:server_sync_banlist.js in 0.007 s
+[16:56:33] [INFO] Loaded script client_scripts:tooltips.js in 0.003 s
+[16:56:33] [INFO] Loaded 16/16 KubeJS client scripts in 0.486 s with 0 errors and 0 warnings
+[16:57:50] [INFO] Client resource reload complete!
+[17:20:46] [INFO] Logged in: LocalPlayer['Spartan_Gamer_BR'/1895, l='ClientLevel', x=8.50, y=65.00, z=8.50]
+[17:20:46] [INFO] Loaded Java class 'net.minecraft.core.registries.Registries'
+[17:25:14] [INFO] Loaded Java class 'net.minecraft.world.item.DyeColor'
