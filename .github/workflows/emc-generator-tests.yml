@@ -3,7 +3,7 @@ name: EMC generator tests
 on:
   push:
     branches:
-      - balance/emc-global-rework-2026-11
+      - "balance/**"
   pull_request:
     branches:
       - main
@@ -19,4 +19,4 @@ jobs:
         with:
           python-version: "3.12"
       - name: Run EMC generator unit tests
-        run: python -m unittest discover -s kubejs/emc_fontes -p "test_*.py" -v
+        run: python -m unittest discover -s kubejs/emc_fontes -p "test_*.py" -v && python -m unittest discover -s tests -p "test_*.py" -v
