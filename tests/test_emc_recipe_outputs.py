@@ -79,6 +79,26 @@ class RecipeOutputTests(unittest.TestCase):
             {"example:primary", "example:byproduct"},
         )
 
+    def test_identical_output_aliases_are_not_treated_as_co_products(self):
+        output = {"item": "example:single"}
+        pack = FakePack(
+            recipes={
+                "example:machine/aliased": {
+                    "type": "example:machine",
+                    "ingredients": [{"item": "minecraft:iron_ingot"}],
+                    "result": output,
+                    "output": output,
+                }
+            },
+            items={"example:single", "minecraft:iron_ingot"},
+        )
+
+        recipes = gen_all.parse_recipes(pack)
+
+        self.assertEqual(len(recipes), 1)
+        self.assertEqual(recipes[0][0], "example:single")
+        self.assertEqual(gen_all.UNSUPPORTED_RECIPES, [])
+
     def test_probabilistic_output_is_explicitly_reported_for_review(self):
         pack = FakePack(
             recipes={
