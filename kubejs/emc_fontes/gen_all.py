@@ -33,7 +33,7 @@ import tempfile
 import re
 import sys
 import zipfile
-from collections import defaultdict
+from collections import Counter, defaultdict
 from fractions import Fraction as F
 from pathlib import Path
 
@@ -383,7 +383,25 @@ def parse_recipes(pack, unsupported=None, audit_warnings=None):
         if not isinstance(data, dict):
             continue
         t = data.get("type", "")
-        if not isinstance(t, str) or SKIP_TYPES.match(t):
+        if not isinstance(t, str):
+            continue
+        if SKIP_TYPES.match(t):
+            skipped_outputs = []
+            chemical_skipped = chem_output(t, data)
+            if chemical_skipped:
+                skipped_outputs.append(chemical_skipped)
+            for key, value in data.items():
+                if key in OUT_KEYS:
+                    skipped_outputs.extend(all_outputs(value))
+            skipped_outputs = list(dict.fromkeys(skipped_outputs))
+            if unsupported is not None and skipped_outputs:
+                unsupported.append({
+                    "recipe": recipe_id,
+                    "type": t,
+                    "reason": "recipe_type_excluded_by_skip_policy",
+                    "outputs": [{"id": item, "count": count}
+                                for item, count in skipped_outputs]
+                })
             continue
 
         chemical = chem_output(t, data)
@@ -1088,7 +1106,7 @@ def run(pack, inst, out_json, generation_metadata=None):
     )
     override_audit_path = inst / "kubejs/emc_fontes/00_auditoria_overrides_vs_receitas.json"
     override_audit_path.write_text(
-        json.dumps(override_audit, ensure_ascii=False, indent=2) + "\\n",
+        json.dumps(override_audit, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
     print("auditoria de overrides:", override_audit_path,
