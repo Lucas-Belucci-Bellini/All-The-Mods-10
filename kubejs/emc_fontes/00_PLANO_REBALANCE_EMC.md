@@ -60,7 +60,7 @@ O gerador não presume um caminho pessoal de instalação. Informe a raiz do Min
 - Para reconstruir o inventário sem reutilizar cache: acrescente `--no-cache`.
 - Alternativamente, defina `ATM10_MINECRAFT_ROOT` (ou `MINECRAFT_ROOT`) e omita `--minecraft-root`.
 
-O cache v2 é endereçado pelo SHA-256 do conjunto de entradas: JAR vanilla, JARs NeoForge e dos mods, arquivo de tags, JSONs de `kubejs/data`, lista de bloqueio e metadados da instância quando presentes. Inclusões, remoções ou alterações de conteúdo geram outra chave. O cache fica no diretório temporário do sistema e pode ser descartado com segurança.
+O cache v2 é endereçado pelo SHA-256 do conjunto de entradas: JAR vanilla, JARs NeoForge e dos mods, arquivo de tags, JSONs de `kubejs/data`, lista de bloqueio e metadados da instância quando presentes. Inclusões, remoções ou alterações de conteúdo geram outra chave. O cache fica no diretório temporário do sistema e pode ser descartado com segurança. Cada execução também gera `00_metadados_geracao_emc.json`, registrando timestamp UTC, versões Minecraft/NeoForge, identidade do pack quando há manifesto, fingerprint SHA-256 e lista de arquivos usados.
 
 ## Qualidade e integração
 

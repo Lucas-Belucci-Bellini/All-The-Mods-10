@@ -24,6 +24,7 @@ Set ATM10_MINECRAFT_ROOT (or MINECRAFT_ROOT) to avoid repeating --minecraft-root
 """
 import argparse
 import hashlib
+from datetime import datetime, timezone
 import io
 import os
 import pickle
@@ -624,6 +625,66 @@ def fingerprint_files(paths):
     return digest.hexdigest()
 
 
+def build_generation_metadata(inst, minecraft_root, inputs, fingerprint, cache_enabled):
+    """Describe the exact source set and pack identity used for one generation."""
+    inst = Path(inst).resolve()
+    mc = Path(minecraft_root).resolve()
+
+    def label(path):
+        path = Path(path).resolve()
+        try:
+            return "minecraft/" + path.relative_to(mc).as_posix()
+        except ValueError:
+            pass
+        try:
+            return "instance/" + path.relative_to(inst).as_posix()
+        except ValueError:
+            return "external/" + path.parent.name + "/" + path.name
+
+    pack_identity = {}
+    for name in ("manifest.json", "minecraftinstance.json"):
+        metadata_path = inst / name
+        if not metadata_path.is_file():
+            continue
+        try:
+            data = json.loads(metadata_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        if not isinstance(data, dict):
+            continue
+        if name == "manifest.json":
+            minecraft = data.get("minecraft", {})
+            pack_identity["manifest"] = {
+                key: data[key] for key in ("name", "version", "manifestType")
+                if isinstance(data.get(key), (str, int, float))
+            }
+            if isinstance(minecraft, dict):
+                pack_identity["manifest"]["minecraft_version"] = minecraft.get("version")
+                loaders = minecraft.get("modLoaders", [])
+                pack_identity["manifest"]["mod_loaders"] = [
+                    entry.get("id") for entry in loaders
+                    if isinstance(entry, dict) and isinstance(entry.get("id"), str)
+                ]
+        else:
+            pack_identity["instance"] = {
+                key: data[key] for key in ("name", "version", "gameVersion")
+                if isinstance(data.get(key), (str, int, float))
+            }
+
+    return {
+        "schema_version": 1,
+        "generator_version": 3,
+        "generated_at_utc": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
+        "minecraft_version": "1.21.1",
+        "neoforge_version": "21.1.259",
+        "pack_identity": pack_identity,
+        "input_fingerprint_sha256": fingerprint,
+        "input_count": len(inputs),
+        "input_files": [label(path) for path in inputs],
+        "cache_enabled": bool(cache_enabled),
+    }
+
+
 def main(inst, tags_json, out_json, bad_ids=None, minecraft_root=None, use_cache=True):
     inst = Path(inst)
     root = minecraft_root or os.environ.get("ATM10_MINECRAFT_ROOT") or os.environ.get("MINECRAFT_ROOT")
@@ -632,7 +693,8 @@ def main(inst, tags_json, out_json, bad_ids=None, minecraft_root=None, use_cache
             "Informe --minecraft-root <diretório> ou defina ATM10_MINECRAFT_ROOT."
         )
     inputs = pack_input_files(inst, tags_json, bad_ids, root)
-    fingerprint = fingerprint_files(inputs) if use_cache else None
+    fingerprint = fingerprint_files(inputs)  # also recorded when --no-cache is used
+    generation = build_generation_metadata(inst, root, inputs, fingerprint, use_cache)
     cache = (Path(tempfile.gettempdir()) / f"emc_gen_pack_v2_{fingerprint}.pickle"
              if use_cache else None)
     pack = None
@@ -651,7 +713,7 @@ def main(inst, tags_json, out_json, bad_ids=None, minecraft_root=None, use_cache
             cache.write_bytes(pickle.dumps({
                 "schema": 2, "fingerprint": fingerprint, "pack": pack
             }))
-    run(pack, inst, out_json)
+    run(pack, inst, out_json, generation)
 
 
 def load_pack(inst, tags_json, bad_ids, minecraft_root):
@@ -703,7 +765,7 @@ def unique_floor(item):
     return next((v for v, rx in UNIQUE_HINTS if rx.search(item) or rx.search(path)), None)
 
 
-def run(pack, inst, out_json):
+def run(pack, inst, out_json, generation_metadata=None):
     pack.items = {i for i in pack.items if not DENY.search(i)}
     pack._cache.clear()
     # hand-tuned base values live outside data/ so ProjectE only loads the generated 00 file
@@ -879,6 +941,14 @@ def run(pack, inst, out_json):
         "items": audit
     }, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
     print("tabela mestra:", audit_path, len(audit), "itens")
+    if generation_metadata is not None:
+        metadata_path = inst / "kubejs/emc_fontes/00_metadados_geracao_emc.json"
+        metadata_path.write_text(
+            json.dumps(generation_metadata, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+        print("metadados da geração:", metadata_path)
+
 
     print("total com EMC:", len(final), "de", len(pack.items))
     for probe in ("minecraft:iron_block", "minecraft:gold_block", "minecraft:diamond_block", "minecraft:emerald_block",
