@@ -265,30 +265,44 @@ def ingredients(pack, data):
     return ings, lossy
 
 
-def first_output(node):
+def all_outputs(node):
+    """Return every guaranteed item output as (item id, count).
+
+    Probabilistic outputs are deliberately excluded until their expected-value
+    semantics are modeled. Other guaranteed outputs from the same recipe remain.
+    """
     if isinstance(node, list):
-        for n in node:
-            o = first_output(n)
-            if o:
-                return o
-        return None
+        out = []
+        for entry in node:
+            out.extend(all_outputs(entry))
+        return out
     if isinstance(node, str):
-        return (node, 1) if ID_RE.match(node) else None
-    if isinstance(node, dict):
-        if isinstance(node.get("chance"), (int, float)) and node["chance"] < 1:
-            return None
-        for k in ("item", "id"):
-            v = node.get(k)
-            if isinstance(v, str) and ID_RE.match(v):
-                return (v, amount(node))
-            if isinstance(v, dict):
-                o = first_output(v)
-                if o:
-                    return (o[0], amount(node) if amount(node) > 1 else o[1])
-        for k in ("stack", "result", "output"):
-            if isinstance(node.get(k), (dict, list)):
-                return first_output(node[k])
-    return None
+        return [(node, 1)] if ID_RE.match(node) else []
+    if not isinstance(node, dict):
+        return []
+    chance = node.get("chance")
+    if isinstance(chance, (int, float)) and chance < 1:
+        return []
+    out = []
+    for key in ("item", "id"):
+        value = node.get(key)
+        if isinstance(value, str) and ID_RE.match(value):
+            out.append((value, amount(node)))
+            return out
+        if isinstance(value, (dict, list)):
+            nested = all_outputs(value)
+            if nested:
+                return [(item, amount(node) if amount(node) > 1 else count)
+                        for item, count in nested]
+    for key in ("stack", "result", "output"):
+        if isinstance(node.get(key), (dict, list, str)):
+            out.extend(all_outputs(node[key]))
+    return out
+
+
+def first_output(node):
+    """Compatibility helper for callers that explicitly need one output."""
+    return next(iter(all_outputs(node)), None)
 
 
 CHEM = "chem:"  # pseudo items for Mekanism chemicals, priced per mB
@@ -324,25 +338,38 @@ def parse_recipes(pack):
         t = data.get("type", "")
         if not isinstance(t, str) or SKIP_TYPES.match(t):
             continue
-        o = chem_output(t, data) or next((first_output(data[k]) for k in data if k in OUT_KEYS), None)
-        if not o or not (o[0] in pack.items or o[0].startswith(CHEM)):
+        chemical = chem_output(t, data)
+        outputs = [chemical] if chemical else []
+        if not chemical:
+            for key in OUT_KEYS:
+                if key in data:
+                    outputs.extend(all_outputs(data[key]))
+        # Some serializers expose the same stack under aliases such as result/output.
+        outputs = list(dict.fromkeys(outputs))
+        outputs = [o for o in outputs if o[0] in pack.items or o[0].startswith(CHEM)]
+        if not outputs:
             continue
         parsed = ingredients(pack, data)
-        if not parsed or not parsed[0] or any(len(a) == 1 and o[0] in a for a, _ in parsed[0]):
+        if not parsed or not parsed[0]:
             continue
         ings, lossy = parsed
-        farm = not o[0].startswith(FARM_NS) and any(x.startswith(FARM_NS) for a, _ in ings for x in a)
         crafting = t.startswith("minecraft:") or ("pattern" in data and "key" in data)
-        # essence -> resource is a farm: never prices the resource (tier 9), only the essence
-        tier = 9 if farm else 3 if lossy else 1 if crafting else 2
-        out.append((o[0], o[1], ings, t, tier))
-        # the chemical is the only missing input: also add the full-cost version as a lossless recipe
         ci = chem_input(data)
         others = [k for k in FLUID_KEYS if k in data and k != "chemical_input"]
-        # nucleosynthesis turns a few mB of antimatter into rare blocks (2 mB -> lapis block); it is an
-        # endgame energy sink and must not undercut the item's normal price
-        if lossy and not farm and ci and not others and t != "mekanism:nucleosynthesizing":
-            out.append((o[0], o[1], ings + [(frozenset([ci[0]]), ci[1])], t, 2))
+        # Conservative co-product policy: each guaranteed output inherits the full
+        # recipe input cost. This can overprice co-products, but cannot create EMC
+        # by splitting one recipe's input cost across several independently burnable outputs.
+        for o in outputs:
+            if any(len(a) == 1 and o[0] in a for a, _ in ings):
+                continue
+            farm = not o[0].startswith(FARM_NS) and any(x.startswith(FARM_NS) for a, _ in ings for x in a)
+            # essence -> resource is a farm: never prices the resource (tier 9), only the essence
+            tier = 9 if farm else 3 if lossy else 1 if crafting else 2
+            out.append((o[0], o[1], ings, t, tier))
+            # the chemical is the only missing input: also add the full-cost version as a lossless recipe
+            # nucleosynthesis is an endgame energy sink and must not undercut the item's normal price
+            if lossy and not farm and ci and not others and t != "mekanism:nucleosynthesizing":
+                out.append((o[0], o[1], ings + [(frozenset([ci[0]]), ci[1])], t, 2))
     return out
 
 
