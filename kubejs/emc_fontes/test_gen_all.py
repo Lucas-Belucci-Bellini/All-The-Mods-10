@@ -106,6 +106,22 @@ class ConsumedIngredientTests(unittest.TestCase):
             {"id": "examplemod:repaired_item", "count": 1}
         ])
 
+    def test_skipped_recipe_repeated_outputs_are_aggregated(self):
+        pack = gen_all.Pack()
+        pack.items.add("examplemod:repaired_item")
+        pack.recipes["examplemod:repair"] = {
+            "type": "minecraft:crafting_special_repairitem",
+            "result": [
+                {"item": "examplemod:repaired_item", "count": 1},
+                {"item": "examplemod:repaired_item", "count": 2},
+            ],
+        }
+        unsupported = []
+        self.assertEqual(gen_all.parse_recipes(pack, unsupported), [])
+        self.assertEqual(unsupported[0]["outputs"], [
+            {"id": "examplemod:repaired_item", "count": 3}
+        ])
+
     def test_fluid_input_recipe_is_reported_not_underpriced(self):
         pack = gen_all.Pack()
         pack.items.add("examplemod:fluid_product")
