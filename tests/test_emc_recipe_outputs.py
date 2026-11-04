@@ -62,13 +62,20 @@ class RecipeOutputTests(unittest.TestCase):
         recipes = gen_all.parse_recipes(pack)
 
         self.assertEqual(recipes, [])
-        self.assertEqual(len(gen_all.UNSUPPORTED_RECIPES), 1)
+        reasons = {entry["reason"] for entry in gen_all.UNSUPPORTED_RECIPES}
         self.assertEqual(
-            gen_all.UNSUPPORTED_RECIPES[0]["reason"],
-            "multiple_outputs_require_cost_allocation",
+            reasons,
+            {
+                "multiple_outputs_require_cost_allocation",
+                "probabilistic_outputs_require_schema_review",
+            },
+        )
+        multi_output = next(
+            entry for entry in gen_all.UNSUPPORTED_RECIPES
+            if entry["reason"] == "multiple_outputs_require_cost_allocation"
         )
         self.assertEqual(
-            {entry["id"] for entry in gen_all.UNSUPPORTED_RECIPES[0]["outputs"]},
+            {entry["id"] for entry in multi_output["outputs"]},
             {"example:primary", "example:byproduct"},
         )
 
