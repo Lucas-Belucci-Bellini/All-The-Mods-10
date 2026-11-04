@@ -629,7 +629,7 @@ def run(pack, inst, out_json):
         "comment": "Saídas probabilísticas são excluídas do cálculo. Co-produtos garantidos recebem conservadoramente o custo integral dos insumos por saída.",
         "warning_count": len(RECIPE_AUDIT_WARNINGS),
         "recipes": RECIPE_AUDIT_WARNINGS
-    }, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+    }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     recipes = [r for r in parsed_recipes + pec_conversions(pack, pack.pec + ours)
                if r[0] in pack.items or r[0].startswith(CHEM)]
     recipes += group_recipes(pack, inst)
