@@ -211,9 +211,10 @@ def consumed(node):
         return True
     if node.get("consume") is False or node.get("consumed") is False or node.get("keep") is True:
         return False
-    for k in ("probability", "chance", "consume_chance"):
-        if isinstance(node.get(k), (int, float)) and node[k] < 1:
-            return False
+    # A probability field does not mean that the ingredient is free. In particular,
+    # consume_chance < 1 represents expected/conditional consumption in some recipe
+    # formats. Until each format has an explicit cost model, count the full ingredient
+    # cost: this is conservative and cannot create EMC by omitting a paid input.
     return True
 
 
