@@ -47,44 +47,44 @@ class ConsumedIngredientTests(unittest.TestCase):
 
     def test_all_guaranteed_outputs_are_preserved(self):
         outputs = gen_all.all_outputs([
-            {"item": "test:first", "count": 2},
-            {"stack": {"id": "test:second", "count": 3}},
+            {"item": "examplemod:first", "count": 2},
+            {"stack": {"id": "examplemod:second", "count": 3}},
         ])
-        self.assertEqual(outputs, [("test:first", 2), ("test:second", 3)])
+        self.assertEqual(outputs, [("examplemod:first", 2), ("examplemod:second", 3)])
 
     def test_probabilistic_output_is_skipped_but_guaranteed_output_remains(self):
         outputs = gen_all.all_outputs([
-            {"item": "test:rare", "chance": 0.25},
+            {"item": "examplemod:rare", "chance": 0.25},
             {"item": "test:common", "count": 2},
         ])
         self.assertEqual(outputs, [("test:common", 2)])
 
     def test_recipe_parser_emits_each_guaranteed_output(self):
         pack = gen_all.Pack()
-        pack.items.update({"test:first", "test:second"})
+        pack.items.update({"examplemod:first", "examplemod:second"})
         pack.recipes["test:machine"] = {
-            "type": "test:machine",
+            "type": "examplemod:machine",
             "ingredients": [{"item": "minecraft:iron_ingot", "count": 2}],
             "results": [
-                {"item": "test:first"},
-                {"item": "test:second", "count": 3},
-                {"item": "test:chance_only", "chance": 0.2},
+                {"item": "examplemod:first"},
+                {"item": "examplemod:second", "count": 3},
+                {"item": "examplemod:chance_only", "chance": 0.2},
             ],
         }
         parsed = gen_all.parse_recipes(pack)
-        self.assertEqual({row[0] for row in parsed}, {"test:first", "test:second"})
+        self.assertEqual({row[0] for row in parsed}, {"examplemod:first", "examplemod:second"})
         self.assertEqual(len(parsed), 2)
         for output, count, ingredients, _, _ in parsed:
-            self.assertEqual(count, 1 if output == "test:first" else 3)
+            self.assertEqual(count, 1 if output == "examplemod:first" else 3)
             self.assertEqual(ingredients[0][1], 2)
 
     def test_recipe_with_only_probabilistic_output_is_ignored(self):
         pack = gen_all.Pack()
-        pack.items.add("test:rare")
+        pack.items.add("examplemod:rare")
         pack.recipes["test:machine"] = {
-            "type": "test:machine",
+            "type": "examplemod:machine",
             "ingredients": [{"item": "minecraft:iron_ingot"}],
-            "results": [{"item": "test:rare", "chance": 0.2}],
+            "results": [{"item": "examplemod:rare", "chance": 0.2}],
         }
         self.assertEqual(gen_all.parse_recipes(pack), [])
 
