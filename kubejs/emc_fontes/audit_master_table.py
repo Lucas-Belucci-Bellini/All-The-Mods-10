@@ -111,6 +111,25 @@ def render_markdown(items: list[dict], summary: dict) -> str:
     for mod, row in summary.items():
         origins = ", ".join(f"`{name}`: {count}" for name, count in row["origins"].items())
         lines.append(f"- **{mod}:** {origins or 'sem origem informada'}")
+    heuristic_items = sorted(
+        (item for item in items if item["origin"] == "heuristic_fallback"),
+        key=lambda item: (-(item["current_emc"] or 0), item["id"]),
+    )
+    lines.extend([
+        "",
+        "## 25 maiores valores heurísticos",
+        "",
+        "| Item | Mod | EMC |",
+        "|---|---|---:|",
+    ])
+    for item in heuristic_items[:25]:
+        lines.append(f"| `{item['id']}` | `{item['mod']}` | {item['current_emc']} |")
+    no_emc_items = [item for item in items if item["current_emc"] is None]
+    lines.extend(["", "## Itens sem EMC", ""])
+    if no_emc_items:
+        lines.extend(f"- `{item['id']}` (`{item['mod']}`)" for item in sorted(no_emc_items, key=lambda row: row["id"]))
+    else:
+        lines.append("Nenhum item sem EMC.")
     lines.extend([
         "",
         "## Interpretação",
@@ -139,6 +158,25 @@ def write_reports(input_path: Path, out_dir: Path) -> tuple[Path, Path]:
         for item in sorted(items, key=lambda row: (row["mod"], row["id"])):
             if item["review_status"] != "approved":
                 writer.writerow(item)
+
+    heuristic_path = out_dir / "00_itens_heuristic_fallback_prioridade.csv"
+    with heuristic_path.open("w", encoding="utf-8-sig", newline="") as stream:
+        writer = csv.DictWriter(stream, fieldnames=FIELDS, extrasaction="ignore")
+        writer.writeheader()
+        heuristic_items = sorted(
+            (item for item in items if item["origin"] == "heuristic_fallback"),
+            key=lambda row: (-(row["current_emc"] or 0), row["id"]),
+        )
+        writer.writerows(heuristic_items)
+
+    no_emc_path = out_dir / "00_itens_sem_emc.csv"
+    with no_emc_path.open("w", encoding="utf-8-sig", newline="") as stream:
+        writer = csv.DictWriter(stream, fieldnames=FIELDS, extrasaction="ignore")
+        writer.writeheader()
+        writer.writerows(sorted(
+            (item for item in items if item["current_emc"] is None),
+            key=lambda row: row["id"],
+        ))
     return markdown_path, csv_path
 
 
@@ -160,8 +198,17 @@ def main() -> None:
     print("Top namespaces por quantidade de itens:")
     for mod, row in sorted(summary.items(), key=lambda pair: (-pair[1]["total"], pair[0]))[:30]:
         print(f"  {mod}: total={row['total']} com_emc={row['with_emc']} sem_emc={row['without_emc']} pendentes={row['pending']}")
+    heuristic_items = sorted(
+        (item for item in items if item["origin"] == "heuristic_fallback"),
+        key=lambda item: (-(item["current_emc"] or 0), item["id"]),
+    )
+    print("Top 30 heurísticos por EMC:")
+    for item in heuristic_items[:30]:
+        print(f"  {item['id']}: emc={item['current_emc']} mod={item['mod']}")
     print(f"Markdown: {markdown_path}")
     print(f"CSV: {csv_path}")
+    print(f"Heurísticos: {out_dir / '00_itens_heuristic_fallback_prioridade.csv'}")
+    print(f"Sem EMC: {out_dir / '00_itens_sem_emc.csv'}")
 
 
 if __name__ == "__main__":
