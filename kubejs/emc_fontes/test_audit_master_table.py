@@ -117,6 +117,19 @@ class MasterTableAuditTests(unittest.TestCase):
         self.assertEqual(report["error_count"], 3)
         self.assertEqual(report["warning_count"], 2)
 
+    def test_quality_audit_handles_unhashable_status_and_malformed_notes(self):
+        item = dict(
+            self.items[0],
+            review_status=["approved"],
+            review_notes={"reason": "not a string"},
+            origin="   ",
+        )
+        report = audit.audit_quality([item])
+        codes = {row["code"] for row in report["findings"]}
+        self.assertEqual(codes, {
+            "unknown_review_status", "unknown_origin",
+        })
+
     def test_quality_audit_accepts_zero_emc_and_null_targets(self):
         item = dict(self.items[1], current_emc=0, target_emc=None)
         report = audit.audit_quality([item])

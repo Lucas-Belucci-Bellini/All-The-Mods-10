@@ -94,17 +94,19 @@ def audit_quality(items: list[dict]) -> dict:
                 })
 
         status = item["review_status"]
-        if status not in REVIEW_STATUSES:
+        valid_status = isinstance(status, str) and status in REVIEW_STATUSES
+        if not valid_status:
             findings.append({
                 "id": item_id,
                 "severity": "error",
                 "code": "unknown_review_status",
                 "field": "review_status",
                 "value": status,
-                "message": "review_status is not one of the supported states",
+                "message": "review_status must be a supported string state",
             })
 
-        if item["origin"] == "unknown":
+        origin = item["origin"]
+        if not isinstance(origin, str) or not origin.strip() or origin == "unknown":
             findings.append({
                 "id": item_id,
                 "severity": "warning",
@@ -114,9 +116,10 @@ def audit_quality(items: list[dict]) -> dict:
                 "message": "EMC origin was not provided",
             })
 
-        if status in {"reviewed", "approved", "exception"} and not str(
-            item["review_notes"] or ""
-        ).strip():
+        notes = item["review_notes"]
+        if valid_status and status in {"reviewed", "approved", "exception"} and not (
+            isinstance(notes, str) and notes.strip()
+        ):
             findings.append({
                 "id": item_id,
                 "severity": "warning",
