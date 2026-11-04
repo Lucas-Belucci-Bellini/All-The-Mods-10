@@ -72,6 +72,46 @@ class RecipeOutputTests(unittest.TestCase):
             {"example:primary", "example:byproduct"},
         )
 
+    def test_mekanism_chemical_output_is_not_counted_twice(self):
+        pack = FakePack(
+            recipes={
+                "mekanism:chemical/hydrogen": {
+                    "type": "mekanism:chemical",
+                    "ingredients": [{"item": "minecraft:iron_ingot"}],
+                    "output": {"id": "mekanism:hydrogen", "amount": 1000},
+                }
+            },
+            items={"minecraft:iron_ingot"},
+        )
+
+        recipes = gen_all.parse_recipes(pack)
+
+        self.assertEqual(len(recipes), 1)
+        self.assertEqual(recipes[0][0], "chem:mekanism:hydrogen")
+        self.assertEqual(recipes[0][1], 1000)
+
+    def test_mixed_chemical_and_item_outputs_are_flagged(self):
+        pack = FakePack(
+            recipes={
+                "mekanism:chemical/byproduct": {
+                    "type": "mekanism:chemical",
+                    "ingredients": [{"item": "minecraft:iron_ingot"}],
+                    "output": {"id": "mekanism:hydrogen", "amount": 1000},
+                    "results": [{"item": "example:solid_byproduct"}],
+                }
+            },
+            items={"minecraft:iron_ingot", "example:solid_byproduct"},
+        )
+
+        recipes = gen_all.parse_recipes(pack)
+
+        self.assertEqual(recipes, [])
+        self.assertEqual(len(gen_all.UNSUPPORTED_RECIPES), 1)
+        self.assertEqual(
+            gen_all.UNSUPPORTED_RECIPES[0]["reason"],
+            "multiple_outputs_require_cost_allocation",
+        )
+
     def test_single_probability_output_uses_expected_count(self):
         pack = FakePack(
             recipes={
