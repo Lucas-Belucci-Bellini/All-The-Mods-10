@@ -420,11 +420,13 @@ def parse_recipes(pack, unsupported=None, audit_warnings=None):
             continue
 
         parsed = ingredients(pack, data)
+        output_refs = [{"id": item, "count": count} for item, count in outputs]
         if parsed is None:
             if unsupported is not None:
                 unsupported.append({
                     "recipe": recipe_id, "type": t,
                     "reason": "ingredient_layout_unreadable",
+                    "outputs": output_refs,
                 })
             continue
         ings, has_unpriced_fluid = parsed
@@ -433,6 +435,7 @@ def parse_recipes(pack, unsupported=None, audit_warnings=None):
                 unsupported.append({
                     "recipe": recipe_id, "type": t,
                     "reason": "fluid_or_chemical_input_not_modeled",
+                    "outputs": output_refs,
                 })
             continue
         if not ings:
@@ -440,6 +443,7 @@ def parse_recipes(pack, unsupported=None, audit_warnings=None):
                 unsupported.append({
                     "recipe": recipe_id, "type": t,
                     "reason": "no_consumed_item_inputs",
+                    "outputs": output_refs,
                 })
             continue
 
@@ -534,6 +538,117 @@ def pec_before(pack, docs):
                 for i in ([e["id"]] if "id" in e else pack.members(e.get("tag", ""))):
                     vals[i] = F(e["emc_value"])
     return vals
+
+
+def audit_manual_overrides(overrides, recipes, final_values, origins, pending_recipes):
+    """Compare fixed EMC overrides with fully priced supported recipe costs.
+
+    This is a triage report, not an automatic rebalance. A candidate is marked
+    high-confidence only when no pending recipe, incomplete input, or heuristic
+    input affects the comparison.
+    """
+    pending_by_item = defaultdict(list)
+    for row in pending_recipes:
+        for output in row.get("outputs", []):
+            item_id = output.get("id")
+            if item_id:
+                pending_by_item[item_id].append(row)
+
+    candidates = defaultdict(list)
+    incomplete = defaultdict(list)
+    for output_id, output_count, ingredients_list, recipe_type, tier in recipes:
+        if output_id not in overrides:
+            continue
+        input_cost = F(0)
+        missing_inputs = []
+        heuristic_inputs = set()
+        selected_inputs = []
+        for alternatives, quantity in ingredients_list:
+            choices = sorted(set(alternatives) - {output_id})
+            if not choices:
+                missing_inputs.append({"alternatives": sorted(alternatives), "reason": "self_reference"})
+                continue
+            missing = [item for item in choices if item not in final_values]
+            if missing:
+                missing_inputs.append({"alternatives": choices, "missing": missing})
+                continue
+            selected = min(choices, key=lambda item: (final_values[item], item))
+            input_cost += F(final_values[selected]) * quantity
+            selected_inputs.append({"id": selected, "emc": final_values[selected],
+                                    "origin": origins.get(selected, "unknown"),
+                                    "quantity": quantity})
+            if origins.get(selected) == "heuristic_fallback":
+                heuristic_inputs.add(selected)
+
+        if missing_inputs:
+            incomplete[output_id].append({
+                "type": recipe_type,
+                "missing_inputs": missing_inputs
+            })
+            continue
+        unit_cost = input_cost / output_count
+        candidates[output_id].append({
+            "recipe_type": recipe_type,
+            "output_count": output_count,
+            "input_cost": str(input_cost),
+            "unit_cost": str(unit_cost),
+            "heuristic_inputs": sorted(heuristic_inputs),
+            "selected_inputs": selected_inputs,
+        })
+
+    rows = []
+    counts = Counter()
+    for item_id, configured_value in sorted(overrides.items()):
+        available = sorted(
+            candidates.get(item_id, []),
+            key=lambda row: (F(row["unit_cost"]), row["recipe_type"])
+        )
+        pending = pending_by_item.get(item_id, [])
+        incomplete_rows = incomplete.get(item_id, [])
+        if not available:
+            status = "no_fully_priced_recipe"
+            confidence = "low"
+            best = None
+        else:
+            best = available[0]
+            above = F(configured_value) > F(best["unit_cost"])
+            has_heuristics = bool(best["heuristic_inputs"])
+            if pending or incomplete_rows:
+                confidence = "low"
+            elif has_heuristics:
+                confidence = "medium"
+            else:
+                confidence = "high"
+            if above and confidence == "high":
+                status = "above_supported_recipe_cost"
+            elif above:
+                status = "potentially_above_recipe_cost_needs_review"
+            elif confidence == "high":
+                status = "at_or_below_supported_recipe_cost"
+            else:
+                status = "known_recipes_not_above_but_needs_review"
+
+        counts[status] += 1
+        rows.append({
+            "id": item_id,
+            "configured_emc": int(configured_value),
+            "status": status,
+            "confidence": confidence,
+            "best_supported_recipe": best,
+            "supported_recipe_count": len(available),
+            "incomplete_recipe_count": len(incomplete_rows),
+            "pending_recipe_count": len(pending),
+            "pending_reasons": sorted({row["reason"] for row in pending}),
+            "incomplete_recipes": incomplete_rows[:20],
+        })
+
+    return {
+        "schema_version": 1,
+        "comment": "Auditoria de triagem somente de leitura. Não altera EMCs. Custos de receitas dependem dos valores atuais dos insumos; entradas heurísticas ou receitas pendentes reduzem a confiança.",
+        "override_count": len(rows),
+        "status_counts": dict(sorted(counts.items())),
+        "items": rows,
+    }
 
 
 def solve(values, fixed, recipes, passes=80):
@@ -801,7 +916,8 @@ def run(pack, inst, out_json, generation_metadata=None):
     ours = [json.loads(p.read_text(encoding="utf-8")) for p in sorted((inst / "kubejs/emc_fontes").glob("[0-9][0-9]_*.json"))
             if not p.name.startswith("00_")]  # 00_ is this script's own audit output
 
-    base = {k: v for k, v in {**pec_before(pack, pack.pec), **pec_before(pack, ours)}.items() if k in pack.items}
+    manual_overrides = {k: v for k, v in pec_before(pack, ours).items() if k in pack.items}
+    base = {k: v for k, v in {**pec_before(pack, pack.pec), **manual_overrides}.items() if k in pack.items}
     unsupported_recipes = []
     parsed_recipes = parse_recipes(pack, unsupported_recipes)
     audit_path = inst / "kubejs/emc_fontes/00_alertas_auditoria_receitas.json"
@@ -955,6 +1071,28 @@ def run(pack, inst, out_json, generation_metadata=None):
 
     # ProjectE stores EMC as a Java long; anything past it would make the whole file fail to load
     final = {i: max(1, int(v)) for i, v in values.items() if i in pack.items and v < 2**63 - 1}
+    item_origins = {}
+    for item in pack.items:
+        if item in base:
+            item_origins[item] = "manual_base"
+        elif item in ores:
+            item_origins[item] = "ore_rule"
+        elif item in guess:
+            item_origins[item] = "heuristic_fallback"
+        elif item in final:
+            item_origins[item] = "recipe_calculated"
+        else:
+            item_origins[item] = "no_emc"
+    override_audit = audit_manual_overrides(
+        manual_overrides, recipes, final, item_origins, unsupported_recipes
+    )
+    override_audit_path = inst / "kubejs/emc_fontes/00_auditoria_overrides_vs_receitas.json"
+    override_audit_path.write_text(
+        json.dumps(override_audit, ensure_ascii=False, indent=2) + "\\n",
+        encoding="utf-8",
+    )
+    print("auditoria de overrides:", override_audit_path,
+          override_audit["override_count"], override_audit["status_counts"])
     Path(out_json).write_text(json.dumps({
         "comment": "Gerado por gen_all.py: EMC fixo para todos os itens do pack (vanilla, todos os mods e "
                    "Allthemodium), calculado pelas receitas. Minerio = 5 lingotes, minerio bruto = 3.",
