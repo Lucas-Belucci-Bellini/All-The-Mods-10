@@ -378,12 +378,20 @@ def parse_recipes(pack):
         chem = chem_output(t, data)
         item_outputs = []
         probabilistic = []
+        seen_output_payloads = set()
         for key, value in data.items():
             if key in OUT_KEYS:
                 # Mekanism's chemical output is already represented by chem_output()
                 # as a pseudo-item; do not parse the same id again as a normal item.
                 if chem and key in ("output", "chemical_output"):
                     continue
+                # Some serializers publish the same output object under aliases.
+                # Deduplicate identical payloads without collapsing repeated stacks
+                # inside one genuine multi-output list.
+                signature = json.dumps(value, sort_keys=True, separators=(",", ":"))
+                if signature in seen_output_payloads:
+                    continue
+                seen_output_payloads.add(signature)
                 item_outputs.extend(parse_outputs(value))
                 probabilistic.extend(find_probabilistic_outputs(value))
         if probabilistic:
