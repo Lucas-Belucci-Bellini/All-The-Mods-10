@@ -88,6 +88,24 @@ class ConsumedIngredientTests(unittest.TestCase):
         }
         self.assertEqual(gen_all.parse_recipes(pack), [])
 
+    def test_skipped_recipe_outputs_are_reported_for_manual_review(self):
+        pack = gen_all.Pack()
+        pack.items.add("examplemod:repaired_item")
+        pack.recipes["examplemod:repair"] = {
+            "type": "minecraft:crafting_special_repairitem",
+            "ingredients": [
+                {"item": "minecraft:iron_sword"},
+                {"item": "minecraft:iron_sword"},
+            ],
+            "result": {"item": "examplemod:repaired_item"},
+        }
+        unsupported = []
+        self.assertEqual(gen_all.parse_recipes(pack, unsupported), [])
+        self.assertEqual(unsupported[0]["reason"], "recipe_type_excluded_by_skip_policy")
+        self.assertEqual(unsupported[0]["outputs"], [
+            {"id": "examplemod:repaired_item", "count": 1}
+        ])
+
     def test_fluid_input_recipe_is_reported_not_underpriced(self):
         pack = gen_all.Pack()
         pack.items.add("examplemod:fluid_product")
