@@ -54,6 +54,8 @@ Auditar todos os itens descobertos no modpack, não apenas Mekanism Extras. A ta
 
 - Toda correção do gerador deve ter teste automatizado reproduzível.
 - Testes unitários devem cobrir receitas simples, múltiplas saídas, quantidades, chances, catalisadores, entradas probabilísticas e ciclos.
+- Receitas com múltiplas saídas garantidas: enquanto não houver alocação de custo validada para co-produtos, cada saída recebe conservadoramente o custo integral dos insumos. Isso evita criar EMC por divisão artificial do custo, mas pode superestimar co-produtos; a política deve ser refinada com dados reais antes de revisar valores finais.
+- Saídas com chance inferior a 100% ficam fora do cálculo automático até que o formato da receita tenha semântica probabilística explicitamente implementada. Saídas garantidas da mesma receita continuam sendo processadas.
 - Alterações de EMC precisam de comparação antes/depois e verificação de conservação nas rotas de craft, compactação e processamento.
 - A integração é permitida após revisão do diff, execução bem-sucedida dos testes e validação dos dados gerados. Não integrar valores que ainda estejam pendentes.
 - O responsável pelo projeto autorizou abrir PR e fazer merge quando esses critérios forem satisfeitos; isso não autoriza pular validações.
