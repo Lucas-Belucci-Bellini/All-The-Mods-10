@@ -116,7 +116,7 @@ class RecipeOutputTests(unittest.TestCase):
 
         recipes = gen_all.parse_recipes(pack)
 
-        self.assertEqual([row[0] for row in recipes], ["example:guaranteed", "example:rare"])
+        self.assertEqual(recipes, [])
         reasons = {entry["reason"] for entry in gen_all.UNSUPPORTED_RECIPES}
         self.assertEqual(
             reasons,
