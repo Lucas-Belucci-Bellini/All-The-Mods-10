@@ -627,7 +627,7 @@ def main(inst, tags_json, out_json, bad_ids=None, minecraft_root=None, use_cache
             "Informe --minecraft-root <diretório> ou defina ATM10_MINECRAFT_ROOT."
         )
     inputs = pack_input_files(inst, tags_json, bad_ids, root)
-    fingerprint = fingerprint_files(inputs) if use_cache else None
+    fingerprint = fingerprint_files(inputs)  # also recorded when --no-cache is used
     generation = build_generation_metadata(inst, root, inputs, fingerprint, use_cache)
     cache = (Path(tempfile.gettempdir()) / f"emc_gen_pack_v2_{fingerprint}.pickle"
              if use_cache else None)
