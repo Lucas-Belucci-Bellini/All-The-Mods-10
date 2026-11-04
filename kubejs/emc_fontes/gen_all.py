@@ -564,7 +564,7 @@ def run(pack, inst, out_json):
         "comment": "Receitas não precificadas automaticamente porque possuem entradas fluidas/químicas não modeladas ou estrutura de ingredientes não interpretada. Revisão manual necessária; nenhum custo ausente foi tratado como zero.",
         "pending_count": len(unsupported_recipes),
         "recipes": sorted(unsupported_recipes, key=lambda row: (row["recipe"], row["reason"]))
-    }, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+    }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print("receitas pendentes:", pending_path, len(unsupported_recipes))
 
     # first pass only to learn ingot/gem prices for the ores
