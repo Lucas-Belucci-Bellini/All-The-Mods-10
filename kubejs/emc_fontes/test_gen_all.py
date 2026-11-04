@@ -194,5 +194,52 @@ class ConsumedIngredientTests(unittest.TestCase):
         self.assertTrue(metadata["generated_at_utc"].endswith("Z"))
 
 
+class SolverConvergenceTests(unittest.TestCase):
+    def setUp(self):
+        gen_all.WHY.clear()
+        gen_all.DEPS.clear()
+
+    def test_solver_reports_convergence_for_stable_recipe_cycle(self):
+        values = {"example:a": gen_all.F(2)}
+        recipes = [
+            ("example:b", 1, [(frozenset({"example:a"}), 1)], "test", 1),
+            ("example:a", 1, [(frozenset({"example:b"}), 1)], "test", 1),
+        ]
+
+        result = gen_all.solve(values, set(), recipes, passes=10)
+
+        self.assertTrue(result["converged"])
+        self.assertEqual(values["example:a"], gen_all.F(2))
+        self.assertEqual(values["example:b"], gen_all.F(2))
+        self.assertGreaterEqual(result["passes"], 2)
+
+    def test_solver_reports_non_converging_positive_feedback_cycle(self):
+        values = {"example:a": gen_all.F(1)}
+        recipes = [
+            ("example:b", 1, [(frozenset({"example:a"}), 2)], "test", 1),
+            ("example:a", 1, [(frozenset({"example:b"}), 2)], "test", 1),
+        ]
+
+        result = gen_all.solve(values, set(), recipes, passes=5)
+
+        self.assertFalse(result["converged"])
+        self.assertEqual(result["passes"], 5)
+        self.assertGreater(result["last_pass_changed_count"], 0)
+        self.assertTrue(result["last_pass_changed_items"])
+
+    def test_tiered_solver_records_each_tier_result(self):
+        values = {"example:base": gen_all.F(4)}
+        diagnostics = []
+        recipes = [
+            ("example:product", 1, [(frozenset({"example:base"}), 1)], "test", 1),
+        ]
+
+        gen_all.tiered(values, set(), recipes, diagnostics, phase="unit_test")
+
+        self.assertEqual([row["tier"] for row in diagnostics], [0, 2, 3])
+        self.assertTrue(all(row["converged"] for row in diagnostics))
+        self.assertTrue(all(row["phase"] == "unit_test" for row in diagnostics))
+
+
 if __name__ == "__main__":
     unittest.main()
