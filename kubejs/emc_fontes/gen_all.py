@@ -265,45 +265,43 @@ def ingredients(pack, data):
     return ings, lossy
 
 
-def parse_outputs(node):
-    """Return every item output as (item_id, expected_count).
+def all_outputs(node):
+    """Return every guaranteed item output as (item id, count).
 
-    Chance is represented as an expected quantity (count * chance). This is safe
-    for a single-output recipe: a 50% drop must cost twice as much per expected item.
-    Multi-output recipes are deliberately rejected by parse_recipes until their
-    ingredient cost can be allocated between co-products without creating EMC.
+    Probabilistic outputs are excluded until their schema semantics are modeled.
+    Guaranteed co-products remain available for conservative full-input-cost pricing.
     """
     if isinstance(node, list):
         out = []
-        for child in node:
-            out.extend(parse_outputs(child))
+        for entry in node:
+            out.extend(all_outputs(entry))
         return out
     if isinstance(node, str):
-        return [(node, F(1))] if ID_RE.match(node) else []
+        return [(node, 1)] if ID_RE.match(node) else []
     if not isinstance(node, dict):
         return []
-
-    chance = node.get("chance", 1)
-    if not isinstance(chance, (int, float)) or not 0 < chance <= 1:
+    chance = node.get("chance")
+    if isinstance(chance, (int, float)) and chance < 1:
         return []
-    multiplier = F(str(chance))
+    out = []
     for key in ("item", "id"):
         value = node.get(key)
         if isinstance(value, str) and ID_RE.match(value):
-            return [(value, F(amount(node)) * multiplier)]
-        if isinstance(value, dict):
-            nested = parse_outputs(value)
-            return [(item, count * F(amount(node)) * multiplier) for item, count in nested]
-
+            out.append((value, amount(node)))
+            return out
+        if isinstance(value, (dict, list)):
+            nested = all_outputs(value)
+            if nested:
+                return [(item, amount(node) if amount(node) > 1 else count)
+                        for item, count in nested]
     for key in ("stack", "result", "output"):
-        if key in node and isinstance(node[key], (dict, list, str)):
-            nested = parse_outputs(node[key])
-            return [(item, count * multiplier) for item, count in nested]
-    return []
+        if isinstance(node.get(key), (dict, list, str)):
+            out.extend(all_outputs(node[key]))
+    return out
 
 
 def find_probabilistic_outputs(node):
-    """Find outputs with an explicit chance below 100%, including nested lists."""
+    """Collect probabilistic outputs for audit; never price them automatically."""
     found = []
     if isinstance(node, list):
         for child in node:
@@ -311,7 +309,6 @@ def find_probabilistic_outputs(node):
         return found
     if not isinstance(node, dict):
         return found
-
     chance = node.get("chance")
     if isinstance(chance, (int, float)) and chance < 1:
         item = node.get("item") or node.get("id")
@@ -320,19 +317,23 @@ def find_probabilistic_outputs(node):
                 "id": item,
                 "chance": chance,
                 "count": amount(node),
-                "expected_count": str(F(amount(node)) * F(str(chance))) if chance > 0 else "0"
+                "reason": "probabilistic_output_excluded_from_emc"
             })
         else:
             for key in ("stack", "result", "output"):
                 if key in node:
                     found.extend(find_probabilistic_outputs(node[key]))
         return found
-
     for key in ("item", "id", "stack", "result", "output"):
         value = node.get(key)
         if isinstance(value, (dict, list)):
             found.extend(find_probabilistic_outputs(value))
     return found
+
+
+def first_output(node):
+    """Compatibility helper for callers that explicitly need one output."""
+    return next(iter(all_outputs(node)), None)
 
 
 CHEM = "chem:"  # pseudo items for Mekanism chemicals, priced per mB
@@ -360,12 +361,12 @@ def chem_input(data):
     return None
 
 
-UNSUPPORTED_RECIPES = []
+RECIPE_AUDIT_WARNINGS = []
 
 
 def parse_recipes(pack):
     out = []
-    UNSUPPORTED_RECIPES.clear()
+    RECIPE_AUDIT_WARNINGS.clear()
     for recipe_id, data in pack.recipes.items():
         if not isinstance(data, dict):
             continue
@@ -373,66 +374,76 @@ def parse_recipes(pack):
         if not isinstance(t, str) or SKIP_TYPES.match(t):
             continue
 
-        # Chemical recipes can expose a pseudo-item output; ordinary item outputs
-        # are collected separately so a mixed item+chemical recipe is not hidden.
-        chem = chem_output(t, data)
+        chemical = chem_output(t, data)
         item_outputs = []
         probabilistic = []
         seen_output_payloads = set()
         for key, value in data.items():
-            if key in OUT_KEYS:
-                # Mekanism's chemical output is already represented by chem_output()
-                # as a pseudo-item; do not parse the same id again as a normal item.
-                if chem and key in ("output", "chemical_output"):
-                    continue
-                # Some serializers publish the same output object under aliases.
-                # Deduplicate identical payloads without collapsing repeated stacks
-                # inside one genuine multi-output list.
-                signature = json.dumps(value, sort_keys=True, separators=(",", ":"))
-                if signature in seen_output_payloads:
-                    continue
-                seen_output_payloads.add(signature)
-                item_outputs.extend(parse_outputs(value))
-                probabilistic.extend(find_probabilistic_outputs(value))
+            if key not in OUT_KEYS:
+                continue
+            # The chemical pseudo-item is added separately, but other item outputs
+            # from the same recipe must not be discarded.
+            if chemical and key in ("output", "chemical_output"):
+                continue
+            signature = json.dumps(value, sort_keys=True, separators=(",", ":"))
+            if signature in seen_output_payloads:
+                continue
+            seen_output_payloads.add(signature)
+            item_outputs.extend(all_outputs(value))
+            probabilistic.extend(find_probabilistic_outputs(value))
+
         if probabilistic:
-            UNSUPPORTED_RECIPES.append({
+            RECIPE_AUDIT_WARNINGS.append({
                 "recipe": recipe_id,
                 "type": t,
-                "reason": "probabilistic_outputs_require_schema_review",
+                "reason": "probabilistic_outputs_excluded_from_emc",
                 "outputs": probabilistic
             })
-        outputs = ([(chem[0], F(chem[1]))] if chem else []) + item_outputs
+
+        outputs = ([(chemical[0], chemical[1])] if chemical else []) + item_outputs
+        outputs = list(dict.fromkeys(outputs))
         outputs = [(item, count) for item, count in outputs
                    if count > 0 and (item in pack.items or item.startswith(CHEM))]
-        if len(outputs) != 1:
-            if outputs:
-                UNSUPPORTED_RECIPES.append({
-                    "recipe": recipe_id,
-                    "type": t,
-                    "reason": "multiple_outputs_require_cost_allocation",
-                    "outputs": [{"id": item, "expected_count": str(count)}
-                                for item, count in outputs]
-                })
+        if not outputs:
             continue
 
-        o = outputs[0]
         parsed = ingredients(pack, data)
-        if not parsed or not parsed[0] or any(len(a) == 1 and o[0] in a for a, _ in parsed[0]):
+        if not parsed or not parsed[0]:
             continue
         ings, lossy = parsed
-        farm = not o[0].startswith(FARM_NS) and any(x.startswith(FARM_NS) for a, _ in ings for x in a)
         crafting = t.startswith("minecraft:") or ("pattern" in data and "key" in data)
-        # essence -> resource is a farm: never prices the resource (tier 9), only the essence
-        tier = 9 if farm else 3 if lossy else 1 if crafting else 2
-        out.append((o[0], o[1], ings, t, tier))
-        # the chemical is the only missing input: also add the full-cost version as a lossless recipe
         ci = chem_input(data)
         others = [k for k in FLUID_KEYS if k in data and k != "chemical_input"]
-        # nucleosynthesis turns a few mB of antimatter into rare blocks (2 mB -> lapis block); it is an
-        # endgame energy sink and must not undercut the item's normal price
-        if lossy and not farm and ci and not others and t != "mekanism:nucleosynthesizing":
-            out.append((o[0], o[1], ings + [(frozenset([ci[0]]), ci[1])], t, 2))
+
+        if len(outputs) > 1:
+            RECIPE_AUDIT_WARNINGS.append({
+                "recipe": recipe_id,
+                "type": t,
+                "reason": "guaranteed_coproducts_each_receive_full_input_cost",
+                "outputs": [{"id": item, "count": count} for item, count in outputs]
+            })
+
+        # Conservative policy: each guaranteed co-product receives the full input
+        # cost. This may overprice by-products, but cannot create EMC through
+        # artificial cost splitting. Refine only with evidence from real recipes.
+        for output_id, output_count in outputs:
+            if any(len(alternatives) == 1 and output_id in alternatives
+                   for alternatives, _ in ings):
+                continue
+            farm = (not output_id.startswith(FARM_NS)
+                    and any(item.startswith(FARM_NS)
+                            for alternatives, _ in ings for item in alternatives))
+            tier = 9 if farm else 3 if lossy else 1 if crafting else 2
+            out.append((output_id, output_count, ings, t, tier))
+            if (lossy and not farm and ci and not others
+                    and t != "mekanism:nucleosynthesizing"):
+                out.append((
+                    output_id, output_count,
+                    ings + [(frozenset([ci[0]]), ci[1])], t, 2
+                ))
     return out
+
+
 
 
 def group_recipes(pack, inst):
@@ -599,12 +610,12 @@ def run(pack, inst, out_json):
     parsed_recipes = parse_recipes(pack)
     # Preserve unsupported multi-output recipes for human review instead of silently
     # dropping secondary products or assigning the full input cost to every co-product.
-    unsupported_path = inst / "kubejs/emc_fontes/00_receitas_nao_suportadas.json"
-    unsupported_path.write_text(json.dumps({
+    audit_path = inst / "kubejs/emc_fontes/00_alertas_auditoria_receitas.json"
+    audit_path.write_text(json.dumps({
         "schema_version": 1,
-        "comment": "Receitas não utilizadas para derivar EMC porque a alocação segura do custo entre múltiplas saídas ainda não está implementada.",
-        "unsupported_count": len(UNSUPPORTED_RECIPES),
-        "recipes": UNSUPPORTED_RECIPES
+        "comment": "Saídas probabilísticas são excluídas do cálculo. Co-produtos garantidos recebem conservadoramente o custo integral dos insumos por saída.",
+        "warning_count": len(RECIPE_AUDIT_WARNINGS),
+        "recipes": RECIPE_AUDIT_WARNINGS
     }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     recipes = [r for r in parsed_recipes + pec_conversions(pack, pack.pec + ours)
                if r[0] in pack.items or r[0].startswith(CHEM)]
