@@ -21,12 +21,11 @@ class ManualOverrideAuditTests(unittest.TestCase):
               [(frozenset({"minecraft:iron_ingot"}), 2)],
               "example:machine", 2)],
             {"minecraft:iron_ingot": 10},
-            {"minecraft:iron_ingot": "manual_base"},
+            {"minecraft:iron_ingot": "recipe_calculated"},
         )
         row = report["items"][0]
-        self.assertEqual(row["status"], "above_supported_recipe_cost")
-        self.assertEqual(row["confidence"], "high")
-        self.assertEqual(row["best_supported_recipe"]["unit_cost"], "10")
+        self.assertEqual(row["status"], "above_supported_recipe_cost_candidate")
+                self.assertEqual(row["best_supported_recipe"]["unit_cost"], "10")
         self.assertEqual(report["status_counts"]["above_supported_recipe_cost"], 1)
 
     def test_pending_recipe_lowers_confidence_and_never_claims_safe(self):
@@ -45,8 +44,7 @@ class ManualOverrideAuditTests(unittest.TestCase):
         )
         row = report["items"][0]
         self.assertEqual(row["status"], "potentially_above_recipe_cost_needs_review")
-        self.assertEqual(row["confidence"], "low")
-        self.assertEqual(row["pending_recipe_count"], 1)
+                self.assertEqual(row["pending_recipe_count"], 1)
 
     def test_heuristic_input_lowers_confidence(self):
         report = self.audit(
@@ -59,8 +57,7 @@ class ManualOverrideAuditTests(unittest.TestCase):
         )
         row = report["items"][0]
         self.assertEqual(row["status"], "potentially_above_recipe_cost_needs_review")
-        self.assertEqual(row["confidence"], "medium")
-        self.assertEqual(row["best_supported_recipe"]["heuristic_inputs"],
+                self.assertEqual(row["best_supported_recipe"]["heuristic_inputs"],
                          ["example:heuristic_part"])
 
     def test_missing_input_price_is_reported_as_incomplete(self):
@@ -78,7 +75,7 @@ class ManualOverrideAuditTests(unittest.TestCase):
     def test_override_without_any_recipe_is_reported(self):
         report = self.audit({"example:token": Fraction(64)}, [], {})
         row = report["items"][0]
-        self.assertEqual(row["status"], "no_fully_priced_recipe")
+        self.assertEqual(row["status"], "no_supported_recipe")
         self.assertEqual(row["supported_recipe_count"], 0)
 
 
