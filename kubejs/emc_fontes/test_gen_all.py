@@ -155,6 +155,44 @@ class ConsumedIngredientTests(unittest.TestCase):
             second = gen_all.fingerprint_files([first_file, second_file])
         self.assertNotEqual(first, second)
 
+    def test_generation_metadata_records_pack_version_and_input_labels(self):
+        import json
+        import tempfile
+        from pathlib import Path
+
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            instance = root / "instance"
+            minecraft = root / "minecraft"
+            instance.mkdir()
+            minecraft.mkdir()
+            (instance / "manifest.json").write_text(json.dumps({
+                "name": "All The Mods 10",
+                "version": "4.5",
+                "minecraft": {
+                    "version": "1.21.1",
+                    "modLoaders": [{"id": "neoforge-21.1.259"}],
+                },
+            }), encoding="utf-8")
+            jar = minecraft / "versions/1.21.1/1.21.1.jar"
+            jar.parent.mkdir(parents=True)
+            jar.write_bytes(b"test-jar")
+            metadata = gen_all.build_generation_metadata(
+                instance, minecraft, [jar, instance / "manifest.json"],
+                "abc123", cache_enabled=False,
+            )
+
+        self.assertEqual(metadata["pack_identity"]["manifest"]["version"], "4.5")
+        self.assertEqual(metadata["minecraft_version"], "1.21.1")
+        self.assertEqual(metadata["neoforge_version"], "21.1.259")
+        self.assertEqual(metadata["input_fingerprint_sha256"], "abc123")
+        self.assertEqual(metadata["input_files"], [
+            "minecraft/versions/1.21.1/1.21.1.jar",
+            "instance/manifest.json",
+        ])
+        self.assertFalse(metadata["cache_enabled"])
+        self.assertTrue(metadata["generated_at_utc"].endswith("Z"))
+
 
 if __name__ == "__main__":
     unittest.main()
