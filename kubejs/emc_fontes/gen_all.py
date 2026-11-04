@@ -302,6 +302,39 @@ def parse_outputs(node):
     return []
 
 
+def find_probabilistic_outputs(node):
+    """Find outputs with an explicit chance below 100%, including nested lists."""
+    found = []
+    if isinstance(node, list):
+        for child in node:
+            found.extend(find_probabilistic_outputs(child))
+        return found
+    if not isinstance(node, dict):
+        return found
+
+    chance = node.get("chance")
+    if isinstance(chance, (int, float)) and chance < 1:
+        item = node.get("item") or node.get("id")
+        if isinstance(item, str) and ID_RE.match(item):
+            found.append({
+                "id": item,
+                "chance": chance,
+                "count": amount(node),
+                "expected_count": str(F(amount(node)) * F(str(chance))) if chance > 0 else "0"
+            })
+        else:
+            for key in ("stack", "result", "output"):
+                if key in node:
+                    found.extend(find_probabilistic_outputs(node[key]))
+        return found
+
+    for key in ("item", "id", "stack", "result", "output"):
+        value = node.get(key)
+        if isinstance(value, (dict, list)):
+            found.extend(find_probabilistic_outputs(value))
+    return found
+
+
 CHEM = "chem:"  # pseudo items for Mekanism chemicals, priced per mB
 
 
@@ -344,6 +377,7 @@ def parse_recipes(pack):
         # are collected separately so a mixed item+chemical recipe is not hidden.
         chem = chem_output(t, data)
         item_outputs = []
+        probabilistic = []
         for key, value in data.items():
             if key in OUT_KEYS:
                 # Mekanism's chemical output is already represented by chem_output()
@@ -351,6 +385,14 @@ def parse_recipes(pack):
                 if chem and key in ("output", "chemical_output"):
                     continue
                 item_outputs.extend(parse_outputs(value))
+                probabilistic.extend(find_probabilistic_outputs(value))
+        if probabilistic:
+            UNSUPPORTED_RECIPES.append({
+                "recipe": recipe_id,
+                "type": t,
+                "reason": "probabilistic_outputs_require_schema_review",
+                "outputs": probabilistic
+            })
         outputs = ([(chem[0], F(chem[1]))] if chem else []) + item_outputs
         outputs = [(item, count) for item, count in outputs
                    if count > 0 and (item in pack.items or item.startswith(CHEM))]
