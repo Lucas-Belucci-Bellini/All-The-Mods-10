@@ -265,30 +265,41 @@ def ingredients(pack, data):
     return ings, lossy
 
 
-def first_output(node):
+def parse_outputs(node):
+    """Return every item output as (item_id, expected_count).
+
+    Chance is represented as an expected quantity (count * chance). This is safe
+    for a single-output recipe: a 50% drop must cost twice as much per expected item.
+    Multi-output recipes are deliberately rejected by parse_recipes until their
+    ingredient cost can be allocated between co-products without creating EMC.
+    """
     if isinstance(node, list):
-        for n in node:
-            o = first_output(n)
-            if o:
-                return o
-        return None
+        out = []
+        for child in node:
+            out.extend(parse_outputs(child))
+        return out
     if isinstance(node, str):
-        return (node, 1) if ID_RE.match(node) else None
-    if isinstance(node, dict):
-        if isinstance(node.get("chance"), (int, float)) and node["chance"] < 1:
-            return None
-        for k in ("item", "id"):
-            v = node.get(k)
-            if isinstance(v, str) and ID_RE.match(v):
-                return (v, amount(node))
-            if isinstance(v, dict):
-                o = first_output(v)
-                if o:
-                    return (o[0], amount(node) if amount(node) > 1 else o[1])
-        for k in ("stack", "result", "output"):
-            if isinstance(node.get(k), (dict, list)):
-                return first_output(node[k])
-    return None
+        return [(node, F(1))] if ID_RE.match(node) else []
+    if not isinstance(node, dict):
+        return []
+
+    chance = node.get("chance", 1)
+    if not isinstance(chance, (int, float)) or not 0 < chance <= 1:
+        return []
+    multiplier = F(str(chance))
+    for key in ("item", "id"):
+        value = node.get(key)
+        if isinstance(value, str) and ID_RE.match(value):
+            return [(value, F(amount(node)) * multiplier)]
+        if isinstance(value, dict):
+            nested = parse_outputs(value)
+            return [(item, count * F(amount(node)) * multiplier) for item, count in nested]
+
+    for key in ("stack", "result", "output"):
+        if key in node and isinstance(node[key], (dict, list, str)):
+            nested = parse_outputs(node[key])
+            return [(item, count * multiplier) for item, count in nested]
+    return []
 
 
 CHEM = "chem:"  # pseudo items for Mekanism chemicals, priced per mB
@@ -316,17 +327,41 @@ def chem_input(data):
     return None
 
 
+UNSUPPORTED_RECIPES = []
+
+
 def parse_recipes(pack):
     out = []
-    for data in pack.recipes.values():
+    UNSUPPORTED_RECIPES.clear()
+    for recipe_id, data in pack.recipes.items():
         if not isinstance(data, dict):
             continue
         t = data.get("type", "")
         if not isinstance(t, str) or SKIP_TYPES.match(t):
             continue
-        o = chem_output(t, data) or next((first_output(data[k]) for k in data if k in OUT_KEYS), None)
-        if not o or not (o[0] in pack.items or o[0].startswith(CHEM)):
+
+        # Chemical recipes can expose a pseudo-item output; ordinary item outputs
+        # are collected separately so a mixed item+chemical recipe is not hidden.
+        chem = chem_output(t, data)
+        item_outputs = []
+        for key, value in data.items():
+            if key in OUT_KEYS:
+                item_outputs.extend(parse_outputs(value))
+        outputs = ([(chem[0], F(chem[1]))] if chem else []) + item_outputs
+        outputs = [(item, count) for item, count in outputs
+                   if count > 0 and (item in pack.items or item.startswith(CHEM))]
+        if len(outputs) != 1:
+            if outputs:
+                UNSUPPORTED_RECIPES.append({
+                    "recipe": recipe_id,
+                    "type": t,
+                    "reason": "multiple_outputs_require_cost_allocation",
+                    "outputs": [{"id": item, "expected_count": str(count)}
+                                for item, count in outputs]
+                })
             continue
+
+        o = outputs[0]
         parsed = ingredients(pack, data)
         if not parsed or not parsed[0] or any(len(a) == 1 and o[0] in a for a, _ in parsed[0]):
             continue
