@@ -1068,7 +1068,7 @@ def run(pack, inst, out_json, generation_metadata=None):
     )
     source_audit_path = inst / "kubejs/emc_fontes/00_auditoria_precedencia_fontes_emc.json"
     source_audit_path.write_text(
-        json.dumps(manual_source_audit, ensure_ascii=False, indent=2) + "\\n",
+        json.dumps(manual_source_audit, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
     print("auditoria de precedencia das fontes:", source_audit_path,
