@@ -72,6 +72,33 @@ class RecipeOutputTests(unittest.TestCase):
             {"example:primary", "example:byproduct"},
         )
 
+    def test_probabilistic_output_is_explicitly_reported_for_review(self):
+        pack = FakePack(
+            recipes={
+                "example:machine/mixed": {
+                    "type": "example:machine",
+                    "ingredients": [{"item": "minecraft:iron_ingot"}],
+                    "results": [
+                        {"item": "example:guaranteed"},
+                        {"item": "example:rare", "chance": 0.25},
+                    ],
+                }
+            },
+            items={"example:guaranteed", "example:rare", "minecraft:iron_ingot"},
+        )
+
+        recipes = gen_all.parse_recipes(pack)
+
+        self.assertEqual([row[0] for row in recipes], ["example:guaranteed", "example:rare"])
+        self.assertEqual(
+            [entry["reason"] for entry in gen_all.UNSUPPORTED_RECIPES],
+            ["probabilistic_outputs_require_schema_review"],
+        )
+        self.assertEqual(
+            gen_all.UNSUPPORTED_RECIPES[0]["outputs"][0]["id"],
+            "example:rare",
+        )
+
     def test_mekanism_chemical_output_is_not_counted_twice(self):
         pack = FakePack(
             recipes={
