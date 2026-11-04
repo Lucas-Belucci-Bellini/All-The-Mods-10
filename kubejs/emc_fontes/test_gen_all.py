@@ -121,6 +121,7 @@ class ConsumedIngredientTests(unittest.TestCase):
             "recipe": "examplemod:fluid_machine",
             "type": "examplemod:fluid_machine",
             "reason": "fluid_or_chemical_input_not_modeled",
+            "outputs": [{"id": "examplemod:fluid_product", "count": 1}],
         }])
 
     def test_chemical_input_is_not_treated_as_free(self):
