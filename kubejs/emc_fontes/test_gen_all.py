@@ -309,6 +309,27 @@ class UnsupportedOutputAuditTests(unittest.TestCase):
         self.assertEqual(parsed, [])
         self.assertEqual(pending[0]["reason"], "output_items_not_in_pack_index")
 
+    def test_missing_output_is_reported_even_when_recipe_has_valid_coproduct(self):
+        pack = gen_all.Pack()
+        pack.items.update({"minecraft:iron_ingot", "example:known_product"})
+        pack.recipes["example:mixed_outputs"] = {
+            "type": "example:machine",
+            "ingredients": [{"item": "minecraft:iron_ingot"}],
+            "results": [
+                {"item": "example:known_product"},
+                {"item": "example:not_discovered"},
+            ],
+        }
+        pending = []
+
+        parsed = gen_all.parse_recipes(pack, unsupported_outputs=pending)
+
+        self.assertEqual([row[0] for row in parsed], ["example:known_product"])
+        self.assertEqual(pending[0]["reason"], "output_items_not_in_pack_index")
+        self.assertEqual(pending[0]["outputs"], [
+            {"id": "example:not_discovered", "count": 1}
+        ])
+
     def test_only_probabilistic_output_is_reported_separately(self):
         pack = gen_all.Pack()
         pack.recipes["example:chance_only"] = {
