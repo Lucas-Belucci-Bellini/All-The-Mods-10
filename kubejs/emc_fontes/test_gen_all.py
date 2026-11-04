@@ -22,6 +22,29 @@ class ConsumedIngredientTests(unittest.TestCase):
     def test_non_dict_ingredient_is_consumed(self):
         self.assertTrue(gen_all.consumed("minecraft:iron_ingot"))
 
+    def test_probabilistic_input_remains_in_recipe_cost(self):
+        pack = gen_all.Pack()
+        parsed = gen_all.ingredients(pack, {
+            "ingredients": [
+                {"item": "minecraft:iron_ingot", "consume_chance": 0.25}
+            ]
+        })
+        self.assertIsNotNone(parsed)
+        self.assertEqual(len(parsed[0]), 1)
+        alternatives, count = parsed[0][0]
+        self.assertEqual(alternatives, frozenset({"minecraft:iron_ingot"}))
+        self.assertEqual(count, 1)
+
+    def test_explicit_catalyst_is_excluded_from_recipe_cost(self):
+        pack = gen_all.Pack()
+        parsed = gen_all.ingredients(pack, {
+            "ingredients": [
+                {"item": "minecraft:iron_ingot", "keep": True}
+            ]
+        })
+        self.assertIsNotNone(parsed)
+        self.assertEqual(parsed[0], [])
+
 
 if __name__ == "__main__":
     unittest.main()
