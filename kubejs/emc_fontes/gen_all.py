@@ -346,6 +346,10 @@ def parse_recipes(pack):
         item_outputs = []
         for key, value in data.items():
             if key in OUT_KEYS:
+                # Mekanism's chemical output is already represented by chem_output()
+                # as a pseudo-item; do not parse the same id again as a normal item.
+                if chem and key in ("output", "chemical_output"):
+                    continue
                 item_outputs.extend(parse_outputs(value))
         outputs = ([(chem[0], F(chem[1]))] if chem else []) + item_outputs
         outputs = [(item, count) for item, count in outputs
