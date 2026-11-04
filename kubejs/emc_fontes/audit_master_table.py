@@ -74,6 +74,69 @@ def summarize(items: list[dict]) -> dict:
     return summary
 
 
+def audit_quality(items: list[dict]) -> dict:
+    """Return non-mutating data-quality findings for master-table review metadata."""
+    findings = []
+    for item in items:
+        item_id = item["id"]
+        for field in ("current_emc", "target_emc"):
+            value = item[field]
+            if value is not None and (
+                not isinstance(value, int) or isinstance(value, bool) or value < 0
+            ):
+                findings.append({
+                    "id": item_id,
+                    "severity": "error",
+                    "code": f"invalid_{field}",
+                    "field": field,
+                    "value": value,
+                    "message": f"{field} must be a non-negative integer or null",
+                })
+
+        status = item["review_status"]
+        if status not in REVIEW_STATUSES:
+            findings.append({
+                "id": item_id,
+                "severity": "error",
+                "code": "unknown_review_status",
+                "field": "review_status",
+                "value": status,
+                "message": "review_status is not one of the supported states",
+            })
+
+        if item["origin"] == "unknown":
+            findings.append({
+                "id": item_id,
+                "severity": "warning",
+                "code": "unknown_origin",
+                "field": "origin",
+                "value": item["origin"],
+                "message": "EMC origin was not provided",
+            })
+
+        if status in {"reviewed", "approved", "exception"} and not str(
+            item["review_notes"] or ""
+        ).strip():
+            findings.append({
+                "id": item_id,
+                "severity": "warning",
+                "code": "review_without_notes",
+                "field": "review_notes",
+                "value": item["review_notes"],
+                "message": "reviewed items should explain the decision or exception",
+            })
+
+    findings.sort(key=lambda row: (row["id"], row["severity"], row["code"]))
+    return {
+        "schema_version": 1,
+        "item_count": len(items),
+        "finding_count": len(findings),
+        "error_count": sum(row["severity"] == "error" for row in findings),
+        "warning_count": sum(row["severity"] == "warning" for row in findings),
+        "findings": findings,
+    }
+
+
 def render_markdown(items: list[dict], summary: dict) -> str:
     total = len(items)
     with_emc = sum(item["current_emc"] is not None for item in items)
@@ -177,6 +240,12 @@ def write_reports(input_path: Path, out_dir: Path) -> tuple[Path, Path]:
             (item for item in items if item["current_emc"] is None),
             key=lambda row: row["id"],
         ))
+
+    quality_path = out_dir / "00_qualidade_tabela_mestra_emc.json"
+    quality_path.write_text(
+        json.dumps(audit_quality(items), ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
     return markdown_path, csv_path
 
 
@@ -194,7 +263,9 @@ def main() -> None:
     with_emc = sum(item["current_emc"] is not None for item in items)
     without_emc = len(items) - with_emc
     pending = sum(row["pending"] for row in summary.values())
+    quality = audit_quality(items)
     print(f"Itens: {len(items)} | namespaces: {len(summary)} | com EMC: {with_emc} | sem EMC: {without_emc} | pendentes: {pending}")
+    print(f"Qualidade da tabela: {quality['error_count']} erros | {quality['warning_count']} avisos")
     print("Top namespaces por quantidade de itens:")
     for mod, row in sorted(summary.items(), key=lambda pair: (-pair[1]["total"], pair[0]))[:30]:
         print(f"  {mod}: total={row['total']} com_emc={row['with_emc']} sem_emc={row['without_emc']} pendentes={row['pending']}")

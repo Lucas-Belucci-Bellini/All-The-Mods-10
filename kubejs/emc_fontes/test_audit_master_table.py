@@ -101,6 +101,37 @@ class MasterTableAuditTests(unittest.TestCase):
                          ["example:creative_token"])
         self.assertIn("example:high_value", markdown.read_text(encoding="utf-8"))
 
+    def test_quality_audit_reports_invalid_values_status_and_missing_notes(self):
+        items = [
+            dict(self.items[0], current_emc=-1, review_notes=""),
+            dict(self.items[1], target_emc=1.5, review_status="finished"),
+            dict(self.items[2], origin="unknown"),
+        ]
+        report = audit.audit_quality(items)
+        codes = {(row["id"], row["code"]) for row in report["findings"]}
+        self.assertIn(("minecraft:iron_ingot", "invalid_current_emc"), codes)
+        self.assertIn(("minecraft:iron_ingot", "review_without_notes"), codes)
+        self.assertIn(("mekanism:basic_control_circuit", "invalid_target_emc"), codes)
+        self.assertIn(("mekanism:basic_control_circuit", "unknown_review_status"), codes)
+        self.assertIn(("example:creative_token", "unknown_origin"), codes)
+        self.assertEqual(report["error_count"], 3)
+        self.assertEqual(report["warning_count"], 2)
+
+    def test_quality_audit_accepts_zero_emc_and_null_targets(self):
+        item = dict(self.items[1], current_emc=0, target_emc=None)
+        report = audit.audit_quality([item])
+        self.assertEqual(report["finding_count"], 0)
+
+    def test_quality_report_is_written_without_mutating_master_table(self):
+        before = self.input.read_text(encoding="utf-8")
+        out_dir = self.root / "quality"
+        audit.write_reports(self.input, out_dir)
+        report_path = out_dir / "00_qualidade_tabela_mestra_emc.json"
+        report = json.loads(report_path.read_text(encoding="utf-8"))
+        self.assertEqual(report["item_count"], len(self.items))
+        self.assertEqual(report["finding_count"], 0)
+        self.assertEqual(self.input.read_text(encoding="utf-8"), before)
+
     def test_duplicate_ids_are_rejected(self):
         duplicate = [self.items[0], dict(self.items[0])]
         self.write_payload(duplicate)
