@@ -1,0 +1,40 @@
+name: EMC master table audit report
+
+on:
+  push:
+    branches:
+      - "balance/**"
+    paths:
+      - "kubejs/emc_fontes/audit_master_table.py"
+      - "kubejs/emc_fontes/00_tabela_mestra_emc.json"
+      - ".github/workflows/emc-master-table-audit.yml"
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "kubejs/emc_fontes/audit_master_table.py"
+      - "kubejs/emc_fontes/00_tabela_mestra_emc.json"
+      - ".github/workflows/emc-master-table-audit.yml"
+
+jobs:
+  build-report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generate read-only audit reports
+        run: |
+          python -I kubejs/emc_fontes/audit_master_table.py \
+            --input kubejs/emc_fontes/00_tabela_mestra_emc.json \
+            --out-dir reports/emc-master-table
+      - name: Upload audit reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: emc-master-table-audit
+          path: reports/emc-master-table/
+          if-no-files-found: error
+          retention-days: 14
