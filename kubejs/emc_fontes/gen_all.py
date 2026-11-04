@@ -407,8 +407,14 @@ def parse_recipes(pack, unsupported=None, audit_warnings=None):
                 "outputs": probabilistic
             })
 
-        outputs = list(dict.fromkeys(outputs))
-        outputs = [o for o in outputs if o[0] in pack.items or o[0].startswith(CHEM)]
+        # Merge repeated stacks of the same item into one total yield. Payload
+        # aliases were already deduplicated above; repeated entries inside one real
+        # output list must add together rather than disappear.
+        combined_outputs = {}
+        for item, count in outputs:
+            if item in pack.items or item.startswith(CHEM):
+                combined_outputs[item] = combined_outputs.get(item, 0) + count
+        outputs = list(combined_outputs.items())
         if not outputs:
             continue
 
