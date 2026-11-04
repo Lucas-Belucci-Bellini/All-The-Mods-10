@@ -243,7 +243,7 @@ def write_reports(input_path: Path, out_dir: Path) -> tuple[Path, Path]:
 
     quality_path = out_dir / "00_qualidade_tabela_mestra_emc.json"
     quality_path.write_text(
-        json.dumps(audit_quality(items), ensure_ascii=False, indent=2) + "\\n",
+        json.dumps(audit_quality(items), ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
     return markdown_path, csv_path
