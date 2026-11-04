@@ -373,7 +373,21 @@ def chem_input(data):
 RECIPE_AUDIT_WARNINGS = []
 
 
-def parse_recipes(pack, unsupported=None, audit_warnings=None):
+def all_outputs_from_payloads(data, output_keys):
+    """Collect parseable guaranteed outputs for diagnostics, including IDs outside the pack index."""
+    found = []
+    seen = set()
+    for key in output_keys:
+        value = data.get(key)
+        signature = json.dumps(value, sort_keys=True, separators=(",", ":"))
+        if signature in seen:
+            continue
+        seen.add(signature)
+        found.extend(all_outputs(value))
+    return found
+
+
+def parse_recipes(pack, unsupported=None, audit_warnings=None, unsupported_outputs=None):
     """Parse recipes without inventing costs for unknown or unpriced inputs."""
     out = []
     if audit_warnings is None:
@@ -410,10 +424,12 @@ def parse_recipes(pack, unsupported=None, audit_warnings=None):
         chemical = chem_output(t, data)
         outputs = [chemical] if chemical else []
         probabilistic = []
+        output_keys = []
         seen_output_payloads = set()
         for key, value in data.items():
             if key not in OUT_KEYS:
                 continue
+            output_keys.append(key)
             if chemical and key in ("output", "chemical_output"):
                 continue
             signature = json.dumps(value, sort_keys=True, separators=(",", ":"))
@@ -432,12 +448,35 @@ def parse_recipes(pack, unsupported=None, audit_warnings=None):
             })
 
         # Aggregate repeated stacks of one item, while retaining distinct co-products.
+        parsed_output_count = len(outputs)
         combined_outputs = {}
         for item, count in outputs:
             if item in pack.items or item.startswith(CHEM):
                 combined_outputs[item] = combined_outputs.get(item, 0) + count
         outputs = list(combined_outputs.items())
         if not outputs:
+            if unsupported_outputs is not None and output_keys:
+                if probabilistic and parsed_output_count == 0:
+                    reason = "only_probabilistic_outputs"
+                elif parsed_output_count:
+                    reason = "output_items_not_in_pack_index"
+                else:
+                    reason = "output_layout_unrecognized_or_non_item"
+                probabilistic_refs = [
+                    {"id": row["id"], "count": row.get("count", 1)}
+                    for row in probabilistic if row.get("id")
+                ]
+                unsupported_outputs.append({
+                    "recipe": recipe_id,
+                    "type": t,
+                    "output_keys": sorted(set(output_keys)),
+                    "reason": reason,
+                    "outputs": [
+                        {"id": item, "count": count}
+                        for item, count in parsed_outputs
+                    ] if (parsed_outputs := all_outputs_from_payloads(data, output_keys)) else probabilistic_refs,
+                    "probabilistic_outputs": probabilistic,
+                })
             continue
 
         parsed = ingredients(pack, data)
@@ -940,7 +979,10 @@ def run(pack, inst, out_json, generation_metadata=None):
     manual_overrides = {k: v for k, v in pec_before(pack, ours).items() if k in pack.items}
     base = {k: v for k, v in {**pec_before(pack, pack.pec), **manual_overrides}.items() if k in pack.items}
     unsupported_recipes = []
-    parsed_recipes = parse_recipes(pack, unsupported_recipes)
+    unsupported_outputs = []
+    parsed_recipes = parse_recipes(
+        pack, unsupported_recipes, unsupported_outputs=unsupported_outputs
+    )
     audit_path = inst / "kubejs/emc_fontes/00_alertas_auditoria_receitas.json"
     audit_path.write_text(json.dumps({
         "schema_version": 1,
@@ -960,6 +1002,14 @@ def run(pack, inst, out_json, generation_metadata=None):
         "recipes": sorted(unsupported_recipes, key=lambda row: (row["recipe"], row["reason"]))
     }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print("receitas pendentes:", pending_path, len(unsupported_recipes))
+    output_pending_path = inst / "kubejs/emc_fontes/00_saidas_pendentes_emc.json"
+    output_pending_path.write_text(json.dumps({
+        "schema_version": 1,
+        "comment": "Receitas com chave de saída conhecida pelo scanner, mas sem saída de item garantida interpretável ou com IDs fora do índice de itens. Revisão por formato necessária; não são precificadas automaticamente.",
+        "pending_count": len(unsupported_outputs),
+        "recipes": sorted(unsupported_outputs, key=lambda row: (row["recipe"], row["reason"])),
+    }, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+    print("saídas pendentes:", output_pending_path, len(unsupported_outputs))
     print("alertas de auditoria:", audit_path, len(RECIPE_AUDIT_WARNINGS))
 
     # first pass only to learn ingot/gem prices for the ores
@@ -1105,7 +1155,8 @@ def run(pack, inst, out_json, generation_metadata=None):
         else:
             item_origins[item] = "no_emc"
     override_audit = audit_manual_overrides(
-        manual_overrides, recipes, final, item_origins, unsupported_recipes
+        manual_overrides, recipes, final, item_origins,
+        unsupported_recipes + unsupported_outputs
     )
     override_audit_path = inst / "kubejs/emc_fontes/00_auditoria_overrides_vs_receitas.json"
     override_audit_path.write_text(
