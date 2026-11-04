@@ -81,12 +81,54 @@ class ConsumedIngredientTests(unittest.TestCase):
     def test_recipe_with_only_probabilistic_output_is_ignored(self):
         pack = gen_all.Pack()
         pack.items.add("examplemod:rare")
-        pack.recipes["test:machine"] = {
+        pack.recipes["examplemod:machine"] = {
             "type": "examplemod:machine",
             "ingredients": [{"item": "minecraft:iron_ingot"}],
             "results": [{"item": "examplemod:rare", "chance": 0.2}],
         }
         self.assertEqual(gen_all.parse_recipes(pack), [])
+
+    def test_fluid_input_recipe_is_reported_not_underpriced(self):
+        pack = gen_all.Pack()
+        pack.items.add("examplemod:fluid_product")
+        pack.recipes["examplemod:fluid_machine"] = {
+            "type": "examplemod:fluid_machine",
+            "ingredients": [{"item": "minecraft:iron_ingot", "count": 2}],
+            "fluid_input": {"fluid": "minecraft:water", "amount": 1000},
+            "result": {"item": "examplemod:fluid_product"},
+        }
+        unsupported = []
+        self.assertEqual(gen_all.parse_recipes(pack, unsupported), [])
+        self.assertEqual(unsupported, [{
+            "recipe": "examplemod:fluid_machine",
+            "type": "examplemod:fluid_machine",
+            "reason": "fluid_or_chemical_input_not_modeled",
+        }])
+
+    def test_chemical_input_is_not_treated_as_free(self):
+        pack = gen_all.Pack()
+        pack.items.add("examplemod:chemical_product")
+        pack.recipes["examplemod:chemical_machine"] = {
+            "type": "mekanism:crystallizing",
+            "ingredients": [{"item": "minecraft:iron_ingot"}],
+            "chemical_input": {"chemical": "mekanism:oxygen", "amount": 100},
+            "output": {"item": "examplemod:chemical_product"},
+        }
+        unsupported = []
+        self.assertEqual(gen_all.parse_recipes(pack, unsupported), [])
+        self.assertEqual(unsupported[0]["reason"], "fluid_or_chemical_input_not_modeled")
+
+    def test_unreadable_ingredient_layout_is_reported(self):
+        pack = gen_all.Pack()
+        pack.items.add("examplemod:unknown_input_product")
+        pack.recipes["examplemod:unknown_input_recipe"] = {
+            "type": "examplemod:unknown_machine",
+            "mystery_input": {"item": "minecraft:iron_ingot"},
+            "result": {"item": "examplemod:unknown_input_product"},
+        }
+        unsupported = []
+        self.assertEqual(gen_all.parse_recipes(pack, unsupported), [])
+        self.assertEqual(unsupported[0]["reason"], "ingredient_layout_unreadable")
 
 
 if __name__ == "__main__":
