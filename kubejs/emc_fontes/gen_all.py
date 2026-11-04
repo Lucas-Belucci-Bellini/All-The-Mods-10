@@ -373,11 +373,13 @@ def chem_input(data):
 RECIPE_AUDIT_WARNINGS = []
 
 
-def all_outputs_from_payloads(data, output_keys):
+def all_outputs_from_payloads(data, output_keys, skip_keys=()):
     """Collect parseable guaranteed outputs for diagnostics, including IDs outside the pack index."""
     found = []
     seen = set()
     for key in output_keys:
+        if key in skip_keys:
+            continue
         value = data.get(key)
         signature = json.dumps(value, sort_keys=True, separators=(",", ":"))
         if signature in seen:
@@ -447,6 +449,25 @@ def parse_recipes(pack, unsupported=None, audit_warnings=None, unsupported_outpu
                 "outputs": probabilistic
             })
 
+        parsed_outputs = all_outputs_from_payloads(
+            data, output_keys,
+            skip_keys=("output", "chemical_output") if chemical else (),
+        )
+        unindexed_outputs = [
+            {"id": item, "count": count}
+            for item, count in parsed_outputs
+            if item not in pack.items and not item.startswith(CHEM)
+        ]
+        if unsupported_outputs is not None and unindexed_outputs:
+            unsupported_outputs.append({
+                "recipe": recipe_id,
+                "type": t,
+                "output_keys": sorted(set(output_keys)),
+                "reason": "output_items_not_in_pack_index",
+                "outputs": unindexed_outputs,
+                "probabilistic_outputs": probabilistic,
+            })
+
         # Aggregate repeated stacks of one item, while retaining distinct co-products.
         parsed_output_count = len(outputs)
         combined_outputs = {}
@@ -455,11 +476,9 @@ def parse_recipes(pack, unsupported=None, audit_warnings=None, unsupported_outpu
                 combined_outputs[item] = combined_outputs.get(item, 0) + count
         outputs = list(combined_outputs.items())
         if not outputs:
-            if unsupported_outputs is not None and output_keys:
+            if unsupported_outputs is not None and output_keys and not unindexed_outputs:
                 if probabilistic and parsed_output_count == 0:
                     reason = "only_probabilistic_outputs"
-                elif parsed_output_count:
-                    reason = "output_items_not_in_pack_index"
                 else:
                     reason = "output_layout_unrecognized_or_non_item"
                 probabilistic_refs = [
@@ -471,10 +490,7 @@ def parse_recipes(pack, unsupported=None, audit_warnings=None, unsupported_outpu
                     "type": t,
                     "output_keys": sorted(set(output_keys)),
                     "reason": reason,
-                    "outputs": [
-                        {"id": item, "count": count}
-                        for item, count in parsed_outputs
-                    ] if (parsed_outputs := all_outputs_from_payloads(data, output_keys)) else probabilistic_refs,
+                    "outputs": probabilistic_refs,
                     "probabilistic_outputs": probabilistic,
                 })
             continue
@@ -1008,7 +1024,7 @@ def run(pack, inst, out_json, generation_metadata=None):
         "comment": "Receitas com chave de saída conhecida pelo scanner, mas sem saída de item garantida interpretável ou com IDs fora do índice de itens. Revisão por formato necessária; não são precificadas automaticamente.",
         "pending_count": len(unsupported_outputs),
         "recipes": sorted(unsupported_outputs, key=lambda row: (row["recipe"], row["reason"])),
-    }, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+    }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print("saídas pendentes:", output_pending_path, len(unsupported_outputs))
     print("alertas de auditoria:", audit_path, len(RECIPE_AUDIT_WARNINGS))
 
