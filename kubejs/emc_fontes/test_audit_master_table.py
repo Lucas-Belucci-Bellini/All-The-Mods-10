@@ -130,6 +130,26 @@ class MasterTableAuditTests(unittest.TestCase):
             "unknown_review_status", "unknown_origin",
         })
 
+    def test_quality_audit_detects_item_namespace_mismatch_and_bad_tier(self):
+        item = dict(
+            self.items[0],
+            id="othermod:iron_ingot",
+            progression_tier={"tier": "common"},
+        )
+        report = audit.audit_quality([item])
+        codes = {row["code"] for row in report["findings"]}
+        self.assertEqual(codes, {
+            "id_namespace_mismatch", "invalid_progression_tier",
+        })
+
+    def test_quality_audit_detects_malformed_item_identifier(self):
+        item = dict(self.items[0], id="minecraft:")
+        report = audit.audit_quality([item])
+        self.assertIn(
+            "id_namespace_mismatch",
+            {row["code"] for row in report["findings"]},
+        )
+
     def test_quality_audit_accepts_zero_emc_and_null_targets(self):
         item = dict(self.items[1], current_emc=0, target_emc=None)
         report = audit.audit_quality([item])
