@@ -608,8 +608,7 @@ def run(pack, inst, out_json):
 
     base = {k: v for k, v in {**pec_before(pack, pack.pec), **pec_before(pack, ours)}.items() if k in pack.items}
     parsed_recipes = parse_recipes(pack)
-    # Preserve unsupported multi-output recipes for human review instead of silently
-    # dropping secondary products or assigning the full input cost to every co-product.
+    # Persist warnings for probabilistic outputs and conservative co-product pricing.
     audit_path = inst / "kubejs/emc_fontes/00_alertas_auditoria_receitas.json"
     audit_path.write_text(json.dumps({
         "schema_version": 1,
@@ -621,7 +620,7 @@ def run(pack, inst, out_json):
                if r[0] in pack.items or r[0].startswith(CHEM)]
     recipes += group_recipes(pack, inst)
     print("itens", len(pack.items), "receitas", len(recipes), "base", len(base))
-    print("receitas multi-saída pendentes:", len(UNSUPPORTED_RECIPES), "->", unsupported_path)
+    print("alertas de auditoria de receitas:", len(RECIPE_AUDIT_WARNINGS), "->", audit_path)
 
     # first pass only to learn ingot/gem prices for the ores
     values, fixed = dict(base), set(base)
