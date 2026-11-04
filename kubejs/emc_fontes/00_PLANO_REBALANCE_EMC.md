@@ -50,6 +50,14 @@ Auditar todos os itens descobertos no modpack, não apenas Mekanism Extras. A ta
 6. Itens de todos os demais mods e conteúdo vanilla.
 7. Auditoria final de receitas, conversões e balanceamento por hora de farm.
 
+## Qualidade e integração
+
+- Toda correção do gerador deve ter teste automatizado reproduzível.
+- Testes unitários devem cobrir receitas simples, múltiplas saídas, quantidades, chances, catalisadores, entradas probabilísticas e ciclos.
+- Alterações de EMC precisam de comparação antes/depois e verificação de conservação nas rotas de craft, compactação e processamento.
+- A integração é permitida após revisão do diff, execução bem-sucedida dos testes e validação dos dados gerados. Não integrar valores que ainda estejam pendentes.
+- O responsável pelo projeto autorizou abrir PR e fazer merge quando esses critérios forem satisfeitos; isso não autoriza pular validações.
+
 ## Segurança das alterações
 
-Todo o trabalho desta revisão fica na branch `balance/emc-global-rework-2026-11`. Não alterar `main`, não abrir PR nem fazer merge automaticamente. Valores ainda não revisados devem permanecer identificados como pendentes, em vez de receber números arbitrários.
+Todo o trabalho desta revisão fica na branch `balance/emc-global-rework-2026-11` até a validação. Não editar `main` diretamente. Valores ainda não revisados devem permanecer identificados como pendentes, em vez de receber números arbitrários.
