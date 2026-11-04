@@ -97,14 +97,19 @@ class RecipeOutputTests(unittest.TestCase):
         recipes = gen_all.parse_recipes(pack)
 
         self.assertEqual([row[0] for row in recipes], ["example:guaranteed", "example:rare"])
+        reasons = {entry["reason"] for entry in gen_all.UNSUPPORTED_RECIPES}
         self.assertEqual(
-            [entry["reason"] for entry in gen_all.UNSUPPORTED_RECIPES],
-            ["probabilistic_outputs_require_schema_review"],
+            reasons,
+            {
+                "multiple_outputs_require_cost_allocation",
+                "probabilistic_outputs_require_schema_review",
+            },
         )
-        self.assertEqual(
-            gen_all.UNSUPPORTED_RECIPES[0]["outputs"][0]["id"],
-            "example:rare",
+        probability_report = next(
+            entry for entry in gen_all.UNSUPPORTED_RECIPES
+            if entry["reason"] == "probabilistic_outputs_require_schema_review"
         )
+        self.assertEqual(probability_report["outputs"][0]["id"], "example:rare")
 
     def test_mekanism_chemical_output_is_not_counted_twice(self):
         pack = FakePack(
