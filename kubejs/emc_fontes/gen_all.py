@@ -616,6 +616,75 @@ def pec_before(pack, docs):
     return vals
 
 
+def audit_manual_source_precedence(pack, documents):
+    """Report conflicting manual EMC entries and the effective last-wins source.
+
+    Documents must be supplied in the same sorted order used by run(). This
+    mirrors pec_before(): later files and later entries overwrite earlier ones.
+    """
+    history = defaultdict(list)
+    source_order = []
+    for source_index, (source_name, document) in enumerate(documents):
+        source_order.append(source_name)
+        values = document.get("values", {}) if isinstance(document, dict) else {}
+        for section in ("before", "after"):
+            entries = values.get(section, [])
+            if not isinstance(entries, list):
+                continue
+            for entry_index, entry in enumerate(entries):
+                if not isinstance(entry, dict):
+                    continue
+                if entry.get("type", "projecte:item") != "projecte:item":
+                    continue
+                value = entry.get("emc_value")
+                if not isinstance(value, int) or isinstance(value, bool) or value <= 0:
+                    continue
+                if isinstance(entry.get("id"), str):
+                    item_ids = [entry["id"]]
+                elif isinstance(entry.get("tag"), str):
+                    item_ids = sorted(pack.members(entry["tag"]))
+                else:
+                    continue
+                for item_id in item_ids:
+                    if item_id not in pack.items:
+                        continue
+                    history[item_id].append({
+                        "source": source_name,
+                        "source_order": source_index,
+                        "section": section,
+                        "entry_index": entry_index,
+                        "emc_value": value,
+                    })
+
+    conflicts = []
+    for item_id, rows in sorted(history.items()):
+        distinct_values = {row["emc_value"] for row in rows}
+        if len(distinct_values) < 2:
+            continue
+        winner = rows[-1]
+        conflicts.append({
+            "id": item_id,
+            "effective_emc": winner["emc_value"],
+            "effective_source": winner["source"],
+            "effective_section": winner["section"],
+            "history": [
+                {**row, "overridden": index < len(rows) - 1}
+                for index, row in enumerate(rows)
+            ],
+        })
+
+    return {
+        "schema_version": 1,
+        "comment": "Auditoria somente de leitura. A precedência reproduz pec_before(): arquivos em ordem lexicográfica e entradas posteriores sobrescrevem anteriores.",
+        "source_order": source_order,
+        "conflicting_item_count": len(conflicts),
+        "overridden_entry_count": sum(
+            max(0, len(row["history"]) - 1) for row in conflicts
+        ),
+        "items": conflicts,
+    }
+
+
 def audit_manual_overrides(overrides, recipes, final_values, origins, pending_recipes):
     """Compare fixed EMC overrides with fully priced supported recipe costs.
 
@@ -989,8 +1058,21 @@ def run(pack, inst, out_json, generation_metadata=None):
     pack.items = {i for i in pack.items if not DENY.search(i)}
     pack._cache.clear()
     # hand-tuned base values live outside data/ so ProjectE only loads the generated 00 file
-    ours = [json.loads(p.read_text(encoding="utf-8")) for p in sorted((inst / "kubejs/emc_fontes").glob("[0-9][0-9]_*.json"))
-            if not p.name.startswith("00_")]  # 00_ is this script's own audit output
+    ours_paths = [
+        path for path in sorted((inst / "kubejs/emc_fontes").glob("[0-9][0-9]_*.json"))
+        if not path.name.startswith("00_")
+    ]  # 00_ is this script's own audit output
+    ours = [json.loads(path.read_text(encoding="utf-8")) for path in ours_paths]
+    manual_source_audit = audit_manual_source_precedence(
+        pack, [(path.name, document) for path, document in zip(ours_paths, ours)]
+    )
+    source_audit_path = inst / "kubejs/emc_fontes/00_auditoria_precedencia_fontes_emc.json"
+    source_audit_path.write_text(
+        json.dumps(manual_source_audit, ensure_ascii=False, indent=2) + "\\n",
+        encoding="utf-8",
+    )
+    print("auditoria de precedencia das fontes:", source_audit_path,
+          manual_source_audit["conflicting_item_count"], "conflitos")
 
     manual_overrides = {k: v for k, v in pec_before(pack, ours).items() if k in pack.items}
     base = {k: v for k, v in {**pec_before(pack, pack.pec), **manual_overrides}.items() if k in pack.items}
