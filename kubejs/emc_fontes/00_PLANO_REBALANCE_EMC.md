@@ -83,3 +83,13 @@ Todo o trabalho desta revisão fica na branch `balance/emc-global-rework-2026-11
 Cada execução do solver registra o número de passadas e atualizações por fase/tier em `00_diagnostico_convergencia_emc.json`. Se qualquer tier atingir o limite de 80 passadas ainda alterando valores, o gerador interrompe a publicação do arquivo EMC final e aponta o relatório. Isso evita tratar uma solução parcial como resultado válido.
 
 O relatório distingue apenas convergência e limite de iterações; ele não afirma, sozinho, que encontrou um ciclo específico. A identificação e correção da receita causadora ainda exige analisar os itens e dependências reportados. Testes sintéticos cobrem um ciclo estável e um ciclo de feedback positivo que não converge dentro do limite.
+
+
+## Auditoria de saídas não interpretadas
+
+Além das receitas pendentes por ingredientes, o gerador escreve `00_saidas_pendentes_emc.json` para receitas com uma chave de saída reconhecida pelo scanner, mas sem saída de item garantida interpretável. O relatório diferencia:
+- `output_layout_unrecognized_or_non_item`: estrutura de saída ainda não suportada ou saída não é item;
+- `output_items_not_in_pack_index`: ID de item foi lido, mas não está no índice de itens descobertos;
+- `only_probabilistic_outputs`: a receita só apresenta saídas probabilísticas, que permanecem fora do cálculo automático.
+
+Esse relatório não afirma que toda entrada pendente é uma falha: alguns formatos podem ser deliberadamente não-item. Ele cria uma fila verificável para ampliar o parser com fixtures reais, sem atribuir EMC indevido.
