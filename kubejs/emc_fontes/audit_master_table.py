@@ -150,7 +150,16 @@ def main() -> None:
                         help="Output directory (default: input file's directory)")
     args = parser.parse_args()
     out_dir = args.out_dir or args.input.parent
+    items = load_items(args.input)
+    summary = summarize(items)
     markdown_path, csv_path = write_reports(args.input, out_dir)
+    with_emc = sum(item["current_emc"] is not None for item in items)
+    without_emc = len(items) - with_emc
+    pending = sum(row["pending"] for row in summary.values())
+    print(f"Itens: {len(items)} | namespaces: {len(summary)} | com EMC: {with_emc} | sem EMC: {without_emc} | pendentes: {pending}")
+    print("Top namespaces por quantidade de itens:")
+    for mod, row in sorted(summary.items(), key=lambda pair: (-pair[1]["total"], pair[0]))[:30]:
+        print(f"  {mod}: total={row['total']} com_emc={row['with_emc']} sem_emc={row['without_emc']} pendentes={row['pending']}")
     print(f"Markdown: {markdown_path}")
     print(f"CSV: {csv_path}")
 
