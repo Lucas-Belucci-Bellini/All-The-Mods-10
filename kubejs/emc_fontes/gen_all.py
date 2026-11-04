@@ -952,7 +952,7 @@ def run(pack, inst, out_json, generation_metadata=None):
     pending_path = inst / "kubejs/emc_fontes/00_receitas_pendentes_emc.json"
     pending_path.write_text(json.dumps({
         "schema_version": 1,
-        "comment": "Receitas não precificadas automaticamente porque possuem entradas fluidas/químicas não modeladas ou estrutura de ingredientes não interpretada. Revisão manual necessária; nenhum custo ausente foi tratado como zero.",
+        "comment": "Receitas não precificadas automaticamente por entradas fluidas/químicas não modeladas, estrutura de ingredientes não interpretada ou tipo excluído por política (SKIP_TYPES). Revisão manual necessária; nenhum custo ausente foi tratado como zero.",
         "pending_count": len(unsupported_recipes),
         "recipes": sorted(unsupported_recipes, key=lambda row: (row["recipe"], row["reason"]))
     }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
