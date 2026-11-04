@@ -566,8 +566,9 @@ def main(inst, tags_json, out_json, bad_ids=None, minecraft_root=None, use_cache
             "Informe --minecraft-root <diretório> ou defina ATM10_MINECRAFT_ROOT."
         )
     inputs = pack_input_files(inst, tags_json, bad_ids, root)
-    fingerprint = fingerprint_files(inputs)
-    cache = Path(tempfile.gettempdir()) / f"emc_gen_pack_v2_{fingerprint}.pickle"
+    fingerprint = fingerprint_files(inputs) if use_cache else None
+    cache = (Path(tempfile.gettempdir()) / f"emc_gen_pack_v2_{fingerprint}.pickle"
+             if use_cache else None)
     pack = None
     if use_cache and cache.is_file():
         try:
