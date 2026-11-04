@@ -393,7 +393,10 @@ def parse_recipes(pack, unsupported=None, audit_warnings=None):
             for key, value in data.items():
                 if key in OUT_KEYS:
                     skipped_outputs.extend(all_outputs(value))
-            skipped_outputs = list(dict.fromkeys(skipped_outputs))
+            skipped_totals = {}
+            for item_id, count in skipped_outputs:
+                skipped_totals[item_id] = skipped_totals.get(item_id, 0) + count
+            skipped_outputs = list(skipped_totals.items())
             if unsupported is not None and skipped_outputs:
                 unsupported.append({
                     "recipe": recipe_id,
