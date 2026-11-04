@@ -98,3 +98,8 @@ O relatório não afirma que toda entrada pendente é uma falha: alguns formatos
 ## Auditoria de precedência das fontes manuais
 
 Cada geração também escreve `00_auditoria_precedencia_fontes_emc.json`. O relatório reproduz a ordem real de carregamento (`[0-9][0-9]_*.json` em ordem lexicográfica; entradas posteriores substituem anteriores) e lista somente conflitos em que o mesmo item recebe valores diferentes. Para cada conflito, registra histórico, arquivo/ seção/índice de origem e valor efetivo. Duplicatas com o mesmo valor não são tratadas como conflito. O relatório é somente leitura: não altera valores nem muda a precedência.
+
+
+## Qualidade dos metadados da tabela mestra
+
+O comando `audit_master_table.py` também gera `00_qualidade_tabela_mestra_emc.json`. Ele verifica valores EMC negativos ou não inteiros, estados de revisão desconhecidos, origem ausente e decisões revisadas sem justificativa. O relatório separa erros de avisos e é somente leitura: não corrige, remove nem atribui valores. EMC zero e campos-alvo nulos continuam válidos.
