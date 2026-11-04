@@ -597,7 +597,7 @@ def run(pack, inst, out_json):
         "comment": "Receitas não utilizadas para derivar EMC porque a alocação segura do custo entre múltiplas saídas ainda não está implementada.",
         "unsupported_count": len(UNSUPPORTED_RECIPES),
         "recipes": UNSUPPORTED_RECIPES
-    }, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+    }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     recipes = [r for r in parsed_recipes + pec_conversions(pack, pack.pec + ours)
                if r[0] in pack.items or r[0].startswith(CHEM)]
     recipes += group_recipes(pack, inst)
