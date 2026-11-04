@@ -276,5 +276,54 @@ class SolverConvergenceTests(unittest.TestCase):
         self.assertTrue(all(row["phase"] == "unit_test" for row in diagnostics))
 
 
+class UnsupportedOutputAuditTests(unittest.TestCase):
+    def setUp(self):
+        gen_all.RECIPE_AUDIT_WARNINGS.clear()
+
+    def test_unrecognized_output_layout_is_reported(self):
+        pack = gen_all.Pack()
+        pack.recipes["example:unknown_output"] = {
+            "type": "example:machine",
+            "ingredients": [{"item": "minecraft:iron_ingot"}],
+            "results": {"item_stack": {"name": "example:product"}},
+        }
+        pending = []
+
+        parsed = gen_all.parse_recipes(pack, unsupported_outputs=pending)
+
+        self.assertEqual(parsed, [])
+        self.assertEqual(pending[0]["reason"], "output_layout_unrecognized_or_non_item")
+        self.assertEqual(pending[0]["output_keys"], ["results"])
+
+    def test_output_id_missing_from_pack_item_index_is_reported(self):
+        pack = gen_all.Pack()
+        pack.recipes["example:missing_output_item"] = {
+            "type": "example:machine",
+            "ingredients": [{"item": "minecraft:iron_ingot"}],
+            "result": {"item": "example:not_discovered"},
+        }
+        pending = []
+
+        parsed = gen_all.parse_recipes(pack, unsupported_outputs=pending)
+
+        self.assertEqual(parsed, [])
+        self.assertEqual(pending[0]["reason"], "output_items_not_in_pack_index")
+
+    def test_only_probabilistic_output_is_reported_separately(self):
+        pack = gen_all.Pack()
+        pack.recipes["example:chance_only"] = {
+            "type": "example:machine",
+            "ingredients": [{"item": "minecraft:iron_ingot"}],
+            "results": [{"item": "example:rare", "chance": 0.2}],
+        }
+        pending = []
+
+        parsed = gen_all.parse_recipes(pack, unsupported_outputs=pending)
+
+        self.assertEqual(parsed, [])
+        self.assertEqual(pending[0]["reason"], "only_probabilistic_outputs")
+        self.assertEqual(pending[0]["probabilistic_outputs"][0]["id"], "example:rare")
+
+
 if __name__ == "__main__":
     unittest.main()
