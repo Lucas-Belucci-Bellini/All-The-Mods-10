@@ -12,7 +12,7 @@ Auditar todos os itens descobertos no modpack, não apenas Mekanism Extras. A ta
 4. Revisar a tabela por namespace/mod, categoria e progressão; preencher `progression_tier`, `target_emc`, `review_status` e `review_notes`.
 5. Revisar também `00_receitas_pendentes_emc.json`; receitas listadas não recebem custo automático até que seus insumos sejam modelados.
 6. Só depois de revisar um grupo, transportar os valores aprovados para as fontes autorais em `kubejs/emc_fontes/` e regenerar o arquivo consumido pelo ProjectE.
-6. Comparar os resultados, validar receitas reversíveis e cadeias de processamento, e testar no jogo antes de integrar.
+7. Comparar os resultados, validar receitas reversíveis e cadeias de processamento, e testar no jogo antes de integrar.
 
 ## Critérios de balanceamento
 
