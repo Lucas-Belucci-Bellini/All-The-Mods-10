@@ -624,34 +624,34 @@ def audit_manual_overrides(overrides, recipes, final_values, origins, pending_re
         pending = pending_by_item.get(item_id, [])
         incomplete_rows = incomplete.get(item_id, [])
         if not available:
-            status = "no_fully_priced_recipe"
-            confidence = "low"
             best = None
+            if pending:
+                status = "pending_recipe_requires_review"
+            elif incomplete_rows:
+                status = "no_fully_priced_recipe"
+            else:
+                status = "no_supported_recipe"
         else:
             best = available[0]
             above = F(configured_value) > F(best["unit_cost"])
-            has_heuristics = bool(best["heuristic_inputs"])
-            if pending or incomplete_rows:
-                confidence = "low"
-            elif has_heuristics:
-                confidence = "medium"
+            direct_origins = Counter(
+                row["origin"] for row in best["selected_inputs"]
+            )
+            has_uncertain_inputs = any(
+                origin != "recipe_calculated" for origin in direct_origins
+            )
+            if pending or incomplete_rows or has_uncertain_inputs:
+                status = ("potentially_above_recipe_cost_needs_review" if above
+                          else "known_recipes_not_above_but_needs_review")
             else:
-                confidence = "high"
-            if above and confidence == "high":
-                status = "above_supported_recipe_cost"
-            elif above:
-                status = "potentially_above_recipe_cost_needs_review"
-            elif confidence == "high":
-                status = "at_or_below_supported_recipe_cost"
-            else:
-                status = "known_recipes_not_above_but_needs_review"
+                status = ("above_supported_recipe_cost_candidate" if above
+                          else "at_or_below_supported_recipe_cost")
 
         counts[status] += 1
         rows.append({
             "id": item_id,
             "configured_emc": int(configured_value),
             "status": status,
-            "confidence": confidence,
             "best_supported_recipe": best,
             "supported_recipe_count": len(available),
             "incomplete_recipe_count": len(incomplete_rows),
