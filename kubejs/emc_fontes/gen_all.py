@@ -268,8 +268,8 @@ def ingredients(pack, data):
 def all_outputs(node):
     """Return every guaranteed item output as (item id, count).
 
-    Probabilistic outputs are deliberately excluded until their expected-value
-    semantics are modeled. Other guaranteed outputs from the same recipe remain.
+    Probabilistic outputs are excluded until their schema semantics are modeled.
+    Guaranteed co-products remain available for conservative full-input-cost pricing.
     """
     if isinstance(node, list):
         out = []
@@ -298,6 +298,37 @@ def all_outputs(node):
         if isinstance(node.get(key), (dict, list, str)):
             out.extend(all_outputs(node[key]))
     return out
+
+
+def find_probabilistic_outputs(node):
+    """Collect probabilistic outputs for audit; never price them automatically."""
+    found = []
+    if isinstance(node, list):
+        for child in node:
+            found.extend(find_probabilistic_outputs(child))
+        return found
+    if not isinstance(node, dict):
+        return found
+    chance = node.get("chance")
+    if isinstance(chance, (int, float)) and chance < 1:
+        item = node.get("item") or node.get("id")
+        if isinstance(item, str) and ID_RE.match(item):
+            found.append({
+                "id": item,
+                "chance": chance,
+                "count": amount(node),
+                "reason": "probabilistic_output_excluded_from_emc"
+            })
+        else:
+            for key in ("stack", "result", "output"):
+                if key in node:
+                    found.extend(find_probabilistic_outputs(node[key]))
+        return found
+    for key in ("item", "id", "stack", "result", "output"):
+        value = node.get(key)
+        if isinstance(value, (dict, list)):
+            found.extend(find_probabilistic_outputs(value))
+    return found
 
 
 def first_output(node):
@@ -330,25 +361,52 @@ def chem_input(data):
     return None
 
 
+RECIPE_AUDIT_WARNINGS = []
+
+
 def parse_recipes(pack):
     out = []
-    for data in pack.recipes.values():
+    RECIPE_AUDIT_WARNINGS.clear()
+    for recipe_id, data in pack.recipes.items():
         if not isinstance(data, dict):
             continue
         t = data.get("type", "")
         if not isinstance(t, str) or SKIP_TYPES.match(t):
             continue
+
         chemical = chem_output(t, data)
-        outputs = [chemical] if chemical else []
-        if not chemical:
-            for key in OUT_KEYS:
-                if key in data:
-                    outputs.extend(all_outputs(data[key]))
-        # Some serializers expose the same stack under aliases such as result/output.
+        item_outputs = []
+        probabilistic = []
+        seen_output_payloads = set()
+        for key, value in data.items():
+            if key not in OUT_KEYS:
+                continue
+            # The chemical pseudo-item is added separately, but other item outputs
+            # from the same recipe must not be discarded.
+            if chemical and key in ("output", "chemical_output"):
+                continue
+            signature = json.dumps(value, sort_keys=True, separators=(",", ":"))
+            if signature in seen_output_payloads:
+                continue
+            seen_output_payloads.add(signature)
+            item_outputs.extend(all_outputs(value))
+            probabilistic.extend(find_probabilistic_outputs(value))
+
+        if probabilistic:
+            RECIPE_AUDIT_WARNINGS.append({
+                "recipe": recipe_id,
+                "type": t,
+                "reason": "probabilistic_outputs_excluded_from_emc",
+                "outputs": probabilistic
+            })
+
+        outputs = ([(chemical[0], chemical[1])] if chemical else []) + item_outputs
         outputs = list(dict.fromkeys(outputs))
-        outputs = [o for o in outputs if o[0] in pack.items or o[0].startswith(CHEM)]
+        outputs = [(item, count) for item, count in outputs
+                   if count > 0 and (item in pack.items or item.startswith(CHEM))]
         if not outputs:
             continue
+
         parsed = ingredients(pack, data)
         if not parsed or not parsed[0]:
             continue
@@ -356,21 +414,36 @@ def parse_recipes(pack):
         crafting = t.startswith("minecraft:") or ("pattern" in data and "key" in data)
         ci = chem_input(data)
         others = [k for k in FLUID_KEYS if k in data and k != "chemical_input"]
-        # Conservative co-product policy: each guaranteed output inherits the full
-        # recipe input cost. This can overprice co-products, but cannot create EMC
-        # by splitting one recipe's input cost across several independently burnable outputs.
-        for o in outputs:
-            if any(len(a) == 1 and o[0] in a for a, _ in ings):
+
+        if len(outputs) > 1:
+            RECIPE_AUDIT_WARNINGS.append({
+                "recipe": recipe_id,
+                "type": t,
+                "reason": "guaranteed_coproducts_each_receive_full_input_cost",
+                "outputs": [{"id": item, "count": count} for item, count in outputs]
+            })
+
+        # Conservative policy: each guaranteed co-product receives the full input
+        # cost. This may overprice by-products, but cannot create EMC through
+        # artificial cost splitting. Refine only with evidence from real recipes.
+        for output_id, output_count in outputs:
+            if any(len(alternatives) == 1 and output_id in alternatives
+                   for alternatives, _ in ings):
                 continue
-            farm = not o[0].startswith(FARM_NS) and any(x.startswith(FARM_NS) for a, _ in ings for x in a)
-            # essence -> resource is a farm: never prices the resource (tier 9), only the essence
+            farm = (not output_id.startswith(FARM_NS)
+                    and any(item.startswith(FARM_NS)
+                            for alternatives, _ in ings for item in alternatives))
             tier = 9 if farm else 3 if lossy else 1 if crafting else 2
-            out.append((o[0], o[1], ings, t, tier))
-            # the chemical is the only missing input: also add the full-cost version as a lossless recipe
-            # nucleosynthesis is an endgame energy sink and must not undercut the item's normal price
-            if lossy and not farm and ci and not others and t != "mekanism:nucleosynthesizing":
-                out.append((o[0], o[1], ings + [(frozenset([ci[0]]), ci[1])], t, 2))
+            out.append((output_id, output_count, ings, t, tier))
+            if (lossy and not farm and ci and not others
+                    and t != "mekanism:nucleosynthesizing"):
+                out.append((
+                    output_id, output_count,
+                    ings + [(frozenset([ci[0]]), ci[1])], t, 2
+                ))
     return out
+
+
 
 
 def group_recipes(pack, inst):
@@ -534,10 +607,20 @@ def run(pack, inst, out_json):
             if not p.name.startswith("00_")]  # 00_ is this script's own audit output
 
     base = {k: v for k, v in {**pec_before(pack, pack.pec), **pec_before(pack, ours)}.items() if k in pack.items}
-    recipes = [r for r in parse_recipes(pack) + pec_conversions(pack, pack.pec + ours)
+    parsed_recipes = parse_recipes(pack)
+    # Persist warnings for probabilistic outputs and conservative co-product pricing.
+    audit_path = inst / "kubejs/emc_fontes/00_alertas_auditoria_receitas.json"
+    audit_path.write_text(json.dumps({
+        "schema_version": 1,
+        "comment": "Saídas probabilísticas são excluídas do cálculo. Co-produtos garantidos recebem conservadoramente o custo integral dos insumos por saída.",
+        "warning_count": len(RECIPE_AUDIT_WARNINGS),
+        "recipes": RECIPE_AUDIT_WARNINGS
+    }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    recipes = [r for r in parsed_recipes + pec_conversions(pack, pack.pec + ours)
                if r[0] in pack.items or r[0].startswith(CHEM)]
     recipes += group_recipes(pack, inst)
     print("itens", len(pack.items), "receitas", len(recipes), "base", len(base))
+    print("alertas de auditoria de receitas:", len(RECIPE_AUDIT_WARNINGS), "->", audit_path)
 
     # first pass only to learn ingot/gem prices for the ores
     values, fixed = dict(base), set(base)
