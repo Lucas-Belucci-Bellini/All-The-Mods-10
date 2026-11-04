@@ -73,6 +73,25 @@ class RecipeOutputTests(unittest.TestCase):
             "probabilistic_outputs_excluded_from_emc",
         })
 
+    def test_repeated_same_item_stacks_are_summed(self):
+        pack = FakePack(
+            recipes={
+                "example:machine/repeated": {
+                    "type": "example:machine",
+                    "ingredients": [{"item": "minecraft:iron_ingot"}],
+                    "results": [
+                        {"item": "example:repeat", "count": 1},
+                        {"item": "example:repeat", "count": 2},
+                    ],
+                }
+            },
+            items={"example:repeat", "minecraft:iron_ingot"},
+        )
+        recipes = gen_all.parse_recipes(pack)
+        self.assertEqual(len(recipes), 1)
+        self.assertEqual(recipes[0][0], "example:repeat")
+        self.assertEqual(recipes[0][1], 3)
+
     def test_identical_output_aliases_are_not_counted_twice(self):
         output = {"item": "example:single"}
         pack = FakePack(
