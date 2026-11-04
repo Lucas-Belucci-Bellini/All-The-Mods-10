@@ -67,6 +67,40 @@ class MasterTableAuditTests(unittest.TestCase):
             "mekanism:basic_control_circuit", "example:creative_token"
         })
 
+    def test_heuristic_priority_and_no_emc_csvs_are_generated(self):
+        extra = [
+            {
+                "id": "example:low_value", "mod": "example",
+                "current_emc": 50, "origin": "heuristic_fallback",
+                "progression_tier": None, "target_emc": None,
+                "review_status": "pending", "review_notes": ""
+            },
+            {
+                "id": "example:high_value", "mod": "example",
+                "current_emc": 999, "origin": "heuristic_fallback",
+                "progression_tier": None, "target_emc": None,
+                "review_status": "pending", "review_notes": ""
+            },
+        ]
+        self.write_payload(self.items + extra)
+        out_dir = self.root / "priority"
+        markdown, _ = audit.write_reports(self.input, out_dir)
+
+        heuristic_path = out_dir / "00_itens_heuristic_fallback_prioridade.csv"
+        no_emc_path = out_dir / "00_itens_sem_emc.csv"
+        with heuristic_path.open(encoding="utf-8-sig", newline="") as stream:
+            heuristic_rows = list(csv.DictReader(stream))
+        with no_emc_path.open(encoding="utf-8-sig", newline="") as stream:
+            no_emc_rows = list(csv.DictReader(stream))
+
+        self.assertEqual(
+            [row["id"] for row in heuristic_rows],
+            ["example:high_value", "example:low_value"],
+        )
+        self.assertEqual([row["id"] for row in no_emc_rows],
+                         ["example:creative_token"])
+        self.assertIn("example:high_value", markdown.read_text(encoding="utf-8"))
+
     def test_duplicate_ids_are_rejected(self):
         duplicate = [self.items[0], dict(self.items[0])]
         self.write_payload(duplicate)
