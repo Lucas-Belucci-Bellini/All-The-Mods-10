@@ -14,7 +14,7 @@ class ManualOverrideAuditTests(unittest.TestCase):
             pending or [],
         )
 
-    def test_override_above_complete_recipe_cost_is_high_confidence_candidate(self):
+    def test_override_above_recipe_cost_is_candidate_when_inputs_are_recipe_calculated(self):
         report = self.audit(
             {"example:gear": Fraction(100)},
             [("example:gear", 2,
@@ -25,17 +25,17 @@ class ManualOverrideAuditTests(unittest.TestCase):
         )
         row = report["items"][0]
         self.assertEqual(row["status"], "above_supported_recipe_cost_candidate")
-                self.assertEqual(row["best_supported_recipe"]["unit_cost"], "10")
-        self.assertEqual(report["status_counts"]["above_supported_recipe_cost"], 1)
+        self.assertEqual(row["best_supported_recipe"]["unit_cost"], "10")
+        self.assertEqual(report["status_counts"]["above_supported_recipe_cost_candidate"], 1)
 
-    def test_pending_recipe_lowers_confidence_and_never_claims_safe(self):
+    def test_pending_recipe_prevents_safe_conclusion(self):
         report = self.audit(
             {"example:gear": Fraction(100)},
             [("example:gear", 1,
               [(frozenset({"minecraft:iron_ingot"}), 2)],
               "example:machine", 2)],
             {"minecraft:iron_ingot": 10},
-            {"minecraft:iron_ingot": "manual_base"},
+            {"minecraft:iron_ingot": "recipe_calculated"},
             [{
                 "recipe": "example:gear/fluid",
                 "reason": "fluid_or_chemical_input_not_modeled",
@@ -44,9 +44,9 @@ class ManualOverrideAuditTests(unittest.TestCase):
         )
         row = report["items"][0]
         self.assertEqual(row["status"], "potentially_above_recipe_cost_needs_review")
-                self.assertEqual(row["pending_recipe_count"], 1)
+        self.assertEqual(row["pending_recipe_count"], 1)
 
-    def test_heuristic_input_lowers_confidence(self):
+    def test_heuristic_input_prevents_safe_conclusion(self):
         report = self.audit(
             {"example:gear": Fraction(100)},
             [("example:gear", 1,
@@ -57,8 +57,24 @@ class ManualOverrideAuditTests(unittest.TestCase):
         )
         row = report["items"][0]
         self.assertEqual(row["status"], "potentially_above_recipe_cost_needs_review")
-                self.assertEqual(row["best_supported_recipe"]["heuristic_inputs"],
-                         ["example:heuristic_part"])
+        self.assertEqual(
+            row["best_supported_recipe"]["heuristic_inputs"],
+            ["example:heuristic_part"],
+        )
+
+    def test_manual_or_ore_input_provenance_is_not_high_confidence(self):
+        report = self.audit(
+            {"example:gear": Fraction(100)},
+            [("example:gear", 1,
+              [(frozenset({"minecraft:iron_ingot"}), 1)],
+              "example:machine", 2)],
+            {"minecraft:iron_ingot": 20},
+            {"minecraft:iron_ingot": "manual_base"},
+        )
+        self.assertEqual(
+            report["items"][0]["status"],
+            "potentially_above_recipe_cost_needs_review",
+        )
 
     def test_missing_input_price_is_reported_as_incomplete(self):
         report = self.audit(
