@@ -330,9 +330,14 @@ def chem_input(data):
     return None
 
 
-def parse_recipes(pack):
+def parse_recipes(pack, unsupported=None):
+    """Parse only recipes whose consumed inputs can be priced without omissions.
+
+    Fluid/chemical inputs are not assigned zero cost: until their units and
+    recipe semantics are modeled per format, those recipes go to a review report.
+    """
     out = []
-    for data in pack.recipes.values():
+    for recipe_id, data in pack.recipes.items():
         if not isinstance(data, dict):
             continue
         t = data.get("type", "")
@@ -350,12 +355,29 @@ def parse_recipes(pack):
         if not outputs:
             continue
         parsed = ingredients(pack, data)
-        if not parsed or not parsed[0]:
+        if parsed is None:
+            if unsupported is not None:
+                unsupported.append({
+                    "recipe": recipe_id, "type": t,
+                    "reason": "ingredient_layout_unreadable",
+                })
             continue
-        ings, lossy = parsed
+        ings, has_unpriced_fluid = parsed
+        if has_unpriced_fluid:
+            if unsupported is not None:
+                unsupported.append({
+                    "recipe": recipe_id, "type": t,
+                    "reason": "fluid_or_chemical_input_not_modeled",
+                })
+            continue
+        if not ings:
+            if unsupported is not None:
+                unsupported.append({
+                    "recipe": recipe_id, "type": t,
+                    "reason": "no_consumed_item_inputs",
+                })
+            continue
         crafting = t.startswith("minecraft:") or ("pattern" in data and "key" in data)
-        ci = chem_input(data)
-        others = [k for k in FLUID_KEYS if k in data and k != "chemical_input"]
         # Conservative co-product policy: each guaranteed output inherits the full
         # recipe input cost. This can overprice co-products, but cannot create EMC
         # by splitting one recipe's input cost across several independently burnable outputs.
@@ -364,12 +386,8 @@ def parse_recipes(pack):
                 continue
             farm = not o[0].startswith(FARM_NS) and any(x.startswith(FARM_NS) for a, _ in ings for x in a)
             # essence -> resource is a farm: never prices the resource (tier 9), only the essence
-            tier = 9 if farm else 3 if lossy else 1 if crafting else 2
+            tier = 9 if farm else 1 if crafting else 2
             out.append((o[0], o[1], ings, t, tier))
-            # the chemical is the only missing input: also add the full-cost version as a lossless recipe
-            # nucleosynthesis is an endgame energy sink and must not undercut the item's normal price
-            if lossy and not farm and ci and not others and t != "mekanism:nucleosynthesizing":
-                out.append((o[0], o[1], ings + [(frozenset([ci[0]]), ci[1])], t, 2))
     return out
 
 
@@ -534,10 +552,20 @@ def run(pack, inst, out_json):
             if not p.name.startswith("00_")]  # 00_ is this script's own audit output
 
     base = {k: v for k, v in {**pec_before(pack, pack.pec), **pec_before(pack, ours)}.items() if k in pack.items}
-    recipes = [r for r in parse_recipes(pack) + pec_conversions(pack, pack.pec + ours)
+    unsupported_recipes = []
+    parsed_recipes = parse_recipes(pack, unsupported_recipes)
+    recipes = [r for r in parsed_recipes + pec_conversions(pack, pack.pec + ours)
                if r[0] in pack.items or r[0].startswith(CHEM)]
     recipes += group_recipes(pack, inst)
     print("itens", len(pack.items), "receitas", len(recipes), "base", len(base))
+    pending_path = inst / "kubejs/emc_fontes/00_receitas_pendentes_emc.json"
+    pending_path.write_text(json.dumps({
+        "schema_version": 1,
+        "comment": "Receitas não precificadas automaticamente porque possuem entradas fluidas/químicas não modeladas ou estrutura de ingredientes não interpretada. Revisão manual necessária; nenhum custo ausente foi tratado como zero.",
+        "pending_count": len(unsupported_recipes),
+        "recipes": sorted(unsupported_recipes, key=lambda row: (row["recipe"], row["reason"]))
+    }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print("receitas pendentes:", pending_path, len(unsupported_recipes))
 
     # first pass only to learn ingot/gem prices for the ores
     values, fixed = dict(base), set(base)
