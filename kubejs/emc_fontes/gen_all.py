@@ -542,10 +542,21 @@ def run(pack, inst, out_json):
             if not p.name.startswith("00_")]  # 00_ is this script's own audit output
 
     base = {k: v for k, v in {**pec_before(pack, pack.pec), **pec_before(pack, ours)}.items() if k in pack.items}
-    recipes = [r for r in parse_recipes(pack) + pec_conversions(pack, pack.pec + ours)
+    parsed_recipes = parse_recipes(pack)
+    # Preserve unsupported multi-output recipes for human review instead of silently
+    # dropping secondary products or assigning the full input cost to every co-product.
+    unsupported_path = inst / "kubejs/emc_fontes/00_receitas_nao_suportadas.json"
+    unsupported_path.write_text(json.dumps({
+        "schema_version": 1,
+        "comment": "Receitas não utilizadas para derivar EMC porque a alocação segura do custo entre múltiplas saídas ainda não está implementada.",
+        "unsupported_count": len(UNSUPPORTED_RECIPES),
+        "recipes": UNSUPPORTED_RECIPES
+    }, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+    recipes = [r for r in parsed_recipes + pec_conversions(pack, pack.pec + ours)
                if r[0] in pack.items or r[0].startswith(CHEM)]
     recipes += group_recipes(pack, inst)
     print("itens", len(pack.items), "receitas", len(recipes), "base", len(base))
+    print("receitas multi-saída pendentes:", len(UNSUPPORTED_RECIPES), "->", unsupported_path)
 
     # first pass only to learn ingot/gem prices for the ores
     values, fixed = dict(base), set(base)
