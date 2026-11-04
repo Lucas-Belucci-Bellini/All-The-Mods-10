@@ -7,8 +7,10 @@ then resolves every recipe until nothing gets cheaper. What is still missing
 after that (ores, mob drops, Allthemodium blocks, loot) gets a rule-based value.
 
 Balance rules:
-- Only consumed ingredients count; catalysts, kept templates, fluids and chance
-  outputs are ignored. A recipe's cost goes only to its main output.
+- Only consumed ingredients count; catalysts and kept templates are excluded.
+  Unmodeled fluid/chemical inputs are held for review, not treated as free.
+- Guaranteed co-products are preserved conservatively; probabilistic outputs
+  are excluded until their format-specific semantics are modeled.
 - An item takes its cheapest recipe, so no recipe can craft it below its EMC.
 - Ores are worth 5 ingots and raw ore 3, so ore multiplication never makes a
   transmute -> process -> burn loop profitable.
@@ -16,8 +18,14 @@ Balance rules:
   get EMC.
 
 Usage: python -I gen_all.py <instance_dir> <pack_tags.json> <out_json> [bad_ids.txt]
+       --minecraft-root <minecraft_install_dir> [--no-cache]
+
+Set ATM10_MINECRAFT_ROOT (or MINECRAFT_ROOT) to avoid repeating --minecraft-root.
 """
+import argparse
+import hashlib
 import io
+import os
 import pickle
 import json
 import tempfile
@@ -506,37 +514,122 @@ def tiered(values, fixed, recipes):
         fixed |= set(values)
 
 
-def main(inst, tags_json, out_json, bad_ids=None):
+def pack_input_files(inst, tags_json, bad_ids, minecraft_root):
+    """List every file that contributes to Pack discovery, in stable order."""
     inst = Path(inst)
-    cache = Path(tempfile.gettempdir()) / "emc_gen_pack.pickle"
-    if cache.exists():
-        pack = pickle.loads(cache.read_bytes())
-    else:
-        pack = load_pack(inst, tags_json, bad_ids)
-        cache.write_bytes(pickle.dumps(pack))
+    mc = Path(minecraft_root)
+    vanilla = mc / "versions/1.21.1/1.21.1.jar"
+    neoforge = sorted(mc.glob("libraries/net/neoforged/neoforge/21.1.259/*universal*.jar"))
+    if not vanilla.is_file():
+        raise FileNotFoundError(f"JAR vanilla não encontrado: {vanilla}")
+    if not neoforge:
+        raise FileNotFoundError(
+            f"JAR universal do NeoForge 21.1.259 não encontrado em "
+            f"{mc / 'libraries/net/neoforged/neoforge/21.1.259'}"
+        )
+    tags_path = Path(tags_json)
+    if not tags_path.is_file():
+        raise FileNotFoundError(f"Arquivo de tags não encontrado: {tags_path}")
+    files = [vanilla, *neoforge]
+    files.extend(sorted((inst / "mods").glob("*.jar")))
+    files.append(tags_path)
+    data_dir = inst / "kubejs/data"
+    if data_dir.exists():
+        files.extend(sorted(data_dir.rglob("*.json")))
+    if bad_ids and Path(bad_ids).is_file():
+        files.append(Path(bad_ids))
+    for name in ("manifest.json", "minecraftinstance.json"):
+        metadata = inst / name
+        if metadata.is_file():
+            files.append(metadata)
+    return sorted(set(files), key=lambda path: str(path.resolve()).casefold())
+
+
+def fingerprint_files(paths):
+    """Content-address the exact input set; additions, removals and edits invalidate cache."""
+    digest = hashlib.sha256()
+    for path in sorted((Path(p) for p in paths), key=lambda p: str(p.resolve()).casefold()):
+        digest.update(str(path.resolve()).encode("utf-8"))
+        digest.update(b"\0")
+        with path.open("rb") as stream:
+            for chunk in iter(lambda: stream.read(1024 * 1024), b""):
+                digest.update(chunk)
+        digest.update(b"\0")
+    return digest.hexdigest()
+
+
+def main(inst, tags_json, out_json, bad_ids=None, minecraft_root=None, use_cache=True):
+    inst = Path(inst)
+    root = minecraft_root or os.environ.get("ATM10_MINECRAFT_ROOT") or os.environ.get("MINECRAFT_ROOT")
+    if not root:
+        raise ValueError(
+            "Informe --minecraft-root <diretório> ou defina ATM10_MINECRAFT_ROOT."
+        )
+    inputs = pack_input_files(inst, tags_json, bad_ids, root)
+    fingerprint = fingerprint_files(inputs) if use_cache else None
+    cache = (Path(tempfile.gettempdir()) / f"emc_gen_pack_v2_{fingerprint}.pickle"
+             if use_cache else None)
+    pack = None
+    if use_cache and cache.is_file():
+        try:
+            cached = pickle.loads(cache.read_bytes())
+            if (isinstance(cached, dict) and cached.get("schema") == 2
+                    and cached.get("fingerprint") == fingerprint
+                    and isinstance(cached.get("pack"), Pack)):
+                pack = cached["pack"]
+        except (OSError, pickle.PickleError, EOFError, AttributeError, ValueError):
+            pack = None
+    if pack is None:
+        pack = load_pack(inst, tags_json, bad_ids, root)
+        if use_cache:
+            cache.write_bytes(pickle.dumps({
+                "schema": 2, "fingerprint": fingerprint, "pack": pack
+            }))
     run(pack, inst, out_json)
 
 
-def load_pack(inst, tags_json, bad_ids):
+def load_pack(inst, tags_json, bad_ids, minecraft_root):
     pack = Pack()
-    mc = Path(r"C:\Users\SpartanGamerBR\curseforge\minecraft\Install")
+    mc = Path(minecraft_root)
     srcs = [mc / "versions/1.21.1/1.21.1.jar"]
     srcs += sorted(mc.glob("libraries/net/neoforged/neoforge/21.1.259/*universal*.jar"))
-    srcs += sorted((inst / "mods").glob("*.jar"))
-    for j in srcs:
+    srcs += sorted((Path(inst) / "mods").glob("*.jar"))
+    for jar in srcs:
         try:
-            with zipfile.ZipFile(j) as zf:
+            with zipfile.ZipFile(jar) as zf:
                 pack.scan(zf)
-        except Exception:
-            pass
+        except (OSError, zipfile.BadZipFile) as exc:
+            raise RuntimeError(f"Não foi possível ler o JAR de entrada {jar}: {exc}") from exc
     for ids in json.loads(Path(tags_json).read_text(encoding="utf-8"))["items"].values():
         pack.items |= set(ids)
-    pack.scan_dir(inst / "kubejs/data")
+    pack.scan_dir(Path(inst) / "kubejs/data")
     if bad_ids and Path(bad_ids).exists():
-        pack.items -= set(Path(bad_ids).read_text().split())
+        pack.items -= set(Path(bad_ids).read_text(encoding="utf-8").split())
     pack.items = {i for i in pack.items if not DENY.search(i)}
     pack._cache.clear()
     return pack
+
+
+def cli():
+    parser = argparse.ArgumentParser(description="Gera e audita os EMCs do ATM10.")
+    parser.add_argument("instance_dir")
+    parser.add_argument("pack_tags")
+    parser.add_argument("out_json")
+    parser.add_argument("bad_ids", nargs="?")
+    parser.add_argument(
+        "--minecraft-root",
+        default=os.environ.get("ATM10_MINECRAFT_ROOT") or os.environ.get("MINECRAFT_ROOT"),
+        help="Raiz da instalação Minecraft/CurseForge (ou ATM10_MINECRAFT_ROOT).",
+    )
+    parser.add_argument(
+        "--no-cache", action="store_true",
+        help="Ignora o cache e reconstrói o inventário a partir dos JARs e JSONs.",
+    )
+    args = parser.parse_args()
+    main(
+        args.instance_dir, args.pack_tags, args.out_json, args.bad_ids,
+        minecraft_root=args.minecraft_root, use_cache=not args.no_cache,
+    )
 
 
 def unique_floor(item):
@@ -729,4 +822,4 @@ def run(pack, inst, out_json):
 
 
 if __name__ == "__main__":
-    main(*sys.argv[1:5])
+    cli()

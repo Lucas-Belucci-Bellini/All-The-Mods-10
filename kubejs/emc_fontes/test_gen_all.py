@@ -130,6 +130,31 @@ class ConsumedIngredientTests(unittest.TestCase):
         self.assertEqual(gen_all.parse_recipes(pack, unsupported), [])
         self.assertEqual(unsupported[0]["reason"], "ingredient_layout_unreadable")
 
+    def test_input_fingerprint_changes_when_file_contents_change(self):
+        import tempfile
+        from pathlib import Path
+
+        with tempfile.TemporaryDirectory() as temp:
+            source = Path(temp) / "tags.json"
+            source.write_text('{"items": []}', encoding="utf-8")
+            first = gen_all.fingerprint_files([source])
+            source.write_text('{"items": ["minecraft:stone"]}', encoding="utf-8")
+            second = gen_all.fingerprint_files([source])
+        self.assertNotEqual(first, second)
+
+    def test_input_fingerprint_changes_when_input_set_changes(self):
+        import tempfile
+        from pathlib import Path
+
+        with tempfile.TemporaryDirectory() as temp:
+            first_file = Path(temp) / "mod-a.jar"
+            second_file = Path(temp) / "mod-b.jar"
+            first_file.write_bytes(b"jar-a")
+            second_file.write_bytes(b"jar-b")
+            first = gen_all.fingerprint_files([first_file])
+            second = gen_all.fingerprint_files([first_file, second_file])
+        self.assertNotEqual(first, second)
+
 
 if __name__ == "__main__":
     unittest.main()

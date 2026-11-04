@@ -51,6 +51,17 @@ Auditar todos os itens descobertos no modpack, não apenas Mekanism Extras. A ta
 6. Itens de todos os demais mods e conteúdo vanilla.
 7. Auditoria final de receitas, conversões e balanceamento por hora de farm.
 
+## Execução reproduzível
+
+O gerador não presume um caminho pessoal de instalação. Informe a raiz do Minecraft/CurseForge por argumento ou variável de ambiente:
+
+- Windows: `python -I gen_all.py "<instância ATM10>" "<pack_tags.json>" "<saída EMC.json>" "<bad_ids.txt>" --minecraft-root "<raiz Minecraft/CurseForge>"`
+- Linux/macOS: use os mesmos argumentos, apontando `--minecraft-root` para a raiz equivalente da instalação.
+- Para reconstruir o inventário sem reutilizar cache: acrescente `--no-cache`.
+- Alternativamente, defina `ATM10_MINECRAFT_ROOT` (ou `MINECRAFT_ROOT`) e omita `--minecraft-root`.
+
+O cache v2 é endereçado pelo SHA-256 do conjunto de entradas: JAR vanilla, JARs NeoForge e dos mods, arquivo de tags, JSONs de `kubejs/data`, lista de bloqueio e metadados da instância quando presentes. Inclusões, remoções ou alterações de conteúdo geram outra chave. O cache fica no diretório temporário do sistema e pode ser descartado com segurança.
+
 ## Qualidade e integração
 
 - Toda correção do gerador deve ter teste automatizado reproduzível.
