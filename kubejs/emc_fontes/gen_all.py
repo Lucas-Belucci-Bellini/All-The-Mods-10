@@ -537,15 +537,19 @@ def pec_before(pack, docs):
 
 
 def solve(values, fixed, recipes, passes=80):
+    """Resolve recipe values and report whether the fixed-point iteration converged."""
     by_out = defaultdict(list)
     for o, c, ings, t, tier in recipes:
         if o not in fixed:
             by_out[o].append((c, ings, t, tier >= 3))
-    for _ in range(passes):
-        changed = False
+
+    total_updates = 0
+    last_changed_items = []
+    for pass_number in range(1, passes + 1):
+        changed_items = []
         for o, lst in by_out.items():
-            # a recipe that lists every input beats one with an uncounted fluid/chemical,
-            # even when the incomplete one looks cheaper
+            # A recipe that lists every input beats one with an uncounted fluid/chemical,
+            # even when the incomplete one looks cheaper.
             best = {False: None, True: None}
             for c, ings, t, lossy in lst:
                 cost = F(0)
@@ -556,28 +560,53 @@ def solve(values, fixed, recipes, passes=80):
                     cost += m * n
                 else:
                     cand = cost / c
-                    if (cand >= 1 or (t == "grupo_variantes" and cand > 0)) and (best[lossy] is None or cand < best[lossy][0]):
+                    if (cand >= 1 or (t == "grupo_variantes" and cand > 0)) and (
+                        best[lossy] is None or cand < best[lossy][0]
+                    ):
                         best[lossy] = (cand, t, c, ings)
             pick = best[False] or best[True]
             if pick is None:
                 continue
             cand, t, c, ings = pick
-            if values.get(o) is None or (cand < values[o] if pick is best[True] or best[False] is None
-                                         else cand != values[o]):
+            if values.get(o) is None or (
+                cand < values[o] if pick is best[True] or best[False] is None
+                else cand != values[o]
+            ):
                 values[o] = cand
                 WHY[o] = (t, c, [(sorted(a)[:3], n) for a, n in ings])
                 DEPS[o] = {x for a, _ in ings for x in a}
-                changed = True
-        if not changed:
-            return
+                changed_items.append(o)
+
+        total_updates += len(changed_items)
+        last_changed_items = changed_items
+        if not changed_items:
+            return {
+                "converged": True,
+                "passes": pass_number,
+                "updates": total_updates,
+                "last_pass_changed_count": 0,
+                "last_pass_changed_items": [],
+            }
+
+    return {
+        "converged": False,
+        "passes": passes,
+        "updates": total_updates,
+        "last_pass_changed_count": len(last_changed_items),
+        "last_pass_changed_items": sorted(last_changed_items)[:50],
+    }
 
 
-def tiered(values, fixed, recipes):
-    """ProjectE's own default conversions first (gold = 8 iron...), then crafting/smelting,
-    then full machine recipes, then ones missing fluid inputs. Each tier's results are
-    locked so a looser tier can't undercut a stricter one."""
+def tiered(values, fixed, recipes, diagnostics=None, phase="unspecified"):
+    """Resolve ProjectE defaults, crafting/smelting, then machine recipe tiers.
+
+    Each tier's results are locked before the next tier, preserving the existing
+    precedence policy. Diagnostics are appended when requested by the caller.
+    """
     for tier in (0, 2, 3):
-        solve(values, fixed, [r for r in recipes if r[4] <= tier])
+        result = solve(values, fixed, [r for r in recipes if r[4] <= tier])
+        if diagnostics is not None:
+            diagnostics.append({"phase": phase, "tier": tier, **result})
         fixed |= set(values)
 
 
@@ -798,7 +827,8 @@ def run(pack, inst, out_json, generation_metadata=None):
 
     # first pass only to learn ingot/gem prices for the ores
     values, fixed = dict(base), set(base)
-    tiered(values, fixed, recipes)
+    solver_diagnostics = []
+    tiered(values, fixed, recipes, solver_diagnostics, phase="initial")
     print("primeira passada:", len(values))
     ores = {}
 
@@ -846,7 +876,7 @@ def run(pack, inst, out_json, generation_metadata=None):
                     ores[i] = max(ores[i], 9 * min(raw))
     values = {**base, **ores}
     fixed = set(values)
-    tiered(values, fixed, recipes)
+    tiered(values, fixed, recipes, solver_diagnostics, phase="after_ore_rules")
     print("depois dos minerios:", len(values))
 
     # leftovers no recipe reaches get a guessed value. Guesses are then corrected against the
@@ -864,7 +894,7 @@ def run(pack, inst, out_json, generation_metadata=None):
     for rnd in range(8):
         values = {**base, **ores, **guess}
         fixed = set(values)
-        tiered(values, fixed, recipes)
+        tiered(values, fixed, recipes, solver_diagnostics, phase=f"guess_round_{rnd + 1}")
         for i in pack.items - set(values):  # crafted only from things that never got a value
             if COMPRESSED_RE.search(i):
                 continue
@@ -899,6 +929,29 @@ def run(pack, inst, out_json, generation_metadata=None):
         print(f"ajuste {rnd}: {changed} palpites corrigidos, {len(values)} itens")
         if not changed:
             break
+
+    # Never publish a partially converged table: save the solver diagnostics first.
+    solver_report = {
+        "schema_version": 1,
+        "pass_limit_per_tier": 80,
+        "run_count": len(solver_diagnostics),
+        "converged": all(row["converged"] for row in solver_diagnostics),
+        "non_converged_runs": [
+            row for row in solver_diagnostics if not row["converged"]
+        ],
+        "runs": solver_diagnostics,
+    }
+    solver_path = inst / "kubejs/emc_fontes/00_diagnostico_convergencia_emc.json"
+    solver_path.write_text(
+        json.dumps(solver_report, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    print("diagnóstico de convergência:", solver_path, solver_report["run_count"])
+    if not solver_report["converged"]:
+        raise RuntimeError(
+            "O solver EMC não convergiu dentro do limite de passadas. "
+            "A tabela final não foi escrita; consulte 00_diagnostico_convergencia_emc.json."
+        )
 
     # ProjectE stores EMC as a Java long; anything past it would make the whole file fail to load
     final = {i: max(1, int(v)) for i, v in values.items() if i in pack.items and v < 2**63 - 1}

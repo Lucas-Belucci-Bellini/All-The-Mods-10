@@ -76,3 +76,10 @@ O cache v2 é endereçado pelo SHA-256 do conjunto de entradas: JAR vanilla, JAR
 ## Segurança das alterações
 
 Todo o trabalho desta revisão fica na branch `balance/emc-global-rework-2026-11` até a validação. Não editar `main` diretamente. Valores ainda não revisados devem permanecer identificados como pendentes, em vez de receber números arbitrários.
+
+
+## Diagnóstico de convergência do solver
+
+Cada execução do solver registra o número de passadas e atualizações por fase/tier em `00_diagnostico_convergencia_emc.json`. Se qualquer tier atingir o limite de 80 passadas ainda alterando valores, o gerador interrompe a publicação do arquivo EMC final e aponta o relatório. Isso evita tratar uma solução parcial como resultado válido.
+
+O relatório distingue apenas convergência e limite de iterações; ele não afirma, sozinho, que encontrou um ciclo específico. A identificação e correção da receita causadora ainda exige analisar os itens e dependências reportados. Testes sintéticos cobrem um ciclo estável e um ciclo de feedback positivo que não converge dentro do limite.
