@@ -1150,7 +1150,7 @@ def run(pack, inst, out_json, generation_metadata=None):
     manual_source_integrity = audit_manual_source_integrity(pack, manual_documents)
     integrity_path = inst / "kubejs/emc_fontes/00_integridade_fontes_manuais_emc.json"
     integrity_path.write_text(
-        json.dumps(manual_source_integrity, ensure_ascii=False, indent=2) + "\\n",
+        json.dumps(manual_source_integrity, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
     print("integridade das fontes manuais:", integrity_path,
