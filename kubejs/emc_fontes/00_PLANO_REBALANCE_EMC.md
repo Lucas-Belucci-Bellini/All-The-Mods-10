@@ -108,3 +108,8 @@ O comando `audit_master_table.py` também gera `00_qualidade_tabela_mestra_emc.j
 ## Integridade de IDs e tiers na tabela mestra
 
 O relatório `00_qualidade_tabela_mestra_emc.json` também valida a estrutura `namespace:item` de cada ID e confere se o namespace corresponde ao campo `mod`. Um identificador sem namespace, sem caminho ou com namespace divergente é erro de integridade. Um `progression_tier` não textual ou vazio é sinalizado como aviso. Essas verificações não inferem nem atribuem tiers e não alteram EMC.
+
+
+## Integridade estrutural das fontes manuais
+
+Cada execução também gera `00_integridade_fontes_manuais_emc.json`. O relatório verifica os documentos de valores manuais nas seções `before` e `after`: estrutura de objeto/lista, referências de item (exatamente um `id` ou `tag`), sintaxe de IDs, tags sem membros descobertos e EMC positivo inteiro. Entradas de outros tipos são ignoradas por essa validação porque não são overrides `projecte:item`. A leitura dos overrides e da precedência também ignora estruturas malformadas sem interromper a auditoria. O relatório não corrige fontes nem atribui valores.
