@@ -221,7 +221,12 @@
         "type": "projecte:item",
         "id": "irons_spellbooks:pyrium_ingot",
         "emc_value": 122880
+      },
+      {
+        "type": "projecte:item",
+        "id": "projecte:low_covalence_dust",
+        "emc_value": 1
       }
     ]
   }
-}
+}

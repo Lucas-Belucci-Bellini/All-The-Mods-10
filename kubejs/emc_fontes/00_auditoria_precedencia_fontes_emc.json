@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "comment": "Auditoria somente de leitura. A precedência reproduz pec_before(): arquivos em ordem lexicográfica e entradas posteriores sobrescrevem anteriores.",
+  "source_order": [
+    "03_metais_e_gemas.json",
+    "04_ligas.json",
+    "05_poeiras.json",
+    "06_plantacoes.json",
+    "07_recursos_dos_mods.json",
+    "08_unicos_atm.json",
+    "09_endgame_e_sem_receita.json",
+    "10_progressao_mekanism.json"
+  ],
+  "conflicting_item_count": 1,
+  "overridden_entry_count": 1,
+  "items": [
+    {
+      "id": "irons_spellbooks:pyrium_ingot",
+      "effective_emc": 122880,
+      "effective_source": "09_endgame_e_sem_receita.json",
+      "effective_section": "before",
+      "history": [
+        {
+          "source": "03_metais_e_gemas.json",
+          "source_order": 0,
+          "section": "before",
+          "entry_index": 23,
+          "emc_value": 4096,
+          "overridden": true
+        },
+        {
+          "source": "09_endgame_e_sem_receita.json",
+          "source_order": 6,
+          "section": "before",
+          "entry_index": 43,
+          "emc_value": 122880,
+          "overridden": false
+        }
+      ]
+    }
+  ]
+}

@@ -248,7 +248,26 @@ class SolverConvergenceTests(unittest.TestCase):
         self.assertEqual(values["example:b"], gen_all.F(2))
         self.assertGreaterEqual(result["passes"], 2)
 
-    def test_solver_reports_non_converging_positive_feedback_cycle(self):
+    def test_solver_never_raises_prices_around_a_recipe_ring(self):
+        # Swap ring: a = cost(b), b = cost(a), with seeds 8 and 2. An
+        # accept-any-change solver inflated b up to 8; strict descent keeps
+        # every price monotone and settles both at the cheap fixed point.
+        values = {"example:a": gen_all.F(8), "example:b": gen_all.F(2)}
+        recipes = [
+            ("example:a", 1, [(frozenset({"example:b"}), 1)], "test", 1),
+            ("example:b", 1, [(frozenset({"example:a"}), 1)], "test", 1),
+        ]
+
+        result = gen_all.solve(values, set(), recipes, passes=10)
+
+        self.assertTrue(result["converged"])
+        self.assertEqual(values["example:a"], gen_all.F(2))
+        self.assertEqual(values["example:b"], gen_all.F(2))
+
+    def test_solver_does_not_inflate_items_from_positive_feedback_cycle(self):
+        # Positive feedback ring (2 a -> 1 b, 2 b -> 1 a): under the old
+        # semantics the prices exploded each pass and never converged.
+        # Strict descent rejects the inflation entirely.
         values = {"example:a": gen_all.F(1)}
         recipes = [
             ("example:b", 1, [(frozenset({"example:a"}), 2)], "test", 1),
@@ -257,10 +276,10 @@ class SolverConvergenceTests(unittest.TestCase):
 
         result = gen_all.solve(values, set(), recipes, passes=5)
 
-        self.assertFalse(result["converged"])
-        self.assertEqual(result["passes"], 5)
-        self.assertGreater(result["last_pass_changed_count"], 0)
-        self.assertTrue(result["last_pass_changed_items"])
+        self.assertTrue(result["converged"])
+        self.assertEqual(values["example:a"], gen_all.F(1))
+        # b is honestly crafted from 2a, but the cycle can no longer push a up.
+        self.assertEqual(values["example:b"], gen_all.F(2))
 
     def test_tiered_solver_records_each_tier_result(self):
         values = {"example:base": gen_all.F(4)}

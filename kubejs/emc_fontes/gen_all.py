@@ -882,7 +882,14 @@ def audit_manual_overrides(overrides, recipes, final_values, origins, pending_re
 
 
 def solve(values, fixed, recipes, passes=80):
-    """Resolve recipe values and report whether the fixed-point iteration converged."""
+    """Resolve recipe values and report whether the fixed-point iteration converged.
+
+    ProjectE invariant: a recipe can only *lower* an EMC, never raise it. The
+    cheapest candidate overall wins (a complete recipe only replaces an
+    incomplete one when it is not more expensive). Strict descent guarantees
+    the iteration reaches its fixed point; accepting "any change" made prices
+    chase each other around recipe rings and never settle.
+    """
     by_out = defaultdict(list)
     for o, c, ings, t, tier in recipes:
         if o not in fixed:
@@ -893,9 +900,7 @@ def solve(values, fixed, recipes, passes=80):
     for pass_number in range(1, passes + 1):
         changed_items = []
         for o, lst in by_out.items():
-            # A recipe that lists every input beats one with an uncounted fluid/chemical,
-            # even when the incomplete one looks cheaper.
-            best = {False: None, True: None}
+            best = None
             for c, ings, t, lossy in lst:
                 cost = F(0)
                 for a, n in ings:
@@ -906,17 +911,13 @@ def solve(values, fixed, recipes, passes=80):
                 else:
                     cand = cost / c
                     if (cand >= 1 or (t == "grupo_variantes" and cand > 0)) and (
-                        best[lossy] is None or cand < best[lossy][0]
+                        best is None or cand < best[0]
                     ):
-                        best[lossy] = (cand, t, c, ings)
-            pick = best[False] or best[True]
-            if pick is None:
+                        best = (cand, t, c, ings)
+            if best is None:
                 continue
-            cand, t, c, ings = pick
-            if values.get(o) is None or (
-                cand < values[o] if pick is best[True] or best[False] is None
-                else cand != values[o]
-            ):
+            cand, t, c, ings = best
+            if values.get(o) is None or cand < values[o]:
                 values[o] = cand
                 WHY[o] = (t, c, [(sorted(a)[:3], n) for a, n in ings])
                 DEPS[o] = {x for a, _ in ings for x in a}
@@ -1102,8 +1103,13 @@ def load_pack(inst, tags_json, bad_ids, minecraft_root):
                 pack.scan(zf)
         except (OSError, zipfile.BadZipFile) as exc:
             raise RuntimeError(f"Não foi possível ler o JAR de entrada {jar}: {exc}") from exc
-    for ids in json.loads(Path(tags_json).read_text(encoding="utf-8"))["items"].values():
-        pack.items |= set(ids)
+    tags_payload = json.loads(Path(tags_json).read_text(encoding="utf-8"))
+    tags_data = tags_payload.get("items", {}) if isinstance(tags_payload, dict) else {}
+    if isinstance(tags_data, dict):
+        for ids in tags_data.values():
+            pack.items |= set(ids)
+    elif isinstance(tags_data, list):
+        pack.items |= {x if isinstance(x, str) else x.get("id") for x in tags_data if x}
     pack.scan_dir(Path(inst) / "kubejs/data")
     if bad_ids and Path(bad_ids).exists():
         pack.items -= set(Path(bad_ids).read_text(encoding="utf-8").split())
@@ -1331,7 +1337,7 @@ def run(pack, inst, out_json, generation_metadata=None):
         )
 
     # ProjectE stores EMC as a Java long; anything past it would make the whole file fail to load
-    final = {i: max(1, int(v)) for i, v in values.items() if i in pack.items and v < 2**63 - 1}
+    final = {i: min(2**63 - 2, max(1, int(v))) for i, v in values.items() if i in pack.items}
     item_origins = {}
     for item in pack.items:
         if item in base:

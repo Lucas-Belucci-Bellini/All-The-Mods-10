@@ -80,9 +80,11 @@ Todo o trabalho desta revisão fica na branch `balance/emc-global-rework-2026-11
 
 ## Diagnóstico de convergência do solver
 
+Semântica central: uma receita nunca aumenta um EMC; ela só pode baixar o valor para a receita mais barata cujo custo completo seja conhecido (invariante do ProjectE). Essa descida estrita garante que a iteração atinge o ponto fixo; a regra antiga de "aceitar qualquer mudança" fazia os preços de anéis de receita se inflarem e oscilarem para sempre, que foi a causa da não convergência no tier 2 registrada em novembro de 2026. Uma receita completa só substitui uma incompleta quando não é mais cara.
+
 Cada execução do solver registra o número de passadas e atualizações por fase/tier em `00_diagnostico_convergencia_emc.json`. Se qualquer tier atingir o limite de 80 passadas ainda alterando valores, o gerador interrompe a publicação do arquivo EMC final e aponta o relatório. Isso evita tratar uma solução parcial como resultado válido.
 
-O relatório distingue apenas convergência e limite de iterações; ele não afirma, sozinho, que encontrou um ciclo específico. A identificação e correção da receita causadora ainda exige analisar os itens e dependências reportados. Testes sintéticos cobrem um ciclo estável e um ciclo de feedback positivo que não converge dentro do limite.
+O relatório distingue apenas convergência e limite de iterações; ele não afirma, sozinho, que encontrou um ciclo específico. Testes sintéticos cobrem um ciclo estável, um anel de troca que não pode mais inflar preços e um ciclo de feedback positivo que não converge mais porque a inflação é rejeitada pela descida estrita.
 
 
 ## Auditoria de saídas não interpretadas

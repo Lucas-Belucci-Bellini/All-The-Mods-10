@@ -336,7 +336,32 @@
         "type": "projecte:item",
         "id": "powah:uraninite",
         "emc_value": 512
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/ferricore",
+        "emc_value": 512
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/blazegold",
+        "emc_value": 2048
+      },
+      {
+        "type": "projecte:item",
+        "id": "justdirethings:celestigem",
+        "emc_value": 8192
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/eclipsealloy",
+        "emc_value": 32768
+      },
+      {
+        "type": "projecte:item",
+        "tag": "c:ingots/stainless_steel",
+        "emc_value": 1024
       }
     ]
   }
-}
+}

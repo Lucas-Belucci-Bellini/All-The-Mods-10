@@ -1,0 +1,38 @@
+integridade das fontes manuais: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\kubejs\emc_fontes\00_integridade_fontes_manuais_emc.json 0 achados
+auditoria de precedencia das fontes: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\kubejs\emc_fontes\00_auditoria_precedencia_fontes_emc.json 1 conflitos
+itens 71048 receitas 83628 base 4597
+receitas pendentes: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\kubejs\emc_fontes\00_receitas_pendentes_emc.json 9125
+saídas pendentes: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\kubejs\emc_fontes\00_saidas_pendentes_emc.json 6487
+alertas de auditoria: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\kubejs\emc_fontes\00_alertas_auditoria_receitas.json 676
+primeira passada: 48733
+depois dos minerios: 49325
+ajuste 0: 151 palpites corrigidos, 71377 itens
+ajuste 1: 89 palpites corrigidos, 71403 itens
+ajuste 2: 5 palpites corrigidos, 71403 itens
+ajuste 3: 3 palpites corrigidos, 71403 itens
+ajuste 4: 3 palpites corrigidos, 71403 itens
+ajuste 5: 3 palpites corrigidos, 71403 itens
+ajuste 6: 3 palpites corrigidos, 71403 itens
+ajuste 7: 3 palpites corrigidos, 71403 itens
+diagnóstico de convergência: C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\kubejs\emc_fontes\00_diagnostico_convergencia_emc.json 30
+Traceback (most recent call last):
+  File "C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\kubejs\emc_fontes\gen_all.py", line 1428, in <module>
+    cli()
+    ~~~^^
+  File "C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\kubejs\emc_fontes\gen_all.py", line 1137, in cli
+    main(
+    ~~~~^
+        args.instance_dir, args.pack_tags, args.out_json, args.bad_ids,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        minecraft_root=args.minecraft_root, use_cache=not args.no_cache,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\kubejs\emc_fontes\gen_all.py", line 1091, in main
+    run(pack, inst, out_json, generation)
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SpartanGamerBR\curseforge\minecraft\Instances\All-The-Mods-10\kubejs\emc_fontes\gen_all.py", line 1334, in run
+    raise RuntimeError(
+    ...<2 lines>...
+    )
+RuntimeError: O solver EMC não convergiu dentro do limite de passadas. A tabela final não foi escrita; consulte 00_diagnostico_convergencia_emc.json.
