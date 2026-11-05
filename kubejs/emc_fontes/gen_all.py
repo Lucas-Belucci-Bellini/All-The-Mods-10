@@ -710,6 +710,8 @@ def audit_manual_source_precedence(pack, documents):
     for source_index, (source_name, document) in enumerate(documents):
         source_order.append(source_name)
         values = document.get("values", {}) if isinstance(document, dict) else {}
+        if not isinstance(values, dict):
+            continue
         for section in ("before", "after"):
             entries = values.get(section, [])
             if not isinstance(entries, list):
