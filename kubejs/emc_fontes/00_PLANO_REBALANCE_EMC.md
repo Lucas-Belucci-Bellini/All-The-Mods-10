@@ -103,3 +103,8 @@ Cada geração também escreve `00_auditoria_precedencia_fontes_emc.json`. O rel
 ## Qualidade dos metadados da tabela mestra
 
 O comando `audit_master_table.py` também gera `00_qualidade_tabela_mestra_emc.json`. Ele verifica valores EMC negativos ou não inteiros, estados de revisão desconhecidos, origem ausente e decisões revisadas sem justificativa. O relatório separa erros de avisos e é somente leitura: não corrige, remove nem atribui valores. EMC zero e campos-alvo nulos continuam válidos.
+
+
+## Integridade de IDs e tiers na tabela mestra
+
+O relatório `00_qualidade_tabela_mestra_emc.json` também valida a estrutura `namespace:item` de cada ID e confere se o namespace corresponde ao campo `mod`. Um identificador sem namespace, sem caminho ou com namespace divergente é erro de integridade. Um `progression_tier` não textual ou vazio é sinalizado como aviso. Essas verificações não inferem nem atribuem tiers e não alteram EMC.

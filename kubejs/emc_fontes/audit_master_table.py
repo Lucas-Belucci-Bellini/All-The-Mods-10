@@ -79,6 +79,33 @@ def audit_quality(items: list[dict]) -> dict:
     findings = []
     for item in items:
         item_id = item["id"]
+        namespace, separator, path = item_id.partition(":")
+        if (
+            not separator
+            or not namespace
+            or not path
+            or namespace != item["mod"]
+        ):
+            findings.append({
+                "id": item_id,
+                "severity": "error",
+                "code": "id_namespace_mismatch",
+                "field": "id",
+                "value": item_id,
+                "message": "item id must be namespace:path and namespace must match mod",
+            })
+
+        tier = item["progression_tier"]
+        if tier is not None and (not isinstance(tier, str) or not tier.strip()):
+            findings.append({
+                "id": item_id,
+                "severity": "warning",
+                "code": "invalid_progression_tier",
+                "field": "progression_tier",
+                "value": tier,
+                "message": "progression_tier must be a non-empty string or null",
+            })
+
         for field in ("current_emc", "target_emc"):
             value = item[field]
             if value is not None and (
