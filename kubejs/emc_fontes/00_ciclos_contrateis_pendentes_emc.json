@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "comment": "Itens travados pelo amortecimento de contração do solver: anéis de receita cujo fator por volta é <1 não têm ponto fixo; o valor travado é conservador e exige revisão manual (ex.: compactar e descompactar, ou receitas circulares de máquina).",
+  "pending_count": 0,
+  "items": []
+}

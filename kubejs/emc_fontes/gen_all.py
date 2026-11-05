@@ -102,6 +102,7 @@ VAL_RULES = [
 VAL_RULES = [(v, re.compile(p)) for v, p in VAL_RULES]
 WHY = {}
 DEPS = {}  # item -> ingredient ids of the recipe that priced it
+CYCLE_DAMPED = {}  # item -> value locked after geometric contraction-ring descent
 FARM_NS = ("mysticalagriculture:", "mysticalagradditions:", "matc:")
 FALLBACK = 64  # obtainable item with no recipe and no rule
 
@@ -889,6 +890,15 @@ def solve(values, fixed, recipes, passes=80):
     incomplete one when it is not more expensive). Strict descent guarantees
     the iteration reaches its fixed point; accepting "any change" made prices
     chase each other around recipe rings and never settle.
+
+    An update is only accepted when the published integer EMC drops: ProjectE
+    stores longs, and fractional micro-decrements around weak contraction
+    chains (e.g. blaze_powder <-> blaze_rod crushing/pressing nets) otherwise
+    kept moving forever without ever changing a value the game can see.
+
+    Contraction rings whose factor per lap is far below 1 still have no fixed
+    point: after four consecutive at-least-halving drops the item is locked at
+    the last value and recorded in CYCLE_DAMPED for manual review.
     """
     by_out = defaultdict(list)
     for o, c, ings, t, tier in recipes:
@@ -897,9 +907,14 @@ def solve(values, fixed, recipes, passes=80):
 
     total_updates = 0
     last_changed_items = []
+    last_assigned = {}   # item -> value at its last accepted update
+    halvings = defaultdict(int)
+    damped_items = set()
     for pass_number in range(1, passes + 1):
         changed_items = []
         for o, lst in by_out.items():
+            if o in damped_items:
+                continue
             best = None
             for c, ings, t, lossy in lst:
                 cost = F(0)
@@ -917,7 +932,23 @@ def solve(values, fixed, recipes, passes=80):
             if best is None:
                 continue
             cand, t, c, ings = best
-            if values.get(o) is None or cand < values[o]:
+            cur = values.get(o)
+            if cur is None or (cand < cur and int(cand) < int(cur)):
+                prev = last_assigned.get(o)
+                if prev is not None and cand * 2 < prev:
+                    halvings[o] += 1
+                else:
+                    halvings[o] = 0
+                last_assigned[o] = cand
+                if halvings[o] >= 4:
+                    # geometric tail of a contraction ring: lock and review
+                    values[o] = cand
+                    CYCLE_DAMPED[o] = cand
+                    WHY[o] = (t, c, [(sorted(a)[:3], n) for a, n in ings])
+                    DEPS[o] = {x for a, _ in ings for x in a}
+                    damped_items.add(o)
+                    changed_items.append(o)
+                    continue
                 values[o] = cand
                 WHY[o] = (t, c, [(sorted(a)[:3], n) for a, n in ings])
                 DEPS[o] = {x for a, _ in ings for x in a}
@@ -932,6 +963,7 @@ def solve(values, fixed, recipes, passes=80):
                 "updates": total_updates,
                 "last_pass_changed_count": 0,
                 "last_pass_changed_items": [],
+                "contraction_locked_count": len(damped_items),
             }
 
     return {
@@ -940,6 +972,7 @@ def solve(values, fixed, recipes, passes=80):
         "updates": total_updates,
         "last_pass_changed_count": len(last_changed_items),
         "last_pass_changed_items": sorted(last_changed_items)[:50],
+        "contraction_locked_count": len(damped_items),
     }
 
 
@@ -1210,6 +1243,7 @@ def run(pack, inst, out_json, generation_metadata=None):
 
     # first pass only to learn ingot/gem prices for the ores
     values, fixed = dict(base), set(base)
+    CYCLE_DAMPED.clear()
     solver_diagnostics = []
     tiered(values, fixed, recipes, solver_diagnostics, phase="initial")
     print("primeira passada:", len(values))
@@ -1338,12 +1372,42 @@ def run(pack, inst, out_json, generation_metadata=None):
 
     # ProjectE stores EMC as a Java long; anything past it would make the whole file fail to load
     final = {i: min(2**63 - 2, max(1, int(v))) for i, v in values.items() if i in pack.items}
+    cycle_rows = []
+    for item in sorted(CYCLE_DAMPED):
+        t, c, ings = WHY.get(item, ("?", 1, []))
+        cycle_rows.append({
+            "id": item,
+            "mod": item.split(":", 1)[0],
+            "locked_emc": final.get(item),
+            "exact_locked_value": str(CYCLE_DAMPED[item]),
+            "locking_recipe": t,
+            "review_status": "pending",
+        })
+    cycle_json_path = inst / "kubejs/emc_fontes/00_ciclos_contrateis_pendentes_emc.json"
+    cycle_json_path.write_text(json.dumps({
+        "schema_version": 1,
+        "comment": "Itens travados pelo amortecimento de contração do solver: anéis de receita cujo fator por volta é <1 não têm ponto fixo; o valor travado é conservador e exige revisão manual (ex.: compactar e descompactar, ou receitas circulares de máquina).",
+        "pending_count": len(cycle_rows),
+        "items": cycle_rows,
+    }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    cycle_csv_path = inst / "kubejs/emc_fontes/00_itens_ciclos_contrateis_para_revisao.csv"
+    cycle_csv_path.write_text(
+        "id,mod,locked_emc,exact_locked_value,locking_recipe,review_status\n"
+        + "".join(
+            f"{r['id']},{r['mod']},{r['locked_emc']},{r['exact_locked_value']},{r['locking_recipe']},{r['review_status']}\n"
+            for r in cycle_rows
+        ),
+        encoding="utf-8",
+    )
+    print("ciclos contráteis travados:", cycle_json_path, len(cycle_rows))
     item_origins = {}
     for item in pack.items:
         if item in base:
             item_origins[item] = "manual_base"
         elif item in ores:
             item_origins[item] = "ore_rule"
+        elif item in CYCLE_DAMPED:
+            item_origins[item] = "contraction_cycle"
         elif item in guess:
             item_origins[item] = "heuristic_fallback"
         elif item in final:
@@ -1375,6 +1439,8 @@ def run(pack, inst, out_json, generation_metadata=None):
             origin = "manual_base"
         elif item in ores:
             origin = "ore_rule"
+        elif item in CYCLE_DAMPED:
+            origin = "contraction_cycle"
         elif item in guess:
             origin = "heuristic_fallback"
         elif item in final:

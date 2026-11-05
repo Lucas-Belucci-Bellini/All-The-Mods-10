@@ -281,6 +281,26 @@ class SolverConvergenceTests(unittest.TestCase):
         # b is honestly crafted from 2a, but the cycle can no longer push a up.
         self.assertEqual(values["example:b"], gen_all.F(2))
 
+    def test_solver_locks_contractive_recipe_ring_for_review(self):
+        # Ring: 1 rod crushes into 20 powder, but 1 powder presses into 1 rod.
+        # The price would drop by 10x every lap forever; after four
+        # consecutive halvings the item locks and lands in the contraction
+        # review set instead of running until the pass limit.
+        gen_all.CYCLE_DAMPED.clear()
+        values = {"minecraft:blaze_powder": gen_all.F(2 ** 20)}
+        recipes = [
+            ("minecraft:blaze_powder", 20, [(frozenset({"minecraft:blaze_rod"}), 1)], "test", 1),
+            ("minecraft:blaze_rod", 1, [(frozenset({"minecraft:blaze_powder"}), 1)], "test", 1),
+        ]
+
+        result = gen_all.solve(values, set(), recipes, passes=80)
+
+        self.assertTrue(result["converged"])
+        self.assertLess(result["passes"], 10)
+        self.assertEqual(len(gen_all.CYCLE_DAMPED), 1)
+        self.assertGreaterEqual(result["contraction_locked_count"], 1)
+        self.assertGreaterEqual(values["minecraft:blaze_powder"], 1)
+
     def test_tiered_solver_records_each_tier_result(self):
         values = {"example:base": gen_all.F(4)}
         diagnostics = []

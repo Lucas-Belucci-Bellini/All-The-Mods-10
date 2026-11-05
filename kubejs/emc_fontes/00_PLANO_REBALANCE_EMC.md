@@ -80,11 +80,13 @@ Todo o trabalho desta revisão fica na branch `balance/emc-global-rework-2026-11
 
 ## Diagnóstico de convergência do solver
 
-Semântica central: uma receita nunca aumenta um EMC; ela só pode baixar o valor para a receita mais barata cujo custo completo seja conhecido (invariante do ProjectE). Essa descida estrita garante que a iteração atinge o ponto fixo; a regra antiga de "aceitar qualquer mudança" fazia os preços de anéis de receita se inflarem e oscilarem para sempre, que foi a causa da não convergência no tier 2 registrada em novembro de 2026. Uma receita completa só substitui uma incompleta quando não é mais cara.
+Semântica central: uma receita nunca aumenta um EMC; ela só pode baixar o valor para a receita mais barata cujo custo completo seja conhecido (invariante do ProjectE). Uma receita completa só substitui uma incompleta quando não é mais cara. A regra antiga de "aceitar qualquer mudança" permitia inflar preços e quebrava o lock entre tiers.
+
+Anéis contráteis: quando um ciclo de receitas tem fator multiplicativo < 1 por volta (ex.: 1 vara do blaze vira 2-4 pós em esmagadores, e a prensa da IE come 5 pós por vara), não existe ponto fixo — o preço desce geometricamente para sempre. O solver agora trava o item após quatro quedas consecutivas de metade ou mais, registra o valor travado em `00_ciclos_contrateis_pendentes_emc.json` e `00_itens_ciclos_contrateis_para_revisao.csv`, e marca a origem `contraction_cycle` na tabela mestra. Esses itens exigem revisão manual: o trava-valor é conservador e o anel precisa ser resolvido por política (ex.: recusar a receita mais cara do anel ou definir override autoral).
 
 Cada execução do solver registra o número de passadas e atualizações por fase/tier em `00_diagnostico_convergencia_emc.json`. Se qualquer tier atingir o limite de 80 passadas ainda alterando valores, o gerador interrompe a publicação do arquivo EMC final e aponta o relatório. Isso evita tratar uma solução parcial como resultado válido.
 
-O relatório distingue apenas convergência e limite de iterações; ele não afirma, sozinho, que encontrou um ciclo específico. Testes sintéticos cobrem um ciclo estável, um anel de troca que não pode mais inflar preços e um ciclo de feedback positivo que não converge mais porque a inflação é rejeitada pela descida estrita.
+Testes sintéticos cobrem: ciclo estável, anel de troca que não infla, ciclo de feedback positivo sem inflação, e anel contratil travado pelo amortecimento.
 
 
 ## Auditoria de saídas não interpretadas
