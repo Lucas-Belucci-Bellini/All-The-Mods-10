@@ -135,6 +135,39 @@ class ManualOverrideAuditTests(unittest.TestCase):
         self.assertEqual([row["id"] for row in report["items"]], ["example:one"])
         self.assertEqual(report["items"][0]["effective_emc"], 200)
 
+    def test_manual_source_integrity_reports_malformed_entries(self):
+        pack = gen_all.Pack()
+        pack.items.add("example:valid_item")
+        pack.tags["c:ingots/empty"] = set()
+        report = gen_all.audit_manual_source_integrity(pack, [
+            ("03_metais.json", {"values": {
+                "before": [
+                    {"type": "projecte:item", "id": "example:valid_item", "emc_value": 10},
+                    {"type": "projecte:item", "id": "invalid id", "emc_value": 10},
+                    {"type": "projecte:item", "tag": "c:ingots/empty", "emc_value": 10},
+                    {"type": "projecte:item", "id": "example:valid_item", "tag": "c:ingots/empty",
+                     "emc_value": 10},
+                    {"type": "projecte:item", "id": "example:valid_item", "emc_value": True},
+                    "not-an-object",
+                ],
+                "after": "not-a-list",
+            }}),
+        ])
+        codes = {row["code"] for row in report["findings"]}
+        self.assertEqual(report["error_count"], 5)
+        self.assertEqual(report["warning_count"], 1)
+        self.assertEqual(codes, {
+            "invalid_item_id", "empty_or_unresolved_tag", "invalid_item_reference",
+            "invalid_emc_value", "invalid_entry_object", "invalid_entry_list",
+        })
+
+    def test_manual_source_integrity_handles_non_object_documents(self):
+        report = gen_all.audit_manual_source_integrity(
+            gen_all.Pack(), [("broken.json", [])]
+        )
+        self.assertEqual(report["error_count"], 1)
+        self.assertEqual(report["findings"][0]["code"], "invalid_document")
+
     def test_override_without_any_recipe_is_reported(self):
         report = self.audit({"example:token": Fraction(64)}, [], {})
         row = report["items"][0]

@@ -603,16 +603,99 @@ def pec_conversions(pack, docs):
     return out
 
 
+def audit_manual_source_integrity(pack, documents):
+    """Report malformed manual EMC source entries that the loader would ignore or mishandle."""
+    findings = []
+    for source_name, document in documents:
+        if not isinstance(document, dict):
+            findings.append({"source": source_name, "section": "document",
+                             "severity": "error", "code": "invalid_document",
+                             "message": "source document must be an object"})
+            continue
+        values = document.get("values", {})
+        if not isinstance(values, dict):
+            findings.append({"source": source_name, "section": "values",
+                             "severity": "error", "code": "invalid_values_object",
+                             "message": "values must be an object"})
+            continue
+        for section in ("before", "after"):
+            entries = values.get(section, [])
+            if not isinstance(entries, list):
+                findings.append({"source": source_name, "section": section,
+                                 "severity": "error", "code": "invalid_entry_list",
+                                 "message": "section must be an array"})
+                continue
+            for index, entry in enumerate(entries):
+                location = {"source": source_name, "section": section, "entry_index": index}
+                if not isinstance(entry, dict):
+                    findings.append({**location, "severity": "error",
+                                     "code": "invalid_entry_object",
+                                     "message": "entry must be an object"})
+                    continue
+                if entry.get("type", "projecte:item") != "projecte:item":
+                    continue
+                has_id = isinstance(entry.get("id"), str) and bool(entry["id"].strip())
+                has_tag = isinstance(entry.get("tag"), str) and bool(entry["tag"].strip())
+                if has_id == has_tag:
+                    findings.append({**location, "severity": "error",
+                                     "code": "invalid_item_reference",
+                                     "message": "entry must define exactly one non-empty id or tag"})
+                elif has_id and not ID_RE.fullmatch(entry["id"]):
+                    findings.append({**location, "severity": "error",
+                                     "code": "invalid_item_id",
+                                     "value": entry["id"],
+                                     "message": "id must use namespace:path syntax"})
+                elif has_tag and not pack.members(entry["tag"]):
+                    findings.append({**location, "severity": "warning",
+                                     "code": "empty_or_unresolved_tag",
+                                     "value": entry["tag"],
+                                     "message": "tag currently resolves to no discovered pack items"})
+                value = entry.get("emc_value")
+                if (not isinstance(value, int) or isinstance(value, bool) or value <= 0):
+                    findings.append({**location, "severity": "error",
+                                     "code": "invalid_emc_value",
+                                     "value": value,
+                                     "message": "emc_value must be a positive integer"})
+    findings.sort(key=lambda row: (
+        row["source"], row["section"], row.get("entry_index", -1), row["code"]
+    ))
+    return {
+        "schema_version": 1,
+        "finding_count": len(findings),
+        "error_count": sum(row["severity"] == "error" for row in findings),
+        "warning_count": sum(row["severity"] == "warning" for row in findings),
+        "findings": findings,
+    }
+
+
 def pec_before(pack, docs):
     vals = {}
     for d in docs:
+        if not isinstance(d, dict):
+            continue
         v = d.get("values", {})
-        for e in v.get("before", []) + v.get("after", []):
-            if e.get("type", "projecte:item") != "projecte:item" or not isinstance(e.get("emc_value"), int):
+        if not isinstance(v, dict):
+            continue
+        for section in ("before", "after"):
+            entries = v.get(section, [])
+            if not isinstance(entries, list):
                 continue
-            if e["emc_value"] > 0:
-                for i in ([e["id"]] if "id" in e else pack.members(e.get("tag", ""))):
-                    vals[i] = F(e["emc_value"])
+            for e in entries:
+                if not isinstance(e, dict):
+                    continue
+                if e.get("type", "projecte:item") != "projecte:item":
+                    continue
+                value = e.get("emc_value")
+                if not isinstance(value, int) or isinstance(value, bool) or value <= 0:
+                    continue
+                if isinstance(e.get("id"), str):
+                    item_ids = [e["id"]]
+                elif isinstance(e.get("tag"), str):
+                    item_ids = pack.members(e["tag"])
+                else:
+                    continue
+                for item_id in item_ids:
+                    vals[item_id] = F(value)
     return vals
 
 
@@ -627,6 +710,8 @@ def audit_manual_source_precedence(pack, documents):
     for source_index, (source_name, document) in enumerate(documents):
         source_order.append(source_name)
         values = document.get("values", {}) if isinstance(document, dict) else {}
+        if not isinstance(values, dict):
+            continue
         for section in ("before", "after"):
             entries = values.get(section, [])
             if not isinstance(entries, list):
@@ -1063,9 +1148,16 @@ def run(pack, inst, out_json, generation_metadata=None):
         if not path.name.startswith("00_")
     ]  # 00_ is this script's own audit output
     ours = [json.loads(path.read_text(encoding="utf-8")) for path in ours_paths]
-    manual_source_audit = audit_manual_source_precedence(
-        pack, [(path.name, document) for path, document in zip(ours_paths, ours)]
+    manual_documents = [(path.name, document) for path, document in zip(ours_paths, ours)]
+    manual_source_integrity = audit_manual_source_integrity(pack, manual_documents)
+    integrity_path = inst / "kubejs/emc_fontes/00_integridade_fontes_manuais_emc.json"
+    integrity_path.write_text(
+        json.dumps(manual_source_integrity, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
     )
+    print("integridade das fontes manuais:", integrity_path,
+          manual_source_integrity["finding_count"], "achados")
+    manual_source_audit = audit_manual_source_precedence(pack, manual_documents)
     source_audit_path = inst / "kubejs/emc_fontes/00_auditoria_precedencia_fontes_emc.json"
     source_audit_path.write_text(
         json.dumps(manual_source_audit, ensure_ascii=False, indent=2) + "\n",
