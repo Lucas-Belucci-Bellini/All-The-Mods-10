@@ -1,15 +1,17 @@
 {
-  "comment": "Unicos ATM 10. A estrela vale 1 quintilhao (10^18). Pecas da estrela somam a mesma ordem para nao dar lucro craftar e queimar. Ligas ficam abaixo da estrela, mas bem acima de ferro/diamante. AllTheCompressed nao recebe EMC (ver DENY no gerador).",
+  "comment": "Unicos ATM 10. A estrela ATM nao tem EMC nenhum (secao no_emc): ela e quebrada demais para ser fonte de EMC, entao nao pode ser convertida, queimada nem precificar nada. Pecas da estrela seguem o veto. Ligas ficam abaixo do tier do greg star, mas bem acima de ferro/diamante. AllTheCompressed nao recebe EMC (ver DENY no gerador).",
   "values": {
+    "no_emc": [
+      {"id": "allthetweaks:atm_star", "reason": "estrela ATM: quebrada demais, nao pode ser fonte de EMC"},
+      {"id": "allthetweaks:atm_star_block", "reason": "9 estrelas ATM; sem EMC nos componentes, o bloco tambem nao pode ter"},
+      {"id": "allthetweaks:atm_star_shard", "reason": "peca obtida por crushing da estrela ATM; herda o veto"},
+      {"id": "kubejs:atm_star_shard_1", "reason": "pecas intermediarias da estrela ATM; herdam o veto"},
+      {"id": "kubejs:atm_star_shard_2", "reason": "pecas intermediarias da estrela ATM; herdam o veto"},
+      {"id": "kubejs:atm_star_shard_3", "reason": "pecas intermediarias da estrela ATM; herdam o veto"},
+      {"id": "kubejs:atm_star_shard_4", "reason": "pecas intermediarias da estrela ATM; herdam o veto"},
+      {"id": "kubejs:atm_star_shard_5", "reason": "pecas intermediarias da estrela ATM; herdam o veto"}
+    ],
     "before": [
-      {"type": "projecte:item", "id": "allthetweaks:atm_star", "emc_value": 1000000000000000000},
-      {"type": "projecte:item", "id": "allthetweaks:atm_star_block", "emc_value": 9000000000000000000},
-      {"type": "projecte:item", "id": "allthetweaks:atm_star_shard", "emc_value": 111111111111111111},
-      {"type": "projecte:item", "id": "kubejs:atm_star_shard_1", "emc_value": 200000000000000000},
-      {"type": "projecte:item", "id": "kubejs:atm_star_shard_2", "emc_value": 200000000000000000},
-      {"type": "projecte:item", "id": "kubejs:atm_star_shard_3", "emc_value": 200000000000000000},
-      {"type": "projecte:item", "id": "kubejs:atm_star_shard_4", "emc_value": 200000000000000000},
-      {"type": "projecte:item", "id": "kubejs:atm_star_shard_5", "emc_value": 200000000000000000},
       {"type": "projecte:item", "id": "allthetweaks:greg_star", "emc_value": 100000000000000000},
       {"type": "projecte:item", "id": "allthetweaks:greg_star_block", "emc_value": 900000000000000000},
       {"type": "projecte:item", "id": "allthetweaks:nexium_emitter", "emc_value": 100000000000000000},

@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "comment": "Auditoria de triagem somente de leitura. Não altera EMCs. Custos de receitas dependem dos valores atuais dos insumos; entradas heurísticas ou receitas pendentes reduzem a confiança.",
-  "override_count": 2031,
+  "override_count": 2028,
   "status_counts": {
     "above_supported_recipe_cost_candidate": 32,
     "at_or_below_supported_recipe_cost": 95,
-    "known_recipes_not_above_but_needs_review": 146,
+    "known_recipes_not_above_but_needs_review": 143,
     "no_fully_priced_recipe": 1,
     "no_supported_recipe": 1729,
     "pending_recipe_requires_review": 5,
@@ -1728,95 +1728,6 @@
       "status": "no_supported_recipe",
       "best_supported_recipe": null,
       "supported_recipe_count": 0,
-      "incomplete_recipe_count": 0,
-      "pending_recipe_count": 0,
-      "pending_reasons": [],
-      "incomplete_recipes": []
-    },
-    {
-      "id": "allthetweaks:atm_star",
-      "configured_emc": 1000000000000000000,
-      "status": "known_recipes_not_above_but_needs_review",
-      "best_supported_recipe": {
-        "recipe_type": "minecraft:crafting_shapeless",
-        "output_count": 9,
-        "input_cost": "9000000000000000000",
-        "unit_cost": "1000000000000000000",
-        "heuristic_inputs": [],
-        "selected_inputs": [
-          {
-            "id": "allthetweaks:atm_star_block",
-            "emc": 9000000000000000000,
-            "origin": "manual_base",
-            "quantity": 1
-          }
-        ]
-      },
-      "supported_recipe_count": 1,
-      "incomplete_recipe_count": 0,
-      "pending_recipe_count": 0,
-      "pending_reasons": [],
-      "incomplete_recipes": []
-    },
-    {
-      "id": "allthetweaks:atm_star_block",
-      "configured_emc": 9000000000000000000,
-      "status": "known_recipes_not_above_but_needs_review",
-      "best_supported_recipe": {
-        "recipe_type": "minecraft:crafting_shaped",
-        "output_count": 1,
-        "input_cost": "9000000000000000000",
-        "unit_cost": "9000000000000000000",
-        "heuristic_inputs": [],
-        "selected_inputs": [
-          {
-            "id": "allthetweaks:atm_star",
-            "emc": 1000000000000000000,
-            "origin": "manual_base",
-            "quantity": 9
-          }
-        ]
-      },
-      "supported_recipe_count": 1,
-      "incomplete_recipe_count": 1,
-      "pending_recipe_count": 0,
-      "pending_reasons": [],
-      "incomplete_recipes": [
-        {
-          "type": "minecraft:crafting_shapeless",
-          "missing_inputs": [
-            {
-              "alternatives": [
-                "allthecompressed:atm_star_block_1x"
-              ],
-              "missing": [
-                "allthecompressed:atm_star_block_1x"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "allthetweaks:atm_star_shard",
-      "configured_emc": 111111111111111111,
-      "status": "known_recipes_not_above_but_needs_review",
-      "best_supported_recipe": {
-        "recipe_type": "mekanism:crushing",
-        "output_count": 5,
-        "input_cost": "1000000000000000000",
-        "unit_cost": "200000000000000000",
-        "heuristic_inputs": [],
-        "selected_inputs": [
-          {
-            "id": "allthetweaks:atm_star",
-            "emc": 1000000000000000000,
-            "origin": "manual_base",
-            "quantity": 1
-          }
-        ]
-      },
-      "supported_recipe_count": 1,
       "incomplete_recipe_count": 0,
       "pending_recipe_count": 0,
       "pending_reasons": [],

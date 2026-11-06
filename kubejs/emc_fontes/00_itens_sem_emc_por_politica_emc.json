@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "comment": "Itens recusados pelo dono (seção values.no_emc das fontes autorais). Não recebem EMC de jeito nenhum: saem da base, dos overrides, das regras de minério, dos palpites e da tabela publicada, e as receitas que os consomem ficam sem base de preço.",
+  "item_count": 3,
+  "items": [
+    {
+      "id": "allthetweaks:atm_star",
+      "mod": "allthetweaks",
+      "reason": "estrela ATM: quebrada demais, nao pode ser fonte de EMC",
+      "recipes_using_it": 0
+    },
+    {
+      "id": "allthetweaks:atm_star_block",
+      "mod": "allthetweaks",
+      "reason": "9 estrelas ATM; sem EMC nos componentes, o bloco tambem nao pode ter",
+      "recipes_using_it": 0
+    },
+    {
+      "id": "allthetweaks:atm_star_shard",
+      "mod": "allthetweaks",
+      "reason": "peca obtida por crushing da estrela ATM; herda o veto",
+      "recipes_using_it": 0
+    }
+  ]
+}

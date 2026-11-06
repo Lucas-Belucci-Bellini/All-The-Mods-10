@@ -67,9 +67,9 @@ DENY = re.compile(r"creative|spawn_egg|debug|command_block|minecraft:(barrier|st
                   r"|^allthecompressed:|_pulling_[0-9]$|_throwing$|_in_hand$")
 COMPRESSED_RE = re.compile(r"_\d+x$")
 # Last-resort floors for unique items the JSON files missed. Never 64.
+# A ATM star family is not here: the owner refuses it any EMC, so it lives in the
+# "no_emc" veto of 08_unicos_atm.json, which outranks every numeric source.
 UNIQUE_HINTS = [
-    (10**18, re.compile(r"(^|:)(atm_star|atm_star_block)$")),
-    (10**17, re.compile(r"atm_star_shard")),
     (10**17, re.compile(r"(^|:)greg_star(_block)?$")),
     (10**17, re.compile(r"nexium_emitter|withers_compass|improbable_probability|philosophers_fuel|pulsating_black_hole|oblivion_shard|dimensional_seed|dragon_soul")),
     (10**16, re.compile(r"patrick_star")),
@@ -657,6 +657,56 @@ def audit_manual_source_integrity(pack, documents):
                                      "code": "invalid_emc_value",
                                      "value": value,
                                      "message": "emc_value must be a positive integer"})
+        # A recusa de EMC é uma seção própria: entradas são ids (ou objetos id/tag),
+        # e um id mal escrito aqui significaria "a política não foi aplicada".
+        veto_entries = values.get("no_emc", [])
+        if veto_entries and not isinstance(veto_entries, list):
+            findings.append({"source": source_name, "section": "no_emc",
+                             "severity": "error", "code": "invalid_entry_list",
+                             "message": "no_emc must be an array of ids or objects"})
+            veto_entries = []
+        for index, entry in enumerate(veto_entries):
+            location = {"source": source_name, "section": "no_emc", "entry_index": index}
+            vetoed_ids = []
+            if isinstance(entry, str):
+                vetoed_ids = [entry]
+            elif isinstance(entry, dict):
+                has_id = isinstance(entry.get("id"), str) and bool(entry["id"].strip())
+                has_tag = isinstance(entry.get("tag"), str) and bool(entry["tag"].strip())
+                if has_id == has_tag:
+                    findings.append({**location, "severity": "error",
+                                     "code": "invalid_item_reference",
+                                     "message": "entry must define exactly one non-empty id or tag"})
+                elif has_id:
+                    vetoed_ids = [entry["id"]]
+                else:
+                    vetoed_ids = sorted(pack.members(entry["tag"]))
+                    if not vetoed_ids:
+                        findings.append({**location, "severity": "warning",
+                                         "code": "empty_or_unresolved_tag",
+                                         "value": entry["tag"],
+                                         "message": "tag currently resolves to no discovered pack items"})
+            else:
+                findings.append({**location, "severity": "error",
+                                 "code": "invalid_entry_object",
+                                 "message": "entry must be an id string or an object"})
+            for item_id in vetoed_ids:
+                if not ID_RE.fullmatch(item_id):
+                    findings.append({**location, "severity": "error",
+                                     "code": "invalid_item_id",
+                                     "value": item_id,
+                                     "message": "id must use namespace:path syntax"})
+
+    # Vence o veto, sempre; um número que sobrevive na fonte é uma contradição a limpar.
+    veto = pec_no_emc(pack, [document for _name, document in documents])
+    for item_id in sorted(veto.keys() & pack.items):
+        numbered = [name for name, document in documents if item_id in pec_before(pack, [document])]
+        if numbered:
+            findings.append({"source": ", ".join(numbered), "section": "no_emc",
+                             "severity": "error", "code": "value_conflicts_with_no_emc",
+                             "value": item_id,
+                             "message": "the no_emc veto wins over the number; delete the emc_value entry"})
+
     findings.sort(key=lambda row: (
         row["source"], row["section"], row.get("entry_index", -1), row["code"]
     ))
@@ -698,6 +748,64 @@ def pec_before(pack, docs):
                 for item_id in item_ids:
                     vals[item_id] = F(value)
     return vals
+
+
+def pec_no_emc(pack, docs):
+    """Items the owner refuses any EMC for, mapped to the reason that refused them.
+
+    A veto is a policy, not a number: `emc_value: 0` is not how ProjectE says "no EMC"
+    (the loader drops non-positive entries, so a zero would simply be ignored). The
+    vetoed item is therefore absent from every value source and from the published
+    table, which also makes every recipe that consumes it unpriceable, because a
+    missing input is never treated as a free one.
+
+    Accepted entries: a bare id string, `{"id": ...}`/`{"tag": ...}` with an optional
+    `reason`, in a `values.no_emc` array. Later documents win, like pec_before().
+    """
+    veto = {}
+    for d in docs:
+        if not isinstance(d, dict):
+            continue
+        v = d.get("values", {})
+        if not isinstance(v, dict):
+            continue
+        entries = v.get("no_emc", [])
+        if not isinstance(entries, list):
+            continue
+        for e in entries:
+            reason = ""
+            if isinstance(e, str):
+                item_ids = [e]
+            elif isinstance(e, dict):
+                if isinstance(e.get("reason"), str):
+                    reason = e["reason"]
+                if isinstance(e.get("id"), str):
+                    item_ids = [e["id"]]
+                elif isinstance(e.get("tag"), str):
+                    item_ids = sorted(pack.members(e["tag"]))
+                else:
+                    continue
+            else:
+                continue
+            for item_id in item_ids:
+                if ID_RE.fullmatch(item_id):
+                    veto[item_id] = reason
+    return veto
+
+
+def strip_no_emc(veto, values):
+    """Remove every vetoed item from a value mapping (base, overrides, ores, guesses)."""
+    return {k: v for k, v in values.items() if k not in veto}
+
+
+def drop_no_emc_outputs(veto, recipes):
+    """Drop recipes whose output is vetoed, so no route can price the refused item.
+
+    Ingredients are left alone on purpose: a vetoed ingredient simply has no value, and
+    a missing ingredient already makes a recipe unusable for pricing the output, so the
+    veto also stops the star family from inflating anything downstream.
+    """
+    return [row for row in recipes if row[0] not in veto]
 
 
 def audit_manual_source_precedence(pack, documents):
@@ -1270,8 +1378,12 @@ def run(pack, inst, out_json, generation_metadata=None):
     print("auditoria de precedencia das fontes:", source_audit_path,
           manual_source_audit["conflicting_item_count"], "conflitos")
 
-    manual_overrides = {k: v for k, v in pec_before(pack, ours).items() if k in pack.items}
-    base = {k: v for k, v in {**pec_before(pack, pack.pec), **manual_overrides}.items() if k in pack.items}
+    # Política "sem EMC": lida antes de qualquer valor, porque o veto vence números
+    # das próprias fontes autorais e dos collections do ProjectE.
+    no_emc_reasons = pec_no_emc(pack, pack.pec + ours)
+    no_emc = set(no_emc_reasons) & pack.items
+    manual_overrides = strip_no_emc(no_emc, {k: v for k, v in pec_before(pack, ours).items() if k in pack.items})
+    base = strip_no_emc(no_emc, {k: v for k, v in {**pec_before(pack, pack.pec), **manual_overrides}.items() if k in pack.items})
     unsupported_recipes = []
     unsupported_outputs = []
     parsed_recipes = parse_recipes(
@@ -1287,7 +1399,11 @@ def run(pack, inst, out_json, generation_metadata=None):
     recipes = [r for r in parsed_recipes + pec_conversions(pack, pack.pec + ours)
                if r[0] in pack.items or r[0].startswith(CHEM)]
     recipes += group_recipes(pack, inst)
-    print("itens", len(pack.items), "receitas", len(recipes), "base", len(base))
+    # Uma saída vetada não pode receber preço, e as receitas que a consomem ficam sem
+    # base (insumo ausente nunca é insumo grátis): nada no grafo precifica o veto.
+    recipes = drop_no_emc_outputs(no_emc, recipes)
+    print("itens", len(pack.items), "receitas", len(recipes), "base", len(base),
+          "| sem EMC por política:", len(no_emc), sorted(no_emc)[:6])
     pending_path = inst / "kubejs/emc_fontes/00_receitas_pendentes_emc.json"
     pending_path.write_text(json.dumps({
         "schema_version": 1,
@@ -1356,6 +1472,7 @@ def run(pack, inst, out_json, generation_metadata=None):
                 raw = [ores[i] for i in pack.members("c:raw_materials/" + tag[21:]) if i in ores]
                 for i in pack.members(tag) & ores.keys() if raw else ():
                     ores[i] = max(ores[i], 9 * min(raw))
+    ores = strip_no_emc(no_emc, ores)
     values = {**base, **ores}
     fixed = set(values)
     tiered(values, fixed, recipes, solver_diagnostics, phase="after_ore_rules")
@@ -1366,7 +1483,7 @@ def run(pack, inst, out_json, generation_metadata=None):
     # shards = 1 star), and one a plain crafting recipe makes cheaper is priced down to that cost.
     produced = {r[0] for r in recipes}
     guess = {}
-    for i in sorted(pack.items - set(values) - produced):
+    for i in sorted(pack.items - set(values) - produced - no_emc):
         if COMPRESSED_RE.search(i):
             continue
         path = i.split(":", 1)[1]
@@ -1382,7 +1499,7 @@ def run(pack, inst, out_json, generation_metadata=None):
                placeholders=pending)
         for i in was_pending:  # preço de receita substitui o palpite; sem receita, o número segue
             guess[i] = values[i]
-        for i in sorted(pack.items - set(values)):  # crafted only from things that never got a value
+        for i in sorted(pack.items - set(values) - no_emc):  # crafted only from things that never got a value
             if COMPRESSED_RE.search(i):
                 continue
             floor = unique_floor(i)
@@ -1421,7 +1538,8 @@ def run(pack, inst, out_json, generation_metadata=None):
         )
 
     # ProjectE stores EMC as a Java long; anything past it would make the whole file fail to load
-    final = {i: min(2**63 - 2, max(1, int(v))) for i, v in values.items() if i in pack.items}
+    final = {i: min(2**63 - 2, max(1, int(v)))
+             for i, v in values.items() if i in pack.items and i not in no_emc}
     cycle_rows = []
     for item in sorted(CYCLE_DAMPED):
         t, c, ings = WHY.get(item, ("?", 1, []))
@@ -1450,9 +1568,29 @@ def run(pack, inst, out_json, generation_metadata=None):
         encoding="utf-8",
     )
     print("ciclos contráteis travados:", cycle_json_path, len(cycle_rows))
+    veto_path = inst / "kubejs/emc_fontes/00_itens_sem_emc_por_politica_emc.json"
+    veto_path.write_text(json.dumps({
+        "schema_version": 1,
+        "comment": "Itens recusados pelo dono (seção values.no_emc das fontes autorais). Não recebem EMC "
+                   "de jeito nenhum: saem da base, dos overrides, das regras de minério, dos palpites e da "
+                   "tabela publicada, e as receitas que os consomem ficam sem base de preço.",
+        "item_count": len(no_emc),
+        "items": [
+            {
+                "id": item,
+                "mod": item.split(":", 1)[0],
+                "reason": no_emc_reasons.get(item, ""),
+                "recipes_using_it": sum(1 for row in recipes if any(item in a for a, _ in row[2])),
+            }
+            for item in sorted(no_emc)
+        ],
+    }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print("sem EMC por política:", veto_path, len(no_emc))
     item_origins = {}
     for item in pack.items:
-        if item in base:
+        if item in no_emc:
+            item_origins[item] = "no_emc"
+        elif item in base:
             item_origins[item] = "manual_base"
         elif item in ores:
             item_origins[item] = "ore_rule"
@@ -1485,7 +1623,9 @@ def run(pack, inst, out_json, generation_metadata=None):
     # This is the review surface for global rebalance; it does not change ProjectE values.
     audit = []
     for item in sorted(pack.items):
-        if item in base:
+        if item in no_emc:
+            origin = "no_emc"
+        elif item in base:
             origin = "manual_base"
         elif item in ores:
             origin = "ore_rule"

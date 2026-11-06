@@ -511,5 +511,91 @@ class UnsupportedOutputAuditTests(unittest.TestCase):
         self.assertEqual(pending[0]["probabilistic_outputs"][0]["id"], "example:rare")
 
 
+class NoEmcVetoTests(unittest.TestCase):
+    """Recusa de EMC por política do dono: a estrela ATM não pode receber número nenhum."""
+
+    F = gen_all.F
+
+    def test_pec_no_emc_reads_ids_reasons_and_tag_expansions(self):
+        pack = gen_all.Pack()
+        pack.items.update({"example:star", "example:block", "example:cap_a", "example:cap_b"})
+        pack.tags["example:vetoed_caps"] = {"example:cap_a", "example:cap_b"}
+        documents = [{
+            "values": {
+                "no_emc": [
+                    "example:star",
+                    {"id": "example:block", "reason": "quebrada demais"},
+                    {"tag": "example:vetoed_caps", "reason": "familia vetada"},
+                    {"id": "no-namespace"},
+                    {"reason": "sem referencia"},
+                    7,
+                ],
+            },
+        }]
+
+        veto = gen_all.pec_no_emc(pack, documents)
+
+        self.assertEqual(
+            sorted(veto), ["example:block", "example:cap_a", "example:cap_b", "example:star"])
+        self.assertEqual(veto["example:block"], "quebrada demais")
+        self.assertEqual(veto["example:star"], "")
+
+    def test_strip_no_emc_removes_vetoed_items_from_a_value_source(self):
+        self.assertEqual(
+            gen_all.strip_no_emc({"example:star"},
+                                 {"example:star": self.F(10**18), "example:plate": self.F(64)}),
+            {"example:plate": self.F(64)})
+
+    def test_drop_no_emc_outputs_keeps_recipes_that_consume_the_vetoed_item(self):
+        recipes = [
+            ("example:block", 1, [(frozenset({"example:star"}), 9)], "minecraft:crafting_shaped", 1),
+            ("example:star", 9, [(frozenset({"example:block"}), 1)], "minecraft:crafting_shapeless", 1),
+            ("example:plate", 1, [(frozenset({"minecraft:iron_ingot"}), 1)], "minecraft:crafting_shaped", 1),
+        ]
+
+        kept = gen_all.drop_no_emc_outputs({"example:star", "example:block"}, recipes)
+
+        self.assertEqual([row[0] for row in kept], ["example:plate"])
+
+    def test_a_vetoed_ingredient_cannot_price_the_item_that_uses_it(self):
+        # Sem a estrela no mapa de valores a receita deixa de ser rota: o palpite do capacitor
+        # não sobe ao preço da estrela e o insumo ausente nunca é tratado como custo zero.
+        values = {"example:capacitor": self.F(64)}
+        recipes = [
+            ("example:capacitor", 1, [(frozenset({"example:star"}), 1)], "minecraft:crafting_shaped", 1),
+        ]
+
+        result = gen_all.solve(values, set(), recipes, passes=5,
+                               placeholders={"example:capacitor"})
+
+        self.assertTrue(result["converged"])
+        self.assertEqual(values["example:capacitor"], self.F(64))
+        self.assertEqual(result["guess_lifted_count"], 0)
+
+    def test_integrity_audit_reports_a_number_that_survives_the_veto(self):
+        pack = gen_all.Pack()
+        pack.items.add("example:star")
+        documents = [("08_unicos_atm.json", {
+            "values": {
+                "before": [{"type": "projecte:item", "id": "example:star", "emc_value": 10**18}],
+                "no_emc": [{"id": "example:star", "reason": "quebrada demais"}],
+            },
+        })]
+
+        report = gen_all.audit_manual_source_integrity(pack, documents)
+
+        self.assertIn("value_conflicts_with_no_emc",
+                      {row["code"] for row in report["findings"]})
+
+    def test_integrity_audit_accepts_a_clean_veto(self):
+        pack = gen_all.Pack()
+        pack.items.add("example:star")
+        documents = [("08_unicos_atm.json", {"values": {"no_emc": ["example:star"]}})]
+
+        report = gen_all.audit_manual_source_integrity(pack, documents)
+
+        self.assertEqual(report["finding_count"], 0)
+
+
 if __name__ == "__main__":
     unittest.main()
