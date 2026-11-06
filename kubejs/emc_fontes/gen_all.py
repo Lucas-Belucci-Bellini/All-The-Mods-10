@@ -989,6 +989,11 @@ def tiered(values, fixed, recipes, diagnostics=None, phase="unspecified"):
         fixed |= set(values)
 
 
+# Namespace the generator writes its final EMC table into. It is derived output, so it
+# must stay out of the fingerprint set; hashing it would invalidate the cache on every run.
+DERIVED_OUTPUT_NAMESPACE = "emc_balanceado"
+
+
 def pack_input_files(inst, tags_json, bad_ids, minecraft_root):
     """List every file that contributes to Pack discovery, in stable order."""
     inst = Path(inst)
@@ -1010,7 +1015,12 @@ def pack_input_files(inst, tags_json, bad_ids, minecraft_root):
     files.append(tags_path)
     data_dir = inst / "kubejs/data"
     if data_dir.exists():
-        files.extend(sorted(data_dir.rglob("*.json")))
+        derived = data_dir / DERIVED_OUTPUT_NAMESPACE
+        files.extend(
+            path
+            for path in sorted(data_dir.rglob("*.json"))
+            if derived not in path.parents
+        )
     if bad_ids and Path(bad_ids).is_file():
         files.append(Path(bad_ids))
     for name in ("manifest.json", "minecraftinstance.json"):
@@ -1178,6 +1188,51 @@ def unique_floor(item):
     return next((v for v, rx in UNIQUE_HINTS if rx.search(item) or rx.search(path)), None)
 
 
+def apply_guess_rules(recipes, values, guess, base, ores, raised):
+    """Corrige os palpites contra as receitas e devolve, ordenado, o que se moveu nesta passada.
+
+    A descida usa a receita própria mais barata do palpite (a mesma invariante do solver: uma
+    receita nunca sobe um EMC). A alta usa a participação do palpite numa saída ancorada. Quando
+    as duas apontam para o mesmo item, o teto da receita própria vence: sem essa prioridade a
+    alta reescrevia o valor que a descida baixara na passada anterior e o ciclo nunca parava.
+    """
+    corrected = set()
+    own_unit = {}
+    for o, c, ings, t, tier in recipes:
+        if tier > 1 or c != 1 or o not in guess or o in raised or unique_floor(o) is not None:
+            continue
+        cost = F(0)
+        for a, n in ings:
+            m = min((values[x] for x in a if x in values), default=None)
+            if m is None:
+                break
+            cost += m * n
+        else:
+            if cost >= 1 and (o not in own_unit or cost < own_unit[o]):
+                own_unit[o] = cost
+    for o, unit in own_unit.items():
+        if unit < guess[o]:
+            guess[o] = unit
+            corrected.add(o)
+    for o, c, ings, t, tier in recipes:
+        if tier == 3 or o not in values:
+            continue
+        items = {x for a, _ in ings for x in a}
+        farm = all(x.startswith(FARM_NS) for x in items) and (tier == 9 or (o in raised and tier < 3))
+        if farm or (len(items) == 1 and next(iter(items)) in guess and (o in base or o in ores)):
+            # a guessed item (or farm essence) that alone makes a priced item is worth its share
+            need = values[o] * c / sum(n for _, n in ings)
+            for x in items:
+                if x not in base and need > values.get(x, 0) and need > guess.get(x, 0) and (
+                    x not in own_unit or own_unit[x] >= need
+                ):
+                    guess[x] = need
+                    corrected.add(x)
+                    if farm:
+                        raised.add(x)
+    return sorted(corrected)
+
+
 def run(pack, inst, out_json, generation_metadata=None):
     pack.items = {i for i in pack.items if not DENY.search(i)}
     pack._cache.clear()
@@ -1317,35 +1372,13 @@ def run(pack, inst, out_json, generation_metadata=None):
                 continue
             floor = unique_floor(i)
             guess[i] = values[i] = F(floor if floor is not None else FALLBACK)
-        changed = 0
-        for o, c, ings, t, tier in recipes:
-            if tier == 3 or o not in values:
-                continue
-            items = {x for a, _ in ings for x in a}
-            farm = all(x.startswith(FARM_NS) for x in items) and (tier == 9 or (o in raised and tier < 3))
-            if farm or (len(items) == 1 and next(iter(items)) in guess and (o in base or o in ores)):
-                # a guessed item (or farm essence) that alone makes a priced item is worth its share
-                need = values[o] * c / sum(n for _, n in ings)
-                for x in items:
-                    if x not in base and need > values.get(x, 0) and need > guess.get(x, 0):
-                        guess[x] = need
-                        changed += 1
-                        if farm:
-                            raised.add(x)
-            elif o in guess and o not in raised and tier <= 1 and c == 1 and unique_floor(o) is None:
-                cost = F(0)
-                for a, n in ings:
-                    m = min((values[x] for x in a if x in values), default=None)
-                    if m is None:
-                        break
-                    cost += m * n
-                else:
-                    if 1 <= cost / c < guess[o]:
-                        guess[o] = cost / c
-                        changed += 1
-        print(f"ajuste {rnd}: {changed} palpites corrigidos, {len(values)} itens")
-        if not changed:
+        corrected = apply_guess_rules(recipes, values, guess, base, ores, raised)
+        print(f"ajuste {rnd}: {len(corrected)} palpites corrigidos, {len(values)} itens")
+        if not corrected:
             break
+    if corrected:
+        print(f"rodadas esgotadas: {len(corrected)} palpites ainda alternando "
+              f"{corrected[:20]}")
 
     # Never publish a partially converged table: save the solver diagnostics first.
     solver_report = {

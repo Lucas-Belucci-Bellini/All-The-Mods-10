@@ -190,6 +190,41 @@ class ConsumedIngredientTests(unittest.TestCase):
             second = gen_all.fingerprint_files([first_file, second_file])
         self.assertNotEqual(first, second)
 
+    def test_pack_input_files_skips_the_generated_emc_output_namespace(self):
+        import tempfile
+        from pathlib import Path
+
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            instance = root / "instance"
+            minecraft = root / "minecraft"
+            (minecraft / "versions/1.21.1").mkdir(parents=True)
+            (minecraft / "versions/1.21.1/1.21.1.jar").write_bytes(b"vanilla")
+            neoforge = minecraft / "libraries/net/neoforged/neoforge/21.1.259"
+            neoforge.mkdir(parents=True)
+            (neoforge / "neoforge-21.1.259-universal.jar").write_bytes(b"neoforge")
+            tags = root / "pack_tags.json"
+            tags.write_text('{"items": {}}', encoding="utf-8")
+            data = instance / "kubejs/data"
+            (data / "atm10/recipes").mkdir(parents=True)
+            authored = data / "atm10/recipes/thing.json"
+            authored.write_text("{}", encoding="utf-8")
+            derived = data / "emc_balanceado/pe_custom_conversions"
+            derived.mkdir(parents=True)
+            output = derived / "00_valores_completos.json"
+
+            before = gen_all.pack_input_files(instance, tags, None, minecraft)
+            self.assertIn(authored, before)
+            self.assertNotIn(output, before)
+
+            output.write_text('{"minecraft:stone": 1}', encoding="utf-8")
+            after = gen_all.pack_input_files(instance, tags, None, minecraft)
+            fingerprint_before = gen_all.fingerprint_files(before)
+            fingerprint_after = gen_all.fingerprint_files(after)
+
+        self.assertEqual(before, after)
+        self.assertEqual(fingerprint_before, fingerprint_after)
+
     def test_generation_metadata_records_pack_version_and_input_labels(self):
         import json
         import tempfile
@@ -313,6 +348,59 @@ class SolverConvergenceTests(unittest.TestCase):
         self.assertEqual([row["tier"] for row in diagnostics], [0, 2, 3])
         self.assertTrue(all(row["converged"] for row in diagnostics))
         self.assertTrue(all(row["phase"] == "unit_test" for row in diagnostics))
+
+
+class GuessCorrectionTests(unittest.TestCase):
+    F = gen_all.F
+
+    def test_cheaper_own_recipe_caps_the_anchor_share_raise(self):
+        # Um palpite usado sozinho numa saída ancorada, mas também craftável por menos,
+        # não pode ser inflado até a participação: a receita própria mais barata é o teto.
+        recipes = [
+            ("example:machine", 1, [(frozenset({"example:rotor"}), 1)],
+             "minecraft:crafting_shaped", 2),
+            ("example:rotor", 1, [(frozenset({"example:plate"}), 1)],
+             "minecraft:crafting_shaped", 1),
+        ]
+        base = {"example:machine": self.F(512)}
+        values = {**base, "example:plate": self.F(64), "example:rotor": self.F(64)}
+        guess = {"example:rotor": self.F(64)}
+
+        corrected = gen_all.apply_guess_rules(recipes, values, guess, base, {}, set())
+
+        self.assertEqual(corrected, [])
+        self.assertEqual(guess["example:rotor"], self.F(64))
+
+    def test_anchor_share_raises_a_guess_without_a_recipe_of_its_own(self):
+        recipes = [
+            ("example:machine", 1, [(frozenset({"example:rotor"}), 1)],
+             "minecraft:crafting_shaped", 2),
+        ]
+        base = {"example:machine": self.F(512)}
+        values = {**base, "example:rotor": self.F(64)}
+        guess = {"example:rotor": self.F(64)}
+
+        corrected = gen_all.apply_guess_rules(recipes, values, guess, base, {}, set())
+
+        self.assertEqual(corrected, ["example:rotor"])
+        self.assertEqual(guess["example:rotor"], self.F(512))
+
+    def test_guess_rules_reach_a_fixed_point_after_the_correction(self):
+        recipes = [
+            ("example:kivi", 1, [(frozenset({"example:plate"}), 3)],
+             "minecraft:crafting_shaped", 1),
+        ]
+        base = {}
+        ores = {}
+        values = {"example:plate": self.F(64), "example:kivi": self.F(500)}
+        guess = {"example:kivi": self.F(500)}
+
+        first = gen_all.apply_guess_rules(recipes, values, guess, base, ores, set())
+
+        self.assertEqual(first, ["example:kivi"])
+        self.assertEqual(guess["example:kivi"], self.F(192))
+        self.assertEqual(
+            gen_all.apply_guess_rules(recipes, values, guess, base, ores, set()), [])
 
 
 class UnsupportedOutputAuditTests(unittest.TestCase):

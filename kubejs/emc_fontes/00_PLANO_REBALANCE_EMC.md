@@ -60,7 +60,7 @@ O gerador não presume um caminho pessoal de instalação. Informe a raiz do Min
 - Para reconstruir o inventário sem reutilizar cache: acrescente `--no-cache`.
 - Alternativamente, defina `ATM10_MINECRAFT_ROOT` (ou `MINECRAFT_ROOT`) e omita `--minecraft-root`.
 
-O cache v2 é endereçado pelo SHA-256 do conjunto de entradas: JAR vanilla, JARs NeoForge e dos mods, arquivo de tags, JSONs de `kubejs/data`, lista de bloqueio e metadados da instância quando presentes. Inclusões, remoções ou alterações de conteúdo geram outra chave. O cache fica no diretório temporário do sistema e pode ser descartado com segurança. Cada execução também gera `00_metadados_geracao_emc.json`, registrando timestamp UTC, versões Minecraft/NeoForge, identidade do pack quando há manifesto, fingerprint SHA-256 e lista de arquivos usados.
+O cache v2 é endereçado pelo SHA-256 do conjunto de entradas: JAR vanilla, JARs NeoForge e dos mods, arquivo de tags, JSONs de `kubejs/data` (exceto o namespace derivado `emc_balanceado`, que é saída do próprio gerador), lista de bloqueio e metadados da instância quando presentes. Inclusões, remoções ou alterações de conteúdo geram outra chave. A saída `00_valores_completos.json` fica dentro de `kubejs/data`; contabilizá-la como entrada faria cada execução mudar o próprio fingerprint e descartar o cache, relendo os JARs a cada rodada. O cache fica no diretório temporário do sistema e pode ser descartado com segurança. Cada execução também gera `00_metadados_geracao_emc.json`, registrando timestamp UTC, versões Minecraft/NeoForge, identidade do pack quando há manifesto, fingerprint SHA-256 e lista de arquivos usados.
 
 ## Qualidade e integração
 
@@ -87,6 +87,16 @@ Anéis contráteis: quando um ciclo de receitas tem fator multiplicativo < 1 por
 Cada execução do solver registra o número de passadas e atualizações por fase/tier em `00_diagnostico_convergencia_emc.json`. Se qualquer tier atingir o limite de 80 passadas ainda alterando valores, o gerador interrompe a publicação do arquivo EMC final e aponta o relatório. Isso evita tratar uma solução parcial como resultado válido.
 
 Testes sintéticos cobrem: ciclo estável, anel de troca que não infla, ciclo de feedback positivo sem inflação, e anel contratil travado pelo amortecimento.
+
+
+## Correção dos palpites
+
+Itens que nenhuma receita alcança recebem um palpite (`FALLBACK` ou regra de sufixo). Duas heurísticas os ajustam contra as receitas, em rodadas limitadas a 8:
+
+- descida: receita própria completa e mais barata que o palpite, seguindo a invariante do ProjectE;
+- alta: participação do palpite numa saída ancorada (override autoral ou regra de minério) usada sozinha, ex.: 3 fragmentos de estrela do Nether = 1 estrela.
+
+Quando as duas apontam para o mesmo item, o teto da receita própria vence. Sem essa prioridade, a alta reescrevia na rodada seguinte o valor que a descida baixara, `changed` nunca chegava a zero e as 8 rodadas eram sempre esgotadas. Conflito entre uma âncora e uma rota de craft mais barata é inconsistência de dados autorais: a revisão é da âncora, porque uma receita não pode aumentar um EMC.
 
 
 ## Auditoria de saídas não interpretadas
