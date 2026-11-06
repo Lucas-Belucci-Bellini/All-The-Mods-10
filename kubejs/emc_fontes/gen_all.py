@@ -882,7 +882,7 @@ def audit_manual_overrides(overrides, recipes, final_values, origins, pending_re
     }
 
 
-def solve(values, fixed, recipes, passes=80):
+def solve(values, fixed, recipes, passes=80, placeholders=None):
     """Resolve recipe values and report whether the fixed-point iteration converged.
 
     ProjectE invariant: a recipe can only *lower* an EMC, never raise it. The
@@ -896,13 +896,19 @@ def solve(values, fixed, recipes, passes=80):
     chains (e.g. blaze_powder <-> blaze_rod crushing/pressing nets) otherwise
     kept moving forever without ever changing a value the game can see.
 
+    `placeholders` are items whose current number is a guess, not a route: a
+    guess has no economic meaning, so while an item is still in that set the
+    cheapest complete recipe of its own may replace it in either direction.
+    The first recipe-based price removes the item from the set, and from then
+    on only strict descent applies, so the lift can never inflate a chain.
+
     Contraction rings whose factor per lap is far below 1 still have no fixed
     point: after four consecutive at-least-halving drops the item is locked at
     the last value and recorded in CYCLE_DAMPED for manual review.
     """
     by_out = defaultdict(list)
     for o, c, ings, t, tier in recipes:
-        if o not in fixed:
+        if o not in fixed or (placeholders is not None and o in placeholders):
             by_out[o].append((c, ings, t, tier >= 3))
 
     total_updates = 0
@@ -910,12 +916,14 @@ def solve(values, fixed, recipes, passes=80):
     last_assigned = {}   # item -> value at its last accepted update
     halvings = defaultdict(int)
     damped_items = set()
+    lifted_items = set()
     for pass_number in range(1, passes + 1):
         changed_items = []
         for o, lst in by_out.items():
             if o in damped_items:
                 continue
             best = None
+            complete = None
             for c, ings, t, lossy in lst:
                 cost = F(0)
                 for a, n in ings:
@@ -925,22 +933,36 @@ def solve(values, fixed, recipes, passes=80):
                     cost += m * n
                 else:
                     cand = cost / c
-                    if (cand >= 1 or (t == "grupo_variantes" and cand > 0)) and (
-                        best is None or cand < best[0]
-                    ):
-                        best = (cand, t, c, ings)
+                    if cand >= 1 or (t == "grupo_variantes" and cand > 0):
+                        if best is None or cand < best[0]:
+                            best = (cand, t, c, ings)
+                        if not lossy and (complete is None or cand < complete[0]):
+                            complete = (cand, t, c, ings)
             if best is None:
                 continue
-            cand, t, c, ings = best
             cur = values.get(o)
-            if cur is None or (cand < cur and int(cand) < int(cur)):
+            is_guess = placeholders is not None and o in placeholders
+            cand, t, c, ings = best
+            if is_guess and complete is not None and (
+                cur is None or int(complete[0]) > int(cur)
+            ):
+                cand, t, c, ings = complete
+            drop = cur is None or (cand < cur and int(cand) < int(cur))
+            lift = is_guess and cur is not None and int(cand) > int(cur)
+            if not (drop or lift):
+                continue
+            if is_guess:
+                placeholders.discard(o)
+                if lift:
+                    lifted_items.add(o)
+            if drop:
                 prev = last_assigned.get(o)
                 if prev is not None and cand * 2 < prev:
                     halvings[o] += 1
                 else:
                     halvings[o] = 0
                 last_assigned[o] = cand
-                if halvings[o] >= 4:
+                if prev is not None and halvings[o] >= 4:
                     # geometric tail of a contraction ring: lock and review
                     values[o] = cand
                     CYCLE_DAMPED[o] = cand
@@ -949,10 +971,10 @@ def solve(values, fixed, recipes, passes=80):
                     damped_items.add(o)
                     changed_items.append(o)
                     continue
-                values[o] = cand
-                WHY[o] = (t, c, [(sorted(a)[:3], n) for a, n in ings])
-                DEPS[o] = {x for a, _ in ings for x in a}
-                changed_items.append(o)
+            values[o] = cand
+            WHY[o] = (t, c, [(sorted(a)[:3], n) for a, n in ings])
+            DEPS[o] = {x for a, _ in ings for x in a}
+            changed_items.append(o)
 
         total_updates += len(changed_items)
         last_changed_items = changed_items
@@ -964,6 +986,7 @@ def solve(values, fixed, recipes, passes=80):
                 "last_pass_changed_count": 0,
                 "last_pass_changed_items": [],
                 "contraction_locked_count": len(damped_items),
+                "guess_lifted_count": len(lifted_items),
             }
 
     return {
@@ -973,17 +996,22 @@ def solve(values, fixed, recipes, passes=80):
         "last_pass_changed_count": len(last_changed_items),
         "last_pass_changed_items": sorted(last_changed_items)[:50],
         "contraction_locked_count": len(damped_items),
+        "guess_lifted_count": len(lifted_items),
     }
 
 
-def tiered(values, fixed, recipes, diagnostics=None, phase="unspecified"):
+def tiered(values, fixed, recipes, diagnostics=None, phase="unspecified", placeholders=None):
     """Resolve ProjectE defaults, crafting/smelting, then machine recipe tiers.
 
     Each tier's results are locked before the next tier, preserving the existing
-    precedence policy. Diagnostics are appended when requested by the caller.
+    precedence policy. Items still waiting for a first recipe price (the
+    placeholders) stay unlocked across tiers, otherwise a machine only priced by
+    a tier 2 recipe would keep its guessed number forever. Diagnostics are
+    appended when requested by the caller.
     """
     for tier in (0, 2, 3):
-        result = solve(values, fixed, [r for r in recipes if r[4] <= tier])
+        result = solve(values, fixed, [r for r in recipes if r[4] <= tier],
+                       placeholders=placeholders)
         if diagnostics is not None:
             diagnostics.append({"phase": phase, "tier": tier, **result})
         fixed |= set(values)
@@ -1188,44 +1216,26 @@ def unique_floor(item):
     return next((v for v, rx in UNIQUE_HINTS if rx.search(item) or rx.search(path)), None)
 
 
-def apply_guess_rules(recipes, values, guess, base, ores, raised):
-    """Corrige os palpites contra as receitas e devolve, ordenado, o que se moveu nesta passada.
+def apply_guess_rules(recipes, values, guess, base, ores, raised, pending):
+    """Corrige os palpites pela participacao numa saida ancorada e devolve o que se moveu.
 
-    A descida usa a receita própria mais barata do palpite (a mesma invariante do solver: uma
-    receita nunca sobe um EMC). A alta usa a participação do palpite numa saída ancorada. Quando
-    as duas apontam para o mesmo item, o teto da receita própria vence: sem essa prioridade a
-    alta reescrevia o valor que a descida baixara na passada anterior e o ciclo nunca parava.
+    A alta so vale para um item ainda em `pending`, isto e, sem nenhum preco de receita. O solver
+    ja calcula a rota propria de todo palpite com receita completa (podendo subir ou descer daquele
+    numero), entao um item que saiu de `pending` tem valor derivado de receita e nao deve ser inflado
+    pela heuristica da ancora. Foi essa mistura que fez rotor e kivi alternarem entre a alta da
+    ancora e a descida da receita ate esgotar as rodadas.
     """
     corrected = set()
-    own_unit = {}
-    for o, c, ings, t, tier in recipes:
-        if tier > 1 or c != 1 or o not in guess or o in raised or unique_floor(o) is not None:
-            continue
-        cost = F(0)
-        for a, n in ings:
-            m = min((values[x] for x in a if x in values), default=None)
-            if m is None:
-                break
-            cost += m * n
-        else:
-            if cost >= 1 and (o not in own_unit or cost < own_unit[o]):
-                own_unit[o] = cost
-    for o, unit in own_unit.items():
-        if unit < guess[o]:
-            guess[o] = unit
-            corrected.add(o)
     for o, c, ings, t, tier in recipes:
         if tier == 3 or o not in values:
             continue
         items = {x for a, _ in ings for x in a}
         farm = all(x.startswith(FARM_NS) for x in items) and (tier == 9 or (o in raised and tier < 3))
-        if farm or (len(items) == 1 and next(iter(items)) in guess and (o in base or o in ores)):
+        if farm or (len(items) == 1 and next(iter(items)) in pending and (o in base or o in ores)):
             # a guessed item (or farm essence) that alone makes a priced item is worth its share
             need = values[o] * c / sum(n for _, n in ings)
             for x in items:
-                if x not in base and need > values.get(x, 0) and need > guess.get(x, 0) and (
-                    x not in own_unit or own_unit[x] >= need
-                ):
+                if x not in base and (farm or x in pending) and need > values.get(x, 0)                         and need > guess.get(x, 0):
                     guess[x] = need
                     corrected.add(x)
                     if farm:
@@ -1363,17 +1373,24 @@ def run(pack, inst, out_json, generation_metadata=None):
         floor = unique_floor(i)
         guess[i] = F(floor if floor is not None else next((v for v, rx in VAL_RULES if rx.search(path)), FALLBACK))
     raised = set()  # farm items pushed up to their output's share; never lowered again
+    pending = set(guess)  # itens cujo número ainda é um palpite, não uma rota conhecida
     for rnd in range(8):
         values = {**base, **ores, **guess}
         fixed = set(values)
-        tiered(values, fixed, recipes, solver_diagnostics, phase=f"guess_round_{rnd + 1}")
-        for i in pack.items - set(values):  # crafted only from things that never got a value
+        was_pending = set(pending)
+        tiered(values, fixed, recipes, solver_diagnostics, phase=f"guess_round_{rnd + 1}",
+               placeholders=pending)
+        for i in was_pending:  # preço de receita substitui o palpite; sem receita, o número segue
+            guess[i] = values[i]
+        for i in sorted(pack.items - set(values)):  # crafted only from things that never got a value
             if COMPRESSED_RE.search(i):
                 continue
             floor = unique_floor(i)
             guess[i] = values[i] = F(floor if floor is not None else FALLBACK)
-        corrected = apply_guess_rules(recipes, values, guess, base, ores, raised)
-        print(f"ajuste {rnd}: {len(corrected)} palpites corrigidos, {len(values)} itens")
+            pending.add(i)
+        corrected = apply_guess_rules(recipes, values, guess, base, ores, raised, pending)
+        print(f"ajuste {rnd}: {len(corrected)} palpites corrigidos, {len(values)} itens, "
+              f"{len(pending)} sem preço de receita")
         if not corrected:
             break
     if corrected:
@@ -1441,7 +1458,7 @@ def run(pack, inst, out_json, generation_metadata=None):
             item_origins[item] = "ore_rule"
         elif item in CYCLE_DAMPED:
             item_origins[item] = "contraction_cycle"
-        elif item in guess:
+        elif item in pending:
             item_origins[item] = "heuristic_fallback"
         elif item in final:
             item_origins[item] = "recipe_calculated"
@@ -1474,7 +1491,7 @@ def run(pack, inst, out_json, generation_metadata=None):
             origin = "ore_rule"
         elif item in CYCLE_DAMPED:
             origin = "contraction_cycle"
-        elif item in guess:
+        elif item in pending:
             origin = "heuristic_fallback"
         elif item in final:
             origin = "recipe_calculated"

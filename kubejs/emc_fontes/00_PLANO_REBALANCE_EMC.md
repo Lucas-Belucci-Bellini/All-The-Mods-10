@@ -91,12 +91,11 @@ Testes sintéticos cobrem: ciclo estável, anel de troca que não infla, ciclo d
 
 ## Correção dos palpites
 
-Itens que nenhuma receita alcança recebem um palpite (`FALLBACK` ou regra de sufixo). Duas heurísticas os ajustam contra as receitas, em rodadas limitadas a 8:
+Itens que nenhuma receita alcança recebem um palpite (`FALLBACK` ou regra de sufixo). O palpite é um número provisório, não uma rota econômica: enquanto um item for palpite, o solver pode substituí-lo pelo custo da sua própria receita completa, mesmo quando esse custo é maior. Na primeira vez que uma receita precifica o item ele sai da lista de palpites e passa a valer apenas a descida estrita, então a alta nunca infla uma cadeia de receitas.
 
-- descida: receita própria completa e mais barata que o palpite, seguindo a invariante do ProjectE;
-- alta: participação do palpite numa saída ancorada (override autoral ou regra de minério) usada sozinha, ex.: 3 fragmentos de estrela do Nether = 1 estrela.
+Dois efeitos colaterais dessa regra, observados em novembro de 2026: itens travados em 64 com receita própria custando milhões (capacitores do Allthemodium, máquinas MEGA de refined storage, reator de fusão e de plasma do MIM) e componentes inteiros de uma cadeia herdando o mesmo travamento. O relatório de origem na tabela mestra agora marca `heuristic_fallback` somente para o item que terminou sem preço de receita; quem recebeu preço de receita é `recipe_calculated`.
 
-Quando as duas apontam para o mesmo item, o teto da receita própria vence. Sem essa prioridade, a alta reescrevia na rodada seguinte o valor que a descida baixara, `changed` nunca chegava a zero e as 8 rodadas eram sempre esgotadas. Conflito entre uma âncora e uma rota de craft mais barata é inconsistência de dados autorais: a revisão é da âncora, porque uma receita não pode aumentar um EMC.
+A alta por âncora continua: um palpite usado sozinho numa saída ancorada (override autoral ou regra de minério) vale a participação naquela saída (ex.: 3 fragmentos de estrela do Nether = 1 estrela). Ela só se aplica a item que ainda é palpite. Antes dessa restrição, a alta reescrevia na rodada seguinte o valor que o solver dera pela receita própria, `changed` nunca chegava a zero e as 8 rodadas eram sempre esgotadas. Conflito entre uma âncora e uma rota de craft mais barata é inconsistência de dados autorais: a revisão é da âncora, porque uma receita não pode aumentar um EMC.
 
 
 ## Auditoria de saídas não interpretadas

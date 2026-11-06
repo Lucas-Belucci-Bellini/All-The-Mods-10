@@ -353,25 +353,49 @@ class SolverConvergenceTests(unittest.TestCase):
 class GuessCorrectionTests(unittest.TestCase):
     F = gen_all.F
 
-    def test_cheaper_own_recipe_caps_the_anchor_share_raise(self):
-        # Um palpite usado sozinho numa saída ancorada, mas também craftável por menos,
-        # não pode ser inflado até a participação: a receita própria mais barata é o teto.
+    def test_solver_lifts_a_placeholder_to_its_own_recipe_cost(self):
+        # 64 é um palpite, não uma rota: enquanto o item não tem preço de receita, a rota
+        # própria conhecida deve substituir o número, mesmo que ele seja mais caro.
+        values = {"example:plate": self.F(1024), "example:rotor": self.F(64)}
+        pending = {"example:rotor"}
+
+        result = gen_all.solve(
+            values, set(values),
+            [("example:rotor", 1, [(frozenset({"example:plate"}), 1)], "minecraft:crafting_shaped", 1)],
+            placeholders=pending,
+        )
+
+        self.assertTrue(result["converged"])
+        self.assertEqual(values["example:rotor"], self.F(1024))
+        self.assertEqual(pending, set())
+        self.assertEqual(result["guess_lifted_count"], 1)
+
+    def test_solver_never_lifts_an_item_that_is_not_a_placeholder(self):
+        values = {"example:plate": self.F(1024), "example:rotor": self.F(64)}
+
+        gen_all.solve(values, set(values), [
+            ("example:rotor", 1, [(frozenset({"example:plate"}), 1)], "minecraft:crafting_shaped", 1),
+        ])
+
+        self.assertEqual(values["example:rotor"], self.F(64))
+
+    def test_solver_lifts_a_placeholder_only_once(self):
+        # Depois do primeiro preço de receita vale apenas a descida: um anel de itens que
+        # sobem juntos não pode inflar a cadeia.
+        values = {"example:rotor": self.F(64), "example:motor": self.F(64)}
+        pending = {"example:rotor", "example:motor"}
         recipes = [
-            ("example:machine", 1, [(frozenset({"example:rotor"}), 1)],
-             "minecraft:crafting_shaped", 2),
-            ("example:rotor", 1, [(frozenset({"example:plate"}), 1)],
-             "minecraft:crafting_shaped", 1),
+            ("example:rotor", 1, [(frozenset({"example:motor"}), 1)], "test", 1),
+            ("example:motor", 1, [(frozenset({"example:rotor"}), 1)], "test", 1),
         ]
-        base = {"example:machine": self.F(512)}
-        values = {**base, "example:plate": self.F(64), "example:rotor": self.F(64)}
-        guess = {"example:rotor": self.F(64)}
 
-        corrected = gen_all.apply_guess_rules(recipes, values, guess, base, {}, set())
+        result = gen_all.solve(values, set(values), recipes, placeholders=pending)
 
-        self.assertEqual(corrected, [])
-        self.assertEqual(guess["example:rotor"], self.F(64))
+        self.assertTrue(result["converged"])
+        self.assertLessEqual(values["example:rotor"], self.F(64))
+        self.assertLessEqual(values["example:motor"], self.F(64))
 
-    def test_anchor_share_raises_a_guess_without_a_recipe_of_its_own(self):
+    def test_anchor_share_raises_only_a_placeholder(self):
         recipes = [
             ("example:machine", 1, [(frozenset({"example:rotor"}), 1)],
              "minecraft:crafting_shaped", 2),
@@ -380,27 +404,41 @@ class GuessCorrectionTests(unittest.TestCase):
         values = {**base, "example:rotor": self.F(64)}
         guess = {"example:rotor": self.F(64)}
 
-        corrected = gen_all.apply_guess_rules(recipes, values, guess, base, {}, set())
+        corrected = gen_all.apply_guess_rules(
+            recipes, values, guess, base, {}, set(), {"example:rotor"})
 
         self.assertEqual(corrected, ["example:rotor"])
         self.assertEqual(guess["example:rotor"], self.F(512))
 
-    def test_guess_rules_reach_a_fixed_point_after_the_correction(self):
+        guess["example:rotor"] = self.F(64)
+        self.assertEqual(
+            gen_all.apply_guess_rules(recipes, values, guess, base, {}, set(), set()), [])
+        self.assertEqual(guess["example:rotor"], self.F(64))
+
+    def test_placeholder_and_anchor_rules_reach_a_fixed_point(self):
+        # A receita própria do rotor vale 512 (4 placas de 128) e a âncora da máquina também
+        # pede 512: o solver dá o preço, a alta da âncora não toca mais no item.
         recipes = [
-            ("example:kivi", 1, [(frozenset({"example:plate"}), 3)],
+            ("example:machine", 1, [(frozenset({"example:rotor"}), 1)],
+             "minecraft:crafting_shaped", 2),
+            ("example:rotor", 4, [(frozenset({"example:plate"}), 1)],
              "minecraft:crafting_shaped", 1),
         ]
-        base = {}
-        ores = {}
-        values = {"example:plate": self.F(64), "example:kivi": self.F(500)}
-        guess = {"example:kivi": self.F(500)}
+        base = {"example:machine": self.F(512), "example:plate": self.F(128)}
+        guess = {"example:rotor": self.F(64)}
+        pending = {"example:rotor"}
+        values = {**base, **guess}
 
-        first = gen_all.apply_guess_rules(recipes, values, guess, base, ores, set())
+        gen_all.solve(values, set(values), recipes, placeholders=pending)
+        first = gen_all.apply_guess_rules(recipes, values, guess, base, {}, set(), pending)
+        guess["example:rotor"] = values["example:rotor"]
+        values = {**base, **guess}
+        gen_all.solve(values, set(values), recipes, placeholders=pending)
+        second = gen_all.apply_guess_rules(recipes, values, guess, base, {}, set(), pending)
 
-        self.assertEqual(first, ["example:kivi"])
-        self.assertEqual(guess["example:kivi"], self.F(192))
-        self.assertEqual(
-            gen_all.apply_guess_rules(recipes, values, guess, base, ores, set()), [])
+        self.assertEqual(first, [])
+        self.assertEqual(second, [])
+        self.assertEqual(values["example:rotor"], self.F(32))
 
 
 class UnsupportedOutputAuditTests(unittest.TestCase):
