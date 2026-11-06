@@ -1,4 +1,6 @@
+import tempfile
 import unittest
+from pathlib import Path
 
 import gen_all
 
@@ -595,6 +597,178 @@ class NoEmcVetoTests(unittest.TestCase):
         report = gen_all.audit_manual_source_integrity(pack, documents)
 
         self.assertEqual(report["finding_count"], 0)
+
+
+class KubeJsRouteTests(unittest.TestCase):
+    """As receitas de bancada que só existem em runtime (ServerEvents.recipes) voltam como rota."""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.tmp.cleanup)
+        self.inst = Path(self.tmp.name)
+        self.scripts = self.inst / "kubejs" / "server_scripts"
+        self.scripts.mkdir(parents=True)
+        self.pack = gen_all.Pack()
+        self.pack.items.update({
+            "minecraft:coal", "minecraft:iron_ingot", "minecraft:stick",
+            "allthemodium:allthemodium_plate", "allthemodium:netherite_ingot",
+            "allthemodium:allthemodium_upgrade_smithing_template",
+            "justdirethings:celestigem_axe", "justdirethings:celestigem_shovel",
+            "justdirethings:celestigem_pickaxe",
+        })
+        self.pack.tags["c:ingots/iron"] = {"minecraft:iron_ingot"}
+        self.pack.tags["c:plates/allthemodium"] = {"allthemodium:allthemodium_plate"}
+        self.pack.tags["c:ingots/netherite"] = {"allthemodium:netherite_ingot"}
+
+    def load(self, *blocks):
+        text = "ServerEvents.recipes(allthemods => {\n" + "\n".join(blocks) + "\n})\n"
+        (self.scripts / "fixture.js").write_text(text, encoding="utf-8")
+        return gen_all.kubejs_crafting_routes(self.pack, self.inst)
+
+    def inputs_of(self, routes, output):
+        for out, _, ings, _, tier in routes:
+            if out == output:
+                return {frozenset(a): c for a, c in ings}, tier
+        self.fail(f"rota de {output} nao encontrada em {[r[0] for r in routes]}")
+
+    def test_shaped_call_becomes_a_tier_one_route_with_letter_counts(self):
+        routes, stats = self.load("""
+            // comentario com (parenteses) e 'aspas' dentro
+            allthemods.shaped('example:widget', ['ABA', 'B B'], {
+                A: 'minecraft:iron_ingot',
+                B: Item.of('minecraft:coal')
+            }).id('allthemods:widget')
+        """)
+        ings, tier = self.inputs_of(routes, "example:widget")
+        self.assertEqual(ings, {frozenset({"minecraft:iron_ingot"}): 2,
+                                frozenset({"minecraft:coal"}): 3})
+        self.assertEqual(tier, 1)
+        self.assertEqual(routes[0][3], "kubejs:shaped")
+        self.assertEqual(stats["call/shaped"], 1)
+
+    def test_shapeless_counts_prefixed_amounts_tags_and_ingredient_of(self):
+        routes, _ = self.load(
+            "allthemods.shapeless('4x example:bundle', ['#c:ingots/iron', '4x minecraft:coal', "
+            "Ingredient.of('minecraft:stick').toJson()])"
+        )
+        ings, _ = self.inputs_of(routes, "example:bundle")
+        self.assertEqual(routes[0][1], 4)
+        self.assertEqual(ings, {frozenset({"minecraft:iron_ingot"}): 1,
+                               frozenset({"minecraft:coal"}): 4,
+                               frozenset({"minecraft:stick"}): 1})
+
+    def test_custom_mechanical_crafting_is_a_route_and_machine_types_are_only_counted(self):
+        routes, stats = self.load("""
+            allthemods.custom({
+                type: 'create:mechanical_crafting',
+                pattern: ['###', ' A '],
+                key: { '#': 'minecraft:stick', A: 'minecraft:iron_ingot' },
+                result: { item: 'example:big_thing', count: 2 }
+            })
+            allthemods.custom({
+                type: 'powah:energizing',
+                energy: 2147483647,
+                ingredients: [Ingredient.of('minecraft:coal').toJson()],
+                result: { id: 'ae2:creative_energy_cell', count: 1 }
+            })
+        """)
+        self.assertEqual([r[0] for r in routes], ["example:big_thing"])
+        self.assertEqual(routes[0][1], 2)
+        self.assertEqual(routes[0][3], "create:mechanical_crafting")
+        self.assertEqual(self.inputs_of(routes, "example:big_thing")[0],
+                         {frozenset({"minecraft:stick"}): 3,
+                          frozenset({"minecraft:iron_ingot"}): 1})
+        self.assertEqual(stats["custom/tipo-fora-da-bancada/powah:energizing"], 1)
+        self.assertNotIn("ae2:creative_energy_cell", [r[0] for r in routes])
+
+    def test_recipes_kubejs_shaped_is_crafting_not_a_machine_builder(self):
+        routes, stats = self.load(
+            "allthemods.recipes.kubejs.shaped('example:creative_book', ['AA'], {A: 'minecraft:coal'})"
+        )
+        self.assertEqual([r[0] for r in routes], ["example:creative_book"])
+        self.assertEqual(stats["fora-da-bancada/kubejs.shaped"], 0)
+
+    def test_interpolated_calls_are_counted_never_priced(self):
+        routes, stats = self.load("""
+            for (let item of fragment) {
+                allthemods.custom({
+                    type: 'create:mechanical_crafting',
+                    ingredients: [Ingredient.of(`${item.prism}`).toJson()],
+                    result: { item: `kubejs:atm_star_shard_${item.fragment}` }
+                })
+            }
+        """)
+        self.assertEqual(routes, [])
+        self.assertEqual(stats["custom/nao-convertivel"], 1)
+
+    def test_smithing_templates_are_not_charged_to_the_route(self):
+        routes, stats = self.load("""
+            allthemods.smithing(
+                Item.of('kubejs:silent_allthemodium_plate'),
+                '#c:plates/allthemodium',
+                'allthemodium:allthemodium_upgrade_smithing_template',
+                '#c:ingots/netherite'
+            )
+            allthemods.smithing('justdirethings:celestigem_paxel',
+                'justdirethings:celestigem_axe',
+                'justdirethings:celestigem_shovel')
+                .template('justdirethings:celestigem_pickaxe');
+        """)
+        plate = self.inputs_of(routes, "kubejs:silent_allthemodium_plate")[0]
+        self.assertEqual(plate, {frozenset({"allthemodium:allthemodium_plate"}): 1,
+                                 frozenset({"allthemodium:netherite_ingot"}): 1})
+        paxel = self.inputs_of(routes, "justdirethings:celestigem_paxel")[0]
+        self.assertEqual(paxel, {frozenset({"justdirethings:celestigem_axe"}): 1,
+                                 frozenset({"justdirethings:celestigem_shovel"}): 1})
+        self.assertEqual(stats["smithing/template-fora-do-custo"], 2)
+
+    def test_tag_without_members_is_skipped_instead_of_becoming_free(self):
+        routes, stats = self.load(
+            "allthemods.shapeless('example:thing', ['#c:completely:unknown', 'minecraft:coal'])"
+        )
+        ings, _ = self.inputs_of(routes, "example:thing")
+        self.assertEqual(ings, {frozenset({"minecraft:coal"}): 1})
+        self.assertEqual(stats["tag-sem-membros"], 1)
+
+    def test_machine_builder_calls_are_counted_as_invisible(self):
+        routes, stats = self.load(
+            "allthemods.recipes.modern_industrialization.star_altar(2048, 200)\n"
+            "    .itemIn('minecraft:coal')\n"
+            "    .itemOut('allthetweaks:atm_star')\n"
+        )
+        self.assertEqual(routes, [])
+        self.assertEqual(stats["fora-da-bancada/modern_industrialization.star_altar"], 1)
+
+    def test_balanced_scan_is_quote_aware(self):
+        text = "f('a(b', 'c') tail ) ("
+        start = text.index("(")
+        self.assertEqual(gen_all.js_balanced(text, start, "(", ")"), "'a(b', 'c'")
+        escaped = 'f("a\\"(b", \'c\') tail'
+        self.assertEqual(gen_all.js_balanced(escaped, escaped.index("("), "(", ")"),
+                         '"a\\"(b", \'c\'')
+
+    def test_js_to_python_refuses_interpolation_and_keeps_plain_objects(self):
+        self.assertIsNone(gen_all.js_to_python("{ type: 'a', result: `x${y}` }"))
+        self.assertEqual(gen_all.js_to_python("{ a: 'b', c: 2, }"), {"a": "b", "c": 2})
+
+    def test_audit_rows_compare_anchor_against_route_cost(self):
+        F = gen_all.F
+        routes = [
+            ("example:widget", 2, [(frozenset({"minecraft:coal"}), 4)], "kubejs:shaped", 1),
+            ("example:ghost", 1, [(frozenset({"example:unknown"}), 1)], "kubejs:shapeless", 1),
+        ]
+        values = {"minecraft:coal": F(16), "example:widget": F(4096)}
+        rows = gen_all.audit_kubejs_routes(routes, values, {"example:widget": "manual_base"})
+        self.assertEqual([r["output"] for r in rows], ["example:widget", "example:ghost"])
+        self.assertEqual(rows[0]["exact_recipe_cost"], "32")
+        self.assertEqual(rows[0]["current_origin"], "manual_base")
+        self.assertEqual(rows[0]["override_over_cost"], 128.0)
+        self.assertTrue(rows[0]["complete"])
+        self.assertFalse(rows[1]["complete"])
+        self.assertIsNone(rows[1]["current_emc"])
+        self.assertIsNone(rows[1]["override_over_cost"])
+        self.assertEqual(rows[1]["current_origin"], "fora_do_indice")
+        self.assertEqual(rows[1]["missing_inputs"], [["example:unknown"]])
 
 
 if __name__ == "__main__":

@@ -1,0 +1,5287 @@
+{
+  "schema_version": 1,
+  "comment": "Receitas de bancada criadas em runtime pelo KubeJS (ServerEvents.recipes), invisiveis ao scanner de jars e datapacks. Somente leitura: nenhuma dessas rotas entrou no solver nem alterou a tabela publicada. Tipos de maquina (star altar, energizing, salvaging) sao contados e descartados porque o ProjectE tambem nao os usa no calculo automatico.",
+  "route_count": 157,
+  "complete_count": 92,
+  "far_above_recipe_cost_count": 2,
+  "parse_stats": {
+    "call/shaped": 124,
+    "call/shapeless": 26,
+    "call/smithing": 4,
+    "custom/create:mechanical_crafting": 2,
+    "custom/nao-convertivel": 72,
+    "custom/pneumaticcraft:crafting_shaped_pressurizable": 1,
+    "custom/tipo-fora-da-bancada/apothic_enchanting:infusion": 1,
+    "custom/tipo-fora-da-bancada/create:crushing": 2,
+    "custom/tipo-fora-da-bancada/extendedae:circuit_cutter": 1,
+    "custom/tipo-fora-da-bancada/farmingforblockheads:market": 14,
+    "custom/tipo-fora-da-bancada/immersiveengineering:crusher": 4,
+    "custom/tipo-fora-da-bancada/immersiveengineering:metal_press": 2,
+    "custom/tipo-fora-da-bancada/industrialforegoing:fluid_extractor": 2,
+    "custom/tipo-fora-da-bancada/justdirethings:fluiddrop": 2,
+    "custom/tipo-fora-da-bancada/mekanism:activating": 1,
+    "custom/tipo-fora-da-bancada/mekanism:centrifuging": 1,
+    "custom/tipo-fora-da-bancada/mekanism:crushing": 3,
+    "custom/tipo-fora-da-bancada/mekanism:oxidizing": 2,
+    "custom/tipo-fora-da-bancada/modern_industrialization:assembler": 6,
+    "custom/tipo-fora-da-bancada/modern_industrialization:mixer": 1,
+    "custom/tipo-fora-da-bancada/modern_industrialization:packer": 4,
+    "custom/tipo-fora-da-bancada/mysticalagriculture:soul_extraction": 1,
+    "custom/tipo-fora-da-bancada/oritech:centrifuge_fluid": 1,
+    "custom/tipo-fora-da-bancada/oritech:foundry": 1,
+    "custom/tipo-fora-da-bancada/oritech:refinery": 2,
+    "custom/tipo-fora-da-bancada/powah:energizing": 3,
+    "custom/tipo-fora-da-bancada/silentgear:salvaging": 84,
+    "custom/tipo-fora-da-bancada/sushigocrafting:fermenting_barrel": 1,
+    "fora-da-bancada/modern_industrialization.auto_forge": 29,
+    "fora-da-bancada/modern_industrialization.blast_furnace": 2,
+    "fora-da-bancada/modern_industrialization.compressor": 2,
+    "fora-da-bancada/modern_industrialization.electrolyzer": 1,
+    "fora-da-bancada/modern_industrialization.macerator": 3,
+    "fora-da-bancada/modern_industrialization.mixer": 4,
+    "fora-da-bancada/modern_industrialization.runic_crucible": 5,
+    "fora-da-bancada/modern_industrialization.runic_enchanter": 12,
+    "fora-da-bancada/modern_industrialization.star_altar": 6,
+    "fora-da-bancada/modern_industrialization.vacuum_freezer": 1,
+    "fora-da-bancada/modular_machinery_reborn.machine_recipe": 40,
+    "fora-da-bancada/modularbees.overclocker_electrode": 2,
+    "fora-da-bancada/occultism.crushing": 2,
+    "fora-da-bancada/theurgy.liquefaction": 3,
+    "shaped/formato-nao-convertivel": 30,
+    "shaped/saida-nao-interpretada": 14,
+    "shapeless/formato-nao-convertivel": 16,
+    "shapeless/saida-nao-interpretada": 11,
+    "smithing/template-fora-do-custo": 4,
+    "tag-sem-membros": 1
+  },
+  "far_above_recipe_cost": [
+    {
+      "output": "allthetweaks:pulsating_black_hole",
+      "current_emc": 100000000000000000,
+      "exact_recipe_cost": "580620",
+      "current_origin": "manual_base",
+      "multiple": 172229685508.6
+    },
+    {
+      "output": "allthetweaks:patrick_star",
+      "current_emc": 10000000000000000,
+      "exact_recipe_cost": "2218",
+      "current_origin": "manual_base",
+      "multiple": 4508566275924.3
+    }
+  ],
+  "routes": [
+    {
+      "output": "mysticalagradditions:creative_essence",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "mysticalagradditions:insanium_block"
+          ],
+          "count": 4,
+          "emc_each": 27302400.0
+        },
+        {
+          "items": [
+            "mysticalagradditions:insanium_gemstone_block"
+          ],
+          "count": 4,
+          "emc_each": 54680832.0
+        },
+        {
+          "items": [
+            "mysticalagriculture:master_infusion_crystal"
+          ],
+          "count": 1,
+          "emc_each": 4546048.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "332478976",
+      "recipe_cost": 332478976.0,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "mekanism:creative_energy_cube",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "mekanism:alloy_atomic"
+          ],
+          "count": 4,
+          "emc_each": 16640.0
+        },
+        {
+          "items": [
+            "mekanism:energy_tablet"
+          ],
+          "count": 2,
+          "emc_each": 6784.0
+        },
+        {
+          "items": [
+            "allthemodium:unobtainium_block"
+          ],
+          "count": 2,
+          "emc_each": 150994944.0
+        },
+        {
+          "items": [
+            "mekanism:ultimate_energy_cube"
+          ],
+          "count": 1,
+          "emc_each": 179460.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "302249476",
+      "recipe_cost": 302249476.0,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "railcraft:creative_locomotive",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "allthemodium:unobtainium_gear"
+          ],
+          "count": 2,
+          "emc_each": 134217728.0
+        },
+        {
+          "items": [
+            "railcraft:charge_motor"
+          ],
+          "count": 2,
+          "emc_each": 1024.0
+        },
+        {
+          "items": [
+            "minecraft:minecart"
+          ],
+          "count": 1,
+          "emc_each": 64.0
+        },
+        {
+          "items": [
+            "minecraft:redstone_lamp"
+          ],
+          "count": 1,
+          "emc_each": 1792.0
+        },
+        {
+          "items": [
+            "minecraft:netherite_ingot"
+          ],
+          "count": 1,
+          "emc_each": 14336.0
+        }
+      ],
+      "missing_inputs": [
+        [
+          "allthetweaks:atm_star_shard"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "268453696",
+      "recipe_cost": 268453696.0,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "mekanism:meka_tool",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "mekanism:ultimate_control_circuit"
+          ],
+          "count": 2,
+          "emc_each": 17088.0
+        },
+        {
+          "items": [
+            "mekanism:configurator"
+          ],
+          "count": 1,
+          "emc_each": 1408.0
+        },
+        {
+          "items": [
+            "allthemodium:unobtainium_plate"
+          ],
+          "count": 2,
+          "emc_each": 50331648.0
+        },
+        {
+          "items": [
+            "mekanism:atomic_disassembler"
+          ],
+          "count": 1,
+          "emc_each": 32448.0
+        },
+        {
+          "items": [
+            "mekanism:ultimate_induction_cell"
+          ],
+          "count": 1,
+          "emc_each": 4390996.0
+        },
+        {
+          "items": [
+            "mekanism:pellet_polonium"
+          ],
+          "count": 2,
+          "emc_each": 64.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "105122452",
+      "recipe_cost": 105122452.0,
+      "current_emc": 112132,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 0.0010666798373386497
+    },
+    {
+      "output": "mekanism:creative_chemical_tank",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "mekanism:ultimate_chemical_tank"
+          ],
+          "count": 4,
+          "emc_each": 109312.0
+        },
+        {
+          "items": [
+            "allthemodium:unobtainium_ingot"
+          ],
+          "count": 4,
+          "emc_each": 16777216.0
+        }
+      ],
+      "missing_inputs": [
+        [
+          "allthetweaks:atm_star_block"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "67546112",
+      "recipe_cost": 67546112.0,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "mekanism:creative_fluid_tank",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "mekanism:ultimate_fluid_tank"
+          ],
+          "count": 4,
+          "emc_each": 105216.0
+        },
+        {
+          "items": [
+            "allthemodium:unobtainium_ingot"
+          ],
+          "count": 4,
+          "emc_each": 16777216.0
+        }
+      ],
+      "missing_inputs": [
+        [
+          "allthetweaks:atm_star_block"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "67529728",
+      "recipe_cost": 67529728.0,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "justdirethings:upgrade_orexray",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "allthemodium:unobtainium_ingot"
+          ],
+          "count": 4,
+          "emc_each": 16777216.0
+        },
+        {
+          "items": [
+            "minecraft:calibrated_sculk_sensor"
+          ],
+          "count": 2,
+          "emc_each": 160.0
+        },
+        {
+          "items": [
+            "minecraft:sculk_shrieker"
+          ],
+          "count": 2,
+          "emc_each": 64.0
+        },
+        {
+          "items": [
+            "justdirethings:upgrade_blank"
+          ],
+          "count": 1,
+          "emc_each": 2048.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "67111360",
+      "recipe_cost": 67111360.0,
+      "current_emc": 3767,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 5.6130586535573114e-05
+    },
+    {
+      "output": "kubejs:silent_unobtainium_plate",
+      "output_count": 1,
+      "recipe_type": "kubejs:smithing",
+      "inputs": [
+        {
+          "items": [
+            "allthemodium:unobtainium_plate"
+          ],
+          "count": 1,
+          "emc_each": 50331648.0
+        },
+        {
+          "items": [
+            "allthemodium:vibranium_ingot"
+          ],
+          "count": 1,
+          "emc_each": 4194304.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "54525952",
+      "recipe_cost": 54525952.0,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "quarryplus:quarry",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "allthemodium:allthemodium_ingot"
+          ],
+          "count": 4,
+          "emc_each": 1048576.0
+        },
+        {
+          "items": [
+            "justdirethings:eclipsealloy_pickaxe"
+          ],
+          "count": 1,
+          "emc_each": 98312.0
+        },
+        {
+          "items": [
+            "allthemodium:unobtainium_pickaxe"
+          ],
+          "count": 1,
+          "emc_each": 22066705.0
+        },
+        {
+          "items": [
+            "productivelib:upgrade_productivity_4"
+          ],
+          "count": 2,
+          "emc_each": 9791040.0
+        },
+        {
+          "items": [
+            "justdirethings:blockbreakert2"
+          ],
+          "count": 1,
+          "emc_each": 45878.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "45987279",
+      "recipe_cost": 45987279.0,
+      "current_emc": 55283,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 0.001202136790915592
+    },
+    {
+      "output": "modularbees:modular_beehive_core",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "productivelib:upgrade_productivity_4"
+          ],
+          "count": 1,
+          "emc_each": 9791040.0
+        },
+        {
+          "items": [
+            "allthemodium:unobtainium_ingot"
+          ],
+          "count": 2,
+          "emc_each": 16777216.0
+        },
+        {
+          "items": [
+            "minecraft:iron_bars"
+          ],
+          "count": 1,
+          "emc_each": 96.0
+        },
+        {
+          "items": [
+            "productivelib:upgrade_adult"
+          ],
+          "count": 1,
+          "emc_each": 64.0
+        }
+      ],
+      "missing_inputs": [
+        [
+          "modularbees:scented_plank"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "43345632",
+      "recipe_cost": 43345632.0,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "megacells:radioactive_cell_component",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "megacells:accumulation_processor"
+          ],
+          "count": 4,
+          "emc_each": 577.0
+        },
+        {
+          "items": [
+            "mekanism:radioactive_waste_barrel"
+          ],
+          "count": 2,
+          "emc_each": 3584.0
+        },
+        {
+          "items": [
+            "megacells:cell_component_64m"
+          ],
+          "count": 1,
+          "emc_each": 26463110.0
+        },
+        {
+          "items": [
+            "mekanism:pellet_antimatter"
+          ],
+          "count": 2,
+          "emc_each": 8388608.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "43249802",
+      "recipe_cost": 43249802.0,
+      "current_emc": 334699,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 0.007738740630535141
+    },
+    {
+      "output": "mekanism:mekasuit_bodyarmor",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "mekanism:pellet_antimatter"
+          ],
+          "count": 1,
+          "emc_each": 8388608.0
+        },
+        {
+          "items": [
+            "mekanism:hdpe_sheet"
+          ],
+          "count": 2,
+          "emc_each": 96.0
+        },
+        {
+          "items": [
+            "mekanism:ultimate_control_circuit"
+          ],
+          "count": 2,
+          "emc_each": 17088.0
+        },
+        {
+          "items": [
+            "mekanism:pellet_polonium"
+          ],
+          "count": 2,
+          "emc_each": 64.0
+        },
+        {
+          "items": [
+            "mekanism:ultimate_induction_cell"
+          ],
+          "count": 1,
+          "emc_each": 4390996.0
+        },
+        {
+          "items": [
+            "allthemodium:unobtainium_chestplate"
+          ],
+          "count": 1,
+          "emc_each": 22084549.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "34898649",
+      "recipe_cost": 34898649.0,
+      "current_emc": 125641,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 0.0036001680179653947
+    },
+    {
+      "output": "mekanism:mekasuit_pants",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "mekanism:pellet_antimatter"
+          ],
+          "count": 1,
+          "emc_each": 8388608.0
+        },
+        {
+          "items": [
+            "mekanism:hdpe_sheet"
+          ],
+          "count": 2,
+          "emc_each": 96.0
+        },
+        {
+          "items": [
+            "mekanism:ultimate_control_circuit"
+          ],
+          "count": 2,
+          "emc_each": 17088.0
+        },
+        {
+          "items": [
+            "mekanism:pellet_polonium"
+          ],
+          "count": 2,
+          "emc_each": 64.0
+        },
+        {
+          "items": [
+            "mekanism:ultimate_induction_cell"
+          ],
+          "count": 1,
+          "emc_each": 4390996.0
+        },
+        {
+          "items": [
+            "allthemodium:unobtainium_leggings"
+          ],
+          "count": 1,
+          "emc_each": 22084541.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "34898641",
+      "recipe_cost": 34898641.0,
+      "current_emc": 125633,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 0.0035999396079635306
+    },
+    {
+      "output": "mekanism:mekasuit_helmet",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "mekanism:pellet_antimatter"
+          ],
+          "count": 1,
+          "emc_each": 8388608.0
+        },
+        {
+          "items": [
+            "mekanism:hdpe_sheet"
+          ],
+          "count": 2,
+          "emc_each": 96.0
+        },
+        {
+          "items": [
+            "mekanism:ultimate_control_circuit"
+          ],
+          "count": 2,
+          "emc_each": 17088.0
+        },
+        {
+          "items": [
+            "mekanism:pellet_polonium"
+          ],
+          "count": 2,
+          "emc_each": 64.0
+        },
+        {
+          "items": [
+            "mekanism:ultimate_induction_cell"
+          ],
+          "count": 1,
+          "emc_each": 4390996.0
+        },
+        {
+          "items": [
+            "allthemodium:unobtainium_helmet"
+          ],
+          "count": 1,
+          "emc_each": 22083081.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "34897181",
+      "recipe_cost": 34897181.0,
+      "current_emc": 124173,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 0.0035582530290913755
+    },
+    {
+      "output": "mekanism:mekasuit_boots",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "mekanism:pellet_antimatter"
+          ],
+          "count": 1,
+          "emc_each": 8388608.0
+        },
+        {
+          "items": [
+            "mekanism:hdpe_sheet"
+          ],
+          "count": 2,
+          "emc_each": 96.0
+        },
+        {
+          "items": [
+            "mekanism:ultimate_control_circuit"
+          ],
+          "count": 2,
+          "emc_each": 17088.0
+        },
+        {
+          "items": [
+            "mekanism:pellet_polonium"
+          ],
+          "count": 2,
+          "emc_each": 64.0
+        },
+        {
+          "items": [
+            "mekanism:ultimate_induction_cell"
+          ],
+          "count": 1,
+          "emc_each": 4390996.0
+        },
+        {
+          "items": [
+            "allthemodium:unobtainium_boots"
+          ],
+          "count": 1,
+          "emc_each": 22074889.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "34888989",
+      "recipe_cost": 34888989.0,
+      "current_emc": 115981,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 0.0033242866395469355
+    },
+    {
+      "output": "entangled:item",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "allthemodium:unobtainium_ingot"
+          ],
+          "count": 2,
+          "emc_each": 16777216.0
+        },
+        {
+          "items": [
+            "endermanoverhaul:ancient_pearl",
+            "endermanoverhaul:bubble_pearl",
+            "endermanoverhaul:corrupted_pearl",
+            "endermanoverhaul:crimson_pearl"
+          ],
+          "count": 2,
+          "emc_each": 256.0
+        },
+        {
+          "items": [
+            "mekanism:quantum_entangloporter"
+          ],
+          "count": 1,
+          "emc_each": 147072.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "33702016",
+      "recipe_cost": 33702016.0,
+      "current_emc": 8832,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 0.00026206147430468256
+    },
+    {
+      "output": "kubejs:magical_soil",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "mysticalagradditions:insanium_block"
+          ],
+          "count": 1,
+          "emc_each": 27302400.0
+        },
+        {
+          "items": [
+            "mysticalagriculture:awakened_supremium_growth_accelerator"
+          ],
+          "count": 1,
+          "emc_each": 89.0
+        },
+        {
+          "items": [
+            "mysticalagradditions:insanium_farmland"
+          ],
+          "count": 1,
+          "emc_each": 3033664.0
+        },
+        {
+          "items": [
+            "minecraft:dragon_head"
+          ],
+          "count": 1,
+          "emc_each": 64.0
+        },
+        {
+          "items": [
+            "allthemodium:piglich_heart"
+          ],
+          "count": 1,
+          "emc_each": 2097152.0
+        },
+        {
+          "items": [
+            "productivetrees:moonlight_magic_crepe_myrtle_sapling"
+          ],
+          "count": 1,
+          "emc_each": 32.0
+        }
+      ],
+      "missing_inputs": [
+        [
+          "allthecompressed:nether_star_block_2x"
+        ],
+        [
+          "allthecompressed:dirt_3x"
+        ],
+        [
+          "allthecompressed:ender_pearl_block_3x"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "32433401",
+      "recipe_cost": 32433401.0,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "kubejs:allthemodium_solar_sail_package",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "allthemodium:allthemodium_plate"
+          ],
+          "count": 8,
+          "emc_each": 3145728.0
+        },
+        {
+          "items": [
+            "dysoncubeproject:solar_sail_package"
+          ],
+          "count": 1,
+          "emc_each": 19256.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "25185080",
+      "recipe_cost": 25185080.0,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "productivelib:upgrade_productivity_4",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "productivelib:upgrade_productivity_3"
+          ],
+          "count": 4,
+          "emc_each": 2414976.0
+        },
+        {
+          "items": [
+            "productivelib:upgrade_block"
+          ],
+          "count": 1,
+          "emc_each": 623186.0
+        },
+        {
+          "items": [
+            "minecraft:heart_of_the_sea"
+          ],
+          "count": 2,
+          "emc_each": 32768.0
+        },
+        {
+          "items": [
+            "allthemodium:unobtainium_nugget"
+          ],
+          "count": 2,
+          "emc_each": 1864135.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "14076896",
+      "recipe_cost": 14076896.0,
+      "current_emc": 9791040,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 0.6955396985244474
+    },
+    {
+      "output": "kubejs:silent_vibranium_plate",
+      "output_count": 1,
+      "recipe_type": "kubejs:smithing",
+      "inputs": [
+        {
+          "items": [
+            "allthemodium:vibranium_plate"
+          ],
+          "count": 1,
+          "emc_each": 12582912.0
+        },
+        {
+          "items": [
+            "allthemodium:allthemodium_ingot"
+          ],
+          "count": 1,
+          "emc_each": 1048576.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "13631488",
+      "recipe_cost": 13631488.0,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "kubejs:allthemodium_beam_package",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "allthemodium:allthemodium_plate"
+          ],
+          "count": 4,
+          "emc_each": 3145728.0
+        },
+        {
+          "items": [
+            "dysoncubeproject:beam_package"
+          ],
+          "count": 1,
+          "emc_each": 15424.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "12598336",
+      "recipe_cost": 12598336.0,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "modularbees:modular_beehive_overclocker",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "minecraft:iron_bars"
+          ],
+          "count": 4,
+          "emc_each": 96.0
+        },
+        {
+          "items": [
+            "productivelib:upgrade_productivity_4"
+          ],
+          "count": 1,
+          "emc_each": 9791040.0
+        }
+      ],
+      "missing_inputs": [
+        [
+          "modularbees:modular_beehive_part"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "9791424",
+      "recipe_cost": 9791424.0,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "mekanism:digital_miner",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "allthemodium:vibranium_ingot"
+          ],
+          "count": 2,
+          "emc_each": 4194304.0
+        },
+        {
+          "items": [
+            "mekanism:basic_control_circuit"
+          ],
+          "count": 1,
+          "emc_each": 576.0
+        },
+        {
+          "items": [
+            "mekanism:robit"
+          ],
+          "count": 1,
+          "emc_each": 49654.0
+        },
+        {
+          "items": [
+            "mekanism:logistical_sorter"
+          ],
+          "count": 2,
+          "emc_each": 2462.0
+        },
+        {
+          "items": [
+            "mekanism:teleportation_core"
+          ],
+          "count": 2,
+          "emc_each": 46592.0
+        },
+        {
+          "items": [
+            "mekanism:steel_casing"
+          ],
+          "count": 1,
+          "emc_each": 2052.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "8538998",
+      "recipe_cost": 8538998.0,
+      "current_emc": 183671,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 0.021509666590857617
+    },
+    {
+      "output": "modularbees:modular_beehive_part",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "allthemodium:vibranium_ingot"
+          ],
+          "count": 1,
+          "emc_each": 4194304.0
+        }
+      ],
+      "missing_inputs": [
+        [
+          "modularbees:scented_plank"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "4194304",
+      "recipe_cost": 4194304.0,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "kubejs:silent_allthemodium_plate",
+      "output_count": 1,
+      "recipe_type": "kubejs:smithing",
+      "inputs": [
+        {
+          "items": [
+            "allthemodium:allthemodium_plate"
+          ],
+          "count": 1,
+          "emc_each": 3145728.0
+        },
+        {
+          "items": [
+            "minecraft:netherite_ingot"
+          ],
+          "count": 1,
+          "emc_each": 14336.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "3160064",
+      "recipe_cost": 3160064.0,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "allthemodium:piglich_heart",
+      "output_count": 9,
+      "recipe_type": "kubejs:shapeless",
+      "inputs": [
+        {
+          "items": [
+            "allthemodium:piglich_heart_block"
+          ],
+          "count": 1,
+          "emc_each": 18874368.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "2097152",
+      "recipe_cost": 2097152.0,
+      "current_emc": 2097152,
+      "current_origin": "manual_base",
+      "override_over_cost": 1.0
+    },
+    {
+      "output": "mekanism:atomic_disassembler",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "mekanism:alloy_reinforced"
+          ],
+          "count": 4,
+          "emc_each": 8384.0
+        },
+        {
+          "items": [
+            "mekanism:basic_induction_cell"
+          ],
+          "count": 1,
+          "emc_each": 43780.0
+        },
+        {
+          "items": [
+            "mekanism:ultimate_control_circuit"
+          ],
+          "count": 1,
+          "emc_each": 17088.0
+        },
+        {
+          "items": [
+            "allthemodium:allthemodium_pickaxe"
+          ],
+          "count": 1,
+          "emc_each": 1095057.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "1189461",
+      "recipe_cost": 1189461.0,
+      "current_emc": 32448,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 0.02727958293714548
+    },
+    {
+      "output": "mekanism:atomic_disassembler",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "mekanism:alloy_infused"
+          ],
+          "count": 4,
+          "emc_each": 192.0
+        },
+        {
+          "items": [
+            "mekanism:energy_tablet"
+          ],
+          "count": 1,
+          "emc_each": 6784.0
+        },
+        {
+          "items": [
+            "mekanism:alloy_atomic"
+          ],
+          "count": 1,
+          "emc_each": 16640.0
+        },
+        {
+          "items": [
+            "allthemodium:allthemodium_pickaxe"
+          ],
+          "count": 1,
+          "emc_each": 1095057.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "1119249",
+      "recipe_cost": 1119249.0,
+      "current_emc": 32448,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 0.02899086798379985
+    },
+    {
+      "output": "allthetweaks:mini_exit",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "minecraft:dragon_egg"
+          ],
+          "count": 4,
+          "emc_each": 262144.0
+        },
+        {
+          "items": [
+            "apothic_enchanting:infused_breath"
+          ],
+          "count": 1,
+          "emc_each": 21.0
+        },
+        {
+          "items": [
+            "apothic_enchanting:soul_touched_sculkshelf"
+          ],
+          "count": 1,
+          "emc_each": 8424.0
+        },
+        {
+          "items": [
+            "minecraft:end_crystal"
+          ],
+          "count": 3,
+          "emc_each": 4420.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "1070281",
+      "recipe_cost": 1070281.0,
+      "current_emc": 64,
+      "current_origin": "heuristic_fallback",
+      "override_over_cost": 5.97973803141418e-05
+    },
+    {
+      "output": "allthetweaks:mini_nether",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "minecraft:obsidian"
+          ],
+          "count": 4,
+          "emc_each": 64.0
+        },
+        {
+          "items": [
+            "minecraft:nether_star"
+          ],
+          "count": 2,
+          "emc_each": 139264.0
+        },
+        {
+          "items": [
+            "apothic_enchanting:sightshelf_t2"
+          ],
+          "count": 1,
+          "emc_each": 695990.0
+        },
+        {
+          "items": [
+            "minecraft:wither_skeleton_skull"
+          ],
+          "count": 1,
+          "emc_each": 256.0
+        },
+        {
+          "items": [
+            "minecraft:warped_nylium"
+          ],
+          "count": 1,
+          "emc_each": 64.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "975094",
+      "recipe_cost": 975094.0,
+      "current_emc": 64,
+      "current_origin": "heuristic_fallback",
+      "override_over_cost": 6.563469778298297e-05
+    },
+    {
+      "output": "allthetweaks:pulsating_black_hole",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "oritech:nuke"
+          ],
+          "count": 1,
+          "emc_each": 104803.0
+        },
+        {
+          "items": [
+            "ae2:quantum_ring"
+          ],
+          "count": 1,
+          "emc_each": 17478.0
+        },
+        {
+          "items": [
+            "pneumaticcraft:micromissiles"
+          ],
+          "count": 1,
+          "emc_each": 1310.0
+        },
+        {
+          "items": [
+            "justdirethings:paradoxmachine"
+          ],
+          "count": 1,
+          "emc_each": 131904.0
+        },
+        {
+          "items": [
+            "pocketstorage:psu_4"
+          ],
+          "count": 1,
+          "emc_each": 321643.0
+        },
+        {
+          "items": [
+            "occultism:stable_wormhole"
+          ],
+          "count": 1,
+          "emc_each": 64.0
+        },
+        {
+          "items": [
+            "rootsclassic:crystal_staff"
+          ],
+          "count": 1,
+          "emc_each": 64.0
+        },
+        {
+          "items": [
+            "industrialforegoing:mycelial_explosive"
+          ],
+          "count": 1,
+          "emc_each": 2607.0
+        },
+        {
+          "items": [
+            "evilcraft:lightning_bomb"
+          ],
+          "count": 1,
+          "emc_each": 747.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "580620",
+      "recipe_cost": 580620.0,
+      "current_emc": 100000000000000000,
+      "current_origin": "manual_base",
+      "override_over_cost": 172229685508.59427
+    },
+    {
+      "output": "rftoolsbuilder:builder",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "allthemodium:allthemodium_nugget"
+          ],
+          "count": 4,
+          "emc_each": 116508.0
+        },
+        {
+          "items": [
+            "endermanoverhaul:ancient_pearl",
+            "endermanoverhaul:bubble_pearl",
+            "endermanoverhaul:corrupted_pearl",
+            "endermanoverhaul:crimson_pearl"
+          ],
+          "count": 1,
+          "emc_each": 256.0
+        },
+        {
+          "items": [
+            "minecraft:redstone_block"
+          ],
+          "count": 3,
+          "emc_each": 576.0
+        },
+        {
+          "items": [
+            "rftoolsbase:machine_frame"
+          ],
+          "count": 1,
+          "emc_each": 1034.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "469050",
+      "recipe_cost": 469050.0,
+      "current_emc": 1738,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 0.003705361901716235
+    },
+    {
+      "output": "modularbees:modular_beehive_alveary",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "productivebees:expansion_box_acacia",
+            "productivebees:expansion_box_acacia_canvas",
+            "productivebees:expansion_box_aspen_canvas",
+            "productivebees:expansion_box_atmospheric_aspen"
+          ],
+          "count": 4,
+          "emc_each": 64.0
+        },
+        {
+          "items": [
+            "allthemodium:vibranium_nugget"
+          ],
+          "count": 1,
+          "emc_each": 466033.0
+        }
+      ],
+      "missing_inputs": [
+        [
+          "modularbees:modular_beehive_part"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "466289",
+      "recipe_cost": 466289.0,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "mininggadgets:upgrade_empty",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "minecraft:lapis_block"
+          ],
+          "count": 2,
+          "emc_each": 7776.0
+        },
+        {
+          "items": [
+            "minecraft:redstone_block"
+          ],
+          "count": 2,
+          "emc_each": 576.0
+        },
+        {
+          "items": [
+            "minecraft:diamond"
+          ],
+          "count": 2,
+          "emc_each": 8192.0
+        },
+        {
+          "items": [
+            "allthemodium:allthemodium_nugget"
+          ],
+          "count": 2,
+          "emc_each": 116508.0
+        },
+        {
+          "items": [
+            "aether:quicksoil_glass_pane",
+            "connectedglass:borderless_glass_black_pane",
+            "connectedglass:borderless_glass_blue_pane",
+            "connectedglass:borderless_glass_brown_pane"
+          ],
+          "count": 1,
+          "emc_each": 1.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "266105",
+      "recipe_cost": 266105.0,
+      "current_emc": 18369,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 0.06902914263166796
+    },
+    {
+      "output": "allthearcanistgear:creative_spell_book",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "ars_nouveau:archmage_spell_book"
+          ],
+          "count": 1,
+          "emc_each": 209054.0
+        },
+        {
+          "items": [
+            "ars_nouveau:source_gem_block"
+          ],
+          "count": 3,
+          "emc_each": 128.0
+        },
+        {
+          "items": [
+            "minecraft:ender_eye"
+          ],
+          "count": 3,
+          "emc_each": 317.0
+        },
+        {
+          "items": [
+            "occultism:soul_gem"
+          ],
+          "count": 1,
+          "emc_each": 256.0
+        }
+      ],
+      "missing_inputs": [
+        [
+          "allthetweaks:atm_star"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "210645",
+      "recipe_cost": 210645.0,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "buildinggadgets2:gadget_building",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "minecraft:iron_ingot"
+          ],
+          "count": 4,
+          "emc_each": 256.0
+        },
+        {
+          "items": [
+            "minecraft:redstone"
+          ],
+          "count": 1,
+          "emc_each": 64.0
+        },
+        {
+          "items": [
+            "minecraft:lapis_lazuli"
+          ],
+          "count": 1,
+          "emc_each": 864.0
+        },
+        {
+          "items": [
+            "alltheores:diamond_gear"
+          ],
+          "count": 2,
+          "emc_each": 32776.0
+        },
+        {
+          "items": [
+            "allthemodium:allthemodium_nugget"
+          ],
+          "count": 1,
+          "emc_each": 116508.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "184012",
+      "recipe_cost": 184012.0,
+      "current_emc": 18400,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 0.09999347868617264
+    },
+    {
+      "output": "advanced_ae:evasion_card",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "advanced_ae:quantum_alloy_plate"
+          ],
+          "count": 4,
+          "emc_each": 512.0
+        },
+        {
+          "items": [
+            "advanced_ae:quantum_upgrade_base"
+          ],
+          "count": 1,
+          "emc_each": 768.0
+        },
+        {
+          "items": [
+            "advanced_ae:walk_speed_card"
+          ],
+          "count": 1,
+          "emc_each": 19009.0
+        },
+        {
+          "items": [
+            "advanced_ae:sprint_speed_card"
+          ],
+          "count": 1,
+          "emc_each": 37250.0
+        },
+        {
+          "items": [
+            "advanced_ae:attack_speed_card"
+          ],
+          "count": 1,
+          "emc_each": 55365.0
+        },
+        {
+          "items": [
+            "advanced_ae:swim_speed_card"
+          ],
+          "count": 1,
+          "emc_each": 66408.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "180848",
+      "recipe_cost": 180848.0,
+      "current_emc": 20961,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 0.11590396354950014
+    },
+    {
+      "output": "modularbees:scented_plank",
+      "output_count": 4,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "allthemodium:allthemodium_nugget"
+          ],
+          "count": 4,
+          "emc_each": 116508.0
+        },
+        {
+          "items": [
+            "minecraft:honey_block"
+          ],
+          "count": 2,
+          "emc_each": 64.0
+        },
+        {
+          "items": [
+            "ad_astra:aeronos_planks",
+            "ad_astra:glacian_planks",
+            "ad_astra:strophar_planks",
+            "allthemodium:ancient_planks"
+          ],
+          "count": 3,
+          "emc_each": 8.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "116546",
+      "recipe_cost": 116546.0,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "mekanism:meka_tool",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "mekanism:ultimate_control_circuit"
+          ],
+          "count": 2,
+          "emc_each": 17088.0
+        },
+        {
+          "items": [
+            "mekanism:configurator"
+          ],
+          "count": 1,
+          "emc_each": 1408.0
+        },
+        {
+          "items": [
+            "mekanism:atomic_disassembler"
+          ],
+          "count": 1,
+          "emc_each": 32448.0
+        },
+        {
+          "items": [
+            "mekanism:basic_induction_cell"
+          ],
+          "count": 1,
+          "emc_each": 43780.0
+        },
+        {
+          "items": [
+            "mekanism:pellet_polonium"
+          ],
+          "count": 2,
+          "emc_each": 64.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "111940",
+      "recipe_cost": 111940.0,
+      "current_emc": 112132,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 1.0017152045738789
+    },
+    {
+      "output": "mekanism:solar_neutron_activator",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "mekanism:alloy_atomic"
+          ],
+          "count": 2,
+          "emc_each": 16640.0
+        },
+        {
+          "items": [
+            "mekanismgenerators:advanced_solar_generator"
+          ],
+          "count": 1,
+          "emc_each": 57279.0
+        },
+        {
+          "items": [
+            "mekanism:elite_control_circuit"
+          ],
+          "count": 2,
+          "emc_each": 8832.0
+        },
+        {
+          "items": [
+            "mekanism:steel_casing"
+          ],
+          "count": 1,
+          "emc_each": 2052.0
+        },
+        {
+          "items": [
+            "alltheores:bronze_ingot",
+            "mekanism:ingot_bronze",
+            "modern_industrialization:bronze_ingot",
+            "railcraft:bronze_ingot"
+          ],
+          "count": 3,
+          "emc_each": 160.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "110755",
+      "recipe_cost": 110755.0,
+      "current_emc": 37060,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 0.33461243284727554
+    },
+    {
+      "output": "explorerscompass:explorerscompass",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "alltheores:enderium_gear"
+          ],
+          "count": 4,
+          "emc_each": 11784.0
+        },
+        {
+          "items": [
+            "minecraft:netherite_ingot"
+          ],
+          "count": 4,
+          "emc_each": 14336.0
+        },
+        {
+          "items": [
+            "minecraft:recovery_compass"
+          ],
+          "count": 1,
+          "emc_each": 2624.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "107104",
+      "recipe_cost": 107104.0,
+      "current_emc": 1140,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 0.010643860173289513
+    },
+    {
+      "output": "mekanismgenerators:gas_burning_generator",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "mekanism:ingot_refined_obsidian"
+          ],
+          "count": 4,
+          "emc_each": 8256.0
+        },
+        {
+          "items": [
+            "mekanism:alloy_atomic"
+          ],
+          "count": 2,
+          "emc_each": 16640.0
+        },
+        {
+          "items": [
+            "mekanismgenerators:bio_generator"
+          ],
+          "count": 2,
+          "emc_each": 1602.0
+        },
+        {
+          "items": [
+            "mekanism:electrolytic_core"
+          ],
+          "count": 1,
+          "emc_each": 4288.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "73796",
+      "recipe_cost": 73796.0,
+      "current_emc": 10824,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 0.14667461651037997
+    },
+    {
+      "output": "aeinfinitybooster:infinity_card",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "alltheores:lumium_gear"
+          ],
+          "count": 1,
+          "emc_each": 2056.0
+        },
+        {
+          "items": [
+            "ae2:wireless_booster"
+          ],
+          "count": 3,
+          "emc_each": 670.0
+        },
+        {
+          "items": [
+            "alltheores:enderium_gear"
+          ],
+          "count": 2,
+          "emc_each": 11784.0
+        },
+        {
+          "items": [
+            "minecraft:netherite_ingot"
+          ],
+          "count": 3,
+          "emc_each": 14336.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "70642",
+      "recipe_cost": 70642.0,
+      "current_emc": 184918,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 2.6176778686900146
+    },
+    {
+      "output": "advanced_ae:magnet_card",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "advanced_ae:quantum_upgrade_base"
+          ],
+          "count": 1,
+          "emc_each": 768.0
+        },
+        {
+          "items": [
+            "minecraft:iron_block"
+          ],
+          "count": 5,
+          "emc_each": 2304.0
+        },
+        {
+          "items": [
+            "minecraft:redstone_block"
+          ],
+          "count": 1,
+          "emc_each": 576.0
+        },
+        {
+          "items": [
+            "ae2wtlib:magnet_card"
+          ],
+          "count": 1,
+          "emc_each": 31345.0
+        },
+        {
+          "items": [
+            "minecraft:lapis_block"
+          ],
+          "count": 1,
+          "emc_each": 7776.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "51985",
+      "recipe_cost": 51985.0,
+      "current_emc": 1472,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 0.028315860344330094
+    },
+    {
+      "output": "modularbees:electrode_copper",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "minecraft:netherite_ingot"
+          ],
+          "count": 2,
+          "emc_each": 14336.0
+        },
+        {
+          "items": [
+            "minecraft:gold_block"
+          ],
+          "count": 1,
+          "emc_each": 18432.0
+        },
+        {
+          "items": [
+            "minecraft:copper_block"
+          ],
+          "count": 1,
+          "emc_each": 1152.0
+        },
+        {
+          "items": [
+            "minecraft:copper_ingot"
+          ],
+          "count": 1,
+          "emc_each": 128.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "48384",
+      "recipe_cost": 48384.0,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "modularbees:electrode_gold",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "minecraft:gold_block"
+          ],
+          "count": 1,
+          "emc_each": 18432.0
+        },
+        {
+          "items": [
+            "minecraft:gold_block"
+          ],
+          "count": 1,
+          "emc_each": 18432.0
+        },
+        {
+          "items": [
+            "minecraft:gold_ingot"
+          ],
+          "count": 1,
+          "emc_each": 2048.0
+        }
+      ],
+      "missing_inputs": [
+        [
+          "modularbees:electrode_iron"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "38912",
+      "recipe_cost": 38912.0,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "create:creative_blaze_cake",
+      "output_count": 1,
+      "recipe_type": "create:mechanical_crafting",
+      "inputs": [
+        {
+          "items": [
+            "pamhc2foodextended:lemondrizzlecakeitem"
+          ],
+          "count": 1,
+          "emc_each": 790.0
+        },
+        {
+          "items": [
+            "pamhc2foodcore:pumpkincheesecakeitem"
+          ],
+          "count": 1,
+          "emc_each": 790.0
+        },
+        {
+          "items": [
+            "pamhc2foodextended:fruitcakeitem"
+          ],
+          "count": 1,
+          "emc_each": 1790.0
+        },
+        {
+          "items": [
+            "pamhc2foodextended:chocolatesprinklecakeitem"
+          ],
+          "count": 1,
+          "emc_each": 959.0
+        },
+        {
+          "items": [
+            "pamhc2foodextended:holidaycakeitem"
+          ],
+          "count": 1,
+          "emc_each": 654.0
+        },
+        {
+          "items": [
+            "pamhc2foodextended:mochicakeitem"
+          ],
+          "count": 1,
+          "emc_each": 1438.0
+        },
+        {
+          "items": [
+            "pamhc2foodcore:chocolatecakeitem"
+          ],
+          "count": 1,
+          "emc_each": 790.0
+        },
+        {
+          "items": [
+            "pamhc2foodcore:carrotcakeitem"
+          ],
+          "count": 1,
+          "emc_each": 658.0
+        },
+        {
+          "items": [
+            "pamhc2foodcore:cheesecakeitem"
+          ],
+          "count": 1,
+          "emc_each": 758.0
+        },
+        {
+          "items": [
+            "pamhc2foodextended:pineappleupsidedowncakeitem"
+          ],
+          "count": 1,
+          "emc_each": 926.0
+        },
+        {
+          "items": [
+            "create_enchantment_industry:experience_cake"
+          ],
+          "count": 1,
+          "emc_each": 64.0
+        },
+        {
+          "items": [
+            "createaddition:honey_cake"
+          ],
+          "count": 1,
+          "emc_each": 24061.0
+        },
+        {
+          "items": [
+            "createaddition:chocolate_cake"
+          ],
+          "count": 1,
+          "emc_each": 64.0
+        },
+        {
+          "items": [
+            "create:blaze_cake"
+          ],
+          "count": 1,
+          "emc_each": 64.0
+        }
+      ],
+      "missing_inputs": [
+        [
+          "allthetweaks:atm_star"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "33806",
+      "recipe_cost": 33806.0,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "justdirethings:celestigem_paxel",
+      "output_count": 1,
+      "recipe_type": "kubejs:smithing",
+      "inputs": [
+        {
+          "items": [
+            "justdirethings:celestigem_axe"
+          ],
+          "count": 1,
+          "emc_each": 24584.0
+        },
+        {
+          "items": [
+            "justdirethings:celestigem_shovel"
+          ],
+          "count": 1,
+          "emc_each": 8200.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "32784",
+      "recipe_cost": 32784.0,
+      "current_emc": 57368,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 1.7498779892630552
+    },
+    {
+      "output": "mekanism:electric_pump",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "aether:skyroot_bucket",
+            "minecraft:bucket"
+          ],
+          "count": 1,
+          "emc_each": 24.0
+        },
+        {
+          "items": [
+            "mekanism:advanced_control_circuit"
+          ],
+          "count": 2,
+          "emc_each": 640.0
+        },
+        {
+          "items": [
+            "mekanism:alloy_reinforced"
+          ],
+          "count": 2,
+          "emc_each": 8384.0
+        },
+        {
+          "items": [
+            "mekanism:steel_casing"
+          ],
+          "count": 1,
+          "emc_each": 2052.0
+        },
+        {
+          "items": [
+            "alltheores:osmium_ingot",
+            "mekanism:ingot_osmium"
+          ],
+          "count": 2,
+          "emc_each": 512.0
+        },
+        {
+          "items": [
+            "mekanism:energy_tablet"
+          ],
+          "count": 1,
+          "emc_each": 6784.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "27932",
+      "recipe_cost": 27932.0,
+      "current_emc": 4040,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 0.14463697551195762
+    },
+    {
+      "output": "modularbees:electrode_iron",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "minecraft:gold_block"
+          ],
+          "count": 1,
+          "emc_each": 18432.0
+        },
+        {
+          "items": [
+            "minecraft:iron_block"
+          ],
+          "count": 1,
+          "emc_each": 2304.0
+        },
+        {
+          "items": [
+            "minecraft:iron_ingot"
+          ],
+          "count": 1,
+          "emc_each": 256.0
+        }
+      ],
+      "missing_inputs": [
+        [
+          "modularbees:electrode_copper"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "20992",
+      "recipe_cost": 20992.0,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "kubejs:air_essence_block",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "ars_nouveau:air_essence"
+          ],
+          "count": 9,
+          "emc_each": 2048.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "18432",
+      "recipe_cost": 18432.0,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "kubejs:earth_essence_block",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "ars_nouveau:earth_essence"
+          ],
+          "count": 9,
+          "emc_each": 2048.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "18432",
+      "recipe_cost": 18432.0,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "kubejs:fire_essence_block",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "ars_nouveau:fire_essence"
+          ],
+          "count": 9,
+          "emc_each": 2048.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "18432",
+      "recipe_cost": 18432.0,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "kubejs:water_essence_block",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "ars_nouveau:water_essence"
+          ],
+          "count": 9,
+          "emc_each": 2048.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "18432",
+      "recipe_cost": 18432.0,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "allthetweaks:dimensional_seed",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "neovitae:teleposer"
+          ],
+          "count": 1,
+          "emc_each": 14653.0
+        },
+        {
+          "items": [
+            "allthetweaks:mini_exit"
+          ],
+          "count": 1,
+          "emc_each": 64.0
+        },
+        {
+          "items": [
+            "allthetweaks:mini_nether"
+          ],
+          "count": 1,
+          "emc_each": 64.0
+        },
+        {
+          "items": [
+            "allthetweaks:mini_end"
+          ],
+          "count": 1,
+          "emc_each": 64.0
+        }
+      ],
+      "missing_inputs": [
+        [
+          "allthecompressed:netherrack_6x"
+        ],
+        [
+          "allthecompressed:obsidian_5x"
+        ],
+        [
+          "allthecompressed:end_stone_5x"
+        ],
+        [
+          "allthecompressed:emerald_block_4x"
+        ],
+        [
+          "allthecompressed:diamond_block_4x"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "14845",
+      "recipe_cost": 14845.0,
+      "current_emc": 100000000000000000,
+      "current_origin": "manual_base",
+      "override_over_cost": 6736274840013.473
+    },
+    {
+      "output": "modular_machinery_reborn:casing_gearbox",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "enderio:dark_bimetal_gear"
+          ],
+          "count": 4,
+          "emc_each": 2343.0
+        },
+        {
+          "items": [
+            "alltheores:iron_gear"
+          ],
+          "count": 4,
+          "emc_each": 1032.0
+        }
+      ],
+      "missing_inputs": [
+        [
+          "modular_machinery_reborn:casing_plain"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "13500",
+      "recipe_cost": 13500.0,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "twilightforest:knightmetal_shield",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "minecraft:shield"
+          ],
+          "count": 1,
+          "emc_each": 112.0
+        },
+        {
+          "items": [
+            "twilightforest:knightmetal_ingot"
+          ],
+          "count": 6,
+          "emc_each": 2048.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "12400",
+      "recipe_cost": 12400.0,
+      "current_emc": 14352,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 1.1574193548387097
+    },
+    {
+      "output": "kubejs:universal_press",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "megacells:sky_steel_ingot"
+          ],
+          "count": 4,
+          "emc_each": 288.0
+        },
+        {
+          "items": [
+            "ae2:silicon_press"
+          ],
+          "count": 1,
+          "emc_each": 2304.0
+        },
+        {
+          "items": [
+            "ae2:calculation_processor_press"
+          ],
+          "count": 1,
+          "emc_each": 2304.0
+        },
+        {
+          "items": [
+            "minecraft:slime_ball"
+          ],
+          "count": 1,
+          "emc_each": 32.0
+        },
+        {
+          "items": [
+            "ae2:logic_processor_press"
+          ],
+          "count": 1,
+          "emc_each": 2304.0
+        },
+        {
+          "items": [
+            "ae2:engineering_processor_press"
+          ],
+          "count": 1,
+          "emc_each": 2304.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "10400",
+      "recipe_cost": 10400.0,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "pneumaticcraft:amadron_tablet",
+      "output_count": 1,
+      "recipe_type": "pneumaticcraft:crafting_shaped_pressurizable",
+      "inputs": [
+        {
+          "items": [
+            "pneumaticcraft:air_canister"
+          ],
+          "count": 1,
+          "emc_each": 1216.0
+        },
+        {
+          "items": [
+            "pneumaticcraft:gps_tool"
+          ],
+          "count": 1,
+          "emc_each": 8517.0
+        },
+        {
+          "items": [
+            "industrialforegoing:plastic",
+            "oritech:plastic_sheet"
+          ],
+          "count": 7,
+          "emc_each": 64.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "10181",
+      "recipe_cost": 10181.0,
+      "current_emc": 10181,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 1.0
+    },
+    {
+      "output": "modular_machinery_reborn:casing_circuitry",
+      "output_count": 4,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "mekanism:advanced_control_circuit"
+          ],
+          "count": 1,
+          "emc_each": 640.0
+        },
+        {
+          "items": [
+            "mekanism:basic_control_circuit"
+          ],
+          "count": 1,
+          "emc_each": 576.0
+        },
+        {
+          "items": [
+            "mekanism:elite_control_circuit"
+          ],
+          "count": 1,
+          "emc_each": 8832.0
+        },
+        {
+          "items": [
+            "mekanism:ultimate_control_circuit"
+          ],
+          "count": 1,
+          "emc_each": 17088.0
+        },
+        {
+          "items": [
+            "modern_industrialization:electronic_circuit"
+          ],
+          "count": 1,
+          "emc_each": 8766.0
+        }
+      ],
+      "missing_inputs": [
+        [
+          "modular_machinery_reborn:casing_plain"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "17951/2",
+      "recipe_cost": 8975.5,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "mekanismtools:steel_paxel",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "mekanismtools:steel_axe"
+          ],
+          "count": 1,
+          "emc_each": 1664.0
+        },
+        {
+          "items": [
+            "mekanismtools:steel_pickaxe"
+          ],
+          "count": 1,
+          "emc_each": 1664.0
+        },
+        {
+          "items": [
+            "mekanismtools:steel_shovel"
+          ],
+          "count": 1,
+          "emc_each": 896.0
+        },
+        {
+          "items": [
+            "aether:skyroot_stick",
+            "immersiveengineering:stick_treated",
+            "minecraft:stick",
+            "naturesaura:ancient_stick"
+          ],
+          "count": 2,
+          "emc_each": 4.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "4232",
+      "recipe_cost": 4232.0,
+      "current_emc": 4736,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 1.1190926275992439
+    },
+    {
+      "output": "enderio:enderman_head",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "mysticalagriculture:blank_skull"
+          ],
+          "count": 1,
+          "emc_each": 28.0
+        },
+        {
+          "items": [
+            "mysticalagriculture:enderman_essence"
+          ],
+          "count": 8,
+          "emc_each": 512.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "4124",
+      "recipe_cost": 4124.0,
+      "current_emc": 64,
+      "current_origin": "heuristic_fallback",
+      "override_over_cost": 0.015518913676042677
+    },
+    {
+      "output": "allthetweaks:mini_end",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "apothic_enchanting:endshelf"
+          ],
+          "count": 4,
+          "emc_each": 301.0
+        },
+        {
+          "items": [
+            "minecraft:ender_eye"
+          ],
+          "count": 4,
+          "emc_each": 317.0
+        },
+        {
+          "items": [
+            "apothic_enchanting:draconic_endshelf"
+          ],
+          "count": 1,
+          "emc_each": 1645.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "4117",
+      "recipe_cost": 4117.0,
+      "current_emc": 64,
+      "current_origin": "heuristic_fallback",
+      "override_over_cost": 0.01554529997571047
+    },
+    {
+      "output": "modular_machinery_reborn:casing_plain",
+      "output_count": 2,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "enderio:sentient_ender"
+          ],
+          "count": 1,
+          "emc_each": 7780.0
+        }
+      ],
+      "missing_inputs": [
+        [
+          "kubejs:modularium_plate"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "3890",
+      "recipe_cost": 3890.0,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "laserbridges:laser_source_block",
+      "output_count": 2,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "minecraft:iron_ingot"
+          ],
+          "count": 7,
+          "emc_each": 256.0
+        },
+        {
+          "items": [
+            "ae2:quartz_glass",
+            "ae2:quartz_vibrant_glass",
+            "aether:quicksoil_glass",
+            "connectedglass:borderless_glass"
+          ],
+          "count": 1,
+          "emc_each": 1.0
+        },
+        {
+          "items": [
+            "minecraft:end_crystal"
+          ],
+          "count": 1,
+          "emc_each": 4420.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "6213/2",
+      "recipe_cost": 3106.5,
+      "current_emc": 64,
+      "current_origin": "heuristic_fallback",
+      "override_over_cost": 0.020601963624657976
+    },
+    {
+      "output": "allthetweaks:patrick_star",
+      "output_count": 1,
+      "recipe_type": "create:mechanical_crafting",
+      "inputs": [
+        {
+          "items": [
+            "minecraft:magenta_concrete"
+          ],
+          "count": 13,
+          "emc_each": 64.0
+        },
+        {
+          "items": [
+            "minecraft:pink_concrete"
+          ],
+          "count": 11,
+          "emc_each": 64.0
+        },
+        {
+          "items": [
+            "minecraft:pink_concrete_powder"
+          ],
+          "count": 5,
+          "emc_each": 2.0
+        },
+        {
+          "items": [
+            "minecraft:green_concrete"
+          ],
+          "count": 8,
+          "emc_each": 64.0
+        },
+        {
+          "items": [
+            "minecraft:green_concrete_powder"
+          ],
+          "count": 8,
+          "emc_each": 2.0
+        },
+        {
+          "items": [
+            "minecraft:lime_concrete"
+          ],
+          "count": 2,
+          "emc_each": 64.0
+        },
+        {
+          "items": [
+            "minecraft:magenta_concrete_powder"
+          ],
+          "count": 8,
+          "emc_each": 2.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "2218",
+      "recipe_cost": 2218.0,
+      "current_emc": 10000000000000000,
+      "current_origin": "manual_base",
+      "override_over_cost": 4508566275924.256
+    },
+    {
+      "output": "modular_machinery_reborn:casing_firebox",
+      "output_count": 4,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "railcraft:refined_firestone"
+          ],
+          "count": 4,
+          "emc_each": 2049.0
+        },
+        {
+          "items": [
+            "pneumaticcraft:heat_pipe"
+          ],
+          "count": 1,
+          "emc_each": 616.0
+        }
+      ],
+      "missing_inputs": [
+        [
+          "modular_machinery_reborn:casing_vent"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "2203",
+      "recipe_cost": 2203.0,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "minecraft:shroomlight",
+      "output_count": 6,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "mysticalagriculture:nether_essence"
+          ],
+          "count": 5,
+          "emc_each": 2048.0
+        },
+        {
+          "items": [
+            "mysticalagriculture:glowstone_essence"
+          ],
+          "count": 4,
+          "emc_each": 576.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "6272/3",
+      "recipe_cost": 2090.6666666666665,
+      "current_emc": 4624,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 2.211734693877551
+    },
+    {
+      "output": "minecraft:lilac",
+      "output_count": 2,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "mysticalagriculture:nature_essence"
+          ],
+          "count": 5,
+          "emc_each": 571.0
+        },
+        {
+          "items": [
+            "mysticalagriculture:dye_essence"
+          ],
+          "count": 3,
+          "emc_each": 387.0
+        },
+        {
+          "items": [
+            "minecraft:magenta_dye"
+          ],
+          "count": 1,
+          "emc_each": 1.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "4017/2",
+      "recipe_cost": 2008.5,
+      "current_emc": 32,
+      "current_origin": "manual_base",
+      "override_over_cost": 0.01593228777694797
+    },
+    {
+      "output": "minecraft:peony",
+      "output_count": 2,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "mysticalagriculture:nature_essence"
+          ],
+          "count": 5,
+          "emc_each": 571.0
+        },
+        {
+          "items": [
+            "mysticalagriculture:dye_essence"
+          ],
+          "count": 3,
+          "emc_each": 387.0
+        },
+        {
+          "items": [
+            "minecraft:pink_dye"
+          ],
+          "count": 1,
+          "emc_each": 1.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "4017/2",
+      "recipe_cost": 2008.5,
+      "current_emc": 32,
+      "current_origin": "manual_base",
+      "override_over_cost": 0.01593228777694797
+    },
+    {
+      "output": "minecraft:rose_bush",
+      "output_count": 2,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "mysticalagriculture:nature_essence"
+          ],
+          "count": 5,
+          "emc_each": 571.0
+        },
+        {
+          "items": [
+            "mysticalagriculture:dye_essence"
+          ],
+          "count": 3,
+          "emc_each": 387.0
+        },
+        {
+          "items": [
+            "minecraft:red_dye"
+          ],
+          "count": 1,
+          "emc_each": 1.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "4017/2",
+      "recipe_cost": 2008.5,
+      "current_emc": 32,
+      "current_origin": "manual_base",
+      "override_over_cost": 0.01593228777694797
+    },
+    {
+      "output": "minecraft:sunflower",
+      "output_count": 2,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "mysticalagriculture:nature_essence"
+          ],
+          "count": 5,
+          "emc_each": 571.0
+        },
+        {
+          "items": [
+            "mysticalagriculture:dye_essence"
+          ],
+          "count": 3,
+          "emc_each": 387.0
+        },
+        {
+          "items": [
+            "minecraft:yellow_dye"
+          ],
+          "count": 1,
+          "emc_each": 1.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "4017/2",
+      "recipe_cost": 2008.5,
+      "current_emc": 32,
+      "current_origin": "manual_base",
+      "override_over_cost": 0.01593228777694797
+    },
+    {
+      "output": "modular_machinery_reborn:casing_reinforced",
+      "output_count": 4,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "enderio:dark_steel_block"
+          ],
+          "count": 1,
+          "emc_each": 4032.0
+        },
+        {
+          "items": [
+            "enderio:reinforced_obsidian_block"
+          ],
+          "count": 4,
+          "emc_each": 992.0
+        }
+      ],
+      "missing_inputs": [
+        [
+          "modular_machinery_reborn:casing_plain"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "2000",
+      "recipe_cost": 2000.0,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "minecraft:sculk",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "minecraft:echo_shard"
+          ],
+          "count": 9,
+          "emc_each": 192.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "1728",
+      "recipe_cost": 1728.0,
+      "current_emc": 64,
+      "current_origin": "heuristic_fallback",
+      "override_over_cost": 0.037037037037037035
+    },
+    {
+      "output": "undergarden:cloggrum_shield",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "minecraft:shield"
+          ],
+          "count": 1,
+          "emc_each": 112.0
+        },
+        {
+          "items": [
+            "undergarden:cloggrum_ingot"
+          ],
+          "count": 6,
+          "emc_each": 256.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "1648",
+      "recipe_cost": 1648.0,
+      "current_emc": 1544,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 0.9368932038834952
+    },
+    {
+      "output": "modular_machinery_reborn:casing_vent",
+      "output_count": 2,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "pneumaticcraft:pressure_tube"
+          ],
+          "count": 1,
+          "emc_each": 64.0
+        },
+        {
+          "items": [
+            "pneumaticcraft:air_grate_module"
+          ],
+          "count": 6,
+          "emc_each": 448.0
+        }
+      ],
+      "missing_inputs": [
+        [
+          "modular_machinery_reborn:casing_plain"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "1376",
+      "recipe_cost": 1376.0,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "modular_machinery_reborn:blueprint",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "actuallyadditions:lens_of_color"
+          ],
+          "count": 1,
+          "emc_each": 264.0
+        },
+        {
+          "items": [
+            "actuallyadditions:laser_wrench"
+          ],
+          "count": 1,
+          "emc_each": 1056.0
+        }
+      ],
+      "missing_inputs": [
+        [
+          "kubejs:modularium_plate"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "1320",
+      "recipe_cost": 1320.0,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "minecraft:warped_wart_block",
+      "output_count": 8,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "mysticalagriculture:nether_essence"
+          ],
+          "count": 5,
+          "emc_each": 2048.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "1280",
+      "recipe_cost": 1280.0,
+      "current_emc": 64,
+      "current_origin": "heuristic_fallback",
+      "override_over_cost": 0.05
+    },
+    {
+      "output": "mekanismtools:steel_axe",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "ad_astra:steel_ingot",
+            "alltheores:steel_ingot",
+            "immersiveengineering:ingot_steel",
+            "mekanism:ingot_steel"
+          ],
+          "count": 3,
+          "emc_each": 384.0
+        },
+        {
+          "items": [
+            "aether:skyroot_stick",
+            "immersiveengineering:stick_treated",
+            "minecraft:stick",
+            "naturesaura:ancient_stick"
+          ],
+          "count": 2,
+          "emc_each": 4.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "1160",
+      "recipe_cost": 1160.0,
+      "current_emc": 1664,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 1.4344827586206896
+    },
+    {
+      "output": "mekanismtools:steel_pickaxe",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "ad_astra:steel_ingot",
+            "alltheores:steel_ingot",
+            "immersiveengineering:ingot_steel",
+            "mekanism:ingot_steel"
+          ],
+          "count": 3,
+          "emc_each": 384.0
+        },
+        {
+          "items": [
+            "aether:skyroot_stick",
+            "immersiveengineering:stick_treated",
+            "minecraft:stick",
+            "naturesaura:ancient_stick"
+          ],
+          "count": 2,
+          "emc_each": 4.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "1160",
+      "recipe_cost": 1160.0,
+      "current_emc": 1664,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 1.4344827586206896
+    },
+    {
+      "output": "minecraft:honey_block",
+      "output_count": 1,
+      "recipe_type": "kubejs:shapeless",
+      "inputs": [
+        {
+          "items": [
+            "mysticalagriculture:honey_essence"
+          ],
+          "count": 9,
+          "emc_each": 128.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "1152",
+      "recipe_cost": 1152.0,
+      "current_emc": 64,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 0.05555555555555555
+    },
+    {
+      "output": "pneumaticcraft:compressed_iron_gear",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "pneumaticcraft:ingot_iron_compressed"
+          ],
+          "count": 4,
+          "emc_each": 256.0
+        },
+        {
+          "items": [
+            "minecraft:iron_nugget"
+          ],
+          "count": 1,
+          "emc_each": 8.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "1032",
+      "recipe_cost": 1032.0,
+      "current_emc": 1280,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 1.2403100775193798
+    },
+    {
+      "output": "oritech:machine_extender",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "oritech:carbon_plating_block"
+          ],
+          "count": 8,
+          "emc_each": 112.0
+        },
+        {
+          "items": [
+            "oritech:machine_core_3"
+          ],
+          "count": 1,
+          "emc_each": 127.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "1023",
+      "recipe_cost": 1023.0,
+      "current_emc": 12224,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 11.949169110459433
+    },
+    {
+      "output": "minecolonies:supplychestdeployer",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "minecraft:white_banner"
+          ],
+          "count": 1,
+          "emc_each": 292.0
+        },
+        {
+          "items": [
+            "minecraft:iron_bars"
+          ],
+          "count": 3,
+          "emc_each": 96.0
+        },
+        {
+          "items": [
+            "aether:skyroot_chest_boat",
+            "biomesoplenty:dead_chest_boat",
+            "biomesoplenty:empyreal_chest_boat",
+            "biomesoplenty:fir_chest_boat"
+          ],
+          "count": 3,
+          "emc_each": 72.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "796",
+      "recipe_cost": 796.0,
+      "current_emc": 200,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 0.25125628140703515
+    },
+    {
+      "output": "mekanismtools:steel_hoe",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "ad_astra:steel_ingot",
+            "alltheores:steel_ingot",
+            "immersiveengineering:ingot_steel",
+            "mekanism:ingot_steel"
+          ],
+          "count": 2,
+          "emc_each": 384.0
+        },
+        {
+          "items": [
+            "aether:skyroot_stick",
+            "immersiveengineering:stick_treated",
+            "minecraft:stick",
+            "naturesaura:ancient_stick"
+          ],
+          "count": 2,
+          "emc_each": 4.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "776",
+      "recipe_cost": 776.0,
+      "current_emc": 1280,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 1.6494845360824741
+    },
+    {
+      "output": "mekanismtools:steel_sword",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "ad_astra:steel_ingot",
+            "alltheores:steel_ingot",
+            "immersiveengineering:ingot_steel",
+            "mekanism:ingot_steel"
+          ],
+          "count": 2,
+          "emc_each": 384.0
+        },
+        {
+          "items": [
+            "aether:skyroot_stick",
+            "immersiveengineering:stick_treated",
+            "minecraft:stick",
+            "naturesaura:ancient_stick"
+          ],
+          "count": 1,
+          "emc_each": 4.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "772",
+      "recipe_cost": 772.0,
+      "current_emc": 1024,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 1.3264248704663213
+    },
+    {
+      "output": "merrymaking:stuffed_poultry_dinner",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "merrymaking:quartz_platter"
+          ],
+          "count": 1,
+          "emc_each": 512.0
+        },
+        {
+          "items": [
+            "pamhc2crops:sweetpotatoitem"
+          ],
+          "count": 1,
+          "emc_each": 32.0
+        },
+        {
+          "items": [
+            "pamhc2crops:cornitem"
+          ],
+          "count": 1,
+          "emc_each": 32.0
+        },
+        {
+          "items": [
+            "minecraft:carrot"
+          ],
+          "count": 1,
+          "emc_each": 64.0
+        },
+        {
+          "items": [
+            "minecraft:potato"
+          ],
+          "count": 1,
+          "emc_each": 64.0
+        },
+        {
+          "items": [
+            "minecraft:beetroot"
+          ],
+          "count": 1,
+          "emc_each": 64.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "768",
+      "recipe_cost": 768.0,
+      "current_emc": 768,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 1.0
+    },
+    {
+      "output": "minecolonies:supplycampdeployer",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "minecraft:white_banner"
+          ],
+          "count": 1,
+          "emc_each": 292.0
+        },
+        {
+          "items": [
+            "minecraft:iron_bars"
+          ],
+          "count": 2,
+          "emc_each": 96.0
+        },
+        {
+          "items": [
+            "aether:skyroot_chest_boat",
+            "biomesoplenty:dead_chest_boat",
+            "biomesoplenty:empyreal_chest_boat",
+            "biomesoplenty:fir_chest_boat"
+          ],
+          "count": 3,
+          "emc_each": 72.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "700",
+      "recipe_cost": 700.0,
+      "current_emc": 40,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 0.05714285714285714
+    },
+    {
+      "output": "minecraft:moss_block",
+      "output_count": 8,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "mysticalagriculture:nature_essence"
+          ],
+          "count": 8,
+          "emc_each": 571.0
+        },
+        {
+          "items": [
+            "mysticalagriculture:dirt_essence"
+          ],
+          "count": 1,
+          "emc_each": 571.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "5139/8",
+      "recipe_cost": 642.375,
+      "current_emc": 12,
+      "current_origin": "manual_base",
+      "override_over_cost": 0.018680677174547577
+    },
+    {
+      "output": "mekanism:thermal_evaporation_block",
+      "output_count": 8,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "alltheores:bronze_ingot",
+            "mekanism:ingot_bronze",
+            "modern_industrialization:bronze_ingot",
+            "railcraft:bronze_ingot"
+          ],
+          "count": 4,
+          "emc_each": 160.0
+        },
+        {
+          "items": [
+            "ad_astra:steel_ingot",
+            "alltheores:steel_ingot",
+            "immersiveengineering:ingot_steel",
+            "mekanism:ingot_steel"
+          ],
+          "count": 4,
+          "emc_each": 384.0
+        },
+        {
+          "items": [
+            "mekanism:superheating_element"
+          ],
+          "count": 1,
+          "emc_each": 2820.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "1249/2",
+      "recipe_cost": 624.5,
+      "current_emc": 416,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 0.6661329063250601
+    },
+    {
+      "output": "minecraft:ochre_froglight",
+      "output_count": 8,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "mysticalagriculture:nature_essence"
+          ],
+          "count": 3,
+          "emc_each": 571.0
+        },
+        {
+          "items": [
+            "mysticalagriculture:dye_essence"
+          ],
+          "count": 3,
+          "emc_each": 387.0
+        },
+        {
+          "items": [
+            "mysticalagriculture:glowstone_essence"
+          ],
+          "count": 3,
+          "emc_each": 576.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "2301/4",
+      "recipe_cost": 575.25,
+      "current_emc": 64,
+      "current_origin": "heuristic_fallback",
+      "override_over_cost": 0.11125597566275533
+    },
+    {
+      "output": "minecraft:pearlescent_froglight",
+      "output_count": 8,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "mysticalagriculture:nature_essence"
+          ],
+          "count": 3,
+          "emc_each": 571.0
+        },
+        {
+          "items": [
+            "mysticalagriculture:dye_essence"
+          ],
+          "count": 3,
+          "emc_each": 387.0
+        },
+        {
+          "items": [
+            "mysticalagriculture:glowstone_essence"
+          ],
+          "count": 3,
+          "emc_each": 576.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "2301/4",
+      "recipe_cost": 575.25,
+      "current_emc": 64,
+      "current_origin": "heuristic_fallback",
+      "override_over_cost": 0.11125597566275533
+    },
+    {
+      "output": "minecraft:verdant_froglight",
+      "output_count": 8,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "mysticalagriculture:nature_essence"
+          ],
+          "count": 3,
+          "emc_each": 571.0
+        },
+        {
+          "items": [
+            "mysticalagriculture:dye_essence"
+          ],
+          "count": 3,
+          "emc_each": 387.0
+        },
+        {
+          "items": [
+            "mysticalagriculture:glowstone_essence"
+          ],
+          "count": 3,
+          "emc_each": 576.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "2301/4",
+      "recipe_cost": 575.25,
+      "current_emc": 64,
+      "current_origin": "heuristic_fallback",
+      "override_over_cost": 0.11125597566275533
+    },
+    {
+      "output": "kubejs:blaze_powder_block",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "minecraft:blaze_powder"
+          ],
+          "count": 9,
+          "emc_each": 61.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "549",
+      "recipe_cost": 549.0,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "the_bumblezone:carvable_wax",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "productivebees:wax"
+          ],
+          "count": 8,
+          "emc_each": 64.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "512",
+      "recipe_cost": 512.0,
+      "current_emc": 16,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 0.03125
+    },
+    {
+      "output": "the_bumblezone:honey_crystal_shield",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "minecraft:shield"
+          ],
+          "count": 1,
+          "emc_each": 112.0
+        },
+        {
+          "items": [
+            "the_bumblezone:honey_crystal_shards"
+          ],
+          "count": 6,
+          "emc_each": 64.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "496",
+      "recipe_cost": 496.0,
+      "current_emc": 448,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 0.9032258064516129
+    },
+    {
+      "output": "minecraft:twisting_vines",
+      "output_count": 12,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "mysticalagriculture:nature_essence"
+          ],
+          "count": 3,
+          "emc_each": 571.0
+        },
+        {
+          "items": [
+            "mysticalagriculture:nether_essence"
+          ],
+          "count": 2,
+          "emc_each": 2048.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "5809/12",
+      "recipe_cost": 484.0833333333333,
+      "current_emc": 8,
+      "current_origin": "manual_base",
+      "override_over_cost": 0.016526080220347735
+    },
+    {
+      "output": "minecraft:weeping_vines",
+      "output_count": 12,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "mysticalagriculture:nature_essence"
+          ],
+          "count": 3,
+          "emc_each": 571.0
+        },
+        {
+          "items": [
+            "mysticalagriculture:nether_essence"
+          ],
+          "count": 2,
+          "emc_each": 2048.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "5809/12",
+      "recipe_cost": 484.0833333333333,
+      "current_emc": 8,
+      "current_origin": "manual_base",
+      "override_over_cost": 0.016526080220347735
+    },
+    {
+      "output": "merrymaking:harvest_tray",
+      "output_count": 1,
+      "recipe_type": "kubejs:shapeless",
+      "inputs": [
+        {
+          "items": [
+            "merrymaking:empty_tray"
+          ],
+          "count": 1,
+          "emc_each": 32.0
+        },
+        {
+          "items": [
+            "pamhc2crops:sweetpotatoitem"
+          ],
+          "count": 1,
+          "emc_each": 32.0
+        },
+        {
+          "items": [
+            "pamhc2crops:cornitem"
+          ],
+          "count": 1,
+          "emc_each": 32.0
+        },
+        {
+          "items": [
+            "minecraft:carrot"
+          ],
+          "count": 1,
+          "emc_each": 64.0
+        },
+        {
+          "items": [
+            "minecraft:apple"
+          ],
+          "count": 1,
+          "emc_each": 128.0
+        },
+        {
+          "items": [
+            "minecraft:potato"
+          ],
+          "count": 1,
+          "emc_each": 64.0
+        },
+        {
+          "items": [
+            "minecraft:sweet_berries"
+          ],
+          "count": 1,
+          "emc_each": 16.0
+        },
+        {
+          "items": [
+            "minecraft:beetroot"
+          ],
+          "count": 1,
+          "emc_each": 64.0
+        },
+        {
+          "items": [
+            "minecraft:wheat"
+          ],
+          "count": 1,
+          "emc_each": 24.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "456",
+      "recipe_cost": 456.0,
+      "current_emc": 456,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 1.0
+    },
+    {
+      "output": "mekanismtools:steel_shovel",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "ad_astra:steel_ingot",
+            "alltheores:steel_ingot",
+            "immersiveengineering:ingot_steel",
+            "mekanism:ingot_steel"
+          ],
+          "count": 1,
+          "emc_each": 384.0
+        },
+        {
+          "items": [
+            "aether:skyroot_stick",
+            "immersiveengineering:stick_treated",
+            "minecraft:stick",
+            "naturesaura:ancient_stick"
+          ],
+          "count": 2,
+          "emc_each": 4.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "392",
+      "recipe_cost": 392.0,
+      "current_emc": 896,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 2.2857142857142856
+    },
+    {
+      "output": "oritech:machine_core_3",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "oritech:carbon_fibre_strands"
+          ],
+          "count": 8,
+          "emc_each": 7.0
+        },
+        {
+          "items": [
+            "oritech:fluxite_block"
+          ],
+          "count": 1,
+          "emc_each": 288.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "344",
+      "recipe_cost": 344.0,
+      "current_emc": 127,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 0.3691860465116279
+    },
+    {
+      "output": "minecraft:sculk_sensor",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "minecraft:twisting_vines"
+          ],
+          "count": 2,
+          "emc_each": 8.0
+        },
+        {
+          "items": [
+            "minecraft:comparator"
+          ],
+          "count": 1,
+          "emc_each": 98.0
+        },
+        {
+          "items": [
+            "minecraft:sculk"
+          ],
+          "count": 3,
+          "emc_each": 64.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "306",
+      "recipe_cost": 306.0,
+      "current_emc": 64,
+      "current_origin": "heuristic_fallback",
+      "override_over_cost": 0.20915032679738563
+    },
+    {
+      "output": "utilitarian:redstone_clock",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "minecraft:redstone"
+          ],
+          "count": 4,
+          "emc_each": 64.0
+        },
+        {
+          "items": [
+            "minecraft:chiseled_stone_bricks"
+          ],
+          "count": 1,
+          "emc_each": 1.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "257",
+      "recipe_cost": 257.0,
+      "current_emc": 257,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 1.0
+    },
+    {
+      "output": "merrymaking:latke",
+      "output_count": 1,
+      "recipe_type": "kubejs:shapeless",
+      "inputs": [
+        {
+          "items": [
+            "minecraft:potato"
+          ],
+          "count": 1,
+          "emc_each": 64.0
+        },
+        {
+          "items": [
+            "pamhc2crops:onionitem"
+          ],
+          "count": 1,
+          "emc_each": 32.0
+        },
+        {
+          "items": [
+            "minecraft:egg"
+          ],
+          "count": 1,
+          "emc_each": 32.0
+        },
+        {
+          "items": [
+            "minecraft:wheat"
+          ],
+          "count": 1,
+          "emc_each": 24.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "152",
+      "recipe_cost": 152.0,
+      "current_emc": 152,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 1.0
+    },
+    {
+      "output": "merrymaking:sweet_potato_pie",
+      "output_count": 1,
+      "recipe_type": "kubejs:shapeless",
+      "inputs": [
+        {
+          "items": [
+            "minecraft:milk_bucket",
+            "pamhc2foodcore:freshmilkitem",
+            "pamhc2foodextended:soymilkitem",
+            "productivebees:milk_bottle"
+          ],
+          "count": 1,
+          "emc_each": 8.0
+        },
+        {
+          "items": [
+            "minecraft:wheat"
+          ],
+          "count": 1,
+          "emc_each": 24.0
+        },
+        {
+          "items": [
+            "minecraft:sugar"
+          ],
+          "count": 1,
+          "emc_each": 10.0
+        },
+        {
+          "items": [
+            "minecraft:egg"
+          ],
+          "count": 1,
+          "emc_each": 32.0
+        },
+        {
+          "items": [
+            "pamhc2crops:sweetpotatoitem"
+          ],
+          "count": 1,
+          "emc_each": 32.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "106",
+      "recipe_cost": 106.0,
+      "current_emc": 162,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 1.528301886792453
+    },
+    {
+      "output": "merrymaking:cookie_dough",
+      "output_count": 1,
+      "recipe_type": "kubejs:shapeless",
+      "inputs": [
+        {
+          "items": [
+            "minecraft:milk_bucket",
+            "pamhc2foodcore:freshmilkitem",
+            "pamhc2foodextended:soymilkitem",
+            "productivebees:milk_bottle"
+          ],
+          "count": 1,
+          "emc_each": 8.0
+        },
+        {
+          "items": [
+            "minecraft:wheat"
+          ],
+          "count": 1,
+          "emc_each": 24.0
+        },
+        {
+          "items": [
+            "minecraft:sugar"
+          ],
+          "count": 1,
+          "emc_each": 10.0
+        },
+        {
+          "items": [
+            "minecraft:egg"
+          ],
+          "count": 1,
+          "emc_each": 32.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "74",
+      "recipe_cost": 74.0,
+      "current_emc": 16,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 0.21621621621621623
+    },
+    {
+      "output": "minecraft:crafting_table",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "ad_astra:aeronos_planks",
+            "ad_astra:glacian_planks",
+            "ad_astra:strophar_planks",
+            "allthemodium:ancient_planks"
+          ],
+          "count": 4,
+          "emc_each": 8.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "32",
+      "recipe_cost": 32.0,
+      "current_emc": 32,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 1.0
+    },
+    {
+      "output": "minecraft:crafting_table",
+      "output_count": 1,
+      "recipe_type": "kubejs:shapeless",
+      "inputs": [
+        {
+          "items": [
+            "biomeswevegone:aspen_crafting_table",
+            "biomeswevegone:baobab_crafting_table",
+            "biomeswevegone:blue_enchanted_crafting_table",
+            "biomeswevegone:cika_crafting_table"
+          ],
+          "count": 1,
+          "emc_each": 32.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "32",
+      "recipe_cost": 32.0,
+      "current_emc": 32,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 1.0
+    },
+    {
+      "output": "eternal_starlight:blue_starlight_crystal_cluster",
+      "output_count": 8,
+      "recipe_type": "kubejs:shapeless",
+      "inputs": [
+        {
+          "items": [
+            "minecraft:amethyst_cluster"
+          ],
+          "count": 1,
+          "emc_each": 224.0
+        },
+        {
+          "items": [
+            "minecraft:blue_dye"
+          ],
+          "count": 1,
+          "emc_each": 1.0
+        }
+      ],
+      "missing_inputs": [
+        [
+          "kubejs:starlight_prediction"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "225/8",
+      "recipe_cost": 28.125,
+      "current_emc": 64,
+      "current_origin": "heuristic_fallback",
+      "override_over_cost": 2.2755555555555556
+    },
+    {
+      "output": "eternal_starlight:red_starlight_crystal_cluster",
+      "output_count": 8,
+      "recipe_type": "kubejs:shapeless",
+      "inputs": [
+        {
+          "items": [
+            "minecraft:amethyst_cluster"
+          ],
+          "count": 1,
+          "emc_each": 224.0
+        },
+        {
+          "items": [
+            "minecraft:red_dye",
+            "productivetrees:dracaena_sap",
+            "productivetrees:haematoxylin"
+          ],
+          "count": 1,
+          "emc_each": 1.0
+        }
+      ],
+      "missing_inputs": [
+        [
+          "kubejs:starlight_prediction"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "225/8",
+      "recipe_cost": 28.125,
+      "current_emc": 64,
+      "current_origin": "heuristic_fallback",
+      "override_over_cost": 2.2755555555555556
+    },
+    {
+      "output": "kubejs:fire_eye",
+      "output_count": 8,
+      "recipe_type": "kubejs:shapeless",
+      "inputs": [
+        {
+          "items": [
+            "iceandfire:dragonbone"
+          ],
+          "count": 1,
+          "emc_each": 156.0
+        }
+      ],
+      "missing_inputs": [
+        [
+          "kubejs:fire_pearl"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "39/2",
+      "recipe_cost": 19.5,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "kubejs:ice_eye",
+      "output_count": 8,
+      "recipe_type": "kubejs:shapeless",
+      "inputs": [
+        {
+          "items": [
+            "iceandfire:dragonbone"
+          ],
+          "count": 1,
+          "emc_each": 156.0
+        }
+      ],
+      "missing_inputs": [
+        [
+          "kubejs:ice_pearl"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "39/2",
+      "recipe_cost": 19.5,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "kubejs:lightning_eye",
+      "output_count": 8,
+      "recipe_type": "kubejs:shapeless",
+      "inputs": [
+        {
+          "items": [
+            "iceandfire:dragonbone"
+          ],
+          "count": 1,
+          "emc_each": 156.0
+        }
+      ],
+      "missing_inputs": [
+        [
+          "kubejs:lightning_pearl"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "39/2",
+      "recipe_cost": 19.5,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "eternal_starlight:blue_starlight_crystal_block",
+      "output_count": 8,
+      "recipe_type": "kubejs:shapeless",
+      "inputs": [
+        {
+          "items": [
+            "minecraft:amethyst_block"
+          ],
+          "count": 1,
+          "emc_each": 128.0
+        },
+        {
+          "items": [
+            "minecraft:blue_dye"
+          ],
+          "count": 1,
+          "emc_each": 1.0
+        }
+      ],
+      "missing_inputs": [
+        [
+          "kubejs:starlight_prediction"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "129/8",
+      "recipe_cost": 16.125,
+      "current_emc": 64,
+      "current_origin": "heuristic_fallback",
+      "override_over_cost": 3.9689922480620154
+    },
+    {
+      "output": "eternal_starlight:red_starlight_crystal_block",
+      "output_count": 8,
+      "recipe_type": "kubejs:shapeless",
+      "inputs": [
+        {
+          "items": [
+            "minecraft:amethyst_block"
+          ],
+          "count": 1,
+          "emc_each": 128.0
+        },
+        {
+          "items": [
+            "minecraft:red_dye",
+            "productivetrees:dracaena_sap",
+            "productivetrees:haematoxylin"
+          ],
+          "count": 1,
+          "emc_each": 1.0
+        }
+      ],
+      "missing_inputs": [
+        [
+          "kubejs:starlight_prediction"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "129/8",
+      "recipe_cost": 16.125,
+      "current_emc": 64,
+      "current_origin": "heuristic_fallback",
+      "override_over_cost": 3.9689922480620154
+    },
+    {
+      "output": "allthecompressed:snow_1x",
+      "output_count": 1,
+      "recipe_type": "kubejs:shapeless",
+      "inputs": [
+        {
+          "items": [
+            "minecraft:snow_block"
+          ],
+          "count": 9,
+          "emc_each": 1.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "9",
+      "recipe_cost": 9.0,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "modularbees:modular_beehive_feeder",
+      "output_count": 1,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "productivebees:feeder"
+          ],
+          "count": 1,
+          "emc_each": 8.0
+        }
+      ],
+      "missing_inputs": [
+        [
+          "modularbees:modular_beehive_part"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "8",
+      "recipe_cost": 8.0,
+      "current_emc": null,
+      "current_origin": "fora_do_indice",
+      "override_over_cost": null
+    },
+    {
+      "output": "industrialforegoing:dryrubber",
+      "output_count": 4,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [
+        {
+          "items": [
+            "mysticalagriculture:rubber_essence"
+          ],
+          "count": 3,
+          "emc_each": 8.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "6",
+      "recipe_cost": 6.0,
+      "current_emc": 64,
+      "current_origin": "heuristic_fallback",
+      "override_over_cost": 10.666666666666666
+    },
+    {
+      "output": "merrymaking:icing",
+      "output_count": 8,
+      "recipe_type": "kubejs:shapeless",
+      "inputs": [
+        {
+          "items": [
+            "minecraft:sugar"
+          ],
+          "count": 1,
+          "emc_each": 10.0
+        },
+        {
+          "items": [
+            "minecraft:milk_bucket",
+            "pamhc2foodcore:freshmilkitem",
+            "pamhc2foodextended:soymilkitem",
+            "productivebees:milk_bottle"
+          ],
+          "count": 1,
+          "emc_each": 8.0
+        },
+        {
+          "items": [
+            "minecraft:bowl"
+          ],
+          "count": 1,
+          "emc_each": 4.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "11/4",
+      "recipe_cost": 2.75,
+      "current_emc": 9,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": 3.272727272727273
+    },
+    {
+      "output": "eternal_starlight:blue_starlight_crystal_shard",
+      "output_count": 16,
+      "recipe_type": "kubejs:shapeless",
+      "inputs": [
+        {
+          "items": [
+            "minecraft:amethyst_shard"
+          ],
+          "count": 1,
+          "emc_each": 32.0
+        },
+        {
+          "items": [
+            "minecraft:blue_dye"
+          ],
+          "count": 1,
+          "emc_each": 1.0
+        }
+      ],
+      "missing_inputs": [
+        [
+          "kubejs:starlight_prediction"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "33/16",
+      "recipe_cost": 2.0625,
+      "current_emc": 256,
+      "current_origin": "heuristic_fallback",
+      "override_over_cost": 124.12121212121212
+    },
+    {
+      "output": "eternal_starlight:red_starlight_crystal_shard",
+      "output_count": 16,
+      "recipe_type": "kubejs:shapeless",
+      "inputs": [
+        {
+          "items": [
+            "minecraft:amethyst_shard"
+          ],
+          "count": 1,
+          "emc_each": 32.0
+        },
+        {
+          "items": [
+            "minecraft:red_dye",
+            "productivetrees:dracaena_sap",
+            "productivetrees:haematoxylin"
+          ],
+          "count": 1,
+          "emc_each": 1.0
+        }
+      ],
+      "missing_inputs": [
+        [
+          "kubejs:starlight_prediction"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "33/16",
+      "recipe_cost": 2.0625,
+      "current_emc": 256,
+      "current_origin": "heuristic_fallback",
+      "override_over_cost": 124.12121212121212
+    },
+    {
+      "output": "minecraft:redstone",
+      "output_count": 1,
+      "recipe_type": "kubejs:shapeless",
+      "inputs": [
+        {
+          "items": [
+            "regions_unexplored:pointed_redstone"
+          ],
+          "count": 1,
+          "emc_each": 1.0
+        }
+      ],
+      "missing_inputs": [],
+      "complete": true,
+      "exact_recipe_cost": "1",
+      "recipe_cost": 1.0,
+      "current_emc": 64,
+      "current_origin": "manual_base",
+      "override_over_cost": 64.0
+    },
+    {
+      "output": "ars_nouveau:air_essence",
+      "output_count": 9,
+      "recipe_type": "kubejs:shapeless",
+      "inputs": [],
+      "missing_inputs": [
+        [
+          "kubejs:air_essence_block"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "0",
+      "recipe_cost": 0.0,
+      "current_emc": 2048,
+      "current_origin": "heuristic_fallback",
+      "override_over_cost": null
+    },
+    {
+      "output": "ars_nouveau:earth_essence",
+      "output_count": 9,
+      "recipe_type": "kubejs:shapeless",
+      "inputs": [],
+      "missing_inputs": [
+        [
+          "kubejs:earth_essence_block"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "0",
+      "recipe_cost": 0.0,
+      "current_emc": 2048,
+      "current_origin": "heuristic_fallback",
+      "override_over_cost": null
+    },
+    {
+      "output": "ars_nouveau:fire_essence",
+      "output_count": 9,
+      "recipe_type": "kubejs:shapeless",
+      "inputs": [],
+      "missing_inputs": [
+        [
+          "kubejs:fire_essence_block"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "0",
+      "recipe_cost": 0.0,
+      "current_emc": 2048,
+      "current_origin": "heuristic_fallback",
+      "override_over_cost": null
+    },
+    {
+      "output": "ars_nouveau:water_essence",
+      "output_count": 9,
+      "recipe_type": "kubejs:shapeless",
+      "inputs": [],
+      "missing_inputs": [
+        [
+          "kubejs:water_essence_block"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "0",
+      "recipe_cost": 0.0,
+      "current_emc": 2048,
+      "current_origin": "heuristic_fallback",
+      "override_over_cost": null
+    },
+    {
+      "output": "minecraft:blaze_powder",
+      "output_count": 9,
+      "recipe_type": "kubejs:shapeless",
+      "inputs": [],
+      "missing_inputs": [
+        [
+          "kubejs:blaze_powder_block"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "0",
+      "recipe_cost": 0.0,
+      "current_emc": 61,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": null
+    },
+    {
+      "output": "minecraft:snow_block",
+      "output_count": 9,
+      "recipe_type": "kubejs:shapeless",
+      "inputs": [],
+      "missing_inputs": [
+        [
+          "allthecompressed:snow_1x"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "0",
+      "recipe_cost": 0.0,
+      "current_emc": 1,
+      "current_origin": "recipe_calculated",
+      "override_over_cost": null
+    },
+    {
+      "output": "railcraft:saltpeter_dust",
+      "output_count": 9,
+      "recipe_type": "kubejs:shapeless",
+      "inputs": [],
+      "missing_inputs": [
+        [
+          "kubejs:saltpeter_block"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "0",
+      "recipe_cost": 0.0,
+      "current_emc": 64,
+      "current_origin": "heuristic_fallback",
+      "override_over_cost": null
+    },
+    {
+      "output": "regions_unexplored:alpha_log",
+      "output_count": 8,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [],
+      "missing_inputs": [
+        [
+          "mysticalagriculture:unexplored_wood_essence"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "0",
+      "recipe_cost": 0.0,
+      "current_emc": 32,
+      "current_origin": "manual_base",
+      "override_over_cost": null
+    },
+    {
+      "output": "regions_unexplored:ashen_log",
+      "output_count": 8,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [],
+      "missing_inputs": [
+        [
+          "mysticalagriculture:unexplored_wood_essence"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "0",
+      "recipe_cost": 0.0,
+      "current_emc": 32,
+      "current_origin": "manual_base",
+      "override_over_cost": null
+    },
+    {
+      "output": "regions_unexplored:bamboo_log",
+      "output_count": 8,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [],
+      "missing_inputs": [
+        [
+          "mysticalagriculture:unexplored_wood_essence"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "0",
+      "recipe_cost": 0.0,
+      "current_emc": 32,
+      "current_origin": "manual_base",
+      "override_over_cost": null
+    },
+    {
+      "output": "regions_unexplored:baobab_log",
+      "output_count": 8,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [],
+      "missing_inputs": [
+        [
+          "mysticalagriculture:unexplored_wood_essence"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "0",
+      "recipe_cost": 0.0,
+      "current_emc": 32,
+      "current_origin": "manual_base",
+      "override_over_cost": null
+    },
+    {
+      "output": "regions_unexplored:blackwood_log",
+      "output_count": 8,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [],
+      "missing_inputs": [
+        [
+          "mysticalagriculture:unexplored_wood_essence"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "0",
+      "recipe_cost": 0.0,
+      "current_emc": 32,
+      "current_origin": "manual_base",
+      "override_over_cost": null
+    },
+    {
+      "output": "regions_unexplored:brimwood_log",
+      "output_count": 8,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [],
+      "missing_inputs": [
+        [
+          "mysticalagriculture:unexplored_wood_essence"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "0",
+      "recipe_cost": 0.0,
+      "current_emc": 32,
+      "current_origin": "manual_base",
+      "override_over_cost": null
+    },
+    {
+      "output": "regions_unexplored:cobalt_log",
+      "output_count": 8,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [],
+      "missing_inputs": [
+        [
+          "mysticalagriculture:unexplored_wood_essence"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "0",
+      "recipe_cost": 0.0,
+      "current_emc": 32,
+      "current_origin": "manual_base",
+      "override_over_cost": null
+    },
+    {
+      "output": "regions_unexplored:cypress_log",
+      "output_count": 8,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [],
+      "missing_inputs": [
+        [
+          "mysticalagriculture:unexplored_wood_essence"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "0",
+      "recipe_cost": 0.0,
+      "current_emc": 32,
+      "current_origin": "manual_base",
+      "override_over_cost": null
+    },
+    {
+      "output": "regions_unexplored:dead_log",
+      "output_count": 8,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [],
+      "missing_inputs": [
+        [
+          "mysticalagriculture:unexplored_wood_essence"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "0",
+      "recipe_cost": 0.0,
+      "current_emc": 32,
+      "current_origin": "manual_base",
+      "override_over_cost": null
+    },
+    {
+      "output": "regions_unexplored:eucalyptus_log",
+      "output_count": 8,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [],
+      "missing_inputs": [
+        [
+          "mysticalagriculture:unexplored_wood_essence"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "0",
+      "recipe_cost": 0.0,
+      "current_emc": 32,
+      "current_origin": "manual_base",
+      "override_over_cost": null
+    },
+    {
+      "output": "regions_unexplored:joshua_log",
+      "output_count": 8,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [],
+      "missing_inputs": [
+        [
+          "mysticalagriculture:unexplored_wood_essence"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "0",
+      "recipe_cost": 0.0,
+      "current_emc": 32,
+      "current_origin": "manual_base",
+      "override_over_cost": null
+    },
+    {
+      "output": "regions_unexplored:kapok_log",
+      "output_count": 8,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [],
+      "missing_inputs": [
+        [
+          "mysticalagriculture:unexplored_wood_essence"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "0",
+      "recipe_cost": 0.0,
+      "current_emc": 32,
+      "current_origin": "manual_base",
+      "override_over_cost": null
+    },
+    {
+      "output": "regions_unexplored:larch_log",
+      "output_count": 8,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [],
+      "missing_inputs": [
+        [
+          "mysticalagriculture:unexplored_wood_essence"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "0",
+      "recipe_cost": 0.0,
+      "current_emc": 32,
+      "current_origin": "manual_base",
+      "override_over_cost": null
+    },
+    {
+      "output": "regions_unexplored:magnolia_log",
+      "output_count": 8,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [],
+      "missing_inputs": [
+        [
+          "mysticalagriculture:unexplored_wood_essence"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "0",
+      "recipe_cost": 0.0,
+      "current_emc": 32,
+      "current_origin": "manual_base",
+      "override_over_cost": null
+    },
+    {
+      "output": "regions_unexplored:maple_log",
+      "output_count": 8,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [],
+      "missing_inputs": [
+        [
+          "mysticalagriculture:unexplored_wood_essence"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "0",
+      "recipe_cost": 0.0,
+      "current_emc": 32,
+      "current_origin": "manual_base",
+      "override_over_cost": null
+    },
+    {
+      "output": "regions_unexplored:mauve_log",
+      "output_count": 8,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [],
+      "missing_inputs": [
+        [
+          "mysticalagriculture:unexplored_wood_essence"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "0",
+      "recipe_cost": 0.0,
+      "current_emc": 32,
+      "current_origin": "manual_base",
+      "override_over_cost": null
+    },
+    {
+      "output": "regions_unexplored:palm_log",
+      "output_count": 8,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [],
+      "missing_inputs": [
+        [
+          "mysticalagriculture:unexplored_wood_essence"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "0",
+      "recipe_cost": 0.0,
+      "current_emc": 32,
+      "current_origin": "manual_base",
+      "override_over_cost": null
+    },
+    {
+      "output": "regions_unexplored:pine_log",
+      "output_count": 8,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [],
+      "missing_inputs": [
+        [
+          "mysticalagriculture:unexplored_wood_essence"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "0",
+      "recipe_cost": 0.0,
+      "current_emc": 32,
+      "current_origin": "manual_base",
+      "override_over_cost": null
+    },
+    {
+      "output": "regions_unexplored:redwood_log",
+      "output_count": 8,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [],
+      "missing_inputs": [
+        [
+          "mysticalagriculture:unexplored_wood_essence"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "0",
+      "recipe_cost": 0.0,
+      "current_emc": 32,
+      "current_origin": "manual_base",
+      "override_over_cost": null
+    },
+    {
+      "output": "regions_unexplored:silver_birch_log",
+      "output_count": 8,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [],
+      "missing_inputs": [
+        [
+          "mysticalagriculture:unexplored_wood_essence"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "0",
+      "recipe_cost": 0.0,
+      "current_emc": 32,
+      "current_origin": "manual_base",
+      "override_over_cost": null
+    },
+    {
+      "output": "regions_unexplored:small_oak_log",
+      "output_count": 8,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [],
+      "missing_inputs": [
+        [
+          "mysticalagriculture:unexplored_wood_essence"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "0",
+      "recipe_cost": 0.0,
+      "current_emc": 32,
+      "current_origin": "manual_base",
+      "override_over_cost": null
+    },
+    {
+      "output": "regions_unexplored:socotra_log",
+      "output_count": 8,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [],
+      "missing_inputs": [
+        [
+          "mysticalagriculture:unexplored_wood_essence"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "0",
+      "recipe_cost": 0.0,
+      "current_emc": 32,
+      "current_origin": "manual_base",
+      "override_over_cost": null
+    },
+    {
+      "output": "regions_unexplored:willow_log",
+      "output_count": 8,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [],
+      "missing_inputs": [
+        [
+          "mysticalagriculture:unexplored_wood_essence"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "0",
+      "recipe_cost": 0.0,
+      "current_emc": 32,
+      "current_origin": "manual_base",
+      "override_over_cost": null
+    },
+    {
+      "output": "xycraft_world:xychorium_gem_blue",
+      "output_count": 5,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [],
+      "missing_inputs": [
+        [
+          "mysticalagriculture:xychorium_gem_essence"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "0",
+      "recipe_cost": 0.0,
+      "current_emc": 128,
+      "current_origin": "manual_base",
+      "override_over_cost": null
+    },
+    {
+      "output": "xycraft_world:xychorium_gem_dark",
+      "output_count": 5,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [],
+      "missing_inputs": [
+        [
+          "mysticalagriculture:xychorium_gem_essence"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "0",
+      "recipe_cost": 0.0,
+      "current_emc": 128,
+      "current_origin": "manual_base",
+      "override_over_cost": null
+    },
+    {
+      "output": "xycraft_world:xychorium_gem_green",
+      "output_count": 5,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [],
+      "missing_inputs": [
+        [
+          "mysticalagriculture:xychorium_gem_essence"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "0",
+      "recipe_cost": 0.0,
+      "current_emc": 128,
+      "current_origin": "manual_base",
+      "override_over_cost": null
+    },
+    {
+      "output": "xycraft_world:xychorium_gem_light",
+      "output_count": 5,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [],
+      "missing_inputs": [
+        [
+          "mysticalagriculture:xychorium_gem_essence"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "0",
+      "recipe_cost": 0.0,
+      "current_emc": 128,
+      "current_origin": "manual_base",
+      "override_over_cost": null
+    },
+    {
+      "output": "xycraft_world:xychorium_gem_red",
+      "output_count": 5,
+      "recipe_type": "kubejs:shaped",
+      "inputs": [],
+      "missing_inputs": [
+        [
+          "mysticalagriculture:xychorium_gem_essence"
+        ]
+      ],
+      "complete": false,
+      "exact_recipe_cost": "0",
+      "recipe_cost": 0.0,
+      "current_emc": 128,
+      "current_origin": "manual_base",
+      "override_over_cost": null
+    }
+  ]
+}

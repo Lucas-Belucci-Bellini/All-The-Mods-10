@@ -3,13 +3,13 @@
   "comment": "Auditoria de triagem somente de leitura. Não altera EMCs. Custos de receitas dependem dos valores atuais dos insumos; entradas heurísticas ou receitas pendentes reduzem a confiança.",
   "override_count": 2028,
   "status_counts": {
-    "above_supported_recipe_cost_candidate": 32,
+    "above_supported_recipe_cost_candidate": 27,
     "at_or_below_supported_recipe_cost": 95,
     "known_recipes_not_above_but_needs_review": 143,
-    "no_fully_priced_recipe": 1,
-    "no_supported_recipe": 1729,
+    "no_fully_priced_recipe": 25,
+    "no_supported_recipe": 1703,
     "pending_recipe_requires_review": 5,
-    "potentially_above_recipe_cost_needs_review": 23
+    "potentially_above_recipe_cost_needs_review": 30
   },
   "items": [
     {
@@ -1169,7 +1169,7 @@
       "configured_emc": 2097152,
       "status": "known_recipes_not_above_but_needs_review",
       "best_supported_recipe": {
-        "recipe_type": "minecraft:crafting_shapeless",
+        "recipe_type": "kubejs:shapeless",
         "output_count": 9,
         "input_cost": "18874368",
         "unit_cost": "2097152",
@@ -1183,7 +1183,7 @@
           }
         ]
       },
-      "supported_recipe_count": 1,
+      "supported_recipe_count": 2,
       "incomplete_recipe_count": 0,
       "pending_recipe_count": 0,
       "pending_reasons": [],
@@ -1736,13 +1736,59 @@
     {
       "id": "allthetweaks:dimensional_seed",
       "configured_emc": 100000000000000000,
-      "status": "no_supported_recipe",
+      "status": "no_fully_priced_recipe",
       "best_supported_recipe": null,
       "supported_recipe_count": 0,
-      "incomplete_recipe_count": 0,
+      "incomplete_recipe_count": 1,
       "pending_recipe_count": 0,
       "pending_reasons": [],
-      "incomplete_recipes": []
+      "incomplete_recipes": [
+        {
+          "type": "kubejs:shaped",
+          "missing_inputs": [
+            {
+              "alternatives": [
+                "allthecompressed:netherrack_6x"
+              ],
+              "missing": [
+                "allthecompressed:netherrack_6x"
+              ]
+            },
+            {
+              "alternatives": [
+                "allthecompressed:obsidian_5x"
+              ],
+              "missing": [
+                "allthecompressed:obsidian_5x"
+              ]
+            },
+            {
+              "alternatives": [
+                "allthecompressed:end_stone_5x"
+              ],
+              "missing": [
+                "allthecompressed:end_stone_5x"
+              ]
+            },
+            {
+              "alternatives": [
+                "allthecompressed:emerald_block_4x"
+              ],
+              "missing": [
+                "allthecompressed:emerald_block_4x"
+              ]
+            },
+            {
+              "alternatives": [
+                "allthecompressed:diamond_block_4x"
+              ],
+              "missing": [
+                "allthecompressed:diamond_block_4x"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "allthetweaks:dragon_soul",
@@ -1855,9 +1901,63 @@
     {
       "id": "allthetweaks:patrick_star",
       "configured_emc": 10000000000000000,
-      "status": "no_supported_recipe",
-      "best_supported_recipe": null,
-      "supported_recipe_count": 0,
+      "status": "potentially_above_recipe_cost_needs_review",
+      "best_supported_recipe": {
+        "recipe_type": "create:mechanical_crafting",
+        "output_count": 1,
+        "input_cost": "2218",
+        "unit_cost": "2218",
+        "heuristic_inputs": [
+          "minecraft:green_concrete",
+          "minecraft:magenta_concrete",
+          "minecraft:pink_concrete"
+        ],
+        "selected_inputs": [
+          {
+            "id": "minecraft:magenta_concrete",
+            "emc": 64,
+            "origin": "heuristic_fallback",
+            "quantity": 13
+          },
+          {
+            "id": "minecraft:pink_concrete",
+            "emc": 64,
+            "origin": "heuristic_fallback",
+            "quantity": 11
+          },
+          {
+            "id": "minecraft:pink_concrete_powder",
+            "emc": 2,
+            "origin": "recipe_calculated",
+            "quantity": 5
+          },
+          {
+            "id": "minecraft:green_concrete",
+            "emc": 64,
+            "origin": "heuristic_fallback",
+            "quantity": 8
+          },
+          {
+            "id": "minecraft:green_concrete_powder",
+            "emc": 2,
+            "origin": "recipe_calculated",
+            "quantity": 8
+          },
+          {
+            "id": "minecraft:lime_concrete",
+            "emc": 64,
+            "origin": "recipe_calculated",
+            "quantity": 2
+          },
+          {
+            "id": "minecraft:magenta_concrete_powder",
+            "emc": 2,
+            "origin": "recipe_calculated",
+            "quantity": 8
+          }
+        ]
+      },
+      "supported_recipe_count": 1,
       "incomplete_recipe_count": 0,
       "pending_recipe_count": 0,
       "pending_reasons": [],
@@ -1877,9 +1977,74 @@
     {
       "id": "allthetweaks:pulsating_black_hole",
       "configured_emc": 100000000000000000,
-      "status": "no_supported_recipe",
-      "best_supported_recipe": null,
-      "supported_recipe_count": 0,
+      "status": "potentially_above_recipe_cost_needs_review",
+      "best_supported_recipe": {
+        "recipe_type": "kubejs:shaped",
+        "output_count": 1,
+        "input_cost": "580620",
+        "unit_cost": "580620",
+        "heuristic_inputs": [
+          "occultism:stable_wormhole",
+          "rootsclassic:crystal_staff"
+        ],
+        "selected_inputs": [
+          {
+            "id": "oritech:nuke",
+            "emc": 104803,
+            "origin": "recipe_calculated",
+            "quantity": 1
+          },
+          {
+            "id": "ae2:quantum_ring",
+            "emc": 17478,
+            "origin": "recipe_calculated",
+            "quantity": 1
+          },
+          {
+            "id": "pneumaticcraft:micromissiles",
+            "emc": 1310,
+            "origin": "recipe_calculated",
+            "quantity": 1
+          },
+          {
+            "id": "justdirethings:paradoxmachine",
+            "emc": 131904,
+            "origin": "recipe_calculated",
+            "quantity": 1
+          },
+          {
+            "id": "pocketstorage:psu_4",
+            "emc": 321643,
+            "origin": "recipe_calculated",
+            "quantity": 1
+          },
+          {
+            "id": "occultism:stable_wormhole",
+            "emc": 64,
+            "origin": "heuristic_fallback",
+            "quantity": 1
+          },
+          {
+            "id": "rootsclassic:crystal_staff",
+            "emc": 64,
+            "origin": "heuristic_fallback",
+            "quantity": 1
+          },
+          {
+            "id": "industrialforegoing:mycelial_explosive",
+            "emc": 2607,
+            "origin": "recipe_calculated",
+            "quantity": 1
+          },
+          {
+            "id": "evilcraft:lightning_bomb",
+            "emc": 747,
+            "origin": "recipe_calculated",
+            "quantity": 1
+          }
+        ]
+      },
+      "supported_recipe_count": 1,
       "incomplete_recipe_count": 0,
       "pending_recipe_count": 0,
       "pending_reasons": [],
@@ -21871,13 +22036,27 @@
     {
       "id": "regions_unexplored:alpha_log",
       "configured_emc": 32,
-      "status": "no_supported_recipe",
+      "status": "no_fully_priced_recipe",
       "best_supported_recipe": null,
       "supported_recipe_count": 0,
-      "incomplete_recipe_count": 0,
+      "incomplete_recipe_count": 1,
       "pending_recipe_count": 0,
       "pending_reasons": [],
-      "incomplete_recipes": []
+      "incomplete_recipes": [
+        {
+          "type": "kubejs:shaped",
+          "missing_inputs": [
+            {
+              "alternatives": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ],
+              "missing": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "regions_unexplored:alpha_rose",
@@ -21948,13 +22127,27 @@
     {
       "id": "regions_unexplored:ashen_log",
       "configured_emc": 32,
-      "status": "no_supported_recipe",
+      "status": "no_fully_priced_recipe",
       "best_supported_recipe": null,
       "supported_recipe_count": 0,
-      "incomplete_recipe_count": 0,
+      "incomplete_recipe_count": 1,
       "pending_recipe_count": 0,
       "pending_reasons": [],
-      "incomplete_recipes": []
+      "incomplete_recipes": [
+        {
+          "type": "kubejs:shaped",
+          "missing_inputs": [
+            {
+              "alternatives": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ],
+              "missing": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "regions_unexplored:bamboo_leaves",
@@ -21970,13 +22163,27 @@
     {
       "id": "regions_unexplored:bamboo_log",
       "configured_emc": 32,
-      "status": "no_supported_recipe",
+      "status": "no_fully_priced_recipe",
       "best_supported_recipe": null,
       "supported_recipe_count": 0,
-      "incomplete_recipe_count": 0,
+      "incomplete_recipe_count": 1,
       "pending_recipe_count": 0,
       "pending_reasons": [],
-      "incomplete_recipes": []
+      "incomplete_recipes": [
+        {
+          "type": "kubejs:shaped",
+          "missing_inputs": [
+            {
+              "alternatives": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ],
+              "missing": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "regions_unexplored:bamboo_sapling",
@@ -22003,13 +22210,27 @@
     {
       "id": "regions_unexplored:baobab_log",
       "configured_emc": 32,
-      "status": "no_supported_recipe",
+      "status": "no_fully_priced_recipe",
       "best_supported_recipe": null,
       "supported_recipe_count": 0,
-      "incomplete_recipe_count": 0,
+      "incomplete_recipe_count": 1,
       "pending_recipe_count": 0,
       "pending_reasons": [],
-      "incomplete_recipes": []
+      "incomplete_recipes": [
+        {
+          "type": "kubejs:shaped",
+          "missing_inputs": [
+            {
+              "alternatives": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ],
+              "missing": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "regions_unexplored:barley",
@@ -22047,13 +22268,27 @@
     {
       "id": "regions_unexplored:blackwood_log",
       "configured_emc": 32,
-      "status": "no_supported_recipe",
+      "status": "no_fully_priced_recipe",
       "best_supported_recipe": null,
       "supported_recipe_count": 0,
-      "incomplete_recipe_count": 0,
+      "incomplete_recipe_count": 1,
       "pending_recipe_count": 0,
       "pending_reasons": [],
-      "incomplete_recipes": []
+      "incomplete_recipes": [
+        {
+          "type": "kubejs:shaped",
+          "missing_inputs": [
+            {
+              "alternatives": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ],
+              "missing": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "regions_unexplored:bladed_grass",
@@ -22135,13 +22370,27 @@
     {
       "id": "regions_unexplored:brimwood_log",
       "configured_emc": 32,
-      "status": "no_supported_recipe",
+      "status": "no_fully_priced_recipe",
       "best_supported_recipe": null,
       "supported_recipe_count": 0,
-      "incomplete_recipe_count": 0,
+      "incomplete_recipe_count": 1,
       "pending_recipe_count": 0,
       "pending_reasons": [],
-      "incomplete_recipes": []
+      "incomplete_recipes": [
+        {
+          "type": "kubejs:shaped",
+          "missing_inputs": [
+            {
+              "alternatives": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ],
+              "missing": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "regions_unexplored:brown_wall_mushroom",
@@ -22179,13 +22428,27 @@
     {
       "id": "regions_unexplored:cobalt_log",
       "configured_emc": 32,
-      "status": "no_supported_recipe",
+      "status": "no_fully_priced_recipe",
       "best_supported_recipe": null,
       "supported_recipe_count": 0,
-      "incomplete_recipe_count": 0,
+      "incomplete_recipe_count": 1,
       "pending_recipe_count": 0,
       "pending_reasons": [],
-      "incomplete_recipes": []
+      "incomplete_recipes": [
+        {
+          "type": "kubejs:shaped",
+          "missing_inputs": [
+            {
+              "alternatives": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ],
+              "missing": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "regions_unexplored:cobalt_nylium",
@@ -22256,13 +22519,27 @@
     {
       "id": "regions_unexplored:cypress_log",
       "configured_emc": 32,
-      "status": "no_supported_recipe",
+      "status": "no_fully_priced_recipe",
       "best_supported_recipe": null,
       "supported_recipe_count": 0,
-      "incomplete_recipe_count": 0,
+      "incomplete_recipe_count": 1,
       "pending_recipe_count": 0,
       "pending_reasons": [],
-      "incomplete_recipes": []
+      "incomplete_recipes": [
+        {
+          "type": "kubejs:shaped",
+          "missing_inputs": [
+            {
+              "alternatives": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ],
+              "missing": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "regions_unexplored:daisy",
@@ -22300,13 +22577,27 @@
     {
       "id": "regions_unexplored:dead_log",
       "configured_emc": 32,
-      "status": "no_supported_recipe",
+      "status": "no_fully_priced_recipe",
       "best_supported_recipe": null,
       "supported_recipe_count": 0,
-      "incomplete_recipe_count": 0,
+      "incomplete_recipe_count": 1,
       "pending_recipe_count": 0,
       "pending_reasons": [],
-      "incomplete_recipes": []
+      "incomplete_recipes": [
+        {
+          "type": "kubejs:shaped",
+          "missing_inputs": [
+            {
+              "alternatives": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ],
+              "missing": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "regions_unexplored:dead_pine_leaves",
@@ -22355,13 +22646,27 @@
     {
       "id": "regions_unexplored:eucalyptus_log",
       "configured_emc": 32,
-      "status": "no_supported_recipe",
+      "status": "no_fully_priced_recipe",
       "best_supported_recipe": null,
       "supported_recipe_count": 0,
-      "incomplete_recipe_count": 0,
+      "incomplete_recipe_count": 1,
       "pending_recipe_count": 0,
       "pending_reasons": [],
-      "incomplete_recipes": []
+      "incomplete_recipes": [
+        {
+          "type": "kubejs:shaped",
+          "missing_inputs": [
+            {
+              "alternatives": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ],
+              "missing": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "regions_unexplored:felicia_daisy",
@@ -22531,13 +22836,27 @@
     {
       "id": "regions_unexplored:joshua_log",
       "configured_emc": 32,
-      "status": "no_supported_recipe",
+      "status": "no_fully_priced_recipe",
       "best_supported_recipe": null,
       "supported_recipe_count": 0,
-      "incomplete_recipe_count": 0,
+      "incomplete_recipe_count": 1,
       "pending_recipe_count": 0,
       "pending_reasons": [],
-      "incomplete_recipes": []
+      "incomplete_recipes": [
+        {
+          "type": "kubejs:shaped",
+          "missing_inputs": [
+            {
+              "alternatives": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ],
+              "missing": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "regions_unexplored:kapok_leaves",
@@ -22553,13 +22872,27 @@
     {
       "id": "regions_unexplored:kapok_log",
       "configured_emc": 32,
-      "status": "no_supported_recipe",
+      "status": "no_fully_priced_recipe",
       "best_supported_recipe": null,
       "supported_recipe_count": 0,
-      "incomplete_recipe_count": 0,
+      "incomplete_recipe_count": 1,
       "pending_recipe_count": 0,
       "pending_reasons": [],
-      "incomplete_recipes": []
+      "incomplete_recipes": [
+        {
+          "type": "kubejs:shaped",
+          "missing_inputs": [
+            {
+              "alternatives": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ],
+              "missing": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "regions_unexplored:kapok_vines",
@@ -22586,13 +22919,27 @@
     {
       "id": "regions_unexplored:larch_log",
       "configured_emc": 32,
-      "status": "no_supported_recipe",
+      "status": "no_fully_priced_recipe",
       "best_supported_recipe": null,
       "supported_recipe_count": 0,
-      "incomplete_recipe_count": 0,
+      "incomplete_recipe_count": 1,
       "pending_recipe_count": 0,
       "pending_reasons": [],
-      "incomplete_recipes": []
+      "incomplete_recipes": [
+        {
+          "type": "kubejs:shaped",
+          "missing_inputs": [
+            {
+              "alternatives": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ],
+              "missing": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "regions_unexplored:magnolia_leaves",
@@ -22608,13 +22955,27 @@
     {
       "id": "regions_unexplored:magnolia_log",
       "configured_emc": 32,
-      "status": "no_supported_recipe",
+      "status": "no_fully_priced_recipe",
       "best_supported_recipe": null,
       "supported_recipe_count": 0,
-      "incomplete_recipe_count": 0,
+      "incomplete_recipe_count": 1,
       "pending_recipe_count": 0,
       "pending_reasons": [],
-      "incomplete_recipes": []
+      "incomplete_recipes": [
+        {
+          "type": "kubejs:shaped",
+          "missing_inputs": [
+            {
+              "alternatives": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ],
+              "missing": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "regions_unexplored:maple_leaves",
@@ -22630,13 +22991,27 @@
     {
       "id": "regions_unexplored:maple_log",
       "configured_emc": 32,
-      "status": "no_supported_recipe",
+      "status": "no_fully_priced_recipe",
       "best_supported_recipe": null,
       "supported_recipe_count": 0,
-      "incomplete_recipe_count": 0,
+      "incomplete_recipe_count": 1,
       "pending_recipe_count": 0,
       "pending_reasons": [],
-      "incomplete_recipes": []
+      "incomplete_recipes": [
+        {
+          "type": "kubejs:shaped",
+          "missing_inputs": [
+            {
+              "alternatives": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ],
+              "missing": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "regions_unexplored:mauve_leaves",
@@ -22652,13 +23027,27 @@
     {
       "id": "regions_unexplored:mauve_log",
       "configured_emc": 32,
-      "status": "no_supported_recipe",
+      "status": "no_fully_priced_recipe",
       "best_supported_recipe": null,
       "supported_recipe_count": 0,
-      "incomplete_recipe_count": 0,
+      "incomplete_recipe_count": 1,
       "pending_recipe_count": 0,
       "pending_reasons": [],
-      "incomplete_recipes": []
+      "incomplete_recipes": [
+        {
+          "type": "kubejs:shaped",
+          "missing_inputs": [
+            {
+              "alternatives": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ],
+              "missing": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "regions_unexplored:medium_grass",
@@ -22751,13 +23140,27 @@
     {
       "id": "regions_unexplored:palm_log",
       "configured_emc": 32,
-      "status": "no_supported_recipe",
+      "status": "no_fully_priced_recipe",
       "best_supported_recipe": null,
       "supported_recipe_count": 0,
-      "incomplete_recipe_count": 0,
+      "incomplete_recipe_count": 1,
       "pending_recipe_count": 0,
       "pending_reasons": [],
-      "incomplete_recipes": []
+      "incomplete_recipes": [
+        {
+          "type": "kubejs:shaped",
+          "missing_inputs": [
+            {
+              "alternatives": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ],
+              "missing": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "regions_unexplored:peat_dirt",
@@ -22784,13 +23187,27 @@
     {
       "id": "regions_unexplored:pine_log",
       "configured_emc": 32,
-      "status": "no_supported_recipe",
+      "status": "no_fully_priced_recipe",
       "best_supported_recipe": null,
       "supported_recipe_count": 0,
-      "incomplete_recipe_count": 0,
+      "incomplete_recipe_count": 1,
       "pending_recipe_count": 0,
       "pending_reasons": [],
-      "incomplete_recipes": []
+      "incomplete_recipes": [
+        {
+          "type": "kubejs:shaped",
+          "missing_inputs": [
+            {
+              "alternatives": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ],
+              "missing": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "regions_unexplored:pink_bioshroom_stem",
@@ -22894,13 +23311,27 @@
     {
       "id": "regions_unexplored:redwood_log",
       "configured_emc": 32,
-      "status": "no_supported_recipe",
+      "status": "no_fully_priced_recipe",
       "best_supported_recipe": null,
       "supported_recipe_count": 0,
-      "incomplete_recipe_count": 0,
+      "incomplete_recipe_count": 1,
       "pending_recipe_count": 0,
       "pending_reasons": [],
-      "incomplete_recipes": []
+      "incomplete_recipes": [
+        {
+          "type": "kubejs:shaped",
+          "missing_inputs": [
+            {
+              "alternatives": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ],
+              "missing": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "regions_unexplored:saguaro_cactus",
@@ -23015,13 +23446,27 @@
     {
       "id": "regions_unexplored:silver_birch_log",
       "configured_emc": 32,
-      "status": "no_supported_recipe",
+      "status": "no_fully_priced_recipe",
       "best_supported_recipe": null,
       "supported_recipe_count": 0,
-      "incomplete_recipe_count": 0,
+      "incomplete_recipe_count": 1,
       "pending_recipe_count": 0,
       "pending_reasons": [],
-      "incomplete_recipes": []
+      "incomplete_recipes": [
+        {
+          "type": "kubejs:shaped",
+          "missing_inputs": [
+            {
+              "alternatives": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ],
+              "missing": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "regions_unexplored:small_oak_leaves",
@@ -23037,13 +23482,27 @@
     {
       "id": "regions_unexplored:small_oak_log",
       "configured_emc": 32,
-      "status": "no_supported_recipe",
+      "status": "no_fully_priced_recipe",
       "best_supported_recipe": null,
       "supported_recipe_count": 0,
-      "incomplete_recipe_count": 0,
+      "incomplete_recipe_count": 1,
       "pending_recipe_count": 0,
       "pending_reasons": [],
-      "incomplete_recipes": []
+      "incomplete_recipes": [
+        {
+          "type": "kubejs:shaped",
+          "missing_inputs": [
+            {
+              "alternatives": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ],
+              "missing": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "regions_unexplored:small_oak_sapling",
@@ -23070,13 +23529,27 @@
     {
       "id": "regions_unexplored:socotra_log",
       "configured_emc": 32,
-      "status": "no_supported_recipe",
+      "status": "no_fully_priced_recipe",
       "best_supported_recipe": null,
       "supported_recipe_count": 0,
-      "incomplete_recipe_count": 0,
+      "incomplete_recipe_count": 1,
       "pending_recipe_count": 0,
       "pending_reasons": [],
-      "incomplete_recipes": []
+      "incomplete_recipes": [
+        {
+          "type": "kubejs:shaped",
+          "missing_inputs": [
+            {
+              "alternatives": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ],
+              "missing": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "regions_unexplored:spanish_moss",
@@ -23378,13 +23851,27 @@
     {
       "id": "regions_unexplored:willow_log",
       "configured_emc": 32,
-      "status": "no_supported_recipe",
+      "status": "no_fully_priced_recipe",
       "best_supported_recipe": null,
       "supported_recipe_count": 0,
-      "incomplete_recipe_count": 0,
+      "incomplete_recipe_count": 1,
       "pending_recipe_count": 0,
       "pending_reasons": [],
-      "incomplete_recipes": []
+      "incomplete_recipes": [
+        {
+          "type": "kubejs:shaped",
+          "missing_inputs": [
+            {
+              "alternatives": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ],
+              "missing": [
+                "mysticalagriculture:unexplored_wood_essence"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "regions_unexplored:windswept_grass",
@@ -26943,7 +27430,7 @@
     {
       "id": "xycraft_world:xychorium_gem_blue",
       "configured_emc": 128,
-      "status": "above_supported_recipe_cost_candidate",
+      "status": "potentially_above_recipe_cost_needs_review",
       "best_supported_recipe": {
         "recipe_type": "mekanism:enriching",
         "output_count": 10,
@@ -26960,15 +27447,29 @@
         ]
       },
       "supported_recipe_count": 3,
-      "incomplete_recipe_count": 0,
+      "incomplete_recipe_count": 1,
       "pending_recipe_count": 0,
       "pending_reasons": [],
-      "incomplete_recipes": []
+      "incomplete_recipes": [
+        {
+          "type": "kubejs:shaped",
+          "missing_inputs": [
+            {
+              "alternatives": [
+                "mysticalagriculture:xychorium_gem_essence"
+              ],
+              "missing": [
+                "mysticalagriculture:xychorium_gem_essence"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "xycraft_world:xychorium_gem_dark",
       "configured_emc": 128,
-      "status": "above_supported_recipe_cost_candidate",
+      "status": "potentially_above_recipe_cost_needs_review",
       "best_supported_recipe": {
         "recipe_type": "mekanism:enriching",
         "output_count": 10,
@@ -26985,15 +27486,29 @@
         ]
       },
       "supported_recipe_count": 3,
-      "incomplete_recipe_count": 0,
+      "incomplete_recipe_count": 1,
       "pending_recipe_count": 0,
       "pending_reasons": [],
-      "incomplete_recipes": []
+      "incomplete_recipes": [
+        {
+          "type": "kubejs:shaped",
+          "missing_inputs": [
+            {
+              "alternatives": [
+                "mysticalagriculture:xychorium_gem_essence"
+              ],
+              "missing": [
+                "mysticalagriculture:xychorium_gem_essence"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "xycraft_world:xychorium_gem_green",
       "configured_emc": 128,
-      "status": "above_supported_recipe_cost_candidate",
+      "status": "potentially_above_recipe_cost_needs_review",
       "best_supported_recipe": {
         "recipe_type": "mekanism:enriching",
         "output_count": 10,
@@ -27010,15 +27525,29 @@
         ]
       },
       "supported_recipe_count": 3,
-      "incomplete_recipe_count": 0,
+      "incomplete_recipe_count": 1,
       "pending_recipe_count": 0,
       "pending_reasons": [],
-      "incomplete_recipes": []
+      "incomplete_recipes": [
+        {
+          "type": "kubejs:shaped",
+          "missing_inputs": [
+            {
+              "alternatives": [
+                "mysticalagriculture:xychorium_gem_essence"
+              ],
+              "missing": [
+                "mysticalagriculture:xychorium_gem_essence"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "xycraft_world:xychorium_gem_light",
       "configured_emc": 128,
-      "status": "above_supported_recipe_cost_candidate",
+      "status": "potentially_above_recipe_cost_needs_review",
       "best_supported_recipe": {
         "recipe_type": "mekanism:enriching",
         "output_count": 10,
@@ -27035,15 +27564,29 @@
         ]
       },
       "supported_recipe_count": 3,
-      "incomplete_recipe_count": 0,
+      "incomplete_recipe_count": 1,
       "pending_recipe_count": 0,
       "pending_reasons": [],
-      "incomplete_recipes": []
+      "incomplete_recipes": [
+        {
+          "type": "kubejs:shaped",
+          "missing_inputs": [
+            {
+              "alternatives": [
+                "mysticalagriculture:xychorium_gem_essence"
+              ],
+              "missing": [
+                "mysticalagriculture:xychorium_gem_essence"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "xycraft_world:xychorium_gem_red",
       "configured_emc": 128,
-      "status": "above_supported_recipe_cost_candidate",
+      "status": "potentially_above_recipe_cost_needs_review",
       "best_supported_recipe": {
         "recipe_type": "mekanism:enriching",
         "output_count": 10,
@@ -27060,10 +27603,24 @@
         ]
       },
       "supported_recipe_count": 3,
-      "incomplete_recipe_count": 0,
+      "incomplete_recipe_count": 1,
       "pending_recipe_count": 0,
       "pending_reasons": [],
-      "incomplete_recipes": []
+      "incomplete_recipes": [
+        {
+          "type": "kubejs:shaped",
+          "missing_inputs": [
+            {
+              "alternatives": [
+                "mysticalagriculture:xychorium_gem_essence"
+              ],
+              "missing": [
+                "mysticalagriculture:xychorium_gem_essence"
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -586,6 +586,320 @@ def group_recipes(pack, inst):
     return out
 
 
+# ---- receitas de mesa registradas em runtime pelo KubeJS --------------------------------------------
+# O pack adiciona receitas de bancada dentro de JS (ServerEvents.recipes). Nenhuma delas vira JSON de
+# datapack, entao nem o scanner de jars/data nem a auditoria de overrides as enxergam. Aqui elas
+# voltam como rota verificavel. Tipos de maquina sao contados e descartados de proposito: nem o
+# ProjectE os usa no calculo automatico, entao modela-los criaria divergencia entre tabela e jogo.
+KUBEJS_CRAFTING_TYPES = {"minecraft:crafting_shaped", "minecraft:crafting_shapeless",
+                         "create:mechanical_crafting", "pneumaticcraft:crafting_shaped_pressurizable"}
+KUBEJS_ALIASES = "allthemods|recipes|recipeEvent|event|server|kubejs|e|r"
+KUBEJS_CALL_RE = re.compile(rf"\b(?:{KUBEJS_ALIASES})\.(shaped|shapeless|smithing|custom)\s*\(")
+# Chamadas de maquina no mesmo DSL (allthemods.recipes.<mod>.<tipo>): invisiveis ao scanner, mas
+# fora do calculo automatico do ProjectE. Contadas para dimensionar a lacuna, nunca precificadas.
+KUBEJS_BUILDER_RE = re.compile(rf"\b(?:{KUBEJS_ALIASES})\.recipes\.([a-z0-9_]+)\.([a-z0-9_]+)\s*\(")
+KUBEJS_TEMPLATE_RE = re.compile(r"(?:\s*\.\w+\([^()]*\))*\s*\.template\(\s*['\"`]([^'\"`]+)['\"`]", re.S)
+JS_COMMENT_RE = re.compile(r"//[^\n]*|/\*.*?\*/")
+
+
+def js_strip_comments(text):
+    return JS_COMMENT_RE.sub(" ", text)
+
+
+def js_balanced(text, start, opener, closer):
+    """Conteudo entre o parentese/chave em `start`, ignorando os aninhados depois dele.
+
+    Aspas importam: um `( ` ou `)` dentro de string (nomes de item, JSON de custom_name) nao
+    pode deslocar o fecho, senao a receita seria cortada no meio e lida como outra coisa.
+    """
+    depth = 0
+    quote = None
+    index = start
+    while index < len(text):
+        ch = text[index]
+        if quote:
+            if ch == "\\":
+                index += 2
+                continue
+            if ch == quote:
+                quote = None
+        elif ch in "'\"`":
+            quote = ch
+        elif ch == opener:
+            depth += 1
+        elif ch == closer:
+            depth -= 1
+            if depth == 0:
+                return text[start + 1:index]
+        index += 1
+    return text[start + 1:]
+
+
+def js_to_python(body):
+    """Objeto ou vetor JS literal em estrutura Python; None quando nao e literal puro.
+
+    Interpolacao (`${...}`), variaveis de loop e chamadas externas permanecem indecifriveis de
+    proposito: uma rota nao interpretada vira estatistica, nunca um custo inventado.
+    """
+    if "${" in body:
+        return None
+    text = js_strip_comments(body)
+    text = re.sub(r"Ingredient\.of\(\s*(['\"])((?:(?!\1).)*)\1(?:\s*,\s*[0-9]+)?\s*\)\s*\.toJson\(\)",
+                  r'"\2"', text)
+    text = re.sub(r"Item\.of\(\s*(['\"])((?:(?!\1).)*)\1(?:\s*,\s*[0-9]+)?\s*\)", r'"\2"', text)
+    text = re.sub(r"'([^'\\\n]*)'", r'"\1"', text)
+    text = re.sub(r"([{,\[]\s*)([A-Za-z_][A-Za-z0-9_]*)\s*:", r'\1"\2":', text)
+    text = re.sub(r",\s*([}\]])", r"\1", text)
+    try:
+        return json.loads(text)
+    except Exception:
+        return None
+
+
+def js_chained_template(text, start):
+    """Id do `.template(...)` encadeado em uma chamada de forja, no mesmo statement.
+
+    O template nao entra no custo: vem de loot de estrutura, nao de receita, entao cobra-lo
+    colocaria um palpite dentro do preco da rota. Ele e contado a parte para nada sumir calado.
+    A ancora no inicio do tail importa: sem ela, o `.template(` da proxima chamada do arquivo
+    seria atribuido a esta.
+    """
+    m = KUBEJS_TEMPLATE_RE.match(text[start:start + 300])
+    return m.group(1) if m else None
+
+
+def js_split_args(body):
+    """Divide a lista de argumentos no primeiro nivel, respeitando strings e colchetes."""
+    args, current, depth, quote = [], "", 0, None
+    for ch in body:
+        if quote:
+            current += ch
+            if ch == quote:
+                quote = None
+            continue
+        if ch in "'\"`":
+            quote = ch
+            current += ch
+            continue
+        if ch in "([{":
+            depth += 1
+        elif ch in ")]}":
+            depth -= 1
+        if ch == "," and depth == 0:
+            args.append(current.strip())
+            current = ""
+        else:
+            current += ch
+    if current.strip():
+        args.append(current.strip())
+    return args
+
+
+def js_ref(value):
+    """Ref de item em KubeJS para (kind, valor, conta): 'mod:a', '4x mod:a', '#tag', Item.of, {item}, {tag}."""
+    count = 1
+    if isinstance(value, dict):
+        count = int(value.get("count", value.get("amount", 1)) or 1)
+        if "item" in value:
+            value = value["item"]
+        elif "tag" in value:
+            return ("tag", str(value["tag"]), count)
+        elif "id" in value:
+            value = value["id"]
+        else:
+            return None
+    if not isinstance(value, str):
+        return None
+    # As formas se compoem ('4x #tag', "Item.of('mod:a', 3)"), entao cada camada e desmontada
+    # em ordem ate sobrar um id puro. Nem a aspa pode ser assumida: o que vem direto do fonte
+    # JS esta entre aspas, o que veio de json.loads ja esta sem.
+    text = value.strip()
+    for _ in range(4):
+        m = re.match(r"""^['"`]([^'"`]+)['"`]$""", text)
+        if m:
+            text = m.group(1).strip()
+            continue
+        m = re.match(r"^(\d+)\s*x\s+(.+)$", text)
+        if m:
+            count = int(m.group(1))
+            text = m.group(2).strip()
+            continue
+        m = re.match(r"""^Item\.of\(\s*['"`]([^'"`]+)['"`]\s*(?:,\s*([0-9]+)\s*)?\)$""", text)
+        if m:
+            text = m.group(1).strip()
+            if m.group(2):
+                count = int(m.group(2))
+            continue
+        if text.startswith("#"):
+            return ("tag", text[1:].strip(), count)
+        break
+    text = text.strip().split("[")[0]
+    if ID_RE.match(text):
+        return ("id", text, count)
+    return None
+
+
+def kubejs_crafting_routes(pack, inst):
+    """Receitas de bancada criadas por KubeJS, no formato das tuplas de receita do solver.
+
+    Retorna (rotas, estatisticas). Tier 1 = bancada, igual a parse_recipes, para que qualquer
+    uso futuro delas respeite as mesmas regras de descida e de perda.
+    """
+    routes = []
+    stats = Counter()
+    scripts = Path(inst) / "kubejs/server_scripts"
+    if not scripts.exists():
+        return routes, stats
+    texts = [js_strip_comments(path.read_text(encoding="utf-8", errors="replace"))
+             for path in sorted(scripts.rglob("*.js"))]
+    for text in texts:
+        for m in KUBEJS_CALL_RE.finditer(text):
+            kind = m.group(1)
+            body = js_balanced(text, m.end() - 1, "(", ")")
+            if kind == "custom":
+                obj = js_to_python(body)
+                if not isinstance(obj, dict):
+                    stats["custom/nao-convertivel"] += 1
+                    continue
+                rtype = obj.get("type", "sem-tipo")
+                if rtype not in KUBEJS_CRAFTING_TYPES:
+                    stats[f"custom/tipo-fora-da-bancada/{rtype}"] += 1
+                    continue
+                out = js_ref(obj.get("result"))
+                if not out:
+                    stats["custom/saida-nao-interpretada"] += 1
+                    continue
+                raw = []
+                if isinstance(obj.get("ingredients"), list):
+                    for entry in obj["ingredients"]:
+                        ref = js_ref(entry)
+                        if ref:
+                            raw.append(ref)
+                        else:
+                            stats["custom/entrada-nao-interpretada"] += 1
+                elif isinstance(obj.get("key"), dict):
+                    rows = obj.get("pattern", [])
+                    for letter, value in obj["key"].items():
+                        hits = sum(str(row).count(letter) for row in rows)
+                        ref = js_ref(value)
+                        if hits and ref:
+                            raw.append(ref[:2] + (hits,))
+                        elif hits:
+                            stats["custom/chave-nao-interpretada"] += 1
+                ings = resolve_kubejs_inputs(raw, pack, stats)
+                stats[f"custom/{rtype}"] += 1
+                if ings:
+                    routes.append((out[1], out[2], ings, rtype, 1))
+                continue
+            args = js_split_args(body)
+            if len(args) < 2:
+                stats[f"{kind}/argumentos-insuficientes"] += 1
+                continue
+            out = js_ref(args[0])
+            if not out:
+                stats[f"{kind}/saida-nao-interpretada"] += 1
+                continue
+            raw = []
+            if kind == "shaped":
+                rows, key = (js_to_python(args[1]) if len(args) > 1 else None,
+                             js_to_python(args[2]) if len(args) > 2 else None)
+                if not isinstance(rows, list) or not isinstance(key, dict):
+                    stats["shaped/formato-nao-convertivel"] += 1
+                    continue
+                for letter, value in key.items():
+                    hits = sum(str(row).count(letter) for row in rows)
+                    ref = js_ref(value)
+                    if hits and ref:
+                        raw.append(ref[:2] + (hits,))
+                    elif hits:
+                        stats["shaped/chave-nao-interpretada"] += 1
+            elif kind == "shapeless":
+                arr = js_to_python(args[1])
+                if not isinstance(arr, list):
+                    stats["shapeless/formato-nao-convertivel"] += 1
+                    continue
+                for value in arr:
+                    ref = js_ref(value)
+                    if ref:
+                        raw.append(ref)
+                    else:
+                        stats["shapeless/entrada-nao-interpretada"] += 1
+            elif kind == "smithing":
+                for arg in args[1:]:
+                    ref = js_ref(arg)
+                    if ref is None:
+                        stats["smithing/entrada-nao-interpretada"] += 1
+                    elif ref[0] == "id" and "smithing_template" in ref[1]:
+                        stats["smithing/template-fora-do-custo"] += 1
+                    else:
+                        raw.append(ref)
+                # +1: body exclui os parenteses, entao m.end()+len(body) e o indice do fechamento.
+                if js_chained_template(text, m.end() + len(body) + 1):
+                    stats["smithing/template-fora-do-custo"] += 1
+            ings = resolve_kubejs_inputs(raw, pack, stats)
+            stats[f"call/{kind}"] += 1
+            if ings:
+                routes.append((out[1], out[2], ings, f"kubejs:{kind}", 1))
+    # Dimensionar o que o scanner jamais ve: receitas de maquina criadas no mesmo DSL.
+    for text in texts:
+        for bm in KUBEJS_BUILDER_RE.finditer(text):
+            ns, btype = bm.group(1), bm.group(2)
+            if ns == "kubejs" and btype in ("shaped", "shapeless"):
+                continue
+            stats[f"fora-da-bancada/{ns}.{btype}"] += 1
+    return routes, stats
+
+
+def resolve_kubejs_inputs(raw, pack, stats):
+    """Refs (kind, valor, conta) para (frozenset de ids, conta); tag sem membro nao vira custo zero."""
+    ings = []
+    for kind, value, count in raw:
+        if kind == "id":
+            ids = {value}
+        else:
+            ids = set(pack.members(value)) | set(pack.members("c:" + value))
+            if not ids:
+                stats["tag-sem-membros"] += 1
+                continue
+        ings.append((frozenset(ids), count))
+    return ings
+
+
+def audit_kubejs_routes(routes, values, origins):
+    """Comparar as rotas de bancada vindas de KubeJS com a EMC efetiva. Somente leitura."""
+    rows = []
+    for output_id, output_count, ings, rtype, tier in routes:
+        cost = F(0)
+        missing = []
+        detail = []
+        for alternatives, count in ings:
+            priced = [values[i] for i in alternatives if i in values]
+            if not priced:
+                missing.append(sorted(alternatives)[:4])
+                continue
+            cheapest = min(priced)
+            cost += cheapest * count
+            detail.append({"items": sorted(alternatives)[:4], "count": count,
+                           "emc_each": float(cheapest)})
+        share = cost / output_count if output_count else F(0)
+        current = values.get(output_id)
+        rows.append({
+            "output": output_id,
+            "output_count": output_count,
+            "recipe_type": rtype,
+            "inputs": detail,
+            "missing_inputs": missing,
+            "complete": not missing,
+            "exact_recipe_cost": str(share),
+            "recipe_cost": float(share),
+            "current_emc": int(current) if current is not None else None,
+            "current_origin": origins.get(output_id, "fora_do_indice"),
+            "override_over_cost": (float(current / share) if current is not None and share > 0 else None),
+        })
+    rows.sort(key=lambda r: (-(r["recipe_cost"] or 0), r["output"]))
+    return rows
+
+
 def pec_conversions(pack, docs):
     out = []
     for d in docs:
@@ -1402,8 +1716,14 @@ def run(pack, inst, out_json, generation_metadata=None):
     # Uma saída vetada não pode receber preço, e as receitas que a consomem ficam sem
     # base (insumo ausente nunca é insumo grátis): nada no grafo precifica o veto.
     recipes = drop_no_emc_outputs(no_emc, recipes)
+    # Rotas de bancada registradas em runtime pelo KubeJS: entram nas auditorias, nao no solver.
+    # Modelar essas receitas no calculo mudaria milhares de EMC sem revisao do dono; o primeiro
+    # passo e tornar a divergencia visivel (00_receitas_kubejs_runtime_emc.json).
+    kubejs_routes, kubejs_route_stats = kubejs_crafting_routes(pack, inst)
     print("itens", len(pack.items), "receitas", len(recipes), "base", len(base),
-          "| sem EMC por política:", len(no_emc), sorted(no_emc)[:6])
+          "| sem EMC por politica:", len(no_emc), sorted(no_emc)[:6])
+    print("rotas de bancada via KubeJS:", len(kubejs_routes),
+          dict(kubejs_route_stats.most_common(6)))
     pending_path = inst / "kubejs/emc_fontes/00_receitas_pendentes_emc.json"
     pending_path.write_text(json.dumps({
         "schema_version": 1,
@@ -1603,7 +1923,7 @@ def run(pack, inst, out_json, generation_metadata=None):
         else:
             item_origins[item] = "no_emc"
     override_audit = audit_manual_overrides(
-        manual_overrides, recipes, final, item_origins,
+        manual_overrides, recipes + kubejs_routes, final, item_origins,
         unsupported_recipes + unsupported_outputs
     )
     override_audit_path = inst / "kubejs/emc_fontes/00_auditoria_overrides_vs_receitas.json"
@@ -1613,6 +1933,32 @@ def run(pack, inst, out_json, generation_metadata=None):
     )
     print("auditoria de overrides:", override_audit_path,
           override_audit["override_count"], override_audit["status_counts"])
+    route_rows = audit_kubejs_routes(kubejs_routes, final, item_origins)
+    far_above = [row for row in route_rows
+                 if row["complete"] and (row["override_over_cost"] or 0) >= 100]
+    route_audit_path = inst / "kubejs/emc_fontes/00_receitas_kubejs_runtime_emc.json"
+    route_audit_path.write_text(json.dumps({
+        "schema_version": 1,
+        "comment": "Receitas de bancada criadas em runtime pelo KubeJS (ServerEvents.recipes), invisiveis "
+                   "ao scanner de jars e datapacks. Somente leitura: nenhuma dessas rotas entrou no solver "
+                   "nem alterou a tabela publicada. Tipos de maquina (star altar, energizing, salvaging) "
+                   "sao contados e descartados porque o ProjectE tambem nao os usa no calculo automatico.",
+        "route_count": len(route_rows),
+        "complete_count": sum(1 for row in route_rows if row["complete"]),
+        "far_above_recipe_cost_count": len(far_above),
+        "parse_stats": dict(sorted(kubejs_route_stats.items())),
+        "far_above_recipe_cost": [
+            {"output": row["output"], "current_emc": row["current_emc"],
+             "exact_recipe_cost": row["exact_recipe_cost"],
+             "current_origin": row["current_origin"],
+             "multiple": round(row["override_over_cost"], 1)}
+            for row in far_above if row["current_origin"] == "manual_base"
+        ],
+        "routes": route_rows,
+    }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print("rotas de bancada via KubeJS:", route_audit_path, len(route_rows),
+          "completas", sum(1 for row in route_rows if row["complete"]),
+          "| ancoras acima do custo:", len([r for r in far_above if r["current_origin"] == "manual_base"]))
     Path(out_json).write_text(json.dumps({
         "comment": "Gerado por gen_all.py: EMC fixo para todos os itens do pack (vanilla, todos os mods e "
                    "Allthemodium), calculado pelas receitas. Minerio = 5 lingotes, minerio bruto = 3.",
