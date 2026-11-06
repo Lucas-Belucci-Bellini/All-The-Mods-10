@@ -126,3 +126,15 @@ O relatório `00_qualidade_tabela_mestra_emc.json` também valida a estrutura `n
 ## Integridade estrutural das fontes manuais
 
 Cada execução também gera `00_integridade_fontes_manuais_emc.json`. O relatório verifica os documentos de valores manuais nas seções `before` e `after`: estrutura de objeto/lista, referências de item (exatamente um `id` ou `tag`), sintaxe de IDs, tags sem membros descobertos e EMC positivo inteiro. Entradas de outros tipos são ignoradas por essa validação porque não são overrides `projecte:item`. A leitura dos overrides e da precedência também ignora estruturas malformadas sem interromper a auditoria. O relatório não corrige fontes nem atribui valores.
+
+
+## Pendências conhecidas para revisão do dono
+
+Estado verificado na execução de 5 de novembro de 2026 (18 execuções do solver, todas convergindo em no máximo 20 passadas; qualidade da tabela mestra sem erros nem avisos):
+
+- 16788 itens permanecem `heuristic_fallback` porque nenhuma receita completa é modelada. As filas por motivo estão em `00_receitas_pendentes_emc.json`: 4317 layouts de ingrediente não interpretados, 2804 tipos excluídos por política, 1785 entradas fluidas/químicas não modeladas e 219 receitas sem itens consumidos. Ampliar o parser com fixtures reais é o caminho; nenhum valor arbitrário deve ser atribuído antes disso.
+- 4 itens do ProjectExpansion terminam no teto de clamp (`arcane_alchemical_book`, `compact_sun`, `final_star`, `gargantuan_star_omega`): o custo calculado passa de `Long.MAX_VALUE - 2` e todos ficam no mesmo número. Precisam de valor autoral explicito, porque EMC acima disso não é representável no jogo.
+- 1 conflito de precedência entre fontes autorais: `irons_spellbooks:pyrium_ingot` vale 4096 em `03_metais_e_gemas.json` e 122880 em `09_endgame_e_sem_receita.json`; o último vence por ordem lexicográfica. Ver `00_auditoria_precedencia_fontes_emc.json`.
+- 55 overrides estão nas filas "acima do custo de receita suportada" (32) e "possivelmente acima, revisar" (23) de `00_auditoria_overrides_vs_receitas.json`. São candidatos a redução de âncora, não erros automáticos.
+- `minecraft:blaze_powder` fica em 61 enquanto a vara vale 1536: há rota de esmagamento que rende muitos pós e nenhuma receita inversa, então o pós é a rota barata e a âncora da vara não desce. Se isso for exploit no jogo, a correção é override autoral do pós, não mudança do solver.
+- EMC 1 em vidro, blocos de pedra e variantes decorativas (chipped/rechiseled) é consistente com o ProjectE: fundição e corte não adicionam EMC por padrão.
