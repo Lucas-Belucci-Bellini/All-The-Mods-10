@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "generator_version": 3,
-  "generated_at_utc": "2026-11-05T23:30:02Z",
+  "generated_at_utc": "2026-11-06T00:23:47Z",
   "minecraft_version": "1.21.1",
   "neoforge_version": "21.1.259",
   "pack_identity": {
@@ -19,8 +19,8 @@
       "gameVersion": "1.21.1"
     }
   },
-  "input_fingerprint_sha256": "ece37d29f1a02d148b5b0e81901b2c21181341ecd9f5bc5a30adaf2db5c1ca7f",
-  "input_count": 859,
+  "input_fingerprint_sha256": "749c7dc78fffc0b957da96b742e620088c7df67c208af0af9bbd22da9f2ce444",
+  "input_count": 858,
   "input_files": [
     "minecraft/libraries/net/neoforged/neoforge/21.1.259/neoforge-21.1.259-universal.jar",
     "minecraft/versions/1.21.1/1.21.1.jar",
@@ -125,7 +125,6 @@
     "instance/kubejs/data/dungeons_arise/tags/worldgen/biome/has_structure/undead_pirate_ship_biomes.json",
     "instance/kubejs/data/dungeons_arise/tags/worldgen/biome/has_structure/wishing_well_biomes.json",
     "instance/kubejs/data/dungeons_arise/worldgen/structure_set/major_structures.json",
-    "instance/kubejs/data/emc_balanceado/pe_custom_conversions/00_valores_completos.json",
     "instance/kubejs/data/forbidden_arcanus/forbidden_arcanus/hephaestus_forge/ritual/eternal_stella.json",
     "instance/kubejs/data/forbidden_arcanus/neoforge/biome_modifier/add_lost_soul_overworld.json",
     "instance/kubejs/data/hostilenetworks/data_models/ender_dragon.json",

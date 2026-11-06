@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "pass_limit_per_tier": 80,
-  "run_count": 30,
+  "run_count": 18,
   "converged": true,
   "non_converged_runs": [],
   "runs": [
@@ -13,7 +13,8 @@
       "updates": 286,
       "last_pass_changed_count": 0,
       "last_pass_changed_items": [],
-      "contraction_locked_count": 0
+      "contraction_locked_count": 0,
+      "guess_lifted_count": 0
     },
     {
       "phase": "initial",
@@ -23,7 +24,8 @@
       "updates": 55142,
       "last_pass_changed_count": 0,
       "last_pass_changed_items": [],
-      "contraction_locked_count": 0
+      "contraction_locked_count": 0,
+      "guess_lifted_count": 0
     },
     {
       "phase": "initial",
@@ -33,7 +35,8 @@
       "updates": 0,
       "last_pass_changed_count": 0,
       "last_pass_changed_items": [],
-      "contraction_locked_count": 0
+      "contraction_locked_count": 0,
+      "guess_lifted_count": 0
     },
     {
       "phase": "after_ore_rules",
@@ -43,7 +46,8 @@
       "updates": 206,
       "last_pass_changed_count": 0,
       "last_pass_changed_items": [],
-      "contraction_locked_count": 0
+      "contraction_locked_count": 0,
+      "guess_lifted_count": 0
     },
     {
       "phase": "after_ore_rules",
@@ -53,7 +57,8 @@
       "updates": 53827,
       "last_pass_changed_count": 0,
       "last_pass_changed_items": [],
-      "contraction_locked_count": 0
+      "contraction_locked_count": 0,
+      "guess_lifted_count": 0
     },
     {
       "phase": "after_ore_rules",
@@ -63,7 +68,8 @@
       "updates": 0,
       "last_pass_changed_count": 0,
       "last_pass_changed_items": [],
-      "contraction_locked_count": 0
+      "contraction_locked_count": 0,
+      "guess_lifted_count": 0
     },
     {
       "phase": "guess_round_1",
@@ -73,7 +79,8 @@
       "updates": 207,
       "last_pass_changed_count": 0,
       "last_pass_changed_items": [],
-      "contraction_locked_count": 0
+      "contraction_locked_count": 0,
+      "guess_lifted_count": 0
     },
     {
       "phase": "guess_round_1",
@@ -83,7 +90,8 @@
       "updates": 56756,
       "last_pass_changed_count": 0,
       "last_pass_changed_items": [],
-      "contraction_locked_count": 0
+      "contraction_locked_count": 0,
+      "guess_lifted_count": 0
     },
     {
       "phase": "guess_round_1",
@@ -93,7 +101,8 @@
       "updates": 0,
       "last_pass_changed_count": 0,
       "last_pass_changed_items": [],
-      "contraction_locked_count": 0
+      "contraction_locked_count": 0,
+      "guess_lifted_count": 0
     },
     {
       "phase": "guess_round_2",
@@ -103,17 +112,19 @@
       "updates": 207,
       "last_pass_changed_count": 0,
       "last_pass_changed_items": [],
-      "contraction_locked_count": 0
+      "contraction_locked_count": 0,
+      "guess_lifted_count": 0
     },
     {
       "phase": "guess_round_2",
       "tier": 2,
       "converged": true,
-      "passes": 15,
-      "updates": 56547,
+      "passes": 20,
+      "updates": 60216,
       "last_pass_changed_count": 0,
       "last_pass_changed_items": [],
-      "contraction_locked_count": 0
+      "contraction_locked_count": 0,
+      "guess_lifted_count": 1601
     },
     {
       "phase": "guess_round_2",
@@ -123,7 +134,8 @@
       "updates": 0,
       "last_pass_changed_count": 0,
       "last_pass_changed_items": [],
-      "contraction_locked_count": 0
+      "contraction_locked_count": 0,
+      "guess_lifted_count": 0
     },
     {
       "phase": "guess_round_3",
@@ -133,17 +145,19 @@
       "updates": 207,
       "last_pass_changed_count": 0,
       "last_pass_changed_items": [],
-      "contraction_locked_count": 0
+      "contraction_locked_count": 0,
+      "guess_lifted_count": 0
     },
     {
       "phase": "guess_round_3",
       "tier": 2,
       "converged": true,
       "passes": 15,
-      "updates": 56545,
+      "updates": 56421,
       "last_pass_changed_count": 0,
       "last_pass_changed_items": [],
-      "contraction_locked_count": 0
+      "contraction_locked_count": 0,
+      "guess_lifted_count": 0
     },
     {
       "phase": "guess_round_3",
@@ -153,7 +167,8 @@
       "updates": 0,
       "last_pass_changed_count": 0,
       "last_pass_changed_items": [],
-      "contraction_locked_count": 0
+      "contraction_locked_count": 0,
+      "guess_lifted_count": 0
     },
     {
       "phase": "guess_round_4",
@@ -163,17 +178,19 @@
       "updates": 207,
       "last_pass_changed_count": 0,
       "last_pass_changed_items": [],
-      "contraction_locked_count": 0
+      "contraction_locked_count": 0,
+      "guess_lifted_count": 0
     },
     {
       "phase": "guess_round_4",
       "tier": 2,
       "converged": true,
       "passes": 15,
-      "updates": 56545,
+      "updates": 56430,
       "last_pass_changed_count": 0,
       "last_pass_changed_items": [],
-      "contraction_locked_count": 0
+      "contraction_locked_count": 0,
+      "guess_lifted_count": 9
     },
     {
       "phase": "guess_round_4",
@@ -183,127 +200,8 @@
       "updates": 0,
       "last_pass_changed_count": 0,
       "last_pass_changed_items": [],
-      "contraction_locked_count": 0
-    },
-    {
-      "phase": "guess_round_5",
-      "tier": 0,
-      "converged": true,
-      "passes": 2,
-      "updates": 207,
-      "last_pass_changed_count": 0,
-      "last_pass_changed_items": [],
-      "contraction_locked_count": 0
-    },
-    {
-      "phase": "guess_round_5",
-      "tier": 2,
-      "converged": true,
-      "passes": 15,
-      "updates": 56545,
-      "last_pass_changed_count": 0,
-      "last_pass_changed_items": [],
-      "contraction_locked_count": 0
-    },
-    {
-      "phase": "guess_round_5",
-      "tier": 3,
-      "converged": true,
-      "passes": 1,
-      "updates": 0,
-      "last_pass_changed_count": 0,
-      "last_pass_changed_items": [],
-      "contraction_locked_count": 0
-    },
-    {
-      "phase": "guess_round_6",
-      "tier": 0,
-      "converged": true,
-      "passes": 2,
-      "updates": 207,
-      "last_pass_changed_count": 0,
-      "last_pass_changed_items": [],
-      "contraction_locked_count": 0
-    },
-    {
-      "phase": "guess_round_6",
-      "tier": 2,
-      "converged": true,
-      "passes": 15,
-      "updates": 56545,
-      "last_pass_changed_count": 0,
-      "last_pass_changed_items": [],
-      "contraction_locked_count": 0
-    },
-    {
-      "phase": "guess_round_6",
-      "tier": 3,
-      "converged": true,
-      "passes": 1,
-      "updates": 0,
-      "last_pass_changed_count": 0,
-      "last_pass_changed_items": [],
-      "contraction_locked_count": 0
-    },
-    {
-      "phase": "guess_round_7",
-      "tier": 0,
-      "converged": true,
-      "passes": 2,
-      "updates": 207,
-      "last_pass_changed_count": 0,
-      "last_pass_changed_items": [],
-      "contraction_locked_count": 0
-    },
-    {
-      "phase": "guess_round_7",
-      "tier": 2,
-      "converged": true,
-      "passes": 15,
-      "updates": 56545,
-      "last_pass_changed_count": 0,
-      "last_pass_changed_items": [],
-      "contraction_locked_count": 0
-    },
-    {
-      "phase": "guess_round_7",
-      "tier": 3,
-      "converged": true,
-      "passes": 1,
-      "updates": 0,
-      "last_pass_changed_count": 0,
-      "last_pass_changed_items": [],
-      "contraction_locked_count": 0
-    },
-    {
-      "phase": "guess_round_8",
-      "tier": 0,
-      "converged": true,
-      "passes": 2,
-      "updates": 207,
-      "last_pass_changed_count": 0,
-      "last_pass_changed_items": [],
-      "contraction_locked_count": 0
-    },
-    {
-      "phase": "guess_round_8",
-      "tier": 2,
-      "converged": true,
-      "passes": 15,
-      "updates": 56545,
-      "last_pass_changed_count": 0,
-      "last_pass_changed_items": [],
-      "contraction_locked_count": 0
-    },
-    {
-      "phase": "guess_round_8",
-      "tier": 3,
-      "converged": true,
-      "passes": 1,
-      "updates": 0,
-      "last_pass_changed_count": 0,
-      "last_pass_changed_items": [],
-      "contraction_locked_count": 0
+      "contraction_locked_count": 0,
+      "guess_lifted_count": 0
     }
   ]
 }
