@@ -3,13 +3,13 @@
   "comment": "Auditoria de triagem somente de leitura. Não altera EMCs. Custos de receitas dependem dos valores atuais dos insumos; entradas heurísticas ou receitas pendentes reduzem a confiança.",
   "override_count": 2031,
   "status_counts": {
-    "above_supported_recipe_cost_candidate": 30,
-    "at_or_below_supported_recipe_cost": 90,
-    "known_recipes_not_above_but_needs_review": 152,
+    "above_supported_recipe_cost_candidate": 32,
+    "at_or_below_supported_recipe_cost": 95,
+    "known_recipes_not_above_but_needs_review": 146,
     "no_fully_priced_recipe": 1,
     "no_supported_recipe": 1729,
     "pending_recipe_requires_review": 5,
-    "potentially_above_recipe_cost_needs_review": 24
+    "potentially_above_recipe_cost_needs_review": 23
   },
   "items": [
     {
@@ -490,20 +490,18 @@
     {
       "id": "ae2:silicon_press",
       "configured_emc": 2304,
-      "status": "potentially_above_recipe_cost_needs_review",
+      "status": "above_supported_recipe_cost_candidate",
       "best_supported_recipe": {
         "recipe_type": "crafting_shaped",
         "output_count": 1,
         "input_cost": "2049",
         "unit_cost": "2049",
-        "heuristic_inputs": [
-          "mysticalagriculture:certus_quartz_essence"
-        ],
+        "heuristic_inputs": [],
         "selected_inputs": [
           {
             "id": "mysticalagriculture:certus_quartz_essence",
             "emc": 256,
-            "origin": "heuristic_fallback",
+            "origin": "recipe_calculated",
             "quantity": 8
           },
           {
@@ -2359,20 +2357,18 @@
     {
       "id": "astralsorcery:aquamarine",
       "configured_emc": 512,
-      "status": "known_recipes_not_above_but_needs_review",
+      "status": "at_or_below_supported_recipe_cost",
       "best_supported_recipe": {
         "recipe_type": "crafting_shaped",
         "output_count": 16,
         "input_cost": "8192",
         "unit_cost": "512",
-        "heuristic_inputs": [
-          "mysticalagriculture:aquamarine_essence"
-        ],
+        "heuristic_inputs": [],
         "selected_inputs": [
           {
             "id": "mysticalagriculture:aquamarine_essence",
             "emc": 1024,
-            "origin": "heuristic_fallback",
+            "origin": "recipe_calculated",
             "quantity": 8
           }
         ]
@@ -10796,20 +10792,18 @@
     {
       "id": "mekanism:fluorite_gem",
       "configured_emc": 256,
-      "status": "known_recipes_not_above_but_needs_review",
+      "status": "at_or_below_supported_recipe_cost",
       "best_supported_recipe": {
         "recipe_type": "crafting_shaped",
         "output_count": 8,
         "input_cost": "2048",
         "unit_cost": "256",
-        "heuristic_inputs": [
-          "mysticalagriculture:fluorite_essence"
-        ],
+        "heuristic_inputs": [],
         "selected_inputs": [
           {
             "id": "mysticalagriculture:fluorite_essence",
             "emc": 256,
-            "origin": "heuristic_fallback",
+            "origin": "recipe_calculated",
             "quantity": 8
           }
         ]
@@ -16460,20 +16454,18 @@
     {
       "id": "powah:uraninite",
       "configured_emc": 512,
-      "status": "known_recipes_not_above_but_needs_review",
+      "status": "at_or_below_supported_recipe_cost",
       "best_supported_recipe": {
         "recipe_type": "crafting_shaped",
         "output_count": 2,
         "input_cost": "1024",
         "unit_cost": "512",
-        "heuristic_inputs": [
-          "mysticalagriculture:uraninite_essence"
-        ],
+        "heuristic_inputs": [],
         "selected_inputs": [
           {
             "id": "mysticalagriculture:uraninite_essence",
             "emc": 128,
-            "origin": "heuristic_fallback",
+            "origin": "recipe_calculated",
             "quantity": 8
           }
         ]
@@ -23864,20 +23856,18 @@
     {
       "id": "silentgear:fluffy_seeds",
       "configured_emc": 16,
-      "status": "known_recipes_not_above_but_needs_review",
+      "status": "above_supported_recipe_cost_candidate",
       "best_supported_recipe": {
         "recipe_type": "minecraft:crafting_shapeless",
         "output_count": 1,
-        "input_cost": "64",
-        "unit_cost": "64",
-        "heuristic_inputs": [
-          "silentgear:fluffy_puff"
-        ],
+        "input_cost": "4",
+        "unit_cost": "4",
+        "heuristic_inputs": [],
         "selected_inputs": [
           {
             "id": "silentgear:fluffy_puff",
-            "emc": 64,
-            "origin": "heuristic_fallback",
+            "emc": 4,
+            "origin": "recipe_calculated",
             "quantity": 1
           }
         ]
@@ -25496,20 +25486,18 @@
     {
       "id": "twilightforest:ironwood_ingot",
       "configured_emc": 1024,
-      "status": "known_recipes_not_above_but_needs_review",
+      "status": "at_or_below_supported_recipe_cost",
       "best_supported_recipe": {
         "recipe_type": "crafting_shaped",
         "output_count": 4,
         "input_cost": "4096",
         "unit_cost": "1024",
-        "heuristic_inputs": [
-          "mysticalagriculture:ironwood_essence"
-        ],
+        "heuristic_inputs": [],
         "selected_inputs": [
           {
             "id": "mysticalagriculture:ironwood_essence",
             "emc": 512,
-            "origin": "heuristic_fallback",
+            "origin": "recipe_calculated",
             "quantity": 8
           }
         ]
@@ -25523,20 +25511,18 @@
     {
       "id": "twilightforest:knightmetal_ingot",
       "configured_emc": 2048,
-      "status": "known_recipes_not_above_but_needs_review",
+      "status": "at_or_below_supported_recipe_cost",
       "best_supported_recipe": {
         "recipe_type": "crafting_shaped",
         "output_count": 3,
         "input_cost": "6144",
         "unit_cost": "2048",
-        "heuristic_inputs": [
-          "mysticalagriculture:knightmetal_essence"
-        ],
+        "heuristic_inputs": [],
         "selected_inputs": [
           {
             "id": "mysticalagriculture:knightmetal_essence",
             "emc": 768,
-            "origin": "heuristic_fallback",
+            "origin": "recipe_calculated",
             "quantity": 8
           }
         ]
